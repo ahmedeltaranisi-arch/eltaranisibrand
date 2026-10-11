@@ -229,7 +229,79 @@
       "accessibility": "إمكانية الوصول",
       "doNotSell": "عدم بيع أو مشاركة بياناتي الشخصية"
     },
-    "payments": "طرق الدفع"
+    "payments": "طرق الدفع",
+    "v2": {
+      "cols": [
+        {
+          "links": [
+            {
+              "label": "عن الطرانيسي",
+              "href": "/pages/about"
+            },
+            {
+              "label": "المجلة",
+              "href": "/pages/about"
+            },
+            {
+              "label": "مكتبة الأقمشة",
+              "href": "/pages/about"
+            },
+            {
+              "label": "الأسئلة الشائعة",
+              "href": "/pages/contact"
+            }
+          ]
+        },
+        {
+          "links": [
+            {
+              "label": "تواصلي معنا",
+              "href": "/pages/contact"
+            },
+            {
+              "label": "الاستبدال والاسترجاع",
+              "href": "/pages/contact"
+            },
+            {
+              "label": "برنامج الشركاء",
+              "href": "/pages/about"
+            },
+            {
+              "label": "تسجيل الدخول",
+              "href": "/wishlist"
+            },
+            {
+              "label": "رصيد بطاقة الهدايا",
+              "href": "/pages/contact"
+            }
+          ]
+        },
+        {
+          "links": [
+            {
+              "label": "انستجرام",
+              "href": "/pages/about"
+            },
+            {
+              "label": "فيسبوك",
+              "href": "/pages/about"
+            },
+            {
+              "label": "بينتريست",
+              "href": "/pages/about"
+            }
+          ]
+        }
+      ],
+      "newsTitle": "انضمي إلى عالم الطرانيسي.",
+      "newsBody": "تعديلات ستايل، كبسولات موسمية، ومعاينات حصرية تصلك أولاً بأول.",
+      "legalRow": [
+        "سياسة الخصوصية",
+        "طلب البيانات",
+        "إتاحة الوصول",
+        "تفضيلات الكوكيز"
+      ]
+    }
   },
   "home": {
     "hero": {
@@ -239,21 +311,21 @@
           "title": "كبسولة الخريف",
           "cta": "تسوّق الجديد",
           "href": "/collections/new-arrivals",
-          "image": "/img/hero-model.jpg"
+          "image": "/img/p-ls-top.jpg"
         },
         {
           "eyebrow": "صوف عضوي",
           "title": "النعومة رجعت تاني",
           "cta": "تسوّق ملابس المنزل",
           "href": "/collections/loungewear",
-          "image": "/img/p-zip-hoodie.jpg"
+          "image": "/img/p-high-neck-tank.jpg"
         },
         {
           "eyebrow": "كل الطبقات",
           "title": "مصنوعة للحياة الحقيقية",
           "cta": "تسوّق الأكثر مبيعاً",
           "href": "/collections/best-sellers",
-          "image": "/img/p-ls-top.jpg"
+          "image": "/img/p-crossover-legging.jpg"
         }
       ],
       "prev": "الشريحة السابقة",
@@ -338,6 +410,44 @@
       "title": "اتلبست في الشارع",
       "body": "اعمل لنا تاغ ونحن نعيد نشر أفضل الصور.",
       "handle": "@matethelabel"
+    },
+    "fig": {
+      "eyebrow": "أكتيفوير جديد",
+      "title": "تعرَّفي على درجة التوت",
+      "cta": "تسوقي اللون",
+      "href": "/collections/activewear"
+    },
+    "materials": {
+      "eyebrow": "مصنوع من ألياف طبيعية قابلة للتتبع.",
+      "title": "كل قطعة تبدأ من التربة — قطن عضوي معتمد وألياف مزروعة تجديدياً، تُحاك لتصنع *أساسيات* وأكتيفوير يعتنيان ببشرتك.",
+      "link": "خاماتنا",
+      "href": "/pages/about"
+    },
+    "categories": {
+      "eyebrow": "راحة نظيفة",
+      "cta": "تسوقي الآن",
+      "items": [
+        {
+          "title": "أكتيفوير",
+          "href": "/collections/activewear"
+        },
+        {
+          "title": "ملابس",
+          "href": "/collections/all"
+        },
+        {
+          "title": "سويتس",
+          "href": "/collections/loungewear"
+        }
+      ]
+    },
+    "getaway": {
+      "title": "تشكيلة السفر"
+    },
+    "dress": {
+      "title": "*أعلى* المعايير للقطع التي تمسكين بها *أكثر*.",
+      "cta": "قانون الطلة من الطرانيسي",
+      "href": "/pages/about"
     }
   },
   "collections": {
@@ -805,5 +915,9 @@
       "title": "تم تسجيل الطلب",
       "body": "الدفع الحقيقي غير مُعدّ في هذه النسخة، لذا لم نتمكن من التحقق من الجلسة عبر Stripe. الدفع التجريبي يسجّل الطلب محلياً."
     }
+  },
+  "promo": {
+    "label": "خصم 10%",
+    "dismiss": "إغلاق"
   }
 }

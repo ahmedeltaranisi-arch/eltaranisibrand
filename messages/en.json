@@ -229,7 +229,79 @@
       "accessibility": "Accessibility",
       "doNotSell": "Do not sell or share my personal information"
     },
-    "payments": "We accept"
+    "payments": "We accept",
+    "v2": {
+      "cols": [
+        {
+          "links": [
+            {
+              "label": "About Eltaranisi",
+              "href": "/pages/about"
+            },
+            {
+              "label": "Journal",
+              "href": "/pages/about"
+            },
+            {
+              "label": "Fabric Library",
+              "href": "/pages/about"
+            },
+            {
+              "label": "FAQ",
+              "href": "/pages/contact"
+            }
+          ]
+        },
+        {
+          "links": [
+            {
+              "label": "Get in Touch",
+              "href": "/pages/contact"
+            },
+            {
+              "label": "Returns & Exchanges",
+              "href": "/pages/contact"
+            },
+            {
+              "label": "Affiliates",
+              "href": "/pages/about"
+            },
+            {
+              "label": "Login",
+              "href": "/wishlist"
+            },
+            {
+              "label": "Gift Card Balance",
+              "href": "/pages/contact"
+            }
+          ]
+        },
+        {
+          "links": [
+            {
+              "label": "Instagram",
+              "href": "/pages/about"
+            },
+            {
+              "label": "Facebook",
+              "href": "/pages/about"
+            },
+            {
+              "label": "Pinterest",
+              "href": "/pages/about"
+            }
+          ]
+        }
+      ],
+      "newsTitle": "Join the Eltaranisi world.",
+      "newsBody": "For style edits, seasonal capsules, and exclusive previews delivered to your inbox.",
+      "legalRow": [
+        "Privacy Policy",
+        "Data Request",
+        "Accessibility",
+        "Cookie Preferences"
+      ]
+    }
   },
   "home": {
     "hero": {
@@ -239,21 +311,21 @@
           "title": "The autumn capsule",
           "cta": "Shop new arrivals",
           "href": "/collections/new-arrivals",
-          "image": "/img/hero-model.jpg"
+          "image": "/img/p-ls-top.jpg"
         },
         {
           "eyebrow": "Organic fleece",
           "title": "Softness, restocked",
           "cta": "Shop loungewear",
           "href": "/collections/loungewear",
-          "image": "/img/p-zip-hoodie.jpg"
+          "image": "/img/p-high-neck-tank.jpg"
         },
         {
           "eyebrow": "Every layer",
           "title": "Built for real life",
           "cta": "Shop best sellers",
           "href": "/collections/best-sellers",
-          "image": "/img/p-ls-top.jpg"
+          "image": "/img/p-crossover-legging.jpg"
         }
       ],
       "prev": "Previous slide",
@@ -338,6 +410,44 @@
       "title": "Worn out in the world",
       "body": "Tag us and we'll reshare our favourites.",
       "handle": "@matethelabel"
+    },
+    "fig": {
+      "eyebrow": "New activewear",
+      "title": "Meet Mulberry",
+      "cta": "Shop the colour",
+      "href": "/collections/activewear"
+    },
+    "materials": {
+      "eyebrow": "Made with natural, traceable fibres.",
+      "title": "Every piece starts in the soil — certified-organic cotton and regeneratively grown fibres, knitted into *foundations* and activewear that care for your skin.",
+      "link": "Our Fabrics",
+      "href": "/pages/about"
+    },
+    "categories": {
+      "eyebrow": "Clean comfort",
+      "cta": "Shop Now",
+      "items": [
+        {
+          "title": "Activewear",
+          "href": "/collections/activewear"
+        },
+        {
+          "title": "Clothing",
+          "href": "/collections/all"
+        },
+        {
+          "title": "Sweats",
+          "href": "/collections/loungewear"
+        }
+      ]
+    },
+    "getaway": {
+      "title": "The Getaway Edit"
+    },
+    "dress": {
+      "title": "The *highest* standards for the pieces you reach for *most*.",
+      "cta": "The Eltaranisi Dress Code",
+      "href": "/pages/about"
     }
   },
   "collections": {
@@ -805,5 +915,9 @@
       "title": "Order placed",
       "body": "Live payments aren't configured on this build, so we couldn't verify the session against Stripe. The demo checkout still records the order locally."
     }
+  },
+  "promo": {
+    "label": "Get 10% Off",
+    "dismiss": "Dismiss"
   }
 }

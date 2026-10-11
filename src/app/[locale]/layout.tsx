@@ -10,6 +10,7 @@ import { WishlistProvider } from "@/context/wishlist";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PromoButton from "@/components/PromoButton";
 import CartDrawer from "@/components/CartDrawer";
 import LocaleLayout from "@/components/LocaleLayout";
 
@@ -83,6 +84,7 @@ export default async function LocaleRootLayout({
                 {children}
               </main>
               <Footer />
+              <PromoButton />
               <CartDrawer />
             </CartProvider>
           </WishlistProvider>
