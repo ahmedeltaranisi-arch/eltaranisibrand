@@ -62,14 +62,43 @@ export default async function HomePage({
       <HeroSlider slides={slides} />
       <Marquee />
 
-      {/* statement */}
-      <Reveal as="section" className="px-4 py-20 text-center sm:px-6 lg:py-28">
-        <h2 className="mx-auto max-w-4xl text-[28px] leading-[1.18] font-light sm:text-[44px] lg:text-[54px]">
-          {t("statement.title")}
-        </h2>
-        <Link href={t("statement.href")} className="btn-outline mt-9">
-          {t("statement.cta")}
-        </Link>
+      {/* statement: copy left, portrait right (matches reference) */}
+      <section className="grid lg:grid-cols-2">
+        <div className="flex flex-col items-start justify-start px-4 pt-16 pb-12 text-start sm:px-6 lg:px-10 lg:pt-24 lg:pb-16">
+          <h2 className="max-w-md text-[30px] leading-[1.25] sm:text-[40px]">
+            {t("statement.title")
+              .split("*")
+              .map((part, i) =>
+                i % 2 ? (
+                  <em key={i} className="italic">
+                    {part}
+                  </em>
+                ) : (
+                  <span key={i}>{part}</span>
+                ),
+              )}
+          </h2>
+          <Link
+            href={t("statement.href")}
+            className="mt-9 inline-block w-fit text-[13px] underline decoration-1 underline-offset-[6px] transition-opacity hover:opacity-70"
+          >
+            {t("statement.cta")}
+          </Link>
+        </div>
+        <div className="relative min-h-[440px] lg:min-h-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/img/hero-model.jpg"
+            alt=""
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover object-top"
+          />
+        </div>
+      </section>
+
+      {/* tabbed products */}
+      <Reveal as="section" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
+        <ProductTabs groups={groups} />
       </Reveal>
 
       {/* editorial two-up */}
@@ -110,10 +139,7 @@ export default async function HomePage({
         ))}
       </section>
 
-      {/* tabbed products */}
-      <Reveal as="section" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
-        <ProductTabs groups={groups} />
-      </Reveal>
+
 
       {/* values */}
       <section className="border-y border-line bg-bone">

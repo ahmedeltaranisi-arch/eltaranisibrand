@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { collections } from "@/lib/catalog";
@@ -36,18 +36,6 @@ export default function Header() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
-  const lastY = useRef(0);
-
-  useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY;
-      setHidden(y > lastY.current && y > 160);
-      lastY.current = y;
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -74,10 +62,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={[
-          "sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm transition-transform duration-500",
-          hidden && !menuOpen ? "-translate-y-full" : "translate-y-0",
-        ].join(" ")}
+        className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm" 
       >
         <div className="grid h-16 grid-cols-[1fr_auto_1fr] items-center gap-4 px-4 sm:px-6 lg:px-10">
           {/* left: brand */}

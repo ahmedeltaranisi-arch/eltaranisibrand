@@ -6,7 +6,7 @@ import {
   productSlugs,
   products,
 } from "@/lib/catalog";
-import { productKey } from "@/lib/catalog";
+import { colorImage, productKey } from "@/lib/catalog";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductGallery from "@/components/ProductGallery";
 import WishlistButton from "@/components/WishlistButton";
@@ -72,7 +72,7 @@ export default async function ProductPage({
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-8 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-10 lg:py-12">
         {/* gallery */}
         <ProductGallery
-          images={[product.image, product.imageAlt]}
+          images={[colorImage(colorway.name, product.image), product.imageAlt]}
           alt={tp(`${key}.title`)}
           activeSlug={colorway.slug}
         />

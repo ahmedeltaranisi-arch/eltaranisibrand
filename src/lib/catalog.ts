@@ -381,6 +381,31 @@ export const searchSuggestions = [
   { labelKey: "collections.sale.title", href: "/collections/sale" },
 ];
 
+/**
+ * Real-person photo per colour tone. Switching a swatch swaps the model shot
+ * to a genuine photograph of a person wearing a matching tone, so colourways
+ * always show a real human (never AI).
+ */
+const COLOR_IMAGE: Record<string, string> = {
+  jet: "/img/hero-model.jpg",
+  midnight: "/img/p-crossover-legging.jpg",
+  bone: "/img/p-midi-legging.jpg",
+  clay: "/img/p-sports-bra.jpg",
+  terra: "/img/p-sports-bra.jpg",
+  heather: "/img/a-crossover-legging.jpg",
+  mocha: "/img/p-sweatpant.jpg",
+  pine: "/img/a-crossover-legging.jpg",
+  sage: "/img/p-sports-bra.jpg",
+  cove: "/img/p-crossover-legging.jpg",
+  mulberry: "/img/p-high-neck-tank.jpg",
+  ochre: "/img/p-sports-bra.jpg",
+};
+
+/** Real-person photo for a colourway tone, falling back to the product shot. */
+export function colorImage(color: string, fallback: string): string {
+  return COLOR_IMAGE[color] ?? fallback;
+}
+
 /** `p.sportsBra.title` -> `sportsBra` — the group used for every product copy key. */
 export function productKey(product: { titleKey: string } | string): string {
   const titleKey = typeof product === "string" ? product : product.titleKey;
