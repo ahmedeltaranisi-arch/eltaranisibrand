@@ -84,7 +84,7 @@ export default function ProductCard({
           </h3>
         </Link>
 
-        <div className="mt-1.5 flex items-center justify-between gap-3">
+        <div className="mt-1.5">
           <p className="text-[13px]">
             ${product.price}
             {product.compareAt && (
@@ -93,37 +93,40 @@ export default function ProductCard({
               </span>
             )}
           </p>
-          <button
-            type="button"
-            onClick={() => {
-              const size =
-                product.sizes.find((sz) => (product.stock[sz] ?? 0) > 0) ??
-                product.sizes[0];
-              add({
-                id: `${product.id}-${active.name}-${size}`,
-                productSlug: active.slug,
-                productId: product.id,
-                titleKey: product.titleKey,
-                colorName: active.name,
-                colorHex: active.hex,
-                size,
-                price: product.price,
-                image: front,
-              });
-              setAdded(true);
-              open();
-              window.setTimeout(() => setAdded(false), 1600);
-            }}
-            className={[
-              "text-[12px] text-graphite underline decoration-dotted underline-offset-4 transition-opacity duration-200 hover:opacity-60",
-              added
-                ? "opacity-100"
-                : "opacity-0 group-hover:opacity-100 focus-visible:opacity-100",
-            ].join(" ")}
-          >
-            {added ? t("added") : `${t("add")}+`}
-          </button>
         </div>
+
+        {/* quick add: full-width bar, revealed on hover/focus like the reference */}
+        <button
+          type="button"
+          onClick={() => {
+            const size =
+              product.sizes.find((sz) => (product.stock[sz] ?? 0) > 0) ??
+              product.sizes[0];
+            add({
+              id: `${product.id}-${active.name}-${size}`,
+              productSlug: active.slug,
+              productId: product.id,
+              titleKey: product.titleKey,
+              colorName: active.name,
+              colorHex: active.hex,
+              size,
+              price: product.price,
+              image: front,
+            });
+            setAdded(true);
+            open();
+            window.setTimeout(() => setAdded(false), 1600);
+          }}
+          className={[
+            "mt-3 flex h-11 w-full items-center justify-center gap-2 bg-bone text-[12px] tracking-[0.1em] text-ink uppercase transition-all duration-200 hover:bg-line",
+            added
+              ? "opacity-100"
+              : "opacity-0 group-hover:opacity-100 focus-visible:opacity-100",
+          ].join(" ")}
+        >
+          <span>{added ? t("added") : t("add")}</span>
+          {!added && <span aria-hidden>+</span>}
+        </button>
 
         {/* the colourway row reads like the reference: swatches + the tone name
             of the frame on screen, with an overflow count for the rest */}
