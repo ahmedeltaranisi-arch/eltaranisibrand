@@ -417,6 +417,9 @@ const COLOR_BACK: Record<string, string> = {
   pine: "/img/studio-grey-b.jpg",
 };
 
+/** Products with a real per-tone studio set (front + back) — only these swap imagery per colour. */
+export const STUDIO_PRODUCTS = new Set(["p02", "p03"]);
+
 /** Real-person photo for a colourway tone, falling back to the product shot. */
 export function colorImage(color: string, fallback: string): string {
   return COLOR_IMAGE[color] ?? fallback;

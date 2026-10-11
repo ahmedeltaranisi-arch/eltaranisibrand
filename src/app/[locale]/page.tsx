@@ -146,7 +146,7 @@ export default async function HomePage({
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/studio-cream-f.jpg"
+            src="/img/a-high-neck-tank.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"

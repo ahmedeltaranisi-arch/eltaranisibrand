@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/navigation";
-import { colorBack, colorImage } from "@/lib/catalog";
+import { STUDIO_PRODUCTS, colorBack, colorImage } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 import WishlistButton from "./WishlistButton";
 
@@ -26,9 +26,11 @@ export default function ProductCard({
   const key = product.titleKey.replace(/^p\./, "").replace(/\.title$/, "");
   const title = tp(`${key}.title`);
 
-  // studio front shot follows the selected colourway; hover reveals the back view
-  const front = colorImage(active.name, product.image);
-  const back = colorBack(active.name, product.imageAlt);
+  // only products with a real per-tone studio set swap imagery per colour;
+  // everyone else keeps their own photo so the product never "changes"
+  const studio = STUDIO_PRODUCTS.has(product.id);
+  const front = studio ? colorImage(active.name, product.image) : product.image;
+  const back = studio ? colorBack(active.name, product.imageAlt) : product.imageAlt;
 
   return (
     <article className="group relative flex flex-col">
@@ -89,28 +91,30 @@ export default function ProductCard({
           )}
         </p>
 
-        {/* rectangular swatches, always visible; active one underlined */}
-        <div className="mt-3 flex flex-wrap items-center gap-2">
+        {/* rectangular swatches, always visible; active gets an underline with a gap */}
+        <div className="mt-3 flex flex-wrap items-start gap-2">
           {shown.map((c) => (
-            <button
+            <span
               key={c.slug}
-              type="button"
-              title={tc(c.name as never)}
-              aria-label={tc(c.name as never)}
-              aria-pressed={active.slug === c.slug}
-              onClick={() => {
-                setActive(c);
-                router.prefetch(`/products/${c.slug}`);
-              }}
-              onDoubleClick={() => router.push(`/products/${c.slug}`)}
               className={[
-                "h-[12px] w-9 border border-ink/10 transition-shadow",
-                active.slug === c.slug
-                  ? "shadow-[0_5px_0_-3px_#000]"
-                  : "hover:shadow-[0_5px_0_-3px_rgba(0,0,0,0.35)]",
+                "border-b pb-[5px]",
+                active.slug === c.slug ? "border-ink" : "border-transparent",
               ].join(" ")}
-              style={{ background: c.hex }}
-            />
+            >
+              <button
+                type="button"
+                title={tc(c.name as never)}
+                aria-label={tc(c.name as never)}
+                aria-pressed={active.slug === c.slug}
+                onClick={() => {
+                  setActive(c);
+                  router.prefetch(`/products/${c.slug}`);
+                }}
+                onDoubleClick={() => router.push(`/products/${c.slug}`)}
+                className="block h-[12px] w-9 border border-ink/10"
+                style={{ background: c.hex }}
+              />
+            </span>
           ))}
         </div>
       </div>
