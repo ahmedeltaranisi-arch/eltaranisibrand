@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/navigation";
 import { colorwayShots } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
-import WishlistButton from "./WishlistButton";
 import { useCart } from "@/context/cart";
 
 const SWATCH_LIMIT = 4;
@@ -30,15 +29,13 @@ export default function ProductCard({
   const key = product.titleKey.replace(/^p\./, "").replace(/\.title$/, "");
   const title = tp(`${key}.title`);
 
-  // every style has a frame set per tone, so the swatch swaps the model shot to
-  // the real colourway; hovering then reveals the second pose of the same tone
   const { front, back } = colorwayShots(product, active.name);
 
   return (
     <article className="group relative flex flex-col">
       <Link
         href={`/products/${active.slug}`}
-        className="relative block overflow-hidden bg-bone"
+        className="relative block overflow-hidden bg-[#f6f3ec]"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -46,7 +43,7 @@ export default function ProductCard({
           src={front}
           alt={title}
           loading={priority ? "eager" : "lazy"}
-          className="aspect-2/3 w-full object-cover object-top transition-opacity duration-500 group-hover:opacity-0"
+          className="aspect-[3/4] w-full object-cover object-top transition-opacity duration-500 group-hover:opacity-0"
         />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -55,112 +52,108 @@ export default function ProductCard({
           alt=""
           aria-hidden
           loading="lazy"
-          className="absolute inset-0 aspect-2/3 w-full object-cover object-top opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="absolute inset-0 aspect-[3/4] w-full object-cover object-top opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
 
-        {/* badge bottom-left, like the reference */}
-        {product.badges?.map((b) => (
-          <span
-            key={b}
-            className="absolute bottom-3 start-3 z-10 bg-bone px-2.5 py-1.5 text-[10px] tracking-[0.12em] uppercase"
-          >
-            {b === "best"
-              ? t("bestSeller")
-              : b === "new"
-                ? t("new")
-                : t("limited")}
+        {product.badges?.includes("best") && (
+          <span className="absolute bottom-2 left-2 bg-[#fcf9f2] px-2 py-1 text-[9px] font-medium uppercase tracking-[0.12em] text-black">
+            Best Seller
           </span>
-        ))}
-
-        <span className="absolute top-2.5 end-2.5 z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100">
-          <WishlistButton productId={product.id} size="sm" />
-        </span>
+        )}
+        {product.badges?.includes("limited") && (
+          <span className="absolute bottom-2 left-2 bg-[#fcf9f2] px-2 py-1 text-[9px] font-medium uppercase tracking-[0.12em] text-black">
+            Limited
+          </span>
+        )}
       </Link>
 
-      <div className="pt-3">
+      <div className="pt-[10px]">
         <Link href={`/products/${active.slug}`}>
-          <h3 className="text-[14px] leading-snug group-hover:underline">
+          <h3 className="line-clamp-2 text-[12px] leading-[1.35] tracking-[0.01em] text-black group-hover:underline">
             {title}
           </h3>
         </Link>
 
-        <div className="mt-1.5">
-          <p className="text-[13px]">
-            ${product.price}
-            {product.compareAt && (
-              <span className="ms-2 text-mist line-through">
-                ${product.compareAt}
+        <p className="mt-[4px] text-[11px] font-normal tracking-[0.02em] text-black">
+          ${product.price}
+          {product.compareAt && (
+            <span className="ms-2 text-black/50 line-through">
+              ${product.compareAt}
+            </span>
+          )}
+        </p>
+
+        {/* MATE rectangular swatches with underline */}
+        <div className="mt-[10px] flex flex-wrap items-center gap-[6px]">
+          {shown.map((c) => {
+            const isActive = active.slug === c.slug;
+            return (
+              <span
+                key={c.slug}
+                className={[
+                  "inline-block border-b pb-[4px] transition-colors",
+                  isActive ? "border-black" : "border-transparent",
+                ].join(" ")}
+              >
+                <button
+                  type="button"
+                  title={tc(c.name as never)}
+                  aria-label={tc(c.name as never)}
+                  aria-pressed={isActive}
+                  onClick={() => {
+                    setActive(c);
+                    router.prefetch(`/products/${c.slug}`);
+                  }}
+                  onMouseEnter={() => setActive(c)}
+                  onDoubleClick={() => router.push(`/products/${c.slug}`)}
+                  className="block h-[10px] w-[32px] border border-black/10 transition-transform hover:scale-[1.02]"
+                  style={{ background: c.hex }}
+                />
               </span>
-            )}
-          </p>
+            );
+          })}
+          {more > 0 && (
+            <span className="ms-[2px] text-[11px] text-black">+{more}</span>
+          )}
         </div>
 
-        {/* quick add: full-width bar, revealed on hover/focus like the reference */}
         <button
           type="button"
           onClick={() => {
             const size =
               product.sizes.find((sz) => (product.stock[sz] ?? 0) > 0) ??
               product.sizes[0];
-            add({
-              id: `${product.id}-${active.name}-${size}`,
-              productSlug: active.slug,
-              productId: product.id,
-              titleKey: product.titleKey,
-              colorName: active.name,
-              colorHex: active.hex,
-              size,
-              price: product.price,
-              image: front,
-            });
+            add(
+              {
+                id: `${product.id}-${active.name}-${size}`,
+                productSlug: active.slug,
+                productId: product.id,
+                titleKey: product.titleKey,
+                colorName: active.name,
+                colorHex: active.hex,
+                size,
+                price: product.price,
+                image: front,
+              },
+              1
+            );
             setAdded(true);
             open();
             window.setTimeout(() => setAdded(false), 1600);
           }}
           className={[
-            "mt-3 flex h-11 w-full items-center justify-center gap-2 bg-bone text-[12px] tracking-[0.1em] text-ink uppercase transition-all duration-200 hover:bg-line",
-            added
-              ? "opacity-100"
-              : "opacity-0 group-hover:opacity-100 focus-visible:opacity-100",
+            "mt-3 flex h-[40px] w-full items-center justify-center bg-[#ede6d6] text-[11px] uppercase tracking-[0.12em] text-black transition-all duration-300",
+            "opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 hover:bg-[#e8e0d0]",
+            "focus-visible:opacity-100 focus-visible:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0",
           ].join(" ")}
         >
-          <span>{added ? t("added") : t("add")}</span>
-          {!added && <span aria-hidden>+</span>}
+          <span>{added ? t("added") : `${t("add")} +`}</span>
         </button>
 
-        {/* the colourway row reads like the reference: swatches + the tone name
-            of the frame on screen, with an overflow count for the rest */}
-        <p className="mt-2.5 text-[11px] tracking-[0.08em] text-mist uppercase">
+        {/* color name like MATE shows on hover? Keep subtle */}
+        <p className="mt-2 text-[10px] tracking-[0.08em] text-black/50 uppercase opacity-0 transition-opacity group-hover:opacity-100">
           {tc(active.name as never)}
-          {more > 0 && <span className="ms-1.5">+{more}</span>}
         </p>
-
-        {/* rectangular swatches, always visible; active gets an underline with a gap */}
-        <div className="mt-2 flex flex-wrap items-start gap-2">
-          {shown.map((c) => (
-            <span
-              key={c.slug}
-              className={[
-                "border-b pb-[5px]",
-                active.slug === c.slug ? "border-ink" : "border-transparent",
-              ].join(" ")}
-            >
-              <button
-                type="button"
-                title={tc(c.name as never)}
-                aria-label={tc(c.name as never)}
-                aria-pressed={active.slug === c.slug}
-                onClick={() => {
-                  setActive(c);
-                  router.prefetch(`/products/${c.slug}`);
-                }}
-                onDoubleClick={() => router.push(`/products/${c.slug}`)}
-                className="block h-[12px] w-9 border border-ink/10"
-                style={{ background: c.hex }}
-              />
-            </span>
-          ))}
-        </div>
       </div>
     </article>
   );

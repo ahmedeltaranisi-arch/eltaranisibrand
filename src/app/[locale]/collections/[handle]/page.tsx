@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCollection, productsByCollection } from "@/lib/catalog";
 import CollectionFilters from "@/components/CollectionFilters";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import MateCollectionGrid from "@/components/MateCollectionGrid";
 
 export function generateStaticParams() {
   return [
@@ -52,9 +53,19 @@ export default async function CollectionPage({
   );
   const items = productsByCollection(handle);
 
+  // MATE exact replica for new-arrivals
+  if (handle === "new-arrivals") {
+    return (
+      <div className="bg-[#fdfbf5]">
+        {/* MATE has no hero, just grid with top bar */}
+        <MateCollectionGrid />
+      </div>
+    );
+  }
+
   return (
     <>
-      {/* hero */}
+      {/* hero - keep for other collections */}
       <section className="relative h-[46svh] min-h-[340px] overflow-hidden bg-bone">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -80,9 +91,11 @@ export default async function CollectionPage({
         </div>
       </section>
 
-      {/* grid + filters */}
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-10 lg:py-14">
-        <CollectionFilters products={items} />
+      {/* grid + filters - now using MATE style cards */}
+      <div className="bg-[#fdfbf5]">
+        <div className="mx-auto max-w-[1600px] px-3 py-10 sm:px-6 lg:px-8 lg:py-14">
+          <CollectionFilters products={items} />
+        </div>
       </div>
     </>
   );

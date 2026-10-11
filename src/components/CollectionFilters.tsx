@@ -23,6 +23,7 @@ export default function CollectionFilters({ products }: { products: Product[] })
   const [bands, setBands] = useState<string[]>([]);
   const [inStockOnly, setInStockOnly] = useState(false);
   const [sort, setSort] = useState<Sort>("featured");
+  const [showFilters, setShowFilters] = useState(false);
 
   const allSizes = useMemo(
     () => Array.from(new Set(products.flatMap((p) => p.sizes))),
@@ -42,7 +43,6 @@ export default function CollectionFilters({ products }: { products: Product[] })
 
   const visible = useMemo(() => {
     let out = products.filter((p) => {
-      // sizes that actually have units on hand
       const available = p.sizes.filter((sz) => (p.stock[sz] ?? 0) > 0);
       if (inStockOnly && available.length === 0) return false;
       if (sizes.length && !sizes.some((s) => available.includes(s))) return false;
@@ -74,11 +74,21 @@ export default function CollectionFilters({ products }: { products: Product[] })
     sizes.length + colors.length + bands.length > 0 || inStockOnly;
 
   return (
-    <div className="lg:grid lg:grid-cols-[220px_1fr] lg:gap-10">
-      {/* sidebar */}
-      <aside className="mb-8 lg:mb-0">
-        <div className="flex items-center justify-between">
-          <h2 className="eyebrow text-mist">{t("title")}</h2>
+    <div>
+      {/* MATE top bar */}
+      <div className="flex items-center justify-between border-b border-black/5 py-4 text-[11px] tracking-[0.08em] uppercase">
+        <div className="flex items-center gap-4">
+          <button
+            type="button"
+            onClick={() => setShowFilters((v) => !v)}
+            className="flex items-center gap-2 text-black hover:opacity-70 lg:hidden"
+          >
+            <span className="h-[10px] w-[12px] border border-black/20" />
+            Filter
+          </button>
+          <p className="text-black/70">
+            {t("count", { count: visible.length })}
+          </p>
           {dirty && (
             <button
               type="button"
@@ -88,127 +98,149 @@ export default function CollectionFilters({ products }: { products: Product[] })
                 setBands([]);
                 setInStockOnly(false);
               }}
-              className="text-[12px] text-graphite underline underline-offset-4"
+              className="text-[11px] text-black/50 underline underline-offset-4 hover:text-black"
             >
               {t("clear")}
             </button>
           )}
         </div>
-
-        <fieldset className="mt-6">
-          <legend className="mb-3 text-[13px]">{t("size")}</legend>
-          <div className="flex flex-wrap gap-2">
-            {allSizes.map((s) => {
-              const anyInStock = products.some((p) => (p.stock[s] ?? 0) > 0);
-              return (
-                <button
-                  key={s}
-                  type="button"
-                  disabled={!anyInStock}
-                  aria-pressed={sizes.includes(s)}
-                  onClick={() => toggle(sizes, setSizes, s)}
-                  className={[
-                    "min-w-10 border px-2.5 py-1.5 text-[12px] transition-colors",
-                    !anyInStock
-                      ? "cursor-not-allowed border-line text-mist line-through"
-                      : sizes.includes(s)
-                        ? "border-ink bg-ink text-paper"
-                        : "border-line hover:border-ink",
-                  ].join(" ")}
-                >
-                  {s}
-                </button>
-              );
-            })}
-          </div>
-        </fieldset>
-
-        <fieldset className="mt-7">
-          <legend className="mb-3 text-[13px]">{t("color")}</legend>
-          <div className="flex flex-wrap gap-2">
-            {allColors.map((c) => (
-              <button
-                key={c.name}
-                type="button"
-                title={tc(c.name as never)}
-                aria-label={tc(c.name as never)}
-                aria-pressed={colors.includes(c.name)}
-                onClick={() => toggle(colors, setColors, c.name)}
-                className={[
-                  "h-5 w-5 rounded-full border transition-all",
-                  colors.includes(c.name)
-                    ? "border-ink ring-1 ring-ink ring-offset-1"
-                    : "border-line hover:border-graphite",
-                ].join(" ")}
-                style={{ background: c.hex }}
-              />
+        <label className="flex items-center gap-2 text-[11px] uppercase tracking-[0.08em]">
+          <span className="hidden text-black/50 sm:inline">{t("sort")}</span>
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value as Sort)}
+            className="bg-transparent text-[11px] uppercase tracking-[0.08em] outline-none"
+          >
+            {SORTS.map((s) => (
+              <option key={s} value={s}>
+                {t(`sortOptions.${s}` as never)}
+              </option>
             ))}
-          </div>
-        </fieldset>
-
-        <label className="mt-7 flex cursor-pointer items-center gap-2.5 border-y border-line py-4 text-[13px]">
-          <input
-            type="checkbox"
-            checked={inStockOnly}
-            onChange={() => setInStockOnly((v) => !v)}
-            className="h-3.5 w-3.5 accent-ink"
-          />
-          {t("inStock")}
+          </select>
         </label>
+      </div>
 
-        <fieldset className="mt-7">
-          <legend className="mb-3 text-[13px]">{t("price")}</legend>
-          <ul className="space-y-2">
-            {PRICE_BANDS.map((b) => (
-              <li key={b.id}>
-                <label className="flex cursor-pointer items-center gap-2.5 text-[13px]">
-                  <input
-                    type="checkbox"
-                    checked={bands.includes(b.id)}
-                    onChange={() => toggle(bands, setBands, b.id)}
-                    className="h-3.5 w-3.5 accent-ink"
+      <div className="mt-6 lg:grid lg:grid-cols-[200px_1fr] lg:gap-8">
+        {/* sidebar - MATE minimal */}
+        <aside className={`${showFilters ? "block" : "hidden"} mb-8 lg:block lg:mb-0`}>
+          <div className="space-y-8">
+            <fieldset>
+              <legend className="mb-3 text-[11px] uppercase tracking-[0.08em] text-black">
+                {t("size")}
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {allSizes.map((s) => {
+                  const anyInStock = products.some((p) => (p.stock[s] ?? 0) > 0);
+                  return (
+                    <button
+                      key={s}
+                      type="button"
+                      disabled={!anyInStock}
+                      aria-pressed={sizes.includes(s)}
+                      onClick={() => toggle(sizes, setSizes, s)}
+                      className={[
+                        "min-w-9 border px-2 py-1 text-[11px] uppercase tracking-[0.05em] transition-colors",
+                        !anyInStock
+                          ? "cursor-not-allowed border-black/10 text-black/20 line-through"
+                          : sizes.includes(s)
+                            ? "border-black bg-black text-white"
+                            : "border-black/10 hover:border-black",
+                      ].join(" ")}
+                    >
+                      {s}
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend className="mb-3 text-[11px] uppercase tracking-[0.08em] text-black">
+                {t("color")}
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {allColors.map((c) => (
+                  <button
+                    key={c.name}
+                    type="button"
+                    title={tc(c.name as never)}
+                    aria-label={tc(c.name as never)}
+                    aria-pressed={colors.includes(c.name)}
+                    onClick={() => toggle(colors, setColors, c.name)}
+                    className={[
+                      "h-[10px] w-[28px] border transition-all",
+                      colors.includes(c.name)
+                        ? "border-black ring-1 ring-black ring-offset-1"
+                        : "border-black/10 hover:border-black/30",
+                    ].join(" ")}
+                    style={{ background: c.hex }}
                   />
-                  {t("under", { amount: b.amount })}
-                </label>
-              </li>
-            ))}
-          </ul>
-        </fieldset>
-      </aside>
+                ))}
+              </div>
+            </fieldset>
 
-      {/* results */}
-      <div>
-        <div className="mb-6 flex items-center justify-between border-b border-line pb-4">
-          <p className="text-[13px] text-mist">
-            {t("count", { count: visible.length })}
-          </p>
-          <label className="flex items-center gap-2 text-[13px]">
-            <span className="hidden text-mist sm:inline">{t("sort")}</span>
-            <select
-              value={sort}
-              onChange={(e) => setSort(e.target.value as Sort)}
-              className="border border-line bg-paper px-3 py-2 text-[13px] outline-none focus:border-ink"
-            >
-              {SORTS.map((s) => (
-                <option key={s} value={s}>
-                  {t(`sortOptions.${s}` as never)}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
+            <label className="flex cursor-pointer items-center gap-2 text-[11px] uppercase tracking-[0.05em]">
+              <input
+                type="checkbox"
+                checked={inStockOnly}
+                onChange={() => setInStockOnly((v) => !v)}
+                className="h-3 w-3 accent-black"
+              />
+              {t("inStock")}
+            </label>
 
-        {visible.length === 0 ? (
-          <p className="py-20 text-center text-[14px] text-mist">
-            {t("noResults")}
-          </p>
-        ) : (
-          <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 lg:grid-cols-3">
-            {visible.map((p, i) => (
-              <ProductCard key={p.id} product={p} priority={i < 3} />
-            ))}
+            <fieldset>
+              <legend className="mb-3 text-[11px] uppercase tracking-[0.08em] text-black">
+                {t("price")}
+              </legend>
+              <ul className="space-y-2">
+                {PRICE_BANDS.map((b) => (
+                  <li key={b.id}>
+                    <label className="flex cursor-pointer items-center gap-2 text-[11px] uppercase tracking-[0.05em]">
+                      <input
+                        type="checkbox"
+                        checked={bands.includes(b.id)}
+                        onChange={() => toggle(bands, setBands, b.id)}
+                        className="h-3 w-3 accent-black"
+                      />
+                      {t("under", { amount: b.amount })}
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </fieldset>
           </div>
-        )}
+        </aside>
+
+        {/* results - 4 columns like MATE */}
+        <div>
+          {visible.length === 0 ? (
+            <p className="py-20 text-center text-[12px] text-black/50">
+              {t("noResults")}
+            </p>
+          ) : (
+            <div className="grid grid-cols-2 gap-x-2 gap-y-8 sm:gap-x-3 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-4 lg:gap-y-12">
+              {visible.map((p, i) => (
+                <ProductCard key={p.id} product={p} priority={i < 4} />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Get 10% Off promo like MATE */}
+      <div className="fixed bottom-3 left-3 z-40 flex items-center gap-2 bg-[#1a1a1a] px-3 py-2 text-[11px] text-white shadow-lg">
+        <span>Get 10% Off</span>
+        <button
+          type="button"
+          className="ml-2 text-white/60 hover:text-white"
+          aria-label="Dismiss"
+          onClick={(e) => {
+            (e.currentTarget.parentElement as HTMLElement).style.display = "none";
+          }}
+        >
+          ×
+        </button>
       </div>
     </div>
   );
