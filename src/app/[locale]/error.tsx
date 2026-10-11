@@ -26,8 +26,8 @@ export default function LocaleError({
         This page hit an unexpected error
       </h1>
       <p className="text-[14px] text-graphite">
-        It's usually fixed by reloading — a fresh version of the site may have
-        just been published.
+        Reloading usually fixes it — a fresh version of the site may have just
+        been published.
       </p>
       <div className="flex gap-3">
         <button
