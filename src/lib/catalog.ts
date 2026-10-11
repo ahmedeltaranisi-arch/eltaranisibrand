@@ -168,7 +168,7 @@ const rows: Row[] = [
     titleKey: "p.croppedSweatpant.title",
     price: 128,
     compareAt: 148,
-    image: "/img/p-sweatpant.jpg",
+    image: "/img/knit-crouch.jpg",
     colors: ["mocha", "pine", "jet", "heather", "bone"],
     collections: ["loungewear", "bottoms", "sale"],
     sizes: APPAREL,
