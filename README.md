@@ -16,7 +16,7 @@ pages, 404, and full English/Arabic (RTL) localisation.
 | Fonts          | Inter (Latin) + Cairo (Arabic) via `next/font`      |
 | Cart           | React context + `useSyncExternalStore` over localStorage |
 | Data           | Static TS catalog (`src/lib/catalog.ts`) — 12 styles, 126 colourway routes |
-| Imagery        | 20 generated photos in `public/img/` — 2 angles per product |
+| Imagery        | Real photography (Pexels, free commercial licence) — 2 angles per product |
 
 ## Commands
 
@@ -89,6 +89,12 @@ public/img/             20 generated photos: p-* (front) + a-* (alt angle)
   at-rules untouched, so Tailwind v4 `@utility` blocks ship as literal text
   and the class names never exist. Component classes live in `globals.css` as
   plain CSS instead.
+### Photography licensing
+Product/hero imagery is sourced from **Pexels** (free for commercial use, no
+attribution required). The files in `public/img/` are downloads of Pexels
+photos. If you swap in your own shoot, replace them — and don't reuse another
+brand's campaign photography.
+
 - **`@keyframes` must be top-level.** Nesting `@keyframes marquee-rtl` inside
   `html[dir="rtl"]` makes the CSS parser bail on the whole block, which
   silently kills the RTL marquee animation. Keyframes now sit at the top level

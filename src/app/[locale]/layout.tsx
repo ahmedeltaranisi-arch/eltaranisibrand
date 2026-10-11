@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Inter, Cairo } from "next/font/google";
+import { Inter, Cairo, Fraunces } from "next/font/google";
 
 import { routing } from "@/i18n/routing";
 import { CartProvider } from "@/context/cart";
@@ -24,6 +24,14 @@ const inter = Inter({
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
   variable: "--font-cairo",
+  display: "swap",
+});
+
+/* editorial serif used for the large display headings */
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -57,7 +65,7 @@ export default async function LocaleRootLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${inter.variable} ${cairo.variable} h-full antialiased`}
+      className={`${inter.variable} ${cairo.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-paper text-ink">
         <NextIntlClientProvider>

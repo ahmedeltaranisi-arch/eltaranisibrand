@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Brand palette ---- */
-  --color-paper: #ffffff;
-  --color-bone: #f4f1ea;
-  --color-sand: #e8e2d8;
+  /* ---- Brand palette (matched to the reference's warm neutrals) ---- */
+  --color-paper: #f9f8f2; /* cream  */
+  --color-bone: #e5e2d5;  /* beige  */
+  --color-sand: #dbd7c8;
   --color-clay: #b98a6e;
   --color-terra: #a4603f;
   --color-sage: #c7cfc0;
   --color-pine: #5f6f5c;
-  --color-ink: #1b1b1a;
-  --color-graphite: #4a4a48;
-  --color-mist: #8b8b86;
-  --color-line: #e2ded6;
-  --color-line-dark: #1b1b1a;
+  --color-ink: #000000;
+  --color-graphite: #3e4a51;
+  --color-mist: #6d7a82;  /* slate  */
+  --color-line: #e3e0d3;
+  --color-line-dark: #000000;
 
   /* ---- Type ---- */
   --font-sans: var(--font-inter), var(--font-cairo), ui-sans-serif, system-ui,
     sans-serif;
-  --font-display: var(--font-inter), var(--font-cairo), ui-serif, Georgia,
+  --font-display: var(--font-fraunces), var(--font-cairo), ui-serif, Georgia,
     serif;
 
   --text-2xs: 0.6875rem;
@@ -88,6 +88,12 @@ html[dir="rtl"] .animate-marquee {
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
   }
 
   ::selection {
