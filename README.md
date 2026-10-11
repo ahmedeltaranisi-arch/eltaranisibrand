@@ -15,14 +15,14 @@ pages, 404, and full English/Arabic (RTL) localisation.
 | i18n           | next-intl 4.14 — `/en` + `/ar`, `dir="rtl"`         |
 | Fonts          | Inter (Latin) + Cairo (Arabic) via `next/font`      |
 | Cart           | React context + `useSyncExternalStore` over localStorage |
-| Data           | Static TS catalog (`src/lib/catalog.ts`) — 12 styles, 126 colourway routes |
-| Imagery        | Real photography (Pexels, free commercial licence) — 2 angles per product |
+| Data           | Static TS catalog (`src/lib/catalog.ts`) — 12 styles, 63 colourway routes |
+| Imagery        | The brand's own shoot (`brand.zip`, 78 frames) — 2 angles per product |
 
 ## Commands
 
 ```bash
 npm run dev          # http://localhost:3000
-npm run build        # production build (155 static routes)
+npm run build        # production build (every route statically generated)
 npm run lint         # eslint
 npx tsc --noEmit     # typecheck
 npm run check:i18n   # en/ar key parity + {placeholder} parity
@@ -34,7 +34,7 @@ npm run verify       # all of the above, in order
 ```
 /                         -> 307 redirect to /en (or the cookie locale)
 /[locale]                 home: hero slider, marquee, statement, editorial,
-                          tabbed rails, values, reviews, gallery
+                          tabbed rails, values, reviews
 /[locale]/collections     collection index
 /[locale]/collections/[handle]
                           hero + client-side filters (size / colour / price / sort)
@@ -61,11 +61,12 @@ src/
                         hero slider, marquee, product card/rail/tabs,
                         filters, buy box, review carousel, newsletter,
                         locale switcher, breadcrumbs, reveal, icons
-messages/en.json        283 keys
-messages/ar.json        283 keys (same shape, RTL copy)
+messages/en.json        396 keys
+messages/ar.json        396 keys (same shape, RTL copy)
 scripts/check-i18n.mjs  key + placeholder parity check
-public/img/             20 generated photos: p-* (front) + a-* (alt angle)
-                        per product, plus hero + fabric macro
+public/img/shots/       the brand shoot: <style>-<tone>-<n>.jpg, where 1 is
+                        the front frame, 2 the hover pose and 3+ extra
+                        angles; public/img/rev-*.jpg are review avatars
 ```
 
 ## Interactions worth knowing
@@ -89,11 +90,16 @@ public/img/             20 generated photos: p-* (front) + a-* (alt angle)
   at-rules untouched, so Tailwind v4 `@utility` blocks ship as literal text
   and the class names never exist. Component classes live in `globals.css` as
   plain CSS instead.
-### Photography licensing
-Product/hero imagery is sourced from **Pexels** (free for commercial use, no
-attribution required). The files in `public/img/` are downloads of Pexels
-photos. If you swap in your own shoot, replace them — and don't reuse another
-brand's campaign photography.
+### Photography
+Everything in `public/img/` comes from the brand's own shoot (`brand.zip`). The
+archive held ~194 files — mostly the same frame re-exported at several sizes —
+so the build keeps one copy of each, re-encoded to web weight. Frames live in
+`public/img/shots/<style>-<tone>-<n>.jpg`, and `SET_FRAMES` in
+`src/lib/catalog.ts` records how many each set holds: a tone the shoot captured
+once renders a single image rather than a missing one. Every colourway resolves
+its own frames through `colorwayFrames(product, tone)`, so picking a swatch
+swaps the model photo *and* the product gallery. The tone hexes were measured
+from the archive colour tiles, never by eye.
 
 - **`@keyframes` must be top-level.** Nesting `@keyframes marquee-rtl` inside
   `html[dir="rtl"]` makes the CSS parser bail on the whole block, which
@@ -106,9 +112,8 @@ brand's campaign photography.
 
 ## Before this goes anywhere public
 
-Everything here is an original build: the copy was written for this project,
-the photography is generated placeholder imagery, and the wordmark in
-`src/components/Wordmark.tsx` is a placeholder lockup. **Replace the brand
-name, wordmark and imagery with your own before deploying** — do not ship it
-under another company's name, logo or photos.
+The photography is now the client's own shoot. The **copy, the product data and
+the wordmark in `src/components/Wordmark.tsx` are still original placeholder
+work** — replace the brand name, wordmark and product copy with your own before
+deploying, and don't ship it under another company's name or logo.
 # eltaranisibrand

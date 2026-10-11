@@ -4,6 +4,12 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { ChevronIcon, StarIcon } from "./icons";
 
+/**
+ * Reviewer portraits come from the brand shoot (real people, no AI faces), so
+ * the face above the stars changes with the quote it belongs to.
+ */
+const AVATARS = ["/img/rev-a.jpg", "/img/rev-b.jpg", "/img/rev-c.jpg"];
+
 export default function ReviewCarousel({ count }: { count: number }) {
   const t = useTranslations("home.reviews");
   const [index, setIndex] = useState(0);
@@ -18,6 +24,19 @@ export default function ReviewCarousel({ count }: { count: number }) {
 
   return (
     <div className="mx-auto max-w-3xl text-center">
+      {/* the face that belongs to the quote on screen */}
+      <div className="mb-7 flex justify-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          key={`a-${index}`}
+          src={AVATARS[index % AVATARS.length]}
+          alt=""
+          aria-hidden
+          loading="lazy"
+          className="animate-fade-up h-16 w-16 rounded-full border border-line object-cover sm:h-[72px] sm:w-[72px]"
+        />
+      </div>
+
       <div className="mb-5 flex justify-center gap-1 text-ink">
         {Array.from({ length: 5 }, (_, i) => (
           <StarIcon key={i} className="h-4 w-4" />

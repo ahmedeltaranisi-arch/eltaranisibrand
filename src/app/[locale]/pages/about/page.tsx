@@ -22,11 +22,11 @@ export default async function AboutPage({
       <section className="relative h-[62svh] min-h-[420px] overflow-hidden bg-bone">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/img/hero-still-life.jpg"
+          src="/img/shots/legging-jet-1.jpg"
           alt=""
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-ink/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/25 to-ink/5" />
         <div className="absolute inset-x-0 bottom-0 px-4 pb-12 text-paper sm:px-6 lg:px-10">
           <p className="eyebrow mb-4 opacity-85">{t("hero.eyebrow")}</p>
           <h1 className="max-w-2xl text-[32px] leading-[1.1] font-light sm:text-[50px]">
@@ -98,7 +98,7 @@ export default async function AboutPage({
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/editorial-fabric.jpg"
+            src="/img/shots/crossover-jet-3.jpg"
             alt=""
             loading="lazy"
             className="aspect-4/3 w-full bg-bone object-cover"

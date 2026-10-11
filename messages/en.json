@@ -311,21 +311,21 @@
           "title": "The autumn capsule",
           "cta": "Shop new arrivals",
           "href": "/collections/new-arrivals",
-          "image": "/img/p-ls-top.jpg"
+          "image": "/img/shots/lst-jet-1.jpg"
         },
         {
           "eyebrow": "Organic fleece",
           "title": "Softness, restocked",
           "cta": "Shop loungewear",
           "href": "/collections/loungewear",
-          "image": "/img/knit-beige.jpg"
+          "image": "/img/shots/polo-bone-1.jpg"
         },
         {
           "eyebrow": "Every layer",
           "title": "Built for real life",
           "cta": "Shop best sellers",
           "href": "/collections/best-sellers",
-          "image": "/img/hero-real-life.jpg"
+          "image": "/img/shots/legging-jet-1.jpg"
         }
       ],
       "prev": "Previous slide",
@@ -393,7 +393,7 @@
         },
         {
           "quote": "The fleece is the first hoodie I've owned that still looks new after two winters.",
-          "name": "Marcus T.",
+          "name": "Maya T.",
           "location": "Verified buyer"
         },
         {
@@ -405,11 +405,6 @@
     },
     "press": {
       "title": "As seen in"
-    },
-    "instagram": {
-      "title": "Worn out in the world",
-      "body": "Tag us and we'll reshare our favourites.",
-      "handle": "@matethelabel"
     },
     "fig": {
       "eyebrow": "New activewear",
@@ -527,7 +522,7 @@
     "reviews": "Reviews",
     "reviewNote": "Ratings are collected from verified purchases.",
     "writeReview": "Write a review",
-    "fitNote": "True to size. Between sizes? Size down for a closer fit, up for relaxed.",
+    "fitNote": "True to size — most people take their usual size.",
     "details": {
       "fit": "Fit",
       "weight": "Fabric weight",
@@ -553,7 +548,14 @@
         "title": "Softest thing I own",
         "body": "No pilling after six months of weekly washes. Buying another in a different colour."
       }
-    ]
+    ],
+    "modelNote": "Model is 5'9\" and wears a size {size}.",
+    "chartTitle": "Size guide",
+    "chartIntro": "Body measurements, in inches. Between two sizes? Take the smaller one for a close fit.",
+    "chartColSize": "Size",
+    "chartColBust": "Bust",
+    "chartColWaist": "Waist",
+    "chartColHip": "Hip"
   },
   "about": {
     "hero": {
@@ -718,9 +720,9 @@
   },
   "p": {
     "sportsBra": {
-      "title": "Organic Jersey Sports Bra",
-      "blurb": "Medium support, zero hardware",
-      "description": "A seamless-feel bra cut from our organic jersey with a wide underband and a bonded neckline that stays put through a full workout. No wires, no scratchy tags, no digging straps.",
+      "title": "Organic Stretch Racer Bra",
+      "blurb": "Racer back, medium support",
+      "description": "Our racer-back bra in organic stretch jersey: a wide self-fabric underband, a scooped racer front and straps that never dig in. It is the layer under everything else in the drawer.",
       "material": "92% certified organic cotton, 8% elastane. Machine wash cold, lay flat to dry.",
       "care": "Cold wash · No softener · Line dry"
     },
@@ -780,11 +782,18 @@
       "material": "92% certified organic cotton, 8% elastane. Hand wash or cold machine wash, lay flat to dry.",
       "care": "Cold wash · Lay flat"
     },
-    "croppedSweatpant": {
-      "title": "Organic Fleece Cropped Sweatpant",
-      "blurb": "Cropped, wide leg",
-      "description": "The relaxed sweatpant, cropped to hit just below the ankle. Same brushed fleece, same flat drawcord waist, slightly shorter for warmer days.",
-      "material": "100% certified organic cotton fleece, 400gsm. Machine wash cold, tumble low.",
+    "bikerShort": {
+      "title": "Organic Stretch Biker Short",
+      "blurb": "Mid-thigh, squat-proof",
+      "description": "The crossover legging's fabric in a 4-inch biker short. A wide high-rise waistband that stays put and a hem that doesn't ride up — it works under a dress as easily as it does on the bike.",
+      "material": "92% certified organic cotton, 8% elastane. Machine wash cold, lay flat to dry.",
+      "care": "Cold wash · Line dry"
+    },
+    "pimaTank": {
+      "title": "Organic Pima Layering Tank",
+      "blurb": "Racer back, second-skin rib",
+      "description": "A close-cut layering tank in long-staple Pima cotton, with a racer back and a scooped neckline that sits flat under everything else. The piece that makes the rest of the wardrobe work.",
+      "material": "100% certified organic Pima cotton, 180gsm. Machine wash cold, tumble low.",
       "care": "Cold wash · Tumble low"
     },
     "socks3": {
@@ -793,28 +802,26 @@
       "description": "A three-pack of mid-weight crew socks in combed organic cotton with a cushioned footbed and a ribbed cuff that doesn't slide down.",
       "material": "85% certified organic cotton, 12% nylon, 3% elastane. Machine wash warm, tumble low.",
       "care": "Warm wash · Tumble low"
-    },
-    "halfZip": {
-      "title": "Organic Waffle Collar Half-Zip",
-      "blurb": "Waffle knit, stand collar",
-      "description": "A textured waffle half-zip with a stand collar and a short metal zip. Packs small, dries fast, and looks better after a few washes than it did new.",
-      "material": "100% certified organic cotton waffle knit. Machine wash cold, line dry.",
-      "care": "Cold wash · Line dry"
     }
   },
   "colors": {
-    "clay": "Clay",
-    "terra": "Terra",
-    "midnight": "Midnight",
     "jet": "Jet Black",
-    "bone": "Bone",
-    "sage": "Sage",
-    "pine": "Heather Pine",
+    "midnight": "Midnight",
+    "nori": "Nori",
+    "balsam": "Balsam",
     "mocha": "Mocha",
+    "espresso": "Espresso",
+    "sienna": "Sienna",
+    "sand": "Sand",
+    "bone": "Bone",
+    "oat": "Heather Oat",
     "heather": "Heather Grey",
-    "cove": "Cove",
-    "ochre": "Ochre",
-    "mulberry": "Mulberry"
+    "iris": "Iris",
+    "fig": "Fig",
+    "mulberry": "Mulberry",
+    "wisteria": "Wisteria",
+    "peppercorn": "Peppercorn",
+    "pebble": "Pebble"
   },
   "checkout": {
     "title": "Checkout",

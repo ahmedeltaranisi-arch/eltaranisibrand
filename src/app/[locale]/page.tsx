@@ -10,16 +10,6 @@ import { ArrowIcon, LeafIcon } from "@/components/icons";
 
 const VALUE_COUNT = 4;
 const REVIEW_COUNT = 3;
-const GALLERY = [
-  "/img/hero-model.jpg",
-  "/img/p-midi-legging.jpg",
-  "/img/editorial-fabric.jpg",
-  "/img/p-zip-hoodie.jpg",
-  "/img/hero-still-life.jpg",
-  "/img/p-scoop-bra.jpg",
-  "/img/p-polo.jpg",
-];
-
 export default async function HomePage({
   params,
 }: {
@@ -40,9 +30,9 @@ export default async function HomePage({
   }));
 
   const cats = [
-    { img: "/img/p-sports-bra.jpg", count: productsByCollection("activewear").length },
-    { img: "/img/p-high-neck-tank.jpg", count: productsByCollection("all").length },
-    { img: "/img/p-zip-hoodie.jpg", count: productsByCollection("loungewear").length },
+    { img: "/img/shots/bra-fig-1.jpg", count: productsByCollection("activewear").length },
+    { img: "/img/shots/tank-mocha-1.jpg", count: productsByCollection("all").length },
+    { img: "/img/shots/hoodie-nori-1.jpg", count: productsByCollection("loungewear").length },
   ];
 
   const groups = [
@@ -94,7 +84,7 @@ export default async function HomePage({
         <div className="relative min-h-[440px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/hero-model.jpg"
+            src="/img/shots/bra-fig-1.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -112,7 +102,7 @@ export default async function HomePage({
         <div className="relative min-h-[420px] lg:min-h-[560px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/fig-closeup.jpg"
+            src="/img/shots/bra-fig-4.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -121,7 +111,7 @@ export default async function HomePage({
         <div className="relative min-h-[420px] lg:min-h-[560px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/fig-full.jpg"
+            src="/img/shots/bra-fig-3.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -146,7 +136,7 @@ export default async function HomePage({
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/a-high-neck-tank.jpg"
+            src="/img/shots/tank-jet-1.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -227,7 +217,7 @@ export default async function HomePage({
           <div className="mt-14 flex justify-center lg:mt-20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/img/hero-still-life.jpg"
+              src="/img/shots/bra-bone-1.jpg"
               alt=""
               loading="lazy"
               className="w-[62%] max-w-[300px] object-cover"
@@ -237,7 +227,7 @@ export default async function HomePage({
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/getaway-model.jpg"
+            src="/img/shots/legging-fig-2.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -250,7 +240,7 @@ export default async function HomePage({
         <div className="relative mx-auto w-full max-w-[420px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/dresscode-model.jpg"
+            src="/img/shots/polo-bone-1.jpg"
             alt=""
             loading="lazy"
             className="aspect-3/4 w-full object-cover object-top"
@@ -289,7 +279,7 @@ export default async function HomePage({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={k === "one" ? "/img/editorial-fabric.jpg" : "/img/p-high-neck-tank.jpg"}
+              src={k === "one" ? "/img/shots/hoodie-nori-1.jpg" : "/img/shots/tank-mocha-1.jpg"}
               alt=""
               loading="lazy"
               className="aspect-4/3 w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"
@@ -346,34 +336,6 @@ export default async function HomePage({
         </h2>
         <ReviewCarousel count={REVIEW_COUNT} />
       </Reveal>
-
-      {/* community gallery */}
-      <section className="border-t border-line">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-10">
-          <div className="mb-8 text-center">
-            <h2 className="text-[22px] font-light sm:text-[28px]">
-              {t("instagram.title")}
-            </h2>
-            <p className="mt-2 text-[13px] text-graphite">
-              {t("instagram.body")}{" "}
-              <span className="text-ink">{t("instagram.handle")}</span>
-            </p>
-          </div>
-          <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
-            {GALLERY.map((src, i) => (
-              <li key={src + i} className="overflow-hidden bg-bone">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt=""
-                  loading="lazy"
-                  className="aspect-square w-full object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
     </>
   );
 }
