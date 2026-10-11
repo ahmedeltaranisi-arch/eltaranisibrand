@@ -1,0 +1,796 @@
+{
+  "meta": {
+    "title": "MATE the Label — Organic Everyday Essentials",
+    "description": "Everyday essentials cut from certified organic and natural fibres. Breathable, undyed-where-possible, made to be worn every day.",
+    "ogTitle": "MATE the Label",
+    "currency": "USD"
+  },
+  "common": {
+    "skip": "Skip to content",
+    "shopNow": "Shop now",
+    "ourStory": "Our story",
+    "viewAll": "View all",
+    "loading": "Loading",
+    "close": "Close",
+    "currency": "${amount}",
+    "from": "From",
+    "sale": "Sale",
+    "new": "New",
+    "bestSeller": "Best seller",
+    "limited": "Limited run",
+    "outOfStock": "Sold out",
+    "qty": "Qty",
+    "size": "Size",
+    "sizeGuide": "Size guide",
+    "color": "Colour",
+    "colorsAvailable": "{count} colours",
+    "moreColors": "+{count}",
+    "add": "Add",
+    "added": "Added",
+    "reviews": "{count} reviews",
+    "back": "Back",
+    "language": "Language",
+    "english": "English",
+    "arabic": "العربية",
+    "required": "This field is required",
+    "emailInvalid": "Enter a valid email address",
+    "subscribeSuccess": "You're on the list. Thank you.",
+    "soldOut": "Sold out"
+  },
+  "announce": {
+    "items": [
+      {
+        "text": "Complimentary shipping on orders over $200",
+        "href": "/collections/best-sellers",
+        "cta": "Shop now"
+      },
+      {
+        "text": "Save up to 20% when you bundle three or more",
+        "href": "/collections/sale",
+        "cta": "Shop now"
+      },
+      {
+        "text": "60-day easy returns on every order",
+        "href": "/pages/contact",
+        "cta": "Learn more"
+      }
+    ]
+  },
+  "nav": {
+    "shop": "Shop",
+    "loungewear": "Loungewear",
+    "activewear": "Activewear",
+    "bundles": "Bundles",
+    "about": "About",
+    "contact": "Get in touch",
+    "account": "Account",
+    "search": "Search",
+    "cart": "Cart",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "wishlist": "Wishlist"
+  },
+  "menu": {
+    "featured": {
+      "title": "Featured",
+      "newArrivals": "New arrivals",
+      "bestSellers": "Best sellers",
+      "bundles": "Bundle & save",
+      "sale": "Up to 30% off"
+    },
+    "category": {
+      "title": "Shop by category"
+    },
+    "edit": {
+      "title": "Edits",
+      "travel": "The travel edit",
+      "layering": "The layering edit",
+      "weekend": "The weekend edit",
+      "everyday": "The everyday edit"
+    },
+    "featuredCard": {
+      "one": {
+        "label": "The autumn capsule"
+      },
+      "two": {
+        "label": "Fleece, restocked"
+      }
+    }
+  },
+  "search": {
+    "placeholder": "Search for products, colours, collections",
+    "suggestions": "Suggestions",
+    "products": "Products",
+    "noResults": "Nothing matched “{query}”. Try leggings, fleece or socks.",
+    "resultsFor": "Results for “{query}”",
+    "recentlyViewed": "Popular right now"
+  },
+  "cart": {
+    "title": "Your bag",
+    "empty": "Your bag is empty",
+    "emptyCta": "Start with the best sellers",
+    "subtotal": "Subtotal",
+    "shippingNote": "Shipping and taxes calculated at checkout.",
+    "freeShipping": "You've unlocked complimentary shipping",
+    "awayFromFree": "You're ${amount} away from complimentary shipping",
+    "checkout": "Checkout",
+    "continue": "Continue shopping",
+    "remove": "Remove",
+    "promo": "Promo code",
+    "apply": "Apply"
+  },
+  "footer": {
+    "newsletterTitle": "First look, first access",
+    "newsletterBody": "New drops, restocks and the occasional note about how our clothes are made. No noise.",
+    "emailPlaceholder": "Email address",
+    "subscribe": "Subscribe",
+    "columns": {
+      "shop": {
+        "title": "Shop",
+        "links": [
+          {
+            "label": "New arrivals",
+            "href": "/collections/new-arrivals"
+          },
+          {
+            "label": "Best sellers",
+            "href": "/collections/best-sellers"
+          },
+          {
+            "label": "Tops",
+            "href": "/collections/tops"
+          },
+          {
+            "label": "Bottoms",
+            "href": "/collections/bottoms"
+          },
+          {
+            "label": "Loungewear",
+            "href": "/collections/loungewear"
+          },
+          {
+            "label": "Activewear",
+            "href": "/collections/activewear"
+          },
+          {
+            "label": "Accessories",
+            "href": "/collections/accessories"
+          },
+          {
+            "label": "Sale",
+            "href": "/collections/sale"
+          }
+        ]
+      },
+      "help": {
+        "title": "Help",
+        "links": [
+          {
+            "label": "Shipping",
+            "href": "/pages/contact"
+          },
+          {
+            "label": "Returns & exchanges",
+            "href": "/pages/contact"
+          },
+          {
+            "label": "Size guide",
+            "href": "/pages/contact"
+          },
+          {
+            "label": "Care instructions",
+            "href": "/pages/contact"
+          },
+          {
+            "label": "FAQ",
+            "href": "/pages/contact"
+          },
+          {
+            "label": "Contact us",
+            "href": "/pages/contact"
+          }
+        ]
+      },
+      "about": {
+        "title": "About",
+        "links": [
+          {
+            "label": "Our story",
+            "href": "/pages/about"
+          },
+          {
+            "label": "Materials",
+            "href": "/pages/about#materials"
+          },
+          {
+            "label": "Factories",
+            "href": "/pages/about#factories"
+          },
+          {
+            "label": "Responsibility",
+            "href": "/pages/about#responsibility"
+          },
+          {
+            "label": "Journal",
+            "href": "/pages/about"
+          }
+        ]
+      }
+    },
+    "legal": {
+      "rights": "All rights reserved.",
+      "privacy": "Privacy policy",
+      "terms": "Terms of service",
+      "accessibility": "Accessibility",
+      "doNotSell": "Do not sell or share my personal information"
+    },
+    "payments": "We accept"
+  },
+  "home": {
+    "hero": {
+      "slides": [
+        {
+          "eyebrow": "Autumn 2026",
+          "title": "The autumn capsule",
+          "cta": "Shop new arrivals",
+          "href": "/collections/new-arrivals",
+          "image": "/img/hero-model.jpg"
+        },
+        {
+          "eyebrow": "Organic fleece",
+          "title": "Softness, restocked",
+          "cta": "Shop loungewear",
+          "href": "/collections/loungewear",
+          "image": "/img/p-zip-hoodie.jpg"
+        },
+        {
+          "eyebrow": "Every layer",
+          "title": "Built for real life",
+          "cta": "Shop best sellers",
+          "href": "/collections/best-sellers",
+          "image": "/img/p-ls-top.jpg"
+        }
+      ],
+      "prev": "Previous slide",
+      "next": "Next slide",
+      "pause": "Pause slideshow",
+      "play": "Play slideshow"
+    },
+    "marquee": "Certified organic fibres · Gentle on skin · Tested for harmful substances · Lower-impact dyeing · Responsibly made · ",
+    "statement": {
+      "title": "Intentional essentials you'll never want to take off.",
+      "cta": "Our story",
+      "href": "/pages/about"
+    },
+    "editorial": {
+      "one": {
+        "eyebrow": "The material",
+        "title": "Cotton that was grown, not manufactured",
+        "body": "Long-staple organic cotton, spun and knitted in small batches. It breathes, it stretches, it softens every time you wash it.",
+        "cta": "Read about our materials",
+        "href": "/pages/about#materials"
+      },
+      "two": {
+        "eyebrow": "The fit",
+        "title": "Cut on real bodies, not averages",
+        "body": "Every silhouette is graded from XS to XL and re-fit on three different body types before it ships.",
+        "cta": "Find your size",
+        "href": "/pages/contact"
+      }
+    },
+    "tabs": {
+      "newArrivals": "New arrivals",
+      "bestSellers": "Best sellers",
+      "loungewear": "The fleece edit"
+    },
+    "values": {
+      "title": "Clean from seed to skin",
+      "items": [
+        {
+          "title": "Certified organic",
+          "body": "Grown without synthetic pesticides or GMO seed, on farms we can name."
+        },
+        {
+          "title": "Tested, not trusted",
+          "body": "Every finished fabric is independently screened for restricted substances."
+        },
+        {
+          "title": "Fairly made",
+          "body": "Sewn in audited partner factories with published wage benchmarks."
+        },
+        {
+          "title": "Built to last",
+          "body": "Reinforced seams and colourfast dye, because the greenest garment is the one you keep."
+        }
+      ]
+    },
+    "reviews": {
+      "title": "What people actually say",
+      "prev": "Previous review",
+      "next": "Next review",
+      "items": [
+        {
+          "quote": "I bought one legging to test it and ended up replacing half my drawer within a month.",
+          "name": "Nadia R.",
+          "location": "Verified buyer"
+        },
+        {
+          "quote": "The fleece is the first hoodie I've owned that still looks new after two winters.",
+          "name": "Marcus T.",
+          "location": "Verified buyer"
+        },
+        {
+          "quote": "Nothing itchy, nothing tight, nothing that falls apart in the wash. That's the whole review.",
+          "name": "Yara H.",
+          "location": "Verified buyer"
+        }
+      ]
+    },
+    "press": {
+      "title": "As seen in"
+    },
+    "instagram": {
+      "title": "Worn out in the world",
+      "body": "Tag us and we'll reshare our favourites.",
+      "handle": "@matethelabel"
+    }
+  },
+  "collections": {
+    "indexTitle": "Collections",
+    "indexBody": "Everything we make, grouped the way we'd shop it ourselves.",
+    "filters": {
+      "title": "Filter",
+      "clear": "Clear all",
+      "size": "Size",
+      "color": "Colour",
+      "price": "Price",
+      "sort": "Sort",
+      "sortOptions": {
+        "featured": "Featured",
+        "priceAsc": "Price: low to high",
+        "priceDesc": "Price: high to low",
+        "rating": "Top rated",
+        "newest": "Newest"
+      },
+      "under": "Under ${amount}",
+      "count": "{count} items",
+      "noResults": "No products match those filters.",
+      "inStock": "In stock only",
+      "hideSoldOut": "Hide sold-out sizes"
+    },
+    "newArrivals": {
+      "title": "New arrivals",
+      "description": "The pieces that just landed, in the colours we're wearing most this season."
+    },
+    "bestSellers": {
+      "title": "Best sellers",
+      "description": "The staples our customers reorder, in every size and colourway we keep in stock."
+    },
+    "loungewear": {
+      "title": "Loungewear",
+      "description": "Brushed organic fleece for the hours that belong to you."
+    },
+    "activewear": {
+      "title": "Activewear",
+      "description": "Stretch knits with real recovery — supportive without being restrictive."
+    },
+    "tops": {
+      "title": "Tops",
+      "description": "Layers that work alone in summer and under everything in winter."
+    },
+    "bottoms": {
+      "title": "Bottoms",
+      "description": "Leggings, sweatpants and shorts graded from XS to XL."
+    },
+    "accessories": {
+      "title": "Accessories",
+      "description": "The small things you reach for every single morning."
+    },
+    "sale": {
+      "title": "Sale",
+      "description": "Past-season favourites at a better price. While they last."
+    },
+    "youMayAlsoLike": "You may also like"
+  },
+  "product": {
+    "add": "Add to bag",
+    "added": "Added to bag",
+    "selectSize": "Select a size",
+    "sizeError": "Choose a size first",
+    "description": "Description",
+    "materials": "Materials & care",
+    "shippingReturns": "Shipping & returns",
+    "shippingBody": "Complimentary shipping on orders over $200. Orders placed before 2pm ship the same business day. Returns accepted within 60 days, worn or unworn.",
+    "reviews": "Reviews",
+    "reviewNote": "Ratings are collected from verified purchases.",
+    "writeReview": "Write a review",
+    "fitNote": "True to size. Between sizes? Size down for a closer fit, up for relaxed.",
+    "details": {
+      "fit": "Fit",
+      "weight": "Fabric weight",
+      "stretch": "Stretch",
+      "model": "Model is wearing"
+    },
+    "sampleReviews": [
+      {
+        "name": "Sara M.",
+        "rating": 5,
+        "title": "The one I reorder",
+        "body": "Third one in two years. Colour hasn't faded and the waistband hasn't rolled once."
+      },
+      {
+        "name": "Dee K.",
+        "rating": 4,
+        "title": "Great, runs slightly long",
+        "body": "Beautiful fabric. I'm 5'3\" and had to hem it — worth it anyway."
+      },
+      {
+        "name": "Omar A.",
+        "rating": 5,
+        "title": "Softest thing I own",
+        "body": "No pilling after six months of weekly washes. Buying another in a different colour."
+      }
+    ]
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Since 2013",
+      "title": "We started with a question about chemicals",
+      "body": "Clothing sits against your skin for sixteen hours a day. We thought it should be the safest thing you own — so we rebuilt the supply chain to make that true."
+    },
+    "story": {
+      "title": "Clean from seed to skin",
+      "paragraphs": [
+        "We began in a garage in Los Angeles with one t-shirt and a list of ingredients we refused to use. No conventional cotton, no formaldehyde finishes, no per- and polyfluoroalkyl treatments, no untraceable dye houses.",
+        "Twelve years later the list hasn't changed. What has changed is the scale: a full range of essentials for women and men, grown on certified organic farms, knitted and sewn by partners we visit in person, and tested at the finished-garment stage rather than the fibre stage.",
+        "We publish what we find — including the things we haven't fixed yet. Progress is a direction, not a badge."
+      ]
+    },
+    "materials": {
+      "eyebrow": "Materials",
+      "title": "What we use, and why",
+      "items": [
+        {
+          "title": "Organic cotton",
+          "body": "Long-staple, rain-fed where possible, certified to a recognised organic standard."
+        },
+        {
+          "title": "Organic stretch knit",
+          "body": "Cotton blended with a small percentage of elastane for recovery, knitted in Portugal."
+        },
+        {
+          "title": "Brushed organic fleece",
+          "body": "Loop-back fleece brushed twice for loft without shedding."
+        },
+        {
+          "title": "Waffle & rib",
+          "body": "Textured knits that hide creases and dry quickly — our travel staples."
+        },
+        {
+          "title": "Natural dye programme",
+          "body": "A growing range dyed with plant-derived pigment instead of synthetic colourant."
+        }
+      ]
+    },
+    "factories": {
+      "eyebrow": "Factories",
+      "title": "Made where we can see it",
+      "body": "Cutting, sewing and finishing happen in audited partner facilities. We visit each one, publish the audit summary, and set a wage benchmark we're accountable to.",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Partner factories"
+        },
+        {
+          "value": "100%",
+          "label": "Audited annually"
+        },
+        {
+          "value": "2013",
+          "label": "Founded"
+        }
+      ]
+    },
+    "responsibility": {
+      "eyebrow": "Responsibility",
+      "title": "What we're working on",
+      "items": [
+        {
+          "title": "Fibre traceability",
+          "body": "Mapping every farm in our organic cotton programme back to plot level."
+        },
+        {
+          "title": "Take-back & repair",
+          "body": "A repair service and a take-back scheme so worn pieces become new yarn."
+        },
+        {
+          "title": "Packaging",
+          "body": "Plastic-free mailers, already live; plastic-free polybags at factory level, in progress."
+        },
+        {
+          "title": "Water",
+          "body": "Closed-loop dyeing at our primary knit partner, targeting 60% water reuse."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start with the best sellers",
+      "label": "Shop the range"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Help centre",
+      "title": "Get in touch",
+      "body": "Real humans, Monday to Friday, 9am–6pm. Most questions answered within one business day."
+    },
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "order": "Order number (optional)",
+      "topic": "Topic",
+      "topics": [
+        "Order & shipping",
+        "Returns & exchanges",
+        "Product & fit",
+        "Wholesale",
+        "Something else"
+      ],
+      "message": "Message",
+      "submit": "Send message",
+      "success": "Thanks — we've got it. Expect a reply within one business day."
+    },
+    "info": {
+      "title": "Other ways to reach us",
+      "items": [
+        {
+          "label": "Email",
+          "value": "help@example.com",
+          "href": "mailto:help@example.com"
+        },
+        {
+          "label": "Phone",
+          "value": "+1 (000) 000-0000",
+          "href": "tel:+10000000000"
+        },
+        {
+          "label": "Studio",
+          "value": "Los Angeles, California",
+          "href": "/pages/contact"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Common questions",
+      "items": [
+        {
+          "q": "How long does shipping take?",
+          "a": "Domestic orders arrive in 2–5 business days. Orders over $200 ship free. International delivery is 7–14 business days."
+        },
+        {
+          "q": "What is your return window?",
+          "a": "60 days from delivery, worn or unworn, as long as the item is clean. We cover return shipping on exchanges."
+        },
+        {
+          "q": "How do I find my size?",
+          "a": "Our pieces run true to size. Check the size guide on each product page, or message us your height and usual size and we'll recommend."
+        },
+        {
+          "q": "How should I wash organic cotton?",
+          "a": "Cold wash, mild detergent, no fabric softener. Tumble low or line dry to keep the fibres intact for longer."
+        },
+        {
+          "q": "Do you do wholesale?",
+          "a": "Yes. Pick Wholesale in the form above and our team will send the line sheet."
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "This page took a wrong turn",
+    "body": "The link may be old, or the piece you're after sold out.",
+    "cta": "Back to the shop",
+    "popular": "Popular right now"
+  },
+  "p": {
+    "sportsBra": {
+      "title": "Organic Jersey Sports Bra",
+      "blurb": "Medium support, zero hardware",
+      "description": "A seamless-feel bra cut from our organic jersey with a wide underband and a bonded neckline that stays put through a full workout. No wires, no scratchy tags, no digging straps.",
+      "material": "92% certified organic cotton, 8% elastane. Machine wash cold, lay flat to dry.",
+      "care": "Cold wash · No softener · Line dry"
+    },
+    "midiLegging": {
+      "title": "Organic Jersey Midi Legging",
+      "blurb": "High rise, mid-calf",
+      "description": "Our most reordered legging. High-rise with a bonded waistband that doesn't fold over, a hidden key pocket, and a knit with genuine recovery so it holds its shape past the first hour.",
+      "material": "92% certified organic cotton, 8% elastane. Machine wash cold inside out, tumble low.",
+      "care": "Cold wash · Inside out · Tumble low"
+    },
+    "crossoverLegging": {
+      "title": "Organic Jersey Crossover Legging",
+      "blurb": "V-waist, full length",
+      "description": "A crossover waistband that sits flat against the hip instead of rolling, in the same recovery knit as our midi legging. Full length, opaque in every colourway.",
+      "material": "92% certified organic cotton, 8% elastane. Machine wash cold, tumble low.",
+      "care": "Cold wash · Tumble low"
+    },
+    "highNeckTank": {
+      "title": "Organic Jersey High Neck Tank",
+      "blurb": "Slim, high neck, sleeveless",
+      "description": "A close-fitting tank with a standing collar that layers cleanly under jackets or works on its own. Cut long enough to stay tucked.",
+      "material": "95% certified organic cotton, 5% elastane. Machine wash cold, line dry.",
+      "care": "Cold wash · Line dry"
+    },
+    "longSleeveTop": {
+      "title": "Organic Jersey Long Sleeve Top",
+      "blurb": "The layer you'll live in",
+      "description": "A slim long sleeve with a neat crew neck, set-in sleeves and cuffs that keep their shape. Works as a base layer in winter and on its own in spring.",
+      "material": "95% certified organic cotton, 5% elastane. Machine wash cold, tumble low.",
+      "care": "Cold wash · Tumble low"
+    },
+    "zipHoodie": {
+      "title": "Organic Fleece Zip Hoodie",
+      "blurb": "Brushed loop-back fleece",
+      "description": "An oversized hoodie in twice-brushed organic fleece with a full-length metal zip, a lined hood and deep welt pockets. Heavy enough for cold mornings, soft enough to sleep in.",
+      "material": "100% certified organic cotton fleece, 420gsm. Machine wash cold, tumble low.",
+      "care": "Cold wash · Tumble low · No bleach"
+    },
+    "relaxedSweatpant": {
+      "title": "Organic Fleece Relaxed Sweatpant",
+      "blurb": "Wide leg, tapered cuff",
+      "description": "A relaxed sweatpant with a flat drawcord waist, side pockets and a slight taper at the ankle so it doesn't bunch. Cut generous through the thigh.",
+      "material": "100% certified organic cotton fleece, 420gsm. Machine wash cold, tumble low.",
+      "care": "Cold wash · Tumble low"
+    },
+    "poloSweatshirt": {
+      "title": "Organic Fleece Polo Sweatshirt",
+      "blurb": "Collared, boxy, oversized",
+      "description": "A sweatshirt with a proper collar and a short placket, cut boxy in the same brushed fleece as the hoodie. Smart enough for a meeting, soft enough for a Sunday.",
+      "material": "100% certified organic cotton fleece, 400gsm. Machine wash cold, tumble low.",
+      "care": "Cold wash · Tumble low"
+    },
+    "scoopBra": {
+      "title": "Organic Jersey Scoop Bra",
+      "blurb": "Light support, everyday",
+      "description": "A light-support bra with a scooped neckline and thin adjustable straps, built for low-impact days and layering under open necklines.",
+      "material": "92% certified organic cotton, 8% elastane. Hand wash or cold machine wash, lay flat to dry.",
+      "care": "Cold wash · Lay flat"
+    },
+    "croppedSweatpant": {
+      "title": "Organic Fleece Cropped Sweatpant",
+      "blurb": "Cropped, wide leg",
+      "description": "The relaxed sweatpant, cropped to hit just below the ankle. Same brushed fleece, same flat drawcord waist, slightly shorter for warmer days.",
+      "material": "100% certified organic cotton fleece, 400gsm. Machine wash cold, tumble low.",
+      "care": "Cold wash · Tumble low"
+    },
+    "socks3": {
+      "title": "Organic Cotton Crew Socks — 3 Pack",
+      "blurb": "Three pairs, everyday weight",
+      "description": "A three-pack of mid-weight crew socks in combed organic cotton with a cushioned footbed and a ribbed cuff that doesn't slide down.",
+      "material": "85% certified organic cotton, 12% nylon, 3% elastane. Machine wash warm, tumble low.",
+      "care": "Warm wash · Tumble low"
+    },
+    "halfZip": {
+      "title": "Organic Waffle Collar Half-Zip",
+      "blurb": "Waffle knit, stand collar",
+      "description": "A textured waffle half-zip with a stand collar and a short metal zip. Packs small, dries fast, and looks better after a few washes than it did new.",
+      "material": "100% certified organic cotton waffle knit. Machine wash cold, line dry.",
+      "care": "Cold wash · Line dry"
+    }
+  },
+  "colors": {
+    "clay": "Clay",
+    "terra": "Terra",
+    "midnight": "Midnight",
+    "jet": "Jet Black",
+    "bone": "Bone",
+    "sage": "Sage",
+    "pine": "Heather Pine",
+    "mocha": "Mocha",
+    "heather": "Heather Grey",
+    "cove": "Cove",
+    "ochre": "Ochre",
+    "mulberry": "Mulberry"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "newsletter": "Email me about new drops and restocks"
+    },
+    "shipping": {
+      "title": "Shipping address",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "address": "Address",
+      "apartment": "Apartment, suite (optional)",
+      "city": "City",
+      "postal": "Postal code",
+      "country": "Country",
+      "phone": "Phone"
+    },
+    "delivery": {
+      "title": "Delivery method",
+      "standard": {
+        "label": "Standard",
+        "note": "3–5 business days",
+        "price": "Free"
+      },
+      "express": {
+        "label": "Express",
+        "note": "1–2 business days",
+        "price": "$18"
+      }
+    },
+    "payment": {
+      "title": "Payment",
+      "card": "Card",
+      "cod": "Cash on delivery",
+      "cardNumber": "Card number",
+      "expiry": "Expiry (MM/YY)",
+      "cvc": "CVC",
+      "nameOnCard": "Name on card",
+      "demoNote": "Demo checkout — no payment is processed and no card data is stored."
+    },
+    "summary": {
+      "title": "Order summary",
+      "items": "{count} items",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "tax": "Estimated tax",
+      "total": "Total",
+      "free": "Free"
+    },
+    "place": "Place order",
+    "backToCart": "Back to bag",
+    "emptyTitle": "Nothing to check out yet",
+    "emptyBody": "Your bag is empty — add a piece first.",
+    "success": {
+      "title": "Order confirmed",
+      "body": "Thanks — we've emailed your receipt. You'll get a tracking link as soon as it ships.",
+      "orderNumber": "Order number",
+      "cta": "Keep shopping"
+    },
+    "payWithStripe": "Pay securely with Stripe",
+    "stripeError": "Payments aren't configured on this build. Add STRIPE_SECRET_KEY to .env.local to enable live checkout.",
+    "redirecting": "Redirecting to secure payment…"
+  },
+  "wishlist": {
+    "navWishlist": "Wishlist",
+    "save": "Save for later",
+    "remove": "Remove from saved",
+    "title": "Saved for later",
+    "body": "Everything you hearted, in one place. Nothing here is reserved — add it to your bag when you're ready.",
+    "empty": "Nothing saved yet",
+    "emptyBody": "Tap the heart on any piece and it'll wait for you here.",
+    "emptyCta": "Browse the best sellers",
+    "moveToBag": "Move to bag",
+    "moveAll": "Move all to bag",
+    "clear": "Clear all",
+    "count": "{count} saved",
+    "addedToBag": "Added to your bag"
+  },
+  "order": {
+    "reference": "Reference",
+    "receiptTo": "Receipt sent to",
+    "cta": "Keep shopping",
+    "paid": {
+      "title": "Payment received",
+      "body": "Thanks — your order is confirmed and being picked. You'll get a tracking link as soon as it ships."
+    },
+    "pending": {
+      "title": "Payment still processing",
+      "body": "We've got your order but the payment hasn't cleared yet. This page updates once it does — no need to order again."
+    },
+    "notFound": {
+      "title": "We couldn't find that session",
+      "body": "The checkout link may have expired. If you were charged, email us and we'll sort it out."
+    },
+    "unavailable": {
+      "title": "Order placed",
+      "body": "Live payments aren't configured on this build, so we couldn't verify the session against Stripe. The demo checkout still records the order locally."
+    }
+  }
+}
