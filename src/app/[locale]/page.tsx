@@ -12,12 +12,12 @@ const VALUE_COUNT = 4;
 const REVIEW_COUNT = 3;
 const GALLERY = [
   "/img/hero-model.jpg",
-  "/img/p-midi-legging.jpg",
-  "/img/editorial-fabric.jpg",
-  "/img/p-zip-hoodie.jpg",
-  "/img/hero-still-life.jpg",
-  "/img/p-scoop-bra.jpg",
-  "/img/p-polo.jpg",
+  "/img/p-sweatpant.jpg",
+  "/img/fabric-mulberry.jpg",
+  "/img/a-zip-hoodie.jpg",
+  "/img/a-scoop-bra.jpg",
+  "/img/fabric-nori.jpg",
+  "/img/a-polo.jpg",
 ];
 
 export default async function HomePage({

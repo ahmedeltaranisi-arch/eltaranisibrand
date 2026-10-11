@@ -6,7 +6,7 @@ import {
   productSlugs,
   products,
 } from "@/lib/catalog";
-import { STUDIO_PRODUCTS, colorBack, colorImage, productKey } from "@/lib/catalog";
+import { colorwayPhotos, productKey } from "@/lib/catalog";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductGallery from "@/components/ProductGallery";
 import WishlistButton from "@/components/WishlistButton";
@@ -49,6 +49,11 @@ export default async function ProductPage({
   const tcol = await getTranslations("collections");
   const key = productKey(product);
 
+  // colourways of styles that were shot in more than one tone get their own
+  // pair of frames; the rest reuse the product's own two angles
+  const { front, back } = colorwayPhotos(product, colorway.name);
+  const gallery = front === back ? [front] : [front, back];
+
   const related = products
     .filter((p) => p.id !== product.id)
     .filter((p) => p.collections.some((c) => product.collections.includes(c)))
@@ -72,7 +77,7 @@ export default async function ProductPage({
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-8 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-10 lg:py-12">
         {/* gallery */}
         <ProductGallery
-          images={STUDIO_PRODUCTS.has(product.id) ? [colorImage(colorway.name, product.image), colorBack(colorway.name, product.imageAlt)] : [product.image, product.imageAlt]}
+          images={gallery}
           alt={tp(`${key}.title`)}
           activeSlug={colorway.slug}
         />

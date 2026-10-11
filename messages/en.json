@@ -780,11 +780,18 @@
       "material": "92% certified organic cotton, 8% elastane. Hand wash or cold machine wash, lay flat to dry.",
       "care": "Cold wash · Lay flat"
     },
-    "croppedSweatpant": {
-      "title": "Organic Fleece Cropped Sweatpant",
-      "blurb": "Cropped, wide leg",
-      "description": "The relaxed sweatpant, cropped to hit just below the ankle. Same brushed fleece, same flat drawcord waist, slightly shorter for warmer days.",
-      "material": "100% certified organic cotton fleece, 400gsm. Machine wash cold, tumble low.",
+    "bikerShort": {
+      "title": "Organic Stretch Biker Short",
+      "blurb": "Mid-thigh, squat-proof",
+      "description": "The crossover legging's fabric in a 4-inch biker short. A wide high-rise waistband that stays put and a hem that doesn't ride up — it works under a dress as easily as it does on the bike.",
+      "material": "92% certified organic cotton, 8% elastane. Machine wash cold, lay flat to dry.",
+      "care": "Cold wash · Line dry"
+    },
+    "pimaTank": {
+      "title": "Organic Pima Layering Tank",
+      "blurb": "Racer back, second-skin rib",
+      "description": "A close-cut layering tank in long-staple Pima cotton, with a racer back and a scooped neckline that sits flat under everything else. The piece that makes the rest of the wardrobe work.",
+      "material": "100% certified organic Pima cotton, 180gsm. Machine wash cold, tumble low.",
       "care": "Cold wash · Tumble low"
     },
     "socks3": {
@@ -793,28 +800,22 @@
       "description": "A three-pack of mid-weight crew socks in combed organic cotton with a cushioned footbed and a ribbed cuff that doesn't slide down.",
       "material": "85% certified organic cotton, 12% nylon, 3% elastane. Machine wash warm, tumble low.",
       "care": "Warm wash · Tumble low"
-    },
-    "halfZip": {
-      "title": "Organic Waffle Collar Half-Zip",
-      "blurb": "Waffle knit, stand collar",
-      "description": "A textured waffle half-zip with a stand collar and a short metal zip. Packs small, dries fast, and looks better after a few washes than it did new.",
-      "material": "100% certified organic cotton waffle knit. Machine wash cold, line dry.",
-      "care": "Cold wash · Line dry"
     }
   },
   "colors": {
-    "clay": "Clay",
-    "terra": "Terra",
+    "mocha": "Mocha",
+    "espresso": "Espresso",
+    "sienna": "Sienna",
+    "sand": "Sand",
+    "bone": "Bone",
+    "heather": "Heather Grey",
     "midnight": "Midnight",
     "jet": "Jet Black",
-    "bone": "Bone",
-    "sage": "Sage",
-    "pine": "Heather Pine",
-    "mocha": "Mocha",
-    "heather": "Heather Grey",
-    "cove": "Cove",
-    "ochre": "Ochre",
-    "mulberry": "Mulberry"
+    "iris": "Iris",
+    "fig": "Fig",
+    "mulberry": "Mulberry",
+    "nori": "Nori",
+    "balsam": "Balsam"
   },
   "checkout": {
     "title": "Checkout",

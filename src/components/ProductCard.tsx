@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/navigation";
-import { STUDIO_PRODUCTS, colorBack, colorImage } from "@/lib/catalog";
+import { colorwayPhotos } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 import WishlistButton from "./WishlistButton";
 
@@ -26,11 +26,9 @@ export default function ProductCard({
   const key = product.titleKey.replace(/^p\./, "").replace(/\.title$/, "");
   const title = tp(`${key}.title`);
 
-  // only products with a real per-tone studio set swap imagery per colour;
-  // everyone else keeps their own photo so the product never "changes"
-  const studio = STUDIO_PRODUCTS.has(product.id);
-  const front = studio ? colorImage(active.name, product.image) : product.image;
-  const back = studio ? colorBack(active.name, product.imageAlt) : product.imageAlt;
+  // styles that were shot in more than one tone swap photo with the swatch;
+  // everyone else keeps their own shot so the product never "changes" garment
+  const { front, back } = colorwayPhotos(product, active.name);
 
   return (
     <article className="group relative flex flex-col">

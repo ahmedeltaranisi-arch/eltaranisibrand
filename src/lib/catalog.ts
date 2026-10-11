@@ -8,19 +8,25 @@ import type { Product, CollectionDef } from "./types";
  * swatch row on a card navigates exactly like a multi-variant storefront.
  */
 
+/**
+ * Colour palette. Names and hexes are the real tones of the garments in
+ * `public/img` — the swatch under a card is literally the dye of the piece in
+ * the photo next to it.
+ */
 const C = {
-  clay: { name: "clay", hex: "#c08a6d" },
-  terra: { name: "terra", hex: "#a4603f" },
-  midnight: { name: "midnight", hex: "#2b3346" },
-  jet: { name: "jet", hex: "#1b1b1a" },
-  bone: { name: "bone", hex: "#ece5d8" },
-  sage: { name: "sage", hex: "#b8c1ae" },
-  pine: { name: "pine", hex: "#5f6f5c" },
-  mocha: { name: "mocha", hex: "#8b6f5c" },
-  heather: { name: "heather", hex: "#b3b0a8" },
-  cove: { name: "cove", hex: "#7f93a1" },
-  ochre: { name: "ochre", hex: "#c79a4b" },
-  mulberry: { name: "mulberry", hex: "#6d4557" },
+  mocha: { name: "mocha", hex: "#412d2c" },
+  espresso: { name: "espresso", hex: "#5f362a" },
+  sienna: { name: "sienna", hex: "#c47c63" },
+  sand: { name: "sand", hex: "#dec4ac" },
+  bone: { name: "bone", hex: "#f3efea" },
+  heather: { name: "heather", hex: "#e1e0e5" },
+  midnight: { name: "midnight", hex: "#364450" },
+  jet: { name: "jet", hex: "#111111" },
+  iris: { name: "iris", hex: "#293da5" },
+  fig: { name: "fig", hex: "#4d2037" },
+  mulberry: { name: "mulberry", hex: "#762134" },
+  nori: { name: "nori", hex: "#26322b" },
+  balsam: { name: "balsam", hex: "#354741" },
 };
 
 const line = (
@@ -57,7 +63,7 @@ const rows: Row[] = [
     titleKey: "p.sportsBra.title",
     price: 58,
     image: "/img/p-sports-bra.jpg",
-    colors: ["clay", "jet", "bone", "heather", "pine", "mocha", "mulberry", "midnight", "cove", "terra"],
+    colors: ["fig", "mocha", "jet", "bone", "heather", "nori", "espresso", "mulberry", "midnight", "sienna"],
     badges: ["best"],
     collections: ["new-arrivals", "best-sellers", "activewear", "tops", "intimates"],
     sizes: BRA,
@@ -70,7 +76,7 @@ const rows: Row[] = [
     titleKey: "p.midiLegging.title",
     price: 88,
     image: "/img/p-midi-legging.jpg",
-    colors: ["terra", "jet", "heather", "pine", "mocha", "mulberry", "cove", "midnight", "clay", "bone"],
+    colors: ["jet", "mocha", "heather", "nori", "espresso", "mulberry", "midnight", "fig", "sienna", "bone"],
     badges: ["best"],
     collections: ["new-arrivals", "best-sellers", "activewear", "bottoms"],
     sizes: APPAREL,
@@ -83,7 +89,7 @@ const rows: Row[] = [
     titleKey: "p.crossoverLegging.title",
     price: 108,
     image: "/img/p-crossover-legging.jpg",
-    colors: ["jet", "midnight", "mocha", "pine", "heather"],
+    colors: ["jet", "midnight", "mocha", "nori", "heather"],
     collections: ["new-arrivals", "activewear", "bottoms"],
     sizes: APPAREL,
     rating: 4.7,
@@ -95,7 +101,7 @@ const rows: Row[] = [
     titleKey: "p.highNeckTank.title",
     price: 68,
     image: "/img/p-high-neck-tank.jpg",
-    colors: ["jet", "mocha", "midnight", "bone"],
+    colors: ["mocha", "midnight", "jet", "bone"],
     collections: ["new-arrivals", "best-sellers", "tops"],
     sizes: APPAREL,
     rating: 4.6,
@@ -107,7 +113,7 @@ const rows: Row[] = [
     titleKey: "p.longSleeveTop.title",
     price: 78,
     image: "/img/p-ls-top.jpg",
-    colors: ["midnight", "jet", "mocha", "bone"],
+    colors: ["jet", "midnight", "mocha", "bone"],
     badges: ["best"],
     collections: ["new-arrivals", "best-sellers", "tops"],
     sizes: APPAREL,
@@ -120,7 +126,7 @@ const rows: Row[] = [
     titleKey: "p.zipHoodie.title",
     price: 158,
     image: "/img/p-zip-hoodie.jpg",
-    colors: ["mocha", "jet", "heather", "bone", "pine"],
+    colors: ["mocha", "jet", "heather", "bone", "nori"],
     collections: ["loungewear", "new-arrivals", "best-sellers", "tops"],
     sizes: APPAREL,
     rating: 4.9,
@@ -132,7 +138,7 @@ const rows: Row[] = [
     titleKey: "p.relaxedSweatpant.title",
     price: 138,
     image: "/img/p-sweatpant.jpg",
-    colors: ["mocha", "heather", "pine", "jet", "bone", "clay"],
+    colors: ["mocha", "heather", "nori", "jet", "bone", "sienna"],
     collections: ["loungewear", "best-sellers", "bottoms"],
     sizes: APPAREL,
     rating: 4.8,
@@ -144,7 +150,7 @@ const rows: Row[] = [
     titleKey: "p.poloSweatshirt.title",
     price: 138,
     image: "/img/p-polo.jpg",
-    colors: ["mocha", "heather", "bone", "jet"],
+    colors: ["bone", "mocha", "heather", "jet"],
     collections: ["loungewear", "tops"],
     sizes: APPAREL,
     rating: 4.5,
@@ -156,7 +162,7 @@ const rows: Row[] = [
     titleKey: "p.scoopBra.title",
     price: 54,
     image: "/img/p-scoop-bra.jpg",
-    colors: ["midnight", "bone", "clay", "jet"],
+    colors: ["fig", "bone", "mocha", "jet"],
     collections: ["new-arrivals", "activewear", "tops", "intimates"],
     sizes: BRA,
     rating: 4.6,
@@ -164,42 +170,42 @@ const rows: Row[] = [
   },
   {
     id: "p10",
-    base: "organic-fleece-cropped-sweatpant",
-    titleKey: "p.croppedSweatpant.title",
-    price: 128,
-    compareAt: 148,
-    image: "/img/knit-crouch.jpg",
-    colors: ["mocha", "pine", "jet", "heather", "bone"],
-    collections: ["loungewear", "bottoms", "sale"],
+    base: "organic-stretch-biker-short",
+    titleKey: "p.bikerShort.title",
+    price: 68,
+    compareAt: 82,
+    image: "/img/p-biker-short.jpg",
+    colors: ["jet", "midnight", "espresso", "fig"],
+    badges: ["limited"],
+    collections: ["new-arrivals", "activewear", "bottoms", "sale"],
     sizes: APPAREL,
     rating: 4.7,
-    reviewCount: 305,
+    reviewCount: 512,
   },
   {
     id: "p11",
-    base: "organic-cotton-crew-socks-3pk",
-    titleKey: "p.socks3.title",
-    price: 32,
-    image: "/img/p-high-neck-tank.jpg",
-    colors: ["bone", "jet", "heather"],
-    collections: ["new-arrivals", "accessories", "best-sellers"],
-    sizes: SOCK,
+    base: "organic-pima-layering-tank",
+    titleKey: "p.pimaTank.title",
+    price: 58,
+    image: "/img/p-layering-tank.jpg",
+    colors: ["jet", "midnight", "bone", "heather"],
+    collections: ["new-arrivals", "best-sellers", "tops"],
+    sizes: APPAREL,
     rating: 4.8,
     reviewCount: 733,
   },
   {
     id: "p12",
-    base: "organic-waffle-collar-half-zip",
-    titleKey: "p.halfZip.title",
-    price: 148,
-    compareAt: 168,
-    image: "/img/p-zip-hoodie.jpg",
-    colors: ["pine", "bone", "mocha"],
-    badges: ["limited"],
-    collections: ["loungewear", "tops", "sale", "new-arrivals"],
-    sizes: APPAREL,
-    rating: 4.6,
-    reviewCount: 148,
+    base: "organic-cotton-crew-socks-3pk",
+    titleKey: "p.socks3.title",
+    price: 32,
+    compareAt: 38,
+    image: "/img/p-socks.jpg",
+    colors: ["bone", "jet", "heather", "sand"],
+    collections: ["new-arrivals", "best-sellers", "accessories", "sale"],
+    sizes: SOCK,
+    rating: 4.8,
+    reviewCount: 733,
   },
 ];
 
@@ -214,7 +220,7 @@ function stockFor(id: string, sizes: string[]): Record<string, number> {
     let h = 0;
     for (const ch of `${id}:${size}`) h = (h * 31 + ch.charCodeAt(0)) % 9973;
     out[size] = h % 7 === 0 ? 0 : (h % 24) + 1;
-    if (i === 0 && id === "p12") out[size] = 0; // the limited run is thin
+    if (i === 0 && id === "p10") out[size] = 0; // the limited run is thin
   });
   return out;
 }
@@ -248,7 +254,7 @@ export const productSlugs: string[] = products.flatMap((p) =>
 );
 
 export function getProductBySlug(slug: string): Product | undefined {
-  const base = slug.replace(/-(clay|terra|midnight|jet|bone|sage|pine|mocha|heather|cove|ochre|mulberry)$/, "");
+  const base = slug.replace(/-(mocha|espresso|sienna|sand|bone|heather|midnight|jet|iris|fig|mulberry|nori|balsam)$/, "");
   return products.find((p) => p.baseSlug === base);
 }
 
@@ -270,61 +276,61 @@ export const collections: CollectionDef[] = [
     handle: "new-arrivals",
     titleKey: "collections.newArrivals.title",
     descriptionKey: "collections.newArrivals.description",
-    hero: "/img/hero-still-life.jpg",
+    hero: "/img/hero-model.jpg",
   },
   {
     handle: "best-sellers",
     titleKey: "collections.bestSellers.title",
     descriptionKey: "collections.bestSellers.description",
-    hero: "/img/hero-model.jpg",
+    hero: "/img/p-midi-legging.jpg",
   },
   {
     handle: "loungewear",
     titleKey: "collections.loungewear.title",
     descriptionKey: "collections.loungewear.description",
-    hero: "/img/p-zip-hoodie.jpg",
+    hero: "/img/a-zip-hoodie.jpg",
   },
   {
     handle: "activewear",
     titleKey: "collections.activewear.title",
     descriptionKey: "collections.activewear.description",
-    hero: "/img/p-midi-legging.jpg",
+    hero: "/img/p-sports-bra.jpg",
   },
   {
     handle: "tops",
     titleKey: "collections.tops.title",
     descriptionKey: "collections.tops.description",
-    hero: "/img/p-ls-top.jpg",
+    hero: "/img/a-ls-top.jpg",
   },
   {
     handle: "bottoms",
     titleKey: "collections.bottoms.title",
     descriptionKey: "collections.bottoms.description",
-    hero: "/img/p-sweatpant.jpg",
+    hero: "/img/p-crossover-legging.jpg",
   },
   {
     handle: "accessories",
     titleKey: "collections.accessories.title",
     descriptionKey: "collections.accessories.description",
-    hero: "/img/p-high-neck-tank.jpg",
+    hero: "/img/p-scoop-bra.jpg",
   },
   {
     handle: "all",
     titleKey: "collections.all.title",
     descriptionKey: "collections.all.description",
-    hero: "/img/p-ls-top.jpg",
+    hero: "/img/a-ls-top.jpg",
   },
   {
     handle: "intimates",
     titleKey: "collections.intimates.title",
     descriptionKey: "collections.intimates.description",
-    hero: "/img/p-sports-bra.jpg",
+    hero: "/img/p-scoop-bra.jpg",
   },
   {
     handle: "sale",
     titleKey: "collections.sale.title",
     descriptionKey: "collections.sale.description",
-    hero: "/img/p-polo.jpg",
+    hero: "/img/a-polo.jpg",
   },
 ];
 
@@ -368,8 +374,8 @@ export const shopMenu = [
       },
     ],
     featured: [
-      { labelKey: "menu.featuredCard.one.label", href: "/collections/new-arrivals", image: "/img/hero-still-life.jpg" },
-      { labelKey: "menu.featuredCard.two.label", href: "/collections/loungewear", image: "/img/p-zip-hoodie.jpg" },
+      { labelKey: "menu.featuredCard.one.label", href: "/collections/new-arrivals", image: "/img/hero-model.jpg" },
+      { labelKey: "menu.featuredCard.two.label", href: "/collections/loungewear", image: "/img/a-zip-hoodie.jpg" },
     ],
   },
 ];
@@ -382,52 +388,35 @@ export const searchSuggestions = [
 ];
 
 /**
- * Real-person photo per colour tone. Switching a swatch swaps the model shot
- * to a genuine photograph of a person wearing a matching tone, so colourways
- * always show a real human (never AI).
+ * Per-product colourway photography. A few styles were shot in more than one
+ * tone, so switching a swatch swaps the model shot for that real colourway.
+ * Everything else keeps the product's own photo — a product never "changes"
+ * garment when you pick another swatch.
  */
-const COLOR_IMAGE: Record<string, string> = {
-  jet: "/img/studio-black-f.jpg",
-  midnight: "/img/studio-navy-f.jpg",
-  cove: "/img/studio-navy-f.jpg",
-  bone: "/img/studio-cream-f.jpg",
-  clay: "/img/studio-brown-f.jpg",
-  terra: "/img/studio-brown-f.jpg",
-  mocha: "/img/studio-brown-f.jpg",
-  mulberry: "/img/studio-brown-f.jpg",
-  ochre: "/img/studio-brown-f.jpg",
-  heather: "/img/studio-grey-f.jpg",
-  sage: "/img/studio-grey-f.jpg",
-  pine: "/img/studio-grey-f.jpg",
+const COLORWAY_PHOTOS: Record<string, Record<string, [string, string]>> = {
+  p04: {
+    mocha: ["/img/tank-mocha-f.jpg", "/img/tank-mocha-b.jpg"],
+    midnight: ["/img/tank-midnight-f.jpg", "/img/tank-midnight-b.jpg"],
+  },
+  p05: {
+    mocha: ["/img/ls-mocha-f.jpg", "/img/ls-mocha-b.jpg"],
+    midnight: ["/img/ls-midnight-f.jpg", "/img/ls-midnight-b.jpg"],
+  },
+  p09: {
+    fig: ["/img/p-scoop-bra.jpg", "/img/a-sports-bra.jpg"],
+    bone: ["/img/tone-bone-f.jpg", "/img/a-scoop-bra.jpg"],
+  },
 };
 
-/** Back-view studio photo per tone — shown on hover, always a real person. */
-const COLOR_BACK: Record<string, string> = {
-  jet: "/img/studio-black-b.jpg",
-  midnight: "/img/studio-navy-b.jpg",
-  cove: "/img/studio-navy-b.jpg",
-  bone: "/img/studio-cream-b.jpg",
-  clay: "/img/studio-brown-b.jpg",
-  terra: "/img/studio-brown-b.jpg",
-  mocha: "/img/studio-brown-b.jpg",
-  mulberry: "/img/studio-brown-b.jpg",
-  ochre: "/img/studio-brown-b.jpg",
-  heather: "/img/studio-grey-b.jpg",
-  sage: "/img/studio-grey-b.jpg",
-  pine: "/img/studio-grey-b.jpg",
-};
-
-/** Products with a real per-tone studio set (front + back) — only these swap imagery per colour. */
-export const STUDIO_PRODUCTS = new Set(["p01", "p02", "p03"]);
-
-/** Real-person photo for a colourway tone, falling back to the product shot. */
-export function colorImage(color: string, fallback: string): string {
-  return COLOR_IMAGE[color] ?? fallback;
-}
-
-/** Real-person back view for a colourway tone, falling back to the alt shot. */
-export function colorBack(color: string, fallback: string): string {
-  return COLOR_BACK[color] ?? fallback;
+/** Front + back photo for a product in a given colourway. */
+export function colorwayPhotos(
+  product: { id: string; image: string; imageAlt: string },
+  color: string,
+): { front: string; back: string } {
+  const set = COLORWAY_PHOTOS[product.id]?.[color];
+  return set
+    ? { front: set[0], back: set[1] }
+    : { front: product.image, back: product.imageAlt };
 }
 
 /** `p.sportsBra.title` -> `sportsBra` — the group used for every product copy key. */
