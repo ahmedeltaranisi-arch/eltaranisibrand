@@ -61,12 +61,12 @@ src/
                         hero slider, marquee, product card/rail/tabs,
                         filters, buy box, review carousel, newsletter,
                         locale switcher, breadcrumbs, reveal, icons
-messages/en.json        388 keys
-messages/ar.json        388 keys (same shape, RTL copy)
+messages/en.json        396 keys
+messages/ar.json        396 keys (same shape, RTL copy)
 scripts/check-i18n.mjs  key + placeholder parity check
-public/img/             the brand shoot: p-* (front) + a-* (alt angle) per
-                        product, tone-* / tank-* / ls-* (colourway swaps),
-                        hero + campaign frames + fabric macros
+public/img/shots/       the brand shoot: <style>-<tone>-<n>.jpg, where 1 is
+                        the front frame, 2 the hover pose and 3+ extra
+                        angles; public/img/rev-*.jpg are review avatars
 ```
 
 ## Interactions worth knowing
@@ -92,11 +92,14 @@ public/img/             the brand shoot: p-* (front) + a-* (alt angle) per
   plain CSS instead.
 ### Photography
 Everything in `public/img/` comes from the brand's own shoot (`brand.zip`). The
-archive held ~190 files — mostly the same frame re-exported at several sizes —
-so the build keeps one copy of each, re-encoded to web weight. Product frames
-are paired so every card has a front and a second angle of the *same* garment,
-and colourway-shot styles (`COLORWAY_PHOTOS` in `src/lib/catalog.ts`) swap the
-model photo when the shopper picks another swatch.
+archive held ~194 files — mostly the same frame re-exported at several sizes —
+so the build keeps one copy of each, re-encoded to web weight. Frames live in
+`public/img/shots/<style>-<tone>-<n>.jpg`, and `SET_FRAMES` in
+`src/lib/catalog.ts` records how many each set holds: a tone the shoot captured
+once renders a single image rather than a missing one. Every colourway resolves
+its own frames through `colorwayFrames(product, tone)`, so picking a swatch
+swaps the model photo *and* the product gallery. The tone hexes were measured
+from the archive colour tiles, never by eye.
 
 - **`@keyframes` must be top-level.** Nesting `@keyframes marquee-rtl` inside
   `html[dir="rtl"]` makes the CSS parser bail on the whole block, which
