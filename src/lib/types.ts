@@ -1,11 +1,14 @@
 export type ColorWay = {
-  /** unique key, e.g. "clay" */
+  /** unique key, e.g. "fig" */
   name: string;
   /** hex used for the swatch dot */
   hex: string;
   /** slug of the product page for this colourway */
   slug: string;
 };
+
+/** Every frame the shoot captured for one colourway, in order. */
+export type ColorwayShot = { frames: string[] };
 
 export type Product = {
   id: string;
@@ -17,6 +20,8 @@ export type Product = {
   image: string;
   /** second angle, used for the hover swap + gallery */
   imageAlt: string;
+  /** per-tone frames from the shoot, keyed by colourway name */
+  colorwayFrames: Record<string, string[]>;
   colorways: ColorWay[];
   badges?: ("new" | "best" | "limited")[];
   collections: string[];

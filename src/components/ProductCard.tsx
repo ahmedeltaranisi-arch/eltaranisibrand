@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/navigation";
-import { colorwayPhotos } from "@/lib/catalog";
+import { colorwayShots } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 import WishlistButton from "./WishlistButton";
 
@@ -23,12 +23,13 @@ export default function ProductCard({
 
   const [active, setActive] = useState(product.colorways[0]);
   const shown = product.colorways.slice(0, SWATCH_LIMIT);
+  const more = product.colorways.length - shown.length;
   const key = product.titleKey.replace(/^p\./, "").replace(/\.title$/, "");
   const title = tp(`${key}.title`);
 
-  // styles that were shot in more than one tone swap photo with the swatch;
-  // everyone else keeps their own shot so the product never "changes" garment
-  const { front, back } = colorwayPhotos(product, active.name);
+  // every style has a frame set per tone, so the swatch swaps the model shot to
+  // the real colourway; hovering then reveals the second pose of the same tone
+  const { front, back } = colorwayShots(product, active.name);
 
   return (
     <article className="group relative flex flex-col">
@@ -89,8 +90,15 @@ export default function ProductCard({
           )}
         </p>
 
+        {/* the colourway row reads like the reference: swatches + the tone name
+            of the frame on screen, with an overflow count for the rest */}
+        <p className="mt-2.5 text-[11px] tracking-[0.08em] text-mist uppercase">
+          {tc(active.name as never)}
+          {more > 0 && <span className="ms-1.5">+{more}</span>}
+        </p>
+
         {/* rectangular swatches, always visible; active gets an underline with a gap */}
-        <div className="mt-3 flex flex-wrap items-start gap-2">
+        <div className="mt-2 flex flex-wrap items-start gap-2">
           {shown.map((c) => (
             <span
               key={c.slug}

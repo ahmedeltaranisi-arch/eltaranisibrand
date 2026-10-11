@@ -6,7 +6,7 @@ import {
   productSlugs,
   products,
 } from "@/lib/catalog";
-import { colorwayPhotos, productKey } from "@/lib/catalog";
+import { colorwayFrames, productKey } from "@/lib/catalog";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductGallery from "@/components/ProductGallery";
 import WishlistButton from "@/components/WishlistButton";
@@ -49,10 +49,9 @@ export default async function ProductPage({
   const tcol = await getTranslations("collections");
   const key = productKey(product);
 
-  // colourways of styles that were shot in more than one tone get their own
-  // pair of frames; the rest reuse the product's own two angles
-  const { front, back } = colorwayPhotos(product, colorway.name);
-  const gallery = front === back ? [front] : [front, back];
+  // every frame the shoot captured for this style in this tone (1–6 images),
+  // so switching colourway changes the whole gallery, not just the main shot
+  const gallery = colorwayFrames(product, colorway.name);
 
   const related = products
     .filter((p) => p.id !== product.id)

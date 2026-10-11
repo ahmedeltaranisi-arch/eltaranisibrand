@@ -30,9 +30,9 @@ export default async function HomePage({
   }));
 
   const cats = [
-    { img: "/img/p-sports-bra.jpg", count: productsByCollection("activewear").length },
-    { img: "/img/p-high-neck-tank.jpg", count: productsByCollection("all").length },
-    { img: "/img/p-zip-hoodie.jpg", count: productsByCollection("loungewear").length },
+    { img: "/img/shots/bra-fig-1.jpg", count: productsByCollection("activewear").length },
+    { img: "/img/shots/tank-mocha-1.jpg", count: productsByCollection("all").length },
+    { img: "/img/shots/hoodie-nori-1.jpg", count: productsByCollection("loungewear").length },
   ];
 
   const groups = [
@@ -84,7 +84,7 @@ export default async function HomePage({
         <div className="relative min-h-[440px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/hero-model.jpg"
+            src="/img/shots/bra-fig-1.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -102,7 +102,7 @@ export default async function HomePage({
         <div className="relative min-h-[420px] lg:min-h-[560px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/fig-closeup.jpg"
+            src="/img/shots/bra-fig-4.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -111,7 +111,7 @@ export default async function HomePage({
         <div className="relative min-h-[420px] lg:min-h-[560px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/fig-full.jpg"
+            src="/img/shots/bra-fig-3.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -136,7 +136,7 @@ export default async function HomePage({
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/a-high-neck-tank.jpg"
+            src="/img/shots/tank-jet-1.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -217,7 +217,7 @@ export default async function HomePage({
           <div className="mt-14 flex justify-center lg:mt-20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/img/hero-still-life.jpg"
+              src="/img/shots/bra-bone-1.jpg"
               alt=""
               loading="lazy"
               className="w-[62%] max-w-[300px] object-cover"
@@ -227,7 +227,7 @@ export default async function HomePage({
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/getaway-model.jpg"
+            src="/img/shots/legging-fig-2.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -240,7 +240,7 @@ export default async function HomePage({
         <div className="relative mx-auto w-full max-w-[420px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/dresscode-model.jpg"
+            src="/img/shots/polo-bone-1.jpg"
             alt=""
             loading="lazy"
             className="aspect-3/4 w-full object-cover object-top"
@@ -279,7 +279,7 @@ export default async function HomePage({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={k === "one" ? "/img/editorial-fabric.jpg" : "/img/p-high-neck-tank.jpg"}
+              src={k === "one" ? "/img/shots/hoodie-nori-1.jpg" : "/img/shots/tank-mocha-1.jpg"}
               alt=""
               loading="lazy"
               className="aspect-4/3 w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"

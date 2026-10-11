@@ -22,7 +22,7 @@ export default async function AboutPage({
       <section className="relative h-[62svh] min-h-[420px] overflow-hidden bg-bone">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/img/hero-real-life.jpg"
+          src="/img/shots/legging-jet-1.jpg"
           alt=""
           className="h-full w-full object-cover"
         />
@@ -98,7 +98,7 @@ export default async function AboutPage({
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/editorial-fabric.jpg"
+            src="/img/shots/crossover-jet-3.jpg"
             alt=""
             loading="lazy"
             className="aspect-4/3 w-full bg-bone object-cover"

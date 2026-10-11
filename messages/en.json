@@ -311,21 +311,21 @@
           "title": "The autumn capsule",
           "cta": "Shop new arrivals",
           "href": "/collections/new-arrivals",
-          "image": "/img/p-ls-top.jpg"
+          "image": "/img/shots/lst-jet-1.jpg"
         },
         {
           "eyebrow": "Organic fleece",
           "title": "Softness, restocked",
           "cta": "Shop loungewear",
           "href": "/collections/loungewear",
-          "image": "/img/knit-beige.jpg"
+          "image": "/img/shots/polo-bone-1.jpg"
         },
         {
           "eyebrow": "Every layer",
           "title": "Built for real life",
           "cta": "Shop best sellers",
           "href": "/collections/best-sellers",
-          "image": "/img/hero-real-life.jpg"
+          "image": "/img/shots/legging-jet-1.jpg"
         }
       ],
       "prev": "Previous slide",
@@ -522,7 +522,7 @@
     "reviews": "Reviews",
     "reviewNote": "Ratings are collected from verified purchases.",
     "writeReview": "Write a review",
-    "fitNote": "True to size. Between sizes? Size down for a closer fit, up for relaxed.",
+    "fitNote": "True to size — most people take their usual size.",
     "details": {
       "fit": "Fit",
       "weight": "Fabric weight",
@@ -548,7 +548,14 @@
         "title": "Softest thing I own",
         "body": "No pilling after six months of weekly washes. Buying another in a different colour."
       }
-    ]
+    ],
+    "modelNote": "Model is 5'9\" and wears a size {size}.",
+    "chartTitle": "Size guide",
+    "chartIntro": "Body measurements, in inches. Between two sizes? Take the smaller one for a close fit.",
+    "chartColSize": "Size",
+    "chartColBust": "Bust",
+    "chartColWaist": "Waist",
+    "chartColHip": "Hip"
   },
   "about": {
     "hero": {
@@ -713,9 +720,9 @@
   },
   "p": {
     "sportsBra": {
-      "title": "Organic Jersey Sports Bra",
-      "blurb": "Medium support, zero hardware",
-      "description": "A seamless-feel bra cut from our organic jersey with a wide underband and a bonded neckline that stays put through a full workout. No wires, no scratchy tags, no digging straps.",
+      "title": "Organic Stretch Racer Bra",
+      "blurb": "Racer back, medium support",
+      "description": "Our racer-back bra in organic stretch jersey: a wide self-fabric underband, a scooped racer front and straps that never dig in. It is the layer under everything else in the drawer.",
       "material": "92% certified organic cotton, 8% elastane. Machine wash cold, lay flat to dry.",
       "care": "Cold wash · No softener · Line dry"
     },
@@ -798,19 +805,23 @@
     }
   },
   "colors": {
+    "jet": "Jet Black",
+    "midnight": "Midnight",
+    "nori": "Nori",
+    "balsam": "Balsam",
     "mocha": "Mocha",
     "espresso": "Espresso",
     "sienna": "Sienna",
     "sand": "Sand",
     "bone": "Bone",
+    "oat": "Heather Oat",
     "heather": "Heather Grey",
-    "midnight": "Midnight",
-    "jet": "Jet Black",
     "iris": "Iris",
     "fig": "Fig",
     "mulberry": "Mulberry",
-    "nori": "Nori",
-    "balsam": "Balsam"
+    "wisteria": "Wisteria",
+    "peppercorn": "Peppercorn",
+    "pebble": "Pebble"
   },
   "checkout": {
     "title": "Checkout",

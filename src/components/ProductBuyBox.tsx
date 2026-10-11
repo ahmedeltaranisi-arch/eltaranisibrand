@@ -5,7 +5,16 @@ import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/navigation";
 import { useCart } from "@/context/cart";
 import type { ColorWay } from "@/lib/types";
-import { CheckIcon } from "./icons";
+import { CheckIcon, ChevronIcon } from "./icons";
+
+/** Body measurements (inches) — the same run for every style, like the reference. */
+const CHART: [string, number, number, number][] = [
+  ["XS", 31, 24, 34],
+  ["S", 33, 26, 36],
+  ["M", 35, 28, 38],
+  ["L", 37, 30, 40],
+  ["XL", 40, 33, 43],
+];
 
 export default function ProductBuyBox({
   productId,
@@ -152,6 +161,43 @@ export default function ProductBuyBox({
           );
         })}
       </div>
+
+      {/* fit + size chart, like the reference */}
+      <p className="mt-4 text-[12px] text-graphite">
+        {t("modelNote", { size: size ?? sizes[1] ?? sizes[0] })} {t("fitNote")}
+      </p>
+
+      <details className="group mt-4 border border-line">
+        <summary className="flex cursor-pointer items-center justify-between px-4 py-3 text-[12px] tracking-[0.08em] uppercase">
+          {t("chartTitle")}
+          <ChevronIcon className="h-4 w-4 transition-transform group-open:rotate-180" />
+        </summary>
+        <div className="border-t border-line px-4 py-4">
+          <p className="mb-3 text-[12px] leading-relaxed text-graphite">
+            {t("chartIntro")}
+          </p>
+          <table className="w-full text-[12px]">
+            <thead>
+              <tr className="text-mist">
+                <th className="py-1 text-start font-normal">{t("chartColSize")}</th>
+                <th className="py-1 text-start font-normal">{t("chartColBust")}</th>
+                <th className="py-1 text-start font-normal">{t("chartColWaist")}</th>
+                <th className="py-1 text-start font-normal">{t("chartColHip")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {CHART.map(([label, bust, waist, hip]) => (
+                <tr key={label} className="border-t border-line/70">
+                  <td className="py-1.5">{label}</td>
+                  <td className="py-1.5">{bust}</td>
+                  <td className="py-1.5">{waist}</td>
+                  <td className="py-1.5">{hip}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </details>
       {error && (
         <p className="mt-2 text-[12px] text-terra">{t("sizeError")}</p>
       )}
