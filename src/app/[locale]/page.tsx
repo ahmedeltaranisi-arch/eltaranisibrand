@@ -10,16 +10,6 @@ import { ArrowIcon, LeafIcon } from "@/components/icons";
 
 const VALUE_COUNT = 4;
 const REVIEW_COUNT = 3;
-const GALLERY = [
-  "/img/hero-model.jpg",
-  "/img/p-sweatpant.jpg",
-  "/img/fabric-mulberry.jpg",
-  "/img/a-zip-hoodie.jpg",
-  "/img/a-scoop-bra.jpg",
-  "/img/fabric-nori.jpg",
-  "/img/a-polo.jpg",
-];
-
 export default async function HomePage({
   params,
 }: {
@@ -346,34 +336,6 @@ export default async function HomePage({
         </h2>
         <ReviewCarousel count={REVIEW_COUNT} />
       </Reveal>
-
-      {/* community gallery */}
-      <section className="border-t border-line">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-10">
-          <div className="mb-8 text-center">
-            <h2 className="text-[22px] font-light sm:text-[28px]">
-              {t("instagram.title")}
-            </h2>
-            <p className="mt-2 text-[13px] text-graphite">
-              {t("instagram.body")}{" "}
-              <span className="text-ink">{t("instagram.handle")}</span>
-            </p>
-          </div>
-          <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
-            {GALLERY.map((src, i) => (
-              <li key={src + i} className="overflow-hidden bg-bone">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt=""
-                  loading="lazy"
-                  className="aspect-square w-full object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
     </>
   );
 }

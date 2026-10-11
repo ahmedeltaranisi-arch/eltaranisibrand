@@ -34,7 +34,7 @@ npm run verify       # all of the above, in order
 ```
 /                         -> 307 redirect to /en (or the cookie locale)
 /[locale]                 home: hero slider, marquee, statement, editorial,
-                          tabbed rails, values, reviews, gallery
+                          tabbed rails, values, reviews
 /[locale]/collections     collection index
 /[locale]/collections/[handle]
                           hero + client-side filters (size / colour / price / sort)
