@@ -114,7 +114,12 @@ export default function ProductCard({
               open();
               window.setTimeout(() => setAdded(false), 1600);
             }}
-            className="text-[12px] text-graphite underline decoration-dotted underline-offset-4 transition-opacity hover:opacity-60"
+            className={[
+              "text-[12px] text-graphite underline decoration-dotted underline-offset-4 transition-opacity duration-200 hover:opacity-60",
+              added
+                ? "opacity-100"
+                : "opacity-0 group-hover:opacity-100 focus-visible:opacity-100",
+            ].join(" ")}
           >
             {added ? t("added") : `${t("add")}+`}
           </button>

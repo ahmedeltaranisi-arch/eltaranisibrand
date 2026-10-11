@@ -38,8 +38,8 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "MATE the Label — Organic Everyday Essentials",
-    template: "%s | MATE the Label",
+    default: "Eltaranisi — Organic Everyday Essentials",
+    template: "%s | Eltaranisi",
   },
   description:
     "Everyday essentials cut from certified organic and natural fibres. Breathable, responsibly made, built to last.",
