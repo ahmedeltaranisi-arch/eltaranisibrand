@@ -23,15 +23,28 @@ const EMPTY: string[] = [];
 
 /* ---------- localStorage-backed store (same shape as the cart) ---------- */
 
+let cachedRaw: string | null = null;
+let cachedIds: string[] = EMPTY;
+
+/** Stable snapshot reference — see cart.tsx (React #185). */
 function read(): string[] {
   if (typeof window === "undefined") return EMPTY;
+  let raw: string | null = null;
   try {
-    const raw = window.localStorage.getItem(KEY);
-    const parsed = raw ? (JSON.parse(raw) as string[]) : EMPTY;
-    return Array.isArray(parsed) ? parsed : EMPTY;
+    raw = window.localStorage.getItem(KEY);
   } catch {
     return EMPTY;
   }
+  if (raw !== cachedRaw) {
+    cachedRaw = raw;
+    try {
+      const parsed = raw ? (JSON.parse(raw) as string[]) : EMPTY;
+      cachedIds = Array.isArray(parsed) ? parsed : EMPTY;
+    } catch {
+      cachedIds = EMPTY;
+    }
+  }
+  return cachedIds;
 }
 
 function write(next: string[]) {

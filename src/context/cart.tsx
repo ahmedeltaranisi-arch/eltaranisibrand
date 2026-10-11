@@ -32,14 +32,31 @@ const EMPTY: CartLine[] = [];
  * Read through useSyncExternalStore so the server render and the first client
  * render agree (both empty) and hydration stays clean.
  */
+let cachedRaw: string | null = null;
+let cachedLines: CartLine[] = EMPTY;
+
+/**
+ * `useSyncExternalStore` compares snapshots with Object.is, so the snapshot
+ * getter must return a STABLE reference. Parsing on every call yields a new
+ * array each time and causes an infinite render loop (React #185).
+ */
 function readLines(): CartLine[] {
   if (typeof window === "undefined") return EMPTY;
+  let raw: string | null = null;
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as CartLine[]) : EMPTY;
+    raw = window.localStorage.getItem(STORAGE_KEY);
   } catch {
     return EMPTY;
   }
+  if (raw !== cachedRaw) {
+    cachedRaw = raw;
+    try {
+      cachedLines = raw ? (JSON.parse(raw) as CartLine[]) : EMPTY;
+    } catch {
+      cachedLines = EMPTY;
+    }
+  }
+  return cachedLines;
 }
 
 function writeLines(next: CartLine[]) {
