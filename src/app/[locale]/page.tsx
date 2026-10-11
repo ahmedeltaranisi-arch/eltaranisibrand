@@ -146,7 +146,7 @@ export default async function HomePage({
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/material-model.jpg"
+            src="/img/studio-cream-f.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
@@ -176,7 +176,7 @@ export default async function HomePage({
             </Link>
             <video
               className="aspect-square w-[46%] max-w-[260px] bg-paper object-cover"
-              src="https://videos.pexels.com/video-files/6279036/6279036-uhd_2732_1440_25fps.mp4"
+              src="https://videos.pexels.com/video-files/30104843/12911922_1920_1080_30fps.mp4"
               autoPlay
               muted
               loop

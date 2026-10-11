@@ -15,7 +15,7 @@ export default function PromoButton() {
 
   return (
     <div
-      className="group fixed bottom-5 left-5 z-[70] flex items-stretch border border-slate bg-slate text-paper shadow-sm transition-colors duration-300 hover:border-ink hover:bg-paper hover:text-ink"
+      className="group fixed bottom-5 left-5 z-[70] flex items-stretch border border-ink bg-slate text-paper shadow-sm transition-colors duration-300 hover:border-ink hover:bg-paper hover:text-ink"
       dir="ltr"
     >
       <button
