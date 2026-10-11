@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/navigation";
-import { colorImage } from "@/lib/catalog";
+import { colorBack, colorImage } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 import WishlistButton from "./WishlistButton";
 
-const SWATCH_LIMIT = 9;
+const SWATCH_LIMIT = 4;
 
 export default function ProductCard({
   product,
@@ -23,12 +23,12 @@ export default function ProductCard({
 
   const [active, setActive] = useState(product.colorways[0]);
   const shown = product.colorways.slice(0, SWATCH_LIMIT);
-  const extra = product.colorways.length - shown.length;
   const key = product.titleKey.replace(/^p\./, "").replace(/\.title$/, "");
   const title = tp(`${key}.title`);
 
-  // the garment photo follows the selected colourway — always a real person
-  const mainImage = colorImage(active.name, product.image);
+  // studio front shot follows the selected colourway; hover reveals the back view
+  const front = colorImage(active.name, product.image);
+  const back = colorBack(active.name, product.imageAlt);
 
   return (
     <article className="group relative flex flex-col">
@@ -38,18 +38,27 @@ export default function ProductCard({
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          key={active.slug}
-          src={mainImage}
+          key={`f-${active.slug}`}
+          src={front}
           alt={title}
           loading={priority ? "eager" : "lazy"}
-          className="aspect-3/4 w-full animate-fade-up object-cover object-top transition-transform duration-[900ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.04]"
+          className="aspect-2/3 w-full object-cover object-top transition-opacity duration-500 group-hover:opacity-0"
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          key={`b-${active.slug}`}
+          src={back}
+          alt=""
+          aria-hidden
+          loading="lazy"
+          className="absolute inset-0 aspect-2/3 w-full object-cover object-top opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
 
         {/* badge bottom-left, like the reference */}
         {product.badges?.map((b) => (
           <span
             key={b}
-            className="absolute bottom-3 start-3 bg-bone px-2.5 py-1.5 text-[10px] tracking-[0.12em] uppercase"
+            className="absolute bottom-3 start-3 z-10 bg-bone px-2.5 py-1.5 text-[10px] tracking-[0.12em] uppercase"
           >
             {b === "best"
               ? t("bestSeller")
@@ -59,13 +68,7 @@ export default function ProductCard({
           </span>
         ))}
 
-        {product.compareAt && (
-          <span className="absolute top-3 end-3 bg-terra px-2 py-1 text-[10px] tracking-[0.14em] text-paper uppercase">
-            {t("sale")}
-          </span>
-        )}
-
-        <span className="absolute top-2.5 end-2.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100">
+        <span className="absolute top-2.5 end-2.5 z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100">
           <WishlistButton productId={product.id} size="sm" />
         </span>
       </Link>
@@ -77,15 +80,17 @@ export default function ProductCard({
           </h3>
         </Link>
 
-        <p className="mt-1 text-[13px]">
+        <p className="mt-1.5 text-[13px]">
           ${product.price}
           {product.compareAt && (
-            <span className="ms-2 text-mist line-through">${product.compareAt}</span>
+            <span className="ms-2 text-mist line-through">
+              ${product.compareAt}
+            </span>
           )}
         </p>
 
-        {/* colourways reveal on hover; switching swaps to a real person in that tone */}
-        <div className="mt-2.5 flex flex-wrap items-center gap-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100">
+        {/* rectangular swatches, always visible; active one underlined */}
+        <div className="mt-3 flex flex-wrap items-center gap-2">
           {shown.map((c) => (
             <button
               key={c.slug}
@@ -99,19 +104,14 @@ export default function ProductCard({
               }}
               onDoubleClick={() => router.push(`/products/${c.slug}`)}
               className={[
-                "h-4 w-4 rounded-full border transition-all",
+                "h-[12px] w-9 border border-ink/10 transition-shadow",
                 active.slug === c.slug
-                  ? "border-ink ring-1 ring-ink ring-offset-1"
-                  : "border-line hover:border-graphite",
+                  ? "shadow-[0_5px_0_-3px_#000]"
+                  : "hover:shadow-[0_5px_0_-3px_rgba(0,0,0,0.35)]",
               ].join(" ")}
               style={{ background: c.hex }}
             />
           ))}
-          {extra > 0 && (
-            <span className="text-[11px] text-mist">
-              {t("moreColors", { count: extra })}
-            </span>
-          )}
         </div>
       </div>
     </article>

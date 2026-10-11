@@ -387,23 +387,44 @@ export const searchSuggestions = [
  * always show a real human (never AI).
  */
 const COLOR_IMAGE: Record<string, string> = {
-  jet: "/img/hero-model.jpg",
-  midnight: "/img/p-crossover-legging.jpg",
-  bone: "/img/p-midi-legging.jpg",
-  clay: "/img/p-sports-bra.jpg",
-  terra: "/img/p-sports-bra.jpg",
-  heather: "/img/a-crossover-legging.jpg",
-  mocha: "/img/p-sweatpant.jpg",
-  pine: "/img/a-crossover-legging.jpg",
-  sage: "/img/p-sports-bra.jpg",
-  cove: "/img/p-crossover-legging.jpg",
-  mulberry: "/img/p-high-neck-tank.jpg",
-  ochre: "/img/p-sports-bra.jpg",
+  jet: "/img/studio-black-f.jpg",
+  midnight: "/img/studio-navy-f.jpg",
+  cove: "/img/studio-navy-f.jpg",
+  bone: "/img/studio-cream-f.jpg",
+  clay: "/img/studio-brown-f.jpg",
+  terra: "/img/studio-brown-f.jpg",
+  mocha: "/img/studio-brown-f.jpg",
+  mulberry: "/img/studio-brown-f.jpg",
+  ochre: "/img/studio-brown-f.jpg",
+  heather: "/img/studio-grey-f.jpg",
+  sage: "/img/studio-grey-f.jpg",
+  pine: "/img/studio-grey-f.jpg",
+};
+
+/** Back-view studio photo per tone — shown on hover, always a real person. */
+const COLOR_BACK: Record<string, string> = {
+  jet: "/img/studio-black-b.jpg",
+  midnight: "/img/studio-navy-b.jpg",
+  cove: "/img/studio-navy-b.jpg",
+  bone: "/img/studio-cream-b.jpg",
+  clay: "/img/studio-brown-b.jpg",
+  terra: "/img/studio-brown-b.jpg",
+  mocha: "/img/studio-brown-b.jpg",
+  mulberry: "/img/studio-brown-b.jpg",
+  ochre: "/img/studio-brown-b.jpg",
+  heather: "/img/studio-grey-b.jpg",
+  sage: "/img/studio-grey-b.jpg",
+  pine: "/img/studio-grey-b.jpg",
 };
 
 /** Real-person photo for a colourway tone, falling back to the product shot. */
 export function colorImage(color: string, fallback: string): string {
   return COLOR_IMAGE[color] ?? fallback;
+}
+
+/** Real-person back view for a colourway tone, falling back to the alt shot. */
+export function colorBack(color: string, fallback: string): string {
+  return COLOR_BACK[color] ?? fallback;
 }
 
 /** `p.sportsBra.title` -> `sportsBra` — the group used for every product copy key. */
