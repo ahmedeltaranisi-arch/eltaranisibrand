@@ -18,7 +18,7 @@ export default function ProductTabs({
     <div>
       <div
         role="tablist"
-        className="mb-8 flex items-center justify-center gap-6 border-b border-line sm:gap-10"
+        className="mb-8 flex items-center justify-center gap-8 sm:gap-14"
       >
         {groups.map((g) => (
           <button
@@ -28,9 +28,9 @@ export default function ProductTabs({
             aria-selected={g.key === activeKey}
             onClick={() => setActiveKey(g.key)}
             className={[
-              "-mb-px border-b-2 pb-3 text-[13px] tracking-[0.06em] transition-colors",
+              "border-b pb-1.5 text-[15px] transition-colors sm:text-[17px]",
               g.key === activeKey
-                ? "border-ink text-ink"
+                ? "border-dotted border-ink text-ink"
                 : "border-transparent text-mist hover:text-graphite",
             ].join(" ")}
           >

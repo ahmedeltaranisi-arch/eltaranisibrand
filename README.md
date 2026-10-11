@@ -61,13 +61,24 @@ src/
                         hero slider, marquee, product card/rail/tabs,
                         filters, buy box, review carousel, newsletter,
                         locale switcher, breadcrumbs, reveal, icons
-messages/en.json        396 keys
-messages/ar.json        396 keys (same shape, RTL copy)
+messages/en.json        399 keys
+messages/ar.json        399 keys (same shape, RTL copy)
 scripts/check-i18n.mjs  key + placeholder parity check
 public/img/shots/       the brand shoot: <style>-<tone>-<n>.jpg, where 1 is
                         the front frame, 2 the hover pose and 3+ extra
                         angles; public/img/rev-*.jpg are review avatars
 ```
+
+## Home page order (mirrors the walkthrough video)
+
+announcement bars → hero (centred serif title, dotted-underline CTA) → marquee →
+statement → tabbed products (New Arrivals / Best Sellers / The Sweats Edit, each
+tab a dotted underline) → Meet Fig (two panels) → materials (portrait + fabric
+still) → category trio with counts → Getaway Edit (still-life + tall shot) →
+dress-code statement over a portrait → editorial → values → reviews.
+
+Every card carries an `Add+` quick add that drops the first in-stock size of the
+colour on screen into the cart and opens the drawer, like the reference.
 
 ## Interactions worth knowing
 
