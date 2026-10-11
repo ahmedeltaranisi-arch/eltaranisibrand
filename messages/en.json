@@ -38,6 +38,7 @@
     "soldOut": "Sold out"
   },
   "announce": {
+    "shippingLine": "Free shipping to {country} on all orders over $200",
     "items": [
       {
         "text": "Complimentary shipping on orders over $200",
@@ -58,17 +59,21 @@
   },
   "nav": {
     "shop": "Shop",
-    "loungewear": "Loungewear",
+    "new": "New",
+    "bestSellers": "Best Sellers",
     "activewear": "Activewear",
+    "clothing": "Clothing",
+    "intimates": "Intimates",
+    "loungewear": "Loungewear",
     "bundles": "Bundles",
     "about": "About",
     "contact": "Get in touch",
     "account": "Account",
     "search": "Search",
     "cart": "Cart",
+    "wishlist": "Wishlist",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "wishlist": "Wishlist"
+    "closeMenu": "Close menu"
   },
   "menu": {
     "featured": {
@@ -390,7 +395,15 @@
       "title": "Sale",
       "description": "Past-season favourites at a better price. While they last."
     },
-    "youMayAlsoLike": "You may also like"
+    "youMayAlsoLike": "You may also like",
+    "all": {
+      "title": "Clothing",
+      "description": "Every piece we make, in one place."
+    },
+    "intimates": {
+      "title": "Intimates",
+      "description": "Bras and layers in certified organic jersey."
+    }
   },
   "product": {
     "add": "Add to bag",

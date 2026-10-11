@@ -14,6 +14,8 @@ export function generateStaticParams() {
     "bottoms",
     "accessories",
     "sale",
+    "all",
+    "intimates",
   ].map((handle) => ({ handle }));
 }
 

@@ -46,7 +46,7 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             <img
               src={slide.image}
               alt=""
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-top"
               loading={i === 0 ? "eager" : "lazy"}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/45 via-ink/5 to-transparent" />

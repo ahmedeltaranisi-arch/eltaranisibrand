@@ -59,7 +59,7 @@ const rows: Row[] = [
     image: "/img/p-sports-bra.jpg",
     colors: ["clay", "jet", "bone", "heather", "pine", "mocha", "mulberry", "midnight", "cove", "terra"],
     badges: ["best"],
-    collections: ["new-arrivals", "best-sellers", "activewear", "tops"],
+    collections: ["new-arrivals", "best-sellers", "activewear", "tops", "intimates"],
     sizes: BRA,
     rating: 4.8,
     reviewCount: 1284,
@@ -157,7 +157,7 @@ const rows: Row[] = [
     price: 54,
     image: "/img/p-sports-bra.jpg",
     colors: ["midnight", "bone", "clay", "jet"],
-    collections: ["new-arrivals", "activewear", "tops"],
+    collections: ["new-arrivals", "activewear", "tops", "intimates"],
     sizes: BRA,
     rating: 4.6,
     reviewCount: 476,
@@ -261,6 +261,7 @@ export function getColorway(slug: string) {
 }
 
 export function productsByCollection(handle: string): Product[] {
+  if (handle === "all") return products;
   return products.filter((p) => p.collections.includes(handle));
 }
 
@@ -306,6 +307,18 @@ export const collections: CollectionDef[] = [
     titleKey: "collections.accessories.title",
     descriptionKey: "collections.accessories.description",
     hero: "/img/p-high-neck-tank.jpg",
+  },
+  {
+    handle: "all",
+    titleKey: "collections.all.title",
+    descriptionKey: "collections.all.description",
+    hero: "/img/p-ls-top.jpg",
+  },
+  {
+    handle: "intimates",
+    titleKey: "collections.intimates.title",
+    descriptionKey: "collections.intimates.description",
+    hero: "/img/p-sports-bra.jpg",
   },
   {
     handle: "sale",
