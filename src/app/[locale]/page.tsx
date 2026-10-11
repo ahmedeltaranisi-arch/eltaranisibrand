@@ -97,41 +97,46 @@ export default async function HomePage({
         <ProductTabs groups={groups} />
       </Reveal>
 
-      {/* meet the new colour — split banner */}
-      <section className="relative grid lg:grid-cols-2">
-        <div className="relative min-h-[420px] lg:min-h-[560px]">
+      {/* meet the new colour — two panels, copy centred on the left one */}
+      <section className="relative grid bg-paper lg:grid-cols-2">
+        <div className="relative min-h-[420px] lg:min-h-[620px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/img/shots/bra-fig-4.jpg"
             alt=""
             loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover object-top"
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+            <p className="eyebrow mb-3 text-paper drop-shadow-sm">{t("fig.eyebrow")}</p>
+            <h2 className="font-display text-[40px] text-paper drop-shadow-sm sm:text-[58px]">
+              {t("fig.title")}
+            </h2>
+            <Link
+              href={t("fig.href")}
+              className="mt-7 border-b border-dotted border-paper pb-1 text-[12px] tracking-[0.14em] text-paper uppercase hover:opacity-80"
+            >
+              {t("fig.cta")}
+            </Link>
+          </div>
         </div>
-        <div className="relative min-h-[420px] lg:min-h-[560px]">
+        <div className="relative min-h-[420px] lg:min-h-[620px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/shots/bra-fig-3.jpg"
+            src="/img/shots/legging-fig-2.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"
           />
-        </div>
-        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center text-paper">
-          <p className="eyebrow mb-3 drop-shadow-sm">{t("fig.eyebrow")}</p>
-          <h2 className="font-display text-[40px] drop-shadow-sm sm:text-[56px]">
-            {t("fig.title")}
-          </h2>
-          <Link
-            href={t("fig.href")}
-            className="pointer-events-auto mt-6 text-[12px] tracking-[0.12em] uppercase underline underline-offset-4 hover:opacity-80"
-          >
-            {t("fig.cta")}
-          </Link>
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/60 to-transparent p-6 sm:p-9">
+            <p className="max-w-md text-[14px] leading-relaxed text-paper">
+              {t("fig.body")}
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* materials: portrait left, story + stretch video right */}
+      {/* materials: portrait left, story + fabric still right */}
       <section className="grid bg-bone lg:grid-cols-2">
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -164,13 +169,12 @@ export default async function HomePage({
             >
               {t("materials.link")}
             </Link>
-            <video
-              className="aspect-square w-[46%] max-w-[260px] bg-paper object-cover"
-              src="https://videos.pexels.com/video-files/30104843/12911922_1920_1080_30fps.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/img/shots/tank-mocha-2.jpg"
+              alt=""
+              loading="lazy"
+              className="aspect-square w-[46%] max-w-[260px] object-cover object-top"
             />
           </div>
         </div>
@@ -208,26 +212,33 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* getaway edit */}
+      {/* getaway edit — cream panel with the still-life frame, tall shot on the right */}
       <section className="grid bg-bone lg:grid-cols-2">
         <div className="flex flex-col px-4 pt-16 pb-10 sm:px-8 lg:px-14 lg:pt-24">
           <h2 className="font-display text-[38px] sm:text-[52px]">
             {t("getaway.title")}
           </h2>
-          <div className="mt-14 flex justify-center lg:mt-20">
+          <div className="mt-12 flex flex-col items-center gap-4 lg:mt-16">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/img/shots/bra-bone-1.jpg"
+              src="/img/shots/still-getaway-1.jpg"
               alt=""
               loading="lazy"
-              className="w-[62%] max-w-[300px] object-cover"
+              className="w-[62%] max-w-[320px] object-cover"
             />
+            <p className="text-[13px] text-graphite">{t("getaway.caption")}</p>
+            <Link
+              href={t("categories.items.2.href")}
+              className="text-[13px] underline decoration-dotted underline-offset-[6px] hover:opacity-70"
+            >
+              {t("getaway.cta")}
+            </Link>
           </div>
         </div>
         <div className="relative min-h-[480px] lg:min-h-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/img/shots/legging-fig-2.jpg"
+            src="/img/shots/pant-nori-1.jpg"
             alt=""
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-top"

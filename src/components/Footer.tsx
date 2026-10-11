@@ -57,7 +57,7 @@ export default async function Footer() {
         <div className="overflow-hidden pb-6">
           <p
             aria-hidden
-            className="font-display leading-[0.9] tracking-[0.06em] whitespace-nowrap text-ink select-none [font-size:clamp(56px,13vw,190px)]"
+            className="font-display leading-[0.82] tracking-[0.02em] whitespace-nowrap text-ink select-none [font-size:clamp(40px,9.5vw,132px)]"
           >
             ELTARANISI
           </p>

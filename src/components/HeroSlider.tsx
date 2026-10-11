@@ -53,16 +53,18 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
           </div>
         ))}
 
-        {/* copy */}
-        <div className="absolute inset-x-0 bottom-0 px-4 pb-16 sm:px-6 sm:pb-20 lg:px-10">
-          <div key={index} className="max-w-xl animate-fade-up text-paper">
-            <p className="eyebrow mb-3 opacity-80">{slides[index].eyebrow}</p>
-            <h1 className="text-[34px] leading-[1.05] font-light sm:text-[52px] lg:text-[64px]">
+        {/* copy — centred over the frame, like the reference */}
+        <div className="absolute inset-0 flex items-center justify-center px-6">
+          <div key={index} className="animate-fade-up max-w-3xl text-center text-paper">
+            {slides[index].eyebrow && (
+              <p className="eyebrow mb-4 opacity-80">{slides[index].eyebrow}</p>
+            )}
+            <h1 className="font-display text-[42px] leading-[1.02] sm:text-[68px] lg:text-[86px]">
               {slides[index].title}
             </h1>
             <Link
               href={slides[index].href}
-              className="mt-7 inline-flex h-12 items-center gap-2 bg-paper px-7 text-[11px] tracking-[0.14em] text-ink uppercase transition-colors hover:bg-bone"
+              className="mt-8 inline-block border-b border-dotted border-paper pb-1 text-[12px] tracking-[0.14em] uppercase transition-opacity hover:opacity-70"
             >
               {slides[index].cta}
             </Link>

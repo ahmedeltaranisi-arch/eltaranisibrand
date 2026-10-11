@@ -410,7 +410,8 @@
       "eyebrow": "New activewear",
       "title": "Meet Mulberry",
       "cta": "Shop the colour",
-      "href": "/collections/activewear"
+      "href": "/collections/activewear",
+      "body": "A deep, smoky purple jewel tone. Equal parts moody and elevated — the colour of the season."
     },
     "materials": {
       "eyebrow": "Made with natural, traceable fibres.",
@@ -437,7 +438,9 @@
       ]
     },
     "getaway": {
-      "title": "The Getaway Edit"
+      "title": "The Getaway Edit",
+      "caption": "Style, well traveled.",
+      "cta": "Shop now"
     },
     "dress": {
       "title": "The *highest* standards for the pieces you reach for *most*.",

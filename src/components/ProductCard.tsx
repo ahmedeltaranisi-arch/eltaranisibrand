@@ -6,6 +6,7 @@ import { Link, useRouter } from "@/navigation";
 import { colorwayShots } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 import WishlistButton from "./WishlistButton";
+import { useCart } from "@/context/cart";
 
 const SWATCH_LIMIT = 4;
 
@@ -20,6 +21,8 @@ export default function ProductCard({
   const tp = useTranslations("p");
   const tc = useTranslations("colors");
   const router = useRouter();
+  const { add, open } = useCart();
+  const [added, setAdded] = useState(false);
 
   const [active, setActive] = useState(product.colorways[0]);
   const shown = product.colorways.slice(0, SWATCH_LIMIT);
@@ -81,14 +84,41 @@ export default function ProductCard({
           </h3>
         </Link>
 
-        <p className="mt-1.5 text-[13px]">
-          ${product.price}
-          {product.compareAt && (
-            <span className="ms-2 text-mist line-through">
-              ${product.compareAt}
-            </span>
-          )}
-        </p>
+        <div className="mt-1.5 flex items-center justify-between gap-3">
+          <p className="text-[13px]">
+            ${product.price}
+            {product.compareAt && (
+              <span className="ms-2 text-mist line-through">
+                ${product.compareAt}
+              </span>
+            )}
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              const size =
+                product.sizes.find((sz) => (product.stock[sz] ?? 0) > 0) ??
+                product.sizes[0];
+              add({
+                id: `${product.id}-${active.name}-${size}`,
+                productSlug: active.slug,
+                productId: product.id,
+                titleKey: product.titleKey,
+                colorName: active.name,
+                colorHex: active.hex,
+                size,
+                price: product.price,
+                image: front,
+              });
+              setAdded(true);
+              open();
+              window.setTimeout(() => setAdded(false), 1600);
+            }}
+            className="text-[12px] text-graphite underline decoration-dotted underline-offset-4 transition-opacity hover:opacity-60"
+          >
+            {added ? t("added") : `${t("add")}+`}
+          </button>
+        </div>
 
         {/* the colourway row reads like the reference: swatches + the tone name
             of the frame on screen, with an overflow count for the rest */}
