@@ -9,6 +9,7 @@ import {
   CATEGORIES, COLOR_GROUPS, PAGE_SIZE,
 } from "../src/lib/mateNewArrivals";
 import { CatalogLineError, resolveCheckoutLine } from "../src/lib/checkoutCatalog";
+import { resolveExternalImageSources, sanitizeImagePath } from "../src/lib/imageApi";
 
 const blank = emptyFilters();
 
@@ -20,7 +21,7 @@ test("real catalog is unique: 107 arrivals and 177 verified colorways", () => {
   assert.deepEqual(mateNewArrivals.map((p) => p.featuredRank), Array.from({ length: 107 }, (_, i) => i));
 });
 
-test("every color uses real local photographs and a real swatch", () => {
+test("every color uses real photographs and a real swatch served via the external image API", () => {
   const images = new Set<string>();
   for (const p of arrivalCatalog) {
     assert.ok(p.images.length > 0, p.slug);
@@ -29,10 +30,14 @@ test("every color uses real local photographs and a real swatch", () => {
     assert.ok(COLOR_GROUPS.includes(p.color.group as never), p.slug);
     assert.ok(["essential", "limited"].includes(p.colorEdition), p.slug);
     assert.ok(p.availableSizes.every((s) => p.sizes.includes(s)), p.slug);
-    assert.ok(existsSync(join(process.cwd(), "public", p.color.swatch)), p.color.swatch);
+    const swatchClean = sanitizeImagePath(p.color.swatch.replace(/^\/img\//, ""));
+    assert.ok(swatchClean, p.color.swatch);
+    assert.ok(resolveExternalImageSources(swatchClean).length >= 3, p.color.swatch);
     for (const image of p.images) {
       assert.ok(image.startsWith("/img/new-arrivals/"));
-      assert.ok(existsSync(join(process.cwd(), "public", image)), image);
+      const clean = sanitizeImagePath(image.replace(/^\/img\//, ""));
+      assert.ok(clean, image);
+      assert.ok(resolveExternalImageSources(clean).length >= 3, image);
       images.add(image);
     }
     for (const colorway of productColorways(p)) {
@@ -123,8 +128,13 @@ test("checkout rejects unknown SKUs, invalid/unavailable sizes and invalid quant
   expectError({ slug: limited.slug, size: limited.sizes.find((s) => !limited.availableSizes.includes(s)), qty: 1 }, "out_of_stock");
 });
 
-test("fonts, editorial photographs and brand marks are local, not remote runtime dependencies", () => {
-  for (const path of ["fonts/FHOscarPro-Regular.woff2", "fonts/FHOscarPro-Medium.woff2", "fonts/EdictDisplay-Light.woff2", "fonts/EdictDisplay-LightItalic.woff2", "img/new-arrivals/getaway-street.webp", "img/new-arrivals/getaway-still.webp", "img/new-arrivals/mate-wordmark.svg", "img/new-arrivals/footer-monogram.svg", "img/new-arrivals/footer-mate-wordmark.svg"]) assert.ok(existsSync(join(process.cwd(), "public", path)), path);
+test("fonts are local and editorial photographs/brand marks resolve through external image API", () => {
+  for (const path of ["fonts/FHOscarPro-Regular.woff2", "fonts/FHOscarPro-Medium.woff2", "fonts/EdictDisplay-Light.woff2", "fonts/EdictDisplay-LightItalic.woff2"]) assert.ok(existsSync(join(process.cwd(), "public", path)), path);
+  for (const imgPath of ["eltaranisi-logo.png", "hero-1.jpeg", "hero-2.jpeg", "hero-3.jpeg", "rev-a.jpg", "rev-b.jpg", "rev-c.jpg", "new-arrivals/getaway-street.webp", "new-arrivals/getaway-still.webp", "new-arrivals/mate-wordmark.svg", "new-arrivals/footer-monogram.svg", "new-arrivals/footer-mate-wordmark.svg"]) {
+    const clean = sanitizeImagePath(imgPath);
+    assert.ok(clean, imgPath);
+    assert.ok(resolveExternalImageSources(clean).length >= 3, imgPath);
+  }
   const css = readFileSync("src/app/new-arrivals.css", "utf8");
   assert.ok(css.includes("prefers-reduced-motion"));
   assert.ok(css.includes(".na-filter-drawer"));

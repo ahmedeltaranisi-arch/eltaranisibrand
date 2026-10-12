@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { POST as newsletter } from "../src/app/api/newsletter/route";
 import { POST as checkout } from "../src/app/api/checkout/route";
+import { GET as getImage } from "../src/app/api/images/[...path]/route";
+import { GET as getImagesStatus, POST as uploadImage } from "../src/app/api/images/route";
 import { mateNewArrivals } from "../src/lib/mateNewArrivals";
 
 const request = (route: string, body: unknown) => new Request(`https://store.example/api/${route}`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
@@ -68,3 +70,39 @@ test("imported products pass server validation; missing payment configuration is
     assert.deepEqual(await response.json(), { error: "stripe_not_configured" });
   } finally { if (previous) process.env.STRIPE_SECRET_KEY = previous; }
 });
+
+test("external image API serves images with immutable caching and blocks path traversal", async () => {
+  const bad = await getImage(new Request("https://store.example/api/images/../secret.png"), {
+    params: Promise.resolve({ path: ["..", "secret.png"] }),
+  });
+  assert.equal(bad.status, 400);
+
+  const previousFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response(new Uint8Array([137, 80, 78, 71]), { status: 200 });
+  try {
+    const ok = await getImage(new Request("https://store.example/api/images/eltaranisi-logo.png"), {
+      params: Promise.resolve({ path: ["eltaranisi-logo.png"] }),
+    });
+    assert.equal(ok.status, 200);
+    assert.equal(ok.headers.get("content-type"), "image/png");
+    assert.ok(ok.headers.get("cache-control")?.includes("immutable"));
+  } finally {
+    globalThis.fetch = previousFetch;
+  }
+
+  const statusRes = await getImagesStatus();
+  assert.equal(statusRes.status, 200);
+  const statusJson = (await statusRes.json()) as { status: string; mode: string };
+  assert.equal(statusJson.status, "ok");
+  assert.equal(statusJson.mode, "external-cdn");
+
+  const prevToken = process.env.CLOUDFLARE_API_TOKEN;
+  delete process.env.CLOUDFLARE_API_TOKEN;
+  try {
+    const noTokenRes = await uploadImage(request("images", { path: "eltaranisi-logo.png" }));
+    assert.equal(noTokenRes.status, 503);
+  } finally {
+    if (prevToken) process.env.CLOUDFLARE_API_TOKEN = prevToken;
+  }
+});
+
