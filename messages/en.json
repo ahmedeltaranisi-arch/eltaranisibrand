@@ -293,7 +293,7 @@
           ]
         }
       ],
-      "newsTitle": "Join the Eltaranisi world.",
+      "newsTitle": "Join the Eltaranisi Prand world.",
       "newsBody": "For style edits, seasonal capsules, and exclusive previews delivered to your inbox.",
       "legalRow": [
         "Privacy Policy",
@@ -311,21 +311,21 @@
           "title": "The autumn capsule",
           "cta": "Shop new arrivals",
           "href": "/collections/new-arrivals",
-          "image": "/img/shots/lst-jet-1.jpg"
+          "image": "/img/hero-1.jpeg"
         },
         {
           "eyebrow": "Organic fleece",
           "title": "Softness, restocked",
           "cta": "Shop loungewear",
           "href": "/collections/loungewear",
-          "image": "/img/shots/polo-bone-1.jpg"
+          "image": "/img/hero-2.jpeg"
         },
         {
           "eyebrow": "Every layer",
           "title": "Built for real life",
           "cta": "Shop best sellers",
           "href": "/collections/best-sellers",
-          "image": "/img/shots/legging-jet-1.jpg"
+          "image": "/img/hero-3.jpeg"
         }
       ],
       "prev": "Previous slide",
@@ -1079,7 +1079,7 @@
       "fabricsAnswer": "We thoughtfully source natural fibers and hold our materials to higher standards for environmental and social responsibility. Many organic fabrications are certified to GOTS™ and Regenerative Organic Certified™ standards, while OEKO-TEX® certification ensures select materials are tested for harmful substances. Beyond our fabrics, MATE is The Climate Label certified and a Certified B Corp—part of our ongoing commitment to making better choices at every step."
     },
     "footer": {
-      "about": "about mate",
+      "about": "about eltaranisi brand",
       "journal": "journal",
       "fabrics": "fabric library",
       "faq": "faq",
@@ -1091,7 +1091,7 @@
       "instagram": "instagram",
       "facebook": "facebook",
       "pinterest": "pinterest",
-      "newsletterTitle": "Join the MATE world.",
+      "newsletterTitle": "Join the Eltaranisi Prand world.",
       "newsletterBody": "For style edits, seasonal capsules, and exclusive previews delivered to your inbox.",
       "privacy": "privacy policy",
       "data": "data request",

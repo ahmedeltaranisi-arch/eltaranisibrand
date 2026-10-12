@@ -14,9 +14,17 @@ export default async function Footer() {
         {/* top: monogram + link columns */}
         <div className="grid gap-12 pt-14 pb-10 lg:grid-cols-[1fr_2fr] lg:gap-8">
           <div>
-            <span className="inline-flex h-10 w-10 items-center justify-center border border-ink/70 font-display text-[18px]">
-              E
-            </span>
+            <Link href="/" aria-label="ELTARANISI BRAND — Home" className="inline-block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/img/eltaranisi-logo.png"
+                alt="ELTARANISI BRAND"
+                width={96}
+                height={96}
+                loading="lazy"
+                className="h-20 w-auto object-contain"
+              />
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 gap-10 sm:grid-cols-3">
@@ -57,9 +65,9 @@ export default async function Footer() {
         <div className="overflow-hidden pb-6">
           <p
             aria-hidden
-            className="font-display leading-[0.82] tracking-[0.02em] whitespace-nowrap text-ink select-none [font-size:clamp(40px,9.5vw,132px)]"
+            className="font-display leading-[0.82] tracking-[0.02em] whitespace-nowrap text-ink select-none [font-size:clamp(32px,7.2vw,112px)]"
           >
-            ELTARANISI
+            ELTARANISI BRAND
           </p>
         </div>
 

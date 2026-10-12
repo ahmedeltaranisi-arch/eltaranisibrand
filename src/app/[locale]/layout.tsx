@@ -22,6 +22,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://eltaranisibrand.vercel.app"),
   title: { default: "Eltaranisi — Organic Everyday Essentials", template: "%s | Eltaranisi" },
   description: "Everyday essentials cut from certified organic and natural fibres. Breathable, responsibly made, built to last.",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })); }

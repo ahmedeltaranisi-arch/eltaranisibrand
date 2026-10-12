@@ -34,9 +34,9 @@ export default function ArrivalFooter() {
   return (
     <>
       <footer className="na-footer">
-        <Link href="/" className="na-footer-monogram" aria-label="MATE — Home">
+        <Link href="/" className="na-footer-monogram" aria-label="ELTARANISI BRAND — Home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/img/new-arrivals/footer-monogram.svg" alt="" width={89} height={81} loading="lazy" />
+          <img src="/img/eltaranisi-logo.png" alt="ELTARANISI BRAND" width={110} height={110} loading="lazy" />
         </Link>
         <div className="na-footer-menus">
           {MENUS.map((column, index) => <nav key={index} aria-label={`Footer ${index + 1}`}>
@@ -54,10 +54,9 @@ export default function ArrivalFooter() {
             <img src="/img/new-arrivals/certification-climate-label.svg" alt="The Climate Label" width={135} height={78} loading="lazy" />
           </a>
         </div>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="na-footer-wordmark" src="/img/new-arrivals/footer-mate-wordmark.svg" alt="MATE" width={542} height={158} loading="lazy" />
+        <p className="na-footer-wordmark" aria-label="ELTARANISI BRAND">ELTARANISI BRAND</p>
         <div className="na-footer-legal">
-          <span>© {new Date().getFullYear()} MATE</span>
+          <span>© {new Date().getFullYear()} ELTARANISI BRAND</span>
           <a href="https://matethelabel.com/pages/privacy-policy">{t("footer.privacy")}</a>
           <a href="https://matethelabel.com/apps/enzuzo/data">{t("footer.data")}</a>
           <a href="https://matethelabel.com/pages/accessibility">{t("footer.accessibility")}</a>

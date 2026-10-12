@@ -311,21 +311,21 @@
           "title": "كبسولة الخريف",
           "cta": "تسوّق الجديد",
           "href": "/collections/new-arrivals",
-          "image": "/img/shots/lst-jet-1.jpg"
+          "image": "/img/hero-1.jpeg"
         },
         {
           "eyebrow": "صوف عضوي",
           "title": "النعومة رجعت تاني",
           "cta": "تسوّق ملابس المنزل",
           "href": "/collections/loungewear",
-          "image": "/img/shots/polo-bone-1.jpg"
+          "image": "/img/hero-2.jpeg"
         },
         {
           "eyebrow": "كل الطبقات",
           "title": "مصنوعة للحياة الحقيقية",
           "cta": "تسوّق الأكثر مبيعاً",
           "href": "/collections/best-sellers",
-          "image": "/img/shots/legging-jet-1.jpg"
+          "image": "/img/hero-3.jpeg"
         }
       ],
       "prev": "الشريحة السابقة",
@@ -1079,7 +1079,7 @@
       "fabricsAnswer": "نختار الألياف الطبيعية بعناية ونلتزم بمعايير أعلى للمسؤولية البيئية والاجتماعية. الكثير من الخامات العضوية معتمدة وفق معايير GOTS™ وRegenerative Organic Certified™، وتضمن شهادة OEKO-TEX® اختبار خامات مختارة ضد المواد الضارة. كذلك تحمل MATE اعتماد The Climate Label وهي شركة Certified B Corp، ضمن التزامها الدائم باتخاذ خيارات أفضل في كل خطوة."
     },
     "footer": {
-      "about": "عن MATE",
+      "about": "عن ELTARANISI BRAND",
       "journal": "المجلة",
       "fabrics": "مكتبة الخامات",
       "faq": "الأسئلة الشائعة",
@@ -1091,7 +1091,7 @@
       "instagram": "إنستغرام",
       "facebook": "فيسبوك",
       "pinterest": "بنترست",
-      "newsletterTitle": "انضمّي إلى عالم MATE.",
+      "newsletterTitle": "انضمّي إلى عالم Eltaranisi Prand.",
       "newsletterBody": "إطلالات مختارة ومجموعات موسمية ومعاينات حصرية تصل إلى بريدك الإلكتروني.",
       "privacy": "سياسة الخصوصية",
       "data": "طلب البيانات",
