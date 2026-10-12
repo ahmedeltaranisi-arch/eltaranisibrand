@@ -1,7 +1,4 @@
-/**
- * Placeholder wordmark for the client's own brand. Swap this component for
- * real artwork before launch.
- */
+/** Eltaranisi Brand wordmark, shared by all page headers. */
 export default function Wordmark({ className = "" }: { className?: string }) {
   return (
     <span className={`inline-flex items-baseline gap-2 ${className}`}>

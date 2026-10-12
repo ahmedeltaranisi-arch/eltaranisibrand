@@ -7,7 +7,6 @@ import { Inter, Cairo, Fraunces } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { CartProvider } from "@/context/cart";
 import { WishlistProvider } from "@/context/wishlist";
-import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LocaleLayout from "@/components/LocaleLayout";
@@ -40,7 +39,8 @@ export default async function LocaleRootLayout({ children, params }: {
           <WishlistProvider>
             <CartProvider>
               <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"><LocaleLayout k="common.skip" /></a>
-              <ArrivalShell announcement={<AnnouncementBar />} header={<Header />} footer={<Footer />}>
+              <Header />
+              <ArrivalShell footer={<Footer />}>
                 {children}
               </ArrivalShell>
             </CartProvider>

@@ -37,7 +37,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd 
   }
 
   return (
-    <article className="na-product-card" data-product-slug={active.slug} data-default-slug={product.slug} data-price={active.priceLE}>
+    <article className="na-product-card product-reveal-card" data-product-slug={active.slug} data-default-slug={product.slug} data-price={active.priceLE}>
       <div className="na-product-media-frame">
         <Link
           href={`/products/${active.slug}`}
@@ -100,7 +100,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd 
         {colorways.length > 4 && <button type="button" className="na-swatch-more na-swatch-more-desktop" aria-expanded={expanded} aria-label={t("showAllColors", { count: colorways.length - 4, product: title })} onClick={() => setExpanded(true)}>+{colorways.length - 4}</button>}
         {colorways.length > 3 && <button type="button" className="na-swatch-more na-swatch-more-mobile" aria-expanded={expanded} aria-label={t("showAllColors", { count: colorways.length - 3, product: title })} onClick={() => setExpanded(true)}>+{colorways.length - 3}</button>}
       </div>
-      <button type="button" className="na-product-add" aria-haspopup="dialog" aria-label={`${t("quickAdd")} ${title}`} onClick={() => onQuickAdd(active)}>
+      <button type="button" className="na-product-add product-reveal-action" aria-haspopup="dialog" aria-label={`${t("quickAdd")} ${title}`} onClick={() => onQuickAdd(active)}>
         <span>{t("add")}</span><span aria-hidden="true">+</span>
       </button>
     </article>

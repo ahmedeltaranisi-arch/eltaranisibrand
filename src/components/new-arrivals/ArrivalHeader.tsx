@@ -2,7 +2,8 @@
 
 import { useEffect, useId, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/navigation";
+import { Link, usePathname } from "@/navigation";
+import Wordmark from "../Wordmark";
 import { useCart } from "@/context/cart";
 import { CloseIcon, MenuIcon } from "../icons";
 import { ArrivalSearchIcon, ArrivalAccountIcon, ArrivalBagIcon } from "./ArrivalIcons";
@@ -18,6 +19,7 @@ const NAV = [
 export default function ArrivalHeader() {
   const t = useTranslations("newArrivals");
   const nav = useTranslations("nav");
+  const pathname = usePathname();
   const { count, open: openCart } = useCart();
   const [announcement, setAnnouncement] = useState(0);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -39,20 +41,22 @@ export default function ArrivalHeader() {
 
   return (
     <>
-      <div className="na-local-shipping">{t("announcementShipping")}</div>
-      <header className="na-header-wrap">
+      <div className="na-local-shipping sf-header-scope">{t("announcementShipping")}</div>
+      <header className="na-header-wrap sf-header-scope" data-site-header="eltaranisi">
         <div className="na-announcement">
           <Link href={announcement === 0 ? "/collections/all" : "/collections/best-sellers"}>
             <span>{t(announcement === 0 ? "announcementFirst" : "announcementSecond")}</span><span aria-hidden="true">•</span><span>{t("announcementCta")}</span>
           </Link>
         </div>
         <div className="na-header-bar">
-          <Link href="/" className="na-header-logo" aria-label="MATE — Home">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/new-arrivals/mate-wordmark.svg" alt="MATE" width={110} height={33} />
+          <Link href="/" className="na-header-logo" aria-label="Eltaranisi Brand — Home">
+            <Wordmark />
           </Link>
           <nav className="na-header-nav" aria-label="Main navigation">
-            {NAV.map(([key, href]) => <Link key={key} href={href} className={key === "new" ? "is-current" : ""}>{nav(key)}</Link>)}
+            <ul>{NAV.map(([key, href]) => {
+              const current = pathname === href || pathname.startsWith(`${href}/`);
+              return <li key={key}><Link href={href} className={current ? "is-current" : ""} aria-current={current ? "page" : undefined}>{nav(key)}</Link></li>;
+            })}</ul>
           </nav>
           <div className="na-header-actions">
             <button type="button" aria-label={t("openSearch")} onClick={() => setSearchOpen(true)}><ArrivalSearchIcon /></button>
@@ -65,12 +69,11 @@ export default function ArrivalHeader() {
         </div>
       </header>
       <ArrivalSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
-      <ArrivalModal open={menuOpen} onClose={() => setMenuOpen(false)} labelledBy={menuHeading} className="na-mobile-menu">
+      <ArrivalModal open={menuOpen} onClose={() => setMenuOpen(false)} labelledBy={menuHeading} className="na-mobile-menu sf-header-dialog">
         <h2 id={menuHeading} className="sr-only">{t("openMenu")}</h2>
         <button type="button" className="na-modal-close" aria-label={t("close")} onClick={() => setMenuOpen(false)}><CloseIcon className="h-5 w-5" /></button>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/img/new-arrivals/mate-wordmark.svg" alt="MATE" width={87} height={26} />
-        <nav>{NAV.map(([key, href]) => <Link key={key} href={href} onClick={() => setMenuOpen(false)}>{nav(key)}<span aria-hidden="true">+</span></Link>)}</nav>
+        <Link href="/" className="na-header-logo" aria-label="Eltaranisi Brand — Home" onClick={() => setMenuOpen(false)}><Wordmark /></Link>
+        <nav>{NAV.map(([key, href]) => <Link key={key} href={href} aria-current={pathname === href ? "page" : undefined} onClick={() => setMenuOpen(false)}>{nav(key)}<span aria-hidden="true">+</span></Link>)}</nav>
       </ArrivalModal>
     </>
   );

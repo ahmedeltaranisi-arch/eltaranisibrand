@@ -413,3 +413,25 @@
 .na-header-actions .na-icon-bag{width:15.578125px;height:18px}
 
 .na-storefront:dir(ltr) .na-breadcrumbs{line-height:13.59375px}
+
+/* One header and one product-action hover contract across the whole project. */
+.sf-header-scope,.sf-header-dialog{--na-paper:#f9f8f2;--na-beige:#e5e2d5;--na-image-bg:#e6e2d4;--na-slate:#6d7a82;--na-body:"FH Oscar Pro",Arial,sans-serif;--na-display:"Edict Display",Baskerville,serif;color:#000;font-family:var(--na-body);font-feature-settings:normal;background:var(--na-paper)}
+.sf-header-scope:dir(rtl),.sf-header-dialog:dir(rtl){--na-body:var(--font-cairo),Arial,sans-serif;--na-display:var(--font-cairo),serif}
+.sf-header-scope a,.sf-header-dialog a{color:inherit;text-decoration:none}
+.sf-header-scope button,.sf-header-dialog button{font-family:inherit;cursor:pointer}
+.sf-header-scope :focus-visible,.sf-header-dialog :focus-visible{outline:2px solid var(--na-slate);outline-offset:4px}
+.na-header-logo{width:auto;white-space:nowrap}
+.na-header-nav ul{display:flex;align-items:center;gap:36px;margin:0;padding:0;list-style:none}
+.na-header-nav li{margin:0;padding:0}
+.na-header-nav a,.na-header-nav a:hover,.na-header-nav a:focus-visible{text-decoration:none!important;border-bottom:0}
+.na-header-nav a::after{content:"";position:absolute;left:50%;bottom:-9px;width:5px;height:5px;border-radius:50%;background:var(--na-slate);transform:translateX(-50%);opacity:0;transition:opacity .16s}
+.na-header-nav a.is-current::after,.na-header-nav a:hover::after,.na-header-nav a:focus-visible::after{opacity:1}
+.na-storefront{min-height:0}
+.product-reveal-action{background:#e6e2d4;color:#000;opacity:0;transform:translateY(4px);cursor:pointer;transition:opacity .16s,transform .16s,background-color .25s,color .25s}
+.product-reveal-card:hover .product-reveal-action,.product-reveal-card:focus-within .product-reveal-action{opacity:1;transform:translateY(0)}
+.product-reveal-action:hover:not(:disabled){background:#6d7a82;color:#f9f8f2}
+@media(max-width:1199px){.na-header-nav{display:none}.na-header-bar{grid-template-columns:1fr auto}.na-header-actions .na-menu-toggle{display:flex}}
+@media(max-width:749px){.na-header-logo>span>span:first-child{font-size:18px;letter-spacing:.18em}}
+@media(max-width:359px){.na-header-actions{gap:14px}.na-header-logo>span{gap:6px}.na-header-logo>span>span:first-child{font-size:16px}}
+@media(hover:none){.product-reveal-action{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.product-reveal-action,.na-header-nav a::after,.sf-header-dialog,.sf-header-dialog::backdrop{transition:none}}

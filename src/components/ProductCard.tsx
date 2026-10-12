@@ -32,7 +32,7 @@ export default function ProductCard({
   const { front, back } = colorwayShots(product, active.name);
 
   return (
-    <article className="group relative flex flex-col">
+    <article className="group product-reveal-card relative flex flex-col">
       <Link
         href={`/products/${active.slug}`}
         className="relative block overflow-hidden bg-[#f6f3ec]"
@@ -142,9 +142,7 @@ export default function ProductCard({
             window.setTimeout(() => setAdded(false), 1600);
           }}
           className={[
-            "mt-3 flex h-[40px] w-full items-center justify-center bg-[#ede6d6] text-[11px] uppercase tracking-[0.12em] text-black transition-all duration-300",
-            "opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 hover:bg-[#e8e0d0]",
-            "focus-visible:opacity-100 focus-visible:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0",
+            "product-reveal-action mt-3 flex h-[40px] w-full items-center justify-center text-[11px] uppercase tracking-[0.12em]",
           ].join(" ")}
         >
           <span>{added ? t("added") : `${t("add")} +`}</span>

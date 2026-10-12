@@ -20,7 +20,7 @@ export default function ArrivalSearch({ open, onClose }: { open: boolean; onClos
     }).slice(0, 24);
   }, [query, t]);
   return (
-    <ArrivalModal open={open} onClose={onClose} labelledBy={heading} className="na-search-drawer">
+    <ArrivalModal open={open} onClose={onClose} labelledBy={heading} className="na-search-drawer sf-header-dialog">
       <button type="button" className="na-modal-close" aria-label={t("close")} onClick={onClose}><CloseIcon className="h-5 w-5" /></button>
       <h2 id={heading}>{t("searchTitle")}</h2>
       <div className="na-search-field"><SearchIcon className="h-4 w-4" /><input type="search" autoFocus aria-label={t("searchTitle")} placeholder={t("searchPlaceholder")} value={query} onChange={(event) => setQuery(event.target.value)} /></div>
