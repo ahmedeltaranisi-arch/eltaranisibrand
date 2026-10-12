@@ -1,3 +1,4 @@
+import { connection } from "next/server";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCollection, productsByCollection } from "@/lib/catalog";
@@ -23,17 +24,17 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ handle: string }>;
+  params: Promise<{ locale: string; handle: string }>;
 }) {
-  const { handle } = await params;
+  const { locale, handle } = await params;
   const c = getCollection(handle);
   if (!c) return {};
-  return {
-    title: c.titleKey
-      .replace("collections.", "")
-      .replace(/([A-Z])/g, " $1")
-      .trim(),
-  };
+  if (handle === "new-arrivals") {
+    const t = await getTranslations({ locale, namespace: "newArrivals" });
+    return { title: t("title"), description: t("description") };
+  }
+  const t = await getTranslations({ locale });
+  return { title: t(c.titleKey), description: t(c.descriptionKey) };
 }
 
 export default async function CollectionPage({
@@ -53,14 +54,11 @@ export default async function CollectionPage({
   );
   const items = productsByCollection(handle);
 
-  // MATE exact replica for new-arrivals
   if (handle === "new-arrivals") {
-    return (
-      <div className="bg-[#fdfbf5]">
-        {/* MATE has no hero, just grid with top bar */}
-        <MateCollectionGrid />
-      </div>
-    );
+    // Request-render the collection, including the actual URL's filters/sort,
+    // rather than returning a blank client-only collection on the first load.
+    await connection();
+    return <MateCollectionGrid />;
   }
 
   return (

@@ -1,541 +1,189 @@
-/**
- * MATE New Arrivals - curated from Brand--New.zip assets
- * Matches matethelabel.com/collections/new?sort_by=created-descending
- * Each entry corresponds to a card in the video, with real mate images
- */
+import snapshot from "./newArrivalsCatalog.json";
 
-export type MateColor = {
-  name: string;
-  hex: string;
-  label?: string;
-};
-
+/** A colorway is a real, independently photographed product, never a tinted fallback. */
 export type MateProduct = {
   id: string;
+  slug: string;
   title: string;
-  priceLE: number; // e.g. 10572
-  priceDisplay: string; // LE 10,572
-  badge?: "BEST SELLER";
-  colors: MateColor[];
-  images: string[]; // at least 2 images for hover
-  slug: string; // for linking to product page
+  style: string;
+  category: string;
+  priceUSD: number;
+  priceLE: number;
+  color: {
+    name: string;
+    label: string;
+    hex: string;
+    swatch: string;
+    group: string;
+  };
+  images: string[];
+  sizes: string[];
+  availableSizes: string[];
+  badges: string[];
+  description: string;
+  colorways: string[];
+  colorEdition: "essential" | "limited";
+  featuredRank: number;
+  newestRank: number;
+  bestSellingRank: number;
+  createdAt: string;
+  inNewArrivals: boolean;
 };
 
-// Color hex map matching MATE swatches from the zip and catalog
-const C: Record<string, string> = {
-  "jet-black": "#111111",
-  jet: "#111111",
-  black: "#111111",
-  midnight: "#1a2a3a",
-  balsam: "#354641",
-  forest: "#2f4638",
-  mocha: "#4a2c2a",
-  espresso: "#5f362a",
-  brown: "#5a3a2a",
-  bone: "#f3efea",
-  "heather-grey": "#d1d1d1",
-  "heather-oat": "#e9dbd2",
-  "heather-pine": "#8aa090",
-  fig: "#4e2138",
-  mulberry: "#762134",
-  wisteria: "#b8a3ae",
-  peppercorn: "#725354",
-  pebble: "#857668",
-  sand: "#dec4ac",
-  oat: "#e9dbd2",
-  white: "#ffffff",
-  "off-white": "#f9f6f0",
-  thyme: "#7a8a6a",
-  rosewater: "#d8a8a0",
-  lotus: "#e8d5c4",
-};
+export const arrivalCatalog = snapshot as MateProduct[];
+const bySlug = new Map(arrivalCatalog.map((product) => [product.slug, product]));
 
-function le(n: number) {
-  return `LE ${n.toLocaleString("en-US")}`;
+export const mateNewArrivals = arrivalCatalog
+  .filter((product) => product.inNewArrivals)
+  .sort((a, b) => a.featuredRank - b.featuredRank);
+
+export function getArrivalProduct(slug: string): MateProduct | undefined {
+  return bySlug.get(slug);
 }
 
-// Helper to pick images from /img/mate folder
-// We use the sanitized names we created
-const img = (name: string) => `/img/mate/${name}`;
+export function productColorways(product: MateProduct): MateProduct[] {
+  return product.colorways
+    .map((slug) => bySlug.get(slug))
+    .filter(
+      (colorway): colorway is MateProduct =>
+        !!colorway &&
+        colorway.style === product.style &&
+        colorway.images.length > 0 &&
+        colorway.availableSizes.length > 0,
+    );
+}
 
-export const mateNewArrivals: MateProduct[] = [
-  {
-    id: "mate-01",
-    title: "Organic Fleece Cropped Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "mocha", hex: C.mocha },
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-    ],
-    images: [
-      img("look_08-organic_fleece_cropped_sweatpant_balsam-1127.jpg"),
-      img("look_08-organic_fleece_cropped_sweatpant_balsam-1141.jpg"),
-    ],
-    slug: "organic-fleece-cropped-sweatpant-mocha",
-  },
-  {
-    id: "mate-02",
-    title: "Organic Fleece Cropped Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "jet-black", hex: C.jet },
-      { name: "mocha", hex: C.mocha },
-      { name: "balsam", hex: C.balsam },
-      { name: "bone", hex: C.bone },
-    ],
-    images: [
-      img("look_33-look_30-organic_fleece_cropped_sweatpant_bone-3784.jpg"),
-      img("look_33-look_30-organic_fleece_cropped_sweatpant_bone-3794.jpg"),
-    ],
-    slug: "organic-fleece-cropped-sweatpant-jet-black",
-  },
-  {
-    id: "mate-03",
-    title: "Organic Fleece Cropped Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "bone", hex: C.bone },
-      { name: "mocha", hex: C.mocha },
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-    ],
-    images: [
-      img("look_08-organic_fleece_cropped_sweatpant_balsam-1182_5c5d240.jpg"),
-      img("look_08-organic_fleece_cropped_sweatpant_balsam-1207.jpg"),
-    ],
-    slug: "organic-fleece-cropped-sweatpant-bone",
-  },
-  {
-    id: "mate-04",
-    title: "Organic Fleece Cropped Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "bone", hex: "#ffffff" },
-      { name: "mocha", hex: C.mocha },
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-    ],
-    images: [
-      img("look_33-look_30-organic_fleece_cropped_sweatpant_bone-3812_3.jpg"),
-      img("look_33-look_30-organic_fleece_cropped_sweatpant_bone-3817.jpg"),
-    ],
-    slug: "organic-fleece-cropped-sweatpant-bone-2",
-  },
-  {
-    id: "mate-05",
-    title: "Organic Fleece Oversized Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "mocha", hex: C.mocha },
-      { name: "bone", hex: C.bone },
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-    ],
-    images: [
-      img("look_20-organic_fleece_oversized_sweatpant_balsam-2805_1.jpg"),
-      img("look_20-organic_fleece_oversized_sweatpant_balsam-2808.jpg"),
-    ],
-    slug: "organic-fleece-oversized-sweatpant-mocha",
-  },
-  {
-    id: "mate-06",
-    title: "Organic Fleece Oversized Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "jet-black", hex: C.jet },
-      { name: "mocha", hex: C.mocha },
-      { name: "bone", hex: C.bone },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_20-organic_fleece_oversized_sweatpant_balsam-2815_1_06c.jpg"),
-      img("look_20-organic_fleece_oversized_sweatpant_balsam-2837_1.jpg"),
-    ],
-    slug: "organic-fleece-oversized-sweatpant-jet-black",
-  },
-  {
-    id: "mate-07",
-    title: "Organic Fleece Oversized Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "bone", hex: C.bone },
-      { name: "mocha", hex: C.mocha },
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-    ],
-    images: [
-      img("look_24-organic_fleece_oversized_sweatpant_mocha-3099.jpg"),
-      img("look_24-organic_fleece_oversized_sweatpant_mocha-3106.jpg"),
-    ],
-    slug: "organic-fleece-oversized-sweatpant-bone",
-  },
-  {
-    id: "mate-08",
-    title: "Organic Fleece Oversized Sweatpant",
-    priceLE: 10572,
-    priceDisplay: le(10572),
-    colors: [
-      { name: "bone", hex: "#ffffff" },
-      { name: "mocha", hex: C.mocha },
-      { name: "bone", hex: C.bone },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_24-organic_fleece_oversized_sweatpant_mocha-3128-1.jpg"),
-      img("look_20-organic_fleece_oversized_sweatpant_balsam-2842_1.jpg"),
-    ],
-    slug: "organic-fleece-oversized-sweatpant-off-white",
-  },
-  {
-    id: "mate-09",
-    title: "Organic Stretch Crossover Legging",
-    priceLE: 8274,
-    priceDisplay: le(8274),
-    colors: [
-      { name: "mocha", hex: C.mocha },
-      { name: "jet-black", hex: C.jet },
-      { name: "forest", hex: C.forest },
-      { name: "midnight", hex: C.midnight },
-    ],
-    images: [
-      img("look_04-organic_stretch_crossover_legging_jet_black-0570_27f.jpg"),
-      img("look_04-organic_stretch_crossover_legging_jet_black-0595.jpg"),
-    ],
-    slug: "organic-stretch-crossover-legging-jet-black",
-  },
-  {
-    id: "mate-10",
-    title: "Organic Stretch Crossover Legging",
-    priceLE: 8274,
-    priceDisplay: le(8274),
-    colors: [
-      { name: "forest", hex: C.forest },
-      { name: "jet-black", hex: C.jet },
-      { name: "mocha", hex: C.mocha },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_05-organic_stretch_crossover_legging_forest-0689.jpg"),
-      img("look_05-organic_stretch_crossover_legging_forest-0701_25bde1.jpg"),
-    ],
-    slug: "organic-stretch-crossover-legging-forest",
-  },
-  {
-    id: "mate-11",
-    title: "Organic Stretch Crossover Legging",
-    priceLE: 8274,
-    priceDisplay: le(8274),
-    colors: [
-      { name: "jet-black", hex: C.jet },
-      { name: "forest", hex: C.forest },
-      { name: "mocha", hex: C.mocha },
-      { name: "midnight", hex: C.midnight },
-    ],
-    images: [
-      img("look_04-organic_stretch_crossover_legging_jet_black-0619.jpg"),
-      img("look_04-organic_stretch_crossover_legging_jet_black-0635.jpg"),
-    ],
-    slug: "organic-stretch-crossover-legging-jet-black-2",
-  },
-  {
-    id: "mate-12",
-    title: "Organic Stretch Crossover Legging",
-    priceLE: 8274,
-    priceDisplay: le(8274),
-    colors: [
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-      { name: "forest", hex: C.forest },
-      { name: "mocha", hex: C.mocha },
-    ],
-    images: [
-      img("look_05-organic_stretch_crossover_legging_forest-0712.jpg"),
-      img("look_05-organic_stretch_crossover_legging_forest-0762.jpg"),
-    ],
-    slug: "organic-stretch-crossover-legging-balsam",
-  },
-  {
-    id: "mate-13",
-    title: "Organic Stretch Foldover Pant",
-    priceLE: 8274,
-    priceDisplay: le(8274),
-    colors: [
-      { name: "midnight", hex: C.midnight },
-      { name: "forest", hex: C.forest },
-      { name: "jet-black", hex: C.jet },
-      { name: "mocha", hex: C.mocha },
-    ],
-    images: [
-      img("look_15-organic_stretch_foldover_pant_midnight-2222.jpg"),
-      img("look_15-organic_stretch_foldover_pant_midnight-2229_7fa98c83.jpg"),
-    ],
-    slug: "organic-stretch-foldover-pant-midnight",
-  },
-  {
-    id: "mate-14",
-    title: "Organic Stretch Foldover Pant",
-    priceLE: 8274,
-    priceDisplay: le(8274),
-    colors: [
-      { name: "jet-black", hex: C.jet },
-      { name: "midnight", hex: C.midnight },
-      { name: "forest", hex: C.forest },
-      { name: "mocha", hex: C.mocha },
-    ],
-    images: [
-      img("look_15-organic_stretch_foldover_pant_midnight-2206.jpg"),
-      img("look_15-organic_stretch_foldover_pant_midnight-2319.jpg"),
-    ],
-    slug: "organic-stretch-foldover-pant-jet-black",
-  },
-  {
-    id: "mate-15",
-    title: "Organic Fleece Relaxed Crewneck Sweatshirt",
-    priceLE: 9806,
-    priceDisplay: le(9806),
-    colors: [
-      { name: "rosewater", hex: C.rosewater },
-      { name: "brown", hex: C.brown },
-      { name: "bone", hex: C.bone },
-      { name: "jet-black", hex: C.jet },
-    ],
-    images: [
-      img("look_14-organic_fleece_relaxed_crewneck_sweatshirt_rosewater-1.jpg"),
-      img("look_14-organic_fleece_relaxed_crewneck_sweatshirt_rosewater.jpg"),
-    ],
-    slug: "organic-fleece-relaxed-crewneck-rosewater",
-  },
-  {
-    id: "mate-16",
-    title: "Organic Fleece Relaxed Crewneck Sweatshirt",
-    priceLE: 9806,
-    priceDisplay: le(9806),
-    colors: [
-      { name: "balsam", hex: C.balsam },
-      { name: "brown", hex: C.brown },
-      { name: "bone", hex: C.bone },
-      { name: "jet-black", hex: C.jet },
-    ],
-    images: [
-      img("look_19-organic-fleece-oversized_sweatshirt_mocha-organic_fl-10.jpg"),
-      img("look_19-organic-fleece-oversized_sweatshirt_mocha-organic_fl-11.jpg"),
-    ],
-    slug: "organic-fleece-relaxed-crewneck-balsam",
-  },
-  {
-    id: "mate-17",
-    title: "Organic Fleece Cropped Half Zip Sweatshirt",
-    priceLE: 12105,
-    priceDisplay: le(12105),
-    colors: [
-      { name: "mocha", hex: C.mocha },
-      { name: "bone", hex: C.bone },
-      { name: "jet-black", hex: C.jet },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_08-organic_fleece_cropped_sweatpant_balsam-1127.jpg"),
-      img("look_08-organic_fleece_cropped_sweatpant_balsam-1141.jpg"),
-    ],
-    slug: "organic-fleece-cropped-half-zip-mocha",
-  },
-  {
-    id: "mate-18",
-    title: "Organic Stretch Scoop Bra",
-    priceLE: 4444,
-    priceDisplay: le(4444),
-    badge: "BEST SELLER",
-    colors: [
-      { name: "midnight", hex: C.midnight },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "pebble", hex: C.pebble },
-    ],
-    images: [
-      img("look_01-organic_stretch_scoop_bra_midnight-0005.jpg"),
-      img("look_01-organic_stretch_scoop_bra_midnight-0043_ddd5c258-11c.jpg"),
-    ],
-    slug: "organic-stretch-scoop-bra-midnight",
-  },
-  {
-    id: "mate-19",
-    title: "Organic Stretch Scoop Bra",
-    priceLE: 4444,
-    priceDisplay: le(4444),
-    colors: [
-      { name: "fig", hex: C.fig },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "pebble", hex: C.pebble },
-    ],
-    images: [
-      img("look_01-organic_stretch_scoop_bra_fig-0043.jpg"),
-      img("look_01-organic_stretch_scoop_bra_fig-0054.jpg"),
-    ],
-    slug: "organic-stretch-scoop-bra-fig",
-  },
-  {
-    id: "mate-20",
-    title: "Organic Stretch Sports Bra",
-    priceLE: 4444,
-    priceDisplay: le(4444),
-    badge: "BEST SELLER",
-    colors: [
-      { name: "midnight", hex: C.midnight },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "pebble", hex: C.pebble },
-    ],
-    images: [
-      img("look_12-organic_stretch_sports_bra_midnight_organic_stretch_-1.jpg"),
-      img("look_12-organic_stretch_sports_bra_midnight_organic_stretch_-2.jpg"),
-    ],
-    slug: "organic-stretch-sports-bra-midnight",
-  },
-  {
-    id: "mate-21",
-    title: "Organic Stretch Sports Bra",
-    priceLE: 4444,
-    priceDisplay: le(4444),
-    badge: "BEST SELLER",
-    colors: [
-      { name: "mulberry", hex: C.mulberry },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "pebble", hex: C.pebble },
-    ],
-    images: [
-      img("look_06-organic_stretch_sports_bra_fig-0812_36a4eb08-3184-49.jpg"),
-      img("look_06-organic_stretch_sports_bra_fig-0828_eee5372d-b10f-4e.jpg"),
-    ],
-    slug: "organic-stretch-sports-bra-mulberry",
-  },
-  {
-    id: "mate-22",
-    title: "Organic Fleece Straight Leg Sweatpant",
-    priceLE: 9806,
-    priceDisplay: le(9806),
-    colors: [
-      { name: "mocha", hex: C.mocha },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_20-organic_fleece_oversized_sweatpant_balsam-2860_35e3b.jpg"),
-      img("look_24-organic_fleece_oversized_sweatpant_mocha-3099.jpg"),
-    ],
-    slug: "organic-fleece-straight-leg-mocha",
-  },
-  {
-    id: "mate-23",
-    title: "Organic Fleece Relaxed Pocket Sweatpant",
-    priceLE: 9806,
-    priceDisplay: le(9806),
-    colors: [
-      { name: "rosewater", hex: C.rosewater },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_24-organic_fleece_oversized_sweatpant_mocha-3106.jpg"),
-      img("look_24-organic_fleece_oversized_sweatpant_mocha-3128.jpg"),
-    ],
-    slug: "organic-fleece-relaxed-pocket-mocha",
-  },
-  {
-    id: "mate-24",
-    title: "Organic Stretch High Neck Tank",
-    priceLE: 5210,
-    priceDisplay: le(5210),
-    colors: [
-      { name: "midnight", hex: C.midnight },
-      { name: "jet-black", hex: C.jet },
-      { name: "mocha", hex: C.mocha },
-    ],
-    images: [
-      img("look_03_organic_stretch_high_neck_tank_midnight-0357.jpg"),
-      img("look_03_organic_stretch_high_neck_tank_midnight-0408_13cb5e1.jpg"),
-    ],
-    slug: "organic-stretch-high-neck-tank-midnight",
-  },
-  {
-    id: "mate-25",
-    title: "Organic Stretch Full Length Legging",
-    priceLE: 7508,
-    priceDisplay: le(7508),
-    badge: "BEST SELLER",
-    colors: [
-      { name: "mulberry", hex: C.mulberry },
-      { name: "balsam", hex: C.balsam },
-      { name: "jet-black", hex: C.jet },
-      { name: "mocha", hex: C.mocha },
-    ],
-    images: [
-      img("look_04-organic_stretch_crossover_legging_jet_black-0570_27f.jpg"),
-      img("look_05-organic_stretch_crossover_legging_forest-0689.jpg"),
-    ],
-    slug: "organic-stretch-full-length-legging-mulberry",
-  },
-  {
-    id: "mate-26",
-    title: "Organic Fleece Zip Hoodie",
-    priceLE: 12105,
-    priceDisplay: le(12105),
-    colors: [
-      { name: "mocha", hex: C.mocha },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_27-organic_fleece_full_zip_hoodie_jet_black-organic_fle-1.jpg"),
-      img("look_27-organic_fleece_full_zip_hoodie_jet_black-organic_fle-2.jpg"),
-    ],
-    slug: "organic-fleece-zip-hoodie-mocha",
-  },
-  {
-    id: "mate-27",
-    title: "Organic Stretch Crop Racer Tank",
-    priceLE: 5210,
-    priceDisplay: le(5210),
-    colors: [
-      { name: "mulberry", hex: C.mulberry },
-      { name: "jet-black", hex: C.jet },
-      { name: "bone", hex: C.bone },
-      { name: "pebble", hex: C.pebble },
-    ],
-    images: [
-      img("look_13-organic_stretch_racer_tank_midnight_organic_stretch_-1.jpg"),
-      img("look_13-organic_stretch_racer_tank_midnight_organic_stretch_-2.jpg"),
-    ],
-    slug: "organic-stretch-crop-racer-tank-mulberry",
-  },
-  {
-    id: "mate-28",
-    title: "Organic Stretch Midi Legging",
-    priceLE: 6742,
-    priceDisplay: le(6742),
-    colors: [
-      { name: "jet-black", hex: C.jet },
-      { name: "midnight", hex: C.midnight },
-      { name: "pebble", hex: C.pebble },
-      { name: "balsam", hex: C.balsam },
-    ],
-    images: [
-      img("look_04-organic_stretch_crossover_legging_jet_black-0619.jpg"),
-      img("look_05-organic_stretch_crossover_legging_forest-0712.jpg"),
-    ],
-    slug: "organic-stretch-midi-legging-jet-black",
-  },
-];
+export const CATEGORIES = [
+  "activewear-tops",
+  "headbands",
+  "leggings",
+  "pants",
+  "sports-bras",
+  "sweaters",
+  "sweatpants",
+  "sweatshirts",
+  "t-shirts",
+  "tank-tops",
+] as const;
+
+export const SIZES = ["XS", "S", "M", "L", "XL"] as const;
+export const COLOR_GROUPS = [
+  "Beige", "Black", "Blue", "Brown", "Green", "Grey",
+  "Neutral", "Pink", "Purple", "Red", "White",
+] as const;
+
+export const SORT_OPTIONS = [
+  "created-descending", "best-selling", "price-ascending", "price-descending",
+] as const;
+export type CollectionSort = "manual" | (typeof SORT_OPTIONS)[number];
+export type CollectionFilters = {
+  categories: string[];
+  sizes: string[];
+  colors: string[];
+};
+export type CollectionState = CollectionFilters & {
+  sort: CollectionSort;
+  page: number;
+};
+
+export const PAGE_SIZE = 48;
+
+export function emptyFilters(): CollectionFilters {
+  return { categories: [], sizes: [], colors: [] };
+}
+
+/** OR within a facet; AND between facets. Size counts use actual available variants. */
+export function filterProducts(
+  products: readonly MateProduct[],
+  filters: CollectionFilters,
+): MateProduct[] {
+  return products.filter((product) =>
+    (!filters.categories.length || filters.categories.includes(product.category)) &&
+    (!filters.sizes.length || filters.sizes.some((size) => product.availableSizes.includes(size))) &&
+    (!filters.colors.length || filters.colors.includes(product.color.group)),
+  );
+}
+
+export function sortProducts(
+  products: readonly MateProduct[],
+  sort: CollectionSort,
+): MateProduct[] {
+  return [...products].sort((a, b) => {
+    switch (sort) {
+      case "created-descending":
+        return a.newestRank - b.newestRank;
+      case "best-selling":
+        // Captured from the reference's best-selling order, not a made-up rating.
+        return a.bestSellingRank - b.bestSellingRank;
+      case "price-ascending":
+        return a.priceLE - b.priceLE || a.featuredRank - b.featuredRank;
+      case "price-descending":
+        return b.priceLE - a.priceLE || a.featuredRank - b.featuredRank;
+      default:
+        return a.featuredRank - b.featuredRank;
+    }
+  });
+}
+
+/** Self-excluding counts let shoppers add alternatives within an active facet. */
+export function facetCounts(products: readonly MateProduct[], filters: CollectionFilters) {
+  const countBy = (items: MateProduct[], values: readonly string[], matches: (p: MateProduct, value: string) => boolean) =>
+    Object.fromEntries(values.map((value) => [value, items.filter((p) => matches(p, value)).length]));
+  return {
+    categories: countBy(filterProducts(products, { ...filters, categories: [] }), CATEGORIES, (p, value) => p.category === value),
+    sizes: countBy(filterProducts(products, { ...filters, sizes: [] }), SIZES, (p, value) => p.availableSizes.includes(value)),
+    colors: countBy(filterProducts(products, { ...filters, colors: [] }), COLOR_GROUPS, (p, value) => p.color.group === value),
+  };
+}
+
+export function filterCount(filters: CollectionFilters): number {
+  return filters.categories.length + filters.sizes.length + filters.colors.length;
+}
+
+// Preserve reference query names so sorting/filter links can be bookmarked/shared.
+const CATEGORY_IDS: Record<string, string> = {
+  "activewear-tops": "aa-1-1-2", headbands: "aa-2-14-8", leggings: "aa-1-1-1-2",
+  pants: "aa-1-12", "sports-bras": "aa-1-1-6", sweaters: "aa-1-13-12",
+  sweatpants: "aa-1-1-1-4", sweatshirts: "aa-1-13-14", "t-shirts": "aa-1-13-8", "tank-tops": "aa-1-13-9",
+};
+const validValues = (values: string[], allowed: readonly string[]) =>
+  [...new Set(values)].filter((value) => allowed.includes(value));
+
+export function readCollectionState(params: Pick<URLSearchParams, "get" | "getAll">): CollectionState {
+  const requestedSort = params.get("sort_by") || "manual";
+  const requestedPage = Number(params.get("page") || 1);
+  return {
+    sort: SORT_OPTIONS.includes(requestedSort as (typeof SORT_OPTIONS)[number]) ? requestedSort as CollectionSort : "manual",
+    page: Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1,
+    categories: validValues(
+      [...params.getAll("category"), ...params.getAll("filter.p.t.category").map((id) =>
+        Object.keys(CATEGORY_IDS).find((key) => CATEGORY_IDS[key] === id) || "",
+      )], CATEGORIES,
+    ),
+    sizes: validValues([...params.getAll("size"), ...params.getAll("filter.v.option.size")], SIZES),
+    colors: validValues([...params.getAll("color"), ...params.getAll("filter.p.m.custom.parent_color")], COLOR_GROUPS),
+  };
+}
+
+export function collectionQuery(state: CollectionState): string {
+  const params = new URLSearchParams();
+  if (state.sort !== "manual") params.set("sort_by", state.sort);
+  for (const category of state.categories) params.append("filter.p.t.category", CATEGORY_IDS[category]);
+  for (const size of state.sizes) params.append("filter.v.option.size", size);
+  for (const color of state.colors) params.append("filter.p.m.custom.parent_color", color);
+  if (state.page > 1) params.set("page", String(state.page));
+  return params.toString();
+}
+
+/** Reference EGP display amounts; all cart/checkout accounting remains in USD. */
+const REFERENCE_EGP: Record<number, number> = {
+  48: 3678, 58: 4444, 62: 4750, 68: 5210, 72: 5516, 78: 5976,
+  88: 6742, 98: 7508, 108: 8274, 128: 9806, 138: 10572,
+  148: 11338, 158: 12105, 178: 13637,
+};
+export function usdToReferenceLE(amount: number): number {
+  return REFERENCE_EGP[amount] ?? Math.round(amount * 76.61);
+}
+export function formatLE(amount: number): string {
+  return `LE ${new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(amount)}`;
+}

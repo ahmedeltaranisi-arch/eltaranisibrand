@@ -5,12 +5,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { FREE_SHIPPING_THRESHOLD, useCart } from "@/context/cart";
 import { ArrowIcon, CloseIcon, MinusIcon, PlusIcon } from "./icons";
-import { productKey } from "@/lib/catalog";
+import { useCartLabels } from "@/lib/cartLabels";
 
 export default function CartDrawer() {
   const t = useTranslations("cart");
-  const tp = useTranslations("p");
-  const tcol = useTranslations("colors");
+  const labels = useCartLabels();
   const { isOpen, close, lines, subtotal, setQty, remove, count } = useCart();
   const [promo, setPromo] = useState("");
 
@@ -92,7 +91,7 @@ export default function CartDrawer() {
                         onClick={close}
                         className="text-[14px] hover:underline"
                       >
-                        {tp(`${productKey(line.titleKey)}.title`)}
+                        {labels.title(line)}
                       </Link>
                       <p className="text-[14px]">${line.price * line.qty}</p>
                     </div>
@@ -101,7 +100,7 @@ export default function CartDrawer() {
                         className="inline-block h-3 w-3 rounded-full border border-line"
                         style={{ background: line.colorHex }}
                       />
-                      {tcol(line.colorName as never)} · {line.size}
+                      {labels.color(line)} · {line.size}
                     </p>
 
                     <div className="mt-auto flex items-center justify-between pt-3">

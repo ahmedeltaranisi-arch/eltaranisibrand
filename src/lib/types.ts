@@ -48,10 +48,15 @@ export type CartLine = {
   productSlug: string;
   productId: string;
   titleKey: string;
+  /** Literal snapshot labels for imported products; legacy lines still use i18n keys. */
+  title?: string;
   colorName: string;
+  colorLabel?: string;
   colorHex: string;
   size: string;
+  /** Accounting currency is USD; EGP is a display-only reference amount. */
   price: number;
+  priceLE?: number;
   image: string;
   qty: number;
 };

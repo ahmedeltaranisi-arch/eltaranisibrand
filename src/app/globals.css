@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./new-arrivals.css";
 
 @theme {
   /* ---- Brand palette (matched to the reference's warm neutrals) ---- */

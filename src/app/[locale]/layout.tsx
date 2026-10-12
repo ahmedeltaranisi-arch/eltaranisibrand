@@ -10,82 +10,39 @@ import { WishlistProvider } from "@/context/wishlist";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PromoButton from "@/components/PromoButton";
-import CartDrawer from "@/components/CartDrawer";
 import LocaleLayout from "@/components/LocaleLayout";
+import ArrivalShell from "@/components/new-arrivals/ArrivalShell";
 
 import "../globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const cairo = Cairo({
-  subsets: ["arabic", "latin"],
-  variable: "--font-cairo",
-  display: "swap",
-});
-
-/* editorial serif used for the large display headings */
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-fraunces",
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const cairo = Cairo({ subsets: ["arabic", "latin"], variable: "--font-cairo", display: "swap" });
+const fraunces = Fraunces({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-fraunces", display: "swap" });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Eltaranisi — Organic Everyday Essentials",
-    template: "%s | Eltaranisi",
-  },
-  description:
-    "Everyday essentials cut from certified organic and natural fibres. Breathable, responsibly made, built to last.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://eltaranisibrand.vercel.app"),
+  title: { default: "Eltaranisi — Organic Everyday Essentials", template: "%s | Eltaranisi" },
+  description: "Everyday essentials cut from certified organic and natural fibres. Breathable, responsibly made, built to last.",
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
+export function generateStaticParams() { return routing.locales.map((locale) => ({ locale })); }
 
-export default async function LocaleRootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+export default async function LocaleRootLayout({ children, params }: {
+  children: React.ReactNode; params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-
-  const dir = locale === "ar" ? "rtl" : "ltr";
-
   return (
-    <html
-      lang={locale}
-      dir={dir}
-      className={`${inter.variable} ${cairo.variable} ${fraunces.variable} h-full antialiased`}
-    >
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${inter.variable} ${cairo.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-paper text-ink">
         <NextIntlClientProvider>
           <WishlistProvider>
             <CartProvider>
-              <a
-                href="#main"
-                className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
-              >
-                <LocaleLayout k="common.skip" />
-              </a>
-              <AnnouncementBar />
-              <Header />
-              <main id="main" className="flex-1">
+              <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"><LocaleLayout k="common.skip" /></a>
+              <ArrivalShell announcement={<AnnouncementBar />} header={<Header />} footer={<Footer />}>
                 {children}
-              </main>
-              <Footer />
-              <PromoButton />
-              <CartDrawer />
+              </ArrivalShell>
             </CartProvider>
           </WishlistProvider>
         </NextIntlClientProvider>

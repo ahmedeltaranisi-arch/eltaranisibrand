@@ -8,8 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "check:i18n": "node scripts/check-i18n.mjs",
-    "verify": "npm run check:i18n && npm run lint && tsc --noEmit && next build && npm run check:css",
-    "check:css": "node scripts/check-css.mjs"
+    "verify": "npm run check:i18n && npm run lint && tsc --noEmit && npm test && next build && npm run check:css",
+    "check:css": "node scripts/check-css.mjs",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "16.4.0",
@@ -19,6 +21,7 @@
     "stripe": "^23.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
@@ -27,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

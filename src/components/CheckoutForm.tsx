@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { FREE_SHIPPING_THRESHOLD, useCart } from "@/context/cart";
 import { ArrowIcon, CheckIcon } from "./icons";
-import { productKey } from "@/lib/catalog";
+import { useCartLabels } from "@/lib/cartLabels";
 
 const EXPRESS_FEE = 18;
 const TAX_RATE = 0.08;
@@ -41,8 +41,7 @@ export default function CheckoutForm({
 }) {
   const t = useTranslations("checkout");
   const tc = useTranslations("cart");
-  const tp = useTranslations("p");
-  const tcol = useTranslations("colors");
+  const labels = useCartLabels();
   const { lines, subtotal, count, clear } = useCart();
 
   const [delivery, setDelivery] = useState<"standard" | "express">("standard");
@@ -406,14 +405,14 @@ export default function CheckoutForm({
               </div>
               <div className="flex-1">
                 <p className="text-[13px] leading-snug">
-                  {tp(`${productKey(line.titleKey)}.title`)}
+                  {labels.title(line)}
                 </p>
                 <p className="mt-1 flex items-center gap-1.5 text-[11px] text-mist">
                   <span
                     className="inline-block h-2.5 w-2.5 rounded-full border border-line"
                     style={{ background: line.colorHex }}
                   />
-                  {tcol(line.colorName as never)} · {line.size}
+                  {labels.color(line)} · {line.size}
                 </p>
               </div>
               <p className="text-[13px]">${line.price * line.qty}</p>

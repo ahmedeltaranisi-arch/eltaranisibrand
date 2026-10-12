@@ -1,66 +1,104 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import MateProductCard from "./MateProductCard";
-import { mateNewArrivals, type MateProduct } from "@/lib/mateNewArrivals";
-
-type Sort = "newest" | "priceAsc" | "priceDesc";
+import ArrivalFilterDrawer from "./new-arrivals/ArrivalFilterDrawer";
+import ArrivalQuickAdd from "./new-arrivals/ArrivalQuickAdd";
+import ArrivalGetaway from "./new-arrivals/ArrivalGetaway";
+import ArrivalDiscover from "./new-arrivals/ArrivalDiscover";
+import ArrivalFaq from "./new-arrivals/ArrivalFaq";
+import { Link } from "@/navigation";
+import {
+  PAGE_SIZE, collectionQuery, emptyFilters, facetCounts, filterCount, filterProducts,
+  mateNewArrivals, readCollectionState, sortProducts,
+  type CollectionFilters, type CollectionState, type MateProduct,
+} from "@/lib/mateNewArrivals";
 
 export default function MateCollectionGrid() {
-  const [sort, setSort] = useState<Sort>("newest");
+  const t = useTranslations("newArrivals");
+  const params = useSearchParams();
+  const state = useMemo(() => readCollectionState(params), [params]);
+  const [drawer, setDrawer] = useState({ open: false, entry: "filters" as "filters" | "sort", session: 0 });
+  const [quickAdd, setQuickAdd] = useState<MateProduct | null>(null);
+  const toolbar = useRef<HTMLDivElement>(null);
+  const filtered = useMemo(() => filterProducts(mateNewArrivals, state), [state]);
+  const sorted = useMemo(() => sortProducts(filtered, state.sort), [filtered, state.sort]);
+  const counts = useMemo(() => facetCounts(mateNewArrivals, state), [state]);
+  const pageCount = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+  const page = Math.min(state.page, pageCount);
+  const visible = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
-  const sorted = useMemo(() => {
-    let out = [...mateNewArrivals] as MateProduct[];
-    if (sort === "priceAsc") out.sort((a, b) => a.priceLE - b.priceLE);
-    if (sort === "priceDesc") out.sort((a, b) => b.priceLE - a.priceLE);
-    // newest keeps original order
-    return out;
-  }, [sort]);
+  function update(next: CollectionState, push = false, scroll = false) {
+    const query = collectionQuery(next);
+    const url = window.location.pathname + (query ? `?${query}` : "");
+    if (push) window.history.pushState(null, "", url);
+    else window.history.replaceState(null, "", url);
+    if (scroll) toolbar.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  function changeFilters(filters: CollectionFilters) {
+    update({ ...state, ...filters, page: 1 });
+  }
+  function openDrawer(entry: "filters" | "sort") {
+    setDrawer((previous) => ({ open: true, entry, session: previous.session + 1 }));
+  }
+  function closeDrawer() { setDrawer((previous) => ({ ...previous, open: false })); }
 
   return (
-    <div className="bg-[#fdfbf5]">
-      {/* top bar - MATE style: small count left, sort right */}
-      <div className="mx-auto max-w-[1600px] px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between border-b border-black/5 py-4 text-[11px] tracking-[0.08em] uppercase">
-          <p className="text-black/70">{sorted.length} Products</p>
-          <div className="flex items-center gap-2">
-            <span className="hidden sm:inline text-black/50">Sort by:</span>
-            <select
-              value={sort}
-              onChange={(e) => setSort(e.target.value as Sort)}
-              className="bg-transparent text-[11px] uppercase tracking-[0.08em] outline-none"
-            >
-              <option value="newest">Newest</option>
-              <option value="priceAsc">Price: Low to High</option>
-              <option value="priceDesc">Price: High to Low</option>
-            </select>
+    <>
+      <section className="na-collection-intro" aria-labelledby="arrival-title">
+        <h1 id="arrival-title">{t("title")}</h1>
+        <p>{t("description")}</p>
+      </section>
+      <section className="na-collection" aria-label={t("title")}>
+        <div ref={toolbar} className="na-collection-toolbar">
+          <button type="button" className="na-dotted na-all-filters" aria-expanded={drawer.open} aria-haspopup="dialog" onClick={() => openDrawer("filters")}>
+            {t("allFilters")} {filterCount(state) > 0 ? `(${filterCount(state)})` : "+"}
+          </button>
+          <button type="button" className="na-sort-trigger" aria-expanded={drawer.open} aria-haspopup="dialog" onClick={() => openDrawer("sort")}>
+            <span className="na-sort-label-desktop">{t("sortBy")}</span>
+            <span className="na-sort-label-mobile na-dotted">{t("sortShort")} +</span>
+            <span className="na-sort-value na-dotted">{state.sort === "manual" ? t("featured") : t(`sort.${state.sort}`)}</span>
+          </button>
+        </div>
+        <p className="sr-only" aria-live="polite" aria-atomic="true">{t("resultsAnnouncement", { count: sorted.length })}</p>
+        {visible.length > 0 ? (
+          <div className="na-product-grid" data-result-count={sorted.length}>
+            {visible.map((product, index) => (
+              <Fragment key={product.slug}>
+                <MateProductCard product={product} priority={index < 4} onQuickAdd={setQuickAdd} />
+                {page === 1 && index === 3 && visible.length > 4 && <ArrivalDiscover />}
+                {page === 1 && index === 7 && visible.length > 8 && <ArrivalGetaway />}
+              </Fragment>
+            ))}
           </div>
-        </div>
-      </div>
-
-      {/* grid - 4 columns like MATE */}
-      <div className="mx-auto max-w-[1600px] px-3 pb-20 sm:px-6 lg:px-8">
-        <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-8 sm:gap-x-3 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-4 lg:gap-y-12">
-          {sorted.map((p) => (
-            <MateProductCard key={p.id} product={p} />
-          ))}
-        </div>
-      </div>
-
-      {/* promo bar like MATE has at bottom? Get 10% off */}
-      <div className="fixed bottom-3 left-3 z-40 flex items-center gap-2 bg-[#1a1a1a] px-3 py-2 text-[11px] text-white shadow-lg">
-        <span>Get 10% Off</span>
-        <button
-          type="button"
-          className="ml-2 text-white/60 hover:text-white"
-          aria-label="Dismiss"
-          onClick={(e) => {
-            (e.currentTarget.parentElement as HTMLElement).style.display = "none";
-          }}
-        >
-          ×
-        </button>
-      </div>
-    </div>
+        ) : (
+          <div className="na-collection-empty">
+            <h2>{t("noResults")}</h2><p>{t("noResultsBody")}</p>
+            <button type="button" className="na-dotted" onClick={() => changeFilters(emptyFilters())}>{t("clearAll")}</button>
+          </div>
+        )}
+        {pageCount > 1 && (
+          <nav className="na-pagination" aria-label={t("pagination")}>
+            {page > 1 && <button type="button" onClick={() => update({ ...state, page: page - 1 }, true, true)}>{t("previousPage")} «</button>}
+            {Array.from({ length: pageCount }, (_, index) => index + 1).map((number) => (
+              <button key={number} type="button" aria-label={t("pageLabel", { page: number })} aria-current={page === number ? "page" : undefined} onClick={() => update({ ...state, page: number }, true, true)}>{number}</button>
+            ))}
+            {page < pageCount && <button type="button" onClick={() => update({ ...state, page: page + 1 }, true, true)}>{t("nextPage")} »</button>}
+          </nav>
+        )}
+      </section>
+      <ArrivalFaq />
+      <nav className="na-breadcrumbs" aria-label="Breadcrumb">
+        <Link href="/collections/all">{t("shopAll")}</Link><span aria-hidden="true">•</span><span aria-current="page">{t("title")}</span>
+      </nav>
+      <ArrivalFilterDrawer
+        key={drawer.session} open={drawer.open} entry={drawer.entry} state={state} counts={counts} resultCount={sorted.length}
+        onChange={changeFilters} onSort={(sort) => update({ ...state, sort, page: 1 })} onClose={closeDrawer}
+        onApply={() => { closeDrawer(); window.setTimeout(() => toolbar.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 50); }}
+      />
+      <ArrivalQuickAdd key={quickAdd?.slug ?? "closed"} product={quickAdd} onClose={() => setQuickAdd(null)} />
+    </>
   );
 }

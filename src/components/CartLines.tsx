@@ -4,12 +4,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { useCart } from "@/context/cart";
 import { MinusIcon, PlusIcon } from "./icons";
-import { productKey } from "@/lib/catalog";
+import { useCartLabels } from "@/lib/cartLabels";
 
 export default function CartLines() {
   const t = useTranslations("cart");
-  const tp = useTranslations("p");
-  const tcol = useTranslations("colors");
+  const labels = useCartLabels();
   const { lines, setQty, remove } = useCart();
 
   if (lines.length === 0) {
@@ -40,14 +39,14 @@ export default function CartLines() {
                   href={`/products/${line.productSlug}`}
                   className="text-[15px] hover:underline"
                 >
-                  {tp(`${productKey(line.titleKey)}.title`)}
+                  {labels.title(line)}
                 </Link>
                 <p className="mt-1.5 flex items-center gap-2 text-[12px] text-mist">
                   <span
                     className="inline-block h-3 w-3 rounded-full border border-line"
                     style={{ background: line.colorHex }}
                   />
-                  {tcol(line.colorName as never)} · {t("subtotal")}{" "}
+                  {labels.color(line)} · {t("subtotal")}{" "}
                   {line.size}
                 </p>
               </div>
