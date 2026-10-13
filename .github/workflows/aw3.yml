@@ -1,9 +1,8 @@
 name: aw3
 
 # Temporary helper: the saved reference page only kept thumbnail-sized copies of a few
-# photographs (rail tiles, editorial, mega menu) and a handful of product flats. Fetch the
-# full-resolution originals for exactly those, so `scripts/build-activewear-images.py` can
-# re-encode real detail instead of upscaling a thumbnail.
+# photographs (rail tiles, editorial, mega menu) and a handful of product flats, and it never
+# kept the editorial video at all. Fetch the full-resolution originals for exactly those.
 
 on:
   push:
@@ -25,75 +24,78 @@ jobs:
         run: |
           mkdir -p relay/aw3
           : > relay/aw3/report.txt
-          while IFS=$'\t' read -r key url; do
+          while read -r key url; do
             [ -z "$key" ] && continue
             out="relay/aw3/$(echo "$key" | tr '/' '_' | sed 's/\.webp$/.jpg/')"
-            code=$(curl -sSL --compressed -m 60 \
+            code=$(curl -sSL --compressed -m 120 \
               -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" \
               -o "$out" -w "%{http_code}" "$url" || echo ERR)
             echo "$code $(stat -c%s "$out" 2>/dev/null || echo 0) $key" >> relay/aw3/report.txt
           done <<'LIST'
-aw/1081de51ea35.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_15-ORGANIC_STRETCH_FOLDOVER_PANT_MIDNIGHT-2291.jpg?width=1200
-aw/1c553fee50a4.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_06-ORGANIC_STRETCH_SPORTS_BRA_FIG-0921.jpg?width=1200
-aw/4534a522a908.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_16-ORGANIC-STRETCH-SPORTS-BRA-LEGGING-MULBERRY_02039.jpg?width=1200
-aw/540066d0afc5.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_FIG-0088.jpg?width=1200
-aw/7fbb275db6bc.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_09-ORGANIC_STRETCH_HIGH_NECK_TANK_JET_BLACK-1344.jpg?width=1200
-aw/8864cbd55c5c.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_MIDNIGHT-0054.jpg?width=1200
-aw/8d7250a9a17b.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_FIG-0119.jpg?width=1200
-aw/9de55a635893.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-2.jpg?width=1200
-aw/aff022b63a68.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_05-ORGANIC_STRETCH_CROSSOVER_LEGGING_FOREST-0762.jpg?width=1200
-aw/b5c2f3b02e96.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_MIDNIGHT-0119.jpg?width=1200
-aw/ba78d5b0e749.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_MIDNIGHT-0130.jpg?width=1200
-aw/baf6cb839320.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_16-ORGANIC-STRETCH-SPORTS-BRA-LEGGING-MULBERRY_02031.jpg?width=1200
-aw/color/bone-balsam.webp	https://matethelabel.com/cdn/shop/files/color-bone-balsam.png?width=1400
-aw/color/bone-forest-maple-jet-black-birch.webp	https://matethelabel.com/cdn/shop/files/color-bone-forest-maple-jet-black-birch.png?width=1400
-aw/color/bone.webp	https://matethelabel.com/cdn/shop/files/color-bone.png?width=1400
-aw/color/chili-oil.webp	https://matethelabel.com/cdn/shop/files/color-chili-oil.png?width=1400
-aw/color/cove.webp	https://matethelabel.com/cdn/shop/files/color-cove.png?width=1400
-aw/color/fig.webp	https://matethelabel.com/cdn/shop/files/color-fig.png?width=1400
-aw/color/forest.webp	https://matethelabel.com/cdn/shop/files/color-forest.png?width=1400
-aw/color/heather-grey-bone.webp	https://matethelabel.com/cdn/shop/files/color-heather-grey-bone.png?width=1400
-aw/color/heather-grey.webp	https://matethelabel.com/cdn/shop/files/color-heather-grey.png?width=1400
-aw/color/iris.webp	https://matethelabel.com/cdn/shop/files/color-iris.png?width=1400
-aw/color/jet-black.webp	https://matethelabel.com/cdn/shop/files/color-jet-black.png?width=1400
-aw/color/midnight.webp	https://matethelabel.com/cdn/shop/files/color-midnight.png?width=1400
-aw/color/mocha.webp	https://matethelabel.com/cdn/shop/files/color-mocha.png?width=1400
-aw/color/mulberry-tide.webp	https://matethelabel.com/cdn/shop/files/color-mulberry-tide.png?width=1400
-aw/color/mulberry.webp	https://matethelabel.com/cdn/shop/files/color-mulberry.png?width=1400
-aw/color/natural-sage-sedona.webp	https://matethelabel.com/cdn/shop/files/color-natural-sage-sedona.png?width=1400
-aw/color/natural.webp	https://matethelabel.com/cdn/shop/files/color-natural.png?width=1400
-aw/color/nori.webp	https://matethelabel.com/cdn/shop/files/color-nori.png?width=1400
-aw/color/pebble.webp	https://matethelabel.com/cdn/shop/files/color-pebble.png?width=1400
-aw/color/zest.webp	https://matethelabel.com/cdn/shop/files/color-zest.png?width=1400
-aw/d316989b97a9.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_02-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MIDNIGHT-0333.jpg?width=1200
-aw/dab31e3f569e.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_04-ORGANIC_STRETCH_CROSSOVER_LEGGING_JET_BLACK-0653.jpg?width=1200
-aw/ec7ed75919b2.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5870_0.jpg?width=1200
-aw/editorial/video-still.webp	https://matethelabel.com/cdn/shop/files/preview_images/057e3af6894f48e48dfb9537ab8646e4.thumbnail.0000000000_1368x.jpg?width=1400
-aw/editorial/why-activewear-1.webp	https://matethelabel.com/cdn/shop/files/DESKTOP-ACTIVE.jpg?width=1400
-aw/editorial/why-activewear-2.webp	https://matethelabel.com/cdn/shop/files/DESKTOP-ACTIVE-2.jpg?width=1400
-aw/f0fd3bd8dc33.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_02-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MIDNIGHT-0307.jpg?width=1200
-aw/f28558e7c0b7.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_11-ORGANIC_STRETCH_CROSSOVER_LEGGING_MOCHA-1789.jpg?width=1200
-aw/f4fe1425f124.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_07-ORGANIC_STRETCH_HIGH_NECK_TANK_MOCHA-1105.jpg?width=1200
-aw/fbcc73702408.webp	https://cdn.shopify.com/s/files/1/0518/6281/files/organic_sock_5_pack_f790e479-7f45-4ee1-b6d9-1885b1ea1474.jpg?width=1200
-aw/group/black.webp	https://matethelabel.com/cdn/shop/files/color-black.png?width=1400
-aw/group/blue.webp	https://matethelabel.com/cdn/shop/files/color-blue.png?width=1400
-aw/group/brown.webp	https://matethelabel.com/cdn/shop/files/color-brown.png?width=1400
-aw/group/green.webp	https://matethelabel.com/cdn/shop/files/color-green.png?width=1400
-aw/group/grey.webp	https://matethelabel.com/cdn/shop/files/color-grey.png?width=1400
-aw/group/purple.webp	https://matethelabel.com/cdn/shop/files/color-purple.png?width=1400
-aw/group/red.webp	https://matethelabel.com/cdn/shop/files/color-red.png?width=1400
-aw/group/white.webp	https://matethelabel.com/cdn/shop/files/color-white.png?width=1400
-aw/group/yellow.webp	https://matethelabel.com/cdn/shop/files/color-yellow.png?width=1400
-aw/mega/limited-edition-fig.webp	https://matethelabel.com/cdn/shop/files/image_345_f6aa500e-9cc8-4385-b383-65139a48a192.jpg?width=1400
-aw/mega/shop-all-activewear.webp	https://matethelabel.com/cdn/shop/files/image_344_d9a26137-926a-43d2-a302-b84056498d49.jpg?width=1400
-aw/nav/activewear-tops.webp	https://matethelabel.com/cdn/shop/files/LOOK_16-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MOCHA-2385_3036f0ac-d6d1-43c8-947c-9e61b39ad0de.jpg?width=1400
-aw/nav/all-activewear.webp	https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-SHOP-ALL.jpg?width=1400
-aw/nav/biker-shorts.webp	https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-BIKER-SHORTS.jpg?width=1400
-aw/nav/leggings.webp	https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-LEGGINGS.jpg?width=1400
-aw/nav/sports-bras.webp	https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-SPORTS-BRAS.jpg?width=1400
-aw/nav/unitards.webp	https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-UNITARDS.jpg?width=1400
+aw/1081de51ea35.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_15-ORGANIC_STRETCH_FOLDOVER_PANT_MIDNIGHT-2291.jpg?width=1200
+aw/1c553fee50a4.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_06-ORGANIC_STRETCH_SPORTS_BRA_FIG-0921.jpg?width=1200
+aw/4534a522a908.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_16-ORGANIC-STRETCH-SPORTS-BRA-LEGGING-MULBERRY_02039.jpg?width=1200
+aw/540066d0afc5.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_FIG-0088.jpg?width=1200
+aw/7fbb275db6bc.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_09-ORGANIC_STRETCH_HIGH_NECK_TANK_JET_BLACK-1344.jpg?width=1200
+aw/8864cbd55c5c.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_MIDNIGHT-0054.jpg?width=1200
+aw/8d7250a9a17b.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_FIG-0119.jpg?width=1200
+aw/9de55a635893.webp https://cdn.shopify.com/s/files/1/0518/6281/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-2.jpg?width=1200
+aw/aff022b63a68.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_05-ORGANIC_STRETCH_CROSSOVER_LEGGING_FOREST-0762.jpg?width=1200
+aw/b5c2f3b02e96.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_MIDNIGHT-0119.jpg?width=1200
+aw/ba78d5b0e749.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_01-ORGANIC_STRETCH_SCOOP_BRA_MIDNIGHT-0130.jpg?width=1200
+aw/baf6cb839320.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_16-ORGANIC-STRETCH-SPORTS-BRA-LEGGING-MULBERRY_02031.jpg?width=1200
+aw/color/bone-balsam.webp https://matethelabel.com/cdn/shop/files/color-bone-balsam.png?width=1400
+aw/color/bone-forest-maple-jet-black-birch.webp https://matethelabel.com/cdn/shop/files/color-bone-forest-maple-jet-black-birch.png?width=1400
+aw/color/bone.webp https://matethelabel.com/cdn/shop/files/color-bone.png?width=1400
+aw/color/chili-oil.webp https://matethelabel.com/cdn/shop/files/color-chili-oil.png?width=1400
+aw/color/cove.webp https://matethelabel.com/cdn/shop/files/color-cove.png?width=1400
+aw/color/fig.webp https://matethelabel.com/cdn/shop/files/color-fig.png?width=1400
+aw/color/forest.webp https://matethelabel.com/cdn/shop/files/color-forest.png?width=1400
+aw/color/heather-grey-bone.webp https://matethelabel.com/cdn/shop/files/color-heather-grey-bone.png?width=1400
+aw/color/heather-grey.webp https://matethelabel.com/cdn/shop/files/color-heather-grey.png?width=1400
+aw/color/iris.webp https://matethelabel.com/cdn/shop/files/color-iris.png?width=1400
+aw/color/jet-black.webp https://matethelabel.com/cdn/shop/files/color-jet-black.png?width=1400
+aw/color/midnight.webp https://matethelabel.com/cdn/shop/files/color-midnight.png?width=1400
+aw/color/mocha.webp https://matethelabel.com/cdn/shop/files/color-mocha.png?width=1400
+aw/color/mulberry-tide.webp https://matethelabel.com/cdn/shop/files/color-mulberry-tide.png?width=1400
+aw/color/mulberry.webp https://matethelabel.com/cdn/shop/files/color-mulberry.png?width=1400
+aw/color/natural-sage-sedona.webp https://matethelabel.com/cdn/shop/files/color-natural-sage-sedona.png?width=1400
+aw/color/natural.webp https://matethelabel.com/cdn/shop/files/color-natural.png?width=1400
+aw/color/nori.webp https://matethelabel.com/cdn/shop/files/color-nori.png?width=1400
+aw/color/pebble.webp https://matethelabel.com/cdn/shop/files/color-pebble.png?width=1400
+aw/color/zest.webp https://matethelabel.com/cdn/shop/files/color-zest.png?width=1400
+aw/d316989b97a9.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_02-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MIDNIGHT-0333.jpg?width=1200
+aw/dab31e3f569e.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_04-ORGANIC_STRETCH_CROSSOVER_LEGGING_JET_BLACK-0653.jpg?width=1200
+aw/ec7ed75919b2.webp https://cdn.shopify.com/s/files/1/0518/6281/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5870_0.jpg?width=1200
+aw/editorial/video-still.webp https://matethelabel.com/cdn/shop/files/preview_images/057e3af6894f48e48dfb9537ab8646e4.thumbnail.0000000000_1368x.jpg?width=1400
+aw/editorial/why-activewear-1.webp https://matethelabel.com/cdn/shop/files/DESKTOP-ACTIVE.jpg?width=1400
+aw/editorial/why-activewear-2.webp https://matethelabel.com/cdn/shop/files/DESKTOP-ACTIVE-2.jpg?width=1400
+aw/f0fd3bd8dc33.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_02-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MIDNIGHT-0307.jpg?width=1200
+aw/f28558e7c0b7.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_11-ORGANIC_STRETCH_CROSSOVER_LEGGING_MOCHA-1789.jpg?width=1200
+aw/f4fe1425f124.webp https://cdn.shopify.com/s/files/1/0518/6281/files/LOOK_07-ORGANIC_STRETCH_HIGH_NECK_TANK_MOCHA-1105.jpg?width=1200
+aw/fbcc73702408.webp https://cdn.shopify.com/s/files/1/0518/6281/files/organic_sock_5_pack_f790e479-7f45-4ee1-b6d9-1885b1ea1474.jpg?width=1200
+aw/group/black.webp https://matethelabel.com/cdn/shop/files/color-black.png?width=1400
+aw/group/blue.webp https://matethelabel.com/cdn/shop/files/color-blue.png?width=1400
+aw/group/brown.webp https://matethelabel.com/cdn/shop/files/color-brown.png?width=1400
+aw/group/green.webp https://matethelabel.com/cdn/shop/files/color-green.png?width=1400
+aw/group/grey.webp https://matethelabel.com/cdn/shop/files/color-grey.png?width=1400
+aw/group/purple.webp https://matethelabel.com/cdn/shop/files/color-purple.png?width=1400
+aw/group/red.webp https://matethelabel.com/cdn/shop/files/color-red.png?width=1400
+aw/group/white.webp https://matethelabel.com/cdn/shop/files/color-white.png?width=1400
+aw/group/yellow.webp https://matethelabel.com/cdn/shop/files/color-yellow.png?width=1400
+aw/mega/limited-edition-fig.webp https://matethelabel.com/cdn/shop/files/image_345_f6aa500e-9cc8-4385-b383-65139a48a192.jpg?width=1400
+aw/mega/shop-all-activewear.webp https://matethelabel.com/cdn/shop/files/image_344_d9a26137-926a-43d2-a302-b84056498d49.jpg?width=1400
+aw/nav/activewear-tops.webp https://matethelabel.com/cdn/shop/files/LOOK_16-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MOCHA-2385_3036f0ac-d6d1-43c8-947c-9e61b39ad0de.jpg?width=1400
+aw/nav/all-activewear.webp https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-SHOP-ALL.jpg?width=1400
+aw/nav/biker-shorts.webp https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-BIKER-SHORTS.jpg?width=1400
+aw/nav/leggings.webp https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-LEGGINGS.jpg?width=1400
+aw/nav/sports-bras.webp https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-SPORTS-BRAS.jpg?width=1400
+aw/nav/unitards.webp https://matethelabel.com/cdn/shop/files/ACTIVEWEAR-UNITARDS.jpg?width=1400
+aw/editorial/video.mp4 https://matethelabel.com/cdn/shop/videos/c/vp/057e3af6894f48e48dfb9537ab8646e4/057e3af6894f48e48dfb9537ab8646e4.HD-1080p-7.2Mbps-94150341.mp4?v=0
+aw/editorial/video-poster.jpg https://matethelabel.com/cdn/shop/files/preview_images/057e3af6894f48e48dfb9537ab8646e4.thumbnail.0000000000_1368x.jpg?v=1789143214
 LIST
-          sort relay/aw3/report.txt | head -40
+          sort relay/aw3/report.txt | head -70
+          du -sh relay/aw3
 
       - name: Publish
         if: always()
@@ -101,5 +103,5 @@ LIST
           git config user.name "aw3"
           git config user.email "aw3@users.noreply.github.com"
           git add -f relay/aw3
-          git commit -m "chore(relay): full-resolution activewear tiles and flats" || true
+          git commit -m "chore(relay): full-resolution activewear tiles, flats and editorial video" || true
           git push || true
