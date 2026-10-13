@@ -270,11 +270,13 @@ export default async function HomePage({
             as="article"
             className="group relative overflow-hidden bg-bone"
           >
-            {/* object-top: a centred crop of these portraits cuts the model's head off. */}
-            {/* Full-length, brightly lit frames: the copy sits over them and has to stay legible. */}
+            {/* Full-length head-to-toe frames on a light sweep, so nothing is cut off and the
+                figure reads at a glance; both stay dark through the lower third, which is where
+                the headline, the body and the link sit. `object-top` keeps the face in frame
+                when the pane crops the portrait to 4:3. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={k === "one" ? "/img/shots/pant-nori-1.jpg" : "/img/shots/tank-midnight-1.jpg"}
+              src={k === "one" ? "/img/shots/legging-jet-3.jpg" : "/img/shots/sweatpant-jet-2.jpg"}
               alt=""
               loading="lazy"
               className="aspect-4/3 w-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"

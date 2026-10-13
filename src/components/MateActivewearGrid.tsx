@@ -189,8 +189,10 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
                 {editorials && page === 1 && index === 0 && (
                   <article className="na-aw-editorial-video">
                     <div className="na-aw-editorial-video-media">
-                      {/* No native chrome: the reference shows only its own play/pause disc, so the
-                          browser's control bar, its seek bar and its time readout stay off. */}
+                      {/* No native chrome at all: the reference shows only its own play/pause disc,
+                          so `controls` stays off and the browser is told not to offer picture-in-
+                          picture, remote playback or a download button either. The clip itself is
+                          the hit target, so a tap anywhere on it toggles playback. */}
                       <video
                         ref={video}
                         className="na-aw-editorial-video-el"
@@ -200,6 +202,9 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
                         loop
                         playsInline
                         preload="none"
+                        disablePictureInPicture
+                        disableRemotePlayback
+                        controlsList="nodownload noplaybackrate noremoteplayback"
                         aria-label={t("editorialVideoAlt")}
                         onClick={toggleVideo}
                         onPlay={() => setVideoPlaying(true)}

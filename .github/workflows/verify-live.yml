@@ -1,0 +1,59 @@
+name: verify-live
+
+# Temporary helper: the author's sandbox cannot reach the public internet, so the deployed
+# storefront is inspected from a runner. Writes relay/verify/report.txt.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/verify-live.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Probe the deployed storefront
+        run: |
+          mkdir -p relay/verify
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          BASE=https://eltaranisibrand.vercel.app
+          : > relay/verify/report.txt
+          {
+            echo "=== deployment identity"
+            curl -sSI -A "$UA" "$BASE/en" | tr -d '\r' | grep -iE "^(age|x-vercel-id|x-vercel-cache|server|cache-control|etag)" | head -8
+          } >> relay/verify/report.txt
+          for path in /en /ar /en/collections/activewear; do
+            curl -sSL --compressed -m 60 -A "$UA" -o "/tmp/$(echo "$path" | tr '/' '_').html" "$BASE$path" || true
+          done
+          {
+            echo "=== /en markers"
+            echo "footer logo img   : $(grep -c 'eltaranisi-logo.png' /tmp/_en.html)"
+            echo "footer E monogram : $(grep -c '>E</span>' /tmp/_en.html)"
+            echo "duo object-top    : $(grep -c 'object-top' /tmp/_en.html)"
+            echo "hoodie-nori img   : $(grep -c 'hoodie-nori-1' /tmp/_en.html)"
+            echo "pant-nori img     : $(grep -c 'pant-nori-1' /tmp/_en.html)"
+            echo "tank-mocha img    : $(grep -c 'tank-mocha-1' /tmp/_en.html)"
+            echo "tank-midnight img : $(grep -c 'tank-midnight-1' /tmp/_en.html)"
+            echo "duo img tags      :"
+            grep -o '<img[^>]*aspect-4/3[^>]*>' /tmp/_en.html | head -4
+            echo "=== /en/collections/activewear video"
+            grep -o '<video[^>]\{0,240\}' /tmp/_en__collections_activewear.html | head -2
+            echo "video controls attr: $(grep -o '<video[^>]*controls' /tmp/_en__collections_activewear.html | wc -l)"
+            echo "play/pause disc   : $(grep -o 'na-aw-editorial-toggle' /tmp/_en__collections_activewear.html | wc -l)"
+            echo "poster            : $(grep -o 'poster=\"[^\"]*\"' /tmp/_en__collections_activewear.html | head -1)"
+          } >> relay/verify/report.txt
+          cat relay/verify/report.txt
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "verify-live"
+          git config user.email "verify-live@users.noreply.github.com"
+          git add -f relay/verify
+          git commit -m "chore(relay): inspect the deployed storefront" || true
+          git push || true
