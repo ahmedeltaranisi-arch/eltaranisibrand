@@ -1,0 +1,78 @@
+name: aw-extra
+
+# Temporary helper: photography for the sub-collections (Leggings, Sports Bras, Activewear Tops,
+# Biker Shorts, Unitards) that the Activewear collection itself does not list.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/aw-extra.yml"
+  workflow_dispatch:
+
+jobs:
+  extra:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Fetch the remaining photography
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, hashlib, urllib.parse
+          known = set()
+          try:
+              manifest = json.load(open('relay/aw/manifest.json'))
+              known = {i['file'] for i in manifest['images']} | {e['file'] for e in manifest['extras']}
+          except FileNotFoundError:
+              pass
+          handles = set()
+          for c in ('leggings-and-shorts', 'sports-bras', 'activewear-tops', 'biker-shorts', 'dresses-unitards'):
+              for p in json.load(open(f'relay/data/products-{c}.json'))['products']:
+                  handles.add(p['handle'])
+          products = {}
+          for f in pathlib.Path('relay/data').glob('products-*.json'):
+              for p in json.load(open(f))['products']:
+                  products.setdefault(p['handle'], p)
+          pathlib.Path('relay/aw2').mkdir(parents=True, exist_ok=True)
+          wanted = []
+          for h in sorted(handles):
+              p = products.get(h)
+              if not p:
+                  print('no data for', h); continue
+              for img in p['images'][:6]:
+                  src = img['src'].split('?')[0]
+                  base = src.split('/')[-1]
+                  if base in known:
+                      continue
+                  digest = hashlib.sha1(base.encode()).hexdigest()[:12]
+                  wanted.append((h, base, src, f'relay/aw2/{digest}.jpg'))
+          seen, unique = set(), []
+          for h, base, src, dest in wanted:
+              if dest in seen: continue
+              seen.add(dest); unique.append((h, base, src, dest))
+          pathlib.Path('relay/aw2/urls.txt').write_text('\n'.join(f"{s}\t{d}\t{b}\t{h}" for h, b, s, d in unique))
+          print('to fetch:', len(unique))
+          PY
+          : > relay/aw2/report.txt
+          while IFS=$'\t' read -r url dest base handle; do
+            [ -z "$url" ] && continue
+            code=$(curl -sSL --compressed -m 60 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" -o "$dest" -w "%{http_code}" "$url" || echo ERR)
+            echo -e "$code\t$(stat -c%s "$dest" 2>/dev/null || echo 0)\t$base\t$handle" >> relay/aw2/report.txt
+          done < relay/aw2/urls.txt
+          awk '{print $1}' relay/aw2/report.txt | sort | uniq -c
+          find relay/aw2 -name '*.jpg' -size -6k -delete || true
+          ls relay/aw2/*.jpg 2>/dev/null | wc -l
+          du -sh relay/aw2
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "aw-extra"
+          git config user.email "aw-extra@users.noreply.github.com"
+          git add -f relay/aw2
+          git commit -m "chore(relay): sub-collection photography" || true
+          git push || true

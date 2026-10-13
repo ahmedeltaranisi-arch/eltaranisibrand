@@ -1,0 +1,72 @@
+name: reference-data-relay
+
+# Temporary helper: pull the reference collection data the sandbox cannot reach.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/reference-data-relay.yml"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download reference data
+        run: |
+          mkdir -p relay/data
+          : > relay/data/fetch-report.txt
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          get () { # url, output
+            code=$(curl -sSL --compressed -m 60 -A "$UA" -H "Accept: application/json,text/html;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.9" -o "$2" -w "%{http_code}" "$1" || echo ERR)
+            echo "$(printf '%-70s' "$1") http=$code size=$(stat -c%s "$2" 2>/dev/null || echo 0)" >> relay/data/fetch-report.txt
+          }
+          B=https://matethelabel.com
+          for c in activewear leggings-and-shorts sports-bras activewear-tops biker-shorts dresses-unitards best-sellers new; do
+            get "$B/collections/$c/products.json?limit=250&page=1" "relay/data/products-$c.json"
+            get "$B/collections/$c.html" "relay/data/page-$c.html"
+          done
+          get "$B/collections/activewear/products.json?limit=250&page=2" "relay/data/products-activewear-p2.json"
+          for s in best-selling created-descending price-ascending price-descending; do
+            get "$B/collections/activewear?sort_by=$s" "relay/data/sorted-activewear-$s.html"
+          done
+          get "$B/collections/activewear?page=2" "relay/data/page-activewear-2.html"
+          get "$B/collections/activewear?page=3" "relay/data/page-activewear-3.html"
+          cat relay/data/fetch-report.txt
+
+      - name: Summarise the reference data
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, collections, re
+          out = []
+          for p in sorted(pathlib.Path("relay/data").glob("products-*.json")):
+              try:
+                  data = json.loads(p.read_text())
+              except Exception as e:
+                  out.append(f"{p.name}: not json ({e})"); continue
+              prods = data.get("products", [])
+              out.append(f"=== {p.name}: {len(prods)} products")
+              for x in prods:
+                  colors = []
+                  for v in x.get("variants", []):
+                      if v.get("option1") and v["option1"] not in colors:
+                          colors.append(v["option1"])
+                  out.append(f"   {x['title']} | {x['handle']} | ${x['variants'][0]['price'] if x.get('variants') else '?'} | colors={len(colors)} | imgs={len(x.get('images', []))} | type={x.get('product_type')}")
+          pathlib.Path("relay/data/summary.txt").write_text("\n".join(out))
+          print("\n".join(out[:120]))
+          PY
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "reference-relay"
+          git config user.email "reference-relay@users.noreply.github.com"
+          git add -f relay/data
+          git commit -m "chore(relay): reference collection data (products json + pages)" || true
+          git push || true

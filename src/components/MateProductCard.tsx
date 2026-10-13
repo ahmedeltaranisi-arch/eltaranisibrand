@@ -3,7 +3,8 @@
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
-import { formatLE, getArrivalProduct, productColorways, type MateProduct } from "@/lib/mateNewArrivals";
+import { formatLE, type MateProduct } from "@/lib/mateNewArrivals";
+import { catalogColorways, getCatalogProduct } from "@/lib/mateCatalog";
 
 export default function MateProductCard({ product, priority = false, onQuickAdd, leadingBadges }: {
   product: MateProduct;
@@ -19,8 +20,9 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   const [imageHovered, setImageHovered] = useState(false);
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
   const dragged = useRef(false);
-  const active = getArrivalProduct(activeSlug) ?? product;
-  const colorways = productColorways(product);
+  // The colourway we were handed wins; a slug switch resolves through both captures.
+  const active = activeSlug === product.slug ? product : getCatalogProduct(activeSlug) ?? product;
+  const colorways = catalogColorways(product);
   const title = t(`products.${active.style}`);
   const color = t(`color.${active.color.name}`);
   const badges = [...new Set([...(leadingBadges ?? []), ...active.badges])];

@@ -1,0 +1,8 @@
+--- walkthrough
+/home/runner/work/_temp/3deab2ad-2916-4846-822b-8626d2391549.sh: line 3: ffprobe: command not found
+--- site video
+/home/runner/work/_temp/3deab2ad-2916-4846-822b-8626d2391549.sh: line 5: ffprobe: command not found
+/home/runner/work/_temp/3deab2ad-2916-4846-822b-8626d2391549.sh: line 7: ffmpeg: command not found
+/home/runner/work/_temp/3deab2ad-2916-4846-822b-8626d2391549.sh: line 8: ffmpeg: command not found
+0
+84M	relay

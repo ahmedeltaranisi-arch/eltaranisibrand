@@ -36,7 +36,7 @@ function FilterGroup({ label, initialOpen = false, children }: { label: string; 
 
 export default function ArrivalFilterDrawer({
   open, entry, state, counts, resultCount, onChange, onSort, onClose, onApply,
-  sizeOptions, colorOptions,
+  sizeOptions, colorOptions, categoryOptions,
 }: {
   open: boolean;
   entry: "filters" | "sort";
@@ -47,11 +47,13 @@ export default function ArrivalFilterDrawer({
   onSort: (sort: CollectionSort) => void;
   onClose: () => void;
   onApply: () => void;
-  /** Collections with a wider size vocabulary (the reference's eleven rows) pass their own list. */
+  /** Collections with a wider vocabulary pass their own rows; the reference lists ten sizes. */
+  categoryOptions?: readonly string[];
   sizeOptions?: readonly string[];
   /** Colors a collection cannot offer are removed from the UI entirely. */
   colorOptions?: readonly string[];
 }) {
+  const categoryRows = categoryOptions ?? CATEGORIES;
   const sizeRows = sizeOptions ?? SIZES;
   const colorRows = colorOptions ?? COLOR_GROUPS;
   const t = useTranslations("newArrivals");
@@ -105,7 +107,7 @@ export default function ArrivalFilterDrawer({
 
         <FilterGroup label={t("categoryLabel")} initialOpen={entry === "sort"}>
           <div className="na-filter-values">
-            {CATEGORIES.map((value) => (
+            {categoryRows.map((value) => (
               <label key={value} className="na-filter-value">
                 <input type="checkbox" name="category" value={value} checked={state.categories.includes(value)} disabled={counts.categories[value] === 0 && !state.categories.includes(value)} onChange={() => toggle("categories", value)} />
                 <span className="na-filter-checkbox" aria-hidden="true" />

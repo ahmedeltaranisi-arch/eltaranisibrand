@@ -6,6 +6,28 @@ import CollectionFilters from "@/components/CollectionFilters";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MateCollectionGrid from "@/components/MateCollectionGrid";
 import MateBestSellersGrid from "@/components/MateBestSellersGrid";
+import MateActivewearGrid from "@/components/MateActivewearGrid";
+
+/** The Activewear collection plus the child collections and dyes its rails and mega menu link to. */
+const ACTIVEWEAR_CHILD_HANDLES = [
+  "leggings-and-shorts",
+  "sports-bras",
+  "activewear-tops",
+  "biker-shorts",
+  "dresses-unitards",
+] as const;
+
+/** The reference links five dye collections from the mega menu; each shows that dye's own colorways. */
+const ACTIVEWEAR_DYE_HANDLES: Record<string, string> = {
+  fig: "fig",
+  nori: "nori",
+  mulberry: "mulberry",
+  "mocha-move": "mocha",
+  pebble: "pebble",
+};
+
+/** Tiles that mean "the whole Activewear collection" on the reference store. */
+const ACTIVEWEAR_ALIAS_HANDLES = ["move-by-mate", "organic-studio-uniform"] as const;
 
 export function generateStaticParams() {
   return [
@@ -19,6 +41,9 @@ export function generateStaticParams() {
     "sale",
     "all",
     "intimates",
+    ...ACTIVEWEAR_CHILD_HANDLES,
+    ...Object.keys(ACTIVEWEAR_DYE_HANDLES),
+    ...ACTIVEWEAR_ALIAS_HANDLES,
   ].map((handle) => ({ handle }));
 }
 
@@ -38,6 +63,22 @@ export async function generateMetadata({
     const t = await getTranslations({ locale, namespace: "bestSellers" });
     return { title: t("title"), description: t("description") };
   }
+  if (handle === "activewear" || ACTIVEWEAR_ALIAS_HANDLES.includes(handle as "move-by-mate")) {
+    const t = await getTranslations({ locale, namespace: "activewear" });
+    return { title: t("title"), description: t("description") };
+  }
+  if (ACTIVEWEAR_CHILD_HANDLES.includes(handle as "sports-bras")) {
+    const t = await getTranslations({ locale, namespace: "activewear" });
+    return {
+      title: t(`subCollections.${handle}.title`),
+      description: t(`subCollections.${handle}.description`),
+    };
+  }
+  if (handle in ACTIVEWEAR_DYE_HANDLES) {
+    const t = await getTranslations({ locale, namespace: "newArrivals" });
+    const a = await getTranslations({ locale, namespace: "activewear" });
+    return { title: t(`color.${ACTIVEWEAR_DYE_HANDLES[handle]}`), description: a("description") };
+  }
   const t = await getTranslations({ locale });
   return { title: t(c.titleKey), description: t(c.descriptionKey) };
 }
@@ -49,6 +90,23 @@ export default async function CollectionPage({
 }) {
   const { locale, handle } = await params;
   setRequestLocale(locale);
+
+  if (handle === "activewear") {
+    await connection();
+    return <MateActivewearGrid editorials />;
+  }
+  if (ACTIVEWEAR_CHILD_HANDLES.includes(handle as "sports-bras")) {
+    await connection();
+    return <MateActivewearGrid handle={handle} />;
+  }
+  if (handle in ACTIVEWEAR_DYE_HANDLES) {
+    await connection();
+    return <MateActivewearGrid handle={handle} dye={ACTIVEWEAR_DYE_HANDLES[handle]} />;
+  }
+  if (ACTIVEWEAR_ALIAS_HANDLES.includes(handle as "move-by-mate")) {
+    await connection();
+    return <MateActivewearGrid editorials />;
+  }
 
   const collection = getCollection(handle);
   if (!collection) notFound();

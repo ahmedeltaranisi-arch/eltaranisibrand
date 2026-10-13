@@ -1043,7 +1043,10 @@
       "sweatpants": "Sweatpants",
       "sweatshirts": "Sweatshirts",
       "t-shirts": "T-Shirts",
-      "tank-tops": "Tank Tops"
+      "tank-tops": "Tank Tops",
+      "shorts": "Shorts",
+      "socks": "Socks",
+      "unitards": "Unitards"
     },
     "colorGroup": {
       "Beige": "Beige",
@@ -1056,7 +1059,8 @@
       "Pink": "Pink",
       "Purple": "Purple",
       "Red": "Red",
-      "White": "White"
+      "White": "White",
+      "Yellow": "Yellow"
     },
     "badges": {
       "best-seller": "Best Seller",
@@ -1129,7 +1133,14 @@
       "sienna": "Sienna",
       "sprig": "Sprig",
       "wisteria": "Wisteria",
-      "zest": "Zest"
+      "zest": "Zest",
+      "bone-balsam": "Bone / Balsam",
+      "bone-forest-maple-jet-black-birch": "Bone / Forest / Maple / Jet Black / Birch",
+      "chili-oil": "Chili Oil",
+      "heather-grey-bone": "Heather Grey / Bone",
+      "mulberry-tide": "Mulberry / Tide",
+      "natural": "Natural",
+      "natural-sage-sedona": "Natural / Sage / Sedona"
     },
     "products": {
       "organic-stretch-sports-bra": "Organic Stretch Sports Bra",
@@ -1164,7 +1175,19 @@
       "organic-pointelle-pant": "Organic Pointelle Pant",
       "organic-waffle-crew-cardigan": "Organic Waffle Crew Cardigan",
       "organic-pointelle-baby-tee": "Organic Pointelle Baby Tee",
-      "organic-fleece-embroidered-oversized-sweatshirt": "Organic Fleece Embroidered Oversized Sweatshirt"
+      "organic-fleece-embroidered-oversized-sweatshirt": "Organic Fleece Embroidered Oversized Sweatshirt",
+      "organic-cotton-sock-3-pack": "Organic Cotton Sock 3 Pack",
+      "organic-cotton-sock-5-pack": "Organic Cotton Sock 5 Pack",
+      "organic-heritage-jersey-track-pant": "Organic Heritage Jersey Track Pant",
+      "organic-stretch-biker-short": "Organic Stretch Biker Short",
+      "organic-stretch-biker-short-4": "Organic Stretch Biker Short 4\"",
+      "organic-stretch-bootcut-pant": "Organic Stretch Bootcut Pant",
+      "organic-stretch-cami-unitard": "Organic Stretch Cami Unitard",
+      "organic-stretch-full-length-unitard": "Organic Stretch Full Length Unitard",
+      "organic-stretch-midi-legging-with-pockets": "Organic Stretch Midi Legging with Pockets",
+      "organic-stretch-pocket-short": "Organic Stretch Pocket Short",
+      "organic-stretch-unitard": "Organic Stretch Unitard",
+      "organic-stretch-v-neck-bra": "Organic Stretch V-Neck Bra"
     },
     "essential": "Core",
     "discoverBestSellers": "Discover Our Best Sellers"
@@ -1190,5 +1213,66 @@
     "editorialHeading": "The October Capsule",
     "editorialText": "Soft, essential layers in naturally luxurious fibres, styled for cool mornings and slow evenings.",
     "editorialCta": "Shop Now"
+  },
+  "activewear": {
+    "title": "Activewear",
+    "description": "Organic cotton activewear made for your health.",
+    "railsLabel": "Activewear collections",
+    "rails": {
+      "all": "All Activewear",
+      "leggings": "Leggings",
+      "sports-bras": "Sports Bras",
+      "activewear-tops": "Activewear Tops",
+      "biker-shorts": "Biker Shorts",
+      "unitards": "Unitards"
+    },
+    "editorialVideoHeading": "Organic Stretch Activewear",
+    "editorialVideoText": "Best-selling GOTS certified staples, for a wellness routine that starts at the skin.",
+    "editorialVideoAlt": "A model wearing organic stretch activewear moving on a studio floor",
+    "playVideo": "Play video",
+    "pauseVideo": "Pause video",
+    "editorialHeading": "Why Eltaranisi Brand Activewear?",
+    "editorialText": "Soft, GOTS certified organic cotton essentials, crafted with skin-safe dyes. Clean comforts for an active life.",
+    "mega": {
+      "categoriesTitle": "Categories",
+      "colorsTitle": "Featured Colors",
+      "collectionsTitle": "Featured Collections",
+      "shopAll": "Shop All Activewear",
+      "leggings": "Leggings",
+      "sportsBras": "Sports Bras",
+      "activewearTops": "Activewear Tops",
+      "bikerShorts": "Biker Shorts",
+      "unitards": "Unitards",
+      "fig": "Fig",
+      "nori": "Nori",
+      "mulberry": "Mulberry",
+      "mocha": "Mocha",
+      "pebble": "Pebble",
+      "organicStudioUniform": "The Organic Studio Uniform",
+      "limitedEditionFig": "Limited Edition: Fig",
+      "shopAllActivewear": "Shop All Activewear"
+    },
+    "subCollections": {
+      "leggings-and-shorts": {
+        "title": "Leggings",
+        "description": "92% organic cotton leggings, organic from fiber to finish."
+      },
+      "sports-bras": {
+        "title": "Sports Bras",
+        "description": "Soft, skin-first styles crafted from 92% organic cotton."
+      },
+      "activewear-tops": {
+        "title": "Activewear Tops",
+        "description": "Breathable organic cotton tank tops and long sleeve tops for your workout and everything after."
+      },
+      "biker-shorts": {
+        "title": "Biker Shorts",
+        "description": "Cotton biker shorts, soft against skin and built to move."
+      },
+      "dresses-unitards": {
+        "title": "Unitards",
+        "description": "Second-skin one-pieces made to move throughout your day, in soft organic cotton."
+      }
+    }
   }
 }

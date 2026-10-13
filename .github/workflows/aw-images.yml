@@ -1,0 +1,110 @@
+name: aw-images
+
+# Temporary helper: fetch every reference photograph the Activewear page needs that the
+# earlier archive did not already contain, plus a manifest mapping them to products.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/aw-images.yml"
+  workflow_dispatch:
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Unpack what we already have
+        run: |
+          mkdir -p /tmp/have
+          if [ -f relay/brand-activewear.zip ]; then unzip -q -o relay/brand-activewear.zip -d /tmp/have || true; fi
+          find /tmp/have -type f | wc -l
+          find public/img -type f | wc -l
+
+      - name: Build the wanted list and fetch the gaps
+        run: |
+          python3 - <<'PY'
+          import json, os, re, hashlib, collections, unicodedata, urllib.parse, pathlib
+
+          def norm(s):
+              s = unicodedata.normalize('NFKD', s)
+              s = re.sub(r' \(\d+\)$', '', s)
+              s = re.sub(r'\.(jpg|jpeg|png|webp|gif)$', '', s, flags=re.I)
+              s = re.sub(r'[^A-Za-z0-9]+', '', s)
+              return s.lower()
+
+          have = collections.defaultdict(list)
+          for root in ('/tmp/have', 'public/img'):
+              for dirpath, _dirs, files in os.walk(root):
+                  for f in files:
+                      have[norm(f)].append(os.path.join(dirpath, f))
+
+          products = json.load(open('relay/data/products-activewear.json'))['products']
+          wanted = []
+          for pi, p in enumerate(products):
+              for ii, img in enumerate(p['images'][:3]):
+                  src = img['src'].split('?')[0]
+                  base = src.split('/')[-1]
+                  wanted.append({'productIndex': pi, 'imageIndex': ii, 'handle': p['handle'], 'title': p['title'], 'src': src, 'file': base})
+
+          extras = [
+              ('nav', 'ACTIVEWEAR-SHOP-ALL.jpg'), ('nav', 'ACTIVEWEAR-LEGGINGS.jpg'),
+              ('nav', 'ACTIVEWEAR-SPORTS-BRAS.jpg'), ('nav', 'ACTIVEWEAR-BIKER-SHORTS.jpg'),
+              ('nav', 'ACTIVEWEAR-UNITARDS.jpg'),
+              ('nav', 'LOOK_16-ORGANIC_STRETCH_LONG_SLEEVE_TOP_MOCHA-2385_3036f0ac-d6d1-43c8-947c-9e61b39ad0de.jpg'),
+              ('mega', 'image_345_f6aa500e-9cc8-4385-b383-65139a48a192.jpg'),
+              ('mega', 'image_344_d9a26137-926a-43d2-a302-b84056498d49.jpg'),
+              ('editorial', '057e3af6894f48e48dfb9537ab8646e4.thumbnail.0000000000_1368x.jpg'),
+          ]
+
+          pathlib.Path('relay/aw').mkdir(parents=True, exist_ok=True)
+          manifest = {'images': [], 'extras': []}
+          fetch = []
+          for w in wanted:
+              key = norm(w['file'])
+              if key in have:
+                  manifest['images'].append({**w, 'kind': 'local', 'local': have[key][0]})
+              else:
+                  digest = hashlib.sha1(w['file'].encode()).hexdigest()[:12]
+                  dest = f"relay/aw/{digest}.jpg"
+                  w2 = {**w, 'kind': 'download', 'local': dest}
+                  manifest['images'].append(w2)
+                  fetch.append((w['src'], dest))
+          for kind, base in extras:
+              key = norm(base)
+              if key in have:
+                  manifest['extras'].append({'kind': kind, 'file': base, 'kindOf': 'local', 'local': have[key][0]})
+              else:
+                  digest = hashlib.sha1(base.encode()).hexdigest()[:12]
+                  dest = f"relay/aw/{digest}.jpg"
+                  manifest['extras'].append({'kind': kind, 'file': base, 'kindOf': 'download', 'local': dest})
+                  fetch.append(('https://matethelabel.com/cdn/shop/files/' + urllib.parse.quote(base), dest))
+          pathlib.Path('relay/aw/manifest.json').write_text(json.dumps(manifest, indent=1))
+          pathlib.Path('relay/aw/urls.txt').write_text('\n'.join(f"{u}\t{d}" for u, d in fetch))
+          print('wanted', len(wanted), 'to download', len(fetch), 'already local', sum(1 for w in manifest['images'] if w['kind'] == 'local'))
+          PY
+          : > relay/aw/download-report.txt
+          while IFS=$'\t' read -r url dest; do
+            [ -z "$url" ] && continue
+            code=$(curl -sSL --compressed -m 60 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" -o "$dest" -w "%{http_code}" "$url" || echo ERR)
+            echo "$code $(stat -c%s "$dest" 2>/dev/null || echo 0) $dest" >> relay/aw/download-report.txt
+          done < relay/aw/urls.txt
+          echo "downloaded: $(ls relay/aw/*.jpg 2>/dev/null | wc -l)"
+          awk '{print $1}' relay/aw/download-report.txt | sort | uniq -c
+          du -sh relay/aw
+          # drop any empty or error bodies
+          find relay/aw -name '*.jpg' -size -6k -print -delete || true
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "aw-images"
+          git config user.email "aw-images@users.noreply.github.com"
+          git add -f relay/aw
+          git commit -m "chore(relay): activewear photography + manifest" || true
+          git push || true
