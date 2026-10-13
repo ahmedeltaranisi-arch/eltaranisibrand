@@ -20,71 +20,68 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Prepare
-        run: |
-          set -eu
-          mkdir -p relay/frames
-          rm -rf relay
-          mkdir -p relay/frames
-
       - name: Fetch the shared archives
         run: |
-          set -eu
+          mkdir -p relay/frames
+          : > relay/download-report.txt
           dl () { # id, output
             python3 -m pip install --quiet --disable-pip-version-check gdown >/dev/null 2>&1 || true
             if command -v gdown >/dev/null 2>&1; then
               gdown --fuzzy "https://drive.google.com/file/d/$1/view" -O "$2" >/dev/null 2>&1 || true
             fi
-            if [ ! -s "$2" ]; then
-              curl -sSL -o "$2" "https://drive.usercontent.google.com/download?id=$1&export=download&confirm=t"
+            if [ ! -s "$2" ] || head -c 15 "$2" | grep -qi '<!doctype'; then
+              curl -sSL -o "$2" "https://drive.usercontent.google.com/download?id=$1&export=download&confirm=t" || true
             fi
-            ls -l "$2"
+            { echo "$2 size=$(stat -c%s "$2" 2>/dev/null || echo 0) magic=$(head -c 16 "$2" | xxd -p)"; } >> relay/download-report.txt
           }
           dl 12MQOwJQoR9R01ARsgDFMaiJBjZf_89GF relay/brand-activewear.zip
           dl 19pBXWIZ9qtUpCCOFVBvWtwnr_kCRyhon relay/site-activewear.mp4
           dl 1VSDZReKuq1sB3UymQjk6ogj8YRIJ3DGH relay/walkthrough.mp4
-          head -c 4 relay/brand-activewear.zip | xxd | head -2
+          cat relay/download-report.txt
+          command -v ffmpeg || echo "no ffmpeg"
 
       - name: Inspect the archive
         run: |
-          set -eu
           python3 - <<'PY'
           import zipfile, collections, pathlib
-          z = zipfile.ZipFile("relay/brand-activewear.zip")
-          names = z.namelist()
-          lines = [f"entries: {len(names)}", f"total uncompressed: {sum(i.file_size for i in z.infolist())} bytes", ""]
-          roots = collections.Counter(n.split("/")[0] for n in names)
-          lines += [f"root {k}: {v}" for k, v in roots.most_common(20)]
-          lines.append("")
-          exts = collections.Counter(pathlib.Path(n).suffix.lower() for n in names)
-          lines += [f"ext {k}: {v}" for k, v in exts.most_common(20)]
-          lines.append("")
-          lines += names[:800]
-          pathlib.Path("relay/archive-report.txt").write_text("\n".join(lines))
+          p = pathlib.Path("relay/brand-activewear.zip")
+          if not zipfile.is_zipfile(p):
+              pathlib.Path("relay/archive-report.txt").write_text("NOT A ZIP: " + p.read_bytes()[:400].decode("utf8", "replace"))
+          else:
+              z = zipfile.ZipFile(p)
+              names = z.namelist()
+              lines = [f"entries: {len(names)}", f"total uncompressed: {sum(i.file_size for i in z.infolist())} bytes", ""]
+              roots = collections.Counter(n.split("/")[0] for n in names)
+              lines += [f"root {k}: {v}" for k, v in roots.most_common(20)]
+              lines.append("")
+              exts = collections.Counter(pathlib.Path(n).suffix.lower() for n in names)
+              lines += [f"ext {k}: {v}" for k, v in exts.most_common(20)]
+              lines.append("")
+              lines += names[:1500]
+              pathlib.Path("relay/archive-report.txt").write_text("\n".join(lines))
           PY
-          D=$(python3 -c "import zipfile,pathlib;n=zipfile.ZipFile('relay/brand-activewear.zip').namelist();d=[x for x in n if x.endswith('/')];print('yes' if d else 'no')")
-          echo "has directories: $D"
+          head -40 relay/archive-report.txt
 
       - name: Sample the walkthrough video
         run: |
-          set -eu
-          ffprobe -v error -show_entries format=duration,size -show_entries stream=width,height,r_frame_rate -of default=noprint_wrappers=1 relay/walkthrough.mp4 > relay/video-report.txt
-          ffprobe -v error -show_entries format=duration,size -show_entries stream=width,height,r_frame_rate -of default=noprint_wrappers=1 relay/site-activewear.mp4 > relay/video-report-site.txt
-          cat relay/video-report.txt
-          # one frame every 3 seconds, 1600px wide, for frame-by-frame review
-          ffmpeg -hide_banner -loglevel error -i relay/walkthrough.mp4 -vf "fps=1/3,scale=1600:-2" -q:v 4 relay/frames/w-%03d.jpg
-          ls relay/frames | wc -l
-          ffmpeg -hide_banner -loglevel error -i relay/site-activewear.mp4 -vf "fps=1/1,scale=1200:-2" -q:v 4 relay/frames/site-%03d.jpg
-          ls relay/frames | wc -l
-          du -sh relay
+          {
+            echo "--- walkthrough"
+            ffprobe -v error -show_entries format=duration,size -show_entries stream=width,height,r_frame_rate -of default=noprint_wrappers=1 relay/walkthrough.mp4 2>&1 || true
+            echo "--- site video"
+            ffprobe -v error -show_entries format=duration,size -show_entries stream=width,height,r_frame_rate -of default=noprint_wrappers=1 relay/site-activewear.mp4 2>&1 || true
+          } | tee relay/video-report.txt
+          ffmpeg -hide_banner -loglevel error -i relay/walkthrough.mp4 -vf "fps=1/3,scale=1600:-2" -q:v 4 relay/frames/w-%03d.jpg 2>&1 | tee -a relay/video-report.txt || true
+          ffmpeg -hide_banner -loglevel error -i relay/site-activewear.mp4 -vf "fps=1/2,scale=1200:-2" -q:v 4 relay/frames/site-%03d.jpg 2>&1 | tee -a relay/video-report.txt || true
+          ls relay/frames | wc -l | tee -a relay/video-report.txt
+          du -sh relay | tee -a relay/video-report.txt
 
       - name: Publish on the branch
+        if: always()
         run: |
-          set -eu
           git config user.name "asset-relay"
           git config user.email "asset-relay@users.noreply.github.com"
-          git rm -r --cached --ignore-unmatch relay-brand-activewear.zip relay-sha256.txt relay-contents.txt >/dev/null 2>&1 || true
           rm -f relay-brand-activewear.zip relay-sha256.txt relay-contents.txt
+          git rm -r --cached --ignore-unmatch relay-brand-activewear.zip relay-sha256.txt relay-contents.txt >/dev/null 2>&1 || true
           git add -f relay
-          git commit -m "chore(relay): bring the shared activewear assets onto the branch"
-          git push
+          git commit -m "chore(relay): bring the shared activewear assets onto the branch" || true
+          git push || true
