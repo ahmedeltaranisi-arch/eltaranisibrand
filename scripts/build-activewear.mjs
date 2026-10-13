@@ -15,7 +15,7 @@
  *   src/lib/activewearImages.json   key -> source URL, for the Cloudflare upload job
  */
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const RELAY = "relay";
@@ -278,7 +278,7 @@ const catalog = {
   nav: {
     tiles: rails,
     groupSwatch: Object.fromEntries(
-      Object.entries(groupSwatch).map(([group, url]) => [group, `/img/aw/group/${slugify(group)}.webp`]),
+      Object.entries(groupSwatch).map(([group]) => [group, `/img/aw/group/${slugify(group)}.webp`]),
     ),
   },
   rails,

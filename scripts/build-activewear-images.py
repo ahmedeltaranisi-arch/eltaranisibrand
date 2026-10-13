@@ -127,12 +127,15 @@ def main() -> int:
         for key, url in sorted(mapping.items()):
             dest = OUT / key
             name = basename(url)
-            # `relay/aw3` holds the full-resolution original a relay job pulled for exactly the
-            # thumbnails the saved page kept small, so it always wins — and re-encodes an image
-            # that was written from a thumbnail before the original arrived.
-            redesigned = RELAY / "aw3" / (key.replace("/", "_").rsplit(".", 1)[0] + ".jpg")
-            if not redesigned.exists():
-                redesigned = None
+            # `relay/aw4` / `relay/aw3` hold the full-resolution originals a relay job pulled for
+            # exactly the thumbnails the saved page kept small, so they always win — and re-encode
+            # an image that was written from a thumbnail before the original arrived.
+            redesigned = None
+            for relay_dir in ("aw4", "aw3"):
+                candidate = RELAY / relay_dir / (key.replace("/", "_").rsplit(".", 1)[0] + ".jpg")
+                if candidate.exists():
+                    redesigned = candidate
+                    break
             if dest.exists() and redesigned is None:
                 skipped += 1
                 total += dest.stat().st_size
