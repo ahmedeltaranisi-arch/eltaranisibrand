@@ -125,7 +125,7 @@ export default function ArrivalFilterDrawer({
             ))}
           </div>
         </FilterGroup>
-        <FilterGroup label={t("colorGroupLabel")}>
+        <FilterGroup label={t("colorGroupLabel")} initialOpen={entry === "sort"}>
           <div className="na-filter-values na-filter-colors">
             {colorRows.map((value) => (
               <label key={value} className="na-filter-value">

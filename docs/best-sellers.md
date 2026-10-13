@@ -36,6 +36,11 @@ sweatpants, hoodies, crewnecks; intimates = the bra styles; sleep = soft knits a
 pants), so every rail is non-empty, every style is reachable, and no rail promises a product
 this store does not carry. `See Results` and pagination recompute per rail.
 
+The drawer's entry point decides what is unfolded, as in the reference: `All Filters` opens the
+sort group over the collapsed facets, while `Sort by:` lays every facet (Category, Size, Color
+Group) out underneath it, so the counts of the walkthrough's second frame are all readable without
+another tap. Each summary still toggles its own group either way.
+
 ## URLs
 
 `?tab=activewear|tees|sweats|intimates|sleep` (absent = all) plus the reference's own

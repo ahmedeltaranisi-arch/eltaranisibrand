@@ -184,6 +184,12 @@ test("all four reference sort choices reorder this collection's grid", async ({ 
   await page.locator(".na-sort-trigger").click();
   const dialog = page.locator(".na-filter-drawer");
   await expect(dialog.getByRole("radio", { name: "Newest", exact: true })).toBeVisible();
+  // Entering from the sort trigger lays the whole facet list out under it, exactly as the
+  // walkthrough shows, so no group has to be tapped open to read its counts.
+  for (const group of ["Category", "Size", "Color Group"]) {
+    await expect(dialog.locator(".na-filter-group.is-open", { hasText: group })).toHaveCount(1);
+  }
+  await expect(dialog.locator('input[name="color"]').first()).toBeVisible();
   for (const [label, sort] of [["Newest", "created-descending"], ["Best Selling", "best-selling"], ["Price, low to high", "price-ascending"], ["Price, high to low", "price-descending"]] as const) {
     await choose(dialog.getByRole("radio", { name: label, exact: true }));
     await expect(dialog.getByRole("radio", { name: label, exact: true })).toBeChecked();
