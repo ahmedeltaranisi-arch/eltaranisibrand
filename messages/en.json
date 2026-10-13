@@ -1274,5 +1274,11 @@
         "description": "Second-skin one-pieces made to move throughout your day, in soft organic cotton."
       }
     }
+  },
+  "appearance": {
+    "day": "Day",
+    "night": "Night",
+    "switchToLight": "Switch to day mode",
+    "switchToDark": "Switch to night mode"
   }
 }

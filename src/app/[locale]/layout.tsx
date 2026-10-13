@@ -8,6 +8,8 @@ import { routing } from "@/i18n/routing";
 import { CartProvider } from "@/context/cart";
 import { WishlistProvider } from "@/context/wishlist";
 import Header from "@/components/Header";
+import ThemeToggle from "@/components/ThemeToggle";
+import { themeBootstrap } from "@/lib/themeBootstrap";
 import Footer from "@/components/Footer";
 import LocaleLayout from "@/components/LocaleLayout";
 import ArrivalShell from "@/components/new-arrivals/ArrivalShell";
@@ -41,7 +43,8 @@ export default async function LocaleRootLayout({ children, params }: {
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${inter.variable} ${cairo.variable} ${fraunces.variable} h-full antialiased`}>
+    <html suppressHydrationWarning lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${inter.variable} ${cairo.variable} ${fraunces.variable} h-full antialiased`}>
+      <head><script dangerouslySetInnerHTML={{ __html: themeBootstrap }} /></head>
       <body className="flex min-h-full flex-col bg-paper text-ink">
         <NextIntlClientProvider>
           <WishlistProvider>
@@ -51,6 +54,7 @@ export default async function LocaleRootLayout({ children, params }: {
               <ArrivalShell footer={<Footer />}>
                 {children}
               </ArrivalShell>
+              <ThemeToggle />
             </CartProvider>
           </WishlistProvider>
         </NextIntlClientProvider>

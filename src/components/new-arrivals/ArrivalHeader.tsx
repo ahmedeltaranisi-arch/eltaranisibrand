@@ -4,6 +4,7 @@ import { useEffect, useId, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/navigation";
 import Wordmark from "../Wordmark";
+import LocaleSwitcher from "../LocaleSwitcher";
 import { useCart } from "@/context/cart";
 import { CloseIcon, MenuIcon } from "../icons";
 import { ArrivalSearchIcon, ArrivalAccountIcon, ArrivalBagIcon } from "./ArrivalIcons";
@@ -67,6 +68,7 @@ export default function ArrivalHeader() {
             <button type="button" className="na-header-bag" aria-label={`${t("bag")} (${count})`} onClick={openCart}>
               <ArrivalBagIcon />{count > 0 && <span className="na-cart-count">{count}</span>}
             </button>
+            <LocaleSwitcher variant="header" />
             <button type="button" className="na-menu-toggle" aria-label={t("openMenu")} onClick={() => setMenuOpen(true)}><MenuIcon className="h-[21px] w-[21px]" /></button>
           </div>
         </div>
