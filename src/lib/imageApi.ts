@@ -24,6 +24,29 @@ export const EXTERNAL_GH_API_BASE =
 
 export const CLOUDFLARE_API_BASE = "https://api.cloudflare.com/client/v4";
 
+/**
+ * The published Cloudflare asset origin: a Static Assets Worker on the free plan holding the whole
+ * `public/img` tree (1,322 files), so the storefront's imagery is served by Cloudflare's edge.
+ * Overridable per environment, and `CLOUDFLARE_ASSETS_DISABLED=1` drops back to the mirrors alone.
+ */
+export const DEFAULT_CLOUDFLARE_ASSETS_URL = "https://eltaranisi-images.ahmedeltaranisi.workers.dev";
+
+/**
+ * Public root of the Cloudflare asset origin — a Static Assets worker or an R2 bucket holding the
+ * `public/img` tree under `img/...`, exactly the layout the app requests. Read per call so a build
+ * never bakes a stale origin in; `CLOUDFLARE_R2_PUBLIC_URL` keeps working for an R2 setup.
+ */
+export function cloudflareAssetRoot(): string | null {
+  if (process.env.CLOUDFLARE_ASSETS_DISABLED === "1") return null;
+  for (const key of ["CLOUDFLARE_ASSETS_PUBLIC_URL", "CLOUDFLARE_R2_PUBLIC_URL"] as const) {
+    const value = (process.env[key] ?? "").trim().replace(/\/+$/, "");
+    // A value that is set but unusable must fall through to the mirrors instead of silently taking
+    // the default origin: a typo in a production variable has to stay visible.
+    if (value) return value.startsWith("https://") ? value : null;
+  }
+  return DEFAULT_CLOUDFLARE_ASSETS_URL;
+}
+
 const SAFE_SEGMENT = /^[a-zA-Z0-9._-]+$/;
 const ALLOWED_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".svg", ".ico", ".avif", ".gif"]);
 
@@ -74,11 +97,12 @@ export function resolveExternalImageSources(cleanPath: string): Array<{
 }> {
   const sources: Array<{ url: string; headers?: Record<string, string>; provider: string }> = [];
 
-  const r2Base = process.env.CLOUDFLARE_R2_PUBLIC_URL?.replace(/\/+$/, "");
-  if (r2Base) {
+  const assetRoot = cloudflareAssetRoot();
+  if (assetRoot) {
     sources.push({
-      url: `${r2Base}/${cleanPath}`,
-      provider: "cloudflare-r2",
+      // The asset origin mirrors the repository layout, so `img/` is part of every key.
+      url: `${assetRoot}/img/${cleanPath}`,
+      provider: "cloudflare-assets",
     });
   }
 

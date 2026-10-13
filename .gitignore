@@ -43,3 +43,7 @@ next-env.d.ts
 # Playwright verification artifacts
 /test-results/
 /playwright-report/
+
+# staging folder for scripts/sync-cloudflare-images.mjs
+.cloudflare-assets/
+.wrangler/
