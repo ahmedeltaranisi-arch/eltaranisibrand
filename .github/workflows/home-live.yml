@@ -1,0 +1,131 @@
+name: home-live
+
+# Temporary helper: verify the delivered fixes on the deployed site from a runner (the author's
+# sandbox cannot reach the public internet) and photograph the result into `relay/shots-home/`:
+#   * the footer logo mark, restored,
+#   * the home page's editorial two-up, re-cropped so the models are in frame,
+#   * the Activewear editorial video, with no native chrome at all.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/home-live.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Probe the deployed site
+        run: |
+          mkdir -p relay/shots-home
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          BASE=https://eltaranisibrand.vercel.app
+          : > relay/shots-home/report.txt
+          for path in \
+            "/img/eltaranisi-logo.png" \
+            "/img/shots/hoodie-nori-1.jpg" \
+            "/img/shots/tank-mocha-1.jpg" \
+            "/img/aw/editorial/video-still.webp" \
+            "/media/aw-editorial.mp4" ; do
+            code=$(curl -sSL --compressed -m 60 -A "$UA" -o /tmp/body -w "%{http_code}" "$BASE$path" || echo ERR)
+            echo "$code $(stat -c%s /tmp/body 2>/dev/null || echo 0) $path" >> relay/shots-home/report.txt
+          done
+          curl -sSL --compressed -m 60 -A "$UA" -o relay/shots-home/en-home.html "$BASE/en"
+          curl -sSL --compressed -m 60 -A "$UA" -o relay/shots-home/en-activewear.html "$BASE/en/collections/activewear"
+          {
+            echo "--- markers"
+            echo "footer logo img: $(grep -c 'eltaranisi-logo.png' relay/shots-home/en-activewear.html)"
+            echo "home logo img: $(grep -c 'eltaranisi-logo.png' relay/shots-home/en-home.html)"
+            echo "object-top on the duo: $(grep -c 'object-top' relay/shots-home/en-home.html)"
+            echo "duo photos: $(grep -o '/img/shots/hoodie-nori-1.jpg\|/img/shots/tank-mocha-1.jpg' relay/shots-home/en-home.html | sort -u | tr '\n' ' ')"
+            echo "video controls attr: $(grep -o '<video[^>]*controls' relay/shots-home/en-activewear.html | wc -l)"
+            echo "video tag: $(grep -o '<video[^>]\{0,200\}' relay/shots-home/en-activewear.html | head -1)"
+          } >> relay/shots-home/report.txt
+          cat relay/shots-home/report.txt
+
+      - name: Photograph the live pages
+        run: |
+          cat > /tmp/live-shots.mjs <<'JS'
+          import { mkdirSync } from "node:fs";
+          import { chromium } from "playwright-core";
+          const BASE = "https://eltaranisibrand.vercel.app";
+          const OUT = "relay/shots-home";
+          mkdirSync(OUT, { recursive: true });
+          const browser = await chromium.launch({ args: ["--no-sandbox"] });
+          const notes = [];
+          const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+          page.on("response", (r) => { if (r.status() >= 400) notes.push(`${r.status()} ${r.url().slice(0, 110)}`); });
+
+          await page.goto(`${BASE}/en`, { waitUntil: "load" });
+          await page.waitForTimeout(3000);
+          const duo = page.locator("section").filter({ hasText: "Cotton that was grown" }).first();
+          await duo.scrollIntoViewIfNeeded();
+          await page.waitForTimeout(1500);
+          await duo.screenshot({ path: `${OUT}/01-home-editorial-duo.png` });
+          const boxes = await page.evaluate(() =>
+            Array.from(document.querySelectorAll('img[src*="/img/shots/"]')).map((el) => {
+              const r = el.getBoundingClientRect();
+              return { src: el.getAttribute("src"), pos: getComputedStyle(el).objectPosition, w: Math.round(r.width), h: Math.round(r.height), natural: el.naturalWidth };
+            }),
+          );
+          notes.push("duo images: " + JSON.stringify(boxes));
+
+          await page.goto(`${BASE}/en/collections/activewear`, { waitUntil: "load" });
+          await page.waitForTimeout(2500);
+          const footer = page.locator('[data-site-footer="eltaranisi"]');
+          await footer.scrollIntoViewIfNeeded();
+          await page.waitForTimeout(1200);
+          await footer.screenshot({ path: `${OUT}/02-footer.png` });
+          notes.push("footer logo: " + JSON.stringify(await footer.locator('img[alt="ELTARANISI BRAND"]').evaluate((el) => ({ natural: el.naturalWidth, w: Math.round(el.getBoundingClientRect().width) }))));
+
+          const article = page.locator(".na-aw-editorial-video").first();
+          await article.scrollIntoViewIfNeeded();
+          await page.waitForTimeout(1200);
+          const box = await article.boundingBox();
+          await page.screenshot({ path: `${OUT}/03-video-paused.png`, clip: { x: box.x - 6, y: box.y - 6, width: box.width + 12, height: Math.min(box.height + 12, 620) } });
+          const video = page.locator(".na-aw-editorial-video-el");
+          notes.push("video controls=" + (await video.evaluate((el) => el.controls)));
+          await page.mouse.click(box.x + box.width / 2, box.y + 200);
+          await page.waitForTimeout(2000);
+          notes.push("after click paused=" + (await video.evaluate((el) => el.paused)));
+          await page.screenshot({ path: `${OUT}/04-video-playing.png`, clip: { x: box.x - 6, y: box.y - 6, width: box.width + 12, height: Math.min(box.height + 12, 620) } });
+          notes.push("toggle label=" + (await page.locator(".na-aw-editorial-toggle").getAttribute("aria-label")));
+
+          const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+          await mobile.goto(`${BASE}/en`, { waitUntil: "load" });
+          await mobile.waitForTimeout(3000);
+          const mduo = mobile.locator("section").filter({ hasText: "Cotton that was grown" }).first();
+          await mduo.scrollIntoViewIfNeeded();
+          await mobile.waitForTimeout(1500);
+          await mduo.screenshot({ path: `${OUT}/05-home-editorial-mobile.png` });
+
+          console.log(notes.join("\n"));
+          await browser.close();
+          JS
+          node /tmp/live-shots.mjs 2>&1 | tee relay/shots-home/notes.txt
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "home-live"
+          git config user.email "home-live@users.noreply.github.com"
+          git add -f relay/shots-home
+          git commit -m "chore(relay): the deployed footer logo, home editorial and video chrome" || true
+          git push || true

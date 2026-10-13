@@ -189,17 +189,19 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
                 {editorials && page === 1 && index === 0 && (
                   <article className="na-aw-editorial-video">
                     <div className="na-aw-editorial-video-media">
+                      {/* No native chrome: the reference shows only its own play/pause disc, so the
+                          browser's control bar, its seek bar and its time readout stay off. */}
                       <video
                         ref={video}
                         className="na-aw-editorial-video-el"
                         poster={ACTIVEWEAR_NAV.editorial.videoStill}
                         src={VIDEO_SRC}
-                        controls
                         muted
                         loop
                         playsInline
                         preload="none"
                         aria-label={t("editorialVideoAlt")}
+                        onClick={toggleVideo}
                         onPlay={() => setVideoPlaying(true)}
                         onPause={() => setVideoPlaying(false)}
                       />
