@@ -1,0 +1,136 @@
+name: home-assets
+
+# Temporary helper (the author's sandbox has no public internet):
+#  1. restores `public/img/eltaranisi-logo.png` — the footer logo mark the site shipped before the
+#     image-bundle commit deleted the local copy;
+#  2. pulls the reference home page so the two editorial photographs of the
+#     "Cotton that was grown, not manufactured" / "Cut on real bodies, not averages" section can be
+#     read off it at print size and published from here.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/home-assets.yml"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore the footer logo mark
+        run: |
+          mkdir -p public/img
+          curl -sSL --compressed -m 90 \
+            -o public/img/eltaranisi-logo.png \
+            "https://cdn.jsdelivr.net/gh/ahmedeltaranisi-arch/eltaranisibrand@a3f459561f4ebe6ffc5047a3e434a002b2d717aa/public/img/eltaranisi-logo.png"
+          file public/img/eltaranisi-logo.png
+          ls -la public/img/eltaranisi-logo.png
+
+      - name: Read the deployed home page's editorial block
+        run: |
+          mkdir -p relay/home
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          curl -sSL --compressed -m 60 -A "$UA" -o relay/home/live-home.html "https://eltaranisibrand.vercel.app/en" || true
+          ls -la relay/home/live-home.html
+          python3 - <<'PY'
+          import re, pathlib, subprocess
+          p = pathlib.Path("relay/home/live-home.html")
+          if not p.exists():
+              raise SystemExit("no live home page")
+          html = p.read_text(errors="ignore")
+          at = html.find("Cotton that was grown")
+          print("heading at", at)
+          window = html[max(0, at - 2500):at + 3500] if at >= 0 else ""
+          pathlib.Path("relay/home/live-window.html").write_text(window)
+          for m in re.finditer(r'<img[^>]*src="([^"]+)"', window):
+              url = m.group(1)
+              code = subprocess.run(["curl", "-sSL", "-o", "/dev/null", "-w", "%{http_code}", "-m", "45",
+                                     "https://eltaranisibrand.vercel.app" + url],
+                                    capture_output=True, text=True).stdout
+              print("LIVE IMG", code, url)
+          PY
+
+      - name: Fetch the reference home page
+        run: |
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          for url in "https://matethelabel.com/" "https://matethelabel.com/pages/our-story"; do
+            name=$(echo "$url" | sed 's#https://##; s#/#_#g; s#_$##')
+            code=$(curl -sSL --compressed -m 90 -A "$UA" -o "relay/home/$name.html" -w "%{http_code}" "$url" || echo ERR)
+            echo "$code $(stat -c%s "relay/home/$name.html" 2>/dev/null || echo 0) $url" >> relay/home/report.txt
+          done
+          cat relay/home/report.txt
+
+      - name: Read the editorial section off the reference page
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          base = pathlib.Path("relay/home")
+          cands = {}
+          for page in sorted(base.glob("*.html")):
+              if page.name.startswith("live-"):
+                  continue
+              html = page.read_text(errors="ignore")
+              flat = html.replace("\\/", "/")
+              for needle in ("grown, not manufactured", "Cut on real bodies", "Cotton that was grown"):
+                  at = flat.find(needle)
+                  if at < 0:
+                      continue
+                  print("---", page.name, repr(needle), "at", at)
+                  window = flat[max(0, at - 8000):at + 8000]
+                  slug = re.sub(r"[^a-z0-9]+", "-", needle.lower())[:40]
+                  (base / ("window-" + slug + ".html")).write_text(window)
+                  urls = re.findall(r'(?:https?:)?//[^"\'\s\\]+?cdn/shop/files/[^"\'\s\\]+?\.(?:jpg|jpeg|png|webp)[^"\'\s\\]*', window)
+                  seen = set()
+                  for url in urls:
+                      url = url if url.startswith("http") else "https:" + url
+                      name = url.split("?")[0].split("/")[-1]
+                      if name in seen:
+                          continue
+                      seen.add(name)
+                      cands[name] = re.sub(r"width=\d+", "width=1800", url)
+                  print("    candidates here:", len(seen))
+          (base / "candidates.txt").write_text("\n".join(name + " " + url for name, url in sorted(cands.items())))
+          print("total candidates:", len(cands))
+          for name, url in sorted(cands.items()):
+              print("CAND", name, url[:160])
+          PY
+
+      - name: Download the candidates
+        run: |
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          mkdir -p relay/home/files
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            code=$(curl -sSL --compressed -m 120 -A "$UA" -o "relay/home/files/$name" -w "%{http_code}" "$url" || echo ERR)
+            echo "$code $(stat -c%s "relay/home/files/$name" 2>/dev/null || echo 0) $name" >> relay/home/files-report.txt
+          done < relay/home/candidates.txt
+          cat relay/home/files-report.txt || true
+          python3 - <<'PY'
+          import pathlib
+          try:
+              from PIL import Image
+          except Exception:
+              raise SystemExit(0)
+          for p in sorted(pathlib.Path("relay/home/files").glob("*")):
+              try:
+                  with Image.open(p) as im:
+                      print("SIZE", im.size, p.name)
+              except Exception as exc:
+                  print("UNREADABLE", p.name, exc)
+          PY
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "home-assets"
+          git config user.email "home-assets@users.noreply.github.com"
+          git add -f public/img/eltaranisi-logo.png relay/home
+          git commit -m "chore(relay): the footer logo mark and the reference home editorial" || true
+          git push || true
