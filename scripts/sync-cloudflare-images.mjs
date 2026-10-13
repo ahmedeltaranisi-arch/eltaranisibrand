@@ -5,6 +5,8 @@
  *   CLOUDFLARE_API_TOKEN=... node scripts/sync-cloudflare-images.mjs
  */
 
+import { existsSync, readFileSync } from "node:fs";
+
 const COMMIT = "a3f459561f4ebe6ffc5047a3e434a002b2d717aa";
 const REPO = "ahmedeltaranisi-arch/eltaranisibrand";
 const CDN_BASE = `https://cdn.jsdelivr.net/gh/${REPO}@${COMMIT}/public/img`;
@@ -44,6 +46,14 @@ const CORE_IMAGES = [
   "new-arrivals/mate-wordmark.svg",
   "new-arrivals/footer-monogram.svg",
   "new-arrivals/footer-mate-wordmark.svg",
+  "best-sellers/tab-all.webp",
+  "best-sellers/tab-activewear.webp",
+  "best-sellers/tab-tees.webp",
+  "best-sellers/tab-sweats.webp",
+  "best-sellers/tab-intimates.webp",
+  "best-sellers/tab-sleep.webp",
+  "best-sellers/editorial-primary.webp",
+  "best-sellers/editorial-secondary.webp",
 ];
 
 async function main() {
@@ -53,7 +63,15 @@ async function main() {
   for (const relPath of CORE_IMAGES) {
     const form = new FormData();
     form.set("id", relPath);
-    form.set("url", `${CDN_BASE}/${relPath}`);
+    // Assets added in this checkout are not in the pinned snapshot, so upload the real
+    // bytes from the workspace whenever they exist and fall back to the CDN otherwise.
+    const local = `public/img/${relPath}`;
+    if (existsSync(local)) {
+      const bytes = readFileSync(local);
+      form.set("file", new Blob([bytes], { type: relPath.endsWith(".svg") ? "image/svg+xml" : `image/${relPath.split(".").pop()}` }), relPath);
+    } else {
+      form.set("url", `${CDN_BASE}/${relPath}`);
+    }
     form.set("requireSignedURLs", "false");
 
     const res = await fetch(`${CF_API}/accounts/${accountId}/images/v1`, {
