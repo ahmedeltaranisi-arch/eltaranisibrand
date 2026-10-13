@@ -1,0 +1,47 @@
+name: probe
+
+on:
+  push:
+    paths:
+      - ".github/workflows/probe.yml"
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Try several user agents against the reference API
+        run: |
+          mkdir -p relay/probe
+          URL="https://matethelabel.com/collections/activewear/products.json?limit=250&page=1"
+          try () { # label, extra args...
+            local label="$1"; shift
+            local out="relay/probe/$label.json"
+            code=$(curl -sSL --compressed -m 45 -o "$out" -w "%{http_code}" "$@" "$URL" || echo ERR)
+            echo "$label http=$code size=$(stat -c%s "$out" 2>/dev/null || echo 0) head=$(head -c 60 "$out" | tr -d '\n')" >> relay/probe/report.txt
+          }
+          try plain
+          try browser -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15" -H "Accept: application/json,text/html;q=0.9" -H "Accept-Language: en-US,en;q=0.9"
+          try googlebot -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+          try bingbot -H "User-Agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+          try shopify -H "User-Agent: Shopify-Captcha-Protection/1.0"
+          try python -H "User-Agent: python-requests/2.32" -H "Accept: */*"
+          try mobile -H "User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+          cat relay/probe/report.txt
+          for f in relay/probe/*.json; do
+            if head -c 100 "$f" | grep -q '"products"'; then echo "GOOD $f"; head -c 300 "$f"; fi
+          done
+          ls -la relay/probe
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "probe"
+          git config user.email "probe@users.noreply.github.com"
+          git add -f relay/probe
+          git commit -m "chore(probe): user-agent probe results" || true
+          git push || true
