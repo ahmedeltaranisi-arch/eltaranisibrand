@@ -1,21 +1,22 @@
-200 97986 text/html; /en/collections/activewear
-200 112328 text/html; /ar/collections/activewear
-404 62158 text/html; /en/collections/leggings-and-shorts
-404 62126 text/html; /en/collections/fig
-404 63 application/json /img/aw/nav/all-activewear.webp
-404 54 application/json /img/aw/color/fig.webp
-404 66 application/json /img/aw/editorial/video-still.webp
-404 71 application/json /img/aw/editorial/why-activewear-1.webp
-404 7680 text/html; /media/aw-editorial.mp4
+200 254127 text/html; /en/collections/activewear
+200 286332 text/html; /ar/collections/activewear
+200 209069 text/html; /en/collections/leggings-and-shorts
+200 114907 text/html; /en/collections/fig
+200 33288 image/webp /img/aw/nav/all-activewear.webp
+200 346728 image/webp /img/aw/color/fig.webp
+200 26180 image/webp /img/aw/editorial/video-still.webp
+200 25228 image/webp /img/aw/editorial/why-activewear-1.webp
+200 4565360 video/mp4 /media/aw-editorial.mp4
 --- markers in /en/collections/activewear
+Organic cotton activewear made for your health.
 rail labels: 
-product cards: 0
-editorial video: 0
-split editorial: 0
-mega menu: 0
+product cards: 48
+editorial video: 1
+split editorial: 1
+mega menu: 1
 MATE leaks: 0
 --- image hosts
-img/aw refs: 0
+img/aw refs: 116
 /api/images refs: 0
 --- /ar markers
 ar heading: الملابس الرياضية
