@@ -1,0 +1,47 @@
+name: aw4
+
+# Temporary helper: the two-photo "why" editorial keeps its own print-sized originals
+# (the reference serves them at 1800px). Fetch exactly those two.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/aw4.yml"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Fetch the editorial originals
+        run: |
+          mkdir -p relay/aw4
+          : > relay/aw4/report.txt
+          while read -r key url; do
+            [ -z "$key" ] && continue
+            out="relay/aw4/$(echo "$key" | tr '/' '_' | sed 's/\.webp$/.jpg/')"
+            code=$(curl -sSL --compressed -m 120 \
+              -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" \
+              -o "$out" -w "%{http_code}" "$url" || echo ERR)
+            echo "$code $(stat -c%s "$out" 2>/dev/null || echo 0) $key" >> relay/aw4/report.txt
+          done <<'LIST'
+          aw/editorial/why-activewear-1.webp https://matethelabel.com/cdn/shop/files/DESKTOP-ACTIVE.jpg?v=1789598807&width=1800
+          aw/editorial/why-activewear-2.webp https://matethelabel.com/cdn/shop/files/DESKTOP-ACTIVE-2.jpg?v=1789598818&width=1800
+          LIST
+          cat relay/aw4/report.txt
+          ls -la relay/aw4
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "aw4"
+          git config user.email "aw4@users.noreply.github.com"
+          git add -f relay/aw4
+          git commit -m "chore(relay): the why-activewear editorial at print size" || true
+          git push || true
