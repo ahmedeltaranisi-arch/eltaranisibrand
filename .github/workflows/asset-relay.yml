@@ -1,7 +1,8 @@
 name: asset-relay
 
 # Temporary helper: the development sandbox can only reach github.com, so this job
-# pulls a client-provided Google Drive archive onto the branch where it can be read.
+# pulls the client's shared archives onto the branch where they can be read.
+# It is deleted again once the assets are in the working tree.
 
 on:
   push:
@@ -19,31 +20,71 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Download the shared archive from Google Drive
+      - name: Prepare
         run: |
           set -eu
-          ID=12MQOwJQoR9R01ARsgDFMaiJBjZf_89GF
-          OUT=relay-brand-activewear.zip
-          python3 -m pip install --quiet --disable-pip-version-check gdown || true
-          if command -v gdown >/dev/null 2>&1; then
-            gdown --fuzzy "https://drive.google.com/file/d/$ID/view" -O "$OUT" || true
-          fi
-          if [ ! -s "$OUT" ]; then
-            curl -sSL -c /tmp/cookies -o "$OUT" "https://drive.usercontent.google.com/download?id=$ID&export=download&confirm=t"
-          fi
-          if [ ! -s "$OUT" ]; then
-            curl -sSL -c /tmp/cookies "https://drive.google.com/uc?export=download&id=$ID" -o /tmp/first.html
-            TOKEN=$(grep -o 'confirm=[0-9A-Za-z_-]*' /tmp/first.html | head -1 || true)
-            curl -sSL -b /tmp/cookies -o "$OUT" "https://drive.google.com/uc?export=download&id=$ID&${TOKEN:-confirm=t}"
-          fi
-          ls -l "$OUT"
-          sha256sum "$OUT" | tee relay-sha256.txt
-          (unzip -l "$OUT" || true) | head -80 | tee relay-contents.txt
+          mkdir -p relay/frames
+          rm -rf relay
+          mkdir -p relay/frames
 
-      - name: Publish the archive on the branch
+      - name: Fetch the shared archives
         run: |
+          set -eu
+          dl () { # id, output
+            python3 -m pip install --quiet --disable-pip-version-check gdown >/dev/null 2>&1 || true
+            if command -v gdown >/dev/null 2>&1; then
+              gdown --fuzzy "https://drive.google.com/file/d/$1/view" -O "$2" >/dev/null 2>&1 || true
+            fi
+            if [ ! -s "$2" ]; then
+              curl -sSL -o "$2" "https://drive.usercontent.google.com/download?id=$1&export=download&confirm=t"
+            fi
+            ls -l "$2"
+          }
+          dl 12MQOwJQoR9R01ARsgDFMaiJBjZf_89GF relay/brand-activewear.zip
+          dl 19pBXWIZ9qtUpCCOFVBvWtwnr_kCRyhon relay/site-activewear.mp4
+          dl 1VSDZReKuq1sB3UymQjk6ogj8YRIJ3DGH relay/walkthrough.mp4
+          head -c 4 relay/brand-activewear.zip | xxd | head -2
+
+      - name: Inspect the archive
+        run: |
+          set -eu
+          python3 - <<'PY'
+          import zipfile, collections, pathlib
+          z = zipfile.ZipFile("relay/brand-activewear.zip")
+          names = z.namelist()
+          lines = [f"entries: {len(names)}", f"total uncompressed: {sum(i.file_size for i in z.infolist())} bytes", ""]
+          roots = collections.Counter(n.split("/")[0] for n in names)
+          lines += [f"root {k}: {v}" for k, v in roots.most_common(20)]
+          lines.append("")
+          exts = collections.Counter(pathlib.Path(n).suffix.lower() for n in names)
+          lines += [f"ext {k}: {v}" for k, v in exts.most_common(20)]
+          lines.append("")
+          lines += names[:800]
+          pathlib.Path("relay/archive-report.txt").write_text("\n".join(lines))
+          PY
+          D=$(python3 -c "import zipfile,pathlib;n=zipfile.ZipFile('relay/brand-activewear.zip').namelist();d=[x for x in n if x.endswith('/')];print('yes' if d else 'no')")
+          echo "has directories: $D"
+
+      - name: Sample the walkthrough video
+        run: |
+          set -eu
+          ffprobe -v error -show_entries format=duration,size -show_entries stream=width,height,r_frame_rate -of default=noprint_wrappers=1 relay/walkthrough.mp4 > relay/video-report.txt
+          ffprobe -v error -show_entries format=duration,size -show_entries stream=width,height,r_frame_rate -of default=noprint_wrappers=1 relay/site-activewear.mp4 > relay/video-report-site.txt
+          cat relay/video-report.txt
+          # one frame every 3 seconds, 1600px wide, for frame-by-frame review
+          ffmpeg -hide_banner -loglevel error -i relay/walkthrough.mp4 -vf "fps=1/3,scale=1600:-2" -q:v 4 relay/frames/w-%03d.jpg
+          ls relay/frames | wc -l
+          ffmpeg -hide_banner -loglevel error -i relay/site-activewear.mp4 -vf "fps=1/1,scale=1200:-2" -q:v 4 relay/frames/site-%03d.jpg
+          ls relay/frames | wc -l
+          du -sh relay
+
+      - name: Publish on the branch
+        run: |
+          set -eu
           git config user.name "asset-relay"
           git config user.email "asset-relay@users.noreply.github.com"
-          git add -f relay-brand-activewear.zip relay-sha256.txt relay-contents.txt
-          git commit -m "chore(relay): bring the shared activewear archive onto the branch"
+          git rm -r --cached --ignore-unmatch relay-brand-activewear.zip relay-sha256.txt relay-contents.txt >/dev/null 2>&1 || true
+          rm -f relay-brand-activewear.zip relay-sha256.txt relay-contents.txt
+          git add -f relay
+          git commit -m "chore(relay): bring the shared activewear assets onto the branch"
           git push
