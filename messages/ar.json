@@ -425,15 +425,15 @@
       "items": [
         {
           "title": "أكتيفوير",
-          "href": "/collections/activewear"
+          "href": "/collections/best-sellers?tab=activewear"
         },
         {
           "title": "ملابس",
-          "href": "/collections/all"
+          "href": "/collections/best-sellers"
         },
         {
           "title": "سويتس",
-          "href": "/collections/loungewear"
+          "href": "/collections/best-sellers?tab=sweats"
         }
       ]
     },

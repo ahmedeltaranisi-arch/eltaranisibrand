@@ -1,9 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/navigation";
-import { productsByCollection } from "@/lib/catalog";
+import { homeCategoryTiles, homeRails } from "@/lib/homeRails";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 import Marquee from "@/components/Marquee";
-import ProductTabs from "@/components/ProductTabs";
+import MateHomeRails from "@/components/MateHomeRails";
 import ReviewCarousel from "@/components/ReviewCarousel";
 import Reveal from "@/components/Reveal";
 import { ArrowIcon, LeafIcon } from "@/components/icons";
@@ -20,6 +20,7 @@ export default async function HomePage({
 
   const t = await getTranslations("home");
   const tt = await getTranslations("home.tabs");
+  const tcommon = await getTranslations("common");
 
   const slides: HeroSlide[] = [0, 1, 2].map((i) => ({
     eyebrow: t(`hero.slides.${i}.eyebrow` as never),
@@ -29,29 +30,10 @@ export default async function HomePage({
     image: t(`hero.slides.${i}.image` as never),
   }));
 
-  const cats = [
-    { img: "/img/shots/bra-fig-1.jpg", count: productsByCollection("activewear").length },
-    { img: "/img/shots/tank-mocha-1.jpg", count: productsByCollection("all").length },
-    { img: "/img/shots/hoodie-nori-1.jpg", count: productsByCollection("loungewear").length },
-  ];
-
-  const groups = [
-    {
-      key: "new-arrivals",
-      label: tt("newArrivals"),
-      products: productsByCollection("new-arrivals"),
-    },
-    {
-      key: "best-sellers",
-      label: tt("bestSellers"),
-      products: productsByCollection("best-sellers"),
-    },
-    {
-      key: "loungewear",
-      label: tt("loungewear"),
-      products: productsByCollection("loungewear"),
-    },
-  ];
+  // Counts and cards come from the same verified catalogue the collection pages filter,
+  // so a tile can never promise a number its own page does not show.
+  const cats = homeCategoryTiles().map((tile) => ({ img: tile.image, count: tile.count }));
+  const groups = homeRails().map((rail) => ({ ...rail, label: tt(rail.labelKey) }));
 
   return (
     <>
@@ -94,7 +76,7 @@ export default async function HomePage({
 
       {/* tabbed products */}
       <Reveal as="section" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
-        <ProductTabs groups={groups} />
+        <MateHomeRails rails={groups} viewAll={tcommon("viewAll")} />
       </Reveal>
 
       {/* meet the new colour — two panels, copy centred on the left one */}
@@ -201,7 +183,7 @@ export default async function HomePage({
                 <div className="absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/25" />
                 <h3 className="absolute top-6 start-6 text-[30px] font-light transition-colors duration-300 group-hover:text-paper sm:text-[38px]">
                   {t(`categories.items.${i}.title` as never)}
-                  <sup className="ms-1 align-super text-[12px]">({c.count})</sup>
+                  <sup className="na-home-category-count ms-1 align-super text-[12px]">({c.count})</sup>
                 </h3>
                 <p className="absolute bottom-6 start-6 text-[13px] underline decoration-dotted underline-offset-4 transition-colors duration-300 group-hover:text-paper">
                   {t("categories.cta")}

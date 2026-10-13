@@ -69,6 +69,14 @@ public/img/shots/       the brand shoot: <style>-<tone>-<n>.jpg, where 1 is
                         angles; public/img/rev-*.jpg are review avatars
 ```
 
+## Home rails
+
+The three home product rails and the "Clean comfort" trio are rendered from the same verified
+catalogue the collection pages filter on (`src/lib/homeRails.ts`) with the shared
+`MateProductCard`, so a swatch on the home page always loads that colourway's own photograph and
+pose, and the trio's counts equal the product counts of the pages they link to. The legacy
+`src/lib/catalog.ts` cards are no longer used on the home page — see `docs/README-home-rails.md`.
+
 ## Home page order (mirrors the walkthrough video)
 
 announcement bars → hero (centred serif title, dotted-underline CTA) → marquee →
