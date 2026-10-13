@@ -1,0 +1,114 @@
+name: aw-facets2
+
+# Temporary helper: capture which product sits in which reference facet (category / colour
+# group / size) and pull the photography the collection capture still misses.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/aw-facets2.yml"
+  workflow_dispatch:
+
+jobs:
+  facets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Facet membership pages
+        run: |
+          mkdir -p relay/facets2
+          : > relay/facets2/report.txt
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          fetch () { # query-string, output-name
+            for attempt in 1 2 3; do
+              code=$(curl -sSL --compressed -m 45 -A "$UA" \
+                -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
+                -H "Accept-Language: en-US,en;q=0.9" \
+                -H "Referer: https://matethelabel.com/collections/activewear" \
+                -c /tmp/jar -b /tmp/jar \
+                -o "relay/facets2/$2" -w "%{http_code}" \
+                "https://matethelabel.com/collections/activewear?$1" || echo ERR)
+              echo "attempt=$attempt $code $(stat -c%s "relay/facets2/$2" 2>/dev/null || echo 0) $2" >> relay/facets2/report.txt
+              if [ "$code" = "200" ] && [ "$(stat -c%s "relay/facets2/$2")" -gt 200000 ]; then break; fi
+              sleep 4
+            done
+          }
+          # let the bot check settle by visiting the collection first
+          curl -sSL --compressed -m 45 -A "$UA" -c /tmp/jar -b /tmp/jar -o /dev/null https://matethelabel.com/collections/activewear || true
+          for pair in "cat:aa-1-1-2" "cat:aa-1-1-1-2" "cat:aa-1-1-1-3" "cat:aa-1-18" "cat:aa-1-1-6" "cat:aa-1-1-1-4" "cat:aa-1-13-9" "cat:aa-1-1-9-2"; do
+            fetch "filter.p.t.category=${pair#cat:}" "${pair#cat:}.html"
+          done
+          for g in Black Blue Brown Green Grey Purple Red White Yellow; do
+            fetch "filter.p.m.custom.parent_color=$g" "color-$g.html"
+          done
+          for s in XS S "S%2FM" M "M%2FL" L XL 1X 2X 3X; do
+            fetch "filter.v.option.size=$s" "size-$(echo $s | tr '/|%2F' '_').html"
+          done
+          sort relay/facets2/report.txt | awk '{print $2, $3, $4}' | sort | uniq -c | sort -rn | head -20
+
+      - name: Summarise membership
+        run: |
+          python3 - <<'PY'
+          import re, pathlib, json, html
+          out={}
+          for p in sorted(pathlib.Path("relay/facets2").glob("*.html")):
+              b=p.read_text(errors="replace")
+              handles=re.findall(r'data-product-handle="([^"]+)"', b)
+              # product cards are the anchor for real membership; keep unique, in order
+              seen=[]
+              for h in handles:
+                  if h not in seen: seen.append(h)
+              status=re.search(r'mate-collection__status[^>]*>\s*([\d,]+)\s+products', b)
+              out[p.name]={"status": status.group(1) if status else None, "handles": seen}
+          pathlib.Path("relay/facets2/membership.json").write_text(json.dumps(out, indent=1))
+          for k,v in out.items(): print(f"{k:28s} status={v['status']} handles={len(v['handles'])}")
+          PY
+
+      - name: Missing photography
+        run: |
+          mkdir -p relay/aw2
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          : > relay/aw2/report.txt
+          python3 - <<'PY' > relay/aw2/urls.txt
+          import json, pathlib, re
+          have=set()
+          m=pathlib.Path("relay/aw/manifest.json")
+          if m.exists():
+              for i in json.loads(m.read_text())["images"]:
+                  have.add(i["src"].split("?")[0])
+          wanted=[]
+          for p in sorted(pathlib.Path("relay/data").glob("products-*.json")):
+              try: d=json.loads(p.read_text())
+              except Exception: continue
+              for prod in (d.get("products") or []):
+                  for img in prod["images"][:3]:
+                      src=img["src"].split("?")[0]
+                      if src not in have:
+                          wanted.append((src, prod["handle"]))
+          for src, handle in wanted:
+              print(src + "\t" + handle)
+          PY
+          echo "urls: $(wc -l < relay/aw2/urls.txt)"
+          while IFS=$'\t' read -r url handle; do
+            [ -z "$url" ] && continue
+            name=$(printf '%s' "$url" | sed 's|.*/||' | sed 's/[^A-Za-z0-9._-]/_/g' | cut -c1-100)
+            code=$(curl -sSL --compressed -m 45 -A "$UA" -o "relay/aw2/$name" -w "%{http_code}" "$url" || echo ERR)
+            echo "$code $(stat -c%s "relay/aw2/$name" 2>/dev/null || echo 0) $handle $url" >> relay/aw2/report.txt
+          done < relay/aw2/urls.txt
+          find relay/aw2 -name '*.jpg' -size -6k -print -delete || true
+          echo "downloaded: $(ls relay/aw2 | wc -l)"
+          du -sh relay/aw2 relay/facets2
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "aw-facets2"
+          git config user.email "aw-facets2@users.noreply.github.com"
+          git add -f relay/facets2 relay/aw2
+          git commit -m "chore(relay): facet membership matrix + missing photography" || true
+          git push || true
