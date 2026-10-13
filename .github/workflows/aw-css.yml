@@ -1,0 +1,49 @@
+name: aw-css
+
+# Temporary helper: the reference theme stylesheet, to measure the page's geometry.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/aw-css.yml"
+  workflow_dispatch:
+
+jobs:
+  css:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Download the theme stylesheets
+        run: |
+          mkdir -p relay/css
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          for f in critical.css sdg-plp-styles.Chz2lnLV.css sdg-styles.FV24l4-5.css; do
+            curl -sSL --compressed -m 60 -A "$UA" -o "relay/css/$f" "https://matethelabel.com/cdn/shop/t/456/assets/$f" || true
+            echo "$f $(stat -c%s relay/css/$f 2>/dev/null || echo 0)"
+          done
+          curl -sSL --compressed -m 90 -A "$UA" -o relay/css/styles.css "https://matethelabel.com/cdn/shop/t/456/compiled_assets/styles.css?v=133380038674197083151791328704" || true
+          echo "styles.css $(stat -c%s relay/css/styles.css 2>/dev/null || echo 0)"
+          python3 - <<'PY'
+          import re, pathlib
+          for p in pathlib.Path('relay/css').glob('*.css'):
+              text = p.read_text(errors='replace')
+              found = {}
+              for sel in ('mate-collection-editorial', 'mate-collection__grid', 'mate-collection-header',
+                          'mate-collection-facets', 'mate-faq', 'mate-storefront-breadcrumbs',
+                          'mate-collection-nav', 'mate-shop-card__swatch', 'mate-collection__toolbar'):
+                  hits = [m.group(0) for m in re.finditer(r'[^{}]*' + re.escape(sel) + r'[^{}]*\{[^}]*\}', text)]
+                  found[sel] = len(hits)
+              print(p.name, len(text), found)
+          PY
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "aw-css"
+          git config user.email "aw-css@users.noreply.github.com"
+          git add -f relay/css
+          git commit -m "chore(relay): reference theme stylesheets" || true
+          git push || true
