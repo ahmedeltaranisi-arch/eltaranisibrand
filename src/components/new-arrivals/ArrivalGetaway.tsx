@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-const GETAWAY_URL = "https://matethelabel.com/collections/the-getaway-edit";
+const GETAWAY_URL = "/collections/new-arrivals";
 export default function ArrivalGetaway() {
   const t = useTranslations("newArrivals");
   return (

@@ -154,14 +154,14 @@ test("Getaway photography/Shop Now, all FAQs and footer links are present and fu
   const getaway = page.locator(".na-getaway");
   await expect(getaway.getByRole("heading", { name: "The Getaway Edit", exact: true })).toBeVisible();
   await expect(getaway.locator("img")).toHaveCount(2);
-  await expect(getaway.getByRole("link", { name: "Shop Now", exact: true })).toHaveAttribute("href", "https://matethelabel.com/collections/the-getaway-edit");
+  await expect(getaway.getByRole("link", { name: "Shop Now", exact: true })).toHaveAttribute("href", "/collections/new-arrivals");
   const faq = page.locator(".na-faq");
   for (const question of ["How do I find my size?", "What is Eltaranisi Brand’s return and exchange policy?", "Do you ship internationally?", "What makes Eltaranisi Brand’s fabrics different?"]) {
     await faq.locator("summary").filter({ hasText: question }).click();
     await expect(faq.locator("details").filter({ hasText: question })).toHaveAttribute("open", "");
   }
-  await expect(faq.getByRole("link", { name: "care@matethelabel.com", exact: true })).toHaveAttribute("href", "mailto:care@matethelabel.com");
-  await expect(faq.getByRole("link", { name: "Returns", exact: true })).toHaveAttribute("href", /returns-portal/);
+  await expect(faq.getByRole("link", { name: "care@eltaranisibrand.com", exact: true })).toHaveAttribute("href", "mailto:care@eltaranisibrand.com");
+  await expect(faq.getByRole("link", { name: "Returns", exact: true })).toHaveAttribute("href", "/pages/contact");
   await expect(faq).toContainText("$15");
   await expect(faq).toContainText("$200");
   await expect(faq.locator("em")).toBeVisible();
