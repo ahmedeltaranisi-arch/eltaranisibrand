@@ -1,0 +1,19 @@
+01-hero-rails: https://eltaranisibrand.vercel.app/en/collections/activewear
+02-grid-video-editorial: https://eltaranisibrand.vercel.app/en/collections/activewear
+03-split-editorial: https://eltaranisibrand.vercel.app/en/collections/activewear
+04-card-colour-swap: https://eltaranisibrand.vercel.app/en/collections/activewear clip={"x":716,"y":136.125,"width":353,"height":560}
+05-card-hover-pose: https://eltaranisibrand.vercel.app/en/collections/activewear clip={"x":716,"y":136.125,"width":353,"height":560}
+06-quick-add: https://eltaranisibrand.vercel.app/en/collections/activewear
+07-filters-open: https://eltaranisibrand.vercel.app/en/collections/activewear
+08-filters-selected: https://eltaranisibrand.vercel.app/en/collections/activewear?filter.p.m.custom.parent_color=Black
+09-filtered-grid: https://eltaranisibrand.vercel.app/en/collections/activewear?filter.p.m.custom.parent_color=Black
+10-sort-popup: https://eltaranisibrand.vercel.app/en/collections/activewear?filter.p.m.custom.parent_color=Black
+11-sorted-grid: https://eltaranisibrand.vercel.app/en/collections/activewear?sort_by=price-descending&filter.p.m.custom.parent_color=Black
+12-mega-menu: https://eltaranisibrand.vercel.app/en/collections/activewear
+13-page-two: https://eltaranisibrand.vercel.app/en/collections/activewear?page=2
+14-fig-dye-page: https://eltaranisibrand.vercel.app/en/collections/fig
+15-arabic: https://eltaranisibrand.vercel.app/ar/collections/activewear
+16-mobile-hero: https://eltaranisibrand.vercel.app/en/collections/activewear
+17-mobile-grid: https://eltaranisibrand.vercel.app/en/collections/activewear
+18-mobile-filters: https://eltaranisibrand.vercel.app/en/collections/activewear
+images checked on the last page: 117, broken: 0
