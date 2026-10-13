@@ -2,7 +2,7 @@
 
 import { createContext, useCallback, useContext, useMemo, useState, useSyncExternalStore } from "react";
 import type { CartLine } from "@/lib/types";
-import { getArrivalProduct } from "@/lib/mateNewArrivals";
+import { getCatalogProduct } from "@/lib/mateCatalog";
 
 type CartState = {
   lines: CartLine[]; isOpen: boolean; count: number; subtotal: number;
@@ -26,7 +26,7 @@ function normalizeLine(value: unknown): CartLine | undefined {
   if (![line.id, line.productSlug, line.productId, line.titleKey, line.colorName, line.colorHex, line.size, line.image].every((s) => typeof s === "string")) return;
   if (typeof line.price !== "number" || !Number.isFinite(line.price) || line.price < 0 || typeof line.qty !== "number" || !Number.isFinite(line.qty) || line.qty < 1) return;
   const qty = Math.min(10, Math.trunc(line.qty));
-  const product = getArrivalProduct(line.productSlug);
+  const product = getCatalogProduct(line.productSlug);
   if (product) {
     if (!product.availableSizes.includes(line.size)) return;
     return { id: `${product.id}-${line.size}`, productSlug: product.slug, productId: product.id,

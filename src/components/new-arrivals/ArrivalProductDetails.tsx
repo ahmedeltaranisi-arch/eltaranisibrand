@@ -4,7 +4,8 @@ import { useId, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/navigation";
 import { useCart } from "@/context/cart";
-import { formatLE, mateNewArrivals, productColorways, type MateProduct } from "@/lib/mateNewArrivals";
+import { formatLE, mateNewArrivals, type MateProduct } from "@/lib/mateNewArrivals";
+import { catalogColorways } from "@/lib/mateCatalog";
 import ArrivalSwatches from "./ArrivalSwatches";
 import ArrivalModal from "./ArrivalModal";
 import ArrivalQuickAdd from "./ArrivalQuickAdd";
@@ -28,7 +29,7 @@ export default function ArrivalProductDetails({ product }: { product: MateProduc
   const heading = useId();
   const sizeGroup = useId();
   const title = t(`products.${product.style}`);
-  const colorways = productColorways(product);
+  const colorways = catalogColorways(product);
   const related = mateNewArrivals.filter((p) => p.style !== product.style).slice(0, 4);
 
   function submit(event: React.FormEvent<HTMLFormElement>) {

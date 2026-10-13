@@ -3,7 +3,7 @@
 
     /tmp/venv/bin/python scripts/build-activewear-images.py
 
-`src/lib/activewearImages.json` (written by `scripts/build-activewear.mjs`) maps every image
+`relay/activewear-assets.json` (written by `scripts/build-activewear.mjs`) maps every image
 key the collection references to the reference's own file URL. The bytes are already in the
 workspace — `relay/aw` (hash-named pulls + `manifest.json`), `relay/aw2` (the same pulls under
 their original file names) and `relay/brand-activewear.zip` (the saved reference page, which
@@ -117,7 +117,7 @@ def save(image: Image.Image, dest: Path, max_width: int, quality: int) -> None:
 
 
 def main() -> int:
-    mapping = json.loads((ROOT / "src" / "lib" / "activewearImages.json").read_text())
+    mapping = json.loads((RELAY / "activewear-assets.json").read_text())
     index = build_index()
     zipped = zip_entries()
     written = skipped = 0
@@ -126,13 +126,22 @@ def main() -> int:
     with zipfile.ZipFile(ZIP) as archive:
         for key, url in sorted(mapping.items()):
             dest = OUT / key
-            if dest.exists():
+            name = basename(url)
+            # `relay/aw3` holds the full-resolution original a relay job pulled for exactly the
+            # thumbnails the saved page kept small, so it always wins — and re-encodes an image
+            # that was written from a thumbnail before the original arrived.
+            redesigned = RELAY / "aw3" / (key.replace("/", "_").rsplit(".", 1)[0] + ".jpg")
+            if not redesigned.exists():
+                redesigned = None
+            if dest.exists() and redesigned is None:
                 skipped += 1
                 total += dest.stat().st_size
                 continue
-            name = basename(url)
-            source = index.get(norm(name))
+            source = redesigned or index.get(norm(name))
             max_width, quality = settings_for(key)
+            if redesigned is not None:
+                # A full-resolution original is not a thumbnail: keep its detail.
+                max_width, quality = max(max_width, WIDE_MAX), WIDE_QUALITY
             if source is not None:
                 with Image.open(source) as image:
                     save(image, dest, max_width, quality)

@@ -1,5 +1,5 @@
 import { getColorway, getProductBySlug } from "./catalog";
-import { getArrivalProduct } from "./mateNewArrivals";
+import { getCatalogProduct } from "./mateCatalog";
 
 export class CatalogLineError extends Error {
   constructor(public code: string, public status: number = 400) { super(code); }
@@ -24,7 +24,7 @@ export function resolveCheckoutLine(input: unknown): ResolvedCheckoutLine {
   if (typeof raw.slug !== "string" || typeof raw.size !== "string") throw new CatalogLineError("invalid_variant");
   if (typeof raw.qty !== "number" || !Number.isSafeInteger(raw.qty) || raw.qty < 1 || raw.qty > 10) throw new CatalogLineError("invalid_quantity");
   const { slug, size, qty } = raw as { slug: string; size: string; qty: number };
-  const arrival = getArrivalProduct(slug);
+  const arrival = getCatalogProduct(slug);
   if (arrival) {
     if (!arrival.sizes.includes(size)) throw new CatalogLineError("invalid_size");
     if (!arrival.availableSizes.includes(size)) throw new CatalogLineError("out_of_stock", 409);

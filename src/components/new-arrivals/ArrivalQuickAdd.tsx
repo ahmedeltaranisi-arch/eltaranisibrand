@@ -4,7 +4,8 @@ import { useId, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { useCart } from "@/context/cart";
-import { formatLE, productColorways, type MateProduct } from "@/lib/mateNewArrivals";
+import { formatLE, type MateProduct } from "@/lib/mateNewArrivals";
+import { catalogColorways } from "@/lib/mateCatalog";
 import { CloseIcon } from "../icons";
 import ArrivalModal from "./ArrivalModal";
 import ArrivalSwatches from "./ArrivalSwatches";
@@ -19,7 +20,7 @@ export default function ArrivalQuickAdd({ product, onClose }: { product: MatePro
   const [error, setError] = useState(false);
   const active = selected ?? product;
   if (!product || !active) return null;
-  const colorways = productColorways(product);
+  const colorways = catalogColorways(product);
   const title = t(`products.${active.style}`);
 
   function selectColor(colorway: MateProduct) {

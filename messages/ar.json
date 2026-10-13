@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "ميت ذا ليبل — أساسيات يومية من القطن العضوي",
+    "title": "Eltaranisi Brand — أساسيات يومية من القطن العضوي",
     "description": "أساسيات يومية من ألياف عضوية وطبيعية معتمدة. قابلة للتنفّس، مريحة على البشرة، ومصمَّمة لتلبسها كل يوم.",
-    "ogTitle": "ميت ذا ليبل",
+    "ogTitle": "Eltaranisi Brand",
     "currency": "USD"
   },
   "common": {
@@ -1043,7 +1043,10 @@
       "sweatpants": "بناطيل رياضية",
       "sweatshirts": "سويت شيرت",
       "t-shirts": "تيشيرتات",
-      "tank-tops": "توبات بدون أكمام"
+      "tank-tops": "توبات بدون أكمام",
+      "shorts": "شورتات",
+      "socks": "جوارب",
+      "unitards": "يونيتارد"
     },
     "colorGroup": {
       "Beige": "بيج",
@@ -1056,7 +1059,8 @@
       "Pink": "وردي",
       "Purple": "بنفسجي",
       "Red": "أحمر",
-      "White": "أبيض"
+      "White": "أبيض",
+      "Yellow": "الأصفر"
     },
     "badges": {
       "best-seller": "الأكثر مبيعًا",
@@ -1129,7 +1133,14 @@
       "sienna": "سيينا",
       "sprig": "أخضر غصني",
       "wisteria": "ويستيريا",
-      "zest": "أصفر حمضي"
+      "zest": "أصفر حمضي",
+      "bone-balsam": "عاجي / بلسم",
+      "bone-forest-maple-jet-black-birch": "عاجي / فورست / ميبل / أسود فاحم / بيرش",
+      "chili-oil": "تشيلي أويل",
+      "heather-grey-bone": "رمادي ميلانج / عاجي",
+      "mulberry-tide": "توتي / تايد",
+      "natural": "طبيعي",
+      "natural-sage-sedona": "طبيعي / سيج / سيدونا"
     },
     "products": {
       "merino-boatneck-cardigan": "كارديجان ميرينو بياقة قارب",
@@ -1164,7 +1175,19 @@
       "organic-waffle-collared-half-zip-sweatshirt": "سويت شيرت وافل عضوي بياقة ونصف سحّاب",
       "organic-waffle-crew-cardigan": "كارديجان وافل عضوي بياقة دائرية",
       "organic-waffle-straight-leg-sweatpant": "بنطال وافل عضوي بقصة مستقيمة",
-      "organic-waffle-sweatpant": "بنطال وافل عضوي"
+      "organic-waffle-sweatpant": "بنطال وافل عضوي",
+      "organic-cotton-sock-3-pack": "طقم جوارب قطنية عضوية ٣ أزواج",
+      "organic-cotton-sock-5-pack": "طقم جوارب قطنية عضوية ٥ أزواج",
+      "organic-heritage-jersey-track-pant": "بنطال تراك من جيرسي التراث العضوي",
+      "organic-stretch-biker-short": "شورت بايكر ستريتش عضوي",
+      "organic-stretch-biker-short-4": "شورت بايكر ستريتش عضوي ٤ بوصة",
+      "organic-stretch-bootcut-pant": "بنطال ستريتش عضوي بقصّة بوت كت",
+      "organic-stretch-cami-unitard": "يونيتارد ستريتش عضوي بأشرطة",
+      "organic-stretch-full-length-unitard": "يونيتارد ستريتش عضوي طويل",
+      "organic-stretch-midi-legging-with-pockets": "ليجنز ستريتش عضوي ميدي بجيوب",
+      "organic-stretch-pocket-short": "شورت ستريتش عضوي بجيوب",
+      "organic-stretch-unitard": "يونيتارد ستريتش عضوي",
+      "organic-stretch-v-neck-bra": "حمالة ستريتش عضوية برقبة V"
     },
     "essential": "أساسي",
     "discoverBestSellers": "اكتشف الأكثر مبيعًا"
@@ -1190,5 +1213,66 @@
     "editorialHeading": "كبسولة أكتوبر",
     "editorialText": "قطع أساسية ناعمة من ألياف فاخرة بطبيعتها، مصمّمة للصباح البارد والأمسيات الهادئة.",
     "editorialCta": "تسوّقي الآن"
+  },
+  "activewear": {
+    "title": "الملابس الرياضية",
+    "description": "ملابس رياضية من القطن العضوي مصنوعة من أجل صحتك.",
+    "railsLabel": "تشكيلات الملابس الرياضية",
+    "rails": {
+      "all": "كل الملابس الرياضية",
+      "leggings": "ليجنز",
+      "sports-bras": "حمالات صدر رياضية",
+      "activewear-tops": "توبات رياضية",
+      "biker-shorts": "شورتات بايكر",
+      "unitards": "يونيتارد"
+    },
+    "editorialVideoHeading": "ستريتش عضوي للملابس الرياضية",
+    "editorialVideoText": "أساسيات حاصلة على شهادة GOTS من الأكثر مبيعًا، لروتين عافية يبدأ من البشرة.",
+    "editorialVideoAlt": "عارضة ترتدي ملابس رياضية من الستريتش العضوي وتتحرك في استوديو",
+    "playVideo": "تشغيل الفيديو",
+    "pauseVideo": "إيقاف الفيديو",
+    "editorialHeading": "لماذا الملابس الرياضية من Eltaranisi Brand؟",
+    "editorialText": "أساسيات ناعمة من القطن العضوي الحاصل على شهادة GOTS، مصنوعة بأصباغ آمنة على البشرة. راحة نقية لحياة مفعمة بالحركة.",
+    "mega": {
+      "categoriesTitle": "الأقسام",
+      "colorsTitle": "ألوان مختارة",
+      "collectionsTitle": "تشكيلات مختارة",
+      "shopAll": "تسوّقي كل الملابس الرياضية",
+      "leggings": "ليجنز",
+      "sportsBras": "حمالات صدر رياضية",
+      "activewearTops": "توبات رياضية",
+      "bikerShorts": "شورتات بايكر",
+      "unitards": "يونيتارد",
+      "fig": "تين",
+      "nori": "نوري",
+      "mulberry": "توتي",
+      "mocha": "موكا",
+      "pebble": "حصوي",
+      "organicStudioUniform": "الزي الاستوديو العضوي",
+      "limitedEditionFig": "إصدار محدود: تين",
+      "shopAllActivewear": "تسوّقي كل الملابس الرياضية"
+    },
+    "subCollections": {
+      "leggings-and-shorts": {
+        "title": "ليجنز",
+        "description": "ليجنز من القطن العضوي بنسبة 92٪، عضوي من الألياف حتى اللمسة الأخيرة."
+      },
+      "sports-bras": {
+        "title": "حمالات صدر رياضية",
+        "description": "تصاميم ناعمة تلامس البشرة أولًا مصنوعة من القطن العضوي بنسبة 92٪."
+      },
+      "activewear-tops": {
+        "title": "توبات رياضية",
+        "description": "توبات وأكمام طويلة من القطن العضوي القابل للتهوية لتمرينك وكل ما بعده."
+      },
+      "biker-shorts": {
+        "title": "شورتات بايكر",
+        "description": "شورتات بايكر قطنية ناعمة على البشرة ومصممة للحركة."
+      },
+      "dresses-unitards": {
+        "title": "يونيتارد",
+        "description": "قطعة واحدة تلامس الجسم لتتحرك معك طوال يومك، من القطن العضوي الناعم."
+      }
+    }
   }
 }

@@ -20,7 +20,7 @@ import { join } from "node:path";
 
 const RELAY = "relay";
 const OUT_CATALOG = "src/lib/activewearCatalog.json";
-const OUT_IMAGES = "src/lib/activewearImages.json";
+const OUT_IMAGES = "relay/activewear-assets.json";
 
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 const page = (p) => readFileSync(join(RELAY, "data", p), "utf8");
@@ -31,6 +31,13 @@ const fileBase = (url) => url.split("?")[0].split("/").pop();
 const sha = (value) => createHash("sha1").update(value).digest("hex").slice(0, 12);
 /** One photo key per real Shopify file: `aw/<12 hex>.webp`. */
 const photoKey = (url) => `aw/${sha(fileBase(url))}.webp`;
+
+/** The reference's own brand name must never reach a customer; our label replaces it. */
+const brandCopy = (value) =>
+  value
+    .replace(/The MATE Dress Code/g, "The Eltaranisi Brand Dress Code")
+    .replace(/\bMATE the Label\b/g, "Eltaranisi Brand")
+    .replace(/\bMATE\b/g, "Eltaranisi Brand");
 
 const images = {};
 const products = read(join(RELAY, "data/products-activewear.json")).products;
@@ -162,12 +169,13 @@ const allProducts = products.map((product, index) => {
   const swatchUrl = swatchByHandle.get(slug);
   const known = catalogueColor.get(name);
   return {
+    id: String(product.id ?? slug),
     slug,
     style: slugify(product.title),
     title: product.title,
     category: Object.entries(categoryMembership).find(([, facet]) => facet.handles.includes(slug))?.[0] ?? "",
-    group: groupOf.get(slug) ?? known?.group ?? "",
-    images: (product.images ?? []).slice(0, 3).map((image) => photoKey(image.src)),
+    group: groupOf.get(slug) ?? "",
+    images: (product.images ?? []).slice(0, 3).map((image) => `/img/${photoKey(image.src)}`),
     sizes,
     availableSizes,
     priceUSD,
@@ -177,10 +185,11 @@ const allProducts = products.map((product, index) => {
       label: label(name),
       hex: known?.hex ?? measuredHex[name] ?? "#d9d9d9",
       swatch: swatchUrl ? `/img/aw/color/${name}.webp` : known?.swatch ?? "",
+      group: groupOf.get(slug) ?? "",
       swatchUrl,
     },
     badges: (product.tags ?? []).includes("Best Sellers Collection") ? ["Best Seller"] : [],
-    description: (product.body_html ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(),
+    description: brandCopy((product.body_html ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()),
     colorways: [],
     colorEdition: (product.tags ?? []).includes("limited-color") ? "limited" : "essential",
     featuredRank: index,
@@ -293,9 +302,20 @@ const MEGA = {
   "aw/mega/shop-all-activewear.webp": "//matethelabel.com/cdn/shop/files/image_344_d9a26137-926a-43d2-a302-b84056498d49.jpg?v=1791231308&width=500",
 };
 for (const [key, url] of Object.entries({ ...EDITORIAL, ...MEGA })) {
-  catalog.nav[key] = `/${key}`;
   images[key] = url.startsWith("//") ? `https:${url}` : url;
 }
+
+catalog.nav = {
+  editorial: {
+    videoStill: "/img/aw/editorial/video-still.webp",
+    primary: "/img/aw/editorial/why-activewear-1.webp",
+    secondary: "/img/aw/editorial/why-activewear-2.webp",
+  },
+  mega: {
+    limitedEditionFig: "/img/aw/mega/limited-edition-fig.webp",
+    shopAllActivewear: "/img/aw/mega/shop-all-activewear.webp",
+  },
+};
 
 for (const product of allProducts) {
   const captured = products.find((p) => p.handle === product.slug);
