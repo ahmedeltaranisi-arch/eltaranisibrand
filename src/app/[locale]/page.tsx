@@ -271,9 +271,10 @@ export default async function HomePage({
             className="group relative overflow-hidden bg-bone"
           >
             {/* object-top: a centred crop of these portraits cuts the model's head off. */}
+            {/* Full-length, brightly lit frames: the copy sits over them and has to stay legible. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={k === "one" ? "/img/shots/hoodie-nori-1.jpg" : "/img/shots/tank-mocha-1.jpg"}
+              src={k === "one" ? "/img/shots/pant-nori-1.jpg" : "/img/shots/tank-midnight-1.jpg"}
               alt=""
               loading="lazy"
               className="aspect-4/3 w-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"

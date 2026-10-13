@@ -15,14 +15,16 @@ export default async function Footer() {
         <div className="grid gap-12 pt-14 pb-10 lg:grid-cols-[1fr_2fr] lg:gap-8">
           <div>
             <Link href="/" aria-label="ELTARANISI BRAND — Home" className="inline-block">
+              {/* The brand's own logo: the EB mark with the Eltaranisi Brand wordmark under it. */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/eltaranisi-logo.png"
                 alt="ELTARANISI BRAND"
-                width={96}
-                height={96}
+                width={627}
+                height={627}
                 loading="lazy"
-                className="h-20 w-auto object-contain"
+                decoding="async"
+                className="h-24 w-auto object-contain"
               />
             </Link>
           </div>
