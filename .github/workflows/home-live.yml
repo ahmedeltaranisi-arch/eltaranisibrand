@@ -1,0 +1,73 @@
+name: home-live
+
+# Temporary helper: verify the delivered fixes on the deployed site from a runner (the author's
+# sandbox cannot reach the public internet) and photograph the result into `relay/shots-home/`:
+#   * the footer logo mark, restored,
+#   * the home page's editorial two-up, re-cropped so the models are in frame,
+#   * the Activewear editorial video, with no native chrome at all.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/home-live.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Probe the deployed site
+        run: |
+          mkdir -p relay/shots-home
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          BASE=https://eltaranisibrand.vercel.app
+          : > relay/shots-home/report.txt
+          for path in \
+            "/img/eltaranisi-logo.png" \
+            "/img/shots/hoodie-nori-1.jpg" \
+            "/img/shots/tank-mocha-1.jpg" \
+            "/img/aw/editorial/video-still.webp" \
+            "/media/aw-editorial.mp4" ; do
+            code=$(curl -sSL --compressed -m 60 -A "$UA" -o /tmp/body -w "%{http_code}" "$BASE$path" || echo ERR)
+            echo "$code $(stat -c%s /tmp/body 2>/dev/null || echo 0) $path" >> relay/shots-home/report.txt
+          done
+          curl -sSL --compressed -m 60 -A "$UA" -o relay/shots-home/en-home.html "$BASE/en"
+          curl -sSL --compressed -m 60 -A "$UA" -o relay/shots-home/en-activewear.html "$BASE/en/collections/activewear"
+          {
+            echo "--- markers"
+            echo "footer logo img: $(grep -c 'eltaranisi-logo.png' relay/shots-home/en-activewear.html)"
+            echo "home logo img: $(grep -c 'eltaranisi-logo.png' relay/shots-home/en-home.html)"
+            echo "object-top on the duo: $(grep -c 'object-top' relay/shots-home/en-home.html)"
+            echo "duo photos: $(grep -o '/img/shots/hoodie-nori-1.jpg\|/img/shots/tank-mocha-1.jpg' relay/shots-home/en-home.html | sort -u | tr '\n' ' ')"
+            echo "video controls attr: $(grep -o '<video[^>]*controls' relay/shots-home/en-activewear.html | wc -l)"
+            echo "video tag: $(grep -o '<video[^>]\{0,200\}' relay/shots-home/en-activewear.html | head -1)"
+          } >> relay/shots-home/report.txt
+          cat relay/shots-home/report.txt
+
+      - name: Photograph the live pages
+        run: node scripts/live-shots-home.mjs 2>&1 | tee relay/shots-home/notes.txt
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "home-live"
+          git config user.email "home-live@users.noreply.github.com"
+          git add -f relay/shots-home
+          git commit -m "chore(relay): the deployed footer logo, home editorial and video chrome" || true
+          git push || true

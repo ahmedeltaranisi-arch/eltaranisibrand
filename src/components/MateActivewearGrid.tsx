@@ -189,17 +189,19 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
                 {editorials && page === 1 && index === 0 && (
                   <article className="na-aw-editorial-video">
                     <div className="na-aw-editorial-video-media">
+                      {/* No native chrome: the reference shows only its own play/pause disc, so the
+                          browser's control bar, its seek bar and its time readout stay off. */}
                       <video
                         ref={video}
                         className="na-aw-editorial-video-el"
                         poster={ACTIVEWEAR_NAV.editorial.videoStill}
                         src={VIDEO_SRC}
-                        controls
                         muted
                         loop
                         playsInline
                         preload="none"
                         aria-label={t("editorialVideoAlt")}
+                        onClick={toggleVideo}
                         onPlay={() => setVideoPlaying(true)}
                         onPause={() => setVideoPlaying(false)}
                       />
@@ -209,10 +211,17 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
                         aria-label={videoPlaying ? t("pauseVideo") : t("playVideo")}
                         onClick={toggleVideo}
                       >
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                          <path d="M4 2.5 13 8l-9 5.5Z" stroke="currentColor" strokeWidth="1.5" />
-                          {videoPlaying && <path d="M5 2v12M11 2v12" stroke="currentColor" strokeWidth="1.5" />}
-                        </svg>
+                        {/* One control only: the disc carries the play mark while the clip is
+                            paused and the pause mark while it runs, exactly like the reference. */}
+                        {videoPlaying ? (
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M5.5 3v10M10.5 3v10" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                          </svg>
+                        ) : (
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M5.5 3 12.5 8l-7 5Z" fill="currentColor" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
+                          </svg>
+                        )}
                       </button>
                     </div>
                     <div className="na-aw-editorial-content">

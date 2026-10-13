@@ -1,0 +1,12 @@
+200 14371 /img/eltaranisi-logo.png
+200 104958 /img/shots/hoodie-nori-1.jpg
+200 85403 /img/shots/tank-mocha-1.jpg
+200 26180 /img/aw/editorial/video-still.webp
+200 4565360 /media/aw-editorial.mp4
+--- markers
+footer logo img: 0
+home logo img: 0
+object-top on the duo: 1
+duo photos: /img/shots/hoodie-nori-1.jpg /img/shots/tank-mocha-1.jpg 
+video controls attr: 1
+video tag: <video class="na-aw-editorial-video-el" poster="/img/aw/editorial/video-still.webp" src="/media/aw-editorial.mp4" controls="" muted="" loop="" playsInline="" preload="none" aria-label="A model wearing organ

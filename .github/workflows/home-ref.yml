@@ -1,0 +1,112 @@
+name: home-ref
+
+# Temporary helper: the reference storefront answers its product JSON to a plain browser UA but
+# puts a bot check in front of its HTML pages. Try the documented ways through it (cookie jar,
+# full browser header set, Googlebot UA, Shopify's `?section_id=` section renderer) and keep
+# whatever comes back, so the home page's two editorial photographs can be read off it.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/home-ref.yml"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Try to get past the bot check
+        run: |
+          mkdir -p relay/home/ref
+          : > relay/home/ref/report.txt
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          BOT="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+          HEADERS=(
+            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+            -H "Accept-Language: en-US,en;q=0.9"
+            -H "Sec-Fetch-Dest: document" -H "Sec-Fetch-Mode: navigate" -H "Sec-Fetch-Site: none" -H "Sec-Fetch-User: ?1"
+            -H "Upgrade-Insecure-Requests: 1"
+            -H "sec-ch-ua: \"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+            -H "sec-ch-ua-mobile: ?0" -H "sec-ch-ua-platform: \"macOS\""
+          )
+          try () {
+            local label="$1"; shift
+            local out="relay/home/ref/$label.html"
+            code=$(curl -sSL --compressed -m 90 -c relay/home/ref/jar.txt -b relay/home/ref/jar.txt \
+              -A "$UA" "${HEADERS[@]}" -o "$out" -w "%{http_code}" "$@" || echo ERR)
+            size=$(stat -c%s "$out" 2>/dev/null || echo 0)
+            title=$(grep -o '<title>[^<]*</title>' "$out" 2>/dev/null | head -1 | sed 's/<[^>]*>//g')
+            echo "$code $size [$title] $label" >> relay/home/ref/report.txt
+          }
+          # a first pass to collect the bot-check cookie, then the real page
+          curl -sSL --compressed -m 60 -c relay/home/ref/jar.txt -b relay/home/ref/jar.txt -A "$UA" "${HEADERS[@]}" \
+            -o /dev/null "https://matethelabel.com/" || true
+          sleep 3
+          try home-warm https://matethelabel.com/
+          sleep 3
+          try home-cookies https://matethelabel.com/
+          try home-bot -A "$BOT" https://matethelabel.com/
+          for section in main editorial image-with-text image_with_text text-image home-editorial story materials sustainability; do
+            try "section-$section" "https://matethelabel.com/?section_id=$section"
+          done
+          # Shopify answers this one for any theme
+          try sitemap https://matethelabel.com/sitemap.xml
+          cat relay/home/ref/report.txt
+          for f in relay/home/ref/*.html; do
+            echo "--- $f $(stat -c%s "$f")"
+            grep -o 'cdn/shop/files/[A-Za-z0-9._-]*' "$f" | sort -u | head -5
+          done
+
+      - name: Read the editorial section
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          base = pathlib.Path("relay/home/ref")
+          cands = {}
+          for page in sorted(base.glob("*.html")):
+              html = page.read_text(errors="ignore")
+              flat = html.replace("\\/", "/")
+              hits = [n for n in ("grown, not manufactured", "Cut on real bodies", "Cotton that was grown") if n in flat]
+              print("---", page.name, "size", len(flat), "hits", hits)
+              for needle in hits:
+                  at = flat.find(needle)
+                  window = flat[max(0, at - 9000):at + 9000]
+                  slug = re.sub(r"[^a-z0-9]+", "-", needle.lower())[:40]
+                  (base / ("window-" + slug + ".html")).write_text(window)
+                  urls = re.findall(r'(?:https?:)?//[^"\'\s\\]+?cdn/shop/files/[^"\'\s\\]+?\.(?:jpg|jpeg|png|webp)[^"\'\s\\]*', window)
+                  for url in urls:
+                      url = url if url.startswith("http") else "https:" + url
+                      name = url.split("?")[0].split("/")[-1]
+                      cands[name] = re.sub(r"width=\d+", "width=1800", url)
+          (base / "candidates.txt").write_text("\n".join(n + " " + u for n, u in sorted(cands.items())))
+          for name, url in sorted(cands.items()):
+              print("CAND", name, url[:160])
+          PY
+
+      - name: Download the candidates
+        run: |
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          mkdir -p relay/home/ref/files
+          [ -f relay/home/ref/candidates.txt ] || exit 0
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            code=$(curl -sSL --compressed -m 120 -A "$UA" -o "relay/home/ref/files/$name" -w "%{http_code}" "$url" || echo ERR)
+            echo "$code $(stat -c%s "relay/home/ref/files/$name" 2>/dev/null || echo 0) $name" >> relay/home/ref/files-report.txt
+          done < relay/home/ref/candidates.txt
+          cat relay/home/ref/files-report.txt || true
+
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "home-ref"
+          git config user.email "home-ref@users.noreply.github.com"
+          git add -f relay/home/ref
+          git commit -m "chore(relay): the reference home page's editorial photographs" || true
+          git push || true

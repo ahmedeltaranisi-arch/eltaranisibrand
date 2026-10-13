@@ -1,0 +1,16 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.evaluate: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[data-site-footer="eltaranisi"]').locator('img[alt="ELTARANISI BRAND"]')
+
+    at /home/runner/work/eltaranisibrand/eltaranisibrand/scripts/live-shots-home.mjs:58:10 {
+  log: [
+    `  - waiting for locator('[data-site-footer="eltaranisi"]').locator('img[alt="ELTARANISI BRAND"]')`
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.3
