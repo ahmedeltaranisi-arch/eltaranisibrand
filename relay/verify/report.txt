@@ -1,10 +1,10 @@
 === deployment identity
-age: 673
+age: 0
 cache-control: public, max-age=0, must-revalidate
-etag: "4a03a28a265e7e272e10e8e7919c5a61"
+etag: "e76dbf978658ffc2bad1c49529e743cd"
 server: Vercel
-x-vercel-cache: HIT
-x-vercel-id: cle1::8w2jj-1791927012789-d305712faf08
+x-vercel-cache: PRERENDER
+x-vercel-id: iad1::2bdk4-1791927788848-03ec952001bf
 === /en markers
 footer logo img   : 1
 footer E monogram : 0
@@ -13,9 +13,12 @@ hoodie-nori img   : 1
 pant-nori img     : 1
 tank-mocha img    : 1
 tank-midnight img : 1
+legging-jet-3 img : 1
+sweatpant-jet-2   : 1
+video pip/remote  : 
 duo img tags      :
-<img src="/img/shots/pant-nori-1.jpg" alt="" loading="lazy" class="aspect-4/3 w-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"/>
-<img src="/img/shots/tank-midnight-1.jpg" alt="" loading="lazy" class="aspect-4/3 w-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"/>
+<img src="/img/shots/legging-jet-3.jpg" alt="" loading="lazy" class="aspect-4/3 w-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"/>
+<img src="/img/shots/sweatpant-jet-2.jpg" alt="" loading="lazy" class="aspect-4/3 w-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.05]"/>
 === /en/collections/activewear video
 video controls attr: 0
 play/pause disc   : 0
