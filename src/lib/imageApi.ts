@@ -74,6 +74,14 @@ export function resolveExternalImageSources(cleanPath: string): Array<{
 }> {
   const sources: Array<{ url: string; headers?: Record<string, string>; provider: string }> = [];
 
+  const r2Base = process.env.CLOUDFLARE_R2_PUBLIC_URL?.replace(/\/+$/, "");
+  if (r2Base) {
+    sources.push({
+      url: `${r2Base}/${cleanPath}`,
+      provider: "cloudflare-r2",
+    });
+  }
+
   const cfDelivery = process.env.CLOUDFLARE_IMAGES_DELIVERY_URL?.replace(/\/+$/, "");
   if (cfDelivery) {
     sources.push({
