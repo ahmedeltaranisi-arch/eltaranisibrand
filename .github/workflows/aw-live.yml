@@ -70,3 +70,5 @@ jobs:
           git add -f relay/live
           git commit -m "chore(relay): live check of the deployed Activewear page" || true
           git push || true
+
+# run 2: the production deploy of the merge is live
