@@ -1,4 +1,6 @@
 200 254127 text/html; /en/collections/activewear
+200 229536 text/html; /en/collections/activewear?page=2
+200 149189 text/html; /en/collections/activewear?filter.p.m.custom.parent_color=Black
 200 286332 text/html; /ar/collections/activewear
 200 209069 text/html; /en/collections/leggings-and-shorts
 200 114907 text/html; /en/collections/fig
@@ -21,3 +23,10 @@ img/aw refs: 116
 --- /ar markers
 ar heading: الملابس الرياضية
 MATE leaks (ar): 0
+--- page two (server render)
+cards: 47
+video: 0
+split: 0
+--- black filter (server render)
+cards: 20
+result count: data-result-count="20"
