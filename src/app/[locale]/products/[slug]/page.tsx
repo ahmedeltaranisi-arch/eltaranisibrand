@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { arrivalCatalog, getArrivalProduct } from "@/lib/mateNewArrivals";
 import ArrivalProductDetails from "@/components/new-arrivals/ArrivalProductDetails";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -48,8 +48,13 @@ export default async function ProductPage({
   if (arrival) return <ArrivalProductDetails key={arrival.slug} product={arrival} />;
 
   const product = getProductBySlug(slug);
+  if (!product) notFound();
   const colorway = getColorway(slug);
-  if (!product || !colorway) notFound();
+  if (!colorway) {
+    // A dye the shoot never captured has no page of its own, so an old or shared
+    // link lands on the style's photographed colour instead of a dead end.
+    redirect(`/${locale}/products/${product.colorways[0].slug}`);
+  }
 
   const t = await getTranslations("product");
   const tp = await getTranslations("p");

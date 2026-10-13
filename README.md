@@ -15,7 +15,7 @@ pages, 404, and full English/Arabic (RTL) localisation.
 | i18n           | next-intl 4.14 — `/en` + `/ar`, `dir="rtl"`         |
 | Fonts          | Inter (Latin) + Cairo (Arabic) via `next/font`      |
 | Cart           | React context + `useSyncExternalStore` over localStorage |
-| Data           | Static TS catalog (`src/lib/catalog.ts`) — 12 styles, 63 colourway routes |
+| Data           | Static TS catalog (`src/lib/catalog.ts`) — 12 styles, 21 photo-verified colourway routes |
 | Imagery        | The brand's own shoot (`brand.zip`, 78 frames) — 2 angles per product |
 
 ## Commands
@@ -104,13 +104,18 @@ colour on screen into the cart and opens the drawer, like the reference.
 ### Photography
 Everything in `public/img/` comes from the brand's own shoot (`brand.zip`). The
 archive held ~194 files — mostly the same frame re-exported at several sizes —
-so the build keeps one copy of each, re-encoded to web weight. Frames live in
-`public/img/shots/<style>-<tone>-<n>.jpg`, and `SET_FRAMES` in
-`src/lib/catalog.ts` records how many each set holds: a tone the shoot captured
-once renders a single image rather than a missing one. Every colourway resolves
-its own frames through `colorwayFrames(product, tone)`, so picking a swatch
-swaps the model photo *and* the product gallery. The tone hexes were measured
-from the archive colour tiles, never by eye.
+so the build keeps one copy of each, re-encoded to web weight. Frames live at
+`/img/shots/<family>-<tone>-<n>.jpg` (served from the pinned asset snapshot through
+`/api/images`), and `VERIFIED_FRAMES` in `src/lib/catalog.ts` lists, per style, exactly the
+frames whose photograph shows *that garment in that dye*. The archive is a lookbook, so one
+shot is filed under several family names — `scoop-bone-1` and `bra-bone-2` are literally the
+same bytes — and a file name proves nothing on its own: a tone the camera never caught is
+dropped from the product instead of borrowing a neighbour's photo, which is why some styles
+ship two colourways and not four. Every colourway resolves its own frames through
+`colorwayFrames(product, tone)`, so picking a swatch swaps the model photo *and* the product
+gallery to the same garment in the same colour, and `tests/card-photography.test.ts` keeps
+that rule (a style may only use its own family's frames, and no two products share one). The
+tone hexes were measured from the archive colour tiles, never by eye.
 
 - **`@keyframes` must be top-level.** Nesting `@keyframes marquee-rtl` inside
   `html[dir="rtl"]` makes the CSS parser bail on the whole block, which
