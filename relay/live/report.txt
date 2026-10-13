@@ -1,0 +1,22 @@
+200 97986 text/html; /en/collections/activewear
+200 112328 text/html; /ar/collections/activewear
+404 62158 text/html; /en/collections/leggings-and-shorts
+404 62126 text/html; /en/collections/fig
+404 63 application/json /img/aw/nav/all-activewear.webp
+404 54 application/json /img/aw/color/fig.webp
+404 66 application/json /img/aw/editorial/video-still.webp
+404 71 application/json /img/aw/editorial/why-activewear-1.webp
+404 7680 text/html; /media/aw-editorial.mp4
+--- markers in /en/collections/activewear
+rail labels: 
+product cards: 0
+editorial video: 0
+split editorial: 0
+mega menu: 0
+MATE leaks: 0
+--- image hosts
+img/aw refs: 0
+/api/images refs: 0
+--- /ar markers
+ar heading: الملابس الرياضية
+MATE leaks (ar): 0
