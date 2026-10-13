@@ -41,14 +41,14 @@ jobs:
             echo "tank-midnight img : $(grep -c 'tank-midnight-1' /tmp/_en.html)"
             echo "legging-jet-3 img : $(grep -c 'legging-jet-3' /tmp/_en.html)"
             echo "sweatpant-jet-2   : $(grep -c 'sweatpant-jet-2' /tmp/_en.html)"
-            echo "video pip/remote  : $(grep -o 'disablePictureInPicture\|disableRemotePlayback\|controlsList="[^"]*"' /tmp/_en__collections_activewear.html | sort -u | tr '\n' ' ')"
+            echo "video pip/remote  : $(grep -o 'disablePictureInPicture\|disableRemotePlayback\|controlsList="[^"]*"' /tmp/_en_collections_activewear.html | sort -u | tr '\n' ' ')"
             echo "duo img tags      :"
             grep -o '<img[^>]*aspect-4/3[^>]*>' /tmp/_en.html | head -4
             echo "=== /en/collections/activewear video"
-            grep -o '<video[^>]\{0,240\}' /tmp/_en__collections_activewear.html | head -2
-            echo "video controls attr: $(grep -o '<video[^>]*controls' /tmp/_en__collections_activewear.html | wc -l)"
-            echo "play/pause disc   : $(grep -o 'na-aw-editorial-toggle' /tmp/_en__collections_activewear.html | wc -l)"
-            echo "poster            : $(grep -o 'poster=\"[^\"]*\"' /tmp/_en__collections_activewear.html | head -1)"
+            grep -o '<video[^>]\{0,240\}' /tmp/_en_collections_activewear.html | head -2
+            echo "video controls attr: $(grep -o '<video[^>]*controls' /tmp/_en_collections_activewear.html | wc -l)"
+            echo "play/pause disc   : $(grep -o 'na-aw-editorial-toggle' /tmp/_en_collections_activewear.html | wc -l)"
+            echo "poster            : $(grep -o 'poster=\"[^\"]*\"' /tmp/_en_collections_activewear.html | head -1)"
           } >> relay/verify/report.txt
           cat relay/verify/report.txt
 
@@ -62,3 +62,4 @@ jobs:
           git push || true
 
 # run 5: after the home-photo + video-chrome fix (#9)
+
