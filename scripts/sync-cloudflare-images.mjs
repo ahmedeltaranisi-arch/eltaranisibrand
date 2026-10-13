@@ -3,32 +3,55 @@
  * Publishes the storefront images to Cloudflare, so the app can serve them from a Cloudflare
  * origin instead of shipping them inside the deploy bundle.
  *
- *   # Cloudflare Images (needs an active Images subscription on the account)
+ *   # Workers Static Assets — free plan, no subscription and no payment card
+ *   CLOUDFLARE_ASSETS_FULL=1 CLOUDFLARE_WORKERS_PROJECT=eltaranisi-images \
+ *   CLOUDFLARE_WORKERS_SUBDOMAIN=ahmedeltaranisi \
+ *   CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... node scripts/sync-cloudflare-images.mjs
+ *
+ * The command actually used for this storefront: the whole `public/img` tree (1,322 files) is
+ * published to the `eltaranisi-images` worker and served from
+ * `https://eltaranisi-images.ahmedeltaranisi.workers.dev/img/...`, which `src/lib/imageApi.ts`
+ * keeps as its default origin (`CLOUDFLARE_ASSETS_PUBLIC_URL` overrides it,
+ * `CLOUDFLARE_ASSETS_DISABLED=1` falls back to the mirrors).
+ *
+ *   # Cloudflare R2 (free tier, but Cloudflare asks for a card to enable the product)
+ *   CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... CLOUDFLARE_R2_BUCKET=my-bucket \
+ *   CLOUDFLARE_R2_PUBLIC_URL=https://pub-xxxx.r2.dev node scripts/sync-cloudflare-images.mjs
+ *
+ *   # Cloudflare Images (needs a paid Images subscription on the account)
  *   CLOUDFLARE_API_TOKEN=... [CLOUDFLARE_ACCOUNT_ID=...] node scripts/sync-cloudflare-images.mjs
  *
- *   # Cloudflare R2 (no subscription needed; the bucket's public URL is what the app reads)
- *   CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... CLOUDFLARE_R2_BUCKET=my-bucket \
- *   CLOUDFLARE_R2_PUBLIC_URL=https://<account>.r2.cloudflarestorage.com/public/my-bucket \
- *     node scripts/sync-cloudflare-images.mjs
+ * Add `CLOUDFLARE_ASSETS_FULL=1` to publish every file of `public/img` (rails, editorial block,
+ * all 107 colourways) instead of only the core set, and `--dry-run` to download and stage the
+ * bytes without touching Cloudflare — that is the mode to check the path mapping in.
  *
- * Assets are read from this checkout when the real bytes exist here, and from the pinned CDN
+ * Assets are read from this checkout when the real bytes exist here and from the pinned CDN
  * snapshot otherwise; every upload is reported with the provider's own error, never swallowed.
  */
 
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { spawnSync } from "node:child_process";
 
 const COMMIT = "a3f459561f4ebe6ffc5047a3e434a002b2d717aa";
 const REPO = "ahmedeltaranisi-arch/eltaranisibrand";
 const CDN_BASE = `https://cdn.jsdelivr.net/gh/${REPO}@${COMMIT}/public/img`;
 const CF_API = "https://api.cloudflare.com/client/v4";
+const STAGE = ".cloudflare-assets";
+const DRY_RUN = process.argv.includes("--dry-run");
 
 const token = process.env.CLOUDFLARE_API_TOKEN?.trim();
-if (!token) {
+if (!token && !DRY_RUN) {
   console.error("Missing CLOUDFLARE_API_TOKEN environment variable.");
   process.exit(1);
 }
+const accountId = process.env.CLOUDFLARE_ACCOUNT_ID?.trim();
 const bucket = process.env.CLOUDFLARE_R2_BUCKET?.trim();
-const r2PublicUrl = process.env.CLOUDFLARE_R2_PUBLIC_URL?.trim().replace(/\/+$/, "");
+const workerProject = process.env.CLOUDFLARE_WORKERS_PROJECT?.trim();
+const workerSubdomain = process.env.CLOUDFLARE_WORKERS_SUBDOMAIN?.trim();
+const publicUrl = (process.env.CLOUDFLARE_ASSETS_PUBLIC_URL ?? process.env.CLOUDFLARE_R2_PUBLIC_URL ?? "")
+  .trim()
+  .replace(/\/+$/, "");
 
 const CORE_IMAGES = [
   "eltaranisi-logo.png",
@@ -64,9 +87,7 @@ const TYPES = {
   ".gif": "image/gif",
 };
 
-function typeOf(relPath) {
-  return TYPES[relPath.slice(relPath.lastIndexOf(".")).toLowerCase()] ?? "application/octet-stream";
-}
+const typeOf = (relPath) => TYPES[relPath.slice(relPath.lastIndexOf(".")).toLowerCase()] ?? "application/octet-stream";
 
 /** The real bytes when the checkout has them, otherwise the pinned CDN snapshot. */
 async function assetBytes(relPath) {
@@ -79,117 +100,174 @@ async function assetBytes(relPath) {
   return { body: new Uint8Array(await response.arrayBuffer()), type: typeOf(relPath), source: "pinned CDN" };
 }
 
+/** Every image the storefront references, read off the pinned commit's tree. */
+async function allSiteImages() {
+  const url = `https://api.github.com/repos/${REPO}/git/trees/${COMMIT}:public/img?recursive=1`;
+  const response = await fetch(url, { headers: { Accept: "application/vnd.github+json", "User-Agent": "eltaranisi-sync" } });
+  if (!response.ok) throw new Error(`could not list the mirror tree (${response.status})`);
+  const tree = (await response.json()).tree ?? [];
+  return tree
+    .filter((entry) => entry.type === "blob" && TYPES[`.${entry.path.split(".").pop()?.toLowerCase()}`])
+    .map((entry) => entry.path);
+}
+
 async function resolveAccountId() {
-  if (process.env.CLOUDFLARE_ACCOUNT_ID?.trim()) return process.env.CLOUDFLARE_ACCOUNT_ID.trim();
+  if (accountId) return accountId;
   const res = await fetch(`${CF_API}/accounts?page=1&per_page=1`, { headers: { Authorization: `Bearer ${token}` } });
-  const data = await res.json();
+  const data = await res.json().catch(() => null);
   const id = data?.result?.[0]?.id;
   if (!id) {
-    throw new Error(
-      "Could not resolve the Cloudflare Account ID. Pass CLOUDFLARE_ACCOUNT_ID=<32 chars> " +
-      "(a token listing accounts needs the Account Settings: Read permission).",
-    );
+    throw new Error("Could not resolve the Cloudflare Account ID. Pass CLOUDFLARE_ACCOUNT_ID=<32 chars>.");
   }
   return id;
 }
 
-async function uploadToR2(accountId, relPath, asset) {
-  const key = relPath.split("/").map(encodeURIComponent).join("/");
-  const res = await fetch(
-    `${CF_API}/accounts/${accountId}/r2/buckets/${encodeURIComponent(bucket)}/objects/${key}`,
-    {
-      method: "PUT",
-      headers: { Authorization: `Bearer ${token}`, "Content-Type": asset.type },
-      body: asset.body,
-    },
-  );
-  return { status: res.status, text: (await res.text()).slice(0, 300) };
+function stageFile(relPath, asset) {
+  const target = join(STAGE, "public", "img", relPath);
+  mkdirSync(dirname(target), { recursive: true });
+  writeFileSync(target, asset.body);
 }
 
-async function uploadToImages(accountId, relPath, asset) {
+async function uploadToR2(account, relPath, asset) {
+  const key = `img/${relPath}`.split("/").map(encodeURIComponent).join("/");
+  const res = await fetch(`${CF_API}/accounts/${account}/r2/buckets/${encodeURIComponent(bucket)}/objects/${key}`, {
+    method: "PUT",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": asset.type },
+    body: asset.body,
+  });
+  return { ok: res.ok, detail: res.ok ? "" : (await res.text()).slice(0, 200) };
+}
+
+async function uploadToImages(account, relPath, asset) {
   const form = new FormData();
-  form.set("id", relPath);
+  form.set("id", `img/${relPath}`);
   form.set("requireSignedURLs", "false");
   form.set("file", new Blob([asset.body], { type: asset.type }), relPath);
-  const res = await fetch(`${CF_API}/accounts/${accountId}/images/v1`, {
+  const res = await fetch(`${CF_API}/accounts/${account}/images/v1`, {
     method: "POST",
     headers: { Authorization: `Bearer ${token}` },
     body: form,
   });
   const payload = await res.json().catch(() => null);
-  return { status: res.status, ok: Boolean(payload?.success), payload };
+  return { ok: Boolean(payload?.success), detail: payload?.errors?.[0] ? `${payload.errors[0].code} ${payload.errors[0].message}` : `status ${res.status}` };
+}
+
+/** Static Assets need no Worker script; wrangler publishes the staged folder as-is. */
+function deployWorker(project) {
+  writeFileSync(
+    join(STAGE, "wrangler.jsonc"),
+    `${JSON.stringify(
+      { name: project, compatibility_date: "2026-10-01", assets: { directory: "./public", not_found_handling: "none" } },
+      null,
+      2,
+    )}\n`,
+  );
+  const run = spawnSync("npx", ["--yes", "wrangler", "deploy", "--config", join(STAGE, "wrangler.jsonc")], {
+    encoding: "utf8",
+    env: { ...process.env, CLOUDFLARE_API_TOKEN: token, CLOUDFLARE_ACCOUNT_ID: process.env.CLOUDFLARE_ACCOUNT_ID },
+    timeout: 600_000,
+  });
+  const out = `${run.stdout ?? ""}${run.stderr ?? ""}`.trim();
+  if (run.error) return { ok: false, detail: run.error.message };
+  return { ok: run.status === 0, detail: out.slice(-1200) };
 }
 
 async function main() {
-  const accountId = await resolveAccountId();
-  console.log(
-    `Publishing ${CORE_IMAGES.length} assets to Cloudflare ` +
-    `${bucket ? `R2 bucket “${bucket}”` : "Images"} (account ${accountId})...`,
-  );
+  const mode = workerProject ? "workers" : bucket ? "r2" : "images";
+  let relPaths = [...CORE_IMAGES];
+  if (process.env.CLOUDFLARE_ASSETS_FULL === "1") {
+    relPaths = [...new Set([...relPaths, ...(await allSiteImages())])];
+  }
+  console.log(`Mode “${mode}”${DRY_RUN ? " (dry run)" : ""}: staging ${relPaths.length} asset(s)...`);
 
+  rmSync(STAGE, { recursive: true, force: true });
   const failures = new Set();
-  for (const relPath of CORE_IMAGES) {
-    let asset;
+  let bytes = 0;
+  for (const relPath of relPaths) {
     try {
-      asset = await assetBytes(relPath);
+      const asset = await assetBytes(relPath);
+      bytes += asset.body.byteLength;
+      stageFile(relPath, asset);
+      console.log(`${relPath}: staged ${asset.body.byteLength}b from ${asset.source}`);
     } catch (error) {
       failures.add(relPath);
       console.log(`${relPath}: FAILED — ${error.message}`);
-      continue;
-    }
-
-    if (bucket) {
-      const { status, text } = await uploadToR2(accountId, relPath, asset);
-      if (status >= 300) {
-        failures.add(relPath);
-        console.log(`${relPath}: FAILED ${status} ${text}`);
-      } else {
-        console.log(`${relPath}: uploaded ${asset.body.byteLength}b from ${asset.source}`);
-      }
-      continue;
-    }
-
-    const { status, ok, payload } = await uploadToImages(accountId, relPath, asset);
-    if (!ok) {
-      failures.add(relPath);
-      const error = payload?.errors?.[0];
-      console.log(`${relPath}: FAILED ${status} ${error?.code ?? ""} ${error?.message ?? "upload rejected"}`);
-    } else {
-      console.log(`${relPath}: uploaded from ${asset.source} → ${payload?.result?.variants?.[0] ?? "no variant url"}`);
     }
   }
-
-  if (bucket && r2PublicUrl) {
-    console.log(`\nReachability through the public bucket URL:`);
-    for (const relPath of CORE_IMAGES) {
-      const res = await fetch(`${r2PublicUrl}/${relPath}`).catch(() => null);
-      if (!res || !res.ok) {
-        failures.add(relPath);
-        console.log(`${relPath}: NOT SERVED ${res?.status ?? "network error"}`);
-      } else {
-        console.log(`${relPath}: ${res.status} ${res.headers.get("content-type") ?? ""}`.trimEnd());
-      }
-    }
-  }
-
-  if (failures.size === 0) {
-    console.log("\nAll assets published and verified.");
-    if (bucket) {
-      console.log(`Point the app at the bucket with CLOUDFLARE_R2_PUBLIC_URL=${r2PublicUrl || "<public bucket url>"}`);
-    }
+  console.log(`Staged ${(bytes / 1048576).toFixed(1)} MiB into ${STAGE}/public/img.`);
+  if (DRY_RUN) {
+    console.log(failures.size ? `${failures.size} asset(s) could not be read.` : "Dry run complete — nothing was uploaded.");
+    process.exitCode = failures.size ? 1 : 0;
     return;
   }
-  console.log(`\n${failures.size} asset(s) did not make it: ${[...failures].join(", ")}`);
+
+  const account = await resolveAccountId();
+  for (const relPath of relPaths) {
+    if (failures.has(relPath)) continue;
+    const asset = { body: new Uint8Array(readFileSync(join(STAGE, "public", "img", relPath))), type: typeOf(relPath) };
+    const result =
+      mode === "workers"
+        ? { ok: true, detail: "published by wrangler below" }
+        : mode === "r2"
+          ? await uploadToR2(account, relPath, asset)
+          : await uploadToImages(account, relPath, asset);
+    if (!result.ok) {
+      failures.add(relPath);
+      console.log(`${relPath}: REJECTED — ${result.detail}`);
+    }
+  }
+
+  if (mode === "workers") {
+    console.log(`Deploying “${workerProject}” with Static Assets...`);
+    const deployed = deployWorker(workerProject);
+    if (!deployed.ok) {
+      console.log(`wrangler failed — ${deployed.detail}`);
+      console.log(`If it asked for a main module, deploy is a one-line change: ${STAGE}/wrangler.jsonc needs "main": "worker.js".`);
+      process.exit(1);
+    }
+    console.log(deployed.detail.split("\n").slice(-6).join("\n"));
+  }
+
+  const origin = publicUrl || (mode === "workers" && workerSubdomain ? `https://${workerProject}.${workerSubdomain}.workers.dev` : "");
+  if (!origin) {
+    console.log("Uploaded. Set CLOUDFLARE_ASSETS_PUBLIC_URL to the bucket/worker public root to serve it.");
+    if (failures.size) process.exitCode = 1;
+    return;
+  }
+  console.log(`Verifying every asset through ${origin}/img/...`);
+  // A fresh deployment needs a few seconds before the route answers, so a miss is retried.
+  await new Promise((resolve) => setTimeout(resolve, 5_000));
+  let served = 0;
+  for (const relPath of relPaths) {
+    if (failures.has(relPath)) continue;
+    let status = 0;
+    for (let attempt = 0; attempt < 4; attempt += 1) {
+      const res = await fetch(`${origin}/img/${relPath}`, { cache: "no-store" }).catch(() => null);
+      status = res?.status ?? 0;
+      if (res?.ok) break;
+      await new Promise((resolve) => setTimeout(resolve, 5_000 * (attempt + 1)));
+    }
+    if (status >= 200 && status < 300) served += 1;
+    else {
+      failures.add(relPath);
+      console.log(`${relPath}: NOT SERVED ${status || "network error"}`);
+    }
+  }
+  if (failures.size === 0) {
+    console.log(`\nAll ${relPaths.length} assets published and reachable. Point the app at:`);
+    console.log(`  CLOUDFLARE_ASSETS_PUBLIC_URL=${origin}`);
+    return;
+  }
+  console.log(`\n${failures.size} asset(s) did not make it (${served} verified good).`);
   process.exitCode = 1;
 }
 
 main().catch((err) => {
   console.error(err.message ?? String(err));
   console.error(
-    bucket
-      ? "R2 upload failed — the token needs the Account permission “Workers R2 Storage : Edit”."
-      : "Images upload failed — error 5403 means this account has no Cloudflare Images subscription. " +
-        "Either subscribe (Images → Get started), or run with CLOUDFLARE_R2_BUCKET to use R2 instead.",
-    );
+    "Fix the reported line and re-run. Common cases: error 5403 = the account has no Cloudflare Images " +
+    "subscription; code 10000 = the token lacks the permission this mode needs " +
+    "(Workers Scripts: Edit for Workers, Workers R2 Storage: Edit for R2, Cloudflare Images: Edit for Images).",
+  );
   process.exit(1);
 });

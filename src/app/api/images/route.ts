@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import {
+  cloudflareAssetRoot,
   EXTERNAL_ASSET_COMMIT,
   EXTERNAL_CDN_BASE,
   sanitizeImagePath,
@@ -13,6 +14,8 @@ export async function GET() {
     commit: EXTERNAL_ASSET_COMMIT,
     cdnBase: EXTERNAL_CDN_BASE,
     cloudflareConfigured: Boolean(process.env.CLOUDFLARE_API_TOKEN),
+    // Which origin actually serves: the published asset root when configured, the mirrors otherwise.
+    assetOrigin: cloudflareAssetRoot() ? `${cloudflareAssetRoot()}/img` : "mirrors",
   });
 }
 
