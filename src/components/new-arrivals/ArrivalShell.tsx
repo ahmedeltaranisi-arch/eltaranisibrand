@@ -15,7 +15,10 @@ export default function ArrivalShell({ children, footer }: {
 }) {
   const pathname = usePathname();
   const productSlug = pathname.startsWith("/products/") ? pathname.split("/")[2] : "";
-  const isArrivalRoute = pathname === "/collections/new-arrivals" || !!getArrivalProduct(productSlug);
+  const isArrivalRoute =
+    pathname === "/collections/new-arrivals" ||
+    pathname === "/collections/best-sellers" ||
+    !!getArrivalProduct(productSlug);
   if (!isArrivalRoute) return <><main id="main" className="flex-1">{children}</main>{footer}<PromoButton /><CartDrawer /></>;
   return (
     <div className="na-storefront">

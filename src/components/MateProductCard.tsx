@@ -5,10 +5,12 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { formatLE, getArrivalProduct, productColorways, type MateProduct } from "@/lib/mateNewArrivals";
 
-export default function MateProductCard({ product, priority = false, onQuickAdd }: {
+export default function MateProductCard({ product, priority = false, onQuickAdd, leadingBadges }: {
   product: MateProduct;
   priority?: boolean;
   onQuickAdd: (product: MateProduct) => void;
+  /** Collection-level badges (the reference badges every Best Sellers card), never stored data. */
+  leadingBadges?: string[];
 }) {
   const t = useTranslations("newArrivals");
   const [activeSlug, setActiveSlug] = useState(product.slug);
@@ -21,6 +23,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd 
   const colorways = productColorways(product);
   const title = t(`products.${active.style}`);
   const color = t(`color.${active.color.name}`);
+  const badges = [...new Set([...(leadingBadges ?? []), ...active.badges])];
   const hero = active.images[imageIndex] ?? active.images[0];
   const alternate = active.images[(imageIndex + 1) % active.images.length] ?? hero;
   const displayedIndex = imageHovered ? (imageIndex + 1) % active.images.length : imageIndex;
@@ -71,9 +74,9 @@ export default function MateProductCard({ product, priority = false, onQuickAdd 
           <img src={alternate} alt="" aria-hidden="true" className={`na-product-hover-image ${imageHovered ? "is-visible" : ""}`} loading="lazy" width={900} height={1200} draggable={false} />
         </Link>
         {active.images.length > 1 && <div className="na-product-scrollbar" aria-hidden="true"><span style={{ width: `${100 / active.images.length}%`, transform: `translateX(${displayedIndex * 100}%)` }} /></div>}
-        {active.badges.length > 0 && (
+        {badges.length > 0 && (
           <div className="na-product-badges">
-            {active.badges.map((badge) => {
+            {badges.map((badge) => {
               const key = badge.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
               return <span key={badge} className="na-product-badge">{t.has(`badges.${key}`) ? t(`badges.${key}`) : badge}</span>;
             })}

@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import MateProductCard from "./MateProductCard";
 import ArrivalFilterDrawer from "./new-arrivals/ArrivalFilterDrawer";
@@ -10,6 +9,7 @@ import ArrivalGetaway from "./new-arrivals/ArrivalGetaway";
 import ArrivalDiscover from "./new-arrivals/ArrivalDiscover";
 import ArrivalFaq from "./new-arrivals/ArrivalFaq";
 import { Link } from "@/navigation";
+import { useCollectionUrlState } from "@/lib/useCollectionUrlState";
 import {
   PAGE_SIZE, collectionQuery, emptyFilters, facetCounts, filterCount, filterProducts,
   mateNewArrivals, readCollectionState, sortProducts,
@@ -18,8 +18,7 @@ import {
 
 export default function MateCollectionGrid() {
   const t = useTranslations("newArrivals");
-  const params = useSearchParams();
-  const state = useMemo(() => readCollectionState(params), [params]);
+  const { state, navigate } = useCollectionUrlState(readCollectionState, collectionQuery);
   const [drawer, setDrawer] = useState({ open: false, entry: "filters" as "filters" | "sort", session: 0 });
   const [quickAdd, setQuickAdd] = useState<MateProduct | null>(null);
   const toolbar = useRef<HTMLDivElement>(null);
@@ -31,10 +30,7 @@ export default function MateCollectionGrid() {
   const visible = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   function update(next: CollectionState, push = false, scroll = false) {
-    const query = collectionQuery(next);
-    const url = window.location.pathname + (query ? `?${query}` : "");
-    if (push) window.history.pushState(null, "", url);
-    else window.history.replaceState(null, "", url);
+    navigate(next, push);
     if (scroll) toolbar.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
   function changeFilters(filters: CollectionFilters) {

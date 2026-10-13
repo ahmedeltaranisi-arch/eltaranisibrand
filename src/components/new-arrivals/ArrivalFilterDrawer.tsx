@@ -36,6 +36,7 @@ function FilterGroup({ label, initialOpen = false, children }: { label: string; 
 
 export default function ArrivalFilterDrawer({
   open, entry, state, counts, resultCount, onChange, onSort, onClose, onApply,
+  sizeOptions, colorOptions,
 }: {
   open: boolean;
   entry: "filters" | "sort";
@@ -46,7 +47,13 @@ export default function ArrivalFilterDrawer({
   onSort: (sort: CollectionSort) => void;
   onClose: () => void;
   onApply: () => void;
+  /** Collections with a wider size vocabulary (the reference's eleven rows) pass their own list. */
+  sizeOptions?: readonly string[];
+  /** Colors a collection cannot offer are removed from the UI entirely. */
+  colorOptions?: readonly string[];
 }) {
+  const sizeRows = sizeOptions ?? SIZES;
+  const colorRows = colorOptions ?? COLOR_GROUPS;
   const t = useTranslations("newArrivals");
   const heading = useId();
   const count = filterCount(state);
@@ -109,7 +116,7 @@ export default function ArrivalFilterDrawer({
         </FilterGroup>
         <FilterGroup label={t("sizeLabel")} initialOpen={entry === "sort"}>
           <div className="na-filter-values">
-            {SIZES.map((value) => (
+            {sizeRows.map((value) => (
               <label key={value} className="na-filter-value">
                 <input type="checkbox" name="size" value={value} checked={state.sizes.includes(value)} disabled={counts.sizes[value] === 0 && !state.sizes.includes(value)} onChange={() => toggle("sizes", value)} />
                 <span className="na-filter-checkbox" aria-hidden="true" />
@@ -120,7 +127,7 @@ export default function ArrivalFilterDrawer({
         </FilterGroup>
         <FilterGroup label={t("colorGroupLabel")}>
           <div className="na-filter-values na-filter-colors">
-            {COLOR_GROUPS.map((value) => (
+            {colorRows.map((value) => (
               <label key={value} className="na-filter-value">
                 <input type="checkbox" name="color" value={value} checked={state.colors.includes(value)} disabled={counts.colors[value] === 0 && !state.colors.includes(value)} onChange={() => toggle("colors", value)} />
                 <span className="na-filter-color" style={{ background: GROUP_COLORS[value] }} aria-hidden="true" />

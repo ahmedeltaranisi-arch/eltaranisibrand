@@ -293,7 +293,7 @@
           ]
         }
       ],
-      "newsTitle": "Join the Eltaranisi Prand world.",
+      "newsTitle": "Join the Eltaranisi Brand world.",
       "newsBody": "For style edits, seasonal capsules, and exclusive previews delivered to your inbox.",
       "legalRow": [
         "Privacy Policy",
@@ -1001,7 +1001,7 @@
     "announcementCta": "SHOP NOW",
     "promo": "Get 10% Off",
     "promoTitle": "Get 10% off",
-    "promoBody": "Join the MATE world for style edits, seasonal capsules, and exclusive previews.",
+    "promoBody": "Join the Eltaranisi Brand world for style edits, seasonal capsules, and exclusive previews.",
     "promoDismiss": "Dismiss offer",
     "email": "Email address",
     "subscribe": "Subscribe",
@@ -1067,7 +1067,7 @@
       "title": "Frequently Asked Questions",
       "sizeQuestion": "How do I find my size?",
       "sizeAnswer": "Please refer to our size guide and the fit notes on each product page for specific recommendations. If you need help finding your ideal size, email us at <care>care@matethelabel.com</care> and we’ll be happy to assist.",
-      "returnsQuestion": "What is MATE’s return and exchange policy?",
+      "returnsQuestion": "What is Eltaranisi Brand’s return and exchange policy?",
       "returnsAnswer": "We gladly accept returns and exchanges on items not marked Final Sale within 30 days of purchase. Items must be in their original condition—unworn, unwashed, and with tags attached. To start a return or exchange, visit our <returns>Returns</returns> page.",
       "shippingQuestion": "Do you ship internationally?",
       "shippingIntro": "Yes, we ship worldwide through our trusted partner, Global-e, via DHL Express.",
@@ -1075,8 +1075,8 @@
       "shippingOver": "Orders over $200 USD: Free shipping",
       "shippingDelivery": "International orders are typically processed within 2-3 business days and delivered within 2-5 business days after shipping. Please note that customs may occasionally cause additional delays beyond our control.",
       "shippingCurrency": "Amounts shown reflect the USD equivalent in your local currency.",
-      "fabricsQuestion": "What makes MATE’s fabrics different?",
-      "fabricsAnswer": "We thoughtfully source natural fibers and hold our materials to higher standards for environmental and social responsibility. Many organic fabrications are certified to GOTS™ and Regenerative Organic Certified™ standards, while OEKO-TEX® certification ensures select materials are tested for harmful substances. Beyond our fabrics, MATE is The Climate Label certified and a Certified B Corp—part of our ongoing commitment to making better choices at every step."
+      "fabricsQuestion": "What makes Eltaranisi Brand’s fabrics different?",
+      "fabricsAnswer": "We thoughtfully source natural fibers and hold our materials to higher standards for environmental and social responsibility. Many organic fabrications are certified to GOTS™ and Regenerative Organic Certified™ standards, while OEKO-TEX® certification ensures select materials are tested for harmful substances. Beyond our fabrics, Eltaranisi Brand is The Climate Label certified and a Certified B Corp—part of our ongoing commitment to making better choices at every step."
     },
     "footer": {
       "about": "about eltaranisi brand",
@@ -1091,7 +1091,7 @@
       "instagram": "instagram",
       "facebook": "facebook",
       "pinterest": "pinterest",
-      "newsletterTitle": "Join the Eltaranisi Prand world.",
+      "newsletterTitle": "Join the Eltaranisi Brand world.",
       "newsletterBody": "For style edits, seasonal capsules, and exclusive previews delivered to your inbox.",
       "privacy": "privacy policy",
       "data": "data request",
@@ -1168,5 +1168,27 @@
     },
     "essential": "Core",
     "discoverBestSellers": "Discover Our Best Sellers"
+  },
+  "bestSellers": {
+    "title": "Best Sellers",
+    "description": "Luxurious textures, clean silhouettes, positive impact.",
+    "rails": "Shop collection categories",
+    "tabAll": "All Best Sellers",
+    "tabActivewear": "Activewear",
+    "tabTees": "Tees",
+    "tabSweats": "Sweats",
+    "tabIntimates": "Intimates",
+    "tabSleep": "Sleep",
+    "tabAlt": {
+      "all": "A woman in a black sports bra and black leggings with a white long-sleeve cardigan draped off her shoulders, against a light grey studio background.",
+      "activewear": "A seated woman in a dark green sports bra, matching leggings and socks, against a pale studio background.",
+      "tees": "A woman wearing an oversized white tee, one hand resting on her shoulder.",
+      "sweats": "A woman wearing a green fleece half-zip sweatshirt with a chest pocket and matching sweatpants.",
+      "intimates": "A woman crouching in a black ribbed bodysuit, holding a pair of light-wash denim.",
+      "sleep": "A model lying down in relaxed beige shorts with a small woven label at the waist."
+    },
+    "editorialHeading": "The October Capsule",
+    "editorialText": "Soft, essential layers in naturally luxurious fibres, styled for cool mornings and slow evenings.",
+    "editorialCta": "Shop Now"
   }
 }

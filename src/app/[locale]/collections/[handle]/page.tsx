@@ -5,6 +5,7 @@ import { getCollection, productsByCollection } from "@/lib/catalog";
 import CollectionFilters from "@/components/CollectionFilters";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MateCollectionGrid from "@/components/MateCollectionGrid";
+import MateBestSellersGrid from "@/components/MateBestSellersGrid";
 
 export function generateStaticParams() {
   return [
@@ -33,6 +34,10 @@ export async function generateMetadata({
     const t = await getTranslations({ locale, namespace: "newArrivals" });
     return { title: t("title"), description: t("description") };
   }
+  if (handle === "best-sellers") {
+    const t = await getTranslations({ locale, namespace: "bestSellers" });
+    return { title: t("title"), description: t("description") };
+  }
   const t = await getTranslations({ locale });
   return { title: t(c.titleKey), description: t(c.descriptionKey) };
 }
@@ -54,11 +59,11 @@ export default async function CollectionPage({
   );
   const items = productsByCollection(handle);
 
-  if (handle === "new-arrivals") {
+  if (handle === "new-arrivals" || handle === "best-sellers") {
     // Request-render the collection, including the actual URL's filters/sort,
     // rather than returning a blank client-only collection on the first load.
     await connection();
-    return <MateCollectionGrid />;
+    return handle === "best-sellers" ? <MateBestSellersGrid /> : <MateCollectionGrid />;
   }
 
   return (

@@ -156,7 +156,7 @@ test("Getaway photography/Shop Now, all FAQs and footer links are present and fu
   await expect(getaway.locator("img")).toHaveCount(2);
   await expect(getaway.getByRole("link", { name: "Shop Now", exact: true })).toHaveAttribute("href", "https://matethelabel.com/collections/the-getaway-edit");
   const faq = page.locator(".na-faq");
-  for (const question of ["How do I find my size?", "What is MATE’s return and exchange policy?", "Do you ship internationally?", "What makes MATE’s fabrics different?"]) {
+  for (const question of ["How do I find my size?", "What is Eltaranisi Brand’s return and exchange policy?", "Do you ship internationally?", "What makes Eltaranisi Brand’s fabrics different?"]) {
     await faq.locator("summary").filter({ hasText: question }).click();
     await expect(faq.locator("details").filter({ hasText: question })).toHaveAttribute("open", "");
   }
@@ -167,7 +167,7 @@ test("Getaway photography/Shop Now, all FAQs and footer links are present and fu
   await expect(faq.locator("em")).toBeVisible();
   await expect(page.locator(".na-breadcrumbs")).toContainText("Shop All");
   await expect(page.locator(".na-footer")).toContainText("© 2026 ELTARANISI BRAND");
-  await expect(page.locator(".na-footer")).toContainText("Join the Eltaranisi Prand world.");
+  await expect(page.locator(".na-footer")).toContainText("Join the Eltaranisi Brand world.");
 });
 
 test("newsletter never fabricates success when provider isn't configured", async ({ page }) => {
@@ -229,8 +229,11 @@ test("no runtime/console errors, broken first-row photos, or legacy route regres
     if (await image.isVisible()) await expect.poll(() => image.evaluate((img) => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
   }
   await page.goto("/en/collections/best-sellers");
-  await expect(page.locator(".na-storefront")).toHaveCount(0);
-  await expect(page.locator("h1")).toBeVisible();
+  // Best Sellers shares this skin on purpose: same header, drawer and footer as New Arrivals.
+  await expect(page.locator(".na-storefront")).toHaveCount(1);
+  await expect(page.locator(".na-product-grid")).toHaveAttribute("data-result-count", "107");
+  await expect(page.locator(".na-collection-nav-link")).toHaveCount(6);
+  await expect(page.locator("h1")).toHaveText("Best Sellers");
   await page.goto("/en");
   await expect(page.locator(".na-storefront")).toHaveCount(0);
   expect(errors).toEqual([]);
