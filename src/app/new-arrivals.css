@@ -60,7 +60,7 @@
 .na-product-card{display:flex;flex-direction:column;min-width:0;color:#000}
 .na-product-media-frame{position:relative}
 .na-product-media{position:relative;display:block;aspect-ratio:333/431;overflow:hidden;width:100%;background:var(--na-image-bg);touch-action:pan-y;user-select:none;cursor:grab}
-.na-product-media img{position:absolute;inset:0;display:block;width:100%;max-width:none;width:round(nearest,100%,1px);height:calc(100% - 1px);object-fit:cover;object-position:center;pointer-events:none}
+.na-product-media img{position:absolute;inset:0;display:block;width:100%;max-width:none;width:round(nearest,100%,1px);height:calc(100% - 1px);object-fit:contain;object-position:center;pointer-events:none}
 .na-product-media .na-product-hover-image{position:absolute;inset:0;opacity:0;transition:opacity .32s}
 .na-product-media .na-product-hover-image.is-visible{opacity:1}
 .na-product-badges{position:absolute;inset-inline-start:14.5px;bottom:14.5px;display:flex;gap:4px;pointer-events:none}
@@ -515,4 +515,10 @@
 }
 @media(prefers-reduced-motion:reduce){
   .na-header-mega-panel,.na-header-mega.is-open>.na-header-mega-panel,.na-header-scrim,.na-header-mega.is-open>.na-header-scrim{transition:none}
+}
+
+/* A pose change cross-fades to the second photograph. No zoom, no scale, no crop. */
+.na-product-media img,.na-product-media:hover img,.na-product-media:focus img,.na-product-media:focus-within img,
+.product-card-media img,.product-card-media:hover img,.product-card-media:focus img,.product-card-media:focus-within img{
+  object-fit:contain;object-position:center;transform:none;scale:1;transition-property:opacity;
 }

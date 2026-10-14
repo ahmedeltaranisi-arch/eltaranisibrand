@@ -35,7 +35,7 @@ export default function ProductCard({
     <article className="group product-reveal-card relative flex flex-col">
       <Link
         href={`/products/${active.slug}`}
-        className="relative block overflow-hidden bg-[#f6f3ec]"
+        className="product-card-media relative block overflow-hidden bg-[#f6f3ec]"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -43,7 +43,7 @@ export default function ProductCard({
           src={front}
           alt={title}
           loading={priority ? "eager" : "lazy"}
-          className="aspect-[3/4] w-full object-cover object-top transition-opacity duration-500 group-hover:opacity-0"
+          className="aspect-[3/4] w-full object-contain object-center transition-opacity duration-500 group-hover:opacity-0 group-focus-within:opacity-0"
         />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -52,7 +52,7 @@ export default function ProductCard({
           alt=""
           aria-hidden
           loading="lazy"
-          className="absolute inset-0 aspect-[3/4] w-full object-cover object-top opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="absolute inset-0 aspect-[3/4] w-full object-contain object-center opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus-within:opacity-100"
         />
 
         {product.badges?.includes("best") && (

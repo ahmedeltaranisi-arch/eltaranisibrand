@@ -270,11 +270,11 @@ test("the reference brand never appears as copy and the footer is the home foote
   expect(body).not.toMatch(/\bMata\b/);
   expect(body).not.toContain("Prand");
   expect(body).toContain("Eltaranisi");
-  const footer = page.locator(".na-footer");
-  await expect(footer).toContainText("Join the Eltaranisi Brand world.");
-  await expect(footer).toContainText("© 2026 ELTARANISI BRAND");
+  const footer = page.locator('[data-site-footer="eltaranisi"]');
+  await expect(footer).toContainText("Join the Eltaranisi world.");
+  await expect(footer).toContainText("© 2026");
   await page.goto("/en");
-  await expect(page.locator("footer").last()).toContainText("Join the Eltaranisi Brand world.");
+  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("Join the Eltaranisi world.");
 });
 
 test("mobile rails scroll inside their own row without overflowing the page", async ({ page }) => {

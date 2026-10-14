@@ -18,6 +18,8 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   const [expanded, setExpanded] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const [imageHovered, setImageHovered] = useState(false);
+  /** Keyboard focus shows the same alternate pose as a pointer hover: no zoom, no crop. */
+  const [imageFocused, setImageFocused] = useState(false);
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
   const dragged = useRef(false);
   // The colourway we were handed wins; a slug switch resolves through both captures.
@@ -28,16 +30,19 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   const badges = [...new Set([...(leadingBadges ?? []), ...active.badges])];
   const hero = active.images[imageIndex] ?? active.images[0];
   const alternate = active.images[(imageIndex + 1) % active.images.length] ?? hero;
-  const displayedIndex = imageHovered ? (imageIndex + 1) % active.images.length : imageIndex;
+  const previewAlternate = imageHovered || imageFocused;
+  const displayedIndex = previewAlternate ? (imageIndex + 1) % active.images.length : imageIndex;
 
   function selectColor(colorway: MateProduct) {
     if (activeSlug === colorway.slug) return;
     setImageHovered(false);
+    setImageFocused(false);
     setImageIndex(0);
     setActiveSlug(colorway.slug);
   }
   function changeImage(direction: number) {
     setImageHovered(false);
+    setImageFocused(false);
     setImageIndex((index) => (index + direction + active.images.length) % active.images.length);
   }
 
@@ -50,6 +55,8 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
           aria-label={t("imagePosition", { product: title, color, position: displayedIndex + 1, total: active.images.length })}
           onMouseEnter={() => setImageHovered(true)}
           onMouseLeave={() => setImageHovered(false)}
+          onFocus={() => setImageFocused(true)}
+          onBlur={() => setImageFocused(false)}
           onPointerDown={(event) => { pointerStart.current = { x: event.clientX, y: event.clientY }; dragged.current = false; }}
           onPointerUp={(event) => {
             if (!pointerStart.current) return;
@@ -73,7 +80,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={hero} alt={`${title} — ${color}`} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} width={900} height={1200} draggable={false} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={alternate} alt="" aria-hidden="true" className={`na-product-hover-image ${imageHovered ? "is-visible" : ""}`} loading="lazy" width={900} height={1200} draggable={false} />
+          <img src={alternate} alt="" aria-hidden="true" className={`na-product-hover-image ${previewAlternate ? "is-visible" : ""}`} loading="lazy" width={900} height={1200} draggable={false} />
         </Link>
         {active.images.length > 1 && <div className="na-product-scrollbar" aria-hidden="true"><span style={{ width: `${100 / active.images.length}%`, transform: `translateX(${displayedIndex * 100}%)` }} /></div>}
         {badges.length > 0 && (

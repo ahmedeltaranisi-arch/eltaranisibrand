@@ -166,13 +166,13 @@ test("Getaway photography/Shop Now, all FAQs and footer links are present and fu
   await expect(faq).toContainText("$200");
   await expect(faq.locator("em")).toBeVisible();
   await expect(page.locator(".na-breadcrumbs")).toContainText("Shop All");
-  await expect(page.locator(".na-footer")).toContainText("© 2026 ELTARANISI BRAND");
-  await expect(page.locator(".na-footer")).toContainText("Join the Eltaranisi Brand world.");
+  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("© 2026");
+  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("Join the Eltaranisi world.");
 });
 
 test("newsletter never fabricates success when provider isn't configured", async ({ page }) => {
   await page.route("**/api/newsletter", (route) => route.fulfill({ status: 503, contentType: "application/json", body: JSON.stringify({ error: "newsletter_not_configured" }) }));
-  const footer = page.locator(".na-footer");
+  const footer = page.locator('[data-site-footer="eltaranisi"]');
   await footer.getByRole("textbox", { name: "Email address", exact: true }).fill("qa@example.com");
   await footer.getByRole("button", { name: "Subscribe", exact: true }).click();
   await expect(footer.locator('[role="alert"]')).toContainText("unavailable");

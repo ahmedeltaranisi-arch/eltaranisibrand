@@ -19,6 +19,9 @@ export default function ProductGallery({
 }) {
   const t = useTranslations("common");
   const [active, setActive] = useState(0);
+  // The reference shows a second full pose on hover; never a zoom. Keyboard focus matches.
+  const [preview, setPreview] = useState(false);
+  const shownFrame = preview && images.length > 1 ? (active + 1) % images.length : active;
   const [zoom, setZoom] = useState(false);
   const [prevSlug, setPrevSlug] = useState(activeSlug);
 
@@ -66,7 +69,7 @@ export default function ProductGallery({
                   src={src}
                   alt=""
                   loading="lazy"
-                  className="aspect-3/4 w-full bg-bone object-cover"
+                  className="aspect-3/4 w-full bg-bone object-contain"
                 />
               </button>
             </li>
@@ -75,16 +78,20 @@ export default function ProductGallery({
 
         <button
           type="button"
-          onClick={() => setZoom(true)}
+          onClick={() => { setActive(shownFrame); setPreview(false); setZoom(true); }}
+          onMouseEnter={() => setPreview(true)}
+          onMouseLeave={() => setPreview(false)}
+          onFocus={() => setPreview(true)}
+          onBlur={() => setPreview(false)}
           className="group relative order-1 block w-full cursor-zoom-in overflow-hidden bg-bone sm:order-2"
           aria-label={t("viewAll")}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             key={activeSlug + active}
-            src={images[active]}
+            src={images[shownFrame]}
             alt={alt}
-            className="aspect-3/4 w-full animate-fade-up object-cover transition-transform duration-[900ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.04]"
+            className="aspect-3/4 w-full animate-fade-up object-contain"
           />
         </button>
       </div>

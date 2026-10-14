@@ -198,10 +198,11 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
                         className="na-aw-editorial-video-el"
                         poster={ACTIVEWEAR_NAV.editorial.videoStill}
                         src={VIDEO_SRC}
+                        autoPlay
                         muted
                         loop
                         playsInline
-                        preload="none"
+                        preload="auto"
                         disablePictureInPicture
                         disableRemotePlayback
                         controlsList="nodownload noplaybackrate noremoteplayback"
