@@ -946,7 +946,7 @@
     "clearAll": "مسح الكل",
     "close": "إغلاق",
     "removeFilter": "إزالة فلتر {label}",
-    "noResults": "لم يتم العثور على منتجات.",
+    "noResults": "لا توجد منتجات تطابق هذه الفلاتر.",
     "noResultsBody": "جرّبي مجموعة أخرى من الفلاتر للعثور على قطعك المفضلة.",
     "resultsAnnouncement": "تم العثور على {count} منتج.",
     "previousPage": "السابق",

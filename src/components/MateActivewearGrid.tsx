@@ -72,7 +72,9 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
   );
 
   const pageCount = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
-  const page = Math.min(state.page, pageCount);
+  // The reference renders an empty grid for a page past the end of the collection rather than
+  // clamping back to the last one, so a stale or shared link never silently shows other products.
+  const page = Math.max(1, state.page);
   const visible = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   function update(next: ActivewearState, push = false, scroll = false) {
@@ -277,11 +279,7 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
           </div>
         ) : (
           <div className="na-collection-empty">
-            <h2>{shared("noResults")}</h2>
-            <p>{shared("noResultsBody")}</p>
-            <button type="button" className="na-dotted" onClick={() => changeFilters({ categories: [], sizes: [], colors: [] })}>
-              {shared("clearAll")}
-            </button>
+            <p>{shared("noResults")}</p>
           </div>
         )}
         {pageCount > 1 && (

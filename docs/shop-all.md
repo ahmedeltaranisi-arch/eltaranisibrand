@@ -54,6 +54,16 @@ Rules, matching the filmed reference:
   focusing a swatch swaps the card to that colourway's own photograph and pose.
 - The two editorials sit where the reference puts them: a two-column split after the sixth card of
   page one, a full-width split after the eighteenth, each with its own photograph pair and copy.
+- A page past the end prints the reference's own empty line — `No products match your filters.`,
+  nothing else — and keeps the pagination, exactly as `/collections/all?page=9` does on the
+  reference store. It never clamps back to the last page and quietly re-shows products.
+- The quick add fades in: `opacity: 0 → 1` under the reference's own
+  `opacity .16s, background-color .25s, color .25s`, with no vertical offset, so a card's lower half
+  never shifts as the pointer moves across it.
+- The swatch rail prints the reference's first four swatches plus its `+N` button; expanding wraps
+  the rest and shifts the rail by the reference's own 5.05px, and the current swatch keeps the 1px
+  underline the reference draws 10px below the rail. Swatches carry the same 39.5×9.5 box, the same
+  `gap: 20px 10px` and the same expanded hit area (`inset: -7.25px 0`).
 
 ## Rails the header links to
 

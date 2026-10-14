@@ -66,7 +66,8 @@ test("all four reference sort choices actually reorder products", async ({ page 
 });
 
 test("category, size, color and chips use real counts and change results", async ({ page }) => {
-  await page.getByRole("button", { name: "All Filters +", exact: true }).click();
+  // The trigger prints the live filter count here, so match it by its opening words.
+  await page.getByRole("button", { name: /^All Filters/ }).click();
   const dialog = page.locator(".na-filter-drawer");
   await dialog.getByRole("button", { name: "Category", exact: true }).click();
   await expect(dialog.getByRole("checkbox", { name: "Sports Bras (8)", exact: true })).toBeVisible();
@@ -93,9 +94,15 @@ test("category, size, color and chips use real counts and change results", async
 
 test("shared URLs, empty results, pagination and browser back", async ({ page }) => {
   await page.goto(`${PATH}?filter.p.t.category=aa-2-14-8&filter.v.option.size=XS`);
-  await expect(page.getByRole("heading", { name: "No products found.", exact: true })).toBeVisible();
+  // The reference prints a single line here and puts nothing else on the page, so the filter
+  // drawer stays the way back to the collection.
+  await expect(page.locator(".na-collection-empty")).toHaveText("No products match your filters.");
   await expect(page.locator(cards)).toHaveCount(0);
-  await page.getByRole("button", { name: "Clear all", exact: true }).click();
+  // The trigger prints the live filter count here, so match it by its opening words.
+  await page.getByRole("button", { name: /^All Filters/ }).click();
+  const dialog = page.locator(".na-filter-drawer");
+  await dialog.getByRole("button", { name: "Clear all", exact: true }).click();
+  await dialog.getByRole("button", { name: "See Results (107)", exact: true }).click();
   await expect(page.locator(cards)).toHaveCount(48);
   await page.getByRole("button", { name: "Page 2", exact: true }).click();
   await expect(page).toHaveURL(/page=2/);
@@ -183,7 +190,8 @@ test("mobile layout, full-width filter drawer and no horizontal overflow", async
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
   expect(await page.locator(".na-product-grid").evaluate((e) => getComputedStyle(e).gridTemplateColumns.split(" ").length)).toBe(2);
   await expect(page.locator(".na-menu-toggle")).toBeVisible();
-  await page.getByRole("button", { name: "All Filters +", exact: true }).click();
+  // The trigger prints the live filter count here, so match it by its opening words.
+  await page.getByRole("button", { name: /^All Filters/ }).click();
   const dialog = page.locator(".na-filter-drawer");
   await expect(dialog).toBeVisible();
   expect((await dialog.boundingBox())?.width).toBe(390);

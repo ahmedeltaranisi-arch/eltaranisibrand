@@ -31,7 +31,7 @@ const REF = "https://matethelabel.com";
 const WIDTH = 720;
 const QUALITY = 82;
 /** Reference frames kept per ingested colourway: the lead the reference shows plus its poses. */
-const FRAMES_PER_PRODUCT = 4;
+const FRAMES_PER_PRODUCT = 6;
 
 /** The catalogue's own EGP list for the reference's USD ticket, read from the pricing module. */
 const PRICING_SOURCE = readFileSync(join(ROOT, "src/lib/mateNewArrivals.ts"), "utf8");
@@ -123,6 +123,11 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 mkdirSync(MATEDIR, { recursive: true });
 mkdirSync("/tmp/ingest", { recursive: true });
 const key = (url) => createHash("sha1").update(url).digest("hex");
+
+/** Dye artwork the storefront already measured: the same dye keeps the same hex on every style. */
+const HEX_BY_NAME = existsSync(join(ROOT, "relay/swatch-hex.json"))
+  ? JSON.parse(readFileSync(join(ROOT, "relay/swatch-hex.json"), "utf8"))
+  : {};
 
 async function fetchJson(url) {
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -326,14 +331,14 @@ async function ingestOne(handle) {
 
   // Colour artwork: the reference's own dye swatch, stored beside the other storefront photographs.
   let swatchPath = "";
-  let hex = "#d9d9d9";
+  let hex = HEX_BY_NAME[colorName] ?? "#d9d9d9";
   if (swatchEntry?.image) {
     const file = join(MATEDIR, `color-${colorName}.png`);
     if (!swatchCache.has(colorName)) swatchCache.set(colorName, download(swatchEntry.image, file));
     await swatchCache.get(colorName);
     if (existsSync(file)) {
       swatchPath = `/img/mate/color-${colorName}.png`;
-      hex = await averageColor(file);
+      hex = HEX_BY_NAME[colorName] ?? (await averageColor(file));
     }
   }
 

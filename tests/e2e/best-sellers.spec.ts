@@ -116,14 +116,20 @@ test("rails are deep-linkable, carousel URLs resolve, and an empty combination o
   await expect(railLink(page, "Activewear")).toHaveAttribute("aria-current", "page");
 
   await page.goto(`${PATH}?tab=intimates&size=OS`);
-  await expect(page.getByRole("heading", { name: "No products found.", exact: true })).toBeVisible();
+  // The reference prints a single line here; the drawer is the way back to the rail.
+  await expect(page.locator(".na-collection-empty")).toHaveText("No products match your filters.");
   await expect(page.locator(cards)).toHaveCount(0);
-  await page.getByRole("button", { name: "Clear all", exact: true }).click();
+  // The trigger prints the live filter count here, so match it by its opening words.
+  await page.getByRole("button", { name: /^All Filters/ }).click();
+  const dialog = page.locator(".na-filter-drawer");
+  await dialog.getByRole("button", { name: "Clear all", exact: true }).click();
+  await dialog.getByRole("button", { name: `See Results (${tabProducts("intimates").length})`, exact: true }).click();
   await expect(page.locator(cards)).toHaveCount(tabProducts("intimates").length);
 });
 
 test("drawer lists the eleven size rows with real counts and disables the empty ones", async ({ page }) => {
-  await page.getByRole("button", { name: "All Filters +", exact: true }).click();
+  // The trigger prints the live filter count here, so match it by its opening words.
+  await page.getByRole("button", { name: /^All Filters/ }).click();
   const dialog = page.locator(".na-filter-drawer");
   await expect(dialog.getByRole("heading", { name: "Filters (0)", exact: true })).toBeVisible();
   expect((await dialog.boundingBox())?.width).toBe(505);
@@ -238,7 +244,7 @@ test("hovering a swatch shows that colorway's own photograph, and the media adva
   await expect(card.locator(".na-product-scrollbar")).toBeVisible();
 });
 
-test("pagination walks the collection and an out-of-range page clamps to the last", async ({ page }) => {
+test("pagination walks the collection and an out-of-range page prints the reference's empty state", async ({ page }) => {
   await page.goto(`${PATH}?tab=sweats`);
   await expect(page.locator(cards)).toHaveCount(tabProducts("sweats").length);
   await expect(page.locator(".na-pagination")).toHaveCount(0);
@@ -247,8 +253,10 @@ test("pagination walks the collection and an out-of-range page clamps to the las
   await expect(page.locator(cards)).toHaveCount(PAGE_SIZE);
   await expect(page.locator(cards).first()).toHaveAttribute("data-default-slug", ordered[PAGE_SIZE].slug);
   await page.goto(`${PATH}?page=99`);
-  await expect(page.locator(cards)).toHaveCount(mateBestSellers.length - PAGE_SIZE * 2);
-  await expect(page.locator('.na-pagination button[aria-current="page"]')).toHaveText("3");
+  // Past the end the reference prints its empty line under the pagination, never a clamped grid.
+  await expect(page.locator(cards)).toHaveCount(0);
+  await expect(page.locator(".na-collection-empty")).toHaveText("No products match your filters.");
+  await expect(page.locator('.na-pagination button[aria-current="page"]')).toHaveCount(0);
   await page.getByRole("button", { name: "Page 1", exact: true }).click();
   await expect(page.locator(cards)).toHaveCount(PAGE_SIZE);
 });

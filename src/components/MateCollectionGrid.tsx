@@ -11,7 +11,7 @@ import ArrivalFaq from "./new-arrivals/ArrivalFaq";
 import { Link } from "@/navigation";
 import { useCollectionUrlState } from "@/lib/useCollectionUrlState";
 import {
-  PAGE_SIZE, collectionQuery, emptyFilters, facetCounts, filterCount, filterProducts,
+  PAGE_SIZE, collectionQuery, facetCounts, filterCount, filterProducts,
   mateNewArrivals, readCollectionState, sortProducts,
   type CollectionFilters, type CollectionState, type MateProduct,
 } from "@/lib/mateNewArrivals";
@@ -26,7 +26,9 @@ export default function MateCollectionGrid() {
   const sorted = useMemo(() => sortProducts(filtered, state.sort), [filtered, state.sort]);
   const counts = useMemo(() => facetCounts(mateNewArrivals, state), [state]);
   const pageCount = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
-  const page = Math.min(state.page, pageCount);
+  // The reference renders an empty grid for a page past the end of the collection rather than
+  // clamping back to the last one, so a stale or shared link never silently shows other products.
+  const page = Math.max(1, state.page);
   const visible = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   function update(next: CollectionState, push = false, scroll = false) {
@@ -71,8 +73,7 @@ export default function MateCollectionGrid() {
           </div>
         ) : (
           <div className="na-collection-empty">
-            <h2>{t("noResults")}</h2><p>{t("noResultsBody")}</p>
-            <button type="button" className="na-dotted" onClick={() => changeFilters(emptyFilters())}>{t("clearAll")}</button>
+            <p>{t("noResults")}</p>
           </div>
         )}
         {pageCount > 1 && (

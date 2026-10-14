@@ -50,8 +50,11 @@ test("product action reveal and slate hover colors match on arrival, legacy coll
     await page.mouse.move(0, 0);
     const button = card.locator(".product-reveal-action");
     await expect(button).toHaveCSS("opacity", "0");
+    // The reference fades the action in place — no translate, so the card's lower half never moves.
+    await expect(button).toHaveCSS("transform", "none");
     await card.locator("a").first().hover();
     await expect(button).toHaveCSS("opacity", "1");
+    await expect(button).toHaveCSS("transform", "none");
     await button.hover();
     await expect(button).toHaveCSS("background-color", "rgb(109, 122, 130)");
     await expect(button).toHaveCSS("color", "rgb(249, 248, 242)");

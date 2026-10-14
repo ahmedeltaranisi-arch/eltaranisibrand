@@ -14,7 +14,7 @@ import {
 } from "@/lib/mateNewArrivals";
 import {
   BEST_SELLER_TABS, SIZE_FACETS, bestSellerFacetCounts, bestSellersQuery,
-  emptyFilters, filterBestSellers, readBestSellersState, sortBestSellers, tabProducts,
+  filterBestSellers, readBestSellersState, sortBestSellers, tabProducts,
   type BestSellerState,
 } from "@/lib/mateBestSellers";
 
@@ -41,7 +41,9 @@ export default function MateBestSellersGrid() {
   );
 
   const pageCount = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
-  const page = Math.min(state.page, pageCount);
+  // The reference renders an empty grid for a page past the end of the collection rather than
+  // clamping back to the last one, so a stale or shared link never silently shows other products.
+  const page = Math.max(1, state.page);
   const visible = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   function update(next: BestSellerState, push = false, scroll = false) {
@@ -131,9 +133,7 @@ export default function MateBestSellersGrid() {
           </div>
         ) : (
           <div className="na-collection-empty">
-            <h2>{shared("noResults")}</h2>
-            <p>{shared("noResultsBody")}</p>
-            <button type="button" className="na-dotted" onClick={() => changeFilters(emptyFilters())}>{shared("clearAll")}</button>
+            <p>{shared("noResults")}</p>
           </div>
         )}
         {pageCount > 1 && (
