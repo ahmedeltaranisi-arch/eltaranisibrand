@@ -6,7 +6,7 @@
  * with immutable 1-year edge cache headers.
  */
 
-export const EXTERNAL_ASSET_COMMIT = "a3f459561f4ebe6ffc5047a3e434a002b2d717aa";
+export const EXTERNAL_ASSET_COMMIT = "017d424f64277189a9b034a216970fc8db5e4e87";
 export const EXTERNAL_ASSET_REPO = "ahmedeltaranisi-arch/eltaranisibrand";
 
 /** Cloudflare-backed global edge CDN (jsDelivr) serving the exact original bytes. */

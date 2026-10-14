@@ -33,7 +33,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { dirname, join } from "node:path";
 import { spawnSync } from "node:child_process";
 
-const COMMIT = "a3f459561f4ebe6ffc5047a3e434a002b2d717aa";
+const COMMIT = "017d424f64277189a9b034a216970fc8db5e4e87";
 const REPO = "ahmedeltaranisi-arch/eltaranisibrand";
 const CDN_BASE = `https://cdn.jsdelivr.net/gh/${REPO}@${COMMIT}/public/img`;
 const CF_API = "https://api.cloudflare.com/client/v4";

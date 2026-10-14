@@ -19,7 +19,7 @@ upload while the account has no Images plan) or R2 (Cloudflare asks for a card t
 1. `cloudflare-assets` — the worker above, so the published bytes are the origin.
 2. `cloudflare-images` — only when `CLOUDFLARE_IMAGES_DELIVERY_URL` is set.
 3. `cloudflare-jsdelivr-cdn`, `github-raw-cdn`, `github-api-raw` — mirrors of the pinned commit
-   `a3f45956`, so the site keeps rendering if the worker is ever unreachable.
+   `017d424f`, so the site keeps rendering if the worker is ever unreachable.
 
 Each response carries `X-Image-Provider`, which is how a live check names the origin that answered.
 
