@@ -57,3 +57,30 @@ test("product pages swap full poses on hover and focus instead of zooming", asyn
   await expect.poll(() => frame.getAttribute("src")).not.toBe(first);
   for (const img of await page.locator('[class*="cursor-zoom-in"] img').all()) await expectNoZoom(img);
 });
+
+test("Activewear cards lead with a complete full-length pose and hover to another full pose", async ({ page }) => {
+  await page.goto("/en/collections/activewear");
+  const cards = page.locator(".product-reveal-card");
+  for (let index = 0; index < 4; index += 1) {
+    const media = cards.nth(index).locator(".na-product-media");
+    await media.scrollIntoViewIfNeeded();
+    const hero = media.locator("img").nth(0);
+    const pose = media.locator("img").nth(1);
+    const heroRatio = await hero.evaluate(e => (e as HTMLImageElement).naturalWidth / (e as HTMLImageElement).naturalHeight);
+    const poseRatio = await pose.evaluate(e => (e as HTMLImageElement).naturalWidth / (e as HTMLImageElement).naturalHeight);
+    // A full-length pose is portrait; a square frame is a detail crop and must never lead.
+    expect(heroRatio).toBeLessThan(0.85);
+    expect(poseRatio).toBeLessThan(0.85);
+    expect(await hero.getAttribute("src")).not.toBe(await pose.getAttribute("src"));
+    for (const img of [hero, pose]) {
+      // The whole photograph is on screen: no crop, no zoom.
+      await expect(img).toHaveCSS("object-fit", "contain");
+      await expectNoZoom(img);
+    }
+    await expect(pose).toHaveCSS("opacity", "0");
+    await media.hover();
+    await expect(pose).toHaveCSS("opacity", "1");
+    await page.mouse.move(0, 0);
+    await expect(pose).toHaveCSS("opacity", "0");
+  }
+});

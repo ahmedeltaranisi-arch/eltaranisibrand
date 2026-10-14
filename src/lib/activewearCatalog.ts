@@ -1,4 +1,5 @@
 import snapshot from "./activewearCatalog.json";
+import measuredAspects from "./photoAspects.json";
 import {
   filterCount,
   type CollectionFilters,
@@ -41,9 +42,27 @@ type Snapshot = {
 
 const data = snapshot as unknown as Snapshot;
 
-export const activewearProducts: ActivewearProduct[] = [...data.products].sort(
-  (a, b) => a.featuredRank - b.featuredRank,
-);
+/** Pixel sizes measured once from the shipped WebPs; square frames are detail crops. */
+const PHOTO_ASPECTS = measuredAspects as unknown as Record<string, [number, number]>;
+
+/**
+ * A card shows the complete pose, so a colourway always leads with its full-length portrait
+ * frames and the square detail crops follow. The card still swaps to a further full-length
+ * pose on hover, which is a pose change — never a zoom or a crop of the garment.
+ */
+export function posedFrames(images: string[]): string[] {
+  const full: string[] = [];
+  const detail: string[] = [];
+  for (const src of images) {
+    const size = PHOTO_ASPECTS[src];
+    (size && size[1] > size[0] ? full : detail).push(src);
+  }
+  return full.length ? [...full, ...detail] : images;
+}
+
+export const activewearProducts: ActivewearProduct[] = [...data.products]
+  .sort((a, b) => a.featuredRank - b.featuredRank)
+  .map((product) => ({ ...product, images: posedFrames(product.images) }));
 
 const bySlug = new Map(activewearProducts.map((product) => [product.slug, product]));
 
