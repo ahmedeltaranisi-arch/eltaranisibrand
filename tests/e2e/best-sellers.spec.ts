@@ -214,7 +214,9 @@ test("hovering a swatch shows that colorway's own photograph, and the media adva
   await expect(card).not.toHaveAttribute("data-product-slug", slugBefore!);
   await expect(card.locator(".na-product-media img").first()).not.toHaveAttribute("src", srcBefore!);
   await expect(swatches.nth(1)).toHaveClass(/is-current/);
-  expect(await card.locator(".na-product-media img").first().getAttribute("src")).toMatch(/\/img\/new-arrivals\/[0-9a-f]{12}\.webp$/);
+  // The colourway's own photograph — pooling a slug's frames across the captures means either
+  // capture's directory may hold the complete shot this card renders.
+  expect(await card.locator(".na-product-media img").first().getAttribute("src")).toMatch(/\/img\/(new-arrivals|aw)\/[0-9a-f]{12}\.webp$/);
 
   // Hover shows the alternate pose of the same colorway; keys step through the rest. A colourway
   // with a single whole photograph has no alternate to show, so the card swaps only when it owns
