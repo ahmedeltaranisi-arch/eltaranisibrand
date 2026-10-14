@@ -41,12 +41,22 @@ the Activewear capture shot waist-up may be shot full length in the New Arrivals
 within those, the frames that hold the model's feet ahead of the closer crops, so a card leads
 with the most complete photograph the colourway owns.
 
+## The reference's own frames
+
+The reference store is the standard this storefront is measured against, so its card photography is
+the authority for a colourway. `scripts/vendor-reference-frames.mjs` stores the frames the reference
+ships for each colourway — its lead first, then its poses — as WebP inside `public/img/mate/` and
+registers them in `src/lib/referenceCardFrames.json`. A registered frame counts as **whole** in
+`frameStatus()`, because the reference itself renders exactly that frame on exactly that card; a
+colourway the reference photographs is therefore never dropped, and never leads with anything other
+than the reference's own lead.
+
 ## Frames and colourways that leave
 
-`selectFrames()` renders only complete frames, and a colourway left with none is dropped from the
-catalogue rather than shown cropped — the storefront is smaller and honest rather than complete
-and wrong. After the current scan the arrivals catalogue holds 167 colourways (was 177), the
-activewear catalogue 85 (was 95) and the shop-all catalogue 191 (was 205).
+`selectFrames()` renders only complete frames — complete by the scan, or shipped by the reference —
+and a colourway left with none is dropped from the catalogue rather than shown cropped. Before the
+reference's frames were vendored the shop-all catalogue rendered 191 of its 205 colourways; every
+row now renders.
 
 ## Verifying
 

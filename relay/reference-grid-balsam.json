@@ -1,0 +1,1010 @@
+{
+  "capturedAt": "2026-10-14T21:58:54.645Z",
+  "collection": "balsam",
+  "cards": [
+    {
+      "handle": "organic-fleece-cropped-half-zip-sweatshirt-balsam",
+      "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-1_3ddd6d57-16c3-463a-84c0-7d4733abaca0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-1_3ddd6d57-16c3-463a-84c0-7d4733abaca0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-4.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$158"
+    },
+    {
+      "handle": "organic-fleece-straight-leg-sweatpant-balsam",
+      "title": "Organic Fleece Straight Leg Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-3_a0f0260c-914c-4329-90a1-4970a623489f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-3_a0f0260c-914c-4329-90a1-4970a623489f.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-1_2d2abc9a-fa4a-4649-82de-75d17b3d370a.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-straight-leg-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-straight-leg-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-straight-leg-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-straight-leg-sweatpant-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "WISTERIA",
+          "handle": "organic-fleece-straight-leg-sweatpant-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-fleece-straight-leg-sweatpant-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-straight-leg-sweatpant-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-straight-leg-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-straight-leg-sweatpant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$128"
+    },
+    {
+      "handle": "organic-fleece-oversized-sweatshirt-balsam",
+      "title": "Organic Fleece Oversized Sweatshirt",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0263_0_aa67a16c-6952-401c-86b4-4aaa29cc28f3.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0263_0_aa67a16c-6952-401c-86b4-4aaa29cc28f3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0390_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0180_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0274_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0219_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-oversized-sweatshirt-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-boyfriend-sweatshirt-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-boyfriend-sweatshirt-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-boyfriend-sweatshirt-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-fleece-boyfriend-sweatshirt-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MUSHROOM",
+          "handle": "organic-fleece-boyfriend-sweatshirt-mushroom",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mushroom_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-boyfriend-sweatshirt-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-oversized-sweatshirt-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$138"
+    },
+    {
+      "handle": "organic-fleece-relaxed-pocket-sweatpant-balsam",
+      "title": "Organic Fleece Relaxed Pocket Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-1_22db094b-3310-476e-8050-a97c37b39c8f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-1_22db094b-3310-476e-8050-a97c37b39c8f.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "fleece-relaxed-pocket-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "fleece-relaxed-pocket-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "fleece-relaxed-pocket-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "fleece-relaxed-pocket-sweatpant-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MUSHROOM",
+          "handle": "fleece-relaxed-pocket-sweatpant-mushroom",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mushroom_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ROSEWATER",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+          "image": "https://matethelabel.com/cdn/shop/files/color-rosewater_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$128"
+    },
+    {
+      "handle": "organic-heritage-jersey-track-pant-bone-balsam",
+      "title": "Organic Heritage Jersey Track Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0091_68b6869f-92b4-4b99-8b7a-c1ef72c5c398.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0091_68b6869f-92b4-4b99-8b7a-c1ef72c5c398.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0223.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0185.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0303.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0048.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE BALSAM",
+          "handle": "organic-heritage-jersey-track-pant-bone-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-heritage-jersey-track-pant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY TIDE",
+          "handle": "organic-heritage-jersey-track-pant-mulberry-tide",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-tide_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY BONE",
+          "handle": "organic-heritage-jersey-track-pant-heather-grey-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-heritage-jersey-track-pant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$128"
+    },
+    {
+      "handle": "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
+      "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2818_3b51de77-ac71-41a2-ae04-9f069adf58fc.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2818_3b51de77-ac71-41a2-ae04-9f069adf58fc.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2842_fb60b330-c4c9-423e-883e-4e87430ae66d.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2805_c157df38-ee6e-4df8-8a1e-34576a8bba94.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2860_27d72fc3-e789-4230-a674-ebe0759a3738.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2808_af303e14-7453-4167-9eae-9b292dc0a4a0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "LEEK",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-leek",
+          "image": "https://matethelabel.com/cdn/shop/files/color-leek_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ROSEWATER",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+          "image": "https://matethelabel.com/cdn/shop/files/color-rosewater_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$128"
+    },
+    {
+      "handle": "organic-fleece-oversized-sweatpant-balsam",
+      "title": "Organic Fleece Oversized Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2815_9d0a91bd-060b-4b56-b5e3-b2afda1cb79f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2815_9d0a91bd-060b-4b56-b5e3-b2afda1cb79f.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2842_5459cfee-ce37-4af2-b378-a415d77cf3af.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2805_7fcc4e2f-05fd-40ca-8aab-7feaa7916a41.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2860_6981749c-dadd-47b7-8f66-244a8a11e6af.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2837.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-oversized-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-oversized-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-oversized-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-oversized-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-oversized-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    },
+    {
+      "handle": "organic-fleece-cropped-sweatpant-balsam",
+      "title": "Organic Fleece Cropped Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1182_e131df07-e410-4c67-9678-03731bf6fcc8.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1182_e131df07-e410-4c67-9678-03731bf6fcc8.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1240_2f0e875f-5615-4679-8dd8-159f56fa5996.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1127_88fb8eff-06b4-4241-b940-7f0ad953e206.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1141_f83a4ddf-319f-4781-9b91-7e3ca59b4c58.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1207_ba99fd70-b95f-4576-b393-9bba9a9729fe.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-cropped-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-cropped-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-cropped-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-cropped-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-cropped-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    }
+  ],
+  "byHandle": {
+    "organic-fleece-cropped-half-zip-sweatshirt-balsam": {
+      "handle": "organic-fleece-cropped-half-zip-sweatshirt-balsam",
+      "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-1_3ddd6d57-16c3-463a-84c0-7d4733abaca0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-1_3ddd6d57-16c3-463a-84c0-7d4733abaca0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-CROPPED-HALF-ZIP-BALSAM-4.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-cropped-half-zip-sweatshirt-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$158"
+    },
+    "organic-fleece-straight-leg-sweatpant-balsam": {
+      "handle": "organic-fleece-straight-leg-sweatpant-balsam",
+      "title": "Organic Fleece Straight Leg Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-3_a0f0260c-914c-4329-90a1-4970a623489f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-3_a0f0260c-914c-4329-90a1-4970a623489f.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-1_2d2abc9a-fa4a-4649-82de-75d17b3d370a.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-RELAXED-POCKET-SWEATPANT-BALSAM-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-straight-leg-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-straight-leg-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-straight-leg-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-straight-leg-sweatpant-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "WISTERIA",
+          "handle": "organic-fleece-straight-leg-sweatpant-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-fleece-straight-leg-sweatpant-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-straight-leg-sweatpant-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-straight-leg-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-straight-leg-sweatpant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$128"
+    },
+    "organic-fleece-oversized-sweatshirt-balsam": {
+      "handle": "organic-fleece-oversized-sweatshirt-balsam",
+      "title": "Organic Fleece Oversized Sweatshirt",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0263_0_aa67a16c-6952-401c-86b4-4aaa29cc28f3.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0263_0_aa67a16c-6952-401c-86b4-4aaa29cc28f3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0390_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0180_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0274_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-OVERSIZED-SWEATSHIRT-BALSAM_0219_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-oversized-sweatshirt-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-boyfriend-sweatshirt-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-boyfriend-sweatshirt-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-boyfriend-sweatshirt-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-fleece-boyfriend-sweatshirt-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MUSHROOM",
+          "handle": "organic-fleece-boyfriend-sweatshirt-mushroom",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mushroom_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-boyfriend-sweatshirt-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-oversized-sweatshirt-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$138"
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-balsam": {
+      "handle": "organic-fleece-relaxed-pocket-sweatpant-balsam",
+      "title": "Organic Fleece Relaxed Pocket Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-1_22db094b-3310-476e-8050-a97c37b39c8f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-1_22db094b-3310-476e-8050-a97c37b39c8f.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-BALSAM-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "fleece-relaxed-pocket-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "fleece-relaxed-pocket-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "fleece-relaxed-pocket-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "fleece-relaxed-pocket-sweatpant-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MUSHROOM",
+          "handle": "fleece-relaxed-pocket-sweatpant-mushroom",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mushroom_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ROSEWATER",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+          "image": "https://matethelabel.com/cdn/shop/files/color-rosewater_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-relaxed-pocket-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$128"
+    },
+    "organic-heritage-jersey-track-pant-bone-balsam": {
+      "handle": "organic-heritage-jersey-track-pant-bone-balsam",
+      "title": "Organic Heritage Jersey Track Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0091_68b6869f-92b4-4b99-8b7a-c1ef72c5c398.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0091_68b6869f-92b4-4b99-8b7a-c1ef72c5c398.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0223.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0185.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0303.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_14_ORGANIC_HERITAGE_JERSEY_BASEBALL_TEE_TRACK_PANT_BONE_BALSAM_0048.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE BALSAM",
+          "handle": "organic-heritage-jersey-track-pant-bone-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-heritage-jersey-track-pant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY TIDE",
+          "handle": "organic-heritage-jersey-track-pant-mulberry-tide",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-tide_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY BONE",
+          "handle": "organic-heritage-jersey-track-pant-heather-grey-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-heritage-jersey-track-pant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$128"
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-balsam": {
+      "handle": "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
+      "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2818_3b51de77-ac71-41a2-ae04-9f069adf58fc.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2818_3b51de77-ac71-41a2-ae04-9f069adf58fc.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2842_fb60b330-c4c9-423e-883e-4e87430ae66d.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2805_c157df38-ee6e-4df8-8a1e-34576a8bba94.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2860_27d72fc3-e789-4230-a674-ebe0759a3738.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2808_af303e14-7453-4167-9eae-9b292dc0a4a0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "LEEK",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-leek",
+          "image": "https://matethelabel.com/cdn/shop/files/color-leek_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ROSEWATER",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+          "image": "https://matethelabel.com/cdn/shop/files/color-rosewater_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$128"
+    },
+    "organic-fleece-oversized-sweatpant-balsam": {
+      "handle": "organic-fleece-oversized-sweatpant-balsam",
+      "title": "Organic Fleece Oversized Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2815_9d0a91bd-060b-4b56-b5e3-b2afda1cb79f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2815_9d0a91bd-060b-4b56-b5e3-b2afda1cb79f.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2842_5459cfee-ce37-4af2-b378-a415d77cf3af.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2805_7fcc4e2f-05fd-40ca-8aab-7feaa7916a41.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2860_6981749c-dadd-47b7-8f66-244a8a11e6af.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-ORGANIC_FLEECE_OVERSIZED_SWEATPANT_BALSAM-2837.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-oversized-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-oversized-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-oversized-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-oversized-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-oversized-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    },
+    "organic-fleece-cropped-sweatpant-balsam": {
+      "handle": "organic-fleece-cropped-sweatpant-balsam",
+      "title": "Organic Fleece Cropped Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1182_e131df07-e410-4c67-9678-03731bf6fcc8.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1182_e131df07-e410-4c67-9678-03731bf6fcc8.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1240_2f0e875f-5615-4679-8dd8-159f56fa5996.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1127_88fb8eff-06b4-4241-b940-7f0ad953e206.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1141_f83a4ddf-319f-4781-9b91-7e3ca59b4c58.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_08-ORGANIC_FLEECE_CROPPED_SWEATPANT_BALSAM-1207_ba99fd70-b95f-4576-b393-9bba9a9729fe.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-cropped-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-cropped-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-cropped-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-cropped-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-cropped-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    }
+  }
+}

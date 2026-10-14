@@ -1,5 +1,6 @@
 import { notFound, redirect } from "next/navigation";
-import { catalogProductSlugs, getCatalogProduct } from "@/lib/mateCatalog";
+import { catalogProductSlugs } from "@/lib/mateCatalog";
+import { anyCatalogProductSlugs, getAnyCatalogProduct } from "@/lib/shopAllProducts";
 import ArrivalProductDetails from "@/components/new-arrivals/ArrivalProductDetails";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
@@ -17,7 +18,7 @@ import ProductBuyBox from "@/components/ProductBuyBox";
 import Reveal from "@/components/Reveal";
 
 export function generateStaticParams() {
-  return [...new Set([...productSlugs, ...catalogProductSlugs])].map((slug) => ({ slug }));
+  return [...new Set([...productSlugs, ...catalogProductSlugs, ...anyCatalogProductSlugs])].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -26,7 +27,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
-  const arrival = getCatalogProduct(slug);
+  const arrival = getAnyCatalogProduct(slug);
   if (arrival) {
     const t = await getTranslations({ locale, namespace: "newArrivals" });
     return { title: `${t(`products.${arrival.style}`)} — ${t(`color.${arrival.color.name}`)}`, description: arrival.description, openGraph: { images: [arrival.images[0]] } };
@@ -44,7 +45,7 @@ export default async function ProductPage({
 }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const arrival = getCatalogProduct(slug);
+  const arrival = getAnyCatalogProduct(slug);
   if (arrival) return <ArrivalProductDetails key={arrival.slug} product={arrival} />;
 
   const product = getProductBySlug(slug);

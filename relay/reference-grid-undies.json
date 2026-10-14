@@ -1,0 +1,1204 @@
+{
+  "capturedAt": "2026-10-14T21:58:33.819Z",
+  "collection": "undies",
+  "cards": [
+    {
+      "handle": "organic-comfort-high-waist-brief-heather-grey",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0019_840afa3a-dc45-41af-bf6e-53eeab0ac9e0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0019_840afa3a-dc45-41af-bf6e-53eeab0ac9e0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0083.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0141.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0101.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0108.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0119.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0047_289fc8bb-49d5-4dc6-8623-54eb73998b6d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0047_289fc8bb-49d5-4dc6-8623-54eb73998b6d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0103.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0127.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0179.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0169.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0090.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-jet-black",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0094_291fbaee-782b-4035-979e-aa306010a7d0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0094_291fbaee-782b-4035-979e-aa306010a7d0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0156.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0114.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_JBLK_0193_abc60b6f-25c3-4066-b690-affd82ebaf4a.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0081.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0111.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-high-waist-brief-jet-black",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0003_24ba3c30-ef19-47d5-9535-9ee712015875.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0003_24ba3c30-ef19-47d5-9535-9ee712015875.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0030.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0074.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_JBLK_0180_a945e96b-3025-4f35-a698-c7ae2f4157fd.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0024.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0100.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-high-waist-brief-sand",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0011_3ef9a63f-bb5c-401b-b0be-6f262991826c.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0011_3ef9a63f-bb5c-401b-b0be-6f262991826c.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0120.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0035.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_NDS_0174_42fcb6cb-bab4-4dcc-a6b9-f9db4f4aa765.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0107.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0087.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-sand",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0136_d2433859-1adc-4654-a4e8-f203006b5859.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0136_d2433859-1adc-4654-a4e8-f203006b5859.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0159.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0085.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_NDS_0188_9821cb4b-3a2d-442c-9136-594f33cab0b2.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0066.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0116.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-high-waist-brief-espresso",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0037_432233e7-623b-4054-9cfb-4b1aaddfaf5e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0037_432233e7-623b-4054-9cfb-4b1aaddfaf5e.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0138.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0093.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_ESP_0178_914b03a3-fbf1-4e95-a660-b955627458e4.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0076.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0103.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-espresso",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0017_c76891c0-3064-4182-bf19-a43fa9cf2cfa.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0017_c76891c0-3064-4182-bf19-a43fa9cf2cfa.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0035.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0022.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_ESP_0269_125968f6-bed5-484a-aeff-db7a4491e658.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0046.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0075.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-bone",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0093_f7615529-9f13-423f-918d-3a1ca4fa0819.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0093_f7615529-9f13-423f-918d-3a1ca4fa0819.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0111.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0066.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_BON_0184_ea941356-69f2-4d86-a781-b6056202f483.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0101.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0089.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-high-waist-brief-bone",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0036.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0036.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_BON_0171_4e7ffbbf-d0c3-4d35-8582-57f6baec75d3.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0020.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0039.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45653_EDT_e1079eb0-179d-4cec-bac5-18b194ae9b34.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0004.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    {
+      "handle": "organic-comfort-high-waist-brief-3-pack-jet-black",
+      "title": "Organic Comfort High Waist Brief 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/HighWaistBriefBlack_web_545856d4-d6e9-47eb-8dc0-e6f2db1cb2ae.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/HighWaistBriefBlack_web_545856d4-d6e9-47eb-8dc0-e6f2db1cb2ae.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0002_5c4589c4-8c8b-4659-850b-5203c69745d7.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0023_a2614662-a891-4bec-9f5d-d7bf5cce88d1.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0029_b0155069-41cb-4258-b96e-4a436215fb9b.jpg",
+        "https://matethelabel.com/cdn/shop/files/241210_BC_MTL_DEC-FEB25_30_CORE_TRIANGLE_BRALETTE_BLACK_CORE_HIGH_WAIST_BRIEF_BLACK_00041_90cefa05-d3ed-4c76-a6ae-98ffd2511ef4.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0038_413e1cc2-ff19-4940-b786-367569de2514.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    },
+    {
+      "handle": "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso",
+      "title": "Organic Comfort High Waist Brief 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/HighWaistBrief_30d12863-ba4f-4b6a-8549-8819a5a548f3.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/HighWaistBrief_30d12863-ba4f-4b6a-8549-8819a5a548f3.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_28_ORGANIC_COMFORT_SCOOP_BRALETTE_SAND_ORGANIC_COMFORT_MID_RISE_BIKINI_SAND_0024_34e563cf-a6b0-49a8-90fe-dce1cd0a0b05.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45614_EDT_7849fdbc-aebc-4031-9ccd-b3f35daaba53.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_28_ORGANIC_COMFORT_SCOOP_BRALETTE_SAND_ORGANIC_COMFORT_MID_RISE_BIKINI_SAND_0039_8f4b435d-0792-43f6-9fb1-1ffca21477d2.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45593_EDT_52b0c898-86a2-49cc-b5f2-a901adce7723.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0004_7e4f6422-b7d3-4220-8676-c872e7ad7d48.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-3-pack-jet-black",
+      "title": "Organic Comfort Mid Rise Bikini 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/MidRiseBikiniBlack_web_b9732dbf-d834-4790-b2a2-138fc140b199.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MidRiseBikiniBlack_web_b9732dbf-d834-4790-b2a2-138fc140b199.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0035_e24c2e65-bbbb-41d6-aab9-f3862e88b871.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0044_bf107da8-5557-49dc-8225-7b5ed518ac89.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0040_5edb5319-de4a-42be-8cd6-bd90e5fb45c2.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46553_EDT_af115963-ad3c-47ca-bd9a-adc3178549b5.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0027_1eb2a54e-2eca-44d1-8346-84f70d0dc03a.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    },
+    {
+      "handle": "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso",
+      "title": "Organic Comfort Mid Rise Bikini 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/MidRiseBikini_c8c7815b-bc65-4eef-865b-d07618677738.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MidRiseBikini_c8c7815b-bc65-4eef-865b-d07618677738.jpg",
+        "https://matethelabel.com/cdn/shop/files/241210_BC_MTL_DEC-FEB25_31_CORE_TRIANGLE_BRALETTE_CORE_MID_RISE_BRIEF_0014_831b913a-f8cc-4df5-9a86-d42ae434c6d1.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_29_ORGANIC_COMFORT_TRIANGLE_BRALETTE_SAND_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_SAND_0025_a3ac4b08-0e0b-4bf1-8135-673055c89b04.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_26_ORGANIC_COMFORT_SCOOP_BRALETTE_BONE_ORGANIC_COMFORT_MID_RISE_BIKINI_BONE_0034_9d09f6b4-a7d2-4808-9ea8-304cc120cb40.jpg",
+        "https://matethelabel.com/cdn/shop/files/241210_BC_MTL_DEC-FEB25_31_CORE_TRIANGLE_BRALETTE_CORE_MID_RISE_BRIEF_0049_3976ba83-2db8-486f-9192-de6d705bb421.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_26_ORGANIC_COMFORT_SCOOP_BRALETTE_BONE_ORGANIC_COMFORT_MID_RISE_BIKINI_BONE_0001_08cf91af-2fd8-4ba1-a478-c8bf6a9e7519.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    }
+  ],
+  "byHandle": {
+    "organic-comfort-high-waist-brief-heather-grey": {
+      "handle": "organic-comfort-high-waist-brief-heather-grey",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0019_840afa3a-dc45-41af-bf6e-53eeab0ac9e0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0019_840afa3a-dc45-41af-bf6e-53eeab0ac9e0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0083.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0141.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0101.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0108.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_09_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_HEATHER_GREY_0119.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-mid-rise-bikini-heather-grey": {
+      "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0047_289fc8bb-49d5-4dc6-8623-54eb73998b6d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0047_289fc8bb-49d5-4dc6-8623-54eb73998b6d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0103.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0127.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0179.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0169.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0090.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-mid-rise-bikini-jet-black": {
+      "handle": "organic-comfort-mid-rise-bikini-jet-black",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0094_291fbaee-782b-4035-979e-aa306010a7d0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0094_291fbaee-782b-4035-979e-aa306010a7d0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0156.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0114.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_JBLK_0193_abc60b6f-25c3-4066-b690-affd82ebaf4a.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0081.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0111.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-high-waist-brief-jet-black": {
+      "handle": "organic-comfort-high-waist-brief-jet-black",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0003_24ba3c30-ef19-47d5-9535-9ee712015875.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0003_24ba3c30-ef19-47d5-9535-9ee712015875.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0030.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0074.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_JBLK_0180_a945e96b-3025-4f35-a698-c7ae2f4157fd.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0024.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_25_ORGANIC_COMFORT_SCOOP_BRALETTE_HIGH_WAIST_BRIEF_JETBLACK_0100.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-high-waist-brief-sand": {
+      "handle": "organic-comfort-high-waist-brief-sand",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0011_3ef9a63f-bb5c-401b-b0be-6f262991826c.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0011_3ef9a63f-bb5c-401b-b0be-6f262991826c.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0120.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0035.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_NDS_0174_42fcb6cb-bab4-4dcc-a6b9-f9db4f4aa765.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0107.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_28_ORGANIC_COMFORT_TRIANGLE_BRALETTE_HIGH_WAIST_BRIEF_SAND_0087.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-mid-rise-bikini-sand": {
+      "handle": "organic-comfort-mid-rise-bikini-sand",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0136_d2433859-1adc-4654-a4e8-f203006b5859.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0136_d2433859-1adc-4654-a4e8-f203006b5859.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0159.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0085.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_NDS_0188_9821cb4b-3a2d-442c-9136-594f33cab0b2.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0066.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0116.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-high-waist-brief-espresso": {
+      "handle": "organic-comfort-high-waist-brief-espresso",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0037_432233e7-623b-4054-9cfb-4b1aaddfaf5e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0037_432233e7-623b-4054-9cfb-4b1aaddfaf5e.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0138.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0093.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_ESP_0178_914b03a3-fbf1-4e95-a660-b955627458e4.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0076.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0103.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-mid-rise-bikini-espresso": {
+      "handle": "organic-comfort-mid-rise-bikini-espresso",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0017_c76891c0-3064-4182-bf19-a43fa9cf2cfa.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0017_c76891c0-3064-4182-bf19-a43fa9cf2cfa.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0035.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0022.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_ESP_0269_125968f6-bed5-484a-aeff-db7a4491e658.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0046.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0075.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-mid-rise-bikini-bone": {
+      "handle": "organic-comfort-mid-rise-bikini-bone",
+      "title": "Organic Comfort Mid Rise Bikini",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0093_f7615529-9f13-423f-918d-3a1ca4fa0819.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0093_f7615529-9f13-423f-918d-3a1ca4fa0819.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0111.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0066.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortMidRiseBikini_BON_0184_ea941356-69f2-4d86-a781-b6056202f483.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0101.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_26_ORGANIC_COMFORT_SCOOP_BRALETTE_MID_RISE_BIKINI_BONE_0089.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-mid-rise-bikini-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-mid-rise-bikini-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-mid-rise-bikini-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-high-waist-brief-bone": {
+      "handle": "organic-comfort-high-waist-brief-bone",
+      "title": "Organic Comfort High Waist Brief",
+      "lead": "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0036.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0036.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortHighWaistBrief_BON_0171_4e7ffbbf-d0c3-4d35-8582-57f6baec75d3.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0020.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0039.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45653_EDT_e1079eb0-179d-4cec-bac5-18b194ae9b34.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0004.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-high-waist-brief-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-high-waist-brief-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-high-waist-brief-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$28"
+    },
+    "organic-comfort-high-waist-brief-3-pack-jet-black": {
+      "handle": "organic-comfort-high-waist-brief-3-pack-jet-black",
+      "title": "Organic Comfort High Waist Brief 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/HighWaistBriefBlack_web_545856d4-d6e9-47eb-8dc0-e6f2db1cb2ae.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/HighWaistBriefBlack_web_545856d4-d6e9-47eb-8dc0-e6f2db1cb2ae.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0002_5c4589c4-8c8b-4659-850b-5203c69745d7.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0023_a2614662-a891-4bec-9f5d-d7bf5cce88d1.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0029_b0155069-41cb-4258-b96e-4a436215fb9b.jpg",
+        "https://matethelabel.com/cdn/shop/files/241210_BC_MTL_DEC-FEB25_30_CORE_TRIANGLE_BRALETTE_BLACK_CORE_HIGH_WAIST_BRIEF_BLACK_00041_90cefa05-d3ed-4c76-a6ae-98ffd2511ef4.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_30_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_JETBLACK_0038_413e1cc2-ff19-4940-b786-367569de2514.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    },
+    "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso": {
+      "handle": "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso",
+      "title": "Organic Comfort High Waist Brief 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/HighWaistBrief_30d12863-ba4f-4b6a-8549-8819a5a548f3.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/HighWaistBrief_30d12863-ba4f-4b6a-8549-8819a5a548f3.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_28_ORGANIC_COMFORT_SCOOP_BRALETTE_SAND_ORGANIC_COMFORT_MID_RISE_BIKINI_SAND_0024_34e563cf-a6b0-49a8-90fe-dce1cd0a0b05.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45614_EDT_7849fdbc-aebc-4031-9ccd-b3f35daaba53.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_28_ORGANIC_COMFORT_SCOOP_BRALETTE_SAND_ORGANIC_COMFORT_MID_RISE_BIKINI_SAND_0039_8f4b435d-0792-43f6-9fb1-1ffca21477d2.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45593_EDT_52b0c898-86a2-49cc-b5f2-a901adce7723.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_BONE_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_BONE_0004_7e4f6422-b7d3-4220-8676-c872e7ad7d48.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-high-waist-brief-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    },
+    "organic-comfort-mid-rise-bikini-3-pack-jet-black": {
+      "handle": "organic-comfort-mid-rise-bikini-3-pack-jet-black",
+      "title": "Organic Comfort Mid Rise Bikini 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/MidRiseBikiniBlack_web_b9732dbf-d834-4790-b2a2-138fc140b199.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MidRiseBikiniBlack_web_b9732dbf-d834-4790-b2a2-138fc140b199.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0035_e24c2e65-bbbb-41d6-aab9-f3862e88b871.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0044_bf107da8-5557-49dc-8225-7b5ed518ac89.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0040_5edb5319-de4a-42be-8cd6-bd90e5fb45c2.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46553_EDT_af115963-ad3c-47ca-bd9a-adc3178549b5.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0027_1eb2a54e-2eca-44d1-8346-84f70d0dc03a.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    },
+    "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso": {
+      "handle": "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso",
+      "title": "Organic Comfort Mid Rise Bikini 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/MidRiseBikini_c8c7815b-bc65-4eef-865b-d07618677738.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MidRiseBikini_c8c7815b-bc65-4eef-865b-d07618677738.jpg",
+        "https://matethelabel.com/cdn/shop/files/241210_BC_MTL_DEC-FEB25_31_CORE_TRIANGLE_BRALETTE_CORE_MID_RISE_BRIEF_0014_831b913a-f8cc-4df5-9a86-d42ae434c6d1.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_29_ORGANIC_COMFORT_TRIANGLE_BRALETTE_SAND_ORGANIC_COMFORT_HIGH_WAIST_BRIEF_SAND_0025_a3ac4b08-0e0b-4bf1-8135-673055c89b04.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_26_ORGANIC_COMFORT_SCOOP_BRALETTE_BONE_ORGANIC_COMFORT_MID_RISE_BIKINI_BONE_0034_9d09f6b4-a7d2-4808-9ea8-304cc120cb40.jpg",
+        "https://matethelabel.com/cdn/shop/files/241210_BC_MTL_DEC-FEB25_31_CORE_TRIANGLE_BRALETTE_CORE_MID_RISE_BRIEF_0049_3976ba83-2db8-486f-9192-de6d705bb421.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_26_ORGANIC_COMFORT_SCOOP_BRALETTE_BONE_ORGANIC_COMFORT_MID_RISE_BIKINI_BONE_0001_08cf91af-2fd8-4ba1-a478-c8bf6a9e7519.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE SAND ESPRESSO",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-sand-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-mid-rise-bikini-3-pack-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ],
+      "price": "$67"
+    }
+  }
+}

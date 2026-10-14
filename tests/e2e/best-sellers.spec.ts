@@ -216,7 +216,7 @@ test("hovering a swatch shows that colorway's own photograph, and the media adva
   await expect(swatches.nth(1)).toHaveClass(/is-current/);
   // The colourway's own photograph — pooling a slug's frames across the captures means either
   // capture's directory may hold the complete shot this card renders.
-  expect(await card.locator(".na-product-media img").first().getAttribute("src")).toMatch(/\/img\/(new-arrivals|aw)\/[0-9a-f]{12}\.webp$/);
+  expect(await card.locator(".na-product-media img").first().getAttribute("src")).toMatch(/\/img\/(new-arrivals|aw|mate)\/[0-9a-f]{12,16}\.webp$/);
 
   // Hover shows the alternate pose of the same colorway; keys step through the rest. A colourway
   // with a single whole photograph has no alternate to show, so the card swaps only when it owns
@@ -278,10 +278,10 @@ test("the reference brand never appears as copy and the footer is the home foote
   expect(body).not.toContain("Prand");
   expect(body).toContain("Eltaranisi");
   const footer = page.locator('[data-site-footer="eltaranisi"]');
-  await expect(footer).toContainText("Join the Eltaranisi world.");
+  await expect(footer).toContainText("Join the Eltaranisi Brand world.");
   await expect(footer).toContainText("© 2026");
   await page.goto("/en");
-  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("Join the Eltaranisi world.");
+  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("Join the Eltaranisi Brand world.");
 });
 
 test("mobile rails scroll inside their own row without overflowing the page", async ({ page }) => {

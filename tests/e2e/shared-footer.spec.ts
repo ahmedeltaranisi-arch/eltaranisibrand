@@ -6,7 +6,7 @@ test("homepage and arrivals share the exact Eltaranisi footer and typography", a
     await page.evaluate(() => document.fonts.ready);
     const footer = page.locator('[data-site-footer="eltaranisi"]');
     await expect(footer).toHaveCount(1);
-    await expect(footer).toContainText("Join the Eltaranisi world.");
+    await expect(footer).toContainText("Join the Eltaranisi Brand world.");
     await expect(footer).toContainText("ELTARANISI");
     snapshots.push(await footer.evaluate(e => ({ text: (e as HTMLElement).innerText, background: getComputedStyle(e).backgroundColor, font: getComputedStyle(e).fontFamily, heading: getComputedStyle(e.querySelector("h2")!).fontFamily, html: e.innerHTML.replace(/id="[^"]*"/g, "") })));
   }

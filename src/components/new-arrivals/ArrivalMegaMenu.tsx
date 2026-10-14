@@ -41,10 +41,11 @@ export const MEGA_TILES = [
 ] as const;
 
 /**
- * The Clothing mega menu, mirroring the reference's own rows: its category list, the five dyes it
- * features (each with that dye's real colorways behind it), its fabricates and its collections.
- * Rows the catalogue cannot stand behind (Sale, Gift Card, Organic Pima Cotton) are not rendered
- * until such products exist — a menu entry never lands on an empty page.
+ * The Clothing mega menu, mirroring the reference's own rows: its category list (through Sale), the
+ * five dyes it features (each with that dye's real colorways behind it), its fabricates and its
+ * collections (through Gift Card). Every row lands on a collection or product page this storefront
+ * really renders — the Sale shelf is the reference's own up-to-50-off list and the Gift Card row
+ * opens the gift card product, so no menu entry lands on an empty page.
  */
 const CLOTHING_CATEGORY_LINKS = [
   { key: "shopAllClothing", href: "/collections/all" },
@@ -58,6 +59,7 @@ const CLOTHING_CATEGORY_LINKS = [
   { key: "sleep", href: "/collections/sleep" },
   { key: "intimates", href: "/collections/intimates" },
   { key: "socks", href: "/collections/socks" },
+  { key: "sale", href: "/collections/up-to-50-off" },
 ] as const;
 
 const CLOTHING_COLLECTION_LINKS = [
@@ -67,6 +69,7 @@ const CLOTHING_COLLECTION_LINKS = [
   { key: "organicStudioUniform", href: "/collections/organic-studio-uniform" },
   { key: "cozyShop", href: "/collections/cozy-shop" },
   { key: "bundleAndSave", href: "/collections/bundle-and-save" },
+  { key: "giftCard", href: "/products/gift-card" },
 ] as const;
 
 export default function ArrivalMegaMenu({ label, href, variant = "activewear" }: {

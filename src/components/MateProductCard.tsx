@@ -5,7 +5,8 @@ import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import { formatLE, type MateProduct } from "@/lib/mateNewArrivals";
-import { catalogColorways, getCatalogProduct } from "@/lib/mateCatalog";
+import { catalogColorways } from "@/lib/mateCatalog";
+import { getAnyCatalogProduct } from "@/lib/shopAllProducts";
 
 export default function MateProductCard({ product, priority = false, onQuickAdd, leadingBadges, colorways: colorwayRow }: {
   product: MateProduct;
@@ -28,9 +29,12 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   const [imageFocused, setImageFocused] = useState(false);
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
   const dragged = useRef(false);
-  // The colourway we were handed wins; a slug switch resolves through both captures.
-  const active = activeSlug === product.slug ? product : getCatalogProduct(activeSlug) ?? product;
   const colorways = (colorwayRow ?? catalogColorways)(product);
+  // The colourway we were handed wins; a slug switch resolves inside this card's own swatch row
+  // first, so the swap shows that collection's own photograph of the colour.
+  const active = activeSlug === product.slug
+    ? product
+    : colorways.find((colorway) => colorway.slug === activeSlug) ?? getAnyCatalogProduct(activeSlug) ?? product;
   const title = t(`products.${active.style}`);
   const color = t(`color.${active.color.name}`);
   const badges = [...new Set([...(leadingBadges ?? []), ...active.badges])];
@@ -104,6 +108,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
       </div>
       <h3 className="na-product-title"><Link href={`/products/${active.slug}`}>{title}</Link></h3>
       <p className="na-product-price">{formatLE(active.priceLE)}</p>
+      {/* The reference prints the swatch rail under the price and the quick-add last. */}
       <div className={`na-swatches ${expanded ? "is-expanded" : ""}`} role="group" aria-label={t("colorLabel")}>
         {colorways.map((colorway) => (
           <button

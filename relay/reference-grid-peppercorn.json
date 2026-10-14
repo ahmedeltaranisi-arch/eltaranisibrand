@@ -1,0 +1,212 @@
+{
+  "capturedAt": "2026-10-14T21:58:58.052Z",
+  "collection": "peppercorn",
+  "cards": [
+    {
+      "handle": "merino-wrap-top-peppercorn",
+      "title": "Merino Wrap Top",
+      "lead": "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5045_0_8001900a-eba2-48d4-8d10-627bf980a464.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5045_0_8001900a-eba2-48d4-8d10-627bf980a464.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5067_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5026_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5041_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5051_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "PEPPERCORN",
+          "handle": "merino-wrap-top-peppercorn",
+          "image": "https://matethelabel.com/cdn/shop/files/color-peppercorn_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "merino-wrap-top-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MARLED GREY",
+          "handle": "merino-wrap-top-marled-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-marled-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$158"
+    },
+    {
+      "handle": "merino-boatneck-cardigan-peppercorn",
+      "title": "Merino Boatneck Cardigan",
+      "lead": "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1357_0_bb83d456-76bc-4f0c-920b-743084d0c22e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1357_0_bb83d456-76bc-4f0c-920b-743084d0c22e.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1388_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1283_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1375_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1336_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "PEPPERCORN",
+          "handle": "merino-boatneck-cardigan-peppercorn",
+          "image": "https://matethelabel.com/cdn/shop/files/color-peppercorn_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "merino-boatneck-cardigan-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MARLED GREY",
+          "handle": "merino-boatneck-cardigan-marled-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-marled-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    },
+    {
+      "handle": "merino-foldover-pant-peppercorn",
+      "title": "Merino Foldover Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-1_27e532ed-d472-4c72-8354-6c47b0208831.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-1_27e532ed-d472-4c72-8354-6c47b0208831.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "PEPPERCORN",
+          "handle": "merino-foldover-pant-peppercorn",
+          "image": "https://matethelabel.com/cdn/shop/files/color-peppercorn_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "merino-foldover-pant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MARLED GREY",
+          "handle": "merino-foldover-pant-marled-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-marled-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$158"
+    }
+  ],
+  "byHandle": {
+    "merino-wrap-top-peppercorn": {
+      "handle": "merino-wrap-top-peppercorn",
+      "title": "Merino Wrap Top",
+      "lead": "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5045_0_8001900a-eba2-48d4-8d10-627bf980a464.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5045_0_8001900a-eba2-48d4-8d10-627bf980a464.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5067_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5026_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5041_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-WRAP-TOP-PEPPERCORN_5051_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "PEPPERCORN",
+          "handle": "merino-wrap-top-peppercorn",
+          "image": "https://matethelabel.com/cdn/shop/files/color-peppercorn_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "merino-wrap-top-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MARLED GREY",
+          "handle": "merino-wrap-top-marled-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-marled-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$158"
+    },
+    "merino-boatneck-cardigan-peppercorn": {
+      "handle": "merino-boatneck-cardigan-peppercorn",
+      "title": "Merino Boatneck Cardigan",
+      "lead": "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1357_0_bb83d456-76bc-4f0c-920b-743084d0c22e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1357_0_bb83d456-76bc-4f0c-920b-743084d0c22e.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1388_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1283_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1375_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-BOATNECK-CARDIGAN-PEPPERCORN_1336_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "PEPPERCORN",
+          "handle": "merino-boatneck-cardigan-peppercorn",
+          "image": "https://matethelabel.com/cdn/shop/files/color-peppercorn_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "merino-boatneck-cardigan-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MARLED GREY",
+          "handle": "merino-boatneck-cardigan-marled-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-marled-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    },
+    "merino-foldover-pant-peppercorn": {
+      "handle": "merino-foldover-pant-peppercorn",
+      "title": "Merino Foldover Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-1_27e532ed-d472-4c72-8354-6c47b0208831.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-1_27e532ed-d472-4c72-8354-6c47b0208831.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/MERINO-FOLDOVER-PANT-PEPPERCORN-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "PEPPERCORN",
+          "handle": "merino-foldover-pant-peppercorn",
+          "image": "https://matethelabel.com/cdn/shop/files/color-peppercorn_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "merino-foldover-pant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MARLED GREY",
+          "handle": "merino-foldover-pant-marled-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-marled-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$158"
+    }
+  }
+}

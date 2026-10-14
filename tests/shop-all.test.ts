@@ -10,11 +10,12 @@ import { PAGE_SIZE } from "../src/lib/mateNewArrivals";
 
 const blank = { categories: [], sizes: [], colors: [] };
 
-test("shop all is the union of both captures, one row per photographed colorway", () => {
-  assert.equal(shopAllProducts.length, 191);
-  assert.equal(new Set(shopAllProducts.map((product) => product.slug)).size, 191);
-  // The Activewear capture's own products are all reachable here.
-  assert.ok(shopAllProducts.some((product) => product.slug === "organic-stretch-biker-short-jet-black"));
+test("shop all is the reference's own All collection, one row per photographed colorway", () => {
+  // The reference's All collection holds 328 cards; the catalogue also carries its sale shelf and
+  // the gift card, which the All collection does not list.
+  const all = railProducts("all");
+  assert.equal(all.length, 328);
+  assert.equal(new Set(all.map((product) => product.slug)).size, 328);
   // Every row ships real photography and a real purchase choice.
   for (const product of shopAllProducts) {
     assert.ok(product.images.length > 0, `${product.slug} has no photograph`);
@@ -23,11 +24,14 @@ test("shop all is the union of both captures, one row per photographed colorway"
 });
 
 test("every rail holds real products and is discoverable from the header", () => {
+  // The sale shelf is the reference's own up-to-50-off collection, which the Clothing menu links.
+  assert.equal(railProducts("up-to-50-off").length, 50);
   const counts = Object.fromEntries(SHOP_ALL_TABS.map((tab) => [tab.id, railProducts(tab.handle).length]));
-  assert.deepEqual(counts, { all: 191, activewear: 78, tees: 14, sweats: 77, intimates: 19, sleep: 18 });
-  // The Organic Stretch fabric rail is its own collection, so it cannot shadow Activewear.
-  assert.equal(railProducts("organic-stretch").length, 77);
-  assert.equal(railProducts("activewear").length, 78);
+  assert.deepEqual(counts, { all: 328, activewear: 95, tees: 46, sweats: 136, intimates: 39, sleep: 9 });
+  // The reference links its Organic Stretch row at its own Activewear collection, so the two rails
+  // hold the same products — and the dedicated Activewear page keeps its own furniture.
+  assert.equal(railProducts("organic-stretch").length, 95);
+  assert.equal(railProducts("activewear").length, 95);
   for (const tab of SHOP_ALL_TABS) assert.ok(railProducts(tab.handle).length > 0, `${tab.handle} is empty`);
   assert.ok(SHOP_ALL_FABRICS.length > 0);
   assert.ok(SHOP_ALL_DYES.length > 0);
@@ -35,23 +39,26 @@ test("every rail holds real products and is discoverable from the header", () =>
   assert.equal(SHOP_ALL_ROUTES.includes("activewear"), false);
   for (const handle of SHOP_ALL_ROUTES) {
     assert.ok(railProducts(handle).length > 0, `/collections/${handle} would render an empty grid`);
-    assert.ok(SHOP_ALL_TABS.some((tab) => tab.handle === handle) || SHOP_ALL_FABRICS.some((rail) => rail.handle === handle) || SHOP_ALL_DYES.some((rail) => rail.handle === handle) || ["tees", "sweats", "intimates", "sleep", "socks", "october-capsule", "getaway-edit", "cozy-shop", "bundle-and-save", "sweatshirts", "sweatpants", "sweaters", "bottoms"].includes(handle), handle);
+    assert.ok(SHOP_ALL_TABS.some((tab) => tab.handle === handle) || SHOP_ALL_FABRICS.some((rail) => rail.handle === handle) || SHOP_ALL_DYES.some((rail) => rail.handle === handle) || ["tees", "sweats", "intimates", "sleep", "socks", "october-capsule", "getaway-edit", "cozy-shop", "bundle-and-save", "sweatshirts", "sweatpants", "sweaters", "bottoms", "up-to-50-off"].includes(handle), handle);
   }
 });
 
 test("facet counts are derived from the catalogue, never typed in", () => {
-  const counts = shopAllFacetCounts(shopAllProducts, blank);
+  const all = railProducts("all");
+  const counts = shopAllFacetCounts(all, blank);
   const facetTotal = Object.values(counts.categories).reduce((a, b) => a + b, 0);
   const colorTotal = Object.values(counts.colors).reduce((a, b) => a + b, 0);
-  // One colorway (Chili Oil) carries neither a category nor a colour group on the reference
-  // store either, so it stays in the grid and out of every facet row.
-  const uncategorised = shopAllProducts.filter((product) => !product.category).length;
+  // One garment carries neither a category nor a colour group on the reference store either, so it
+  // stays in the grid and out of every facet row.
+  const uncategorised = all.filter((product) => !product.category).length;
   assert.equal(uncategorised, 1);
-  assert.equal(facetTotal, shopAllProducts.length - uncategorised);
-  assert.equal(colorTotal, shopAllProducts.length - uncategorised);
-  assert.equal(counts.categories.leggings, 34);
-  assert.equal(counts.categories["sports-bras"], 19);
-  assert.equal(counts.categories.sweatshirts, 38);
+  assert.equal(facetTotal, all.length - uncategorised);
+  // A colour group is one facet row per garment, so the four colourways the reference files in no
+  // group at all are the only ones missing from the colour rows.
+  assert.equal(colorTotal, all.length - 4);
+  assert.equal(counts.categories.leggings, 35);
+  assert.equal(counts.categories["sports-bras"], 23);
+  assert.equal(counts.categories.sweatshirts, 53);
   assert.equal(counts.sizes.XS > 0, true);
   // A facet never counts a value the drawer does not offer.
   for (const value of Object.keys(counts.categories)) assert.ok(SHOP_ALL_CATEGORIES.includes(value), value);
@@ -59,18 +66,18 @@ test("facet counts are derived from the catalogue, never typed in", () => {
   for (const value of Object.keys(counts.sizes)) assert.ok(SHOP_ALL_SIZE_FACETS.includes(value), value);
 });
 
-test("the size rows use the captured variants, and the twelve reference rows stay in order", () => {
-  assert.deepEqual([...SHOP_ALL_SIZE_FACETS], ["XS", "S", "S/M", "M", "M/L", "L", "XL", "XXL", "1X", "2X", "3X", "OS"]);
+test("the size rows use the captured variants, and the reference's own rows stay in order", () => {
+  assert.deepEqual([...SHOP_ALL_SIZE_FACETS], ["XS", "S", "S/M", "M", "M/L", "L", "XL", "XXL", "0/6m", "6/12m", "12/18m", "1X", "2X", "3X", "2/3y", "4/5y", "6/7y", "OS"]);
   const socks = shopAllProducts.filter((product) => product.category === "socks");
   assert.ok(socks.length > 0);
   for (const sock of socks) assert.equal(sizeMatches(sock, "S/M"), true);
   assert.equal(filterShopAll(shopAllProducts, { ...blank, sizes: ["OS"] }).length, 1);
-  assert.equal(filterShopAll(shopAllProducts, { ...blank, sizes: ["XXL"] }).length, 0);
+  assert.equal(filterShopAll(shopAllProducts, { ...blank, sizes: ["XXL"] }).length, 8);
 });
 
 test("filtering is OR within a facet and AND across facets, like every other collection", () => {
   const leggings = filterShopAll(shopAllProducts, { ...blank, categories: ["leggings"] });
-  assert.equal(leggings.length, 34);
+  assert.equal(leggings.length, 35);
   assert.ok(leggings.every((product) => product.category === "leggings"));
   const green = filterShopAll(shopAllProducts, { ...blank, colors: ["Green"] });
   const greenLeggings = filterShopAll(shopAllProducts, { ...blank, categories: ["leggings"], colors: ["Green"] });

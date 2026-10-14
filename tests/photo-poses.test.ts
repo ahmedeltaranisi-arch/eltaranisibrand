@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
+import statuses from "../src/lib/photoPoses.json";
 import { activewearProducts } from "../src/lib/activewearCatalog";
 import { arrivalCatalog } from "../src/lib/mateNewArrivals";
 import { shopAllProducts } from "../src/lib/shopAll";
@@ -9,6 +10,7 @@ import {
   frameStatus,
   hoverFrame,
   isProductOnly,
+  isReferenceCardFrame,
   pooledFrames,
   selectFrames,
 } from "../src/lib/photoSelection";
@@ -57,7 +59,7 @@ test("every card leads with a complete photograph and swaps to a second one", ()
   assert.ok(swaps > 250, `only ${swaps} colourways can swap poses`);
 });
 
-test("a colourway whose photographs are all crops leaves the catalogue", () => {
+test("a colourway renders the reference's own frames, and only whole frames otherwise", () => {
   const cases = [
     ["arrivals", rawArrivals, arrivalCatalog],
     ["activewear", rawActivewear, activewearProducts],
@@ -78,11 +80,22 @@ test("a colourway whose photographs are all crops leaves the catalogue", () => {
       if (!usable) { dropped += 1; droppedSlugs.push(product.slug); }
     }
   }
-  assert.equal(dropped, 34, "thirty-four catalogue rows lose their only complete photograph");
-  assert.equal(new Set(droppedSlugs).size, 16, "sixteen colourways leave the storefront");
-  assert.equal(arrivalCatalog.length, 167);
-  assert.equal(activewearProducts.length, 85);
-  assert.equal(shopAllProducts.length, 191);
+  // The reference's own card frames count as complete — its photography is the standard this
+  // storefront follows — so no row of the rebuilt catalogue loses its only photograph.
+  assert.equal(dropped, 0, "every catalogue row keeps at least one frame the reference renders");
+  assert.equal(new Set(droppedSlugs).size, 0);
+  assert.equal(arrivalCatalog.length, 177);
+  assert.equal(activewearProducts.length, 95);
+  assert.equal(shopAllProducts.length, 377);
+  // The measured crops are still crops: a frame the scan flagged is only kept when the reference
+  // ships exactly that frame on its own product card.
+  const crops = Object.entries(statuses as unknown as Record<string, number>)
+    .filter(([, status]) => status === 0)
+    .map(([src]) => src);
+  assert.ok(crops.length > 0, "the scan recorded the crops it measured");
+  for (const crop of crops) {
+    assert.equal(frameStatus(crop), isReferenceCardFrame(crop) ? "whole" : "crop", crop);
+  }
 });
 
 test("a colourway is judged on every photograph of that slug, not just its own catalogue", () => {

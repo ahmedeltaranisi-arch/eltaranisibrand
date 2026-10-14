@@ -1,0 +1,600 @@
+{
+  "capturedAt": "2026-10-14T21:58:52.300Z",
+  "collection": "wisteria",
+  "cards": [
+    {
+      "handle": "organic-fleece-pocket-hoodie-wisteria",
+      "title": "Organic Fleece Pocket Hoodie",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0707_0_504a539e-99b2-4ac8-a12f-2c2085ee4a80.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0707_0_504a539e-99b2-4ac8-a12f-2c2085ee4a80.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0718_3_0b936f5d-2854-481f-bd5b-08c9029bab73.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0751_3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0671_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0713_3.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-fleece-pocket-hoodie-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-pocket-hoodie-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-pocket-hoodie-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-pocket-hoodie-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "LEEK",
+          "handle": "organic-fleece-pocket-hoodie-leek",
+          "image": "https://matethelabel.com/cdn/shop/files/color-leek_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-pocket-hoodie-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$158"
+    },
+    {
+      "handle": "organic-fleece-straight-leg-sweatpant-wisteria",
+      "title": "Organic Fleece Straight Leg Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0786_0_753635c9-4045-4d35-97dd-b7c84881c33e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0786_0_753635c9-4045-4d35-97dd-b7c84881c33e.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0821_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0800_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0816_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0818_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-fleece-straight-leg-sweatpant-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-straight-leg-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-straight-leg-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-straight-leg-sweatpant-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-straight-leg-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-fleece-straight-leg-sweatpant-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-straight-leg-sweatpant-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-straight-leg-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-straight-leg-sweatpant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$128"
+    },
+    {
+      "handle": "organic-poplin-long-sleeve-button-down-wisteria",
+      "title": "Organic Poplin Long Sleeve Button Down",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0029_a97096c9-b764-40dc-b735-fbf02585fd5d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0029_a97096c9-b764-40dc-b735-fbf02585fd5d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0176.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0145.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0048_2bbd9d37-23a1-4c43-a699-7786eb6f91dc.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0157_6edb2aa8-78f8-4d46-a125-cbacbc77c7c3.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-poplin-long-sleeve-button-down-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-poplin-long-sleeve-buttondown-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "Java",
+          "handle": "organic-poplin-long-sleeve-button-down-java",
+          "image": "https://matethelabel.com/cdn/shop/files/color-java_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY STRIPE",
+          "handle": "organic-poplin-striped-long-sleeve-button-down-mulberry-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "CUSTARD",
+          "handle": "organic-poplin-long-sleeve-button-down-custard",
+          "image": "https://matethelabel.com/cdn/shop/files/color-custard_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PACIFIC STRIPE",
+          "handle": "organic-poplin-striped-long-sleeve-button-down-pacific-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pacific-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BLUEBELL STRIPE",
+          "handle": "organic-poplin-striped-long-sleeve-button-down-bluebell-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bluebell-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "KELP",
+          "handle": "organic-poplin-long-sleeve-button-down-kelp",
+          "image": "https://matethelabel.com/cdn/shop/files/color-kelp_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$89"
+    },
+    {
+      "handle": "organic-poplin-short-wisteria",
+      "title": "Organic Poplin Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0157_584cd834-9b06-4367-b555-02ab55f1c512.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0157_584cd834-9b06-4367-b555-02ab55f1c512.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0207.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0164.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0048.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0029.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-poplin-short-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MULBERRY STRIPE",
+          "handle": "organic-poplin-striped-short-mulberry-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BLUEBELL STRIPE",
+          "handle": "organic-poplin-striped-short-bluebell-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bluebell-stripe_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-poplin-essential-pant-wisteria",
+      "title": "Organic Poplin Essential Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0003_41d939c1-a243-457f-8e04-d63b2c135e27.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0003_41d939c1-a243-457f-8e04-d63b2c135e27.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0078.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0034.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0048.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0088.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-poplin-essential-pant-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "Java",
+          "handle": "organic-poplin-essential-pant-java",
+          "image": "https://matethelabel.com/cdn/shop/files/color-java_96x96.png",
+          "current": false
+        },
+        {
+          "color": "CUSTARD",
+          "handle": "organic-poplin-essential-pant-custard",
+          "image": "https://matethelabel.com/cdn/shop/files/color-custard_96x96.png",
+          "current": false
+        },
+        {
+          "color": "KELP",
+          "handle": "organic-poplin-essential-pant-kelp",
+          "image": "https://matethelabel.com/cdn/shop/files/color-kelp_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PACIFIC STRIPE",
+          "handle": "organic-poplin-striped-essential-pant-pacific-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pacific-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BLUEBELL STRIPE",
+          "handle": "organic-poplin-essential-striped-pant-bluebell-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bluebell-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY STRIPE",
+          "handle": "organic-poplin-essential-striped-pant-mulberry-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-stripe_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    }
+  ],
+  "byHandle": {
+    "organic-fleece-pocket-hoodie-wisteria": {
+      "handle": "organic-fleece-pocket-hoodie-wisteria",
+      "title": "Organic Fleece Pocket Hoodie",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0707_0_504a539e-99b2-4ac8-a12f-2c2085ee4a80.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0707_0_504a539e-99b2-4ac8-a12f-2c2085ee4a80.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0718_3_0b936f5d-2854-481f-bd5b-08c9029bab73.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0751_3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0671_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-POCKET-HOODIE-WISTERIA_0713_3.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-fleece-pocket-hoodie-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-pocket-hoodie-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-pocket-hoodie-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-pocket-hoodie-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "LEEK",
+          "handle": "organic-fleece-pocket-hoodie-leek",
+          "image": "https://matethelabel.com/cdn/shop/files/color-leek_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-pocket-hoodie-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$158"
+    },
+    "organic-fleece-straight-leg-sweatpant-wisteria": {
+      "handle": "organic-fleece-straight-leg-sweatpant-wisteria",
+      "title": "Organic Fleece Straight Leg Sweatpant",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0786_0_753635c9-4045-4d35-97dd-b7c84881c33e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0786_0_753635c9-4045-4d35-97dd-b7c84881c33e.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0821_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0800_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0816_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-FLEECE-STRAIGHT-LEG-SWEATPANT-WISTERIA_0818_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-fleece-straight-leg-sweatpant-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-fleece-straight-leg-sweatpant-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-fleece-straight-leg-sweatpant-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-fleece-straight-leg-sweatpant-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BALSAM",
+          "handle": "organic-fleece-straight-leg-sweatpant-balsam",
+          "image": "https://matethelabel.com/cdn/shop/files/color-balsam_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-fleece-straight-leg-sweatpant-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "organic-fleece-straight-leg-sweatpant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ALMOND",
+          "handle": "organic-fleece-straight-leg-sweatpant-almond",
+          "image": "https://matethelabel.com/cdn/shop/files/color-almond_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-fleece-straight-leg-sweatpant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-fleece-straight-leg-sweatpant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$128"
+    },
+    "organic-poplin-long-sleeve-button-down-wisteria": {
+      "handle": "organic-poplin-long-sleeve-button-down-wisteria",
+      "title": "Organic Poplin Long Sleeve Button Down",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0029_a97096c9-b764-40dc-b735-fbf02585fd5d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0029_a97096c9-b764-40dc-b735-fbf02585fd5d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0176.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0145.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0048_2bbd9d37-23a1-4c43-a699-7786eb6f91dc.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0157_6edb2aa8-78f8-4d46-a125-cbacbc77c7c3.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-poplin-long-sleeve-button-down-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-poplin-long-sleeve-buttondown-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "Java",
+          "handle": "organic-poplin-long-sleeve-button-down-java",
+          "image": "https://matethelabel.com/cdn/shop/files/color-java_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY STRIPE",
+          "handle": "organic-poplin-striped-long-sleeve-button-down-mulberry-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "CUSTARD",
+          "handle": "organic-poplin-long-sleeve-button-down-custard",
+          "image": "https://matethelabel.com/cdn/shop/files/color-custard_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PACIFIC STRIPE",
+          "handle": "organic-poplin-striped-long-sleeve-button-down-pacific-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pacific-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BLUEBELL STRIPE",
+          "handle": "organic-poplin-striped-long-sleeve-button-down-bluebell-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bluebell-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "KELP",
+          "handle": "organic-poplin-long-sleeve-button-down-kelp",
+          "image": "https://matethelabel.com/cdn/shop/files/color-kelp_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$89"
+    },
+    "organic-poplin-short-wisteria": {
+      "handle": "organic-poplin-short-wisteria",
+      "title": "Organic Poplin Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0157_584cd834-9b06-4367-b555-02ab55f1c512.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0157_584cd834-9b06-4367-b555-02ab55f1c512.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0207.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0164.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0048.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_18_ORGANIC_POPLIN_LONG_SLEEVE_BUTTONDOWN_SHORT_WISTERIA_0029.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-poplin-short-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MULBERRY STRIPE",
+          "handle": "organic-poplin-striped-short-mulberry-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BLUEBELL STRIPE",
+          "handle": "organic-poplin-striped-short-bluebell-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bluebell-stripe_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$44"
+    },
+    "organic-poplin-essential-pant-wisteria": {
+      "handle": "organic-poplin-essential-pant-wisteria",
+      "title": "Organic Poplin Essential Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0003_41d939c1-a243-457f-8e04-d63b2c135e27.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0003_41d939c1-a243-457f-8e04-d63b2c135e27.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0078.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0034.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0048.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_22_ORGANIC_POPLIN_ESSENTIAL_PANT_WISTERIA_0088.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "WISTERIA",
+          "handle": "organic-poplin-essential-pant-wisteria",
+          "image": "https://matethelabel.com/cdn/shop/files/color-wisteria_96x96.png",
+          "current": true
+        },
+        {
+          "color": "Java",
+          "handle": "organic-poplin-essential-pant-java",
+          "image": "https://matethelabel.com/cdn/shop/files/color-java_96x96.png",
+          "current": false
+        },
+        {
+          "color": "CUSTARD",
+          "handle": "organic-poplin-essential-pant-custard",
+          "image": "https://matethelabel.com/cdn/shop/files/color-custard_96x96.png",
+          "current": false
+        },
+        {
+          "color": "KELP",
+          "handle": "organic-poplin-essential-pant-kelp",
+          "image": "https://matethelabel.com/cdn/shop/files/color-kelp_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PACIFIC STRIPE",
+          "handle": "organic-poplin-striped-essential-pant-pacific-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pacific-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BLUEBELL STRIPE",
+          "handle": "organic-poplin-essential-striped-pant-bluebell-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bluebell-stripe_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY STRIPE",
+          "handle": "organic-poplin-essential-striped-pant-mulberry-stripe",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry-stripe_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$138"
+    }
+  }
+}

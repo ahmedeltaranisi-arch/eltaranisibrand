@@ -13,10 +13,12 @@ import { resolveExternalImageSources, sanitizeImagePath } from "../src/lib/image
 
 const blank = emptyFilters();
 
-test("real catalog is unique: 107 arrivals and 167 verified colorways", () => {
+test("real catalog is unique: 107 arrivals and 177 verified colorways", () => {
   assert.equal(mateNewArrivals.length, 107);
-  assert.equal(arrivalCatalog.length, 167);
-  assert.equal(new Set(arrivalCatalog.map((p) => p.slug)).size, 167);
+  // The reference's own card frames count as complete, so every colourway its cards photograph
+  // renders here — the pool grew from 167 to 177 when the reference's frames were vendored.
+  assert.equal(arrivalCatalog.length, 177);
+  assert.equal(new Set(arrivalCatalog.map((p) => p.slug)).size, 177);
   assert.equal(PAGE_SIZE, 48);
   assert.deepEqual(mateNewArrivals.map((p) => p.featuredRank), Array.from({ length: 107 }, (_, i) => i));
 });
@@ -36,7 +38,10 @@ test("every color uses real photographs and a real swatch served via the externa
     for (const image of p.images) {
       // Pooling a colourway's frames across the captures means either directory can hold
       // the complete photograph this row renders.
-      assert.ok(image.startsWith("/img/new-arrivals/") || image.startsWith("/img/aw/"), image);
+      assert.ok(
+        image.startsWith("/img/new-arrivals/") || image.startsWith("/img/aw/") || image.startsWith("/img/mate/"),
+        image,
+      );
       const clean = sanitizeImagePath(image.replace(/^\/img\//, ""));
       assert.ok(clean, image);
       assert.ok(resolveExternalImageSources(clean).length >= 3, image);
@@ -49,7 +54,7 @@ test("every color uses real photographs and a real swatch served via the externa
     }
   }
   // Only whole photographs are shown: the measured crops stay out of every product's frames.
-  assert.equal(images.size, 438);
+  assert.equal(images.size, 1284);
 });
 
 test("category, size and color counts reflect actual available products", () => {

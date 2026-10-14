@@ -47,11 +47,13 @@ test("customer-visible locale copy never names the reference brand", () => {
 });
 
 test("product copy describes Eltaranisi Brand, not the label it was cloned from", () => {
-  const strings: Array<{ path: string; text: string }> = [];
-  walkStrings(readJson("src/lib/newArrivalsCatalog.json"), "", strings);
-  assert.ok(strings.length > 100, "the catalog is the product of the check");
-  for (const { path, text } of strings) {
-    assert.equal(REFERENCE.test(text), false, `newArrivalsCatalog.json → ${path}`);
+  for (const catalog of ["src/lib/newArrivalsCatalog.json", "src/lib/shopAllCatalog.json"]) {
+    const strings: Array<{ path: string; text: string }> = [];
+    walkStrings(readJson(catalog), "", strings);
+    assert.ok(strings.length > 100, `${catalog} is the product of the check`);
+    for (const { path, text } of strings) {
+      assert.equal(REFERENCE.test(text), false, `${catalog} → ${path}`);
+    }
   }
 });
 

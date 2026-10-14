@@ -167,7 +167,7 @@ test("Getaway photography/Shop Now, all FAQs and footer links are present and fu
   await expect(faq.locator("em")).toBeVisible();
   await expect(page.locator(".na-breadcrumbs")).toContainText("Shop All");
   await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("© 2026");
-  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("Join the Eltaranisi world.");
+  await expect(page.locator('[data-site-footer="eltaranisi"]')).toContainText("Join the Eltaranisi Brand world.");
 });
 
 test("newsletter never fabricates success when provider isn't configured", async ({ page }) => {

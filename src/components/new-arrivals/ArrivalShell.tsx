@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { usePathname } from "@/navigation";
-import { getCatalogProduct } from "@/lib/mateCatalog";
+import { getAnyCatalogProduct } from "@/lib/shopAllProducts";
 import { SHOP_ALL_ROUTES } from "@/lib/shopAll";
 import ArrivalPromo from "./ArrivalPromo";
 import ArrivalCartDrawer from "./ArrivalCartDrawer";
@@ -38,7 +38,7 @@ export default function ArrivalShell({ children, footer }: {
 }) {
   const pathname = usePathname();
   const productSlug = pathname.startsWith("/products/") ? pathname.split("/")[2] : "";
-  const isArrivalRoute = ARRIVAL_COLLECTIONS.has(pathname) || !!getCatalogProduct(productSlug);
+  const isArrivalRoute = ARRIVAL_COLLECTIONS.has(pathname) || !!getAnyCatalogProduct(productSlug);
   if (!isArrivalRoute) return <><main id="main" className="flex-1">{children}</main>{footer}<PromoButton /><CartDrawer /></>;
   return (
     <>

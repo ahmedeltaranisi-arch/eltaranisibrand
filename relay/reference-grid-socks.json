@@ -1,0 +1,380 @@
+{
+  "capturedAt": "2026-10-14T21:58:23.073Z",
+  "collection": "socks",
+  "cards": [
+    {
+      "handle": "organic-cotton-sock-3-pack-natural",
+      "title": "Organic Cotton Sock 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetB_OrganicCottonSock3Pack_NAT_d38781a8-f82f-48a5-89d5-c2d107cc104d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetB_OrganicCottonSock3Pack_NAT_d38781a8-f82f-48a5-89d5-c2d107cc104d.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_0281d8c5-5fc9-410c-aab2-bf37bd926bce.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0037e.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0036e_12c37513-50ce-48db-91b6-38df89db713c.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-3-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": true
+        },
+        {
+          "color": "NATURAL SAGE SEDONA",
+          "handle": "organic-cotton-sock-3-pack-natural-sage-sedona",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural-sage-sedona_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$48"
+    },
+    {
+      "handle": "organic-cotton-sock-3-pack-natural-sage-sedona",
+      "title": "Organic Cotton Sock 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_optimized_3b6fd109-79bc-4db3-b4ff-a61121548b35.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_optimized_3b6fd109-79bc-4db3-b4ff-a61121548b35.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0020e_16816084-b5ca-4c66-bfee-e925b59d2208_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0037e_05ef3478-8c3d-421a-87fe-e1d1ca4181ff_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0025e_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetB_OrganicCottonSock3Pack_NATSAGSED_0482_1500x2000_1_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0005e_optimized.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NATURAL SAGE SEDONA",
+          "handle": "organic-cotton-sock-3-pack-natural-sage-sedona",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural-sage-sedona_96x96.png",
+          "current": true
+        },
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-3-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$48"
+    },
+    {
+      "handle": "organic-cotton-sock-5-pack-natural",
+      "title": "Organic Cotton Sock 5 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/5_Across_Bone_24e0133f-2b20-43ee-98a0-86a9c9a1436f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/5_Across_Bone_24e0133f-2b20-43ee-98a0-86a9c9a1436f.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0014_8d10c63a-f1ef-4961-8a2a-c2ebfa86e25f.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_c5ff906d-105c-4f0f-84dd-c5317d214afd.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0037e_80a572f6-d825-4383-ac6f-f6be54588870.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0036e_1cfdeae2-5c21-465a-ae7f-3b78325d7189.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0051_d09cb6a4-8133-4af1-8bf7-f46c4fbd18e1.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-5-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE,FOREST,MAPLE,JET BLACK,BIRCH",
+          "handle": "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-forest-maple-jet-black-birch_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch",
+      "title": "Organic Cotton Sock 5 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/organic_sock_5_pack_f790e479-7f45-4ee1-b6d9-1885b1ea1474.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/organic_sock_5_pack_f790e479-7f45-4ee1-b6d9-1885b1ea1474.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0051_68a8272b-1af4-4d63-ba64-c74cc8f2a777.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0048.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0041.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0037_6d7c90b1-412c-45c6-afd0-34994e4b5e18.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0029.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_29_607_WOMENS_SOCK_5_PACK_0009.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE,FOREST,MAPLE,JET BLACK,BIRCH",
+          "handle": "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-forest-maple-jet-black-birch_96x96.png",
+          "current": true
+        },
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-5-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-cotton-trouser-sock-bone",
+      "title": "Organic Cotton Trouser Sock",
+      "lead": "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_20_ORGANIC_TROUSER_SOCK_3PK_BONE_0005_b03d13d7-78e2-49f6-9c0d-41d4a36d18e4.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_20_ORGANIC_TROUSER_SOCK_3PK_BONE_0005_b03d13d7-78e2-49f6-9c0d-41d4a36d18e4.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0010.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0015.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0027.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_20_ORGANIC_TROUSER_SOCK_3PK_BONE_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_SPRING_CLEAN_EDITORIAL_0311.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-cotton-trouser-sock-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE, CONCH, RAFFIA",
+          "handle": "organic-cotton-trouser-sock-bone-conch-raffia",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-conch-raffia_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$31"
+    },
+    {
+      "handle": "organic-cotton-trouser-sock-bone-conch-raffia",
+      "title": "Organic Cotton Trouser Sock",
+      "lead": "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0047_ec139772-c3db-43eb-b461-fbb1ccd9cb11.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0047_ec139772-c3db-43eb-b461-fbb1ccd9cb11.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0035.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0027_cdf220d2-9da9-4a5a-9db1-3ee8607bb1e8.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0039.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_SPRING_CLEAN_EDITORIAL_0316.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE, CONCH, RAFFIA",
+          "handle": "organic-cotton-trouser-sock-bone-conch-raffia",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-conch-raffia_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-cotton-trouser-sock-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$31"
+    }
+  ],
+  "byHandle": {
+    "organic-cotton-sock-3-pack-natural": {
+      "handle": "organic-cotton-sock-3-pack-natural",
+      "title": "Organic Cotton Sock 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetB_OrganicCottonSock3Pack_NAT_d38781a8-f82f-48a5-89d5-c2d107cc104d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetB_OrganicCottonSock3Pack_NAT_d38781a8-f82f-48a5-89d5-c2d107cc104d.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_0281d8c5-5fc9-410c-aab2-bf37bd926bce.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0037e.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0036e_12c37513-50ce-48db-91b6-38df89db713c.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-3-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": true
+        },
+        {
+          "color": "NATURAL SAGE SEDONA",
+          "handle": "organic-cotton-sock-3-pack-natural-sage-sedona",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural-sage-sedona_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$48"
+    },
+    "organic-cotton-sock-3-pack-natural-sage-sedona": {
+      "handle": "organic-cotton-sock-3-pack-natural-sage-sedona",
+      "title": "Organic Cotton Sock 3 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_optimized_3b6fd109-79bc-4db3-b4ff-a61121548b35.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_optimized_3b6fd109-79bc-4db3-b4ff-a61121548b35.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0020e_16816084-b5ca-4c66-bfee-e925b59d2208_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0037e_05ef3478-8c3d-421a-87fe-e1d1ca4181ff_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0025e_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250128_LightWork_MateTheLabel_ApparelFlats_SetB_OrganicCottonSock3Pack_NATSAGSED_0482_1500x2000_1_optimized.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0005e_optimized.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NATURAL SAGE SEDONA",
+          "handle": "organic-cotton-sock-3-pack-natural-sage-sedona",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural-sage-sedona_96x96.png",
+          "current": true
+        },
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-3-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$48"
+    },
+    "organic-cotton-sock-5-pack-natural": {
+      "handle": "organic-cotton-sock-5-pack-natural",
+      "title": "Organic Cotton Sock 5 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/5_Across_Bone_24e0133f-2b20-43ee-98a0-86a9c9a1436f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/5_Across_Bone_24e0133f-2b20-43ee-98a0-86a9c9a1436f.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0014_8d10c63a-f1ef-4961-8a2a-c2ebfa86e25f.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0042e_c5ff906d-105c-4f0f-84dd-c5317d214afd.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0037e_80a572f6-d825-4383-ac6f-f6be54588870.jpg",
+        "https://matethelabel.com/cdn/shop/files/230503_BC_MTL_Q2-Q3_PDP_LOOK_41_ESSENTIALS_SOCKS_0036e_1cfdeae2-5c21-465a-ae7f-3b78325d7189.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0051_d09cb6a4-8133-4af1-8bf7-f46c4fbd18e1.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-5-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE,FOREST,MAPLE,JET BLACK,BIRCH",
+          "handle": "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-forest-maple-jet-black-birch_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$68"
+    },
+    "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch": {
+      "handle": "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch",
+      "title": "Organic Cotton Sock 5 Pack",
+      "lead": "https://matethelabel.com/cdn/shop/files/organic_sock_5_pack_f790e479-7f45-4ee1-b6d9-1885b1ea1474.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/organic_sock_5_pack_f790e479-7f45-4ee1-b6d9-1885b1ea1474.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0051_68a8272b-1af4-4d63-ba64-c74cc8f2a777.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0048.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0041.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0037_6d7c90b1-412c-45c6-afd0-34994e4b5e18.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_28_605_WOMENS_SOCK_3_PACK_0029.jpg",
+        "https://matethelabel.com/cdn/shop/files/240903_MTL_29_607_WOMENS_SOCK_5_PACK_0009.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE,FOREST,MAPLE,JET BLACK,BIRCH",
+          "handle": "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-forest-maple-jet-black-birch_96x96.png",
+          "current": true
+        },
+        {
+          "color": "NATURAL",
+          "handle": "organic-cotton-sock-5-pack-natural",
+          "image": "https://matethelabel.com/cdn/shop/files/color-natural_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ],
+      "price": "$68"
+    },
+    "organic-cotton-trouser-sock-bone": {
+      "handle": "organic-cotton-trouser-sock-bone",
+      "title": "Organic Cotton Trouser Sock",
+      "lead": "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_20_ORGANIC_TROUSER_SOCK_3PK_BONE_0005_b03d13d7-78e2-49f6-9c0d-41d4a36d18e4.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_20_ORGANIC_TROUSER_SOCK_3PK_BONE_0005_b03d13d7-78e2-49f6-9c0d-41d4a36d18e4.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0010.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0015.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0027.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_20_ORGANIC_TROUSER_SOCK_3PK_BONE_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_SPRING_CLEAN_EDITORIAL_0311.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-cotton-trouser-sock-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE, CONCH, RAFFIA",
+          "handle": "organic-cotton-trouser-sock-bone-conch-raffia",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-conch-raffia_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$31"
+    },
+    "organic-cotton-trouser-sock-bone-conch-raffia": {
+      "handle": "organic-cotton-trouser-sock-bone-conch-raffia",
+      "title": "Organic Cotton Trouser Sock",
+      "lead": "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0047_ec139772-c3db-43eb-b461-fbb1ccd9cb11.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0047_ec139772-c3db-43eb-b461-fbb1ccd9cb11.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0035.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0027_cdf220d2-9da9-4a5a-9db1-3ee8607bb1e8.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_21_ORGANIC_TROUSER_SOCK_3PK_RAFFIA_CONCH_BONE_0039.jpg",
+        "https://matethelabel.com/cdn/shop/files/250311_MTL_MAR25_SPRING_CLEAN_EDITORIAL_0316.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE, CONCH, RAFFIA",
+          "handle": "organic-cotton-trouser-sock-bone-conch-raffia",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone-conch-raffia_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-cotton-trouser-sock-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "35% OFF"
+      ],
+      "price": "$31"
+    }
+  }
+}

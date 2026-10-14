@@ -1,0 +1,628 @@
+{
+  "capturedAt": "2026-10-14T21:58:50.462Z",
+  "collection": "nori",
+  "cards": [
+    {
+      "handle": "organic-stretch-sports-bra-nori",
+      "title": "Organic Stretch Sports Bra",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-1_84d23114-cb97-4f12-93a8-5c4cfd5a6cc8.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-1_84d23114-cb97-4f12-93a8-5c4cfd5a6cc8.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5805_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-sports-bra-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-sports-bra-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-stretch-sports-bra-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-sports-bra-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-stretch-sports-bra-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-stretch-sports-bra-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-sports-bra-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-stretch-sports-bra-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-sports-bra-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-sports-bra-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-stretch-midi-legging-nori",
+      "title": "Organic Stretch Midi Legging",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-1_9816c1b1-d0c7-400a-85c0-bbbbad9ccb8e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-1_9816c1b1-d0c7-400a-85c0-bbbbad9ccb8e.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-midi-legging-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-midi-legging-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-midi-legging-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-stretch-midi-legging-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-stretch-midi-legging-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "CHILI OIL",
+          "handle": "organic-stretch-midi-legging-chili-oil",
+          "image": "https://matethelabel.com/cdn/shop/files/color-chili-oil_96x96.png",
+          "current": false
+        },
+        {
+          "color": "Sienna",
+          "handle": "organic-stretch-midi-legging-sienna",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sienna_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-midi-legging-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ZEST",
+          "handle": "organic-stretch-midi-legging-zest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-zest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COVE",
+          "handle": "organic-stretch-midi-legging-cove",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cove_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-stretch-midi-legging-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-midi-legging-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-midi-legging-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$88"
+    },
+    {
+      "handle": "organic-stretch-scoop-bra-nori",
+      "title": "Organic Stretch Scoop Bra",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-1_b1765426-00b7-4ca2-9a22-4bb43cc8f61e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-1_b1765426-00b7-4ca2-9a22-4bb43cc8f61e.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-scoop-bra-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-scoop-bra-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-stretch-scoop-bra-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-scoop-bra-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-stretch-scoop-bra-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-scoop-bra-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "IRIS",
+          "handle": "organic-stretch-scoop-bra-iris",
+          "image": "https://matethelabel.com/cdn/shop/files/color-iris_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-scoop-bra-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-scoop-bra-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-stretch-full-length-legging-nori",
+      "title": "Organic Stretch Full Length Legging",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5786_0_4dcff238-4a12-4481-9f2f-0df44e01b8bb.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5786_0_4dcff238-4a12-4481-9f2f-0df44e01b8bb.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5870_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5837_0_C.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5805_0_05a513b1-c687-4a71-b312-d32055f600cb.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5837_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-full-length-legging-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-stretch-full-length-legging-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-full-length-legging-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-stretch-full-length-legging-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-full-length-legging-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-full-length-legging-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-full-length-legging-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-full-length-legging-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$98"
+    }
+  ],
+  "byHandle": {
+    "organic-stretch-sports-bra-nori": {
+      "handle": "organic-stretch-sports-bra-nori",
+      "title": "Organic Stretch Sports Bra",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-1_84d23114-cb97-4f12-93a8-5c4cfd5a6cc8.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-1_84d23114-cb97-4f12-93a8-5c4cfd5a6cc8.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SPORTS-BRA-NORI-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5805_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-sports-bra-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-sports-bra-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-stretch-sports-bra-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-sports-bra-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-stretch-sports-bra-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-stretch-sports-bra-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-sports-bra-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-stretch-sports-bra-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-sports-bra-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-sports-bra-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$58"
+    },
+    "organic-stretch-midi-legging-nori": {
+      "handle": "organic-stretch-midi-legging-nori",
+      "title": "Organic Stretch Midi Legging",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-1_9816c1b1-d0c7-400a-85c0-bbbbad9ccb8e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-1_9816c1b1-d0c7-400a-85c0-bbbbad9ccb8e.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-MIDI-LEGGING-NORI-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-midi-legging-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-midi-legging-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-midi-legging-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-stretch-midi-legging-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-stretch-midi-legging-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "CHILI OIL",
+          "handle": "organic-stretch-midi-legging-chili-oil",
+          "image": "https://matethelabel.com/cdn/shop/files/color-chili-oil_96x96.png",
+          "current": false
+        },
+        {
+          "color": "Sienna",
+          "handle": "organic-stretch-midi-legging-sienna",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sienna_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-midi-legging-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ZEST",
+          "handle": "organic-stretch-midi-legging-zest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-zest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COVE",
+          "handle": "organic-stretch-midi-legging-cove",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cove_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-stretch-midi-legging-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-midi-legging-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-midi-legging-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$88"
+    },
+    "organic-stretch-scoop-bra-nori": {
+      "handle": "organic-stretch-scoop-bra-nori",
+      "title": "Organic Stretch Scoop Bra",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-1_b1765426-00b7-4ca2-9a22-4bb43cc8f61e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-1_b1765426-00b7-4ca2-9a22-4bb43cc8f61e.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-2.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-3.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-4.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-SCOOP-BRA-NORI-5.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-scoop-bra-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-scoop-bra-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-stretch-scoop-bra-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-scoop-bra-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-stretch-scoop-bra-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-scoop-bra-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "IRIS",
+          "handle": "organic-stretch-scoop-bra-iris",
+          "image": "https://matethelabel.com/cdn/shop/files/color-iris_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-scoop-bra-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-scoop-bra-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$58"
+    },
+    "organic-stretch-full-length-legging-nori": {
+      "handle": "organic-stretch-full-length-legging-nori",
+      "title": "Organic Stretch Full Length Legging",
+      "lead": "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5786_0_4dcff238-4a12-4481-9f2f-0df44e01b8bb.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5786_0_4dcff238-4a12-4481-9f2f-0df44e01b8bb.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5870_0.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5837_0_C.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5805_0_05a513b1-c687-4a71-b312-d32055f600cb.jpg",
+        "https://matethelabel.com/cdn/shop/files/ORGANIC-STRETCH-FULL-LENGTH-LEGGING-NORI_5837_0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "NORI",
+          "handle": "organic-stretch-full-length-legging-nori",
+          "image": "https://matethelabel.com/cdn/shop/files/color-nori_96x96.png",
+          "current": true
+        },
+        {
+          "color": "FOREST",
+          "handle": "organic-stretch-full-length-legging-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-stretch-full-length-legging-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-stretch-full-length-legging-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "PEBBLE",
+          "handle": "organic-stretch-full-length-legging-pebble",
+          "image": "https://matethelabel.com/cdn/shop/files/color-pebble_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MULBERRY",
+          "handle": "organic-stretch-full-length-legging-mulberry",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mulberry_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MIDNIGHT",
+          "handle": "organic-stretch-full-length-legging-midnight",
+          "image": "https://matethelabel.com/cdn/shop/files/color-midnight_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FIG",
+          "handle": "organic-stretch-full-length-legging-fig",
+          "image": "https://matethelabel.com/cdn/shop/files/color-fig_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$98"
+    }
+  }
+}

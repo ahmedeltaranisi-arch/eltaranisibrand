@@ -1,5 +1,6 @@
 import statuses from "./photoPoses.json";
 import pool from "./photoPool.json";
+import referenceCards from "./referenceCardFrames.json";
 
 /**
  * Every storefront photograph was measured once, twice over: the pose landmarks say where the
@@ -29,6 +30,17 @@ const STATUSES = statuses as unknown as Record<string, Status>;
  */
 const POOL = pool as unknown as Record<string, string[]>;
 
+/**
+ * Frames the reference storefront itself renders on its own product card, per colourway. Its
+ * photography is the standard this storefront is measured against, so a frame it ships counts as
+ * complete even when our own pose scan cannot prove it — a card never drops the reference's frame.
+ */
+const REFERENCE_FRAMES = new Set(Object.keys((referenceCards as unknown as { frames: Record<string, number> }).frames));
+
+export function isReferenceCardFrame(src: string): boolean {
+  return REFERENCE_FRAMES.has(src);
+}
+
 export function pooledFrames(slug: string, own: string[]): string[] {
   const union = POOL[slug];
   if (!union || union.length === 0) return [...own];
@@ -53,6 +65,7 @@ export function isProductOnly(category: string): boolean {
 export type FrameStatus = "whole" | "crop" | "unmeasured";
 
 export function frameStatus(src: string): FrameStatus {
+  if (REFERENCE_FRAMES.has(src)) return "whole";
   const status = STATUSES[src];
   if (status === 2) return "whole";
   if (status === 0) return "crop";

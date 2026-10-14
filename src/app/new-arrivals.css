@@ -322,7 +322,9 @@
   .na-collection-intro>p{max-width:311px;font-size:14px;line-height:1.4;letter-spacing:.28px;margin-top:8px}
   .na-collection{padding:0 24px 64px}
   .na-collection-toolbar{align-items:flex-start;margin-bottom:15px}
+  /* The reference thins both triggers' dotted rule and pulls it closer at this width. */
   .na-collection-toolbar button{font-size:14px}
+  .na-collection-toolbar .na-dotted{text-decoration-thickness:.095em!important;text-underline-offset:3px!important}
   .na-sort-label-desktop,.na-sort-value{display:none}
   .na-sort-label-mobile{display:inline}
   .na-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:50px 12px}

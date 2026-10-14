@@ -50,6 +50,9 @@ type Snapshot = {
 
 const data = snapshot as unknown as Snapshot;
 
+/** This catalogue's own rows by slug: a Shop All card resolves its swatches inside this file first. */
+const rowBySlug = new Map(data.products.map((product) => [product.slug, product]));
+
 export const shopAllProducts: ShopAllProduct[] = [...data.products]
   .map((product) => ({ ...product, images: selectFrames(pooledFrames(product.slug, product.images), product.category).images }))
   .filter((product) => product.images.length > 0)
@@ -247,7 +250,17 @@ export function offeredCategories(products: readonly MateProduct[]): string[] {
  * first.
  */
 export function shopAllColorways(product: MateProduct): MateProduct[] {
-  const colorways = catalogColorways(product);
+  const resolve = (slug: string): MateProduct | undefined => rowBySlug.get(slug) ?? getCatalogProduct(slug);
+  const own = (product.colorways ?? [])
+    .map((slug) => resolve(slug))
+    .filter(
+      (colorway): colorway is ShopAllProduct =>
+        !!colorway &&
+        colorway.style === product.style &&
+        colorway.images.length > 0 &&
+        colorway.availableSizes.length > 0,
+    );
+  const colorways = own.length > 0 ? own : catalogColorways(product);
   const active = colorways.find((colorway) => colorway.slug === product.slug) ?? product;
   const ordered = [active, ...colorways.filter((colorway) => colorway.slug !== active.slug)];
   const seen = new Set<string>();
@@ -263,7 +276,7 @@ export function shopAllColorways(product: MateProduct): MateProduct[] {
 
 /** A swatch click resolves through the shared catalogue, so its own photograph always loads. */
 export function resolveShopAllColorway(slug: string): MateProduct | undefined {
-  return bySlug.get(slug) ?? getCatalogProduct(slug);
+  return rowBySlug.get(slug) ?? bySlug.get(slug) ?? getCatalogProduct(slug);
 }
 
 export { emptyFilters, filterCount } from "./mateNewArrivals";

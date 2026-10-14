@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Scratch: the parity probes and capture scripts are working files, not shipped source.
+    ".probe/**",
+    "test-results/**",
+    "playwright-report/**",
   ]),
 ]);
 

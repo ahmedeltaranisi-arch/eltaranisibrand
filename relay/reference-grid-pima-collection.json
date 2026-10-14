@@ -1,0 +1,2900 @@
+{
+  "capturedAt": "2026-10-14T21:58:49.637Z",
+  "collection": "pima-collection",
+  "cards": [
+    {
+      "handle": "organic-pima-classic-tee-true-white",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0046_cff217f0-b687-4797-99f9-30d3391f5a43.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0046_cff217f0-b687-4797-99f9-30d3391f5a43.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0049.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0019.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0013.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0034.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-classic-tee-heather-grey",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02248_399ffe07-6d54-4fdc-9b4b-b0de6cc6d241.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02248_399ffe07-6d54-4fdc-9b4b-b0de6cc6d241.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02258.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02220.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02252.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02233.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-classic-tee-cobalt",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0063.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0063.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0124.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0038.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0001.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0162_18c48d31-6b69-430a-9efd-72f997c0e3e4.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-classic-tee-jet-black",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_00231_30ffd86c-c416-49dc-a9e0-26d9a9efd68a.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_00231_30ffd86c-c416-49dc-a9e0-26d9a9efd68a.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_0078.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_0005.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_0056.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_00371.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-classic-tee-mocha",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0034_e5455db9-790f-4902-98c9-1ada0a308632.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0034_e5455db9-790f-4902-98c9-1ada0a308632.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0038.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0036.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0045.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-classic-tee-thyme",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0031_5afd80d3-e00c-4851-ab2c-ac379b3bb17c.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0031_5afd80d3-e00c-4851-ab2c-ac379b3bb17c.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0061.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0001.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0041.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0051.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-classic-tee-bone",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0038_959f7d8f-4d0e-4cd2-b593-b975704ddbaa.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0038_959f7d8f-4d0e-4cd2-b593-b975704ddbaa.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0056.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0004.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0044.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0036.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-jet-black",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0086_0332e28b-793e-496b-ab1c-d354e2c53ca7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0086_0332e28b-793e-496b-ab1c-d354e2c53ca7.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0111.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0002.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0080.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0109.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-mocha",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0052_dc32206a-3a2b-479c-a8cb-96b9aea3b814.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0052_dc32206a-3a2b-479c-a8cb-96b9aea3b814.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0065.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0008.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0017.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0038.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-bone",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0171_2c96add6-6a37-4afc-aff5-2092fc3d202f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0171_2c96add6-6a37-4afc-aff5-2092fc3d202f.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0258.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0159.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0206.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0249.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-heather-grey",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02176_9086e25d-9811-4c21-b0e2-b1259505a2b7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02176_9086e25d-9811-4c21-b0e2-b1259505a2b7.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02196.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02163.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02185.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02163c.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-cobalt",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0078_53370039-50ef-470c-8bc2-e522c0f57f31.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0078_53370039-50ef-470c-8bc2-e522c0f57f31.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0112.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0145.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0004.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0095.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-thyme",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0019_92c05b4d-a61d-4c10-995d-544dcb06b924.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0019_92c05b4d-a61d-4c10-995d-544dcb06b924.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0073.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0008.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0046.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0056.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-shrunken-tee-true-white",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0135_c31bbc74-4a8d-4e00-940d-95a3641fdddc.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0135_c31bbc74-4a8d-4e00-940d-95a3641fdddc.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0130.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0070.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0002.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0082.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-layering-tank-bone",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0040_8d0d7a6b-d5cd-486b-86c8-0b3a7d965f3e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0040_8d0d7a6b-d5cd-486b-86c8-0b3a7d965f3e.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0096.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0051.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0070.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-pima-layering-tank-true-white",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0078_5259a5b3-aede-43fa-9b6b-e3c2dc7ecaa0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0078_5259a5b3-aede-43fa-9b6b-e3c2dc7ecaa0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0148.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0011.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0042.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0105.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-pima-layering-tank-jet-black",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0060_1d30b0b0-8c0d-4e56-993f-5ba530c6321e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0060_1d30b0b0-8c0d-4e56-993f-5ba530c6321e.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0087.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0033.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0074.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-pima-layering-tank-mocha",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0038.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0038.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0038_87ba74d8-ad85-46d2-bf3a-b220ee2e8993.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0079.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0019.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0071.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0044.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-pima-layering-tank-heather-grey",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02274_f723c548-6855-4438-9dbe-fd8d149dbb43.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02274_f723c548-6855-4438-9dbe-fd8d149dbb43.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02316.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02301.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02305.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02269.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-pima-layering-tank-thyme",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0144_f2eb974c-7908-415f-9915-a0a441243138.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0144_f2eb974c-7908-415f-9915-a0a441243138.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0158.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0004.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0177.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0190.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "organic-pima-long-sleeve-tee-true-white",
+      "title": "Organic Pima Long Sleeve Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0055_0a1b1b67-0a27-431c-8105-e0ec264e95cb.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0055_0a1b1b67-0a27-431c-8105-e0ec264e95cb.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0105.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0058.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0095.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0082.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-long-sleeve-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-long-sleeve-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-long-sleeve-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$78"
+    },
+    {
+      "handle": "organic-pima-long-sleeve-tee-jet-black",
+      "title": "Organic Pima Long Sleeve Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0021_5337ad86-09bd-485f-a38b-3813255ccc8b.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0021_5337ad86-09bd-485f-a38b-3813255ccc8b.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0084_5f799e04-821a-4a93-a366-8e1501131138.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0019_8c16be33-28b1-408e-b131-59062e580932.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0045_8776b65c-2521-42aa-9701-6d3a5c0e06f8.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0061_c4684e4c-b080-4ff1-90c7-868dcf632ad0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-long-sleeve-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-long-sleeve-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-long-sleeve-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$78"
+    },
+    {
+      "handle": "organic-pima-long-sleeve-tee-heather-grey",
+      "title": "Organic Pima Long Sleeve Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02433_48d6835c-beba-41c5-b2ec-928deefbc66f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02433_48d6835c-beba-41c5-b2ec-928deefbc66f.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02461.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02406.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02444.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02419.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-long-sleeve-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-long-sleeve-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-long-sleeve-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$78"
+    },
+    {
+      "handle": "organic-pima-oversized-tee-jet-black",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0057_78716ae5-3ce7-464f-8cc9-17434db23101.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0057_78716ae5-3ce7-464f-8cc9-17434db23101.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0096.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0002.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0077.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0082.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-oversized-tee-true-white",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0092_e1139d49-c078-4e0f-8e0e-586603a1432d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0092_e1139d49-c078-4e0f-8e0e-586603a1432d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0116.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0023.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0105.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0094.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-oversized-tee-mocha",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0027_b1c1d14e-b459-4697-bd27-df0fcf7b726f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0027_b1c1d14e-b459-4697-bd27-df0fcf7b726f.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0115.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0008.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0096.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0047.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "organic-pima-oversized-tee-heather-grey",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02382_cb744e86-0253-4789-8cc0-e9244ce800ac.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02382_cb744e86-0253-4789-8cc0-e9244ce800ac.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02395.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02336.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02372.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02353.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    }
+  ],
+  "byHandle": {
+    "organic-pima-classic-tee-true-white": {
+      "handle": "organic-pima-classic-tee-true-white",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0046_cff217f0-b687-4797-99f9-30d3391f5a43.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0046_cff217f0-b687-4797-99f9-30d3391f5a43.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0049.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0019.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0013.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_6B_ORGANIC_PIMA_CLASSIC_TEE_TRUEWHITE_0034.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-classic-tee-heather-grey": {
+      "handle": "organic-pima-classic-tee-heather-grey",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02248_399ffe07-6d54-4fdc-9b4b-b0de6cc6d241.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02248_399ffe07-6d54-4fdc-9b4b-b0de6cc6d241.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02258.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02220.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02252.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_20-W2076-Organic-Pima-Classic_02233.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-classic-tee-cobalt": {
+      "handle": "organic-pima-classic-tee-cobalt",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0063.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0063.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0124.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0038.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0001.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_24_ORGANIC_PIMA_CLASSIC_TEE_COBALT_0162_18c48d31-6b69-430a-9efd-72f997c0e3e4.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-classic-tee-jet-black": {
+      "handle": "organic-pima-classic-tee-jet-black",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_00231_30ffd86c-c416-49dc-a9e0-26d9a9efd68a.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_00231_30ffd86c-c416-49dc-a9e0-26d9a9efd68a.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_0078.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_0005.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_0056.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_24_ORGANIC_FLEECE_STRAIGHT_LEG_SWEATPANTS_PEBBLE_00371.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-classic-tee-mocha": {
+      "handle": "organic-pima-classic-tee-mocha",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0034_e5455db9-790f-4902-98c9-1ada0a308632.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0034_e5455db9-790f-4902-98c9-1ada0a308632.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0038.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0036.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_14B_ORGANIC_PIMA_CLASSIC_TEE_MOCHA_0045.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-classic-tee-thyme": {
+      "handle": "organic-pima-classic-tee-thyme",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0031_5afd80d3-e00c-4851-ab2c-ac379b3bb17c.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0031_5afd80d3-e00c-4851-ab2c-ac379b3bb17c.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0061.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0001.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0041.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_22_ORGANIC_PIMA_CLASSIC_TEE_THYME_0051.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-classic-tee-bone": {
+      "handle": "organic-pima-classic-tee-bone",
+      "title": "Organic Pima Classic Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0038_959f7d8f-4d0e-4cd2-b593-b975704ddbaa.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0038_959f7d8f-4d0e-4cd2-b593-b975704ddbaa.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0056.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0004.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0044.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_10_ORGANIC_PIMA_CLASSIC_TEE_BONE_0036.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-pima-classic-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-classic-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-classic-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-classic-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-classic-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-classic-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-classic-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-jet-black": {
+      "handle": "organic-pima-shrunken-tee-jet-black",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0086_0332e28b-793e-496b-ab1c-d354e2c53ca7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0086_0332e28b-793e-496b-ab1c-d354e2c53ca7.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0111.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0002.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0080.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_25_ORGANIC_PIMA_SHRUNKEN_TEE_JETBLACK_ORGANIC_STRETCH_POCKET_SHORT_PEBBLE_0109.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-mocha": {
+      "handle": "organic-pima-shrunken-tee-mocha",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0052_dc32206a-3a2b-479c-a8cb-96b9aea3b814.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0052_dc32206a-3a2b-479c-a8cb-96b9aea3b814.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0065.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0008.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_ORGANIC_PIMA_SHRUNKEN_TEE_MOCHA_0017.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_27_ORGANIC_COMFORT_TRIANGLE_BRALETTE_MID_RISE_BIKINI_ESPRESSO_0038.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-bone": {
+      "handle": "organic-pima-shrunken-tee-bone",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0171_2c96add6-6a37-4afc-aff5-2092fc3d202f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0171_2c96add6-6a37-4afc-aff5-2092fc3d202f.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0258.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0159.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0206.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_24_ORGANIC_PIMA_SHRUNKEN_TEE_BONE_ORGANIC_STRETCH_POCKET_SHORT_JETBLACK_0249.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-heather-grey": {
+      "handle": "organic-pima-shrunken-tee-heather-grey",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02176_9086e25d-9811-4c21-b0e2-b1259505a2b7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02176_9086e25d-9811-4c21-b0e2-b1259505a2b7.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02196.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02163.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02185.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_21-W2077-Organic-Pima-Shrunken-Tee_02163c.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-cobalt": {
+      "handle": "organic-pima-shrunken-tee-cobalt",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0078_53370039-50ef-470c-8bc2-e522c0f57f31.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0078_53370039-50ef-470c-8bc2-e522c0f57f31.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0112.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0145.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0004.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_26_ORGANIC_PIMA_SHRUNKEN_TEE_COBALT_0095.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-thyme": {
+      "handle": "organic-pima-shrunken-tee-thyme",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0019_92c05b4d-a61d-4c10-995d-544dcb06b924.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0019_92c05b4d-a61d-4c10-995d-544dcb06b924.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0073.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0008.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0046.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_7_ORGANIC_PIMA_SHRUNKEN_TEE_THYME_0056.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-shrunken-tee-true-white": {
+      "handle": "organic-pima-shrunken-tee-true-white",
+      "title": "Organic Pima Shrunken Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0135_c31bbc74-4a8d-4e00-940d-95a3641fdddc.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0135_c31bbc74-4a8d-4e00-940d-95a3641fdddc.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0130.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0070.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0002.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_25_ORGANIC_PIMA_SHRUNKEN_TEE_TRUEWHITE_0082.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-shrunken-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-shrunken-tee-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-shrunken-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "COBALT",
+          "handle": "organic-pima-shrunken-tee-cobalt",
+          "image": "https://matethelabel.com/cdn/shop/files/color-cobalt_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-shrunken-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-shrunken-tee-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-shrunken-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-layering-tank-bone": {
+      "handle": "organic-pima-layering-tank-bone",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0040_8d0d7a6b-d5cd-486b-86c8-0b3a7d965f3e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0040_8d0d7a6b-d5cd-486b-86c8-0b3a7d965f3e.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0096.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0051.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_28_ORGANIC_PIMA_LAYERING_TANK_BONE_0070.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    "organic-pima-layering-tank-true-white": {
+      "handle": "organic-pima-layering-tank-true-white",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0078_5259a5b3-aede-43fa-9b6b-e3c2dc7ecaa0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0078_5259a5b3-aede-43fa-9b6b-e3c2dc7ecaa0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0148.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0011.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0042.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_27_ORGANIC_PIMA_LAYERING_TANK_TRUEWHITE_0105.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    "organic-pima-layering-tank-jet-black": {
+      "handle": "organic-pima-layering-tank-jet-black",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0060_1d30b0b0-8c0d-4e56-993f-5ba530c6321e.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0060_1d30b0b0-8c0d-4e56-993f-5ba530c6321e.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0087.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0003.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0033.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_30_ORGANIC_PIMA_LAYERING_TANK_COBALT_0074.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    "organic-pima-layering-tank-mocha": {
+      "handle": "organic-pima-layering-tank-mocha",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0038.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0038.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0038_87ba74d8-ad85-46d2-bf3a-b220ee2e8993.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0079.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0019.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0071.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_29_ORGANIC_PIMA_LAYERING_TANK_MOCHA_0044.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    "organic-pima-layering-tank-heather-grey": {
+      "handle": "organic-pima-layering-tank-heather-grey",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02274_f723c548-6855-4438-9dbe-fd8d149dbb43.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02274_f723c548-6855-4438-9dbe-fd8d149dbb43.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02316.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02301.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02305.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_22-W2080-Organic-Pima-Layering-Tank_02269.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    "organic-pima-layering-tank-thyme": {
+      "handle": "organic-pima-layering-tank-thyme",
+      "title": "Organic Pima Layering Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0144_f2eb974c-7908-415f-9915-a0a441243138.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0144_f2eb974c-7908-415f-9915-a0a441243138.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0158.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0004.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0177.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0190.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "THYME",
+          "handle": "organic-pima-layering-tank-thyme",
+          "image": "https://matethelabel.com/cdn/shop/files/color-thyme_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-layering-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-pima-layering-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-layering-tank-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-layering-tank-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-layering-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$58"
+    },
+    "organic-pima-long-sleeve-tee-true-white": {
+      "handle": "organic-pima-long-sleeve-tee-true-white",
+      "title": "Organic Pima Long Sleeve Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0055_0a1b1b67-0a27-431c-8105-e0ec264e95cb.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0055_0a1b1b67-0a27-431c-8105-e0ec264e95cb.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0105.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0058.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0095.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_26_ORGANIC_PIMA_LAYERING_TANK_THYME_CLASSIC_LONG_SLEEVE_TEE_TRUEWHITE_ORGANIC_STRETCH_BIKER_SHORT_4__JETBLACK_0082.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-long-sleeve-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-long-sleeve-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-long-sleeve-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$78"
+    },
+    "organic-pima-long-sleeve-tee-jet-black": {
+      "handle": "organic-pima-long-sleeve-tee-jet-black",
+      "title": "Organic Pima Long Sleeve Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0021_5337ad86-09bd-485f-a38b-3813255ccc8b.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0021_5337ad86-09bd-485f-a38b-3813255ccc8b.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0084_5f799e04-821a-4a93-a366-8e1501131138.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0019_8c16be33-28b1-408e-b131-59062e580932.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0045_8776b65c-2521-42aa-9701-6d3a5c0e06f8.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_3_ORGANIC_PIMA_CLASSIC_LONG_SLEEVE_TEE_JET_BLACK_0061_c4684e4c-b080-4ff1-90c7-868dcf632ad0.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-long-sleeve-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-long-sleeve-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-long-sleeve-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$78"
+    },
+    "organic-pima-long-sleeve-tee-heather-grey": {
+      "handle": "organic-pima-long-sleeve-tee-heather-grey",
+      "title": "Organic Pima Long Sleeve Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02433_48d6835c-beba-41c5-b2ec-928deefbc66f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02433_48d6835c-beba-41c5-b2ec-928deefbc66f.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02461.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02406.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02444.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_24-W2082-Organic-Pima-Classic-LongSleeve-Tee_02419.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-long-sleeve-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-long-sleeve-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-long-sleeve-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$78"
+    },
+    "organic-pima-oversized-tee-jet-black": {
+      "handle": "organic-pima-oversized-tee-jet-black",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0057_78716ae5-3ce7-464f-8cc9-17434db23101.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0057_78716ae5-3ce7-464f-8cc9-17434db23101.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0096.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0002.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0077.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_20_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0082.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-oversized-tee-true-white": {
+      "handle": "organic-pima-oversized-tee-true-white",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0092_e1139d49-c078-4e0f-8e0e-586603a1432d.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0092_e1139d49-c078-4e0f-8e0e-586603a1432d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0116.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0023.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0105.jpg",
+        "https://matethelabel.com/cdn/shop/files/260529_BC_MTL_CORE_RSHT_19_ORGANIC_PIMA_OVERSIZED_TEE_TRUE_WHITE_ORGANIC_FLEECE_RELAXED_POCKET_SWEATPANT_BONE_0094.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-oversized-tee-mocha": {
+      "handle": "organic-pima-oversized-tee-mocha",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0027_b1c1d14e-b459-4697-bd27-df0fcf7b726f.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0027_b1c1d14e-b459-4697-bd27-df0fcf7b726f.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0115.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0008.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0096.jpg",
+        "https://matethelabel.com/cdn/shop/files/260618_BC_MTL_31_ORGANIC_PIMA_OVERSIZED_TEE_MOCHA_0047.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    },
+    "organic-pima-oversized-tee-heather-grey": {
+      "handle": "organic-pima-oversized-tee-heather-grey",
+      "title": "Organic Pima Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02382_cb744e86-0253-4789-8cc0-e9244ce800ac.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02382_cb744e86-0253-4789-8cc0-e9244ce800ac.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02395.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02336.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02372.jpg",
+        "https://matethelabel.com/cdn/shop/files/LOOK_23-W2085-Organic-Pima-Oversized-Tee_02353.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-pima-oversized-tee-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-pima-oversized-tee-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "organic-pima-oversized-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        },
+        {
+          "color": "TRUE WHITE",
+          "handle": "organic-pima-oversized-tee-true-white",
+          "image": "https://matethelabel.com/cdn/shop/files/color-true-white_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Bundle + Save"
+      ],
+      "price": "$68"
+    }
+  }
+}

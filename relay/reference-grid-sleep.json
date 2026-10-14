@@ -1,0 +1,582 @@
+{
+  "capturedAt": "2026-10-14T21:58:22.226Z",
+  "collection": "sleep",
+  "cards": [
+    {
+      "handle": "tencel-sleep-boyfriend-tee-forest",
+      "title": "Tencel Sleep Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0212_c799d6be-6a4c-4386-a1ab-6e64267aa044.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0212_c799d6be-6a4c-4386-a1ab-6e64267aa044.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0225.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0242.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0260.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0196.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0179.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boyfriend-tee-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": true
+        }
+      ],
+      "badges": [],
+      "price": "$68"
+    },
+    {
+      "handle": "tencel-sleep-wide-leg-pant-forest",
+      "title": "Tencel Sleep Wide Leg Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0073.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0073.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0095_4efcac5a-c50e-4076-8cf7-1095aff58068.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0142.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0109.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0133.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0163.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-wide-leg-pant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-wide-leg-pant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$98"
+    },
+    {
+      "handle": "tencel-sleep-boyfriend-tee-mocha",
+      "title": "Tencel Sleep Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0060_1e27f236-bb6c-4f02-82e7-4adbd1f7eb15.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0060_1e27f236-bb6c-4f02-82e7-4adbd1f7eb15.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0070.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0088.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0124.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0109.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0043.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boyfriend-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "tencel-sleep-boxer-short-mocha",
+      "title": "Tencel Sleep Boxer Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0164_8b93c4a4-7e72-49ad-bd97-b7e65f44f708.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0164_8b93c4a4-7e72-49ad-bd97-b7e65f44f708.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0219.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0226.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0172.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0154.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0011_81b5a3b1-a209-472b-9deb-a2ccdf08e7da.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boxer-short-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boxer-short-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boxer-short-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$58"
+    },
+    {
+      "handle": "tencel-sleep-boyfriend-tee-heather-oat",
+      "title": "Tencel Sleep Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0083_638c566c-1e60-4b77-90c0-301578beeba7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0083_638c566c-1e60-4b77-90c0-301578beeba7.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0090.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0127_f9d7bf3d-2dc8-4bbc-850e-3a404dc79c11.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0161.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0074.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0070_1eb0319e-dd95-494c-83b6-ac592a45d4c7.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boyfriend-tee-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": true
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$68"
+    },
+    {
+      "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+      "title": "Tencel Sleep Wide Leg Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0016.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0016.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0046_bd3f0b43-7b44-4d13-8a9d-71da0d4c9933.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0097.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0087.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0127.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0158.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": true
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-wide-leg-pant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-wide-leg-pant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$98"
+    },
+    {
+      "handle": "tencel-sleep-wide-leg-pant-mocha",
+      "title": "Tencel Sleep Wide Leg Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0024.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0024.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0038_ef3b92e7-3e6c-4e1e-8fe1-9da7ef2b0163.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0094.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0074.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0091.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0113.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-wide-leg-pant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-wide-leg-pant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$98"
+    },
+    {
+      "handle": "tencel-sleep-boxer-short-forest",
+      "title": "Tencel Sleep Boxer Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0010.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0010.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0042_c1c66dfe-1bad-4583-bf86-8ac1ba25fda8.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0129.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0065.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0113.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0143.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boxer-short-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boxer-short-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boxer-short-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$58"
+    },
+    {
+      "handle": "tencel-sleep-boxer-short-heather-oat",
+      "title": "Tencel Sleep Boxer Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0223_ff16d8af-bc19-4e7a-8238-467af41be88b.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0223_ff16d8af-bc19-4e7a-8238-467af41be88b.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0250_8d1121c8-3184-4dac-89e0-a3880a7c1971.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0239.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0197.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0184.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0070.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boxer-short-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": true
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boxer-short-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boxer-short-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$58"
+    }
+  ],
+  "byHandle": {
+    "tencel-sleep-boyfriend-tee-forest": {
+      "handle": "tencel-sleep-boyfriend-tee-forest",
+      "title": "Tencel Sleep Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0212_c799d6be-6a4c-4386-a1ab-6e64267aa044.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0212_c799d6be-6a4c-4386-a1ab-6e64267aa044.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0225.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0242.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0260.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0196.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0179.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boyfriend-tee-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": true
+        }
+      ],
+      "badges": [],
+      "price": "$68"
+    },
+    "tencel-sleep-wide-leg-pant-forest": {
+      "handle": "tencel-sleep-wide-leg-pant-forest",
+      "title": "Tencel Sleep Wide Leg Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0073.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0073.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0095_4efcac5a-c50e-4076-8cf7-1095aff58068.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0142.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0109.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0133.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_08_TENCEL_SLEEP_BOYFRIEND_TEE_WIDE_LEG_PANT_FOREST_0163.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-wide-leg-pant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-wide-leg-pant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$98"
+    },
+    "tencel-sleep-boyfriend-tee-mocha": {
+      "handle": "tencel-sleep-boyfriend-tee-mocha",
+      "title": "Tencel Sleep Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0060_1e27f236-bb6c-4f02-82e7-4adbd1f7eb15.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0060_1e27f236-bb6c-4f02-82e7-4adbd1f7eb15.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0070.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0088.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0124.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0109.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0043.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boyfriend-tee-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$68"
+    },
+    "tencel-sleep-boxer-short-mocha": {
+      "handle": "tencel-sleep-boxer-short-mocha",
+      "title": "Tencel Sleep Boxer Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0164_8b93c4a4-7e72-49ad-bd97-b7e65f44f708.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0164_8b93c4a4-7e72-49ad-bd97-b7e65f44f708.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0219.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0226.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0172.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0154.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_05_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_MOCHA_0011_81b5a3b1-a209-472b-9deb-a2ccdf08e7da.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boxer-short-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boxer-short-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boxer-short-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$58"
+    },
+    "tencel-sleep-boyfriend-tee-heather-oat": {
+      "handle": "tencel-sleep-boyfriend-tee-heather-oat",
+      "title": "Tencel Sleep Oversized Tee",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0083_638c566c-1e60-4b77-90c0-301578beeba7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0083_638c566c-1e60-4b77-90c0-301578beeba7.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0090.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0127_f9d7bf3d-2dc8-4bbc-850e-3a404dc79c11.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0161.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0074.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0070_1eb0319e-dd95-494c-83b6-ac592a45d4c7.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boyfriend-tee-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": true
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$68"
+    },
+    "tencel-sleep-wide-leg-pant-heather-oat": {
+      "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+      "title": "Tencel Sleep Wide Leg Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0016.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0016.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0046_bd3f0b43-7b44-4d13-8a9d-71da0d4c9933.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0097.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0087.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0127.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_02_TENCEL_SLEEP_WIDE_LEG_PANT_HEATHER_OAT_0158.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": true
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-wide-leg-pant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-wide-leg-pant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$98"
+    },
+    "tencel-sleep-wide-leg-pant-mocha": {
+      "handle": "tencel-sleep-wide-leg-pant-mocha",
+      "title": "Tencel Sleep Wide Leg Pant",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0024.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0024.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0038_ef3b92e7-3e6c-4e1e-8fe1-9da7ef2b0163.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0094.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0074.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0091.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_06_TENCEL_SLEEP_WIDE_LEG_PANT_MOCHA_0113.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-wide-leg-pant-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-wide-leg-pant-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-wide-leg-pant-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$98"
+    },
+    "tencel-sleep-boxer-short-forest": {
+      "handle": "tencel-sleep-boxer-short-forest",
+      "title": "Tencel Sleep Boxer Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0010.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0010.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0042_c1c66dfe-1bad-4583-bf86-8ac1ba25fda8.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0129.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0065.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0113.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_07_TENCEL_SLEEP_BOXER_SHORT_FOREST_0143.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boxer-short-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": true
+        },
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boxer-short-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boxer-short-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [
+        "Best Seller"
+      ],
+      "price": "$58"
+    },
+    "tencel-sleep-boxer-short-heather-oat": {
+      "handle": "tencel-sleep-boxer-short-heather-oat",
+      "title": "Tencel Sleep Boxer Short",
+      "lead": "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0223_ff16d8af-bc19-4e7a-8238-467af41be88b.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0223_ff16d8af-bc19-4e7a-8238-467af41be88b.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0250_8d1121c8-3184-4dac-89e0-a3880a7c1971.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0239.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0197.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0184.jpg",
+        "https://matethelabel.com/cdn/shop/files/260115_BC_MATE_FEB_CAMPAIGN_01_TENCEL_SLEEP_BOYFRIEND_TEE_BOXER_SHORT_HEATHER_OAT_0070.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER OAT",
+          "handle": "tencel-sleep-boxer-short-heather-oat",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-oat_96x96.png",
+          "current": true
+        },
+        {
+          "color": "FOREST",
+          "handle": "tencel-sleep-boxer-short-forest",
+          "image": "https://matethelabel.com/cdn/shop/files/color-forest_96x96.png",
+          "current": false
+        },
+        {
+          "color": "MOCHA",
+          "handle": "tencel-sleep-boxer-short-mocha",
+          "image": "https://matethelabel.com/cdn/shop/files/color-mocha_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$58"
+    }
+  }
+}

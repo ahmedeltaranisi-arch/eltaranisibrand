@@ -1,0 +1,810 @@
+{
+  "capturedAt": "2026-10-14T21:58:35.643Z",
+  "collection": "tanks",
+  "cards": [
+    {
+      "handle": "organic-comfort-crop-tank-bone",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46703_EDT.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46703_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_BON_0042_24f98c93-1897-4fec-867e-0a0f61ea3564.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46734_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46773_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45653_EDT_5822bc06-a145-4118-a915-963fa5c27739.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46871_EDT.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-crop-tank-espresso",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0047.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0047.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0131.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0093.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_ESP_0051_d86164d4-d41b-4af7-9dc3-e0057a9c8b1b.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0121.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0091.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-crop-tank-jet-black",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0011.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0011.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_JBLK_0056_19563696-fa82-450a-8a20-fe3d11413bc2.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0013.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0022.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0050.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0045.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46553_EDT_ae7497b2-b3f2-4f1f-9968-d5e020f06b45.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0006.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-crop-tank-sand",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0062_82780b66-fc38-484e-bd01-fb3c9bb0a924.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0062_82780b66-fc38-484e-bd01-fb3c9bb0a924.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0109.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0072.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_NDS_0046_814c8b53-fa6c-4d5c-be47-c71e341a3fa8.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0011.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0090_0bc04286-a393-4a28-997e-8b0bdd07525a.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-cami-bone",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45525_EDT_f941b220-d5cc-4cc9-81b7-83fdfd818337.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45525_EDT_f941b220-d5cc-4cc9-81b7-83fdfd818337.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_BON_0068_b7a8a870-c107-487c-8aeb-68b94d37c001.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45468_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45543_EDT_d2ee988c-a7c1-4303-9cd9-bd4917214f31.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45549_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45653_EDT_f377ec7f-1e1f-4c2a-b0fd-5deef585ad57.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-cami-jet-black",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0120_73a985bc-e936-4552-ba9a-e2d7a89f43fb.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0120_73a985bc-e936-4552-ba9a-e2d7a89f43fb.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0161.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0024.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_JBLK_0093_fa95e695-8c12-40c8-b465-f4b7a5cf16bf.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0081_5f59f40e-8b8c-4e7a-848b-c523659a4309.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0125.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-cami-espresso",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0068_a8738114-e110-4b35-b364-106aa433673a.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0068_a8738114-e110-4b35-b364-106aa433673a.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_01381.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0037_72f06a50-b445-4f6d-9de2-024664b5e49e.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_ESP_0089_d300718f-708e-40c1-ab12-2345f9448503.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0093_273cd66e-0bea-4dc7-8f7c-06c6d6686e0d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0119.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-cami-sand",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0055_a81756b2-cca5-46a4-bba4-8a9da883fce0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0055_a81756b2-cca5-46a4-bba4-8a9da883fce0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0159_fffefde1-37a0-4373-87e7-6ff3b00b1da1.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0012_d7101b07-b645-4a85-96fe-e18ff8108a96.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_NDS_0077_89b25946-f76b-4b24-8a72-be2fdd106fcc.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0136_98b67d3c-5c34-4f56-b232-0c87e8f66c4d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0113.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    {
+      "handle": "organic-comfort-crop-tank-heather-grey",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0052_53e66f57-cb78-4da6-b5d0-a6222905f9b7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0052_53e66f57-cb78-4da6-b5d0-a6222905f9b7.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0064.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0111.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0146.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0133.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0030.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    }
+  ],
+  "byHandle": {
+    "organic-comfort-crop-tank-bone": {
+      "handle": "organic-comfort-crop-tank-bone",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46703_EDT.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46703_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_BON_0042_24f98c93-1897-4fec-867e-0a0f61ea3564.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46734_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46773_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45653_EDT_5822bc06-a145-4118-a915-963fa5c27739.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46871_EDT.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-crop-tank-espresso": {
+      "handle": "organic-comfort-crop-tank-espresso",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0047.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0047.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0131.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0093.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_ESP_0051_d86164d4-d41b-4af7-9dc3-e0057a9c8b1b.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0121.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_29_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_ESPRESSO_0091.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-crop-tank-jet-black": {
+      "handle": "organic-comfort-crop-tank-jet-black",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0011.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0011.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_JBLK_0056_19563696-fa82-450a-8a20-fe3d11413bc2.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0013.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0022.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0050.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0045.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz46553_EDT_ae7497b2-b3f2-4f1f-9968-d5e020f06b45.jpg",
+        "https://matethelabel.com/cdn/shop/files/250522_BC_MTL_33_ORGANIC_COMFORT_CROP_TANK_JETBLACK_ORGANIC_COMFORT_MID_RISE_BIKINI_JETBLACK_0006.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-crop-tank-sand": {
+      "handle": "organic-comfort-crop-tank-sand",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0062_82780b66-fc38-484e-bd01-fb3c9bb0a924.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0062_82780b66-fc38-484e-bd01-fb3c9bb0a924.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0109.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0072.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCropTank_NDS_0046_814c8b53-fa6c-4d5c-be47-c71e341a3fa8.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0011.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_30_ORGANIC_COMFORT_CROP_TANK_HIGH_WAIST_BRIEF_SAND_0090_0bc04286-a393-4a28-997e-8b0bdd07525a.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-cami-bone": {
+      "handle": "organic-comfort-cami-bone",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45525_EDT_f941b220-d5cc-4cc9-81b7-83fdfd818337.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45525_EDT_f941b220-d5cc-4cc9-81b7-83fdfd818337.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_BON_0068_b7a8a870-c107-487c-8aeb-68b94d37c001.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45468_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45543_EDT_d2ee988c-a7c1-4303-9cd9-bd4917214f31.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45549_EDT.jpg",
+        "https://matethelabel.com/cdn/shop/files/20230808_MATE_ABatz45653_EDT_f377ec7f-1e1f-4c2a-b0fd-5deef585ad57.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-cami-jet-black": {
+      "handle": "organic-comfort-cami-jet-black",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0120_73a985bc-e936-4552-ba9a-e2d7a89f43fb.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0120_73a985bc-e936-4552-ba9a-e2d7a89f43fb.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0161.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0024.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_JBLK_0093_fa95e695-8c12-40c8-b465-f4b7a5cf16bf.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0081_5f59f40e-8b8c-4e7a-848b-c523659a4309.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_31_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_JETBLACK_0125.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": true
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-cami-espresso": {
+      "handle": "organic-comfort-cami-espresso",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0068_a8738114-e110-4b35-b364-106aa433673a.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0068_a8738114-e110-4b35-b364-106aa433673a.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_01381.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0037_72f06a50-b445-4f6d-9de2-024664b5e49e.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_ESP_0089_d300718f-708e-40c1-ab12-2345f9448503.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0093_273cd66e-0bea-4dc7-8f7c-06c6d6686e0d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_32_ORGANIC_COMFORT_CAMI_HIGH_WAIST_BRIEF_ESPRESSO_0119.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-cami-sand": {
+      "handle": "organic-comfort-cami-sand",
+      "title": "Organic Comfort Cami",
+      "lead": "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0055_a81756b2-cca5-46a4-bba4-8a9da883fce0.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0055_a81756b2-cca5-46a4-bba4-8a9da883fce0.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0159_fffefde1-37a0-4373-87e7-6ff3b00b1da1.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0012_d7101b07-b645-4a85-96fe-e18ff8108a96.jpg",
+        "https://matethelabel.com/cdn/shop/files/20250127_LightWork_MateTheLabel_ApparelFlats_SetA_OrganicComfortCami_NDS_0077_89b25946-f76b-4b24-8a72-be2fdd106fcc.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0136_98b67d3c-5c34-4f56-b232-0c87e8f66c4d.jpg",
+        "https://matethelabel.com/cdn/shop/files/260528_BC_MTL_CORE_RSHT_33_ORGANIC_COMFORT_CAMI_MID_RISE_BIKINI_SAND_0113.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-cami-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-cami-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-cami-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-cami-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    },
+    "organic-comfort-crop-tank-heather-grey": {
+      "handle": "organic-comfort-crop-tank-heather-grey",
+      "title": "Organic Comfort Crop Tank",
+      "lead": "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0052_53e66f57-cb78-4da6-b5d0-a6222905f9b7.jpg",
+      "images": [
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0052_53e66f57-cb78-4da6-b5d0-a6222905f9b7.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0064.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0111.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0146.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0133.jpg",
+        "https://matethelabel.com/cdn/shop/files/260414_BC_MTL_MJ_CAMP_08_ORGANIC_COMFORT_CROP_TANK_MID_RISE_BIKINI_HEATHER_GREY_0030.jpg"
+      ],
+      "swatches": [
+        {
+          "color": "HEATHER GREY",
+          "handle": "organic-comfort-crop-tank-heather-grey",
+          "image": "https://matethelabel.com/cdn/shop/files/color-heather-grey_96x96.png",
+          "current": true
+        },
+        {
+          "color": "JET BLACK",
+          "handle": "organic-comfort-crop-tank-jet-black",
+          "image": "https://matethelabel.com/cdn/shop/files/color-jet-black_96x96.png",
+          "current": false
+        },
+        {
+          "color": "BONE",
+          "handle": "organic-comfort-crop-tank-bone",
+          "image": "https://matethelabel.com/cdn/shop/files/color-bone_96x96.png",
+          "current": false
+        },
+        {
+          "color": "ESPRESSO",
+          "handle": "organic-comfort-crop-tank-espresso",
+          "image": "https://matethelabel.com/cdn/shop/files/color-espresso_96x96.png",
+          "current": false
+        },
+        {
+          "color": "SAND",
+          "handle": "organic-comfort-crop-tank-sand",
+          "image": "https://matethelabel.com/cdn/shop/files/color-sand_96x96.png",
+          "current": false
+        }
+      ],
+      "badges": [],
+      "price": "$44"
+    }
+  }
+}
