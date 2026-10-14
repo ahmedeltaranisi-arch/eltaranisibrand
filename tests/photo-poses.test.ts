@@ -76,6 +76,20 @@ test("every card swaps only between whole photographs of the same colourway", ()
   }
 });
 
+test("a standing full-length pose is always preferred over a waist-up frame", () => {
+  let standing = 0;
+  for (const [name, products] of catalogs) {
+    for (const product of products) {
+      const frames = product.images;
+      const full = frames.filter((src) => measured[src]?.[1] === 1);
+      if (full.length === 0) continue;
+      assert.ok(full.includes(frames[0]), `${name}: ${product.slug} leads with ${frames[0]} while ${full[0]} is a standing pose`);
+      standing += 1;
+    }
+  }
+  assert.ok(standing > 380, `only ${standing} colourways lead with a standing pose`);
+});
+
 test("selectFrames keeps every frame, lifting whole photographs ahead of the crops", () => {
   const product = activewearProducts[0];
   const selection = selectFrames([...product.images].reverse(), product.category);

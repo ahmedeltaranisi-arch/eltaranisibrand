@@ -46,7 +46,7 @@ export function isWholePose(src: string, category: string): boolean | null {
 }
 
 export type FrameSelection = {
-  /** Whole-photograph frames first, in catalogue order, then the remaining crops. */
+  /** Whole-photograph frames first (a standing full-length pose before a waist-up one), then crops. */
   images: string[];
   /** How many whole-photograph frames the colourway owns. */
   wholeCount: number;
@@ -56,18 +56,26 @@ export type FrameSelection = {
 };
 
 /**
- * Orders a colourway's frames so every card leads with a full photograph and swaps to a second
- * one on hover. Crops are kept at the end for the gallery and the arrow keys, never as a hero.
+ * A frame's rank: `0` a standing full-length pose (the model's feet in frame), `1` a waist-up
+ * photograph that still holds the whole garment, `2` a crop. Cards lead with the lowest rank,
+ * so a colourway that owns a standing pose always shows it.
+ */
+export function frameRank(src: string): number {
+  const flags = POSES[src];
+  if (!flags) return 1; // never measured: usable, ranked with the waist-up frames
+  if (flags[0] !== 1) return 2;
+  return flags[1] === 1 ? 0 : 1;
+}
+
+/**
+ * Orders a colourway's frames so every card leads with a whole photograph — the standing pose
+ * first, then the other whole frames — and swaps to a second whole photograph on hover. Crops
+ * stay at the end for the gallery and the arrow keys, never as a hero.
  */
 export function selectFrames(images: string[], category: string): FrameSelection {
-  const whole: string[] = [];
-  const rest: string[] = [];
-  for (const src of images) {
-    if (isWholePose(src, category) === false) rest.push(src);
-    else whole.push(src);
-  }
-  const ordered = [...whole, ...rest];
-  const hero = whole[0] ?? images[0] ?? "";
+  const ordered = [...images].sort((a, b) => frameRank(a) - frameRank(b));
+  const whole = ordered.filter((src) => isWholePose(src, category) !== false);
+  const hero = whole[0] ?? ordered[0] ?? "";
   const hover = whole[1] ?? hero;
   return { images: ordered, wholeCount: whole.length, hero, hover };
 }
@@ -91,6 +99,11 @@ export function hasUsablePhotography(images: string[], category: string): boolea
 /** Every whole photograph a colourway owns, in catalogue order. Unmeasured frames count as whole. */
 export function wholeFrames(images: string[], category: string): string[] {
   return images.filter((src) => isWholePose(src, category) !== false);
+}
+
+/** A colourway whose best photograph is a standing full-length pose, rather than a waist-up one. */
+export function bestRank(images: string[]): number {
+  return images.reduce((rank, src) => Math.min(rank, frameRank(src)), 2);
 }
 
 /**
