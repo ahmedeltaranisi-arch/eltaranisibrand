@@ -5,13 +5,12 @@ import { activewearProducts } from "../src/lib/activewearCatalog";
 import { arrivalCatalog } from "../src/lib/mateNewArrivals";
 import { shopAllProducts } from "../src/lib/shopAll";
 import {
-  bestRank,
+  displayFrames,
   frameStatus,
-  hasUsablePhotography,
   hoverFrame,
   isProductOnly,
+  pooledFrames,
   selectFrames,
-  wholeFrames,
 } from "../src/lib/photoSelection";
 
 type RawProduct = { slug: string; images: string[]; category: string };
@@ -25,80 +24,90 @@ const catalogs = [
   ["shop all", shopAllProducts],
 ] as const;
 
-test("no modelled product shows a photograph the scan flagged as cut off", () => {
-  // The gallery, the swipe frames, the search rows and the cart lines all read these arrays, so
-  // no storefront surface can bring a crop back on screen.
+test("no surface can render a photograph the scan flagged as cut off", () => {
+  // Cards, the product gallery, the swipe frames, the search rows and the cart lines all read
+  // these arrays, so a crop cannot come back on screen anywhere.
   for (const [name, products] of catalogs) {
     for (const product of products) {
       for (const frame of product.images) {
         if (isProductOnly(product.category)) continue; // a sock flat still has no model to cut
-        assert.notEqual(frameStatus(frame), "crop", `${name}: ${product.slug} still shows ${frame}`);
+        assert.equal(frameStatus(frame), "whole", `${name}: ${product.slug} still shows ${frame}`);
       }
     }
   }
 });
 
-test("every modelled card leads with a whole photograph, never an uncertain one", () => {
-  let whole = 0;
-  for (const [name, products] of catalogs) {
-    for (const product of products) {
-      if (isProductOnly(product.category)) continue;
-      const lead = frameStatus(product.images[0]);
-      assert.ok(lead === "whole" || lead === "uncertain", `${name}: ${product.slug} leads with ${product.images[0]} (${lead})`);
-      if (lead === "whole") whole += 1;
-    }
-  }
-  assert.ok(whole > 390, `only ${whole} cards lead with a whole photograph`);
-});
-
-test("the hover frame is a second whole photograph, and absent when there is none", () => {
+test("every card leads with a complete photograph and swaps to a second one", () => {
+  let cards = 0;
   let swaps = 0;
   for (const [name, products] of catalogs) {
     for (const product of products) {
-      if (isProductOnly(product.category)) continue; // a sock still swaps between flat lays
-      const hero = product.images[0];
-      const alternate = hoverFrame(product.images, product.category, hero);
-      if (!alternate) {
-        assert.ok(wholeFrames(product.images, product.category).length < 2, `${name}: ${product.slug} could swap`);
-        continue;
-      }
-      assert.notEqual(alternate, hero, `${name}: ${product.slug}`);
-      assert.equal(frameStatus(alternate), "whole", `${name}: ${product.slug} hovers to ${alternate}`);
+      if (isProductOnly(product.category)) continue;
+      assert.ok(product.images.length > 0, `${name}: ${product.slug} has no complete photograph`);
+      assert.equal(frameStatus(product.images[0]), "whole", `${name}: ${product.slug}`);
+      cards += 1;
+      const alternate = hoverFrame(product.images, product.category, product.images[0]);
+      if (!alternate) continue;
+      assert.notEqual(alternate, product.images[0], `${name}: ${product.slug}`);
+      assert.equal(frameStatus(alternate), "whole", `${name}: ${product.slug} → ${alternate}`);
       swaps += 1;
     }
   }
+  assert.ok(cards > 400, `only ${cards} cards render`);
   assert.ok(swaps > 250, `only ${swaps} colourways can swap poses`);
 });
 
-test("a colourway leaves the catalogue when every one of its photographs is cut off", () => {
+test("a colourway whose photographs are all crops leaves the catalogue", () => {
   const cases = [
     ["arrivals", rawArrivals, arrivalCatalog],
     ["activewear", rawActivewear, activewearProducts],
     ["shop all", rawShopAll, shopAllProducts],
   ] as const;
   let dropped = 0;
+  const droppedSlugs: string[] = [];
   for (const [name, raw, kept] of cases) {
     const keptSlugs = new Set(kept.map((product) => product.slug));
     for (const product of raw) {
-      const usable = hasUsablePhotography(product.images, product.category);
-      assert.equal(keptSlugs.has(product.slug), usable, `${name}: ${product.slug}`);
-      if (!usable) dropped += 1;
+      const pooled = pooledFrames(product.slug, product.images);
+      const usable = isProductOnly(product.category) || displayFrames(pooled, product.category).length > 0;
+      assert.equal(
+        keptSlugs.has(product.slug),
+        usable,
+        `${name}: ${product.slug} is ${usable ? "missing from" : "still inside"} the catalogue`,
+      );
+      if (!usable) { dropped += 1; droppedSlugs.push(product.slug); }
     }
   }
-  // Fig, Mulberry and Nori bras, the mocha high-neck tank, the iris scoop bra, the bone V-neck
-  // bra, two track-pant dyes and the sienna midi legging were photographed cut off from end to
-  // end, so there is no hero to show and the colour leaves the catalogue.
-  assert.ok(dropped >= 9, `only ${dropped} colourways were dropped`);
-  assert.equal(arrivalCatalog.length, 176);
-  assert.equal(activewearProducts.length, 87);
-  assert.equal(shopAllProducts.length, 202);
+  assert.equal(dropped, 34, "thirty-four catalogue rows lose their only complete photograph");
+  assert.equal(new Set(droppedSlugs).size, 16, "sixteen colourways leave the storefront");
+  assert.equal(arrivalCatalog.length, 167);
+  assert.equal(activewearProducts.length, 85);
+  assert.equal(shopAllProducts.length, 191);
 });
 
-test("a card's frames rank whole first, then uncertain, and never a crop", () => {
-  const a = activewearProducts[0];
-  const selection = selectFrames([...a.images].reverse(), a.category);
-  assert.deepEqual(selection.hero, selection.images[0]);
-  assert.equal(bestRank(selection.images), 2);
-  const ranks = selection.images.map((src) => Number(frameStatus(src) === "whole"));
-  assert.deepEqual(ranks, [...ranks].sort((x, y) => y - x), "whole frames are not ahead of the rest");
+test("a colourway is judged on every photograph of that slug, not just its own catalogue", () => {
+  // The Activewear capture filed some dyes as waist-up crops while the New Arrivals capture held
+  // their full-length pose; pooling gives the dye the photograph it deserves.
+  const shared = activewearProducts.find((product) =>
+    rawArrivals.some((arrival) => arrival.slug === product.slug && arrival.images.some((image) => !product.images.includes(image))),
+  );
+  assert.ok(shared, "the two captures disagree about at least one colourway");
+  const pooled = pooledFrames(shared.slug, []);
+  assert.ok(pooled.length > 0, shared.slug);
+  for (const frame of pooled.slice(0, 1)) assert.equal(frameStatus(frame), "whole", frame);
+});
+
+test("selectFrames renders only complete photographs and keeps the colourway's order", () => {
+  const product = activewearProducts[0];
+  const selection = selectFrames(product.images, product.category);
+  assert.deepEqual(selection.images, product.images);
+  for (const frame of selection.images) assert.equal(frameStatus(frame), "whole", frame);
+  assert.equal(selection.hero, selection.images[0]);
+});
+
+test("a flat product still carries no model and is never filtered out", () => {
+  assert.equal(isProductOnly("socks"), true);
+  assert.equal(isProductOnly("leggings"), false);
+  const stills = ["/img/aw/12124ed56afe.webp", "/img/aw/dbf7746aaf99.webp"];
+  assert.deepEqual(displayFrames(stills, "socks"), stills);
 });

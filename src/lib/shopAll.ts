@@ -1,5 +1,5 @@
 import snapshot from "./shopAllCatalog.json";
-import { hasUsablePhotography, selectFrames } from "./photoSelection";
+import { pooledFrames, selectFrames } from "./photoSelection";
 import { catalogColorways, getCatalogProduct } from "./mateCatalog";
 import {
   sortProducts,
@@ -51,11 +51,9 @@ type Snapshot = {
 const data = snapshot as unknown as Snapshot;
 
 export const shopAllProducts: ShopAllProduct[] = [...data.products]
-  .filter((product) => hasUsablePhotography(product.images, product.category))
-  .map((product) => ({ ...product, images: selectFrames(product.images, product.category).images }))
-  .sort(
-  (a, b) => a.featuredRank - b.featuredRank,
-);
+  .map((product) => ({ ...product, images: selectFrames(pooledFrames(product.slug, product.images), product.category).images }))
+  .filter((product) => product.images.length > 0)
+  .sort((a, b) => a.featuredRank - b.featuredRank);
 
 /** The collection-level copy the reference prints above the grid. */
 export const SHOP_ALL_EDITORIAL = data.nav.editorial;

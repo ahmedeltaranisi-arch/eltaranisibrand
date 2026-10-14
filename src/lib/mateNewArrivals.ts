@@ -1,5 +1,5 @@
 import snapshot from "./newArrivalsCatalog.json";
-import { hasUsablePhotography, selectFrames } from "./photoSelection";
+import { pooledFrames, selectFrames } from "./photoSelection";
 
 /** A colorway is a real, independently photographed product, never a tinted fallback. */
 export type MateProduct = {
@@ -37,8 +37,8 @@ export type MateProduct = {
  * photography is crops never enters the catalogue.
  */
 export const arrivalCatalog: MateProduct[] = (snapshot as MateProduct[])
-  .filter((product) => hasUsablePhotography(product.images, product.category))
-  .map((product) => ({ ...product, images: selectFrames(product.images, product.category).images }));
+  .map((product) => ({ ...product, images: selectFrames(pooledFrames(product.slug, product.images), product.category).images }))
+  .filter((product) => product.images.length > 0);
 
 const bySlug = new Map(arrivalCatalog.map((product) => [product.slug, product]));
 

@@ -11,8 +11,8 @@ import { PAGE_SIZE } from "../src/lib/mateNewArrivals";
 const blank = { categories: [], sizes: [], colors: [] };
 
 test("shop all is the union of both captures, one row per photographed colorway", () => {
-  assert.equal(shopAllProducts.length, 202);
-  assert.equal(new Set(shopAllProducts.map((product) => product.slug)).size, 202);
+  assert.equal(shopAllProducts.length, 191);
+  assert.equal(new Set(shopAllProducts.map((product) => product.slug)).size, 191);
   // The Activewear capture's own products are all reachable here.
   assert.ok(shopAllProducts.some((product) => product.slug === "organic-stretch-biker-short-jet-black"));
   // Every row ships real photography and a real purchase choice.
@@ -24,10 +24,10 @@ test("shop all is the union of both captures, one row per photographed colorway"
 
 test("every rail holds real products and is discoverable from the header", () => {
   const counts = Object.fromEntries(SHOP_ALL_TABS.map((tab) => [tab.id, railProducts(tab.handle).length]));
-  assert.deepEqual(counts, { all: 202, activewear: 86, tees: 17, sweats: 77, intimates: 22, sleep: 18 });
+  assert.deepEqual(counts, { all: 191, activewear: 78, tees: 14, sweats: 77, intimates: 19, sleep: 18 });
   // The Organic Stretch fabric rail is its own collection, so it cannot shadow Activewear.
-  assert.equal(railProducts("organic-stretch").length, 85);
-  assert.equal(railProducts("activewear").length, 86);
+  assert.equal(railProducts("organic-stretch").length, 77);
+  assert.equal(railProducts("activewear").length, 78);
   for (const tab of SHOP_ALL_TABS) assert.ok(railProducts(tab.handle).length > 0, `${tab.handle} is empty`);
   assert.ok(SHOP_ALL_FABRICS.length > 0);
   assert.ok(SHOP_ALL_DYES.length > 0);
@@ -50,8 +50,8 @@ test("facet counts are derived from the catalogue, never typed in", () => {
   assert.equal(facetTotal, shopAllProducts.length - uncategorised);
   assert.equal(colorTotal, shopAllProducts.length - uncategorised);
   assert.equal(counts.categories.leggings, 34);
-  assert.equal(counts.categories["sports-bras"], 22);
-  assert.equal(counts.categories.sweatshirts, 39);
+  assert.equal(counts.categories["sports-bras"], 19);
+  assert.equal(counts.categories.sweatshirts, 38);
   assert.equal(counts.sizes.XS > 0, true);
   // A facet never counts a value the drawer does not offer.
   for (const value of Object.keys(counts.categories)) assert.ok(SHOP_ALL_CATEGORIES.includes(value), value);

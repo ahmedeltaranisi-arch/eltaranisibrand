@@ -1,4 +1,5 @@
 import statuses from "./photoPoses.json";
+import pool from "./photoPool.json";
 
 /**
  * Every storefront photograph was measured once, twice over: the pose landmarks say where the
@@ -18,6 +19,21 @@ type Status = 0 | 1 | 2;
 
 const STATUSES = statuses as unknown as Record<string, Status>;
 
+/**
+ * Every photograph of a product — the same slug is filed in more than one catalogue, and each one
+ * captured a different set of frames. Pooling them gives a colourway the widest choice of
+ * complete photographs, so a dye the Activewear capture shot as a crop can still lead with the
+ * full-length pose the New Arrivals capture holds. Built by the scan described in docs/photos.md.
+ */
+const POOL = pool as unknown as Record<string, string[]>;
+
+export function pooledFrames(slug: string, own: string[]): string[] {
+  const union = POOL[slug];
+  if (!union || union.length === 0) return [...own];
+  const seen = new Set<string>();
+  return [...union, ...own].filter((src) => (seen.has(src) ? false : (seen.add(src), true)));
+}
+
 /** Categories whose photograph has to reach the model's feet to show the garment in full. */
 const BOTTOM_CATEGORIES = new Set(["leggings", "shorts", "pants", "sweatpants", "unitards", ""]);
 
@@ -32,21 +48,16 @@ export function isProductOnly(category: string): boolean {
   return PRODUCT_ONLY_CATEGORIES.has(category);
 }
 
-export type FrameStatus = "whole" | "uncertain" | "crop" | "unmeasured";
+export type FrameStatus = "whole" | "crop" | "unmeasured";
 
 export function frameStatus(src: string): FrameStatus {
   const status = STATUSES[src];
   if (status === 2) return "whole";
-  if (status === 1) return "uncertain";
   if (status === 0) return "crop";
   return "unmeasured";
 }
 
-/**
- * `true` — the photograph shows the whole model, `false` — the scan found it cut off, `null` —
- * the frame was never measured, which is treated as usable so photography added later is never
- * silently dropped.
- */
+/** `true` when the scan proved the whole model is inside the frame. */
 export function isWholePose(src: string, _category?: string): boolean | null {
   const status = frameStatus(src);
   if (status === "whole") return true;
@@ -55,76 +66,56 @@ export function isWholePose(src: string, _category?: string): boolean | null {
 }
 
 /**
- * Orders a colourway's frames: whole photographs first, then the uncertain ones. A colourway
- * that owns no whole frame still leads with its best photograph rather than losing its imagery.
+ * The frames a surface may render: only photographs the scan proved complete. A product-only
+ * still (a sock pack) carries no model to cut off and is kept as it is. A colourway with nothing
+ * left returns an empty list, and the catalogue drops the row rather than showing a crop.
  */
 export function displayFrames(images: string[], category: string): string[] {
   if (isProductOnly(category)) return [...images];
-  const whole = images.filter((src) => frameStatus(src) === "whole");
-  const uncertain = images.filter((src) => frameStatus(src) === "uncertain" || frameStatus(src) === "unmeasured");
-  // A colourway the scan has never seen keeps its frames rather than losing its photography.
-  if (whole.length) return [...whole, ...uncertain];
-  return images.length ? [...uncertain.length ? uncertain : images] : [...images];
+  return images.filter((src) => frameStatus(src) === "whole");
+}
+
+/** Every frame a card may swap to — which is every frame it may render. */
+export function wholeFrames(images: string[], category: string): string[] {
+  return displayFrames(images, category);
 }
 
 export type FrameSelection = {
-  /** Whole photographs first, then the uncertain frames — and never a crop. */
   images: string[];
-  /** How many whole-photograph frames the colourway owns. */
   wholeCount: number;
-  /** The hero and the hover frame, which are whole photographs whenever the colourway owns one. */
   hero: string;
   hover: string;
 };
 
 export function selectFrames(images: string[], category: string): FrameSelection {
   const ordered = displayFrames(images, category);
-  const hero = ordered[0] ?? "";
-  const hover = ordered[1] ?? hero;
-  return { images: ordered, wholeCount: ordered.filter((src) => frameStatus(src) === "whole").length, hero, hover };
-}
-
-/** Every frame a card may swap to: the whole photographs, and nothing else. */
-export function wholeFrames(images: string[], category: string): string[] {
-  if (isProductOnly(category)) return [...images];
-  const whole = images.filter((src) => frameStatus(src) === "whole");
-  return whole.length > 1 ? whole : [];
+  return { images: ordered, wholeCount: ordered.length, hero: ordered[0] ?? "", hover: ordered[1] ?? ordered[0] ?? "" };
 }
 
 /**
- * The frame a card shows when the pointer or the keyboard lands on it: the next whole photograph
- * of the same colourway after `current`, wrapping around — and `""` when the colourway owns a
- * single whole photograph, because swapping to anything less is exactly what a card must not do.
+ * The frame a card shows when the pointer or the keyboard lands on it: the next complete
+ * photograph of the same colourway after `current`, wrapping around — and `""` when the colourway
+ * has only one, because swapping to a crop is exactly what a card must not do.
  */
 export function hoverFrame(images: string[], category: string, current: string): string {
-  const whole = wholeFrames(images, category);
+  const whole = displayFrames(images, category);
   if (whole.length < 2) return "";
   const index = whole.indexOf(current);
   return whole[(index < 0 ? 0 : index + 1) % whole.length];
 }
 
-/** A colourway stays only while it owns a photograph the scan is happy with. */
+/** A colourway stays only while it owns at least one complete photograph. */
 export function hasUsablePhotography(images: string[], category: string): boolean {
   if (isProductOnly(category)) return true;
-  let measured = false;
-  for (const src of images) {
-    const status = frameStatus(src);
-    if (status === "unmeasured") continue;
-    measured = true;
-    if (status === "whole" || status === "uncertain") return true;
-  }
-  return !measured;
+  return images.some((src) => frameStatus(src) === "whole");
 }
 
-/** `2` a whole photograph, `1` uncertain, `0` a crop — the rank a card orders frames by. */
+/** `2` a complete photograph, `0` a crop — the rank a card orders frames by. */
 export function frameRank(src: string): number {
   const status = frameStatus(src);
-  if (status === "whole") return 2;
-  if (status === "crop") return 0;
-  return 1;
+  return status === "whole" ? 2 : 0;
 }
 
-/** The best a colourway can lead with: `2` whole, `1` uncertain, `0` only crops. */
 export function bestRank(images: string[]): number {
   return images.reduce((rank, src) => Math.max(rank, frameRank(src)), 0);
 }
