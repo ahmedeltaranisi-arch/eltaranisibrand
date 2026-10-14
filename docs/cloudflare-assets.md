@@ -44,3 +44,14 @@ silently serves 404s is worse than one that errors. Add `--dry-run` to stage wit
 The token needs the account permission `Workers Scripts : Edit`.
 
 Last published run: 1,322 assets staged, `1322 200`, 0 byte mismatches against the staged sizes.
+
+Refreshed with the account token that grants `Workers Scripts : Edit`: the whole tree — the 350
+images the checkout holds plus the 933 the pinned snapshot carries, 1,283 storefront photographs —
+was re-staged and republished, and all 2,946 objects at
+`https://eltaranisi-images.ahmedeltaranisi.workers.dev/img/...` were fetched back over the public
+URL and answered 200.
+
+Cloudflare **Images** (the `imagedelivery.net` product) still answers `5403 The given account is
+not valid or is not authorized to access this service` for every upload until the Images
+subscription is activated on the account; `direct_upload` alone succeeds, the upload itself does
+not. Static Assets on the Workers free plan is what this storefront publishes to.
