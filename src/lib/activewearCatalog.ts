@@ -1,5 +1,6 @@
 import snapshot from "./activewearCatalog.json";
 import measuredAspects from "./photoAspects.json";
+import { hasUsablePhotography, selectFrames } from "./photoSelection";
 import {
   filterCount,
   type CollectionFilters,
@@ -62,7 +63,8 @@ export function posedFrames(images: string[]): string[] {
 
 export const activewearProducts: ActivewearProduct[] = [...data.products]
   .sort((a, b) => a.featuredRank - b.featuredRank)
-  .map((product) => ({ ...product, images: posedFrames(product.images) }));
+  .filter((product) => hasUsablePhotography(product.images, product.category))
+  .map((product) => ({ ...product, images: selectFrames(product.images, product.category).images }));
 
 const bySlug = new Map(activewearProducts.map((product) => [product.slug, product]));
 

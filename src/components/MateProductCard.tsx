@@ -1,5 +1,6 @@
 "use client";
 
+import { hoverFrame } from "@/lib/photoSelection";
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
@@ -34,9 +35,11 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   const color = t(`color.${active.color.name}`);
   const badges = [...new Set([...(leadingBadges ?? []), ...active.badges])];
   const hero = active.images[imageIndex] ?? active.images[0];
-  const alternate = active.images[(imageIndex + 1) % active.images.length] ?? hero;
-  const previewAlternate = imageHovered || imageFocused;
-  const displayedIndex = previewAlternate ? (imageIndex + 1) % active.images.length : imageIndex;
+  // The hover frame is a second whole photograph of the same colourway; a colourway that owns
+  // only one keeps it, because a card never swaps to a crop.
+  const alternate = hoverFrame(active.images, active.category, hero);
+  const previewAlternate = Boolean(alternate) && (imageHovered || imageFocused);
+  const displayedIndex = previewAlternate ? active.images.indexOf(alternate) : imageIndex;
 
   function selectColor(colorway: MateProduct) {
     if (activeSlug === colorway.slug) return;
@@ -85,7 +88,9 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={hero} alt={`${title} — ${color}`} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} width={900} height={1200} draggable={false} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={alternate} alt="" aria-hidden="true" className={`na-product-hover-image ${previewAlternate ? "is-visible" : ""}`} loading="lazy" width={900} height={1200} draggable={false} />
+          {alternate && (
+            <img src={alternate} alt="" aria-hidden="true" className={`na-product-hover-image ${previewAlternate ? "is-visible" : ""}`} loading="lazy" width={900} height={1200} draggable={false} />
+          )}
         </Link>
         {active.images.length > 1 && <div className="na-product-scrollbar" aria-hidden="true"><span style={{ width: `${100 / active.images.length}%`, transform: `translateX(${displayedIndex * 100}%)` }} /></div>}
         {badges.length > 0 && (

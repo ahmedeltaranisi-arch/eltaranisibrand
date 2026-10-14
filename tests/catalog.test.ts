@@ -13,10 +13,10 @@ import { resolveExternalImageSources, sanitizeImagePath } from "../src/lib/image
 
 const blank = emptyFilters();
 
-test("real catalog is unique: 107 arrivals and 177 verified colorways", () => {
+test("real catalog is unique: 107 arrivals and 176 verified colorways", () => {
   assert.equal(mateNewArrivals.length, 107);
-  assert.equal(arrivalCatalog.length, 177);
-  assert.equal(new Set(arrivalCatalog.map((p) => p.slug)).size, 177);
+  assert.equal(arrivalCatalog.length, 176);
+  assert.equal(new Set(arrivalCatalog.map((p) => p.slug)).size, 176);
   assert.equal(PAGE_SIZE, 48);
   assert.deepEqual(mateNewArrivals.map((p) => p.featuredRank), Array.from({ length: 107 }, (_, i) => i));
 });
@@ -46,7 +46,7 @@ test("every color uses real photographs and a real swatch served via the externa
       assert.equal(getArrivalProduct(colorway.slug), colorway);
     }
   }
-  assert.equal(images.size, 883);
+  assert.equal(images.size, 878);
 });
 
 test("category, size and color counts reflect actual available products", () => {

@@ -11,8 +11,8 @@ import { PAGE_SIZE } from "../src/lib/mateNewArrivals";
 const blank = { categories: [], sizes: [], colors: [] };
 
 test("shop all is the union of both captures, one row per photographed colorway", () => {
-  assert.equal(shopAllProducts.length, 205);
-  assert.equal(new Set(shopAllProducts.map((product) => product.slug)).size, 205);
+  assert.equal(shopAllProducts.length, 202);
+  assert.equal(new Set(shopAllProducts.map((product) => product.slug)).size, 202);
   // The Activewear capture's own products are all reachable here.
   assert.ok(shopAllProducts.some((product) => product.slug === "organic-stretch-biker-short-jet-black"));
   // Every row ships real photography and a real purchase choice.
@@ -24,10 +24,10 @@ test("shop all is the union of both captures, one row per photographed colorway"
 
 test("every rail holds real products and is discoverable from the header", () => {
   const counts = Object.fromEntries(SHOP_ALL_TABS.map((tab) => [tab.id, railProducts(tab.handle).length]));
-  assert.deepEqual(counts, { all: 205, activewear: 87, tees: 17, sweats: 79, intimates: 22, sleep: 18 });
+  assert.deepEqual(counts, { all: 202, activewear: 85, tees: 17, sweats: 78, intimates: 22, sleep: 18 });
   // The Organic Stretch fabric rail is its own collection, so it cannot shadow Activewear.
-  assert.equal(railProducts("organic-stretch").length, 86);
-  assert.equal(railProducts("activewear").length, 87);
+  assert.equal(railProducts("organic-stretch").length, 84);
+  assert.equal(railProducts("activewear").length, 85);
   for (const tab of SHOP_ALL_TABS) assert.ok(railProducts(tab.handle).length > 0, `${tab.handle} is empty`);
   assert.ok(SHOP_ALL_FABRICS.length > 0);
   assert.ok(SHOP_ALL_DYES.length > 0);
@@ -49,7 +49,7 @@ test("facet counts are derived from the catalogue, never typed in", () => {
   assert.equal(uncategorised, 1);
   assert.equal(facetTotal, shopAllProducts.length - uncategorised);
   assert.equal(colorTotal, shopAllProducts.length - uncategorised);
-  assert.equal(counts.categories.leggings, 35);
+  assert.equal(counts.categories.leggings, 34);
   assert.equal(counts.categories["sports-bras"], 22);
   assert.equal(counts.categories.sweatshirts, 39);
   assert.equal(counts.sizes.XS > 0, true);
@@ -70,7 +70,7 @@ test("the size rows use the captured variants, and the twelve reference rows sta
 
 test("filtering is OR within a facet and AND across facets, like every other collection", () => {
   const leggings = filterShopAll(shopAllProducts, { ...blank, categories: ["leggings"] });
-  assert.equal(leggings.length, 35);
+  assert.equal(leggings.length, 34);
   assert.ok(leggings.every((product) => product.category === "leggings"));
   const green = filterShopAll(shopAllProducts, { ...blank, colors: ["Green"] });
   const greenLeggings = filterShopAll(shopAllProducts, { ...blank, categories: ["leggings"], colors: ["Green"] });

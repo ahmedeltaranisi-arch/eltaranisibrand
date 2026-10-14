@@ -1,4 +1,5 @@
 import snapshot from "./shopAllCatalog.json";
+import { hasUsablePhotography, selectFrames } from "./photoSelection";
 import { catalogColorways, getCatalogProduct } from "./mateCatalog";
 import {
   sortProducts,
@@ -49,7 +50,10 @@ type Snapshot = {
 
 const data = snapshot as unknown as Snapshot;
 
-export const shopAllProducts: ShopAllProduct[] = [...data.products].sort(
+export const shopAllProducts: ShopAllProduct[] = [...data.products]
+  .filter((product) => hasUsablePhotography(product.images, product.category))
+  .map((product) => ({ ...product, images: selectFrames(product.images, product.category).images }))
+  .sort(
   (a, b) => a.featuredRank - b.featuredRank,
 );
 
