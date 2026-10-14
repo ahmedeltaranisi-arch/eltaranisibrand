@@ -7,6 +7,11 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import MateCollectionGrid from "@/components/MateCollectionGrid";
 import MateBestSellersGrid from "@/components/MateBestSellersGrid";
 import MateActivewearGrid from "@/components/MateActivewearGrid";
+import MateShopAllGrid from "@/components/MateShopAllGrid";
+import { SHOP_ALL_ROUTES } from "@/lib/shopAll";
+
+/** Handles the Shop All grid serves: `/collections/all` plus the rails the header links to. */
+const SHOP_ALL_HANDLE_SET = new Set<string>(SHOP_ALL_ROUTES);
 
 /** The Activewear collection plus the child collections and dyes its rails and mega menu link to. */
 const ACTIVEWEAR_CHILD_HANDLES = [
@@ -17,10 +22,13 @@ const ACTIVEWEAR_CHILD_HANDLES = [
   "dresses-unitards",
 ] as const;
 
-/** The reference links five dye collections from the mega menu; each shows that dye's own colorways. */
+/**
+ * The reference links five dye collections from the Activewear mega menu; each shows that dye's
+ * own colorways. Nori is the one the Clothing menu also features, so it is served by the Shop All
+ * grid across the whole catalogue instead of the Activewear capture alone.
+ */
 const ACTIVEWEAR_DYE_HANDLES: Record<string, string> = {
   fig: "fig",
-  nori: "nori",
   mulberry: "mulberry",
   "mocha-move": "mocha",
   pebble: "pebble",
@@ -41,10 +49,13 @@ export function generateStaticParams() {
     "sale",
     "all",
     "intimates",
+    ...SHOP_ALL_ROUTES,
     ...ACTIVEWEAR_CHILD_HANDLES,
     ...Object.keys(ACTIVEWEAR_DYE_HANDLES),
     ...ACTIVEWEAR_ALIAS_HANDLES,
-  ].map((handle) => ({ handle }));
+  ]
+    .filter((handle, index, all) => all.indexOf(handle) === index)
+    .map((handle) => ({ handle }));
 }
 
 export async function generateMetadata({
@@ -53,6 +64,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string; handle: string }>;
 }) {
   const { locale, handle } = await params;
+  // The Shop All rails are collection pages of their own; they are not in the legacy catalogue.
+  if (SHOP_ALL_HANDLE_SET.has(handle)) {
+    const t = await getTranslations({ locale, namespace: "shopAll" });
+    const key = `collection.${handle}`;
+    return {
+      title: t.has(`${key}.title`) ? t(`${key}.title`) : t("title"),
+      description: t.has(`${key}.description`) ? t(`${key}.description`) : t("description"),
+    };
+  }
   const c = getCollection(handle);
   if (!c) return {};
   if (handle === "new-arrivals") {
@@ -106,6 +126,13 @@ export default async function CollectionPage({
   if (ACTIVEWEAR_ALIAS_HANDLES.includes(handle as "move-by-mate")) {
     await connection();
     return <MateActivewearGrid editorials />;
+  }
+
+  // Shop All and every rail the header links to (Tees, Sweats, Intimates, Sleep, the dyes and
+  // fabrics, the capsule edits) render as one collection with the reference's own furniture.
+  if (SHOP_ALL_HANDLE_SET.has(handle)) {
+    await connection();
+    return <MateShopAllGrid handle={handle} />;
   }
 
   const collection = getCollection(handle);

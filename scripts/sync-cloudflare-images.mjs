@@ -29,7 +29,7 @@
  * snapshot otherwise; every upload is reported with the provider's own error, never swallowed.
  */
 
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { spawnSync } from "node:child_process";
 
@@ -100,15 +100,30 @@ async function assetBytes(relPath) {
   return { body: new Uint8Array(await response.arrayBuffer()), type: typeOf(relPath), source: "pinned CDN" };
 }
 
-/** Every image the storefront references, read off the pinned commit's tree. */
+/** Every image this checkout holds under `public/img`, whatever the pinned snapshot knows of. */
+function localImagePaths() {
+  const walk = (dir, prefix) =>
+    readdirSync(dir, { withFileTypes: true }).flatMap((entry) =>
+      entry.isDirectory()
+        ? walk(join(dir, entry.name), `${prefix}${entry.name}/`)
+        : TYPES[`.${entry.name.split(".").pop()?.toLowerCase()}`]
+          ? [`${prefix}${entry.name}`]
+          : [],
+    );
+  return existsSync("public/img") ? walk("public/img", "") : [];
+}
+
+/** Every image the storefront references: the pinned commit's tree plus this checkout's own. */
 async function allSiteImages() {
   const url = `https://api.github.com/repos/${REPO}/git/trees/${COMMIT}:public/img?recursive=1`;
   const response = await fetch(url, { headers: { Accept: "application/vnd.github+json", "User-Agent": "eltaranisi-sync" } });
   if (!response.ok) throw new Error(`could not list the mirror tree (${response.status})`);
   const tree = (await response.json()).tree ?? [];
-  return tree
+  const mirrored = tree
     .filter((entry) => entry.type === "blob" && TYPES[`.${entry.path.split(".").pop()?.toLowerCase()}`])
     .map((entry) => entry.path);
+  // A checkout can hold photography the snapshot predates; those bytes come from the workspace.
+  return [...new Set([...mirrored, ...localImagePaths()])];
 }
 
 async function resolveAccountId() {

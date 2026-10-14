@@ -3,13 +3,18 @@
 import type { ReactNode } from "react";
 import { usePathname } from "@/navigation";
 import { getCatalogProduct } from "@/lib/mateCatalog";
+import { SHOP_ALL_ROUTES } from "@/lib/shopAll";
 import ArrivalPromo from "./ArrivalPromo";
 import ArrivalCartDrawer from "./ArrivalCartDrawer";
 import PromoButton from "../PromoButton";
 import CartDrawer from "../CartDrawer";
 
-/** Every collection the Activewear skin serves: the collection, its children and its dyes. */
+/**
+ * Every collection the arrival skin serves: New Arrivals, Best Sellers, Activewear with its
+ * children and dyes, and every rail of the Shop All collection.
+ */
 const ARRIVAL_COLLECTIONS = new Set([
+  ...SHOP_ALL_ROUTES.map((handle) => `/collections/${handle}`),
   "/collections/new-arrivals",
   "/collections/best-sellers",
   "/collections/activewear",

@@ -3,11 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/navigation";
+import { SHOP_ALL_DYES, SHOP_ALL_FABRICS, SHOP_ALL_MEGA_TILES } from "@/lib/shopAll";
 
 /**
- * The Activewear mega menu, reproduced from the reference header: three link columns
- * (Categories, Featured Colors, Featured Collections) and two featured tiles. Every target is a
- * collection this storefront really renders, and every swatch is the dye's own artwork.
+ * The header's mega menus, reproduced from the reference header: link columns (Categories,
+ * Featured Colors, Featured Fabrics, Featured Collections) and two featured tiles. Every target
+ * is a collection this storefront really renders with real products, and every swatch is the
+ * dye's own artwork — a row the catalogue cannot fill is not printed.
  */
 export type MegaColor = { key: string; labelKey: string; href: string; swatch: string };
 
@@ -37,16 +39,52 @@ export const MEGA_TILES = [
   { key: "shopAllActivewear", href: "/collections/move-by-mate", image: "/img/aw/mega/shop-all-activewear.webp" },
 ] as const;
 
-export default function ArrivalMegaMenu({ label, href }: { label: string; href: string }) {
-  const t = useTranslations("activewear.mega");
+/**
+ * The Clothing mega menu, mirroring the reference's own rows: its category list, the five dyes it
+ * features (each with that dye's real colorways behind it), its fabricates and its collections.
+ * Rows the catalogue cannot stand behind (Sale, Gift Card, Organic Pima Cotton) are not rendered
+ * until such products exist — a menu entry never lands on an empty page.
+ */
+const CLOTHING_CATEGORY_LINKS = [
+  { key: "shopAllClothing", href: "/collections/all" },
+  { key: "bestSellers", href: "/collections/best-sellers" },
+  { key: "activewear", href: "/collections/activewear" },
+  { key: "teesTanks", href: "/collections/tees" },
+  { key: "sweatshirts", href: "/collections/sweatshirts" },
+  { key: "sweatpants", href: "/collections/sweatpants" },
+  { key: "sweaters", href: "/collections/sweaters" },
+  { key: "bottoms", href: "/collections/bottoms" },
+  { key: "sleep", href: "/collections/sleep" },
+  { key: "intimates", href: "/collections/intimates" },
+  { key: "socks", href: "/collections/socks" },
+] as const;
+
+const CLOTHING_COLLECTION_LINKS = [
+  { key: "newArrivals", href: "/collections/new-arrivals" },
+  { key: "octoberCapsule", href: "/collections/october-capsule" },
+  { key: "getawayEdit", href: "/collections/getaway-edit" },
+  { key: "organicStudioUniform", href: "/collections/organic-studio-uniform" },
+  { key: "cozyShop", href: "/collections/cozy-shop" },
+  { key: "bundleAndSave", href: "/collections/bundle-and-save" },
+] as const;
+
+export default function ArrivalMegaMenu({ label, href, variant = "activewear" }: {
+  label: string;
+  href: string;
+  /** Which menu to open: the Activewear capture's own, or the Clothing (Shop All) one. */
+  variant?: "activewear" | "clothing";
+}) {
+  const t = useTranslations(variant === "clothing" ? "shopAll.mega" : "activewear.mega");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const timer = useRef<number | null>(null);
   const wrap = useRef<HTMLDivElement>(null);
-  const current =
-    pathname === href ||
-    MEGA_CATEGORY_LINKS.some((link) => pathname === link.href) ||
-    MEGA_COLORS.some((link) => pathname === link.href);
+
+  const links =
+    variant === "clothing"
+      ? [...CLOTHING_CATEGORY_LINKS.map((link) => link.href), ...CLOTHING_COLLECTION_LINKS.map((link) => link.href)]
+      : [...MEGA_CATEGORY_LINKS.map((link) => link.href), ...MEGA_COLORS.map((link) => link.href), ...MEGA_COLLECTION_LINKS.map((link) => link.href)];
+  const current = pathname === href || links.includes(pathname);
 
   useEffect(() => {
     if (!open) return;
@@ -59,11 +97,13 @@ export default function ArrivalMegaMenu({ label, href }: { label: string; href: 
 
   useEffect(() => () => { if (timer.current) window.clearTimeout(timer.current); }, []);
 
-  function schedule(open: boolean) {
+  function schedule(next: boolean) {
     if (timer.current) window.clearTimeout(timer.current);
     // A short grace period keeps the pointer's diagonal trip from the label into the panel.
-    timer.current = window.setTimeout(() => setOpen(open), open ? 0 : 120);
+    timer.current = window.setTimeout(() => setOpen(next), next ? 0 : 120);
   }
+
+  const panelId = variant === "clothing" ? "na-mega-clothing" : "na-mega-activewear";
 
   return (
     <div
@@ -80,44 +120,82 @@ export default function ArrivalMegaMenu({ label, href }: { label: string; href: 
         aria-current={current ? "page" : undefined}
         aria-expanded={open}
         aria-haspopup="true"
-        aria-controls="na-mega-activewear"
+        aria-controls={panelId}
         onKeyDown={(event) => { if (event.key === "ArrowDown") { event.preventDefault(); setOpen(true); } }}
       >
         {label}
       </Link>
-      <div id="na-mega-activewear" className="na-header-mega-panel" inert={!open} aria-hidden={!open}>
+      <div id={panelId} className="na-header-mega-panel" inert={!open} aria-hidden={!open}>
         <div className="na-header-mega-columns">
           <div>
             <p className="na-header-mega-title">{t("categoriesTitle")}</p>
-            {MEGA_CATEGORY_LINKS.map((link) => (
-              <Link key={link.key} href={link.href}>{t(link.key)}</Link>
-            ))}
+            {variant === "clothing"
+              ? CLOTHING_CATEGORY_LINKS.map((link) => <Link key={link.key} href={link.href}>{t(link.key)}</Link>)
+              : MEGA_CATEGORY_LINKS.map((link) => <Link key={link.key} href={link.href}>{t(link.key)}</Link>)}
           </div>
           <div>
             <p className="na-header-mega-title">{t("colorsTitle")}</p>
-            {MEGA_COLORS.map((link) => (
-              <Link key={link.key} href={link.href}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="na-nav-swatch" src={link.swatch} alt="" width={40} height={40} loading="lazy" />
-                {t(link.labelKey)}
-              </Link>
-            ))}
+            {variant === "clothing"
+              ? SHOP_ALL_DYES.map((dye) => (
+                <Link key={dye.id} href={dye.href}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img className="na-nav-swatch" src={dye.swatch ?? ""} alt="" width={40} height={40} loading="lazy" />
+                  {t(`color.${dye.handle}`)}
+                </Link>
+              ))
+              : MEGA_COLORS.map((link) => (
+                <Link key={link.key} href={link.href}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img className="na-nav-swatch" src={link.swatch} alt="" width={40} height={40} loading="lazy" />
+                  {t(link.labelKey)}
+                </Link>
+              ))}
           </div>
-          <div>
-            <p className="na-header-mega-title">{t("collectionsTitle")}</p>
-            {MEGA_COLLECTION_LINKS.map((link) => (
-              <Link key={link.key} href={link.href}>{t(link.key)}</Link>
-            ))}
-          </div>
+          {variant === "clothing" ? (
+            <>
+              <div>
+                <p className="na-header-mega-title">{t("fabricsTitle")}</p>
+                {SHOP_ALL_FABRICS.map((fabric) => (
+                  <Link key={fabric.id} href={fabric.href}>{t(`fabric.${fabric.id}`)}</Link>
+                ))}
+              </div>
+              <div>
+                <p className="na-header-mega-title">{t("collectionsTitle")}</p>
+                {CLOTHING_COLLECTION_LINKS.map((link) => (
+                  <Link key={link.key} href={link.href}>{t(link.key)}</Link>
+                ))}
+              </div>
+            </>
+          ) : (
+            <div>
+              <p className="na-header-mega-title">{t("collectionsTitle")}</p>
+              {MEGA_COLLECTION_LINKS.map((link) => (
+                <Link key={link.key} href={link.href}>{t(link.key)}</Link>
+              ))}
+            </div>
+          )}
         </div>
         <div className="na-header-featured">
-          {MEGA_TILES.map((tile) => (
-            <Link key={tile.key} href={tile.href}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={tile.image} alt="" width={218} height={281} loading="lazy" />
-              <span>{t(tile.key)}</span>
-            </Link>
-          ))}
+          {variant === "clothing"
+            ? (
+              [
+                { key: "octoberCapsule", href: "/collections/october-capsule", image: SHOP_ALL_MEGA_TILES.octoberCapsule },
+                { key: "getawayEdit", href: "/collections/getaway-edit", image: SHOP_ALL_MEGA_TILES.getawayEdit },
+              ] as const
+            ).map((tile) => (
+              <Link key={tile.key} href={tile.href}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={tile.image} alt="" width={218} height={281} loading="lazy" />
+                <span>{t(`tile.${tile.key}`)}</span>
+              </Link>
+            ))
+            : MEGA_TILES.map((tile) => (
+              <Link key={tile.key} href={tile.href}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={tile.image} alt="" width={218} height={281} loading="lazy" />
+                <span>{t(tile.key)}</span>
+              </Link>
+            ))}
         </div>
       </div>
       <span className="na-header-scrim" aria-hidden="true" />

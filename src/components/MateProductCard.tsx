@@ -6,12 +6,17 @@ import { Link } from "@/navigation";
 import { formatLE, type MateProduct } from "@/lib/mateNewArrivals";
 import { catalogColorways, getCatalogProduct } from "@/lib/mateCatalog";
 
-export default function MateProductCard({ product, priority = false, onQuickAdd, leadingBadges }: {
+export default function MateProductCard({ product, priority = false, onQuickAdd, leadingBadges, colorways: colorwayRow }: {
   product: MateProduct;
   priority?: boolean;
   onQuickAdd: (product: MateProduct) => void;
   /** Collection-level badges (the reference badges every Best Sellers card), never stored data. */
   leadingBadges?: string[];
+  /**
+   * Collections that print one swatch per colour group (Shop All) pass their own row builder;
+   * everything else keeps the arrival capture's colourways on that collection's own photography.
+   */
+  colorways?: (product: MateProduct) => MateProduct[];
 }) {
   const t = useTranslations("newArrivals");
   const [activeSlug, setActiveSlug] = useState(product.slug);
@@ -24,7 +29,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   const dragged = useRef(false);
   // The colourway we were handed wins; a slug switch resolves through both captures.
   const active = activeSlug === product.slug ? product : getCatalogProduct(activeSlug) ?? product;
-  const colorways = catalogColorways(product);
+  const colorways = (colorwayRow ?? catalogColorways)(product);
   const title = t(`products.${active.style}`);
   const color = t(`color.${active.color.name}`);
   const badges = [...new Set([...(leadingBadges ?? []), ...active.badges])];

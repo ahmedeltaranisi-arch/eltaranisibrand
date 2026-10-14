@@ -1280,5 +1280,169 @@
     "night": "Night",
     "switchToLight": "Switch to day mode",
     "switchToDark": "Switch to night mode"
+  },
+  "shopAll": {
+    "title": "All",
+    "description": "Intentional essentials you’ll never want to take off.",
+    "rails": "Shop collection categories",
+    "tab": {
+      "all": "Shop All",
+      "activewear": "Activewear",
+      "tees": "Tees",
+      "sweats": "Sweats",
+      "intimates": "Intimates",
+      "sleep": "Sleep"
+    },
+    "tabAlt": {
+      "all": "A model in a black ribbed set standing against a pale studio wall.",
+      "activewear": "A model in a taupe sports bra and matching leggings, holding a dumbbell.",
+      "tees": "A model in a black t-shirt and jeans, seated.",
+      "sweats": "A model in an oversized light grey sweatshirt and matching sweatpants, seated in a chair.",
+      "intimates": "A model in a cream bra and underwear set.",
+      "sleep": "A close-up of a model wearing brown sleep shorts with a woven label at the waist."
+    },
+    "editorial": {
+      "octoberCapsule": {
+        "heading": "The October Capsule",
+        "body": "Soft, essential layers crafted from naturally luxurious materials, in rich hues that lend depth to every autumn look.",
+        "cta": "Shop Now"
+      },
+      "getawayEdit": {
+        "heading": "The Getaway Edit",
+        "body": "Style, well-traveled; these are the polished, easy pieces you’ll want to wear everywhere.",
+        "cta": "Shop Now"
+      }
+    },
+    "collection": {
+      "all": {
+        "title": "All",
+        "description": "Intentional essentials you’ll never want to take off."
+      },
+      "tees": {
+        "title": "Tees",
+        "description": "Soft pointelle tees, tanks and cardigans in certified organic cotton."
+      },
+      "sweats": {
+        "title": "Sweats",
+        "description": "Brushed fleece and waffle knits for the hours that belong to you."
+      },
+      "intimates": {
+        "title": "Intimates",
+        "description": "Bras and tanks in certified organic stretch, cut close and easy."
+      },
+      "sleep": {
+        "title": "Sleep",
+        "description": "Waffle, pointelle and merino layers made for slow mornings."
+      },
+      "socks": {
+        "title": "Socks",
+        "description": "Organic cotton socks, woven in packs of three and five."
+      },
+      "october-capsule": {
+        "title": "The October Capsule",
+        "description": "Soft, essential layers crafted from naturally luxurious materials, in rich hues that lend depth to every autumn look."
+      },
+      "getaway-edit": {
+        "title": "The Getaway Edit",
+        "description": "Style, well-traveled; these are the polished, easy pieces you’ll want to wear everywhere."
+      },
+      "cozy-shop": {
+        "title": "The Cozy Shop",
+        "description": "Everything fleece, waffle and merino — the pieces that make a season feel warmer."
+      },
+      "bundle-and-save": {
+        "title": "Bundle & Save",
+        "description": "The packs and sets that carry our bundle pricing."
+      },
+      "sweatshirts": {
+        "title": "Sweatshirts",
+        "description": "Crewnecks, hoodies and half-zips cut from organic fleece and waffle."
+      },
+      "sweatpants": {
+        "title": "Sweatpants",
+        "description": "Relaxed, oversized and straight-leg sweatpants in organic fleece and waffle."
+      },
+      "sweaters": {
+        "title": "Sweaters",
+        "description": "Merino and waffle knits for layering season."
+      },
+      "bottoms": {
+        "title": "Bottoms",
+        "description": "Leggings, pants and shorts graded from XS to 3X."
+      },
+      "fleece": {
+        "title": "Organic Fleece",
+        "description": "Brushed organic fleece, inside and out."
+      },
+      "waffle": {
+        "title": "Organic Waffle",
+        "description": "Textured organic waffle knit, made for layering."
+      },
+      "merino-wool": {
+        "title": "Merino",
+        "description": "Fine merino, soft enough to wear against the skin."
+      },
+      "nori": {
+        "title": "Nori",
+        "description": "Every piece we photograph in Nori, our deep evergreen."
+      },
+      "wisteria": {
+        "title": "Wisteria",
+        "description": "Every piece we photograph in Wisteria, a soft lilac."
+      },
+      "balsam": {
+        "title": "Balsam",
+        "description": "Every piece we photograph in Balsam, a muted forest green."
+      },
+      "heather-oat": {
+        "title": "Heather Oat",
+        "description": "Every piece we photograph in Heather Oat, a warm neutral."
+      },
+      "peppercorn": {
+        "title": "Peppercorn",
+        "description": "Every piece we photograph in Peppercorn, a deep brown."
+      }
+    },
+    "mega": {
+      "categoriesTitle": "Categories",
+      "colorsTitle": "Featured Colors",
+      "fabricsTitle": "Featured Fabrics",
+      "collectionsTitle": "Featured Collections",
+      "shopAllClothing": "Shop All Clothing",
+      "bestSellers": "Best Sellers",
+      "activewear": "Activewear",
+      "teesTanks": "Tees & Tanks",
+      "sweatshirts": "Sweatshirts",
+      "sweatpants": "Sweatpants",
+      "sweaters": "Sweaters",
+      "bottoms": "Bottoms",
+      "sleep": "Sleep",
+      "intimates": "Intimates",
+      "socks": "Socks",
+      "color": {
+        "nori": "Nori",
+        "wisteria": "Wisteria",
+        "balsam": "Balsam",
+        "heather-oat": "Heather Oat",
+        "peppercorn": "Peppercorn"
+      },
+      "fabric": {
+        "stretch": "Organic Stretch",
+        "pima": "Organic Pima Cotton",
+        "fleece": "Organic Fleece",
+        "waffle": "Organic Waffle",
+        "merino-wool": "Merino"
+      },
+      "newArrivals": "New Arrivals",
+      "octoberCapsule": "The October Capsule",
+      "getawayEdit": "The Getaway Edit",
+      "organicStudioUniform": "The Organic Studio Uniform",
+      "cozyShop": "The Cozy Shop",
+      "bundleAndSave": "Bundle & Save",
+      "tile": {
+        "octoberCapsule": "The October Capsule",
+        "getawayEdit": "The Getaway Edit"
+      }
+    }
   }
 }

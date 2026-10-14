@@ -522,3 +522,25 @@
 .product-card-media img,.product-card-media:hover img,.product-card-media:focus img,.product-card-media:focus-within img{
   object-fit:contain;object-position:center;transform:none;scale:1;transition-property:opacity;
 }
+
+/* Shop All: the reference splits its first page with two editorial blocks. The first spans two of
+   the four columns and shows two photographs side by side (678x431); the second runs the full
+   grid width (1367x877.5). Both keep the reference's own aspect ratios, its heading scale and the
+   dotted "Shop Now" link under the copy. */
+.na-sa-editorial{grid-column:span 2;display:flex;flex-direction:column;min-width:0}
+.na-sa-editorial.is-full-width{grid-column:1/-1;padding-bottom:26px}
+.na-sa-editorial-media{position:relative;isolation:isolate;flex:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;aspect-ratio:678/431;background:var(--na-image-bg);overflow:hidden}
+.na-sa-editorial.is-full-width .na-sa-editorial-media{aspect-ratio:1367/877.5}
+.na-sa-editorial-media-link{position:absolute;inset:0;z-index:1}
+.na-sa-editorial-pane{display:block;min-width:0;height:100%;overflow:hidden}
+.na-sa-editorial-image{display:block;width:100%;height:100%;min-height:0;object-fit:cover}
+.na-sa-editorial-content{width:100%;max-width:644px;padding:15px 0 0}
+.na-sa-editorial-content h2{margin:0;font:300 38px/1.2 var(--na-display);letter-spacing:0}
+.na-sa-editorial-content p{margin:6.5px 0 0;font:400 14px/1.4 var(--na-body);letter-spacing:.02em}
+.na-sa-editorial-content a{display:inline-block;margin-top:21px;font:400 14px/1.1 var(--na-body);letter-spacing:.02em}
+@media(max-width:989px){
+  .na-sa-editorial,.na-sa-editorial.is-full-width{grid-column:1/-1;padding-bottom:26px}
+  .na-sa-editorial-media,.na-sa-editorial.is-full-width .na-sa-editorial-media{grid-template-columns:minmax(0,1fr);aspect-ratio:678/862}
+  .na-sa-editorial-pane{display:none}
+  .na-sa-editorial-content h2{font-size:24px;line-height:1.2}
+}

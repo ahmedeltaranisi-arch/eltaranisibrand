@@ -69,6 +69,20 @@ public/img/shots/       the brand shoot: <style>-<tone>-<n>.jpg, where 1 is
                         angles; public/img/rev-*.jpg are review avatars
 ```
 
+## Shop All collection
+
+`/collections/all` is the reference's All collection: the text hero, six category tiles, the
+filter/sort drawer, the four-column grid with its two editorials, the FAQ, the breadcrumb and the
+shared arrival skin. `scripts/build-shop-all.mjs` builds `src/lib/shopAllCatalog.json` as the
+union of both captures (205 photographed colorways) and `src/lib/shopAll.ts` derives every count
+on the page from it — the collection tiles (Shop All 205 · Activewear 87 · Tees 17 · Sweats 79 ·
+Intimates 22 · Sleep 18), the category, size and colour-group facets, the fabric and dye rails and
+the live `See Results (N)`. The same grid serves every rail the header links to (Tees, Sweats,
+Intimates, Sleep, Socks, the capsule edits, the dye and fabric collections), and the Clothing
+mega menu reproduces the reference's rows — Categories, Featured Colors, Featured Fabrics,
+Featured Collections and the two tiles — dropping a row only when the catalogue honestly carries
+nothing for it. See `docs/shop-all.md`.
+
 ## Home rails
 
 The three home product rails and the "Clean comfort" trio are rendered from the same verified
