@@ -275,7 +275,7 @@
 /* Product links resolve to a matching, fully shoppable colorway gallery. */
 .na-product-page{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:64px;padding:40px 36px 80px;align-items:start}
 .na-product-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.na-product-gallery img{display:block;width:100%;height:auto;aspect-ratio:333/431;object-fit:cover;background:var(--na-image-bg)}
+.na-product-gallery img{display:block;width:100%;height:auto;aspect-ratio:333/431;object-fit:contain;object-position:center}
 .na-product-buybox{position:sticky;top:130px;align-self:start;padding-top:80px}
 .na-product-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px}
 .na-product-heading h1{font:300 28px/1.2 var(--na-display);margin:0}
@@ -519,7 +519,8 @@
 
 /* A pose change cross-fades to the second photograph. No zoom, no scale, no crop. */
 .na-product-media img,.na-product-media:hover img,.na-product-media:focus img,.na-product-media:focus-within img,
-.product-card-media img,.product-card-media:hover img,.product-card-media:focus img,.product-card-media:focus-within img{
+.product-card-media img,.product-card-media:hover img,.product-card-media:focus img,.product-card-media:focus-within img,
+.na-product-gallery img,.na-product-gallery:hover img,.na-product-gallery:focus-within img{
   object-fit:contain;object-position:center;transform:none;scale:1;transition-property:opacity;
 }
 

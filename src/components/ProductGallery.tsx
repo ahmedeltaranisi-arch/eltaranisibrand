@@ -83,7 +83,8 @@ export default function ProductGallery({
           onMouseLeave={() => setPreview(false)}
           onFocus={() => setPreview(true)}
           onBlur={() => setPreview(false)}
-          className="group relative order-1 block w-full cursor-zoom-in overflow-hidden bg-bone sm:order-2"
+          data-product-gallery
+          className="group relative order-1 block w-full cursor-zoom-in overflow-hidden sm:order-2"
           aria-label={t("viewAll")}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}

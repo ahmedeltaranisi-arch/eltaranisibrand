@@ -51,11 +51,11 @@ test("product pages swap full poses on hover and focus instead of zooming", asyn
   await page.goto("/en/collections/intimates");
   const href = await page.locator(".product-reveal-card").first().locator("a").first().getAttribute("href");
   await page.goto(href!);
-  const frame = page.locator('[class*="cursor-zoom-in"] img').first();
+  const frame = page.locator("[data-product-gallery] img").first();
   const first = await frame.getAttribute("src");
   await frame.hover();
   await expect.poll(() => frame.getAttribute("src")).not.toBe(first);
-  for (const img of await page.locator('[class*="cursor-zoom-in"] img').all()) await expectNoZoom(img);
+  for (const img of await page.locator("[data-product-gallery] img").all()) await expectNoZoom(img);
 });
 
 test("Activewear cards lead with a complete full-length pose and hover to another full pose", async ({ page }) => {

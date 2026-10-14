@@ -12,7 +12,7 @@ import ArrivalModal from "./ArrivalModal";
 import ArrivalSearch from "./ArrivalSearch";
 import ArrivalMegaMenu from "./ArrivalMegaMenu";
 
-const NAV = [
+export const NAV = [
   ["new", "/collections/new-arrivals"], ["bestSellers", "/collections/best-sellers"],
   ["activewear", "/collections/activewear"], ["clothing", "/collections/all"],
   ["intimates", "/collections/intimates"], ["about", "/pages/about"],

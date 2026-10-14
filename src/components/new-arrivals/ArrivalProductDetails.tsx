@@ -23,6 +23,8 @@ export default function ArrivalProductDetails({ product }: { product: MateProduc
   const router = useRouter();
   const { add } = useCart();
   const [size, setSize] = useState<string | null>(product.sizes.length === 1 ? product.sizes[0] : null);
+  /** Hovering or focusing the gallery shows the other whole pose of the same colourway. */
+  const [posePreview, setPosePreview] = useState(false);
   const [error, setError] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
   const [quickAdd, setQuickAdd] = useState<MateProduct | null>(null);
@@ -45,11 +47,24 @@ export default function ArrivalProductDetails({ product }: { product: MateProduc
   return (
     <>
       <section className="na-product-page">
-        <div className="na-product-gallery" aria-label={title}>
-          {product.images.map((image, index) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={image} src={image} width={900} height={1200} alt={t("imagePosition", { product: title, color: t(`color.${product.color.name}`), position: index + 1, total: product.images.length })} loading={index < 2 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "auto"} />
-          ))}
+        <div
+          className="na-product-gallery"
+          data-product-gallery
+          aria-label={title}
+          onMouseEnter={() => setPosePreview(true)}
+          onMouseLeave={() => setPosePreview(false)}
+          onFocus={() => setPosePreview(true)}
+          onBlur={() => setPosePreview(false)}
+        >
+          {product.images.map((image, index) => {
+            // The lead frame swaps to the colourway's second whole photograph on hover or focus —
+            // a pose change, never a zoom, and never a crop.
+            const src = index === 0 && posePreview && product.images[1] ? product.images[1] : image;
+            return (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={image} src={src} width={900} height={1200} alt={t("imagePosition", { product: title, color: t(`color.${product.color.name}`), position: index + 1, total: product.images.length })} loading={index < 2 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "auto"} />
+            );
+          })}
         </div>
         <div className="na-product-buybox">
           <div className="na-product-heading"><h1>{title}</h1><p>{formatLE(product.priceLE)}</p></div>

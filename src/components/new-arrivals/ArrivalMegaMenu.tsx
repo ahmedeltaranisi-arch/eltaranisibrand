@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/navigation";
+import { NAV } from "./ArrivalHeader";
 import { SHOP_ALL_DYES, SHOP_ALL_FABRICS, SHOP_ALL_MEGA_TILES } from "@/lib/shopAll";
 
 /**
@@ -84,7 +85,11 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
     variant === "clothing"
       ? [...CLOTHING_CATEGORY_LINKS.map((link) => link.href), ...CLOTHING_COLLECTION_LINKS.map((link) => link.href)]
       : [...MEGA_CATEGORY_LINKS.map((link) => link.href), ...MEGA_COLORS.map((link) => link.href), ...MEGA_COLLECTION_LINKS.map((link) => link.href)];
-  const current = pathname === href || links.includes(pathname);
+  // The dot marks one destination. A page inside this panel marks the label, but a page that is
+  // also a top-level destination of its own (Activewear, Intimates) keeps its own dot and never
+  // lights this label twice.
+  const ownedElsewhere = NAV.some(([, navHref]) => pathname === navHref || pathname.startsWith(`${navHref}/`));
+  const current = pathname === href || (links.includes(pathname) && !ownedElsewhere);
 
   useEffect(() => {
     if (!open) return;
