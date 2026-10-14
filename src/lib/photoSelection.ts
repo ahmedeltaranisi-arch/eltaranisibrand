@@ -4,16 +4,15 @@ import pool from "./photoPool.json";
 /**
  * Every storefront photograph was measured once, twice over: the pose landmarks say where the
  * model's head, shoulders, hips and feet are, and an independent silhouette pass says where the
- * figure starts and ends against the frame. `photoPoses.json` keeps the verdict —
+ * figure starts and ends against the frame. `photoPoses.json` keeps the verdict, one per file:
  *
- *   2  whole      the model is complete in the frame (a head, and feet for a leg garment)
- *   1  uncertain  the signals disagree; the photograph may be shown, never as a card's hero
- *                 unless the colourway owns nothing better, and it never keeps a colour in the
- *                 catalogue on its own
- *   0  crop       the frame is filled by a torso or a pair of legs, so the model is cut off
+ *   2  whole   the model is complete in the frame — head to feet for a leg garment, head,
+ *              shoulders and the whole garment for a top; a flat still has no model to cut off
+ *   0  crop    the frame is filled by a torso or a pair of legs, so the model is cut off
  *
- * A card always leads with a whole photograph and swaps to a second whole one on hover. Crops
- * are never rendered anywhere: not on a card, not in the gallery, not in a search row.
+ * Nothing else is stored: a photograph the scan could not prove is never rendered. A card always
+ * leads with a whole photograph and swaps to a second whole one on hover. Crops are never
+ * rendered anywhere: not on a card, not in the gallery, not in a search row.
  */
 type Status = 0 | 1 | 2;
 
@@ -23,7 +22,10 @@ const STATUSES = statuses as unknown as Record<string, Status>;
  * Every photograph of a product — the same slug is filed in more than one catalogue, and each one
  * captured a different set of frames. Pooling them gives a colourway the widest choice of
  * complete photographs, so a dye the Activewear capture shot as a crop can still lead with the
- * full-length pose the New Arrivals capture holds. Built by the scan described in docs/photos.md.
+ * full-length pose the New Arrivals capture holds. Each slug's frames are listed complete first
+ * and, among those, with the frames that hold the model's feet ahead of the closer crops, so a
+ * card leads with the most complete photograph the colourway owns. Built by the scan in
+ * docs/photos.md.
  */
 const POOL = pool as unknown as Record<string, string[]>;
 
