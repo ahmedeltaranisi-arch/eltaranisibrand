@@ -84,7 +84,7 @@
 .na-pagination button[aria-current=page],.na-pagination button:hover{background:var(--na-beige)}
 .na-pagination button:first-child:not([aria-label]),.na-pagination button:last-child:not([aria-label]){padding-inline:10px}
 .na-collection-empty{text-align:center;padding-block:80px}
-.na-collection-empty p{font-size:16px;margin:0}
+.na-collection-empty p{font-size:16px;line-height:normal;margin:0}
 
 /* Native top-layer dialogs: backdrop, focus trap and scroll lock are functional. */
 .na-dialog{position:fixed;display:none;margin:auto;padding:0;border:0;border-radius:0;max-width:none;max-height:calc(100dvh - 48px);background:var(--na-paper);color:#000;font-family:var(--na-body);font-feature-settings:normal;opacity:0;transition:opacity .2s,display .2s allow-discrete,overlay .2s allow-discrete}
