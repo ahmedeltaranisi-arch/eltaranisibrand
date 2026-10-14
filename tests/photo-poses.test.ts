@@ -76,6 +76,22 @@ test("every card swaps only between whole photographs of the same colourway", ()
   }
 });
 
+test("no modelled product ever shows a photographed crop, anywhere in its frames", () => {
+  // Only whole photographs reach the storefront: the gallery, the swipe frames, the search rows
+  // and the cart lines all read from these same arrays, so nothing can present a crop.
+  for (const [name, products] of catalogs) {
+    for (const product of products) {
+      for (const frame of product.images) {
+        assert.notEqual(
+          isWholePose(frame, product.category),
+          false,
+          `${name}: ${product.slug} still shows the crop ${frame}`,
+        );
+      }
+    }
+  }
+});
+
 test("a standing full-length pose is always preferred over a waist-up frame", () => {
   let standing = 0;
   for (const [name, products] of catalogs) {

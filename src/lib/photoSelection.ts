@@ -73,11 +73,23 @@ export function frameRank(src: string): number {
  * stay at the end for the gallery and the arrow keys, never as a hero.
  */
 export function selectFrames(images: string[], category: string): FrameSelection {
-  const ordered = [...images].sort((a, b) => frameRank(a) - frameRank(b));
-  const whole = ordered.filter((src) => isWholePose(src, category) !== false);
-  const hero = whole[0] ?? ordered[0] ?? "";
-  const hover = whole[1] ?? hero;
-  return { images: ordered, wholeCount: whole.length, hero, hover };
+  const ordered = displayFrames(images, category);
+  const hero = ordered[0] ?? "";
+  const hover = ordered[1] ?? hero;
+  return { images: ordered, wholeCount: ordered.length, hero, hover };
+}
+
+/**
+ * The frames a storefront surface may show: every measured crop is dropped, so no card, gallery,
+ * search row or cart line can ever present a photograph that cuts the model off. A product-only
+ * still (a sock pack, a flat lay) carries no model and is kept as it is. Standing full-length
+ * poses stay first, waist-up frames that still hold the whole garment follow.
+ */
+export function displayFrames(images: string[], category: string): string[] {
+  if (isProductOnly(category)) return [...images];
+  const whole = images.filter((src) => isWholePose(src, category) !== false);
+  // A colourway the scan has never seen keeps its frames rather than losing its photography.
+  return whole.length ? whole.sort((a, b) => frameRank(a) - frameRank(b)) : [...images];
 }
 
 /**
