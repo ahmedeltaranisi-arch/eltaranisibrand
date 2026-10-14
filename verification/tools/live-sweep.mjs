@@ -14,8 +14,8 @@ const check = (src, category) => {
   const flags = POSES[src];
   if (!flags) return { ok: false, why: "unmeasured" };
   if (PRODUCT_ONLY.has(category)) return { ok: true };
-  if (flags[0] !== 1) return { ok: false, why: "crop" };
-  if (BOTTOM.has(category) && flags[1] !== 1) return { ok: false, why: "feet cut" };
+  if (flags !== 2) return { ok: false, why: "crop" };
+  
   return { ok: true };
 };
 
@@ -28,7 +28,7 @@ const categoryBySlug = new Map();
 const collections = ["/en", "/en/collections/new-arrivals", "/en/collections/best-sellers", "/en/collections/activewear",
   "/en/collections/all", "/en/collections/intimates", "/en/collections/sleep", "/en/collections/tees", "/en/collections/sweats"];
 for (const url of collections) {
-  await page.goto(`${BASE}${url}?cb=bcb7aeb`, { waitUntil: "networkidle", timeout: 90000 });
+  await page.goto(`${BASE}${url}?cb=05d8da1`, { waitUntil: "networkidle", timeout: 90000 });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   await page.waitForTimeout(800);
   const found = await page.$$eval(".product-reveal-card", (nodes) => nodes.map((node) => ({
@@ -49,7 +49,7 @@ for (const url of collections) {
 // Product pages: the gallery must hold whole photographs only.
 const hrefs = await page.$$eval(".product-reveal-card a[href*='/products/']", (nodes) => [...new Set(nodes.map((n) => n.getAttribute("href")))]);
 for (const href of hrefs.slice(0, 26)) {
-  await page.goto(`${BASE}${href}?cb=bcb7aeb`, { waitUntil: "networkidle", timeout: 90000 });
+  await page.goto(`${BASE}${href}?cb=05d8da1`, { waitUntil: "networkidle", timeout: 90000 });
   await page.waitForTimeout(500);
   const images = await page.$$eval("main img, .na-product-gallery img", (nodes) => nodes
     .map((img) => ({ src: new URL(img.currentSrc || img.src, location.origin).pathname, w: img.naturalWidth, h: img.naturalHeight }))
@@ -58,8 +58,9 @@ for (const href of hrefs.slice(0, 26)) {
   for (const image of images) {
     galleryFrames++;
     const flags = POSES[image.src];
-    if (!flags) continue;
-    if (flags[0] !== 1) problems.push(`${href} gallery ${image.src} flags=${JSON.stringify(flags)}`);
+    if (flags === undefined) continue;
+    // 2 = the whole model is inside the frame; 0 = a crop, which must never render.
+    if (flags !== 2) problems.push(`${href} gallery ${image.src} flags=${flags}`);
   }
   console.log(`  ${href}: ${images.length} gallery frames (${problems.length} problems total)`);
 }

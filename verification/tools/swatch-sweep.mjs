@@ -5,7 +5,7 @@ const POSES = JSON.parse(readFileSync("src/lib/photoPoses.json", "utf8"));
 const BOTTOM = new Set(["leggings", "shorts", "pants", "sweatpants", "unitards"]);
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } });
-await page.goto("https://eltaranisibrand.vercel.app/en/collections/activewear?cb=bcb7aeb", { waitUntil: "networkidle", timeout: 90000 });
+await page.goto("https://eltaranisibrand.vercel.app/en/collections/activewear?cb=05d8da1", { waitUntil: "networkidle", timeout: 90000 });
 const problems = [];
 let switched = 0;
 for (const card of (await page.locator(".product-reveal-card").all()).slice(0, 6)) {
@@ -24,7 +24,7 @@ for (const card of (await page.locator(".product-reveal-card").all()).slice(0, 6
     const flags = POSES[info.src];
     const isBottom = BOTTOM.has("leggings");
     switched++;
-    if (!flags || flags[0] !== 1) problems.push(`${info.slug} ${info.src} ${JSON.stringify(flags)}`);
+    if (flags !== 2) problems.push(`${info.slug} ${info.src} ${JSON.stringify(flags)}`);
   }
 }
 await browser.close();
