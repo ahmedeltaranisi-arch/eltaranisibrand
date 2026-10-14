@@ -44,11 +44,16 @@ test("picking a colour on a home card shows that colourway's own garment and pho
   expect(target.color.hex).not.toEqual(colorways[0].color.hex);
   await expect(card.locator(".na-swatch").nth(1)).toHaveCSS("background-color", /^rgb/);
 
-  // Hovering the media advances to the next pose of the same colourway, never another colour.
+  // Hovering the media advances to another whole pose of the same colourway, never another
+  // colour and never a crop. A colourway that owns one whole photograph keeps it.
   const media = card.locator(".na-product-media");
-  await expect(media.locator(".na-product-hover-image")).toHaveAttribute("src", target.images[1] ?? target.images[0]);
-  await media.hover();
-  await expect(media.locator(".na-product-hover-image")).toHaveClass(/is-visible/);
+  const hoverImage = media.locator(".na-product-hover-image");
+  if (await hoverImage.count()) {
+    expect(await hoverImage.getAttribute("src")).not.toBe(await media.locator("img").first().getAttribute("src"));
+    await media.hover();
+    await expect(hoverImage).toHaveClass(/is-visible/);
+    await page.mouse.move(0, 0);
+  }
 
   // Keyboard pose stepping stays inside the chosen colourway too.
   await media.focus();

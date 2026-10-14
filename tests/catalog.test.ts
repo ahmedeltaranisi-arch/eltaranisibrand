@@ -47,7 +47,7 @@ test("every color uses real photographs and a real swatch served via the externa
     }
   }
   // Only whole photographs are shown: the measured crops stay out of every product's frames.
-  assert.equal(images.size, 614);
+  assert.equal(images.size, 568);
 });
 
 test("category, size and color counts reflect actual available products", () => {

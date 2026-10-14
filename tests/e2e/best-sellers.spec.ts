@@ -216,8 +216,13 @@ test("hovering a swatch shows that colorway's own photograph, and the media adva
   await expect(swatches.nth(1)).toHaveClass(/is-current/);
   expect(await card.locator(".na-product-media img").first().getAttribute("src")).toMatch(/\/img\/new-arrivals\/[0-9a-f]{12}\.webp$/);
 
-  // Hover shows the alternate pose of the same colorway; keys step through the rest.
-  const media = card.locator(".na-product-media");
+  // Hover shows the alternate pose of the same colorway; keys step through the rest. A colourway
+  // with a single whole photograph has no alternate to show, so the card swaps only when it owns
+  // a second one — the collection always holds such a card.
+  let media = card.locator(".na-product-media");
+  const cardsWithPose = page.locator(`.na-product-card:has(.na-product-hover-image)`);
+  expect(await cardsWithPose.count()).toBeGreaterThan(0);
+  media = cardsWithPose.first().locator(".na-product-media");
   const poseA = await media.locator("img").first().getAttribute("src");
   await media.hover();
   await expect(media.locator(".na-product-hover-image")).toHaveClass(/is-visible/);

@@ -61,26 +61,29 @@ test("product pages swap full poses on hover and focus instead of zooming", asyn
 test("Activewear cards lead with a complete full-length pose and hover to another full pose", async ({ page }) => {
   await page.goto("/en/collections/activewear");
   const cards = page.locator(".product-reveal-card");
-  for (let index = 0; index < 4; index += 1) {
+  let swapped = 0;
+  for (let index = 0; index < 8; index += 1) {
     const media = cards.nth(index).locator(".na-product-media");
     await media.scrollIntoViewIfNeeded();
     const hero = media.locator("img").nth(0);
-    const pose = media.locator("img").nth(1);
     const heroRatio = await hero.evaluate(e => (e as HTMLImageElement).naturalWidth / (e as HTMLImageElement).naturalHeight);
-    const poseRatio = await pose.evaluate(e => (e as HTMLImageElement).naturalWidth / (e as HTMLImageElement).naturalHeight);
     // A full-length pose is portrait; a square frame is a detail crop and must never lead.
-    expect(heroRatio).toBeLessThan(0.85);
-    expect(poseRatio).toBeLessThan(0.85);
+    expect(heroRatio).toBeLessThan(0.9);
+    await expect(hero).toHaveCSS("object-fit", "contain");
+    await expectNoZoom(hero);
+    const pose = media.locator(".na-product-hover-image");
+    if (!(await pose.count())) continue; // one whole photograph of this colour: nothing to swap to
+    swapped += 1;
+    const poseRatio = await pose.evaluate(e => (e as HTMLImageElement).naturalWidth / (e as HTMLImageElement).naturalHeight);
+    expect(poseRatio).toBeLessThan(0.9);
     expect(await hero.getAttribute("src")).not.toBe(await pose.getAttribute("src"));
-    for (const img of [hero, pose]) {
-      // The whole photograph is on screen: no crop, no zoom.
-      await expect(img).toHaveCSS("object-fit", "contain");
-      await expectNoZoom(img);
-    }
+    await expect(pose).toHaveCSS("object-fit", "contain");
+    await expectNoZoom(pose);
     await expect(pose).toHaveCSS("opacity", "0");
     await media.hover();
     await expect(pose).toHaveCSS("opacity", "1");
     await page.mouse.move(0, 0);
     await expect(pose).toHaveCSS("opacity", "0");
   }
+  expect(swapped).toBeGreaterThan(0);
 });

@@ -24,10 +24,10 @@ test("shop all is the union of both captures, one row per photographed colorway"
 
 test("every rail holds real products and is discoverable from the header", () => {
   const counts = Object.fromEntries(SHOP_ALL_TABS.map((tab) => [tab.id, railProducts(tab.handle).length]));
-  assert.deepEqual(counts, { all: 202, activewear: 85, tees: 17, sweats: 78, intimates: 22, sleep: 18 });
+  assert.deepEqual(counts, { all: 202, activewear: 86, tees: 17, sweats: 77, intimates: 22, sleep: 18 });
   // The Organic Stretch fabric rail is its own collection, so it cannot shadow Activewear.
-  assert.equal(railProducts("organic-stretch").length, 84);
-  assert.equal(railProducts("activewear").length, 85);
+  assert.equal(railProducts("organic-stretch").length, 85);
+  assert.equal(railProducts("activewear").length, 86);
   for (const tab of SHOP_ALL_TABS) assert.ok(railProducts(tab.handle).length > 0, `${tab.handle} is empty`);
   assert.ok(SHOP_ALL_FABRICS.length > 0);
   assert.ok(SHOP_ALL_DYES.length > 0);

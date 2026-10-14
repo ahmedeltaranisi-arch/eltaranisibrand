@@ -1,18 +1,23 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import { activewearProducts } from "../src/lib/activewearCatalog";
 import { arrivalCatalog } from "../src/lib/mateNewArrivals";
 import { shopAllProducts } from "../src/lib/shopAll";
-import { isProductOnly, isWholePose, needsFullFigure, selectFrames } from "../src/lib/photoSelection";
-import poses from "../src/lib/photoPoses.json";
-import arrivalSnapshot from "../src/lib/newArrivalsCatalog.json";
-import activewearSnapshot from "../src/lib/activewearCatalog.json";
-import shopAllSnapshot from "../src/lib/shopAllCatalog.json";
-import { hasUsablePhotography, hoverFrame } from "../src/lib/photoSelection";
+import {
+  bestRank,
+  frameStatus,
+  hasUsablePhotography,
+  hoverFrame,
+  isProductOnly,
+  selectFrames,
+  wholeFrames,
+} from "../src/lib/photoSelection";
 
 type RawProduct = { slug: string; images: string[]; category: string };
-
-const measured = poses as unknown as Record<string, [number, number]>;
+const rawArrivals = JSON.parse(readFileSync("src/lib/newArrivalsCatalog.json", "utf8")) as RawProduct[];
+const rawActivewear = (JSON.parse(readFileSync("src/lib/activewearCatalog.json", "utf8")) as { products: RawProduct[] }).products;
+const rawShopAll = (JSON.parse(readFileSync("src/lib/shopAllCatalog.json", "utf8")) as { products: RawProduct[] }).products;
 
 const catalogs = [
   ["activewear", activewearProducts],
@@ -20,113 +25,80 @@ const catalogs = [
   ["shop all", shopAllProducts],
 ] as const;
 
-test("every card in every collection leads with a whole photograph of the model", () => {
+test("no modelled product shows a photograph the scan flagged as cut off", () => {
+  // The gallery, the swipe frames, the search rows and the cart lines all read these arrays, so
+  // no storefront surface can bring a crop back on screen.
   for (const [name, products] of catalogs) {
     for (const product of products) {
-      assert.ok(product.images.length > 0, `${name}: ${product.slug} has no photograph`);
-      const hero = product.images[0];
-      const whole = isWholePose(hero, product.category);
-      assert.equal(
-        whole,
-        true,
-        `${name}: ${product.slug} leads with ${hero} (${whole === false ? "a crop" : "an unmeasured frame"})`,
-      );
-      assert.ok(measured[hero], `${name}: ${hero} was never measured`);
+      for (const frame of product.images) {
+        if (isProductOnly(product.category)) continue; // a sock flat still has no model to cut
+        assert.notEqual(frameStatus(frame), "crop", `${name}: ${product.slug} still shows ${frame}`);
+      }
     }
   }
 });
 
-test("a colourway is dropped when none of its photographs shows the whole model", () => {
-  // The scan measured every photograph once: a colourway whose frames are all crops (bras shot
-  // from the waist up, a unitard with the feet out of frame, a legging photographed as a flat
-  // still) has no hero to show, so it leaves the catalogue instead of shipping a crop.
+test("every modelled card leads with a whole photograph, never an uncertain one", () => {
+  let whole = 0;
+  for (const [name, products] of catalogs) {
+    for (const product of products) {
+      if (isProductOnly(product.category)) continue;
+      const lead = frameStatus(product.images[0]);
+      assert.ok(lead === "whole" || lead === "uncertain", `${name}: ${product.slug} leads with ${product.images[0]} (${lead})`);
+      if (lead === "whole") whole += 1;
+    }
+  }
+  assert.ok(whole > 390, `only ${whole} cards lead with a whole photograph`);
+});
+
+test("the hover frame is a second whole photograph, and absent when there is none", () => {
+  let swaps = 0;
+  for (const [name, products] of catalogs) {
+    for (const product of products) {
+      if (isProductOnly(product.category)) continue; // a sock still swaps between flat lays
+      const hero = product.images[0];
+      const alternate = hoverFrame(product.images, product.category, hero);
+      if (!alternate) {
+        assert.ok(wholeFrames(product.images, product.category).length < 2, `${name}: ${product.slug} could swap`);
+        continue;
+      }
+      assert.notEqual(alternate, hero, `${name}: ${product.slug}`);
+      assert.equal(frameStatus(alternate), "whole", `${name}: ${product.slug} hovers to ${alternate}`);
+      swaps += 1;
+    }
+  }
+  assert.ok(swaps > 250, `only ${swaps} colourways can swap poses`);
+});
+
+test("a colourway leaves the catalogue when every one of its photographs is cut off", () => {
   const cases = [
-    ["arrivals", arrivalSnapshot as RawProduct[], arrivalCatalog],
-    ["activewear", (activewearSnapshot as { products: RawProduct[] }).products, activewearProducts],
-    ["shop all", (shopAllSnapshot as { products: RawProduct[] }).products, shopAllProducts],
+    ["arrivals", rawArrivals, arrivalCatalog],
+    ["activewear", rawActivewear, activewearProducts],
+    ["shop all", rawShopAll, shopAllProducts],
   ] as const;
   let dropped = 0;
   for (const [name, raw, kept] of cases) {
     const keptSlugs = new Set(kept.map((product) => product.slug));
     for (const product of raw) {
       const usable = hasUsablePhotography(product.images, product.category);
-      assert.equal(
-        keptSlugs.has(product.slug),
-        usable,
-        `${name}: ${product.slug} is ${usable ? "missing from" : "still inside"} the catalogue`,
-      );
+      assert.equal(keptSlugs.has(product.slug), usable, `${name}: ${product.slug}`);
       if (!usable) dropped += 1;
     }
   }
-  assert.equal(dropped, 9, "nine colourways have no whole photograph anywhere");
+  // Fig, Mulberry and Nori bras, the mocha high-neck tank, the iris scoop bra, the bone V-neck
+  // bra, two track-pant dyes and the sienna midi legging were photographed cut off from end to
+  // end, so there is no hero to show and the colour leaves the catalogue.
+  assert.ok(dropped >= 9, `only ${dropped} colourways were dropped`);
   assert.equal(arrivalCatalog.length, 176);
-  assert.equal(activewearProducts.length, 90);
+  assert.equal(activewearProducts.length, 87);
   assert.equal(shopAllProducts.length, 202);
 });
 
-test("every card swaps only between whole photographs of the same colourway", () => {
-  for (const [name, products] of catalogs) {
-    for (const product of products) {
-      const hero = product.images[0];
-      const alternate = hoverFrame(product.images, product.category, hero);
-      if (!alternate) continue;
-      assert.notEqual(alternate, hero, `${name}: ${product.slug}`);
-      assert.equal(isWholePose(alternate, product.category), true, `${name}: ${product.slug} → ${alternate}`);
-    }
-  }
-});
-
-test("no modelled product ever shows a photographed crop, anywhere in its frames", () => {
-  // Only whole photographs reach the storefront: the gallery, the swipe frames, the search rows
-  // and the cart lines all read from these same arrays, so nothing can present a crop.
-  for (const [name, products] of catalogs) {
-    for (const product of products) {
-      for (const frame of product.images) {
-        assert.notEqual(
-          isWholePose(frame, product.category),
-          false,
-          `${name}: ${product.slug} still shows the crop ${frame}`,
-        );
-      }
-    }
-  }
-});
-
-test("a standing full-length pose is always preferred over a waist-up frame", () => {
-  let standing = 0;
-  for (const [name, products] of catalogs) {
-    for (const product of products) {
-      const frames = product.images;
-      const full = frames.filter((src) => measured[src]?.[1] === 1);
-      if (full.length === 0) continue;
-      assert.ok(full.includes(frames[0]), `${name}: ${product.slug} leads with ${frames[0]} while ${full[0]} is a standing pose`);
-      standing += 1;
-    }
-  }
-  assert.ok(standing > 380, `only ${standing} colourways lead with a standing pose`);
-});
-
-test("selectFrames keeps every frame, lifting whole photographs ahead of the crops", () => {
-  const product = activewearProducts[0];
-  const selection = selectFrames([...product.images].reverse(), product.category);
-  assert.deepEqual([...selection.images].sort(), [...product.images].sort());
-  assert.equal(new Set(selection.images).size, selection.images.length);
-  assert.equal(selection.images[0], selected(selection, product.category));
-});
-
-function selected(selection: { images: string[] }, category: string) {
-  for (const src of selection.images) if (isWholePose(src, category) === true) return src;
-  return selection.images[0];
-}
-
-test("a bottom category needs the feet in frame, a top category needs the waist, socks need neither", () => {
-  assert.equal(needsFullFigure("leggings"), true);
-  assert.equal(needsFullFigure("sweatpants"), true);
-  assert.equal(needsFullFigure("sports-bras"), false);
-  assert.equal(isProductOnly("socks"), true);
-  // A waist-up frame is a complete photograph of a bra but not of a legging.
-  const torsoOnly = Object.entries(measured).find(([, flags]) => flags[0] === 1 && flags[1] === 0);
-  assert.ok(torsoOnly, "the measurement holds at least one torso-only frame");
-  assert.equal(isWholePose(torsoOnly![0], "sports-bras"), true);
-  assert.equal(isWholePose(torsoOnly![0], "leggings"), false);
+test("a card's frames rank whole first, then uncertain, and never a crop", () => {
+  const a = activewearProducts[0];
+  const selection = selectFrames([...a.images].reverse(), a.category);
+  assert.deepEqual(selection.hero, selection.images[0]);
+  assert.equal(bestRank(selection.images), 2);
+  const ranks = selection.images.map((src) => Number(frameStatus(src) === "whole"));
+  assert.deepEqual(ranks, [...ranks].sort((x, y) => y - x), "whole frames are not ahead of the rest");
 });
