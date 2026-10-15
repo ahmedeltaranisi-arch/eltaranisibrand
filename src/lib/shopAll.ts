@@ -245,9 +245,11 @@ export function offeredCategories(products: readonly MateProduct[]): string[] {
 /* ------------------------------------------------------------------------------- colorways */
 
 /**
- * The swatch row on a Shop All card: every photographed colour of the garment, one swatch per
- * colour group (the reference prints a dye per group, not every sibling), the dye on screen
- * first.
+ * The swatch row on a Shop All card: every photographed colourway of the garment, in the
+ * reference's own rail order — `colorways` is that capture (`scripts/sync-swatch-order.mjs`), its
+ * lead dye first. The reference prints a swatch per photographed dye, not one per colour group, and
+ * its rail never re-sorts: picking a dye moves the current mark, never the swatch. A row whose
+ * captured rail somehow missed it still opens on itself.
  */
 export function shopAllColorways(product: MateProduct): MateProduct[] {
   const resolve = (slug: string): MateProduct | undefined => rowBySlug.get(slug) ?? getCatalogProduct(slug);
@@ -261,17 +263,8 @@ export function shopAllColorways(product: MateProduct): MateProduct[] {
         colorway.availableSizes.length > 0,
     );
   const colorways = own.length > 0 ? own : catalogColorways(product);
-  const active = colorways.find((colorway) => colorway.slug === product.slug) ?? product;
-  const ordered = [active, ...colorways.filter((colorway) => colorway.slug !== active.slug)];
-  const seen = new Set<string>();
-  const rows: MateProduct[] = [];
-  for (const colorway of ordered) {
-    const group = groupOf(colorway) || colorway.slug;
-    if (seen.has(group)) continue;
-    seen.add(group);
-    rows.push(colorway);
-  }
-  return rows;
+  if (colorways.some((colorway) => colorway.slug === product.slug)) return colorways;
+  return [product, ...colorways];
 }
 
 /** A swatch click resolves through the shared catalogue, so its own photograph always loads. */

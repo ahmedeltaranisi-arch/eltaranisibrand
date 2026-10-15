@@ -18,6 +18,7 @@ collection, captured and ingested:
 | `scripts/vendor-reference-frames.mjs` | puts every colourway's card in the reference's own frame order (its lead first) and registers those frames in `src/lib/referenceCardFrames.json`, the rule that keeps a frame the reference ships even when our pose scan would call it a crop. |
 | `scripts/apply-reference-collections.mjs` | rebuilds every rail, fabric and dye membership from the captured collection pages, re-files each colourway into the reference's own category and colour group, and adds the reference's sale shelf (`/collections/up-to-50-off`). |
 | `scripts/apply-reference-order.mjs` | writes the reference's Featured order into the catalogue |
+| `scripts/sync-swatch-order.mjs` | puts every card's swatch row in the reference's own capture order |
 | `scripts/sync-catalogue-labels.mjs` | names every style, dye and colour group the catalogue carries in `messages/en.json` and `messages/ar.json` |
 
 `src/lib/shopAll.ts` then derives every number at request time from that catalogue:
@@ -50,8 +51,11 @@ Rules, matching the filmed reference:
 - Sort values map to the reference's own names and marks (`sort_by=created-descending`,
   `best-selling`, `price-ascending`, `price-descending`), and the captured ranks behind them are
   the reference's, best-of-both captures.
-- Every card prints one swatch per colour group (the reference's own card rule), and hovering or
-  focusing a swatch swaps the card to that colourway's own photograph and pose.
+- Every card prints one swatch per photographed colourway of the garment, in the reference's own
+  rail order (`colorways`, written by `scripts/sync-swatch-order.mjs` from the captured rails): the
+  reference prints a dye per sibling, not one per colour group, its lead dye first, and the rail
+  never re-sorts when a dye is picked. Hovering or focusing a swatch swaps the card to that
+  colourway's own photograph and pose.
 - The two editorials sit where the reference puts them: a two-column split after the sixth card of
   page one, a full-width split after the eighteenth, each with its own photograph pair and copy.
 - A page past the end prints the reference's own empty line — `No products match your filters.`,

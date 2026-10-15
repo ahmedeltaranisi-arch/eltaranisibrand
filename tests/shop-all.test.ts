@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import {
   SHOP_ALL_CATEGORIES, SHOP_ALL_COLOR_GROUPS, SHOP_ALL_DYES, SHOP_ALL_FABRICS, SHOP_ALL_ROUTES,
   SHOP_ALL_SIZE_FACETS, SHOP_ALL_TABS, filterShopAll, groupOf, offeredCategories, offeredColorGroups,
@@ -113,11 +114,20 @@ test("the reference's own query names round-trip through the URL state", () => {
   assert.deepEqual(readShopAllState(new URLSearchParams("filter.p.m.custom.parent_color=Magenta")).colors, []);
 });
 
-test("a card's swatch row prints one dye per colour group and opens on its own photograph", () => {
+test("a card's swatch row is the reference's own rail — one swatch per photographed dye", () => {
   const card = shopAllProducts.find((product) => product.style === "organic-stretch-sports-bra")!;
   const row = shopAllColorways(card);
+  // The reference prints a swatch per sibling, not one per colour group: its own rail for this
+  // garment holds ten dyes, two of them greys. The card reproduces that rail verbatim — the
+  // captured order, its own dye first, every carried colourway present.
+  const capture = JSON.parse(readFileSync("relay/reference-grid.json", "utf8")) as {
+    byHandle: Record<string, { swatches: { handle: string }[] }>;
+  };
+  const carried = new Set(shopAllProducts.map((product) => product.slug));
+  const rail = capture.byHandle[card.slug].swatches.map((swatch) => swatch.handle).filter((slug) => carried.has(slug));
+  assert.deepEqual(row.map((colorway) => colorway.slug), rail);
   const groups = row.map((colorway) => groupOf(colorway));
-  assert.equal(new Set(groups).size, groups.length);
+  assert.ok(new Set(groups).size < groups.length, "the reference's rail repeats colour groups");
   assert.equal(row[0].slug, card.slug);
   for (const colorway of row) {
     assert.equal(colorway.style, card.style);

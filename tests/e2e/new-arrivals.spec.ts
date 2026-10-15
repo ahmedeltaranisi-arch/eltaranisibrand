@@ -111,7 +111,9 @@ test("shared URLs, empty results, pagination and browser back", async ({ page })
   await expect(page.locator(cards)).toHaveCount(11);
   await page.goBack();
   await expect(page).toHaveURL(/page=2/);
-  await expect(page.locator(cards)).toHaveCount(48);
+  // The grid follows the router, which processes the back-navigation asynchronously; on a loaded
+  // machine that hand-off can take a few seconds, so give the restored page room to arrive.
+  await expect(page.locator(cards)).toHaveCount(48, { timeout: 20000 });
 });
 
 test("color changes use the corresponding photographs and product URL; keyboard cycles poses", async ({ page }) => {

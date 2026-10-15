@@ -2914,8 +2914,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-high-neck-tank-jet-black",
-        "organic-stretch-high-neck-tank-midnight",
-        "organic-stretch-high-neck-tank-mocha"
+        "organic-stretch-high-neck-tank-mocha",
+        "organic-stretch-high-neck-tank-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3029,8 +3029,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-long-sleeve-top-jet-black",
-        "organic-stretch-long-sleeve-top-midnight",
-        "organic-stretch-long-sleeve-top-mocha"
+        "organic-stretch-long-sleeve-top-mocha",
+        "organic-stretch-long-sleeve-top-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3093,15 +3093,15 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-sports-bra-jet-black",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
         "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
         "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3158,8 +3158,8 @@
       "colorways": [
         "organic-fleece-zip-hoodie-mocha",
         "organic-fleece-zip-hoodie-jet-black",
-        "organic-fleece-zip-hoodie-bone",
-        "organic-fleece-zip-hoodie-heather-grey"
+        "organic-fleece-zip-hoodie-heather-grey",
+        "organic-fleece-zip-hoodie-bone"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3215,8 +3215,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-oversized-sweatpant-mocha",
-        "organic-fleece-oversized-sweatpant-balsam",
         "organic-fleece-oversized-sweatpant-heather-grey",
+        "organic-fleece-oversized-sweatpant-balsam",
         "organic-fleece-oversized-sweatpant-jet-black",
         "organic-fleece-oversized-sweatpant-bone"
       ],
@@ -3276,14 +3276,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-bone",
-        "organic-stretch-scoop-bra-heather-grey",
-        "organic-stretch-scoop-bra-iris",
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
+        "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-iris",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -3341,13 +3341,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-jet-black",
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-midnight",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -3518,12 +3518,12 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-balsam",
-        "organic-fleece-cropped-half-zip-sweatshirt-mocha",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-pebble",
         "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
-        "organic-fleece-cropped-half-zip-sweatshirt-pebble"
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-bone",
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
+        "organic-fleece-cropped-half-zip-sweatshirt-mocha"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -3639,9 +3639,9 @@
       "colorways": [
         "organic-fleece-cropped-sweatpant-balsam",
         "organic-fleece-cropped-sweatpant-mocha",
-        "organic-fleece-cropped-sweatpant-bone",
+        "organic-fleece-cropped-sweatpant-jet-black",
         "organic-fleece-cropped-sweatpant-heather-grey",
-        "organic-fleece-cropped-sweatpant-jet-black"
+        "organic-fleece-cropped-sweatpant-bone"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -3697,10 +3697,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-cropped-sweatpant-mocha",
-        "organic-fleece-cropped-sweatpant-bone",
+        "organic-fleece-cropped-sweatpant-jet-black",
         "organic-fleece-cropped-sweatpant-balsam",
         "organic-fleece-cropped-sweatpant-heather-grey",
-        "organic-fleece-cropped-sweatpant-jet-black"
+        "organic-fleece-cropped-sweatpant-bone"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3821,18 +3821,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3890,8 +3890,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-long-sleeve-top-mocha",
-        "organic-stretch-long-sleeve-top-jet-black",
-        "organic-stretch-long-sleeve-top-midnight"
+        "organic-stretch-long-sleeve-top-midnight",
+        "organic-stretch-long-sleeve-top-jet-black"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -3950,13 +3950,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-jet-black",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-midnight",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -4014,16 +4014,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4065,7 +4065,8 @@
       "badges": [],
       "description": "Our best-selling midi legging, now with side pockets for everyday ease. Made from soft, breathable organic cotton with gentle stretch, it offers a smooth, supportive fit that moves naturally with the body. The cropped 22.5\" inseam and side pockets make this a staple for low- to medium-impact movement and beyond. Flattering, functional, versatile. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton by Control Union, #1245496 - Mid-weight blend, 300 gsm - Made from Organic Cotton with a touch of stretch, this fabric is soft, breathable, and designed to move with you. It offers close-to-body comfort with natural flexibility and a smooth, supportive feel against the skin. - Machine wash cold with like colors, tumble dry low. Do not bleach. - Made in India Inseam ALL 22 1/2\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8 The Eltaranisi Brand Dress Code brings your values into each fiber and fabrication. GOTS Certified Organic - Certified by the Global Organic Textile Standard (GOTS) organically grown and responsibly processed, meeting strict environmental and social criteria that promote safer, fairer working conditions across the entire supply chain. GOTS supports reduced chemical use, healthier soil, and responsible water management for lower environmental impact. Tested with OEKO-TEX® - Finished materials are certified to OEKO-TEX® Standard 100, meaning every component is tested for a wide range of harmful substances and verified safe for human use.",
       "colorways": [
-        "organic-stretch-midi-legging-with-pockets-jet-black"
+        "organic-stretch-midi-legging-with-pockets-jet-black",
+        "organic-stretch-midi-legging-with-pockets-pebble"
       ],
       "colorEdition": "essential",
       "featuredRank": 19,
@@ -4136,15 +4137,15 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4202,18 +4203,18 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4269,14 +4270,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-bone",
-        "organic-stretch-scoop-bra-heather-grey",
-        "organic-stretch-scoop-bra-iris",
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
+        "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-iris",
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4334,13 +4335,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-jet-black",
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4396,16 +4397,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-pocket-sweatpant-almond",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4461,16 +4462,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4528,14 +4529,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-crop-racer-tank-fig",
-        "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-racer-tank-jet-black-1",
+        "organic-stretch-racer-tank-pebble",
         "organic-stretch-racer-tank-bone-1",
         "organic-stretch-racer-tank-forest",
-        "organic-stretch-racer-tank-jet-black-1",
         "organic-stretch-racer-tank-mocha",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-crop-racer-tank-midnight",
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4591,10 +4592,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-foldover-pant-fig",
-        "organic-stretch-foldover-pant-midnight",
-        "organic-stretch-foldover-pant-heather-grey",
         "organic-stretch-foldover-pant-jet-black",
-        "organic-stretch-foldover-pant-pebble"
+        "organic-stretch-foldover-pant-pebble",
+        "organic-stretch-foldover-pant-heather-grey",
+        "organic-stretch-foldover-pant-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4652,16 +4653,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -4719,10 +4720,10 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-foldover-pant-jet-black",
-        "organic-stretch-foldover-pant-midnight",
-        "organic-stretch-foldover-pant-fig",
+        "organic-stretch-foldover-pant-pebble",
         "organic-stretch-foldover-pant-heather-grey",
-        "organic-stretch-foldover-pant-pebble"
+        "organic-stretch-foldover-pant-fig",
+        "organic-stretch-foldover-pant-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -4780,15 +4781,15 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -4846,18 +4847,18 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -4913,8 +4914,8 @@
       "inNewArrivals": true,
       "colorways": [
         "merino-boatneck-cardigan-jet-black",
-        "merino-boatneck-cardigan-peppercorn",
-        "merino-boatneck-cardigan-marled-grey"
+        "merino-boatneck-cardigan-marled-grey",
+        "merino-boatneck-cardigan-peppercorn"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5029,14 +5030,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-bone",
-        "organic-stretch-scoop-bra-heather-grey",
-        "organic-stretch-scoop-bra-iris",
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
+        "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-iris",
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5092,13 +5093,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-jet-black",
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5154,16 +5155,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5219,16 +5220,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5284,14 +5285,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-fig",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-racer-tank-jet-black-1",
+        "organic-stretch-racer-tank-pebble",
         "organic-stretch-racer-tank-bone-1",
         "organic-stretch-racer-tank-forest",
-        "organic-stretch-racer-tank-jet-black-1",
         "organic-stretch-racer-tank-mocha",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-crop-racer-tank-fig",
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5347,10 +5348,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-foldover-pant-midnight",
-        "organic-stretch-foldover-pant-fig",
-        "organic-stretch-foldover-pant-heather-grey",
         "organic-stretch-foldover-pant-jet-black",
-        "organic-stretch-foldover-pant-pebble"
+        "organic-stretch-foldover-pant-pebble",
+        "organic-stretch-foldover-pant-heather-grey",
+        "organic-stretch-foldover-pant-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5408,8 +5409,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-long-sleeve-top-midnight",
-        "organic-stretch-long-sleeve-top-jet-black",
-        "organic-stretch-long-sleeve-top-mocha"
+        "organic-stretch-long-sleeve-top-mocha",
+        "organic-stretch-long-sleeve-top-jet-black"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5523,12 +5524,12 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-mocha",
-        "organic-fleece-cropped-half-zip-sweatshirt-balsam",
-        "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-pebble",
         "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
-        "organic-fleece-cropped-half-zip-sweatshirt-pebble"
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-bone",
+        "organic-fleece-cropped-half-zip-sweatshirt-balsam",
+        "organic-fleece-cropped-half-zip-sweatshirt-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5584,16 +5585,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5712,13 +5713,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-full-length-legging-jet-black",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-midnight",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -5774,8 +5775,8 @@
       "inNewArrivals": true,
       "colorways": [
         "merino-boatneck-cardigan-marled-grey",
-        "merino-boatneck-cardigan-peppercorn",
-        "merino-boatneck-cardigan-jet-black"
+        "merino-boatneck-cardigan-jet-black",
+        "merino-boatneck-cardigan-peppercorn"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -5992,11 +5993,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-pocket-hoodie-wisteria",
-        "organic-fleece-pocket-hoodie-almond",
-        "organic-fleece-pocket-hoodie-bone",
-        "organic-fleece-pocket-hoodie-heather-grey",
         "organic-fleece-pocket-hoodie-jet-black",
-        "organic-fleece-pocket-hoodie-leek"
+        "organic-fleece-pocket-hoodie-heather-grey",
+        "organic-fleece-pocket-hoodie-bone",
+        "organic-fleece-pocket-hoodie-leek",
+        "organic-fleece-pocket-hoodie-almond"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6051,16 +6052,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6122,15 +6123,15 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -6244,9 +6245,9 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-zip-hoodie-bone",
-        "organic-fleece-zip-hoodie-mocha",
         "organic-fleece-zip-hoodie-jet-black",
-        "organic-fleece-zip-hoodie-heather-grey"
+        "organic-fleece-zip-hoodie-heather-grey",
+        "organic-fleece-zip-hoodie-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -6303,9 +6304,9 @@
       "colorways": [
         "organic-fleece-cropped-sweatpant-bone",
         "organic-fleece-cropped-sweatpant-mocha",
+        "organic-fleece-cropped-sweatpant-jet-black",
         "organic-fleece-cropped-sweatpant-balsam",
-        "organic-fleece-cropped-sweatpant-heather-grey",
-        "organic-fleece-cropped-sweatpant-jet-black"
+        "organic-fleece-cropped-sweatpant-heather-grey"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -6361,8 +6362,8 @@
       "inNewArrivals": true,
       "colorways": [
         "merino-wrap-top-peppercorn",
-        "merino-wrap-top-marled-grey",
-        "merino-wrap-top-jet-black"
+        "merino-wrap-top-jet-black",
+        "merino-wrap-top-marled-grey"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6477,8 +6478,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-oversized-polo-bone",
-        "organic-fleece-oversized-polo-mocha",
-        "organic-fleece-oversized-polo-heather-grey"
+        "organic-fleece-oversized-polo-heather-grey",
+        "organic-fleece-oversized-polo-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -6535,8 +6536,8 @@
       "colorways": [
         "organic-fleece-oversized-sweatpant-bone",
         "organic-fleece-oversized-sweatpant-mocha",
-        "organic-fleece-oversized-sweatpant-balsam",
         "organic-fleece-oversized-sweatpant-heather-grey",
+        "organic-fleece-oversized-sweatpant-balsam",
         "organic-fleece-oversized-sweatpant-jet-black"
       ],
       "colorEdition": "essential",
@@ -6593,13 +6594,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-oversized-sweatshirt-almond",
-        "organic-fleece-oversized-sweatshirt-balsam",
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6655,10 +6657,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-pocket-hoodie-almond",
-        "organic-fleece-pocket-hoodie-wisteria",
-        "organic-fleece-pocket-hoodie-bone",
-        "organic-fleece-pocket-hoodie-heather-grey",
         "organic-fleece-pocket-hoodie-jet-black",
+        "organic-fleece-pocket-hoodie-heather-grey",
+        "organic-fleece-pocket-hoodie-bone",
+        "organic-fleece-pocket-hoodie-wisteria",
         "organic-fleece-pocket-hoodie-leek"
       ],
       "colorEdition": "limited",
@@ -6772,8 +6774,8 @@
       "inNewArrivals": true,
       "colorways": [
         "merino-foldover-pant-peppercorn",
-        "merino-foldover-pant-marled-grey",
-        "merino-foldover-pant-jet-black"
+        "merino-foldover-pant-jet-black",
+        "merino-foldover-pant-marled-grey"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6831,15 +6833,15 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6895,18 +6897,18 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -6962,9 +6964,9 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-zip-hoodie-jet-black",
-        "organic-fleece-zip-hoodie-mocha",
+        "organic-fleece-zip-hoodie-heather-grey",
         "organic-fleece-zip-hoodie-bone",
-        "organic-fleece-zip-hoodie-heather-grey"
+        "organic-fleece-zip-hoodie-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7021,9 +7023,9 @@
       "colorways": [
         "organic-fleece-cropped-sweatpant-jet-black",
         "organic-fleece-cropped-sweatpant-mocha",
-        "organic-fleece-cropped-sweatpant-bone",
         "organic-fleece-cropped-sweatpant-balsam",
-        "organic-fleece-cropped-sweatpant-heather-grey"
+        "organic-fleece-cropped-sweatpant-heather-grey",
+        "organic-fleece-cropped-sweatpant-bone"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7079,13 +7081,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
-        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
         "organic-fleece-relaxed-crewneck-sweatshirt-leek",
-        "organic-fleece-relaxed-crewneck-sweatshirt-pebble"
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7141,16 +7143,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-forest",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7206,13 +7208,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
-        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
-        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
         "organic-fleece-relaxed-crewneck-sweatshirt-leek",
-        "organic-fleece-relaxed-crewneck-sweatshirt-pebble"
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7269,8 +7271,8 @@
       "colorways": [
         "organic-fleece-oversized-sweatpant-jet-black",
         "organic-fleece-oversized-sweatpant-mocha",
-        "organic-fleece-oversized-sweatpant-balsam",
         "organic-fleece-oversized-sweatpant-heather-grey",
+        "organic-fleece-oversized-sweatpant-balsam",
         "organic-fleece-oversized-sweatpant-bone"
       ],
       "colorEdition": "essential",
@@ -7326,15 +7328,15 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -7390,13 +7392,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-full-length-legging-mulberry",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-nori",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-jet-black",
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-midnight",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -7452,14 +7454,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-jet-black",
         "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
         "organic-stretch-scoop-bra-heather-grey",
         "organic-stretch-scoop-bra-iris",
-        "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -7515,18 +7517,18 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -7582,9 +7584,9 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-zip-hoodie-heather-grey",
-        "organic-fleece-zip-hoodie-mocha",
         "organic-fleece-zip-hoodie-jet-black",
-        "organic-fleece-zip-hoodie-bone"
+        "organic-fleece-zip-hoodie-bone",
+        "organic-fleece-zip-hoodie-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7641,9 +7643,9 @@
       "colorways": [
         "organic-fleece-cropped-sweatpant-heather-grey",
         "organic-fleece-cropped-sweatpant-mocha",
-        "organic-fleece-cropped-sweatpant-bone",
+        "organic-fleece-cropped-sweatpant-jet-black",
         "organic-fleece-cropped-sweatpant-balsam",
-        "organic-fleece-cropped-sweatpant-jet-black"
+        "organic-fleece-cropped-sweatpant-bone"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7930,13 +7932,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
-        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
         "organic-fleece-relaxed-crewneck-sweatshirt-leek",
-        "organic-fleece-relaxed-crewneck-sweatshirt-pebble"
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -7990,16 +7992,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -8055,8 +8057,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-waffle-collared-half-zip-sweatshirt-heather-pine",
-        "organic-waffle-collared-half-zip-sweatshirt-lotus",
-        "organic-waffle-collared-half-zip-sweatshirt-marled-cloud"
+        "organic-waffle-collared-half-zip-sweatshirt-marled-cloud",
+        "organic-waffle-collared-half-zip-sweatshirt-lotus"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -8113,8 +8115,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-waffle-sweatpant-heather-pine",
-        "organic-waffle-sweatpant-lotus",
-        "organic-waffle-sweatpant-marled-cloud"
+        "organic-waffle-sweatpant-marled-cloud",
+        "organic-waffle-sweatpant-lotus"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -8170,11 +8172,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-pant-sprig",
-        "organic-pointelle-pant-midnight",
-        "organic-pointelle-pant-heather-oat",
-        "organic-pointelle-pant-golden",
         "organic-pointelle-pant-halo",
-        "organic-pointelle-pant-heather-grey"
+        "organic-pointelle-pant-heather-grey",
+        "organic-pointelle-pant-golden",
+        "organic-pointelle-pant-midnight",
+        "organic-pointelle-pant-heather-oat"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -8230,10 +8232,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-cardigan-sprig",
-        "organic-pointelle-cardigan-heather-oat",
-        "organic-pointelle-cardigan-midnight",
         "organic-pointelle-cardigan-golden",
-        "organic-pointelle-cardigan-heather-grey"
+        "organic-pointelle-cardigan-heather-oat",
+        "organic-pointelle-cardigan-heather-grey",
+        "organic-pointelle-cardigan-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -8289,12 +8291,12 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-mocha",
-        "organic-fleece-cropped-half-zip-sweatshirt-balsam",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-pebble",
         "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
-        "organic-fleece-cropped-half-zip-sweatshirt-pebble"
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-bone",
+        "organic-fleece-cropped-half-zip-sweatshirt-balsam",
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-oat"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -8350,16 +8352,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -8642,8 +8644,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-waffle-crew-cardigan-lotus",
-        "organic-waffle-crew-cardigan-marled-cloud",
-        "organic-waffle-crew-cardigan-heather-pine"
+        "organic-waffle-crew-cardigan-heather-pine",
+        "organic-waffle-crew-cardigan-marled-cloud"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -8756,8 +8758,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-oversized-polo-mocha",
-        "organic-fleece-oversized-polo-bone",
-        "organic-fleece-oversized-polo-heather-grey"
+        "organic-fleece-oversized-polo-heather-grey",
+        "organic-fleece-oversized-polo-bone"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -8813,13 +8815,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
-        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
         "organic-fleece-relaxed-crewneck-sweatshirt-leek",
-        "organic-fleece-relaxed-crewneck-sweatshirt-pebble"
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -8983,13 +8985,14 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9045,8 +9048,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-waffle-crew-cardigan-heather-pine",
-        "organic-waffle-crew-cardigan-lotus",
-        "organic-waffle-crew-cardigan-marled-cloud"
+        "organic-waffle-crew-cardigan-marled-cloud",
+        "organic-waffle-crew-cardigan-lotus"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9158,13 +9161,13 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
-        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
         "organic-fleece-relaxed-crewneck-sweatshirt-leek",
-        "organic-fleece-relaxed-crewneck-sweatshirt-pebble"
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9220,16 +9223,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-pocket-sweatpant-rosewater",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9285,10 +9288,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-cardigan-midnight",
-        "organic-pointelle-cardigan-heather-oat",
-        "organic-pointelle-cardigan-sprig",
         "organic-pointelle-cardigan-golden",
-        "organic-pointelle-cardigan-heather-grey"
+        "organic-pointelle-cardigan-heather-oat",
+        "organic-pointelle-cardigan-heather-grey",
+        "organic-pointelle-cardigan-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -9402,11 +9405,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-pant-midnight",
-        "organic-pointelle-pant-sprig",
-        "organic-pointelle-pant-heather-oat",
-        "organic-pointelle-pant-golden",
         "organic-pointelle-pant-halo",
-        "organic-pointelle-pant-heather-grey"
+        "organic-pointelle-pant-heather-grey",
+        "organic-pointelle-pant-golden",
+        "organic-pointelle-pant-heather-oat",
+        "organic-pointelle-pant-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -9464,11 +9467,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-baby-tee-sprig",
-        "organic-pointelle-baby-tee-midnight",
-        "organic-pointelle-baby-tee-heather-oat",
-        "organic-pointelle-baby-tee-golden",
         "organic-pointelle-baby-tee-halo",
-        "organic-pointelle-baby-tee-heather-grey"
+        "organic-pointelle-baby-tee-golden",
+        "organic-pointelle-baby-tee-heather-grey",
+        "organic-pointelle-baby-tee-heather-oat",
+        "organic-pointelle-baby-tee-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9583,8 +9586,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-waffle-collared-half-zip-sweatshirt-marled-cloud",
-        "organic-waffle-collared-half-zip-sweatshirt-lotus",
-        "organic-waffle-collared-half-zip-sweatshirt-heather-pine"
+        "organic-waffle-collared-half-zip-sweatshirt-heather-pine",
+        "organic-waffle-collared-half-zip-sweatshirt-lotus"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9642,8 +9645,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-waffle-crew-cardigan-marled-cloud",
-        "organic-waffle-crew-cardigan-lotus",
-        "organic-waffle-crew-cardigan-heather-pine"
+        "organic-waffle-crew-cardigan-heather-pine",
+        "organic-waffle-crew-cardigan-lotus"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -9813,8 +9816,8 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-tank-heather-oat",
-        "organic-pointelle-tank-sprig",
-        "organic-pointelle-tank-midnight"
+        "organic-pointelle-tank-midnight",
+        "organic-pointelle-tank-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -9872,10 +9875,10 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-cardigan-heather-oat",
-        "organic-pointelle-cardigan-sprig",
-        "organic-pointelle-cardigan-midnight",
         "organic-pointelle-cardigan-golden",
-        "organic-pointelle-cardigan-heather-grey"
+        "organic-pointelle-cardigan-heather-grey",
+        "organic-pointelle-cardigan-midnight",
+        "organic-pointelle-cardigan-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -9933,11 +9936,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-pant-heather-oat",
-        "organic-pointelle-pant-midnight",
-        "organic-pointelle-pant-sprig",
-        "organic-pointelle-pant-golden",
         "organic-pointelle-pant-halo",
-        "organic-pointelle-pant-heather-grey"
+        "organic-pointelle-pant-heather-grey",
+        "organic-pointelle-pant-golden",
+        "organic-pointelle-pant-midnight",
+        "organic-pointelle-pant-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -9995,11 +9998,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-baby-tee-midnight",
-        "organic-pointelle-baby-tee-sprig",
-        "organic-pointelle-baby-tee-heather-oat",
-        "organic-pointelle-baby-tee-golden",
         "organic-pointelle-baby-tee-halo",
-        "organic-pointelle-baby-tee-heather-grey"
+        "organic-pointelle-baby-tee-golden",
+        "organic-pointelle-baby-tee-heather-grey",
+        "organic-pointelle-baby-tee-heather-oat",
+        "organic-pointelle-baby-tee-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10057,11 +10060,11 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-pointelle-baby-tee-heather-oat",
-        "organic-pointelle-baby-tee-sprig",
-        "organic-pointelle-baby-tee-midnight",
-        "organic-pointelle-baby-tee-golden",
         "organic-pointelle-baby-tee-halo",
-        "organic-pointelle-baby-tee-heather-grey"
+        "organic-pointelle-baby-tee-golden",
+        "organic-pointelle-baby-tee-heather-grey",
+        "organic-pointelle-baby-tee-midnight",
+        "organic-pointelle-baby-tee-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10235,14 +10238,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-scoop-bra-bone",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-heather-grey",
-        "organic-stretch-scoop-bra-iris",
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-pebble",
+        "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-iris",
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10300,14 +10303,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
         "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
         "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
         "organic-stretch-scoop-bra-iris",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10363,15 +10366,15 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-sports-bra-heather-grey",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10543,18 +10546,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-heather-grey",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10610,10 +10613,10 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-foldover-pant-heather-grey",
-        "organic-stretch-foldover-pant-midnight",
-        "organic-stretch-foldover-pant-fig",
         "organic-stretch-foldover-pant-jet-black",
-        "organic-stretch-foldover-pant-pebble"
+        "organic-stretch-foldover-pant-pebble",
+        "organic-stretch-foldover-pant-fig",
+        "organic-stretch-foldover-pant-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -10669,10 +10672,10 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-foldover-pant-pebble",
-        "organic-stretch-foldover-pant-midnight",
-        "organic-stretch-foldover-pant-fig",
+        "organic-stretch-foldover-pant-jet-black",
         "organic-stretch-foldover-pant-heather-grey",
-        "organic-stretch-foldover-pant-jet-black"
+        "organic-stretch-foldover-pant-fig",
+        "organic-stretch-foldover-pant-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -11038,10 +11041,10 @@
       "description": "A relaxed track pant that takes its cues from vintage athleticwear, crafted from GOTS certified organic cotton jersey. An easy silhouette with contrasting side panels nods subtly to nostalgia, while midweight jersey offers a soft, broken-in feel reminiscent of a vintage find. Breathable with a subtle texture and matte finish, it brings the spirit of classic trackwear into everyday dressing. Laid-back, timeless, designed for everyday rotation. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability.",
       "colorways": [
         "organic-heritage-jersey-track-pant-mulberry-tide",
+        "organic-heritage-jersey-track-pant-jet-black",
         "organic-heritage-jersey-track-pant-bone-balsam",
         "organic-heritage-jersey-track-pant-heather-grey-bone",
-        "organic-heritage-jersey-track-pant-bone",
-        "organic-heritage-jersey-track-pant-jet-black"
+        "organic-heritage-jersey-track-pant-bone"
       ],
       "colorEdition": "limited",
       "featuredRank": 135,
@@ -11097,10 +11100,10 @@
       "description": "A relaxed track pant that takes its cues from vintage athleticwear, crafted from GOTS certified organic cotton jersey. An easy silhouette with contrasting side panels nods subtly to nostalgia, while midweight jersey offers a soft, broken-in feel reminiscent of a vintage find. Breathable with a subtle texture and matte finish, it brings the spirit of classic trackwear into everyday dressing. Laid-back, timeless, designed for everyday rotation. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability.",
       "colorways": [
         "organic-heritage-jersey-track-pant-bone",
+        "organic-heritage-jersey-track-pant-jet-black",
         "organic-heritage-jersey-track-pant-bone-balsam",
         "organic-heritage-jersey-track-pant-mulberry-tide",
-        "organic-heritage-jersey-track-pant-heather-grey-bone",
-        "organic-heritage-jersey-track-pant-jet-black"
+        "organic-heritage-jersey-track-pant-heather-grey-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 136,
@@ -11156,10 +11159,10 @@
       "description": "A relaxed track pant that takes its cues from vintage athleticwear, crafted from GOTS certified organic cotton jersey. An easy silhouette with contrasting side panels nods subtly to nostalgia, while midweight jersey offers a soft, broken-in feel reminiscent of a vintage find. Breathable with a subtle texture and matte finish, it brings the spirit of classic trackwear into everyday dressing. Laid-back, timeless, designed for everyday rotation. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability.",
       "colorways": [
         "organic-heritage-jersey-track-pant-bone-balsam",
+        "organic-heritage-jersey-track-pant-jet-black",
         "organic-heritage-jersey-track-pant-mulberry-tide",
         "organic-heritage-jersey-track-pant-heather-grey-bone",
-        "organic-heritage-jersey-track-pant-bone",
-        "organic-heritage-jersey-track-pant-jet-black"
+        "organic-heritage-jersey-track-pant-bone"
       ],
       "colorEdition": "limited",
       "featuredRank": 137,
@@ -11216,10 +11219,10 @@
       "description": "A relaxed track pant that takes its cues from vintage athleticwear, crafted from GOTS certified organic cotton jersey. An easy silhouette with contrasting side panels nods subtly to nostalgia, while midweight jersey offers a soft, broken-in feel reminiscent of a vintage find. Breathable with a subtle texture and matte finish, it brings the spirit of classic trackwear into everyday dressing. Laid-back, timeless, designed for everyday rotation. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability.",
       "colorways": [
         "organic-heritage-jersey-track-pant-heather-grey-bone",
+        "organic-heritage-jersey-track-pant-jet-black",
         "organic-heritage-jersey-track-pant-bone-balsam",
         "organic-heritage-jersey-track-pant-mulberry-tide",
-        "organic-heritage-jersey-track-pant-bone",
-        "organic-heritage-jersey-track-pant-jet-black"
+        "organic-heritage-jersey-track-pant-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 138,
@@ -11344,14 +11347,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-scoop-bra-iris",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-bone",
-        "organic-stretch-scoop-bra-heather-grey",
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
+        "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -11407,14 +11410,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-scoop-bra-heather-grey",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
-        "organic-stretch-scoop-bra-bone",
-        "organic-stretch-scoop-bra-iris",
         "organic-stretch-scoop-bra-jet-black",
-        "organic-stretch-scoop-bra-pebble"
+        "organic-stretch-scoop-bra-bone",
+        "organic-stretch-scoop-bra-pebble",
+        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-iris",
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -11468,11 +11471,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-pant-halo",
-        "organic-pointelle-pant-midnight",
-        "organic-pointelle-pant-sprig",
-        "organic-pointelle-pant-heather-oat",
+        "organic-pointelle-pant-heather-grey",
         "organic-pointelle-pant-golden",
-        "organic-pointelle-pant-heather-grey"
+        "organic-pointelle-pant-midnight",
+        "organic-pointelle-pant-heather-oat",
+        "organic-pointelle-pant-sprig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -11526,9 +11529,9 @@
       "colorways": [
         "organic-pointelle-cardigan-golden",
         "organic-pointelle-cardigan-heather-oat",
-        "organic-pointelle-cardigan-sprig",
+        "organic-pointelle-cardigan-heather-grey",
         "organic-pointelle-cardigan-midnight",
-        "organic-pointelle-cardigan-heather-grey"
+        "organic-pointelle-cardigan-sprig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -11584,11 +11587,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-pant-golden",
-        "organic-pointelle-pant-midnight",
-        "organic-pointelle-pant-sprig",
-        "organic-pointelle-pant-heather-oat",
         "organic-pointelle-pant-halo",
-        "organic-pointelle-pant-heather-grey"
+        "organic-pointelle-pant-heather-grey",
+        "organic-pointelle-pant-midnight",
+        "organic-pointelle-pant-heather-oat",
+        "organic-pointelle-pant-sprig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -11645,18 +11648,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -11989,10 +11992,10 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-cardigan-heather-grey",
+        "organic-pointelle-cardigan-golden",
         "organic-pointelle-cardigan-heather-oat",
-        "organic-pointelle-cardigan-sprig",
         "organic-pointelle-cardigan-midnight",
-        "organic-pointelle-cardigan-golden"
+        "organic-pointelle-cardigan-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -12049,11 +12052,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-pant-heather-grey",
-        "organic-pointelle-pant-midnight",
-        "organic-pointelle-pant-sprig",
-        "organic-pointelle-pant-heather-oat",
+        "organic-pointelle-pant-halo",
         "organic-pointelle-pant-golden",
-        "organic-pointelle-pant-halo"
+        "organic-pointelle-pant-midnight",
+        "organic-pointelle-pant-heather-oat",
+        "organic-pointelle-pant-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -12108,11 +12111,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-baby-tee-golden",
-        "organic-pointelle-baby-tee-sprig",
-        "organic-pointelle-baby-tee-midnight",
-        "organic-pointelle-baby-tee-heather-oat",
         "organic-pointelle-baby-tee-halo",
-        "organic-pointelle-baby-tee-heather-grey"
+        "organic-pointelle-baby-tee-heather-grey",
+        "organic-pointelle-baby-tee-heather-oat",
+        "organic-pointelle-baby-tee-midnight",
+        "organic-pointelle-baby-tee-sprig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -12167,11 +12170,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-baby-tee-heather-grey",
-        "organic-pointelle-baby-tee-sprig",
-        "organic-pointelle-baby-tee-midnight",
-        "organic-pointelle-baby-tee-heather-oat",
+        "organic-pointelle-baby-tee-halo",
         "organic-pointelle-baby-tee-golden",
-        "organic-pointelle-baby-tee-halo"
+        "organic-pointelle-baby-tee-heather-oat",
+        "organic-pointelle-baby-tee-midnight",
+        "organic-pointelle-baby-tee-sprig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -12226,11 +12229,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-pointelle-baby-tee-halo",
-        "organic-pointelle-baby-tee-sprig",
-        "organic-pointelle-baby-tee-midnight",
-        "organic-pointelle-baby-tee-heather-oat",
         "organic-pointelle-baby-tee-golden",
-        "organic-pointelle-baby-tee-heather-grey"
+        "organic-pointelle-baby-tee-heather-grey",
+        "organic-pointelle-baby-tee-heather-oat",
+        "organic-pointelle-baby-tee-midnight",
+        "organic-pointelle-baby-tee-sprig"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -12973,14 +12976,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-scoop-bra-pebble",
-        "organic-stretch-scoop-bra-fig",
-        "organic-stretch-scoop-bra-midnight",
-        "organic-stretch-scoop-bra-nori",
-        "organic-stretch-scoop-bra-mulberry",
+        "organic-stretch-scoop-bra-jet-black",
         "organic-stretch-scoop-bra-bone",
         "organic-stretch-scoop-bra-heather-grey",
+        "organic-stretch-scoop-bra-mulberry",
         "organic-stretch-scoop-bra-iris",
-        "organic-stretch-scoop-bra-jet-black"
+        "organic-stretch-scoop-bra-nori",
+        "organic-stretch-scoop-bra-fig",
+        "organic-stretch-scoop-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -13095,18 +13098,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-jet-black",
+        "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
+        "organic-stretch-midi-legging-sienna",
         "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
         "organic-stretch-midi-legging-heather-grey",
-        "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
-        "organic-stretch-midi-legging-pebble",
-        "organic-stretch-midi-legging-sienna",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
@@ -13625,14 +13628,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-racer-tank-jet-black-1",
-        "organic-stretch-crop-racer-tank-fig",
-        "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-racer-tank-pebble",
         "organic-stretch-racer-tank-bone-1",
         "organic-stretch-racer-tank-forest",
         "organic-stretch-racer-tank-mocha",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-crop-racer-tank-fig",
+        "organic-stretch-crop-racer-tank-midnight",
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -13896,8 +13899,9 @@
       "description": "A polished V-neck sports bra with unpadded, double-layered support. Soft, breathable organic cotton and gentle stretch create a smooth, close-to-body fit with natural flexibility. Designed to go seamlessly from studio to street, it offers comfortable support without unnecessary structure. Easy, elevated, versatile. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton - Machine wash cold with like colors - Tumble dry low - Do not bleach - Made in India Please note that there can be slight differences in the coloration of our products across different fabrications. To ensure no color discrepancy in your set, we recommend that you opt for purchasing a set in the same fabric. Measurements (Chest is fullest part of bust; underbust is bottom opening) - XS : Chest 27 in; Underbust 22.5 in - S : Chest 29 in; Underbust 24.5 in - M : Chest 31 in; Underbust 26.5 in - L : Chest 33 in; Underbust 28.5 in - XL : Chest 34 in; Underbust 30.5 in Cost Per Wear - 5 Wears : $11.60 - 10 Wears : $5.80 - 25 Wears : $2.32 - 50 Wears : $1.16",
       "colorways": [
         "organic-stretch-v-neck-bra-pebble",
+        "organic-stretch-v-neck-bra-jet-black",
         "organic-stretch-v-neck-bra-mocha",
-        "organic-stretch-v-neck-bra-jet-black"
+        "organic-stretch-v-neck-bra-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 185,
@@ -13972,16 +13976,16 @@
       "inNewArrivals": false,
       "colorways": [
         "fleece-relaxed-pocket-sweatpant-jet-black",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14031,8 +14035,8 @@
       "colorways": [
         "organic-stretch-biker-short-jet-black",
         "organic-stretch-biker-short-bone",
-        "organic-stretch-biker-short",
-        "organic-stretch-biker-short-pebble"
+        "organic-stretch-biker-short-pebble",
+        "organic-stretch-biker-short"
       ],
       "colorEdition": "essential",
       "featuredRank": 187,
@@ -14104,8 +14108,8 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-pocket-legging-jet-black",
-        "organic-stretch-pocket-legging-forest",
-        "organic-stretch-pocket-legging-pebble"
+        "organic-stretch-pocket-legging-pebble",
+        "organic-stretch-pocket-legging-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14162,8 +14166,8 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-pocket-legging-pebble",
-        "organic-stretch-pocket-legging-forest",
-        "organic-stretch-pocket-legging-jet-black"
+        "organic-stretch-pocket-legging-jet-black",
+        "organic-stretch-pocket-legging-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14226,16 +14230,16 @@
       "inNewArrivals": false,
       "colorways": [
         "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14298,18 +14302,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-pebble",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
+        "organic-stretch-midi-legging-forest",
         "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14371,15 +14375,15 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-sports-bra-pebble",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-jet-black",
         "organic-stretch-sports-bra-bone",
         "organic-stretch-sports-bra-forest",
+        "organic-stretch-sports-bra-mocha",
+        "organic-stretch-sports-bra-mulberry",
         "organic-stretch-sports-bra-heather-grey",
-        "organic-stretch-sports-bra-jet-black",
-        "organic-stretch-sports-bra-mocha"
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14441,15 +14445,15 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14508,14 +14512,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-racer-tank-pebble",
-        "organic-stretch-crop-racer-tank-fig",
-        "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-racer-tank-jet-black-1",
         "organic-stretch-racer-tank-bone-1",
         "organic-stretch-racer-tank-forest",
-        "organic-stretch-racer-tank-jet-black-1",
-        "organic-stretch-racer-tank-mocha"
+        "organic-stretch-racer-tank-mocha",
+        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-crop-racer-tank-fig",
+        "organic-stretch-crop-racer-tank-midnight",
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14566,8 +14570,8 @@
       "colorways": [
         "organic-stretch-biker-short-bone",
         "organic-stretch-biker-short-jet-black",
-        "organic-stretch-biker-short",
-        "organic-stretch-biker-short-pebble"
+        "organic-stretch-biker-short-pebble",
+        "organic-stretch-biker-short"
       ],
       "colorEdition": "essential",
       "featuredRank": 195,
@@ -14639,14 +14643,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-racer-tank-bone-1",
+        "organic-stretch-racer-tank-jet-black-1",
+        "organic-stretch-racer-tank-pebble",
+        "organic-stretch-racer-tank-forest",
+        "organic-stretch-racer-tank-mocha",
+        "organic-stretch-crop-racer-tank-heather-grey",
         "organic-stretch-crop-racer-tank-fig",
         "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
-        "organic-stretch-racer-tank-forest",
-        "organic-stretch-racer-tank-jet-black-1",
-        "organic-stretch-racer-tank-mocha",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -14695,8 +14699,8 @@
       "description": "A classic biker short made for low-impact movement, lounging, and everyday wear. A close-to-body fit and 6\" inseam offer smooth, supportive comfort, while organic cotton with a touch of stretch moves naturally with the body. Soft and breathable against the skin, it’s designed to go well beyond the workout. Studio-bound, street-ready, couch-approved. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton - Machine wash cold with like colors - Tumble dry low - Do not bleach - Made in India Please note that there can be slight differences in the coloration of our products across different fabrications. To ensure no color discrepancy in your set, we recommend that you opt for purchasing a set in the same fabric. Inseam ALL 6\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8",
       "colorways": [
         "organic-stretch-biker-short-pebble",
-        "organic-stretch-biker-short-bone",
         "organic-stretch-biker-short-jet-black",
+        "organic-stretch-biker-short-bone",
         "organic-stretch-biker-short"
       ],
       "colorEdition": "essential",
@@ -14884,16 +14888,16 @@
       "inNewArrivals": false,
       "colorways": [
         "fleece-relaxed-pocket-sweatpant-bone",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -15176,16 +15180,16 @@
       "inNewArrivals": false,
       "colorways": [
         "fleece-relaxed-pocket-sweatpant-mushroom",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -15248,16 +15252,16 @@
       "inNewArrivals": false,
       "colorways": [
         "fleece-relaxed-pocket-sweatpant-midnight",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
+        "organic-fleece-relaxed-pocket-sweatpant-forest",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -16831,16 +16835,16 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-bone",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
-        "organic-fleece-straight-leg-sweatpant-heather-grey",
         "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-heather-grey",
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17374,18 +17378,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-mocha",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-chili-oil",
         "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-mulberry",
         "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17542,16 +17546,16 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17609,16 +17613,16 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
-        "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-jet-black",
-        "organic-fleece-straight-leg-sweatpant-pebble"
+        "organic-fleece-straight-leg-sweatpant-bone",
+        "organic-fleece-straight-leg-sweatpant-pebble",
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17664,7 +17668,8 @@
       "colorways": [
         "organic-stretch-v-neck-bra-mocha",
         "organic-stretch-v-neck-bra-jet-black",
-        "organic-stretch-v-neck-bra-pebble"
+        "organic-stretch-v-neck-bra-pebble",
+        "organic-stretch-v-neck-bra-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 250,
@@ -17737,18 +17742,18 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-jet-black",
+        "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
+        "organic-stretch-midi-legging-sienna",
         "organic-stretch-midi-legging-mulberry",
+        "organic-stretch-midi-legging-zest",
         "organic-stretch-midi-legging-cove",
         "organic-stretch-midi-legging-heather-grey",
-        "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
-        "organic-stretch-midi-legging-pebble",
-        "organic-stretch-midi-legging-sienna",
-        "organic-stretch-midi-legging-zest",
-        "organic-stretch-midi-legging-chili-oil"
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17810,13 +17815,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-full-length-legging-pebble",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-forest",
         "organic-stretch-full-length-legging-jet-black",
-        "organic-stretch-full-length-legging-mocha"
+        "organic-stretch-full-length-legging-mocha",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-midnight",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17872,16 +17877,16 @@
       "inNewArrivals": true,
       "colorways": [
         "organic-fleece-relaxed-pocket-sweatpant-forest",
-        "organic-fleece-relaxed-pocket-sweatpant-mocha",
-        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "fleece-relaxed-pocket-sweatpant-jet-black",
+        "fleece-relaxed-pocket-sweatpant-heather-grey",
+        "fleece-relaxed-pocket-sweatpant-bone",
+        "fleece-relaxed-pocket-sweatpant-midnight",
+        "fleece-relaxed-pocket-sweatpant-mushroom",
         "organic-fleece-relaxed-pocket-sweatpant-balsam",
         "organic-fleece-relaxed-pocket-sweatpant-almond",
         "organic-fleece-relaxed-pocket-sweatpant-heather-oat",
-        "fleece-relaxed-pocket-sweatpant-bone",
-        "fleece-relaxed-pocket-sweatpant-heather-grey",
-        "fleece-relaxed-pocket-sweatpant-jet-black",
-        "fleece-relaxed-pocket-sweatpant-midnight",
-        "fleece-relaxed-pocket-sweatpant-mushroom"
+        "organic-fleece-relaxed-pocket-sweatpant-rosewater",
+        "organic-fleece-relaxed-pocket-sweatpant-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -17937,16 +17942,16 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-straight-leg-sweatpant-pebble",
-        "organic-fleece-straight-leg-sweatpant-mocha",
-        "organic-fleece-straight-leg-sweatpant-wisteria",
-        "organic-fleece-straight-leg-sweatpant-almond",
-        "organic-fleece-straight-leg-sweatpant-balsam",
-        "organic-fleece-straight-leg-sweatpant-heather-oat",
-        "organic-fleece-straight-leg-sweatpant-midnight",
-        "organic-fleece-straight-leg-sweatpant-forest",
+        "organic-fleece-straight-leg-sweatpant-jet-black",
         "organic-fleece-straight-leg-sweatpant-bone",
         "organic-fleece-straight-leg-sweatpant-heather-grey",
-        "organic-fleece-straight-leg-sweatpant-jet-black"
+        "organic-fleece-straight-leg-sweatpant-balsam",
+        "organic-fleece-straight-leg-sweatpant-wisteria",
+        "organic-fleece-straight-leg-sweatpant-midnight",
+        "organic-fleece-straight-leg-sweatpant-heather-oat",
+        "organic-fleece-straight-leg-sweatpant-almond",
+        "organic-fleece-straight-leg-sweatpant-mocha",
+        "organic-fleece-straight-leg-sweatpant-forest"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18105,8 +18110,9 @@
       "description": "A polished V-neck sports bra with unpadded, double-layered support. Soft, breathable organic cotton and gentle stretch create a smooth, close-to-body fit with natural flexibility. Designed to go seamlessly from studio to street, it offers comfortable support without unnecessary structure. Easy, elevated, versatile. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton - Machine wash cold with like colors - Tumble dry low - Do not bleach - Made in India Please note that there can be slight differences in the coloration of our products across different fabrications. To ensure no color discrepancy in your set, we recommend that you opt for purchasing a set in the same fabric. Measurements (Chest is fullest part of bust; underbust is bottom opening) - XS : Chest 27 in; Underbust 22.5 in - S : Chest 29 in; Underbust 24.5 in - M : Chest 31 in; Underbust 26.5 in - L : Chest 33 in; Underbust 28.5 in - XL : Chest 34 in; Underbust 30.5 in Cost Per Wear - 5 Wears : $11.60 - 10 Wears : $5.80 - 25 Wears : $2.32 - 50 Wears : $1.16",
       "colorways": [
         "organic-stretch-v-neck-bra-jet-black",
+        "organic-stretch-v-neck-bra-pebble",
         "organic-stretch-v-neck-bra-mocha",
-        "organic-stretch-v-neck-bra-pebble"
+        "organic-stretch-v-neck-bra-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 257,
@@ -18165,8 +18171,8 @@
       "description": "A classic biker short made for low-impact movement, lounging, and everyday wear. A close-to-body fit and 6\" inseam offer smooth, supportive comfort, while organic cotton with a touch of stretch moves naturally with the body. Soft and breathable against the skin, it’s designed to go well beyond the workout. Studio-bound, street-ready, couch-approved. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton - Machine wash cold with like colors - Tumble dry low - Do not bleach - Made in India Please note that there can be slight differences in the coloration of our products across different fabrications. To ensure no color discrepancy in your set, we recommend that you opt for purchasing a set in the same fabric. Inseam ALL 6\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8",
       "colorways": [
         "organic-stretch-biker-short",
-        "organic-stretch-biker-short-bone",
         "organic-stretch-biker-short-jet-black",
+        "organic-stretch-biker-short-bone",
         "organic-stretch-biker-short-pebble"
       ],
       "colorEdition": "essential",
@@ -18286,11 +18292,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-pocket-hoodie-bone",
-        "organic-fleece-pocket-hoodie-wisteria",
-        "organic-fleece-pocket-hoodie-almond",
-        "organic-fleece-pocket-hoodie-heather-grey",
         "organic-fleece-pocket-hoodie-jet-black",
-        "organic-fleece-pocket-hoodie-leek"
+        "organic-fleece-pocket-hoodie-heather-grey",
+        "organic-fleece-pocket-hoodie-wisteria",
+        "organic-fleece-pocket-hoodie-leek",
+        "organic-fleece-pocket-hoodie-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18347,11 +18353,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-pocket-hoodie-jet-black",
-        "organic-fleece-pocket-hoodie-wisteria",
-        "organic-fleece-pocket-hoodie-almond",
-        "organic-fleece-pocket-hoodie-bone",
         "organic-fleece-pocket-hoodie-heather-grey",
-        "organic-fleece-pocket-hoodie-leek"
+        "organic-fleece-pocket-hoodie-bone",
+        "organic-fleece-pocket-hoodie-wisteria",
+        "organic-fleece-pocket-hoodie-leek",
+        "organic-fleece-pocket-hoodie-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18408,11 +18414,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-pocket-hoodie-heather-grey",
-        "organic-fleece-pocket-hoodie-wisteria",
-        "organic-fleece-pocket-hoodie-almond",
-        "organic-fleece-pocket-hoodie-bone",
         "organic-fleece-pocket-hoodie-jet-black",
-        "organic-fleece-pocket-hoodie-leek"
+        "organic-fleece-pocket-hoodie-bone",
+        "organic-fleece-pocket-hoodie-wisteria",
+        "organic-fleece-pocket-hoodie-leek",
+        "organic-fleece-pocket-hoodie-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18466,13 +18472,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-boyfriend-sweatshirt-mushroom",
-        "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
-        "organic-fleece-boyfriend-sweatshirt-midnight"
+        "organic-fleece-boyfriend-sweatshirt-midnight",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18528,13 +18535,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
-        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
-        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
         "organic-fleece-relaxed-crewneck-sweatshirt-leek",
-        "organic-fleece-relaxed-crewneck-sweatshirt-pebble"
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18590,13 +18597,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
-        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
-        "organic-fleece-relaxed-crewneck-sweatshirt-balsam",
-        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
-        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
         "organic-fleece-relaxed-crewneck-sweatshirt-bone",
         "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
-        "organic-fleece-relaxed-crewneck-sweatshirt-leek"
+        "organic-fleece-relaxed-crewneck-sweatshirt-leek",
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18654,13 +18661,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18717,13 +18725,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
-        "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18779,13 +18788,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-boyfriend-sweatshirt-jet-black",
-        "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18842,13 +18852,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
         "organic-fleece-boyfriend-sweatshirt-bone",
-        "organic-fleece-boyfriend-sweatshirt-forest",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-boyfriend-sweatshirt-forest",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18904,12 +18915,12 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
-        "organic-fleece-cropped-half-zip-sweatshirt-mocha",
+        "organic-fleece-cropped-half-zip-sweatshirt-pebble",
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-bone",
         "organic-fleece-cropped-half-zip-sweatshirt-balsam",
         "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
-        "organic-fleece-cropped-half-zip-sweatshirt-pebble"
+        "organic-fleece-cropped-half-zip-sweatshirt-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -18965,12 +18976,12 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-pebble",
-        "organic-fleece-cropped-half-zip-sweatshirt-mocha",
+        "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
+        "organic-fleece-cropped-half-zip-sweatshirt-bone",
         "organic-fleece-cropped-half-zip-sweatshirt-balsam",
         "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
-        "organic-fleece-cropped-half-zip-sweatshirt-jet-black"
+        "organic-fleece-cropped-half-zip-sweatshirt-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19026,12 +19037,12 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
-        "organic-fleece-cropped-half-zip-sweatshirt-mocha",
+        "organic-fleece-cropped-half-zip-sweatshirt-pebble",
+        "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
+        "organic-fleece-cropped-half-zip-sweatshirt-bone",
         "organic-fleece-cropped-half-zip-sweatshirt-balsam",
         "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
-        "organic-fleece-cropped-half-zip-sweatshirt-pebble"
+        "organic-fleece-cropped-half-zip-sweatshirt-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19087,12 +19098,12 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-cropped-half-zip-sweatshirt-bone",
-        "organic-fleece-cropped-half-zip-sweatshirt-mocha",
+        "organic-fleece-cropped-half-zip-sweatshirt-pebble",
+        "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
+        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
         "organic-fleece-cropped-half-zip-sweatshirt-balsam",
         "organic-fleece-cropped-half-zip-sweatshirt-heather-oat",
-        "organic-fleece-cropped-half-zip-sweatshirt-heather-grey",
-        "organic-fleece-cropped-half-zip-sweatshirt-jet-black",
-        "organic-fleece-cropped-half-zip-sweatshirt-pebble"
+        "organic-fleece-cropped-half-zip-sweatshirt-mocha"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19149,14 +19160,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-racer-tank-forest",
+        "organic-stretch-racer-tank-jet-black-1",
+        "organic-stretch-racer-tank-pebble",
+        "organic-stretch-racer-tank-bone-1",
+        "organic-stretch-racer-tank-mocha",
+        "organic-stretch-crop-racer-tank-heather-grey",
         "organic-stretch-crop-racer-tank-fig",
         "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
-        "organic-stretch-racer-tank-bone-1",
-        "organic-stretch-racer-tank-jet-black-1",
-        "organic-stretch-racer-tank-mocha",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19215,13 +19226,13 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-full-length-legging-forest",
-        "organic-stretch-full-length-legging-fig",
-        "organic-stretch-full-length-legging-midnight",
-        "organic-stretch-full-length-legging-nori",
-        "organic-stretch-full-length-legging-mulberry",
         "organic-stretch-full-length-legging-jet-black",
         "organic-stretch-full-length-legging-mocha",
-        "organic-stretch-full-length-legging-pebble"
+        "organic-stretch-full-length-legging-pebble",
+        "organic-stretch-full-length-legging-mulberry",
+        "organic-stretch-full-length-legging-nori",
+        "organic-stretch-full-length-legging-midnight",
+        "organic-stretch-full-length-legging-fig"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19279,14 +19290,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-racer-tank-mocha",
-        "organic-stretch-crop-racer-tank-fig",
-        "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
-        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-racer-tank-jet-black-1",
+        "organic-stretch-racer-tank-pebble",
         "organic-stretch-racer-tank-bone-1",
         "organic-stretch-racer-tank-forest",
-        "organic-stretch-racer-tank-jet-black-1",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-heather-grey",
+        "organic-stretch-crop-racer-tank-fig",
+        "organic-stretch-crop-racer-tank-midnight",
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19345,15 +19356,15 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-sports-bra-mocha",
-        "organic-stretch-sports-bra-fig",
-        "organic-stretch-sports-bra-midnight",
-        "organic-stretch-sports-bra-nori",
-        "organic-stretch-sports-bra-mulberry",
-        "organic-stretch-sports-bra-bone",
-        "organic-stretch-sports-bra-forest",
-        "organic-stretch-sports-bra-heather-grey",
         "organic-stretch-sports-bra-jet-black",
-        "organic-stretch-sports-bra-pebble"
+        "organic-stretch-sports-bra-bone",
+        "organic-stretch-sports-bra-pebble",
+        "organic-stretch-sports-bra-forest",
+        "organic-stretch-sports-bra-mulberry",
+        "organic-stretch-sports-bra-heather-grey",
+        "organic-stretch-sports-bra-nori",
+        "organic-stretch-sports-bra-fig",
+        "organic-stretch-sports-bra-midnight"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -19816,8 +19827,8 @@
       "description": "An update to our classic biker short, now with a shorter 4\" inseam and a smooth, supportive fit. Designed for movement, lounging, and everyday wear, with soft, breathable organic cotton and gentle stretch that moves naturally with the body. Close to the skin without feeling restrictive. Second-skin, flattering, undeniably versatile. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton by Control Union, #1245496 - Mid-weight blend, 300 gsm - Made from Organic Cotton with a touch of stretch, this fabric is soft, breathable, and designed to move with you. It offers close-to-body comfort with natural flexibility and a smooth, supportive feel against the skin. - Machine wash cold with like colors, tumble dry low. Do not bleach. - Made in India Inseam ALL 4\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8 The Eltaranisi Brand Dress Code brings your values into each fiber and fabrication. GOTS Certified Organic - Certified by the Global Organic Textile Standard (GOTS) organically grown and responsibly processed, meeting strict environmental and social criteria that promote safer, fairer working conditions across the entire supply chain. GOTS supports reduced chemical use, healthier soil, and responsible water management for lower environmental impact. Tested with OEKO-TEX® - Finished materials are certified to OEKO-TEX® Standard 100, meaning every component is tested for a wide range of harmful substances and verified safe for human use.",
       "colorways": [
         "organic-stretch-biker-short-4-jet-black",
-        "organic-stretch-biker-short-4-bone",
-        "organic-stretch-biker-short-4-pebble"
+        "organic-stretch-biker-short-4-pebble",
+        "organic-stretch-biker-short-4-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 286,
@@ -19875,8 +19886,8 @@
       "description": "An update to our classic biker short, now with a shorter 4\" inseam and a smooth, supportive fit. Designed for movement, lounging, and everyday wear, with soft, breathable organic cotton and gentle stretch that moves naturally with the body. Close to the skin without feeling restrictive. Second-skin, flattering, undeniably versatile. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton by Control Union, #1245496 - Mid-weight blend, 300 gsm - Made from Organic Cotton with a touch of stretch, this fabric is soft, breathable, and designed to move with you. It offers close-to-body comfort with natural flexibility and a smooth, supportive feel against the skin. - Machine wash cold with like colors, tumble dry low. Do not bleach. - Made in India Inseam ALL 4\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8 The Eltaranisi Brand Dress Code brings your values into each fiber and fabrication. GOTS Certified Organic - Certified by the Global Organic Textile Standard (GOTS) organically grown and responsibly processed, meeting strict environmental and social criteria that promote safer, fairer working conditions across the entire supply chain. GOTS supports reduced chemical use, healthier soil, and responsible water management for lower environmental impact. Tested with OEKO-TEX® - Finished materials are certified to OEKO-TEX® Standard 100, meaning every component is tested for a wide range of harmful substances and verified safe for human use.",
       "colorways": [
         "organic-stretch-biker-short-4-pebble",
-        "organic-stretch-biker-short-4-bone",
-        "organic-stretch-biker-short-4-jet-black"
+        "organic-stretch-biker-short-4-jet-black",
+        "organic-stretch-biker-short-4-bone"
       ],
       "colorEdition": "essential",
       "featuredRank": 287,
@@ -19946,13 +19957,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-boyfriend-sweatshirt-forest",
-        "organic-fleece-oversized-sweatshirt-balsam",
-        "organic-fleece-oversized-sweatshirt-almond",
         "organic-fleece-boyfriend-sweatshirt-bone",
         "organic-fleece-boyfriend-sweatshirt-heather-grey",
         "organic-fleece-boyfriend-sweatshirt-jet-black",
         "organic-fleece-boyfriend-sweatshirt-midnight",
-        "organic-fleece-boyfriend-sweatshirt-mushroom"
+        "organic-fleece-boyfriend-sweatshirt-mushroom",
+        "organic-fleece-embroidered-boyfriend-sweatshirt-bone-croissant",
+        "organic-fleece-oversized-sweatshirt-balsam",
+        "organic-fleece-oversized-sweatshirt-almond"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -21666,14 +21678,14 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-stretch-crop-racer-tank-heather-grey",
-        "organic-stretch-crop-racer-tank-fig",
-        "organic-stretch-crop-racer-tank-midnight",
-        "organic-stretch-crop-racer-tank-mulberry",
+        "organic-stretch-racer-tank-jet-black-1",
+        "organic-stretch-racer-tank-pebble",
         "organic-stretch-racer-tank-bone-1",
         "organic-stretch-racer-tank-forest",
-        "organic-stretch-racer-tank-jet-black-1",
         "organic-stretch-racer-tank-mocha",
-        "organic-stretch-racer-tank-pebble"
+        "organic-stretch-crop-racer-tank-fig",
+        "organic-stretch-crop-racer-tank-midnight",
+        "organic-stretch-crop-racer-tank-mulberry"
       ],
       "colorEdition": "essential",
       "source": "arrivals",
@@ -21715,18 +21727,18 @@
       "description": "A streamlined midi legging with a close-to-body fit and cropped length that hits just above the ankle for everyday movement and ease. Crafted from Organic Cotton with a touch of stretch, it feels soft and breathable against the skin with natural flexibility and smooth, supportive comfort. - 22.5\" inseam for all - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton by Control Union, #1245496 - Mid-weight blend, 300 gsm - Made from Organic Cotton with a touch of stretch, this fabric is soft, breathable, and designed to move with you. It offers close-to-body comfort with natural flexibility and a smooth, supportive feel against the skin. - Machine wash cold with like colors, tumble dry low. Do not bleach. - Made in India Inseam ALL 22 1/2\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8 The Eltaranisi Brand Dress Code brings your values into each fiber and fabrication. GOTS Certified Organic - Certified by the Global Organic Textile Standard (GOTS) organically grown and responsibly processed, meeting strict environmental and social criteria that promote safer, fairer working conditions across the entire supply chain. GOTS supports reduced chemical use, healthier soil, and responsible water management for lower environmental impact. Tested with OEKO-TEX® - Finished materials are certified to OEKO-TEX® Standard 100, meaning every component is tested for a wide range of harmful substances and verified safe for human use.",
       "colorways": [
         "organic-stretch-midi-legging-chili-oil",
-        "organic-stretch-midi-legging-fig",
-        "organic-stretch-midi-legging-midnight",
-        "organic-stretch-midi-legging-nori",
-        "organic-stretch-midi-legging-mulberry",
-        "organic-stretch-midi-legging-cove",
-        "organic-stretch-midi-legging-forest",
-        "organic-stretch-midi-legging-heather-grey",
         "organic-stretch-midi-legging-jet-black",
-        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
         "organic-stretch-midi-legging-sienna",
-        "organic-stretch-midi-legging-zest"
+        "organic-stretch-midi-legging-mulberry",
+        "organic-stretch-midi-legging-zest",
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
       ],
       "colorEdition": "limited",
       "featuredRank": 322,
@@ -22045,7 +22057,21 @@
       ],
       "badges": [],
       "description": "A streamlined midi legging with a cropped length and smooth, close-to-body fit. Soft, breathable organic cotton and gentle stretch add natural flexibility and supportive comfort against the skin. With a 22.5\" inseam that hits just above the ankle, it's designed to move easily through activity and everyday alike. Smooth, second-skin, essential. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - Made with 92% Organic Cotton, 8% Spandex - GOTS Certified Organic Cotton by Control Union, #1245496 - Mid-weight blend, 300 gsm - Made from Organic Cotton with a touch of stretch, this fabric is soft, breathable, and designed to move with you. It offers close-to-body comfort with natural flexibility and a smooth, supportive feel against the skin. - Machine wash cold with like colors, tumble dry low. Do not bleach. - Made in India Inseam ALL 22 1/2\" XS: Waist 20 1/4; Hip 26\"; Front Rise 9 1/8 S: Waist 22 1/4; Hip 28\"; Front Rise 9 1/2 M: Waist 24 1/4; Hip 30\"; Front Rise 9 7/8 L: Waist 26 1/4; Hip 32\"; Front Rise 10 3/8 XL: Waist 28 1/4; Hip 34\"; Front Rise 10 7/8 The Eltaranisi Brand Dress Code brings your values into each fiber and fabrication. GOTS Certified Organic - Certified by the Global Organic Textile Standard (GOTS) organically grown and responsibly processed, meeting strict environmental and social criteria that promote safer, fairer working conditions across the entire supply chain. GOTS supports reduced chemical use, healthier soil,",
-      "colorways": [],
+      "colorways": [
+        "organic-stretch-midi-legging-sienna",
+        "organic-stretch-midi-legging-jet-black",
+        "organic-stretch-midi-legging-pebble",
+        "organic-stretch-midi-legging-forest",
+        "organic-stretch-midi-legging-mocha",
+        "organic-stretch-midi-legging-chili-oil",
+        "organic-stretch-midi-legging-mulberry",
+        "organic-stretch-midi-legging-zest",
+        "organic-stretch-midi-legging-cove",
+        "organic-stretch-midi-legging-heather-grey",
+        "organic-stretch-midi-legging-nori",
+        "organic-stretch-midi-legging-fig",
+        "organic-stretch-midi-legging-midnight"
+      ],
       "colorEdition": "essential",
       "featuredRank": 328,
       "newestRank": 0,
@@ -22097,7 +22123,16 @@
       ],
       "badges": [],
       "description": "Our classic crewneck sweatshirt made from organic cotton fleece, with an easy silhouette and timeless appeal. Ribbed trim at the neck, cuffs, and hem gives the laid-back shape a polished finish without losing its relaxed spirit. Soft structure, classic proportions, ready for repeat wear. Dress Code GOTS certified organic cotton. OEKO-TEX® certified for human health. The Climate Label certified for reduced environmental impact. Certified B Corp for social and environmental accountability. - 100% Organic Cotton - GOTS Certified Organic Cotton - Machine wash cold with like colors - Tumble dry low - Do not bleach - Made in India Measurements - XS : Chest 44.5 in; Length 22 in - S : Chest 46.5 in; Length 22.5 in - M : Chest 48.5 in; Length 23 in - L : Chest 50.5 in; Length 23.5 in - XL :Chest 53.5 in; Length 24 in Cost Per Wear - 5 Wears : $25.60 - 10 Wears : $12.80 - 25 Wears : $5.12 - 50 Wears : $2.56",
-      "colorways": [],
+      "colorways": [
+        "organic-fleece-relaxed-crewneck-sweatshirt-leek",
+        "organic-fleece-relaxed-crewneck-sweatshirt-pebble",
+        "organic-fleece-relaxed-crewneck-sweatshirt-bone",
+        "organic-fleece-relaxed-crewneck-sweatshirt-jet-black",
+        "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat",
+        "organic-fleece-relaxed-crewneck-sweatshirt-rosewater",
+        "organic-fleece-relaxed-crewneck-sweatshirt-mocha",
+        "organic-fleece-relaxed-crewneck-sweatshirt-balsam"
+      ],
       "colorEdition": "essential",
       "featuredRank": 329,
       "newestRank": 0,
@@ -23469,11 +23504,11 @@
       "inNewArrivals": false,
       "colorways": [
         "organic-fleece-pocket-hoodie-leek",
-        "organic-fleece-pocket-hoodie-wisteria",
-        "organic-fleece-pocket-hoodie-almond",
-        "organic-fleece-pocket-hoodie-bone",
+        "organic-fleece-pocket-hoodie-jet-black",
         "organic-fleece-pocket-hoodie-heather-grey",
-        "organic-fleece-pocket-hoodie-jet-black"
+        "organic-fleece-pocket-hoodie-bone",
+        "organic-fleece-pocket-hoodie-wisteria",
+        "organic-fleece-pocket-hoodie-almond"
       ],
       "colorEdition": "limited",
       "source": "arrivals",
