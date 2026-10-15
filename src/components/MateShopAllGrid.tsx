@@ -8,12 +8,7 @@ import ArrivalQuickAdd from "./new-arrivals/ArrivalQuickAdd";
 import ArrivalFaq from "./new-arrivals/ArrivalFaq";
 import { Link } from "@/navigation";
 import { useCollectionUrlState } from "@/lib/useCollectionUrlState";
-import {
-  SHOP_ALL_EDITORIAL, SHOP_ALL_SIZE_FACETS, SHOP_ALL_TABS, filterCount, offeredCategories,
-  offeredColorGroups, railProducts, readShopAllState, shopAllColorways, shopAllFacetCounts,
-  shopAllQuery, sortShopAll, filterShopAll,
-  type CollectionFilters, type MateProduct, type ShopAllState,
-} from "@/lib/shopAll";
+import { SHOP_ALL_EDITORIAL, SHOP_ALL_SIZE_FACETS, SHOP_ALL_TABS, filterCount, offeredCategories, offeredColorGroups, railProducts, readShopAllState, shopAllColorways, shopAllFacetCounts, shopAllQuery, sortShopAll, filterShopAll, type CollectionFilters, type MateProduct, type ShopAllState, type EditorialPanes } from "@/lib/shopAll";
 import { PAGE_SIZE } from "@/lib/mateNewArrivals";
 
 /**
@@ -25,7 +20,7 @@ const EDITORIALS: Array<{
   heading: string;
   body: string;
   cta: string;
-  panes: { primary: string; secondary: string };
+  panes: EditorialPanes;
   href: string;
   /** The reference's second editorial runs the full grid width; both keep its own aspect. */
   fullWidth?: boolean;
@@ -144,11 +139,11 @@ export default function MateShopAllGrid({ handle = "all" }: { handle?: string })
                       <div className="na-sa-editorial-media">
                         <Link href={editorial.href} className="na-sa-editorial-media-link" tabIndex={-1} aria-hidden="true">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img className="na-sa-editorial-image" src={editorial.panes.primary} alt="" width={678} height={862} loading="lazy" />
+                          <img className="na-sa-editorial-image" src={editorial.panes.primary} alt="" width={editorial.panes.primarySize.width} height={editorial.panes.primarySize.height} loading="lazy" />
                         </Link>
                         <span className="na-sa-editorial-pane">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img className="na-sa-editorial-image" src={editorial.panes.secondary} alt="" loading="lazy" />
+                          <img className="na-sa-editorial-image" src={editorial.panes.secondary} alt="" width={editorial.panes.secondarySize.width} height={editorial.panes.secondarySize.height} loading="lazy" />
                         </span>
                       </div>
                       <div className="na-sa-editorial-content">

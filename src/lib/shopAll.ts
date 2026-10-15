@@ -16,6 +16,19 @@ import {
  */
 export type ShopAllProduct = MateProduct & { group: string };
 
+/**
+ * An edit's two frames and the pixel size of each, measured from the files themselves. The
+ * storefront paints the pair side by side with the grid's gutter between them, exactly as the
+ * reference does, so each photograph needs its own intrinsic ratio: without it the browser reserves
+ * the wrong box while the pair streams in and the layout jumps.
+ */
+export type EditorialPanes = {
+  primary: string;
+  secondary: string;
+  primarySize: { width: number; height: number };
+  secondarySize: { width: number; height: number };
+};
+
 type Rail = {
   id: string;
   handle: string;
@@ -39,8 +52,8 @@ type Snapshot = {
   nav: {
     tabs: Array<Omit<Rail, "slugs" | "count"> & { count: number; slugs: string[] }>;
     editorial: {
-      octoberCapsule: { primary: string; secondary: string };
-      getawayEdit: { primary: string; secondary: string };
+      octoberCapsule: EditorialPanes;
+      getawayEdit: EditorialPanes;
     };
     megaTiles: { octoberCapsule: string; getawayEdit: string };
     megaSwatches: Record<string, string>;
@@ -59,7 +72,23 @@ export const shopAllProducts: ShopAllProduct[] = [...data.products]
   .sort((a, b) => a.featuredRank - b.featuredRank);
 
 /** The collection-level copy the reference prints above the grid. */
-export const SHOP_ALL_EDITORIAL = data.nav.editorial;
+const EDITORIAL_SIZES: Record<string, { primary: [number, number]; secondary: [number, number] }> = {
+  octoberCapsule: { primary: [678, 862], secondary: [678, 862] },
+  getawayEdit: { primary: [900, 1156], secondary: [900, 1154] },
+};
+
+/** The captured snapshot stores paths; the frame sizes come from the files, once, at build time. */
+export const SHOP_ALL_EDITORIAL = Object.fromEntries(
+  Object.entries(data.nav.editorial as Record<string, { primary: string; secondary: string }>).map(([key, panes]) => {
+    const size = EDITORIAL_SIZES[key] ?? { primary: [678, 862], secondary: [678, 862] };
+    return [key, {
+      primary: panes.primary,
+      secondary: panes.secondary,
+      primarySize: { width: size.primary[0], height: size.primary[1] },
+      secondarySize: { width: size.secondary[0], height: size.secondary[1] },
+    } satisfies EditorialPanes];
+  }),
+) as Record<keyof Snapshot["nav"]["editorial"], EditorialPanes>;
 export const SHOP_ALL_MEGA_TILES = data.nav.megaTiles;
 export const SHOP_ALL_MEGA_SWATCHES = data.nav.megaSwatches;
 
