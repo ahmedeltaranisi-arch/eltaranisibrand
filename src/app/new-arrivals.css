@@ -546,8 +546,17 @@
    them, every frame whole. A box with a forced aspect and `object-fit: cover` merges the pair into
    one wide strip and cuts the head out of both, so the media box has no aspect of its own: each pane
    carries its own frame at its own ratio, and nothing is ever cropped. */
-.na-sa-editorial-media{position:relative;isolation:isolate;flex:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start;background:var(--na-image-bg)}
-.na-sa-editorial.is-full-width .na-sa-editorial-media{aspect-ratio:auto}
+/* The frame placeholder used to be the beige image background, which painted a beige stripe down
+   the gutter between the pair; the edit sits on paper, so the box behind the frames is white (and the
+   page's own dark-mode paper under it). The full-width Getaway pair runs with no gutter at all: the
+   two frames are one photograph split in half, so a gap between them reads as a seam. */
+.na-sa-editorial-media{position:relative;isolation:isolate;flex:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start;background:var(--na-editorial-bg,#fff)}
+.na-sa-editorial.is-full-width .na-sa-editorial-media{aspect-ratio:auto;gap:0;align-items:stretch}
+/* The two Getaway frames are 900x1156 and 900x1154 — a 0.17% difference. Touched end to end, that
+   leaves a 2px notch under the shorter one. The row is stretched and the shorter frame takes the
+   0.17% instead of losing pixels: no gutter, no notch, nothing cropped. (`align-items:start` on the
+   base rule sizes each cell to its own content, so a stretched pair needs `align-items:stretch`.) */
+.na-sa-editorial.is-full-width .na-sa-editorial-image{height:100%;object-fit:fill}
 .na-sa-editorial-media-link{display:block;min-width:0;overflow:hidden}
 .na-sa-editorial-pane{display:block;min-width:0;overflow:hidden}
 .na-sa-editorial-image{display:block;width:100%;height:auto;min-height:0;object-fit:contain}

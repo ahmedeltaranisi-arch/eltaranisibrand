@@ -2,6 +2,9 @@
 html{color-scheme:light}
 html[data-theme="dark"]{color-scheme:dark;--color-paper:#101b1b;--color-bone:#192727;--color-sand:#263837;--color-ink:#edf2ed;--color-graphite:#bccbc7;--color-mist:#9cb3ae;--color-slate:#809e97;--color-line:#354946;--color-line-dark:#dde8e3;--color-sage:#415951;--color-pine:#a6b9a0;--color-terra:#e2ad92}
 html[data-theme="dark"] :is(.na-storefront,.sf-header-scope,.sf-header-dialog,.na-dialog){--na-paper:#101b1b;--na-beige:#192727;--na-image-bg:#263837;--na-slate:#91ada4;color:#edf2ed}
+/* An edit's frames sit on paper, so the gutter behind them is the page's own surface — white in the day,
+   the dark surface at night. A literal #fff would strike a bright band through the pair in night mode. */
+html[data-theme="dark"] :is(.na-storefront,.sf-header-scope,.sf-header-dialog,.na-dialog){--na-editorial-bg:#101b1b}
 html[data-theme="dark"] :is(.na-product-card,.na-filter-summary,.na-filter-value,.na-dialog,.na-filter-header,.na-cart-line-details,.na-faq-answer){color:#edf2ed}
 html[data-theme="dark"] :is(.na-faq-list,.na-faq-item,.na-newsletter-fields,.na-filter-group){border-color:#7e9690}
 html[data-theme="dark"] .na-sort-options input:checked+span::before{background:#edf2ed}
