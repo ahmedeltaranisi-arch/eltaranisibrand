@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/navigation";
 import { SHOP_ALL_DYES, SHOP_ALL_FABRICS, SHOP_ALL_MEGA_TILES } from "@/lib/shopAll";
+import { availableIntimatesMenuColors, INTIMATES_MENU_TILES } from "@/lib/intimates";
 
 /**
  * The header's mega menus, reproduced from the reference header: link columns (Categories,
@@ -37,6 +38,15 @@ export const MEGA_COLLECTION_LINKS = [
 export const MEGA_TILES = [
   { key: "limitedEditionFig", href: "/collections/fig", image: "/img/aw/mega/limited-edition-fig.webp" },
   { key: "shopAllActivewear", href: "/collections/move-by-mate", image: "/img/aw/mega/shop-all-activewear.webp" },
+] as const;
+
+export const INTIMATES_CATEGORY_LINKS = [
+  { key: "shopAll", href: "/collections/intimates" },
+  { key: "socks", href: "/collections/socks" },
+  { key: "undies", href: "/collections/undies" },
+  { key: "bralettes", href: "/collections/bras-and-tanks" },
+  { key: "tanks", href: "/collections/tanks" },
+  { key: "undiePacks", href: "/collections/undie-packs" },
 ] as const;
 
 /**
@@ -74,10 +84,10 @@ const CLOTHING_COLLECTION_LINKS = [
 export default function ArrivalMegaMenu({ label, href, variant = "activewear" }: {
   label: string;
   href: string;
-  /** Which menu to open: the Activewear capture's own, or the Clothing (Shop All) one. */
-  variant?: "activewear" | "clothing";
+  /** Which collection-specific menu surface to open. */
+  variant?: "activewear" | "clothing" | "intimates";
 }) {
-  const t = useTranslations(variant === "clothing" ? "shopAll.mega" : "activewear.mega");
+  const t = useTranslations(variant === "clothing" ? "shopAll.mega" : variant === "intimates" ? "intimatesPage.menu" : "activewear.mega");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const timer = useRef<number | null>(null);
@@ -105,7 +115,7 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
     timer.current = window.setTimeout(() => setOpen(next), next ? 0 : 120);
   }
 
-  const panelId = variant === "clothing" ? "na-mega-clothing" : "na-mega-activewear";
+  const panelId = variant === "clothing" ? "na-mega-clothing" : variant === "intimates" ? "na-mega-intimates" : "na-mega-activewear";
 
   return (
     <div
@@ -127,13 +137,15 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
       >
         {label}
       </Link>
-      <div id={panelId} className="na-header-mega-panel" inert={!open} aria-hidden={!open}>
-        <div className="na-header-mega-columns">
+      <div id={panelId} className={`na-header-mega-panel ${variant === "intimates" ? "is-intimates" : ""}`} inert={!open} aria-hidden={!open}>
+        <div className={`na-header-mega-columns ${variant === "intimates" ? "is-intimates" : ""}`}>
           <div>
             <p className="na-header-mega-title">{t("categoriesTitle")}</p>
             {variant === "clothing"
               ? CLOTHING_CATEGORY_LINKS.map((link) => <Link key={link.key} href={link.href}>{t(link.key)}</Link>)
-              : MEGA_CATEGORY_LINKS.map((link) => <Link key={link.key} href={link.href}>{t(link.key)}</Link>)}
+              : variant === "intimates"
+                ? INTIMATES_CATEGORY_LINKS.map((link) => <Link key={link.key} href={link.href}>{t(`category.${link.key}` as never)}</Link>)
+                : MEGA_CATEGORY_LINKS.map((link) => <Link key={link.key} href={link.href}>{t(link.key)}</Link>)}
           </div>
           <div>
             <p className="na-header-mega-title">{t("colorsTitle")}</p>
@@ -145,13 +157,20 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
                   {t(`color.${dye.handle}`)}
                 </Link>
               ))
-              : MEGA_COLORS.map((link) => (
-                <Link key={link.key} href={link.href}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img className="na-nav-swatch" src={link.swatch} alt="" width={40} height={40} loading="lazy" />
-                  {t(link.labelKey)}
-                </Link>
-              ))}
+              : variant === "intimates"
+                ? availableIntimatesMenuColors().map((color) => (
+                  <Link key={color.key} href={`/collections/intimates?intimates_color=${encodeURIComponent(color.key)}`}>
+                    <span className="na-nav-swatch" style={{ backgroundColor: color.hex }} aria-hidden="true" />
+                    {t(`color.${color.labelKey}` as never)}
+                  </Link>
+                ))
+                : MEGA_COLORS.map((link) => (
+                  <Link key={link.key} href={link.href}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img className="na-nav-swatch" src={link.swatch} alt="" width={40} height={40} loading="lazy" />
+                    {t(link.labelKey)}
+                  </Link>
+                ))}
           </div>
           {variant === "clothing" ? (
             <>
@@ -168,7 +187,7 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
                 ))}
               </div>
             </>
-          ) : (
+          ) : variant === "intimates" ? null : (
             <div>
               <p className="na-header-mega-title">{t("collectionsTitle")}</p>
               {MEGA_COLLECTION_LINKS.map((link) => (
@@ -191,13 +210,21 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
                 <span>{t(`tile.${tile.key}`)}</span>
               </Link>
             ))
-            : MEGA_TILES.map((tile) => (
-              <Link key={tile.key} href={tile.href}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={tile.image} alt="" width={218} height={281} loading="lazy" />
-                <span>{t(tile.key)}</span>
-              </Link>
-            ))}
+            : variant === "intimates"
+              ? INTIMATES_MENU_TILES.map((tile) => (
+                <Link key={tile.id} href={tile.href}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={tile.image} alt="" width={218} height={281} loading="lazy" />
+                  <span>{t(`tile.${tile.id}` as never)}</span>
+                </Link>
+              ))
+              : MEGA_TILES.map((tile) => (
+                <Link key={tile.key} href={tile.href}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={tile.image} alt="" width={218} height={281} loading="lazy" />
+                  <span>{t(tile.key)}</span>
+                </Link>
+              ))}
         </div>
       </div>
       <span className="na-header-scrim" aria-hidden="true" />

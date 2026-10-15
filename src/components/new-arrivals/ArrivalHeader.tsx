@@ -57,9 +57,10 @@ export default function ArrivalHeader() {
           <nav className="na-header-nav" aria-label="Main navigation">
             <ul>{NAV.map(([key, href]) => {
               const current = pathname === href || pathname.startsWith(`${href}/`);
-              // Activewear and Clothing open mega menus, exactly the two the reference opens.
+              // The three menu surfaces keep their collection-specific catalogue and featured tiles.
               if (key === "activewear") return <li key={key}><ArrivalMegaMenu label={nav(key)} href={href} variant="activewear" /></li>;
               if (key === "clothing") return <li key={key}><ArrivalMegaMenu label={nav(key)} href={href} variant="clothing" /></li>;
+              if (key === "intimates") return <li key={key}><ArrivalMegaMenu label={nav(key)} href={href} variant="intimates" /></li>;
               return <li key={key}><Link href={href} className={current ? "is-current" : ""} aria-current={current ? "page" : undefined}>{nav(key)}</Link></li>;
             })}</ul>
           </nav>

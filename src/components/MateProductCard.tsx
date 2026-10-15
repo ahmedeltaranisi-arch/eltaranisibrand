@@ -122,7 +122,14 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
             type="button"
             key={colorway.slug}
             className={`na-swatch ${active.slug === colorway.slug ? "is-current" : ""}`}
-            style={{ backgroundColor: colorway.color.hex, backgroundImage: `url("${colorway.color.swatch}")` }}
+            style={{
+              backgroundColor: colorway.color.hex,
+              backgroundImage: colorway.color.swatch.startsWith("linear-gradient(")
+                ? colorway.color.swatch
+                : colorway.color.swatch
+                  ? `url("${colorway.color.swatch}")`
+                  : undefined,
+            }}
             title={t(`color.${colorway.color.name}`)}
             aria-label={t("selectColor", { color: t(`color.${colorway.color.name}`) })}
             aria-pressed={active.slug === colorway.slug}

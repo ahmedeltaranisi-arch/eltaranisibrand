@@ -8,10 +8,13 @@ import MateCollectionGrid from "@/components/MateCollectionGrid";
 import MateBestSellersGrid from "@/components/MateBestSellersGrid";
 import MateActivewearGrid from "@/components/MateActivewearGrid";
 import MateShopAllGrid from "@/components/MateShopAllGrid";
+import MateIntimatesGrid from "@/components/MateIntimatesGrid";
 import { SHOP_ALL_ROUTES } from "@/lib/shopAll";
+import { INTIMATES_HANDLES, type IntimatesHandle } from "@/lib/intimates";
 
 /** Handles the Shop All grid serves: `/collections/all` plus the rails the header links to. */
 const SHOP_ALL_HANDLE_SET = new Set<string>(SHOP_ALL_ROUTES);
+const INTIMATES_HANDLE_SET = new Set<string>(INTIMATES_HANDLES);
 
 /** The Activewear collection plus the child collections and dyes its rails and mega menu link to. */
 const ACTIVEWEAR_CHILD_HANDLES = [
@@ -48,7 +51,7 @@ export function generateStaticParams() {
     "accessories",
     "sale",
     "all",
-    "intimates",
+    ...INTIMATES_HANDLES,
     ...SHOP_ALL_ROUTES,
     ...ACTIVEWEAR_CHILD_HANDLES,
     ...Object.keys(ACTIVEWEAR_DYE_HANDLES),
@@ -64,6 +67,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string; handle: string }>;
 }) {
   const { locale, handle } = await params;
+  if (INTIMATES_HANDLE_SET.has(handle)) {
+    const t = await getTranslations({ locale, namespace: "intimatesPage" });
+    const key = `collection.${handle}`;
+    return { title: t(`${key}.title` as never), description: t(`${key}.description` as never) };
+  }
   // The Shop All rails are collection pages of their own; they are not in the legacy catalogue.
   if (SHOP_ALL_HANDLE_SET.has(handle)) {
     const t = await getTranslations({ locale, namespace: "shopAll" });
@@ -110,6 +118,11 @@ export default async function CollectionPage({
 }) {
   const { locale, handle } = await params;
   setRequestLocale(locale);
+
+  if (INTIMATES_HANDLE_SET.has(handle)) {
+    await connection();
+    return <MateIntimatesGrid handle={handle as IntimatesHandle} />;
+  }
 
   if (handle === "activewear") {
     await connection();

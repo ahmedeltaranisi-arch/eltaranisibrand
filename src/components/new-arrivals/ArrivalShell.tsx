@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { usePathname } from "@/navigation";
 import { getAnyCatalogProduct } from "@/lib/shopAllProducts";
 import { SHOP_ALL_ROUTES } from "@/lib/shopAll";
+import { INTIMATES_HANDLES } from "@/lib/intimates";
 import ArrivalPromo from "./ArrivalPromo";
 import ArrivalCartDrawer from "./ArrivalCartDrawer";
 import PromoButton from "../PromoButton";
@@ -15,6 +16,7 @@ import CartDrawer from "../CartDrawer";
  */
 const ARRIVAL_COLLECTIONS = new Set([
   ...SHOP_ALL_ROUTES.map((handle) => `/collections/${handle}`),
+  ...INTIMATES_HANDLES.map((handle) => `/collections/${handle}`),
   "/collections/new-arrivals",
   "/collections/best-sellers",
   "/collections/activewear",

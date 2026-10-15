@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/navigation";
-import Reveal from "@/components/Reveal";
 
 const MATERIAL_COUNT = 5;
 const RESPONSIBILITY_COUNT = 4;
@@ -17,129 +16,121 @@ export default async function AboutPage({
   const t = await getTranslations("about");
 
   return (
-    <>
-      {/* hero */}
-      <section className="relative h-[62svh] min-h-[420px] overflow-hidden bg-bone">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/img/shots/legging-jet-1.jpg"
-          alt=""
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/25 to-ink/5" />
-        <div className="absolute inset-x-0 bottom-0 px-4 pb-12 text-paper sm:px-6 lg:px-10">
-          <p className="eyebrow mb-4 opacity-85">{t("hero.eyebrow")}</p>
-          <h1 className="max-w-2xl text-[32px] leading-[1.1] font-light sm:text-[50px]">
-            {t("hero.title")}
-          </h1>
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed opacity-90">
-            {t("hero.body")}
-          </p>
-        </div>
-      </section>
-
-      {/* story */}
-      <Reveal as="section" className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:py-28">
-        <h2 className="text-[26px] leading-tight font-light sm:text-[36px]">
-          {t("story.title")}
-        </h2>
-        <div className="mt-7 space-y-5">
-          {Array.from({ length: PARAGRAPH_COUNT }, (_, i) => (
-            <p key={i} className="text-[15px] leading-[1.75] text-graphite">
-              {t(`story.paragraphs.${i}` as never)}
-            </p>
-          ))}
-        </div>
-      </Reveal>
-
-      {/* materials */}
-      <section id="materials" className="border-y border-line bg-bone scroll-mt-20">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
-          <p className="eyebrow mb-3 text-mist">{t("materials.eyebrow")}</p>
-          <h2 className="text-[26px] font-light sm:text-[36px]">
-            {t("materials.title")}
-          </h2>
-          <ul className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-            {Array.from({ length: MATERIAL_COUNT }, (_, i) => (
-              <Reveal as="li" key={i} delay={i * 70}>
-                <h3 className="text-[15px]">{t(`materials.items.${i}.title` as never)}</h3>
-                <p className="mt-2 text-[13px] leading-relaxed text-graphite">
-                  {t(`materials.items.${i}.body` as never)}
-                </p>
-              </Reveal>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* factories */}
-      <section id="factories" className="scroll-mt-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-10 lg:py-24">
-          <div>
-            <p className="eyebrow mb-3 text-mist">{t("factories.eyebrow")}</p>
-            <h2 className="text-[26px] font-light sm:text-[36px]">
-              {t("factories.title")}
-            </h2>
-            <p className="mt-5 text-[15px] leading-[1.75] text-graphite">
-              {t("factories.body")}
-            </p>
-            <dl className="mt-10 grid grid-cols-3 gap-6 border-t border-line pt-8">
-              {Array.from({ length: STAT_COUNT }, (_, i) => (
-                <div key={i}>
-                  <dt className="text-[28px] font-light">
-                    {t(`factories.stats.${i}.value` as never)}
-                  </dt>
-                  <dd className="mt-1 text-[12px] text-mist">
-                    {t(`factories.stats.${i}.label` as never)}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+    <div className="elt-about" data-about-page="eltaranisi">
+      <section className="elt-about-hero" aria-labelledby="about-title">
+        <div className="elt-about-hero-images" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/img/shots/crossover-jet-3.jpg"
-            alt=""
-            loading="lazy"
-            className="aspect-4/3 w-full bg-bone object-cover"
-          />
+          <img src="/img/about/hero-left.jpg" alt="" width={1442} height={1596} fetchPriority="high" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/hero-right.jpg" alt="" width={1438} height={1596} fetchPriority="high" />
+        </div>
+        <div className="elt-about-hero-shade" aria-hidden="true" />
+        <div className="elt-about-hero-copy">
+          <p className="elt-about-eyebrow">{t("hero.eyebrow")}</p>
+          <h1 id="about-title">{t("hero.title")}</h1>
+          <p className="elt-about-hero-body">{t("hero.body")}</p>
         </div>
       </section>
 
-      {/* responsibility */}
-      <section
-        id="responsibility"
-        className="border-t border-line bg-bone scroll-mt-20"
-      >
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
-          <p className="eyebrow mb-3 text-mist">{t("responsibility.eyebrow")}</p>
-          <h2 className="text-[26px] font-light sm:text-[36px]">
-            {t("responsibility.title")}
-          </h2>
-          <ul className="mt-12 divide-y divide-line border-y border-line">
-            {Array.from({ length: RESPONSIBILITY_COUNT }, (_, i) => (
-              <li key={i} className="grid gap-2 py-6 sm:grid-cols-[240px_1fr] sm:gap-8">
-                <h3 className="text-[15px]">
-                  {t(`responsibility.items.${i}.title` as never)}
-                </h3>
-                <p className="text-[13px] leading-relaxed text-graphite">
-                  {t(`responsibility.items.${i}.body` as never)}
-                </p>
+      <section id="journal" className="elt-about-story" aria-labelledby="about-story-title">
+        <div className="elt-about-story-media">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/story-portrait.jpg" alt="" width={1124} height={1280} loading="lazy" />
+        </div>
+        <div className="elt-about-story-copy">
+          <p className="elt-about-eyebrow">{t("hero.eyebrow")}</p>
+          <h2 id="about-story-title">{t("story.title")}</h2>
+          <div className="elt-about-prose">
+            {Array.from({ length: PARAGRAPH_COUNT }, (_, index) => (
+              <p key={index}>{t(`story.paragraphs.${index}` as never)}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="materials" className="elt-about-materials" aria-labelledby="about-materials-title">
+        <div className="elt-about-materials-copy">
+          <p className="elt-about-eyebrow">{t("materials.eyebrow")}</p>
+          <h2 id="about-materials-title">{t("materials.title")}</h2>
+          <ul className="elt-about-material-list">
+            {Array.from({ length: MATERIAL_COUNT }, (_, index) => (
+              <li key={index}>
+                <h3>{t(`materials.items.${index}.title` as never)}</h3>
+                <p>{t(`materials.items.${index}.body` as never)}</p>
               </li>
             ))}
           </ul>
         </div>
+        <div className="elt-about-materials-media">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/materials-portrait.jpg" alt="" width={900} height={1028} loading="lazy" />
+        </div>
       </section>
 
-      {/* cta */}
-      <Reveal as="section" className="px-4 py-20 text-center sm:px-6 lg:py-28">
-        <h2 className="text-[24px] font-light sm:text-[34px]">
-          {t("cta.title")}
-        </h2>
-        <Link href="/collections/best-sellers" className="btn-solid mt-8">
-          {t("cta.label")}
+      <section className="elt-about-fullbleed" aria-labelledby="about-fullbleed-title">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/img/about/fullbleed-story.jpg" alt="" width={2200} height={1224} loading="lazy" />
+        <div className="elt-about-fullbleed-shade" aria-hidden="true" />
+        <div className="elt-about-fullbleed-copy">
+          <p className="elt-about-eyebrow">{t("fullbleed.eyebrow")}</p>
+          <h2 id="about-fullbleed-title">{t("fullbleed.title")}</h2>
+          <p>{t("fullbleed.body")}</p>
+          <a href="#materials" className="elt-about-text-link">{t("fullbleed.cta")}</a>
+        </div>
+      </section>
+
+      <section id="factories" className="elt-about-factories" aria-labelledby="about-factories-title">
+        <div className="elt-about-factories-media">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/people-and-practice.jpg" alt="" width={523} height={594} loading="lazy" />
+        </div>
+        <div className="elt-about-factories-copy">
+          <p className="elt-about-eyebrow">{t("factories.eyebrow")}</p>
+          <h2 id="about-factories-title">{t("factories.title")}</h2>
+          <p className="elt-about-body">{t("factories.body")}</p>
+          <dl className="elt-about-stats">
+            {Array.from({ length: STAT_COUNT }, (_, index) => (
+              <div key={index}>
+                <dt>{t(`factories.stats.${index}.value` as never)}</dt>
+                <dd>{t(`factories.stats.${index}.label` as never)}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      <section id="responsibility" className="elt-about-responsibility" aria-labelledby="about-responsibility-title">
+        <div className="elt-about-responsibility-copy">
+          <p className="elt-about-eyebrow">{t("packaging.eyebrow")}</p>
+          <h2 id="about-responsibility-title">{t("packaging.title")}</h2>
+          <p className="elt-about-body">{t("packaging.body")}</p>
+          <ul className="elt-about-responsibility-list">
+            {Array.from({ length: RESPONSIBILITY_COUNT }, (_, index) => (
+              <li key={index}>
+                <h3>{t(`responsibility.items.${index}.title` as never)}</h3>
+                <p>{t(`responsibility.items.${index}.body` as never)}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="elt-about-responsibility-media">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/responsibility.jpg" alt="" width={786} height={826} loading="lazy" />
+        </div>
+      </section>
+
+      <section className="elt-about-editorials" aria-label={`${t("tiles.fabricLibrary")} and ${t("tiles.journal")}`}>
+        <Link href="/pages/about#materials" className="elt-about-editorial-tile">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/fabric-library.jpg" alt="" width={690} height={790} loading="lazy" />
+          <span>{t("tiles.fabricLibrary")}</span>
         </Link>
-      </Reveal>
-    </>
+        <Link href="/pages/about#journal" className="elt-about-editorial-tile">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img/about/everyday-essentials.jpg" alt="" width={784} height={1256} loading="lazy" />
+          <span>{t("tiles.journal")}</span>
+        </Link>
+      </section>
+    </div>
   );
 }

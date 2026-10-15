@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { NextResponse } from "next/server";
 import {
   contentTypeForImage,
@@ -21,6 +23,21 @@ export async function GET(
 
   if (!cleanPath) {
     return NextResponse.json({ error: "invalid_image_path" }, { status: 400 });
+  }
+
+  // Serve workspace-added photographs first; existing snapshot images still fall through to the CDN.
+  try {
+    const local = await readFile(join(process.cwd(), "public", "img", ...cleanPath.split("/")));
+    return new NextResponse(local, {
+      status: 200,
+      headers: {
+        ...CACHE_HEADERS,
+        "Content-Type": contentTypeForImage(cleanPath),
+        "X-Image-Provider": "workspace",
+      },
+    });
+  } catch {
+    // Continue to the configured image origin and its fallback mirrors.
   }
 
   const sources = resolveExternalImageSources(cleanPath);

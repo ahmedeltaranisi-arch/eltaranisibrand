@@ -562,17 +562,32 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "Since 2013",
-      "title": "We started with a question about chemicals",
-      "body": "Clothing sits against your skin for sixteen hours a day. We thought it should be the safest thing you own — so we rebuilt the supply chain to make that true."
+      "eyebrow": "About Eltaranisi Brand",
+      "title": "Style with standards.",
+      "body": "Clothing sits against your skin all day. We believe what you wear should feel as considered as the way it is made."
     },
     "story": {
       "title": "Clean from seed to skin",
       "paragraphs": [
         "We began in a garage in Los Angeles with one t-shirt and a list of ingredients we refused to use. No conventional cotton, no formaldehyde finishes, no per- and polyfluoroalkyl treatments, no untraceable dye houses.",
-        "Twelve years later the list hasn't changed. What has changed is the scale: a full range of essentials for women and men, grown on certified organic farms, knitted and sewn by partners we visit in person, and tested at the finished-garment stage rather than the fibre stage.",
+        "More than a decade later, the list hasn't changed. What has changed is the scale: a full range of essentials for women and men, grown on certified organic farms, knitted and sewn by partners we visit in person, and tested at the finished-garment stage rather than the fibre stage.",
         "We publish what we find — including the things we haven't fixed yet. Progress is a direction, not a badge."
       ]
+    },
+    "fullbleed": {
+      "eyebrow": "Made with intention",
+      "title": "Natural materials, considered at every step.",
+      "body": "We start with what touches your skin, then follow each piece through the way it is made, worn and cared for.",
+      "cta": "Explore the materials"
+    },
+    "packaging": {
+      "eyebrow": "Responsible packaging",
+      "title": "Less waste, considered at every step.",
+      "body": "Plastic-free mailers are in use, while reducing factory-level polybags remains ongoing work."
+    },
+    "tiles": {
+      "fabricLibrary": "Fabric Library",
+      "journal": "Journal"
     },
     "materials": {
       "eyebrow": "Materials",
@@ -1376,6 +1391,62 @@
     "night": "Night",
     "switchToLight": "Switch to day mode",
     "switchToDark": "Switch to night mode"
+  },
+  "intimatesPage": {
+    "tabsLabel": "Shop Intimates categories",
+    "breadcrumbShop": "Shop",
+    "collection": {
+      "intimates": { "title": "Intimates", "description": "Soft, skin-first essentials in organic cotton, in the colors you reach for every day." },
+      "bras-and-tanks": { "title": "Bralettes", "description": "Soft organic cotton bralettes, made to feel good against your skin." },
+      "undies": { "title": "Undies", "description": "Everyday underwear in soft organic cotton, in the fits and shades you love." },
+      "tanks": { "title": "Tanks", "description": "Light, breathable organic cotton tanks for layering or wearing on their own." },
+      "socks": { "title": "Socks", "description": "Organic cotton socks, woven in comfortable everyday packs." },
+      "undie-packs": { "title": "Undie Packs", "description": "Easy-to-wear organic cotton underwear, bundled in everyday packs." }
+    },
+    "tab": {
+      "all": "All Intimates",
+      "bralettes": "Bralettes",
+      "undies": "Undies",
+      "tanks": "Tanks",
+      "socks": "Socks",
+      "undiePacks": "Undie Packs"
+    },
+    "tabAlt": {
+      "all": "A model wearing an organic cotton Intimates set.",
+      "bralettes": "A model wearing a soft organic cotton bralette.",
+      "undies": "A model wearing everyday organic cotton underwear.",
+      "tanks": "A model wearing an organic cotton tank top.",
+      "socks": "A close-up of organic cotton socks.",
+      "undiePacks": "A stack of organic cotton underwear from a multipack."
+    },
+    "editorial": {
+      "alt": "A model in a soft, neutral organic cotton Intimates set.",
+      "title": "Your second skin.",
+      "body": "Everyday essentials, thoughtfully made in naturally soft organic cotton."
+    },
+    "menu": {
+      "categoriesTitle": "Categories",
+      "colorsTitle": "Featured Colors",
+      "category": {
+        "shopAll": "Shop All Intimates",
+        "socks": "Socks",
+        "undies": "Undies",
+        "bralettes": "Bralettes",
+        "tanks": "Tanks",
+        "undiePacks": "Undie Packs"
+      },
+      "color": {
+        "jetBlack": "Jet Black",
+        "sand": "Sand",
+        "bone": "Bone",
+        "espresso": "Espresso",
+        "heatherGrey": "Heather Grey"
+      },
+      "tile": {
+        "shopAll": "Shop All Intimates",
+        "organicComfort": "Organic Comfort"
+      }
+    }
   },
   "shopAll": {
     "title": "All",
