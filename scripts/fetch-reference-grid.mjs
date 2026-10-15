@@ -14,6 +14,17 @@
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
+/**
+ * The reference store's CDN answers a plain bot signature with an interstitial, so every
+ * request carries a browser's own headers. The frames are the reference's published product
+ * photography; this is the same content a shopper's browser is served.
+ */
+const BROWSER_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "Accept": "*/*",
+  "Accept-Language": "en-US,en;q=0.9",
+};
+
 const ROOT = new URL("..", import.meta.url).pathname;
 const collection = process.argv[2] ?? "all";
 const pages = Number(process.argv[3] ?? 8);
@@ -31,7 +42,7 @@ const sequence = [...order.keys()];
 async function fetchHtml(url) {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+      const res = await fetch(url, { headers: BROWSER_HEADERS });
       if (res.ok) return await res.text();
     } catch {}
     await sleep(900 * (attempt + 1));

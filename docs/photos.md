@@ -5,33 +5,37 @@ That rule is measured, not guessed, and the measurement is stored in the reposit
 
 ## The scan
 
-Every file under `public/img/` that a catalogue references was measured twice over:
+Every file the catalogues reference is measured by `scripts/scan-photo-poses.py`, which runs MediaPipe
+`PoseLandmarker` over the frame and records three things per file:
 
-1. **Pose landmarks** (MediaPipe Pose) — where the model's nose, ears, shoulders, hips, knees,
-   ankles and feet are, and how much of each joint the model is confident about.
-2. **Silhouette pass** — the segmented mask of the figure, its bounding box, and how wide the
-   mask runs at each of the frame's four edges. A torso-wide run at an edge is what a cut looks
-   like: the body continues past the frame.
+* a **tier** — the verdict in the table under [What "complete" is
+  measured against](#what-complete-is-measured-against);
+* a **pose signature** — the nose, both shoulders, both elbows, both wrists, both hips and both knees
+  as coordinates in body units (the shoulder-to-hip distance is one unit), plus how large the model
+  stands inside the box a card paints;
+* a **16×16 difference hash** of the frame.
 
-The two signals are combined into one verdict per file, written to `src/lib/photoPoses.json`:
+They are stored apart, because the three files are read by different people:
 
-| value | meaning |
-| --- | --- |
-| `2` | **whole** — the model is complete inside the frame |
-| `0` | **crop** — the frame is filled by a torso or a pair of legs; the model is cut off |
+| file | read by | contents |
+| --- | --- | --- |
+| `src/lib/photoPoses.json` | the storefront, at render time | tier per frame the catalogues actually paint |
+| `src/lib/photoPoseSignatures.json` | the ordering script, the audit, the sweep | tier, signature, scale and aspect for every frame the repository holds |
+| `src/lib/photoFrameHashes.json` | the same scripts | difference hash per measured frame |
 
-There is no third value. A photograph the scan could not prove is treated as a crop and never
-rendered, so no surface can fall back to a cut frame.
+The last two cover a superset: a colourway owns frames that no row renders today (the reference's
+gallery, poses an ordering pass set aside), and the ordering script reads back through them on the next
+pass. Which frames those are is recorded in `src/lib/photoFrameUniverse.json` (per slug, every frame the
+shelves and the buying passes have ever held, written by `order-card-frames.mjs` itself), so an ordering
+run is **lossless and idempotent**: it re-reads the whole candidate set instead of only what the rows
+happen to paint, and running it twice reports `reordered 0 of 649 rows`. Without that file a pass that
+drops a frame drops it for good, because the next pass could no longer see it.
 
-### What "complete" means per garment
-
-* **A leg garment** (`leggings`, `shorts`, `pants`, `sweatpants`, `unitards`) — head to feet. The
-  frame must hold the head, and neither the mask's top nor its bottom edge may be crossed by a
-  torso-wide run: the model's feet have to be inside the picture.
-* **A top** (`sweatshirts`, `sweaters`, `t-shirts`, `tank-tops`, `activewear-tops`,
-  `sports-bras`) — the head, both shoulders and the whole garment down to its hem. A top shot
-  closer than full length is honest as long as the garment being sold is entirely visible.
-* **A flat still** (`socks`, `headbands`, `accessories`) — no model to cut off, kept as captured.
+`--prune` keeps `photoPoses.json` down to what is rendered, so the browser never ships a verdict for a
+photograph it cannot reach — and, since only rendered frames are committed under `public/img/mate`,
+pruning is what tells `restore-vendored-frames.mjs` which files the repository does not carry. The
+measured verdicts of the set-aside frames stay in `photoPoseSignatures.json`, which is never pruned:
+a colourway whose row shrinks can be re-picked without re-scanning a byte.
 
 ## What "complete" is measured against
 
@@ -67,17 +71,43 @@ The scan also writes `src/lib/photoFrameHashes.json`, a 16x16 difference hash pe
 ## A hover is another pose, not another zoom
 
 A card that "changes" to the same photograph at another magnification is the failure the shelves were
-called out for, so pose identity is a rule and not a hope:
+called out for, so pose identity is a rule and not a hope. It is stated once, in
+`scripts/photoPoseRules.mjs`, and the ordering script, the audit, the unit tests and the production
+sweep all import that file — none of them can drift from the others:
 
-* `scripts/order-card-frames.mjs` orders each colourway's frames — complete figures first, in the
-  order the reference's own card paints them, then the gallery frames it bought — and drops a frame
-  whose hash agrees with an earlier one within 20 bits: that is the same pose reframed.
-* `hoverFrame()` then hands the card the *next* frame in that list. Consecutive entries of an ordered
-  row are always ≥20 bits apart, so a hover is always a different pose of the same colourway; a
-  colourway left with one frame keeps it and no hover state appears.
-* Nothing scales, translates or crops a photograph: `transform: none`, `scale: 1`, and the only
-  transition on a card image is the cross-fade (`new-arrivals.css`, the block that starts
-  "A pose change cross-fades to the second photograph").
+* **a different stance.** Two frames are the same stance when their difference hashes agree within
+  `POSE_BITS` (20 of 256 bits) *or* when the joints they share moved less than `POSE_GAP` (0.12 of a
+  head-and-shoulders unit). The pixels alone cannot see it: reframe a standing model and every
+  low-frequency value in the hash shifts, while her arms, hips and knees stay exactly where they were.
+* **the same distance.** `SCALE_JUMP` (1.15) is how much larger the model may stand in the hover frame
+  than in the lead. A pair that fails this is a *second choice*: `order-card-frames.mjs` takes a real
+  pose change shot closer up in preference to no pose change at all, and prints the row as
+  `~ … hovers at another distance` so the count is visible.
+* **no transform anywhere.** Nothing scales, translates or crops a photograph: `transform: none`,
+  `scale: 1`, and the only transition on a card image is the cross-fade (`new-arrivals.css`, the block
+  that starts "A pose change cross-fades to the second photograph").
+
+Note that the reference's own card is not the standard here: on its best-sellers shelf a fig sports bra
+opens on an arms-up shot cut at the hip and its second frame is a back detail with the chin out of
+picture. Ours leads with a complete figure for every colourway, which is what the storefront is held to
+— the reference supplies the *order within* a colourway's frames and the dye, never permission to paint
+a cut body.
+
+`scripts/order-card-frames.mjs` therefore orders each colourway's frames — complete figures first, in
+the order the reference's own card paints them, then the gallery frames it bought — drops a frame that
+is not a new stance next to the ones already kept, keeps at most `--max` of them, and drops the last
+frame of the list when the card's cycle would wrap from it back into the same stance. `hoverFrame()`
+then hands the card the *next* frame in that list, so a hover is always a different pose of the same
+colourway; a colourway left with one frame keeps it and no hover state appears.
+
+## Restoring a frame the repository lost
+
+A `/img/mate/<stem>.webp` file is named after the sha1 of the URL it came from, so a frame that has
+gone missing is re-derivable: `scripts/restore-vendored-frames.mjs --check` lists what the rows, the
+pool and `referenceGalleryFrames.json` reference but the disk does not have, and a run without
+`--check` traces each stem back through `relay/reference-grid.json` and the product's own gallery and
+re-downloads it. `--check` is the command to run after anything has deleted files by name: a prune that
+compares bare filenames against `/img/mate/…` paths matches nothing and removes the lot.
 
 ## Buying the poses a colourway is short of
 
@@ -90,10 +120,17 @@ twice; `--round`/`--budget` keep the repository small. Bought frames are recorde
 `src/lib/referenceGalleryFrames.json` and appended to `src/lib/photoPool.json`.
 
 ```sh
-node scripts/fetch-reference-gallery.mjs --round 1 --per-round 4 --budget 1300
+node scripts/fetch-reference-gallery.mjs --round 1 --per-round 4 --budget 1300 --pace 300
 python3 scripts/scan-photo-poses.py --write
 node scripts/order-card-frames.mjs
 ```
+
+Which colourways need frames is decided by the same `poseRules` a hover is graded by, so a row whose
+two frames are one stance at two zooms counts as needing a pose and is not declared satisfied. The
+storefront's CDN answers a bare bot signature with an interstitial, so every request carries a
+browser's headers and `--pace` leaves 300 ms between handles. A frame recorded in
+`referenceGalleryFrames.json` is only left alone when the file is really on disk: a lost download is
+re-bought, not declared unbuyable.
 
 The same loop is how a shelf gains a photograph after a catalogue change: buy, measure, order.
 
@@ -109,13 +146,18 @@ one: a cut-off model is the one thing the shelves are not allowed to show.
 ## Verifying
 
 * `npm test` runs `tests/photo-poses.test.ts`: no rendered crop, rows ordered as the pipeline wrote
-  them, a whole-figure lead wherever the colourway owns one, a hover ≥20 bits from the frame it
-  replaces, and no row dropped for want of photography.
+  them, a whole-figure lead wherever the colourway owns one, every pair a card can cycle through a
+  different stance by both signals, and no row dropped for want of photography.
 * `npx playwright test tests/e2e/card-fit.spec.ts` measures the rendered card: the 333/431 frame, the
   image filling it, no scale, and the pose changing under the pointer — then the product-page gallery.
-* `npx tsx scripts/audit-photos.ts` — catalogue-side report: rows, frames per row, tiers.
+* `npx tsx scripts/audit-photos.ts` — catalogue-side report: rows, frames per row, tiers, and two
+  failures the ordering can regress into: a row that leads below the best tier its colourway owns
+  anywhere in the drawer, and a hover that is the same stance.
 * `node verification/tools/live-sweep.mjs` — production sweep: every card frame in every collection
-  and every product-page gallery frame, checked against `photoPoses.json` *and* against its own box,
-  so a deployment cannot quietly fall back to a letterbox, a zoom or a crop.
+  and every product-page gallery frame, checked against the measured tiers *and* against its own box,
+  so a deployment cannot quietly fall back to a letterbox, a zoom or a crop. It hovers each card in
+  place (the box is measured after the scroll, or the pointer misses and the miss reads as a bug),
+  walks the page so lazy frames are fetched before anything is called broken, and tallies what it
+  found by kind.
 * `node verification/tools/swatch-sweep.mjs` — clicks every swatch on a set of cards and checks the
   photograph each dye swaps to is that dye's own complete figure.

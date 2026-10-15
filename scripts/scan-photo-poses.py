@@ -25,6 +25,11 @@ shelves care about for the *surviving* region:
              entirely visible and the model is not beheaded, but the legs run past the frame
   0  crop    the detector found no model, the head is cut, or the frame is a torso/leg detail
 
+The pose geometry — the joints in body units, the model's size inside the rendered box and the
+frame's aspect ratio — goes to `src/lib/photoPoseSignatures.json`. `scripts/order-card-frames.mjs`
+uses it to refuse a hover that is the same stance at another zoom, which a difference hash alone
+cannot see, and `scripts/audit-photos.ts` fails the build over one.
+
 `src/lib/photoSelection.py` renders 2 first, then 1, and never a 0. The 16x16 difference hash of
 each frame goes to `src/lib/photoFrameHashes.json`: two frames whose hashes agree closely are the
 same pose of the same model reframed, which is what a hover must never swap to, so the frame
@@ -32,6 +37,7 @@ ordering script uses it to drop near-duplicates. A frame that cannot be measured
 """
 import argparse
 import json
+import math
 import os
 import sys
 from concurrent.futures import ProcessPoolExecutor
@@ -42,10 +48,17 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POSES_OUT = os.path.join(ROOT, "src/lib/photoPoses.json")
 HASHES_OUT = os.path.join(ROOT, "src/lib/photoFrameHashes.json")
+SIGS_OUT = os.path.join(ROOT, "src/lib/photoPoseSignatures.json")
 MODEL = os.environ.get("POSE_MODEL", "/tmp/pose.task")
 # MediaPipe's BlazePose index, the joints this storefront's rule is stated in.
 INDEX = {"nose": 0, "l_ear": 2, "r_ear": 5, "l_shoulder": 11, "r_shoulder": 12, "l_hip": 23, "r_hip": 24,
-         "l_knee": 25, "r_knee": 26, "l_ankle": 27, "r_ankle": 28, "l_heel": 29, "r_heel": 30, "l_foot": 31, "r_foot": 32}
+         "l_knee": 25, "r_knee": 26, "l_ankle": 27, "r_ankle": 28, "l_heel": 29, "r_heel": 30, "l_foot": 31, "r_foot": 32,
+         "l_elbow": 13, "r_elbow": 14, "l_wrist": 15, "r_wrist": 16}
+# The joints a pose is compared on, in this order: the arms carry the difference between two shots
+# of a standing model, so a frame that is the same pose at another zoom has no movement in them.
+SIG_JOINTS = ["l_shoulder", "r_shoulder", "l_elbow", "r_elbow", "l_wrist", "r_wrist",
+              "nose", "l_hip", "r_hip", "l_knee", "r_knee"]
+SIG_MISSING = 9999
 # The box every card, gallery, search row and cart line renders into.
 BOX = 333 / 431
 # Landmarks have to clear the surviving region by this much to count as inside it.
@@ -54,7 +67,7 @@ _LONG_EDGE = 620
 _ENGINE = None
 
 
-def catalogue_frames():
+def rendered_frames():
     """Every frame path the storefront renders, from the three catalogues and the shared pool."""
     paths = set()
     for name in ("shopAllCatalog.json", "newArrivalsCatalog.json", "activewearCatalog.json"):
@@ -65,6 +78,28 @@ def catalogue_frames():
     pool = json.load(open(os.path.join(ROOT, "src/lib/photoPool.json")))
     for images in pool.values():
         paths.update(images)
+    return paths
+
+
+def catalogue_frames():
+    """`rendered_frames()` plus every frame `order-card-frames.mjs` may still choose from.
+
+    The reference gallery capture records frames an ordering pass has since dropped from the rows —
+    they are the photographs a colourway owns but does not currently show, and the ordering script
+    reads them again on the next pass. Their verdicts therefore have to be measured and kept, while
+    `photoPoses.json`, which ships to the browser, stays the rendered set alone.
+    """
+    paths = rendered_frames()
+    for name in ("referenceGalleryFrames.json", "photoFrameUniverse.json"):
+        gallery = os.path.join(ROOT, "src/lib", name)
+        if not os.path.exists(gallery):
+            continue
+        for images in json.load(open(gallery)).values():
+            for src in images:
+                # Only a frame that is really on disk (or in the download cache) is worth a verdict:
+                # a recorded-but-never-delivered path would come back as a crop and stay there.
+                if file_for(src):
+                    paths.add(src)
     return sorted(paths)
 
 
@@ -110,14 +145,61 @@ def cover_loss(width, height):
     return trim, 0.0
 
 
+def signature(width, height, landmarks):
+    """The model's geometry, in body units, plus how large they stand inside the rendered box.
+
+    Coordinates are measured in pixels, moved so the midpoint of the shoulders sits at the origin and
+    divided by the shoulder-to-hip distance (or twice the nose-to-shoulder distance when the hips are
+    below the frame), so two photographs of the same pose from the same distance agree whatever the
+    file's dimensions are. `scale` is that unit over the height that survives the cover crop: two
+    frames whose scales differ are the same pose at another zoom, which is exactly what a hover must
+    not look like.
+    """
+    points = {}
+    for name, index in INDEX.items():
+        raw = landmarks[index]
+        if float(getattr(raw, "visibility", 0.0) or 0.0) >= 0.5:
+            points[name] = (float(raw.x) * width, float(raw.y) * height)
+
+    def middle(first, second):
+        left, right = points.get(first), points.get(second)
+        if left and right:
+            return ((left[0] + right[0]) / 2, (left[1] + right[1]) / 2)
+        return left or right
+
+    origin = middle("l_shoulder", "r_shoulder")
+    if origin is None:
+        return None, None
+    hips, nose = middle("l_hip", "r_hip"), points.get("nose")
+    if hips:
+        unit = math.dist(origin, hips)
+    elif nose:
+        unit = 2 * math.dist(origin, nose)
+    else:
+        return None, None
+    if unit < 8:
+        return None, None
+    pose = []
+    for name in SIG_JOINTS:
+        point = points.get(name)
+        if point is None:
+            pose += [SIG_MISSING, SIG_MISSING]
+        else:
+            pose += [round((point[0] - origin[0]) / unit * 100), round((point[1] - origin[1]) / unit * 100)]
+    _, loss_y = cover_loss(width, height)
+    surviving = height * (1 - 2 * loss_y)
+    scale = round(unit / surviving, 4) if surviving > 0 else None
+    return pose, scale
+
+
 def classify(src):
     path = file_for(src)
     if path is None:
-        return src, 0, None, "missing"  # noqa: SCR001 - a frame that cannot be read is never rendered
+        return src, 0, None, "missing", None, None, 0  # noqa: SCR001 - a frame that cannot be read is never rendered
     try:
         image = Image.open(path).convert("RGB")
     except Exception as error:  # noqa: BLE001
-        return src, 0, None, f"unreadable: {error}"[:60]
+        return src, 0, None, f"unreadable: {error}"[:60], None, None, 0
     width, height = image.size
     grey = np.asarray(image.convert("L"), dtype=np.uint8)
     digest = dhash(grey)
@@ -151,7 +233,7 @@ def classify(src):
         # No person in the picture. When the frame is a product graphic or a folded garment the scan
         # calls it flat and it renders; when the subject runs to the top edge there is a model in it
         # and the pose simply did not resolve, so it is a crop and nothing else.
-        return src, (3 if flat_still else 0), digest, "flat still" if flat_still else "no model"  # noqa: E501
+        return src, (3 if flat_still else 0), digest, "flat still" if flat_still else "no model", None, None, round(width / height, 4)  # noqa: E501
     points = {}
     for name, index in INDEX.items():
         raw = result.pose_landmarks[0][index]
@@ -168,11 +250,13 @@ def classify(src):
     hips = all(inside(k) for k in ("l_hip", "r_hip"))
     legs = all(inside(k) for k in ("l_knee", "r_knee", "l_ankle", "r_ankle"))
     feet = any(inside(k) for k in ("l_heel", "r_heel", "l_foot", "r_foot"))
+    pose, scale = signature(width, height, result.pose_landmarks[0])
+    aspect = round(width / height, 4)
     if head and shoulders and hips and legs and feet:
-        return src, 2, digest, "whole"
+        return src, 2, digest, "whole", pose, scale, aspect
     if head and shoulders and hips:
-        return src, 1, digest, "hem"
-    return src, 0, digest, "head cut" if not head else "incomplete"
+        return src, 1, digest, "hem", pose, scale, aspect
+    return src, 0, digest, "head cut" if not head else "incomplete", pose, scale, aspect
 
 
 def main():
@@ -202,37 +286,53 @@ def main():
     for src in sources:
         stamp = fingerprint(src)
         entry = cache.get(src)
-        if entry and entry.get("stamp") == stamp:
+        # An entry from a run that did not record the pose geometry is not a hit: the ordering script
+        # needs the signature, so those frames are measured again.
+        if entry and entry.get("stamp") == stamp and "pose" in entry:
             done[src] = entry
         else:
             todo.append(src)
     print(f"{len(sources)} frames, {len(todo)} to measure, {len(done)} cached")
     if todo:
         with ProcessPoolExecutor(max_workers=args.jobs, initializer=engine) as pool:
-            for src, status, digest, why in pool.map(classify, todo, chunksize=6):
-                entry = {"stamp": fingerprint(src), "status": status, "hash": digest, "why": why}
+            for src, status, digest, why, pose, scale, aspect in pool.map(classify, todo, chunksize=6):
+                entry = {"stamp": fingerprint(src), "status": status, "hash": digest, "why": why,
+                         "pose": pose, "scale": scale, "aspect": aspect}
                 done[src] = entry
                 cache[src] = entry
         json.dump(cache, open(args.cache, "w"))
 
     from collections import Counter
     print("statuses:", dict(Counter(v["status"] for v in done.values())))
-    measured = {src: done[src]["status"] for src in sources if src in done}
+    rendered = rendered_frames()
+    measured = {src: done[src]["status"] for src in sources if src in rendered and src in done}
     hashes = {src: done[src]["hash"] for src in sources if src in done and done[src]["hash"]}
+    measured_sigs = {src: done[src] for src in sources if src in done}
     if args.write:
         # Merge: this scan covers the frames the catalogues render. A verdict for a frame measured
         # by an earlier run and referenced from elsewhere (the lookbook catalogue, say) stays.
         previous = json.load(open(POSES_OUT)) if os.path.exists(POSES_OUT) else {}
         previous_hashes = json.load(open(HASHES_OUT)) if os.path.exists(HASHES_OUT) else {}
+        previous_sigs = json.load(open(SIGS_OUT)) if os.path.exists(SIGS_OUT) else {}
         merged = {**previous, **measured}
         merged_hashes = {**previous_hashes, **hashes}
+        # A frame with a verdict but no resolved pose still belongs in the file: `t` is what the
+        # ordering script reads for a frame the rows do not render today, and a verdict of 0 is a
+        # verdict — not a missing one.
+        merged_sigs = {**previous_sigs, **{src: {"p": entry.get("pose"), "s": entry.get("scale"), "a": entry.get("aspect"), "t": entry.get("status")}
+                                           for src, entry in measured_sigs.items()
+                                           if entry.get("pose") is not None or entry.get("scale") is not None or entry.get("status") is not None}}
         if args.prune:
             referenced = set(sources)
-            merged = {src: status for src, status in merged.items() if src in referenced}
+            # photoPoses.json only ever carries rendered frames, so the prune is over the rendered set;
+            # the signature and hash files keep the whole universe the ordering script may reach for.
+            merged = {src: status for src, status in merged.items() if src in rendered}
             merged_hashes = {src: digest for src, digest in merged_hashes.items() if src in referenced}
+            merged_sigs = {src: sig for src, sig in merged_sigs.items() if src in referenced}
         json.dump(merged, open(POSES_OUT, "w"), indent=0, sort_keys=True)
         json.dump(merged_hashes, open(HASHES_OUT, "w"), indent=0, sort_keys=True)
-        print(f"wrote {POSES_OUT} ({len(merged)} frames, {len(measured)} re-measured) and {HASHES_OUT} ({len(merged_hashes)} hashes)")
+        json.dump(merged_sigs, open(SIGS_OUT, "w"), indent=0, sort_keys=True, separators=(",", ":"))
+        print(f"wrote {POSES_OUT} ({len(merged)} frames, {len(measured)} re-measured), {HASHES_OUT} ({len(merged_hashes)} hashes) and {SIGS_OUT} ({len(merged_sigs)} poses)")
     else:
         print("dry run — pass --write to update the repository files")
     return 0

@@ -434,9 +434,10 @@
 .na-header-nav li{margin:0;padding:0}
 .na-header-nav a,.na-header-nav a:hover,.na-header-nav a:focus-visible{text-decoration:none!important;border-bottom:0}
 .na-header-nav a::after{content:"";position:absolute;left:50%;bottom:-9px;width:5px;height:5px;border-radius:50%;background:var(--na-slate);transform:translateX(-50%);opacity:0;transition:opacity .16s}
-.na-header-nav a.is-current::after,.na-header-nav a:hover::after,.na-header-nav a:focus-visible::after{opacity:1}
-/* A mega parent is not a page: while its panel is merely open or hovered it carries no dot. */
-.na-header-mega>a:hover::after,.na-header-mega>a:focus-visible::after{opacity:0}
+/* The dot is a location marker, not a hover affordance: it sits under the label of the page you are
+ * standing on and nowhere else — not under a label being hovered, and not under a mega parent whose
+ * panel merely lists the shelf you are on. */
+.na-header-nav a.is-current::after{opacity:1}
 .na-storefront{min-height:0}
 .product-reveal-action{background:#e6e2d4;color:#000;opacity:0;cursor:pointer;transition:opacity .16s,background-color .25s,color .25s}
 .product-reveal-card:hover .product-reveal-action,.product-reveal-card:focus-within .product-reveal-action{opacity:1}

@@ -3,6 +3,8 @@ import test from "node:test";
 import { readFileSync } from "node:fs";
 import statuses from "../src/lib/photoPoses.json";
 import hashes from "../src/lib/photoFrameHashes.json";
+import measured from "../src/lib/photoPoseSignatures.json";
+import { POSE_BITS, POSE_GAP, SCALE_JUMP, hashBits, poseGap, poseRules, scaleRatio } from "../scripts/photoPoseRules.mjs";
 import { activewearProducts } from "../src/lib/activewearCatalog";
 import { arrivalCatalog } from "../src/lib/mateNewArrivals";
 import { shopAllProducts } from "../src/lib/shopAll";
@@ -126,13 +128,56 @@ test("a hover is a different pose of the same colourway, never the same photogra
     }
   }
   assert.ok(swapped > 600, `only ${swapped} colourways can swap poses`);
-  assert.ok(singles < 20, `${singles} rows are left with a single frame`);
+  // A colourway the reference photographed in one stance keeps that one photograph. The alternative —
+  // promoting a same-stance detail shot so the card appears to change — is the behaviour the shelves
+  // were called out for, so the count is allowed, kept small, and reported exactly by
+  // `npx tsx scripts/audit-photos.ts` (`single-frame rows`).
+  assert.ok(singles < 40, `${singles} rows are left with a single frame`);
   assert.ok(lastResort < 40, `${lastResort} rows render a crop because the reference photographed no further`);
+});
+
+test("the pose rules read the measured geometry, not just the pixels", () => {
+  // The two frames the complaint named (a card that "changed" to the same stance at another zoom)
+  // differ in their pixels: a difference hash sees a different picture. The joints do not move, and
+  // that is what the geometry rule is for, so both signals have to agree before a pair is called a
+  // new pose. A frame pair the scan could not resolve on both sides is left to the hash rule.
+  assert.equal(POSE_BITS, 20);
+  assert.equal(hashBits("0".repeat(64), "0".repeat(64)), 0);
+  assert.equal(hashBits("f".repeat(64), "0".repeat(64)), 256);
+  const armsUp = { p: [0, 0, 10, 0, -60, -90, 70, -85, -80, -160, 90, -155, 0, -40, 5, 60, -5, 62, 20, 90, -20, 92, 0, 0], s: 0.42, a: 0.75 };
+  const armsDown = { p: [0, 0, 10, 0, -40, 55, 55, 60, -60, 120, 85, 118, 0, -40, 5, 60, -5, 62, 20, 90, -20, 92, 0, 0], s: 0.43, a: 0.75 };
+  const reframed = { ...armsUp, s: 0.58, a: 0.9 };
+  const pair = (a: unknown, b: unknown) => poseRules({ hashes: {}, signatures: { a: a as never, b: b as never } });
+  assert.ok(poseGap(armsUp, armsDown) !== null && poseGap(armsUp, armsDown)! >= POSE_GAP, "a raised arm is not a pose change");
+  assert.equal(poseGap(armsUp, { ...armsUp, s: 0.9 }), 0, "the same stance at another zoom moves no joint");
+  // Without a recorded hash pair the geometry alone decides, and the framing rule alone reports the zoom.
+  assert.equal(pair(armsUp, armsUp).differs("a", "b"), false, "identical geometry is never a pose change");
+  assert.equal(pair(armsUp, armsDown).differs("a", "b"), true);
+  assert.equal(pair(armsUp, armsUp).differs("a", "b"), false);
+  assert.ok(scaleRatio(armsUp, armsDown)! < SCALE_JUMP, "two frames shot at the same distance");
+  assert.ok(scaleRatio(armsUp, reframed)! > SCALE_JUMP, "a closer camera has to register as a scale jump");
+  assert.equal(pair(armsUp, armsDown).holds("a", "b"), true);
+  assert.equal(pair(armsUp, reframed).holds("a", "b"), false);
+  // The comparison needs four joints in common: a torso crop and a full-length pose share the
+  // shoulders and the hips, which is not enough to call a stance change either way.
+  const sparse = (list: number[]) => ({ p: list, s: 0.4, a: 0.75 });
+  assert.equal(poseGap(sparse([0, 0, 5, 5, 20, 30, 0, 0, ...Array(16).fill(0)]), sparse([0, 0, 5, 5, 9999, 9999, 9999, 9999, ...Array(16).fill(9999)])), null);
+  // Four joints in common — the floor for a comparison — each moved 30 units of a hundredth of a
+  // torso on x: total 120, over 4 joints and 2 axes, 120 / (4 · 2 · 100) = 0.15 of a torso.
+  assert.equal(poseGap(sparse([0, 0, 0, 0, 0, 0, 0, 0, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999]),
+    sparse([30, 0, 30, 0, 30, 0, 30, 0, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999])), 0.15);
+  assert.equal(poseGap(sparse([0, 0, 0, 0, 0, 0, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999]),
+    sparse([30, 0, 30, 0, 30, 0, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999, 9999])), null);
+  // The scan recorded the geometry for the frames the storefront can paint.
+  const sigs = measured as unknown as Record<string, { p: number[] | null }>;
+  assert.ok(Object.keys(sigs).length > 2000, `only ${Object.keys(sigs).length} frames carry a pose signature`);
 });
 
 test("no two frames of a colourway are the same pose at another zoom", () => {
   // The rule the ordering enforces, checked on the result: every pair a card can cycle through —
-  // next, previous and the wrap from the last frame back to the first — is a different pose.
+  // next, previous and the wrap from the last frame back to the first — is a different pose, both in
+  // pixels (the difference hash) and in the model's joints (the scan's signature).
+  const rules = poseRules({ hashes: HASH, signatures: measured as unknown as never });
   let pairs = 0;
   for (const [name, products] of catalogs) {
     for (const product of products) {
@@ -142,11 +187,14 @@ test("no two frames of a colourway are the same pose at another zoom", () => {
         if (next === frames[index]) continue;
         const distance = poseDistance(HASH[frames[index]], HASH[next]);
         assert.ok(distance >= POSE_DISTANCE, `${name}: ${product.slug} ${frames[index]} → ${next} is ${distance} bits apart`);
+        assert.ok(rules.differs(frames[index], next), `${name}: ${product.slug} ${rules.why(frames[index], next)}: the same stance`);
         pairs += 1;
       }
     }
   }
-  assert.ok(pairs > 1800, `only ${pairs} pose pairs were checked`);
+  // Every consecutive pair of every row: 1 419 frames across 649 rows, of which the wrap pairs of
+  // single-frame rows are skipped.
+  assert.ok(pairs > 1300, `only ${pairs} pose pairs were checked`);
 });
 
 test("a colourway is judged on every photograph of that slug, not just its own catalogue", () => {
@@ -176,6 +224,8 @@ test("a colourway is judged on every photograph of that slug, not just its own c
   assert.ok(bra && bra.images.length >= 2, "the sports bra lost its second pose");
   assert.equal(frameStatus(bra.images[0]), "whole", "the heather-grey sports bra still leads waist-up");
   assert.ok(poseDistance(HASH[bra!.images[0]!], HASH[bra!.images[1]!]) >= POSE_DISTANCE, "the sports bra's hover is the same pose");
+  assert.ok(poseRules({ hashes: HASH, signatures: measured as unknown as never }).differs(bra!.images[0]!, bra!.images[1]!),
+    `the sports bra's hover is the same stance: ${JSON.stringify(bra!.images.slice(0, 2))}`);
 });
 
 test("a flat frame carries no model and is never filtered out", () => {

@@ -70,7 +70,10 @@ export function frameStatus(src: string): FrameStatus {
  * What a surface renders: every frame that keeps the model's head inside the crop — complete
  * figures first, then the head-to-hem shots as the pose a card swaps to when nothing else is left.
  * A flat frame (no model at all) belongs to the surfaces that sell a product without a body in
- * front of the camera. A crop is never handed out — unless it is all a colourway owns, because a
+ * front of the camera — and those surfaces are the only ones that also keep a detail shot, because a
+ * close-up of a sock or a headband is the product, not a model cut in half. The order they render in
+ * (flat still, then any pose, then a detail) is written into the catalogue by
+ * `scripts/order-card-frames.mjs`, which is also where a frame that is not a new stance is dropped. A crop is never handed out — unless it is all a colourway owns, because a
  * dye the reference photographs is a colour this storefront still sells.
  */
 function renderable(images: string[], category: string): string[] {

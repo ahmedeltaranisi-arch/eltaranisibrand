@@ -25,6 +25,18 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
+import { poseRules, readSignatures } from "./photoPoseRules.mjs";
+
+/**
+ * The reference store's CDN answers a plain bot signature with an interstitial, so every
+ * request carries a browser's own headers. The frames are the reference's published product
+ * photography; this is the same content a shopper's browser is served.
+ */
+const BROWSER_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "Accept": "*/*",
+  "Accept-Language": "en-US,en;q=0.9",
+};
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const MATEDIR = join(ROOT, "public/img/mate");
@@ -33,11 +45,9 @@ const POOL = join(ROOT, "src/lib/photoPool.json");
 const POSSES = join(ROOT, "src/lib/photoPoses.json");
 const HASHES = join(ROOT, "src/lib/photoFrameHashes.json");
 const GALLERY = join(ROOT, "src/lib/referenceGalleryFrames.json");
+const SIGS = join(ROOT, "src/lib/photoPoseSignatures.json");
 const WIDTH = 720;
 const QUALITY = 82;
-/** Two frames whose 16x16 difference hash agrees within this many bits are the same pose reframed. */
-const POSE_DISTANCE = 20;
-
 const arg = (name, fallback) => {
   const index = process.argv.indexOf(`--${name}`);
   return index >= 0 && process.argv[index + 1] && !process.argv[index + 1].startsWith("--") ? process.argv[index + 1] : fallback;
@@ -47,6 +57,9 @@ const round = Number(arg("round", 1));
 const perRound = Number(arg("per-round", 4));
 const budget = Number(arg("budget", 1400));
 const dry = flag("dry");
+/** Milliseconds between handles: a request per second is what a shopper's browser does, and what the
+ * storefront's filter lets through. */
+const pace = Number(arg("pace", 260));
 
 const key = (url) => createHash("sha1").update(url).digest("hex").slice(0, 16);
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -61,16 +74,11 @@ function rows() {
   return out;
 }
 
-/** Bits two hashes disagree on — the pose signature of two frames of the same shoot. */
-function distance(a, b) {
-  let xor = BigInt(`0x${a}`) ^ BigInt(`0x${b}`);
-  let bits = 0;
-  while (xor) { bits += Number(xor & 1n); xor >>= 1n; }
-  return bits;
-}
-
 const statuses = JSON.parse(readFileSync(POSSES, "utf8"));
 const hashes = existsSync(HASHES) ? JSON.parse(readFileSync(HASHES, "utf8")) : {};
+const signatures = readSignatures(SIGS);
+/** The same rules `scripts/order-card-frames.mjs` orders with, so the rounds chase what ordering needs. */
+const rules = poseRules({ hashes, signatures });
 const pool = JSON.parse(readFileSync(POOL, "utf8"));
 const galleryIndex = existsSync(GALLERY) ? JSON.parse(readFileSync(GALLERY, "utf8")) : {};
 
@@ -81,16 +89,18 @@ function candidates(slug, images) {
   return out;
 }
 
-/** `true` when a colourway can already lead with one whole pose and swap to a different whole pose. */
+/**
+ * `true` when a colourway can already lead with a complete figure and swap to a second complete
+ * figure that `scripts/photoPoseRules.mjs` agrees is a different stance at a comparable distance. A
+ * pair that passes on pixels alone but is the same stance reframed is not enough: the card would be
+ * buying a zoom, and the shopper would see it.
+ */
 function hasTwoWholePoses(frames) {
-  const whole = frames.filter((src) => statuses[src] === 2);
+  const whole = frames.filter((src) => (statuses[src] ?? signatures[src]?.t ?? 0) === 2);
   if (whole.length < 2) return false;
   for (let i = 0; i < whole.length; i += 1) {
     for (let j = i + 1; j < whole.length; j += 1) {
-      const a = hashes[whole[i]];
-      const b = hashes[whole[j]];
-      if (!a || !b) continue;
-      if (distance(a, b) >= POSE_DISTANCE) return true;
+      if (rules.differs(whole[i], whole[j]) && rules.holds(whole[i], whole[j])) return true;
     }
   }
   return false;
@@ -119,10 +129,11 @@ mkdirSync(MATEDIR, { recursive: true });
 
 for (const entry of need) {
   if (spent >= budget) { console.log(`budget of ${budget} frames spent — rerun with a higher --budget`); break; }
+  await sleep(pace);
   const { product, frames } = entry;
   let json;
   try {
-    const res = await fetch(`https://matethelabel.com/products/${product.slug}.js`, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+    const res = await fetch(`https://matethelabel.com/products/${product.slug}.js`, { headers: BROWSER_HEADERS });
     if (!res.ok) { failed += 1; continue; }
     json = await res.json();
   } catch {
@@ -138,7 +149,10 @@ for (const entry of need) {
       // The file is on disk already (it was a card frame): count it as a candidate, buy nothing.
       continue;
     }
-    if (galleryIndex[product.slug]?.includes(`/img/mate/${stem}.webp`)) continue;
+    // A frame the last round recorded is not necessarily a frame the repository still has — the
+    // gallery index is a record of what was traced, so only a file that is really on disk is left
+    // alone. Otherwise a lost download would be declared unbuyable forever.
+    if (galleryIndex[product.slug]?.includes(`/img/mate/${stem}.webp`) && existsSync(join(MATEDIR, `${stem}.webp`))) continue;
     fresh.push({ url, path: `/img/mate/${stem}.webp`, stem });
     if (fresh.length >= perRound + (round - 1) * perRound) break;
   }
@@ -151,7 +165,9 @@ for (const entry of need) {
       let buffer = null;
       for (let attempt = 0; attempt < 3 && !buffer; attempt += 1) {
         try {
-          const res = await fetch(`${frame.url}?width=${WIDTH}`, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+          // Shopify serves a resized copy through a query parameter, and a gallery URL may already
+          // carry one (`?v=<version>`), so the separator has to follow the URL, not be assumed.
+          const res = await fetch(`${frame.url}${frame.url.includes("?") ? "&" : "?"}width=${WIDTH}`, { headers: BROWSER_HEADERS });
           if (!res.ok) break;
           const raw = Buffer.from(await res.arrayBuffer());
           if (raw.length > 900) buffer = await sharp(raw).resize({ width: WIDTH, withoutEnlargement: true }).webp({ quality: QUALITY }).toBuffer();

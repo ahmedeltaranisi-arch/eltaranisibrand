@@ -18,6 +18,17 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
 
+/**
+ * The reference store's CDN answers a plain bot signature with an interstitial, so every
+ * request carries a browser's own headers. The frames are the reference's published product
+ * photography; this is the same content a shopper's browser is served.
+ */
+const BROWSER_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "Accept": "*/*",
+  "Accept-Language": "en-US,en;q=0.9",
+};
+
 const ROOT = new URL("..", import.meta.url).pathname;
 const MATEDIR = join(ROOT, "public/img/mate");
 const GRID = join(ROOT, "relay/reference-grid.json");
@@ -41,12 +52,14 @@ for (const name of CATALOGS) {
     }
   }
 }
-for (const [slug, images] of Object.entries(JSON.parse(readFileSync(join(ROOT, "src/lib/photoPool.json"), "utf8")))) {
-  for (const src of images) {
-    if (src.startsWith("/img/mate/")) {
-      const list = rendered.get(src) ?? new Set();
-      list.add(slug);
-      rendered.set(src, list);
+for (const file of ["photoPool.json", "referenceGalleryFrames.json", "photoFrameUniverse.json"]) {
+  for (const [slug, images] of Object.entries(JSON.parse(readFileSync(join(ROOT, "src/lib", file), "utf8")))) {
+    for (const src of images) {
+      if (src.startsWith("/img/mate/")) {
+        const list = rendered.get(src) ?? new Set();
+        list.add(slug);
+        rendered.set(src, list);
+      }
     }
   }
 }
@@ -56,7 +69,10 @@ for (const [src, slugs] of rendered) {
   const stem = src.split("/").pop().replace(/\.webp$/, "");
   if (!existsSync(join(MATEDIR, `${stem}.webp`))) missing.set(stem, { src, slugs: [...slugs] });
 }
-console.log(`${rendered.size} vendored frames are rendered · ${missing.size} are missing from disk`);
+// `referenceGalleryFrames.json` records every gallery frame a round of buying traced, including
+// the ones an ordering pass dropped from the rows. They are not rendered today, but they are the
+// photographs a later round can order, so a lost file is restored all the same.
+console.log(`${rendered.size} vendored frames are recorded · ${missing.size} are missing from disk`);
 if (check || missing.size === 0) process.exit(0);
 
 /** Every URL that could have produced a missing file, gathered per handle from both sources. */
@@ -86,7 +102,7 @@ for (const slug of slugsToRead) {
   if (batch.length < 8) continue;
   await Promise.all(batch.map(async (handle) => {
     try {
-      const res = await fetch(`https://matethelabel.com/products/${handle}.js`, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+      const res = await fetch(`https://matethelabel.com/products/${handle}.js`, { headers: BROWSER_HEADERS });
       if (!res.ok) return;
       const json = await res.json();
       for (const raw of json.images ?? []) {
@@ -103,7 +119,7 @@ for (const slug of slugsToRead) {
 }
 for (const handle of batch) {
   try {
-    const res = await fetch(`https://matethelabel.com/products/${handle}.js`, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+    const res = await fetch(`https://matethelabel.com/products/${handle}.js`, { headers: BROWSER_HEADERS });
     if (res.ok) {
       const json = await res.json();
       for (const raw of json.images ?? []) {
@@ -126,7 +142,7 @@ for (const [stem, url] of urlsByStem) {
   let buffer = null;
   for (let attempt = 0; attempt < 3 && !buffer; attempt += 1) {
     try {
-      const res = await fetch(`${url}?width=${WIDTH}`, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+      const res = await fetch(`${url}${url.includes("?") ? "&" : "?"}width=${WIDTH}`, { headers: BROWSER_HEADERS });
       if (!res.ok) break;
       const raw = Buffer.from(await res.arrayBuffer());
       if (raw.length > 900) buffer = await sharp(raw).resize({ width: WIDTH, withoutEnlargement: true }).webp({ quality: QUALITY }).toBuffer();

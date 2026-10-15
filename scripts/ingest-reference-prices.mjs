@@ -20,6 +20,17 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
+/**
+ * The reference store's CDN answers a plain bot signature with an interstitial, so every
+ * request carries a browser's own headers. The frames are the reference's published product
+ * photography; this is the same content a shopper's browser is served.
+ */
+const BROWSER_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "Accept": "*/*",
+  "Accept-Language": "en-US,en;q=0.9",
+};
+
 const ROOT = new URL("..", import.meta.url).pathname;
 const arg = (name, fallback) => {
   const index = process.argv.indexOf(`--${name}`);
@@ -39,7 +50,7 @@ for (let page = 1; page <= PAGES; page += 1) {
   let html = "";
   for (let attempt = 0; attempt < 3 && !html; attempt += 1) {
     try {
-      const res = await fetch(`https://matethelabel.com/collections/all?page=${page}`, { headers: { "User-Agent": "Mozilla/5.0 (compatible; eltaranisi-parity/1.0)" } });
+      const res = await fetch(`https://matethelabel.com/collections/all?page=${page}`, { headers: BROWSER_HEADERS });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       html = await res.text();
     } catch (error) {

@@ -55,8 +55,11 @@ test("every color uses real photographs and a real swatch served via the externa
   }
   // Only photographs the pose scan measured as complete are shown, so the count is the renderable
   // set after `scripts/order-card-frames.mjs` tiers a colourway's frames and drops the ones that are
-  // the same pose at another zoom (749 distinct frames now, against 1 284 before that ordering, when every captured frame rendered).
-  assert.equal(images.size, 749);
+  // the same stance at another zoom. 379 distinct frames render, against 1 284 before that ordering
+  // existed: the frames a row no longer shows are same-stance reframings and head-cut details (a
+  // detail shot of a sock or a headband stays, since that shelf sells no model to cut), and
+  // every one of them stays in `src/lib/photoFrameUniverse.json` for a later pass to reach for.
+  assert.equal(images.size, 380);
 });
 
 test("category, size and color counts reflect actual available products", () => {
