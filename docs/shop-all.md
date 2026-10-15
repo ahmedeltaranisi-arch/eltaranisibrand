@@ -122,3 +122,27 @@ npm run verify
 
 `verification/tools/rail-order.mjs` also accepts a base URL, so the deployed store can be checked
 against the same captures: `node verification/tools/rail-order.mjs https://eltaranisibrand.vercel.app`.
+
+## Photography and sale prices
+
+A card paints complete photographs and nothing else, and a hover answers with another pose of the
+same dye; a discounted colourway prints the price the reference strikes through in front of the sale
+price. Both are measured rather than curated — `docs/photos.md` is the full rule — and both are
+rebuilt with the same three steps:
+
+```sh
+python3 scripts/scan-photo-poses.py --write          # MediaPipe pose, measured inside the card's crop
+node scripts/fetch-reference-gallery.mjs --round 1   # buy the whole poses a colourway is short of
+node scripts/order-card-frames.mjs                   # tier, order and drop same-pose lookalikes
+node scripts/ingest-reference-prices.mjs             # the two prices the reference's own cards print
+node scripts/apply-reference-prices.mjs              # write the compare-at where it exists
+npx tsx scripts/audit-photos.ts                      # rows, tiers, pose violations
+node verification/tools/live-sweep.mjs               # the deployment: fit, load, hover, tier
+node verification/tools/shelf-prices.mjs             # which shelves print a struck price
+node verification/tools/swatch-sweep.mjs              # every dye's own photograph
+npx playwright test tests/e2e/card-fit.spec.ts tests/e2e/sale-price.spec.ts
+```
+
+The scan needs MediaPipe (`pip install mediapipe`) and its pose model at `POSE_MODEL` (default
+`/tmp/pose.task`); the two `fetch`/`ingest` scripts talk to the reference store and are re-runnable —
+a vendored file is named after the sha1 of the URL it came from, so nothing is bought twice.

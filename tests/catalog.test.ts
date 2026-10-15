@@ -53,8 +53,10 @@ test("every color uses real photographs and a real swatch served via the externa
       assert.equal(getArrivalProduct(colorway.slug), colorway);
     }
   }
-  // Only whole photographs are shown: the measured crops stay out of every product's frames.
-  assert.equal(images.size, 1284);
+  // Only photographs the pose scan measured as complete are shown, so the count is the renderable
+  // set after `scripts/order-card-frames.mjs` tiers a colourway's frames and drops the ones that are
+  // the same pose at another zoom (749 distinct frames now, against 1 284 before that ordering, when every captured frame rendered).
+  assert.equal(images.size, 749);
 });
 
 test("category, size and color counts reflect actual available products", () => {

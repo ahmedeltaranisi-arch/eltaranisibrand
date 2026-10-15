@@ -67,7 +67,13 @@ export default function ArrivalProductDetails({ product }: { product: MateProduc
           })}
         </div>
         <div className="na-product-buybox">
-          <div className="na-product-heading"><h1>{title}</h1><p>{formatLE(product.priceLE)}</p></div>
+          <div className="na-product-heading">
+            <h1>{title}</h1>
+            <p className="na-product-price-line">
+              {product.compareAtLE ? <s className="na-pdp-compare-price">{formatLE(product.compareAtLE)}</s> : null}
+              <span>{formatLE(product.priceLE)}</span>
+            </p>
+          </div>
           <form onSubmit={submit}>
             <p className="na-option-label">{t("colorLabel")} <span>{t(`color.${product.color.name}`)}</span></p>
             <div className="na-color-groups">

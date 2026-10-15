@@ -1,45 +1,39 @@
-import statuses from "./photoPoses.json";
 import pool from "./photoPool.json";
-import referenceCards from "./referenceCardFrames.json";
+import statuses from "./photoPoses.json";
 
 /**
- * Every storefront photograph was measured once, twice over: the pose landmarks say where the
- * model's head, shoulders, hips and feet are, and an independent silhouette pass says where the
- * figure starts and ends against the frame. `photoPoses.json` keeps the verdict, one per file:
+ * Every storefront photograph was measured against the box it is rendered in, not against its own
+ * file. A card, a product gallery, a search row and a cart line all paint a frame into a box of
+ * 333/431 with the picture scaled to fill it, so a square photograph loses 11.4% of each side and
+ * a 3:4 one loses 1.5% of its top and bottom. `scripts/scan-photo-poses.py` runs MediaPipe Pose
+ * over every frame the catalogues reference and records, for the region that *survives* that crop:
  *
- *   2  whole   the model is complete in the frame — head to feet for a leg garment, head,
- *              shoulders and the whole garment for a top; a flat still has no model to cut off
- *   0  crop    the frame is filled by a torso or a pair of legs, so the model is cut off
+ *   2  whole  the model is in the picture from crown to sole — head, both shoulders, both hips,
+ *              both knees, both ankles and a foot all clear the crop
+ *   1  hem    head, both shoulders and both hips clear the crop: the garment being sold is entirely
+ *              visible and the model is not beheaded, but the legs run past the frame
+ *   0  crop    the head is cut, the frame is a torso or a leg detail, or nothing was measured
  *
- * Nothing else is stored: a photograph the scan could not prove is never rendered. A card always
- * leads with a whole photograph and swaps to a second whole one on hover. Crops are never
- * rendered anywhere: not on a card, not in the gallery, not in a search row.
+ * A card leads with a 2 whenever the colourway owns one, and hovers to another 2 — or, when the
+ * colourway owns a single complete figure, to its 1: another pose of the same dye, with the whole
+ * garment inside the frame. A 0 is never rendered on its own: not on a card, not in a gallery, not
+ * in a search row. Frames are ordered, tiered and stripped of same-pose lookalikes by
+ * `scripts/order-card-frames.mjs`, so nothing here needs to know about that. The frame lists themselves are
+ * ordered by `scripts/order-card-frames.mjs`, which puts a shelf's whole frames in front, drops
+ * near-duplicate poses (a card must never "change" to the same shot reframed) and keeps the
+ * reference's own card order inside a tier; nothing here needs to know about that.
  */
-type Status = 0 | 1 | 2;
+type Status = 0 | 1 | 2 | 3;
 
 const STATUSES = statuses as unknown as Record<string, Status>;
 
 /**
  * Every photograph of a product — the same slug is filed in more than one catalogue, and each one
- * captured a different set of frames. Pooling them gives a colourway the widest choice of
- * complete photographs, so a dye the Activewear capture shot as a crop can still lead with the
- * full-length pose the New Arrivals capture holds. Each slug's frames are listed complete first
- * and, among those, with the frames that hold the model's feet ahead of the closer crops, so a
- * card leads with the most complete photograph the colourway owns. Built by the scan in
- * docs/photos.md.
+ * captured a different set of frames. Pooling them gives a colourway the widest choice of complete
+ * photographs, so a dye one capture shot waist-up can still lead with the full-length pose another
+ * capture holds.
  */
 const POOL = pool as unknown as Record<string, string[]>;
-
-/**
- * Frames the reference storefront itself renders on its own product card, per colourway. Its
- * photography is the standard this storefront is measured against, so a frame it ships counts as
- * complete even when our own pose scan cannot prove it — a card never drops the reference's frame.
- */
-const REFERENCE_FRAMES = new Set(Object.keys((referenceCards as unknown as { frames: Record<string, number> }).frames));
-
-export function isReferenceCardFrame(src: string): boolean {
-  return REFERENCE_FRAMES.has(src);
-}
 
 export function pooledFrames(slug: string, own: string[]): string[] {
   const union = POOL[slug];
@@ -62,18 +56,32 @@ export function isProductOnly(category: string): boolean {
   return PRODUCT_ONLY_CATEGORIES.has(category);
 }
 
-export type FrameStatus = "whole" | "crop" | "unmeasured";
+export type FrameStatus = "whole" | "hem" | "flat" | "crop";
 
 export function frameStatus(src: string): FrameStatus {
-  if (REFERENCE_FRAMES.has(src)) return "whole";
   const status = STATUSES[src];
   if (status === 2) return "whole";
-  if (status === 0) return "crop";
-  return "unmeasured";
+  if (status === 1) return "hem";
+  if (status === 3) return "flat";
+  return "crop";
 }
 
-/** `true` when the scan proved the whole model is inside the frame. */
-export function isWholePose(src: string, _category?: string): boolean | null {
+/**
+ * What a surface renders: every frame that keeps the model's head inside the crop — complete
+ * figures first, then the head-to-hem shots as the pose a card swaps to when nothing else is left.
+ * A flat frame (no model at all) belongs to the surfaces that sell a product without a body in
+ * front of the camera. A crop is never handed out — unless it is all a colourway owns, because a
+ * dye the reference photographs is a colour this storefront still sells.
+ */
+function renderable(images: string[], category: string): string[] {
+  if (isProductOnly(category)) return [...images];
+  const frames = images.filter((src) => STATUSES[src] === 2 || STATUSES[src] === 1);
+  if (frames.length > 0) return frames;
+  return images.length > 0 ? [...images] : [];
+}
+
+/** `true` when the scan proved the whole model is inside the crop a surface applies. */
+export function isWholePose(src: string): boolean | null {
   const status = frameStatus(src);
   if (status === "whole") return true;
   if (status === "crop") return false;
@@ -81,13 +89,13 @@ export function isWholePose(src: string, _category?: string): boolean | null {
 }
 
 /**
- * The frames a surface may render: only photographs the scan proved complete. A product-only
- * still (a sock pack) carries no model to cut off and is kept as it is. A colourway with nothing
- * left returns an empty list, and the catalogue drops the row rather than showing a crop.
+ * The frames a surface may render: the complete figures it owns, or — when nothing reaches the
+ * feet — the frames that at least hold the head and the whole garment. A product-only still (a sock
+ * pack) carries no model to cut off and is kept as it is. A colourway with nothing renderable
+ * returns an empty list, and the catalogue drops the row rather than showing a crop.
  */
 export function displayFrames(images: string[], category: string): string[] {
-  if (isProductOnly(category)) return [...images];
-  return images.filter((src) => frameStatus(src) === "whole");
+  return renderable(images, category);
 }
 
 /** Every frame a card may swap to — which is every frame it may render. */
@@ -104,31 +112,40 @@ export type FrameSelection = {
 
 export function selectFrames(images: string[], category: string): FrameSelection {
   const ordered = displayFrames(images, category);
-  return { images: ordered, wholeCount: ordered.length, hero: ordered[0] ?? "", hover: ordered[1] ?? ordered[0] ?? "" };
+  return { images: ordered, wholeCount: ordered.filter((src) => frameStatus(src) === "whole").length, hero: ordered[0] ?? "", hover: ordered[1] ?? ordered[0] ?? "" };
+}
+
+/** `true` when a frame is one the scan found a cut-off model in, and the colourway owns a better shot. */
+export function isCutOff(src: string, siblings: string[] = [src]): boolean {
+  if (frameStatus(src) !== "crop") return false;
+  return siblings.some((other) => other !== src && frameStatus(other) !== "crop");
 }
 
 /**
- * The frame a card shows when the pointer or the keyboard lands on it: the next complete
- * photograph of the same colourway after `current`, wrapping around — and `""` when the colourway
- * has only one, because swapping to a crop is exactly what a card must not do.
+ * The frame a card shows when the pointer or the keyboard lands on it: the next renderable
+ * photograph of the same colourway, wrapping around. The data layer orders a colourway's frames so
+ * that consecutive entries are different poses, so "next" is always a change of pose — never the
+ * same shot reframed, and never a crop. `""` when the colourway owns one frame only: a card with a
+ * single photograph holds it, because inventing a second pose out of a zoom is exactly what a card
+ * must not do.
  */
 export function hoverFrame(images: string[], category: string, current: string): string {
-  const whole = displayFrames(images, category);
-  if (whole.length < 2) return "";
-  const index = whole.indexOf(current);
-  return whole[(index < 0 ? 0 : index + 1) % whole.length];
+  const frames = displayFrames(images, category);
+  if (frames.length < 2) return "";
+  const index = frames.indexOf(current);
+  return frames[(index < 0 ? 0 : index + 1) % frames.length];
 }
 
-/** A colourway stays only while it owns at least one complete photograph. */
+/** A colourway stays while it owns any photograph at all: the reference's own dye is not dropped. */
 export function hasUsablePhotography(images: string[], category: string): boolean {
-  if (isProductOnly(category)) return true;
-  return images.some((src) => frameStatus(src) === "whole");
+  void category;
+  return images.length > 0;
 }
 
-/** `2` a complete photograph, `0` a crop — the rank a card orders frames by. */
+/** `2` a complete figure, `1` head to hem, `0` a crop — the rank a card orders frames by. */
 export function frameRank(src: string): number {
-  const status = frameStatus(src);
-  return status === "whole" ? 2 : 0;
+  const status = STATUSES[src];
+  return status === 2 ? 2 : status === 1 ? 1 : status === 3 ? 3 : 0;
 }
 
 export function bestRank(images: string[]): number {

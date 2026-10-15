@@ -1,0 +1,1894 @@
+{
+  "note": "The prices the reference prints on its own cards, read from /collections/all over 8 pages by scripts/ingest-reference-prices.mjs.",
+  "prices": {
+    "organic-stretch-high-neck-tank-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-crossover-legging-jet-black": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-long-sleeve-top-jet-black": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-sports-bra-jet-black": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-zip-hoodie-mocha": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-oversized-sweatpant-mocha": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-scoop-bra-nori": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-full-length-legging-nori": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-high-neck-tank-mocha": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-crossover-legging-mocha": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-balsam": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-oversized-sweatpant-balsam": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-sweatpant-balsam": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-sweatpant-mocha": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pima-classic-tee-true-white": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ]
+    },
+    "organic-stretch-midi-legging-jet-black": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-long-sleeve-top-mocha": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-full-length-legging-mocha": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-straight-leg-sweatpant-balsam": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-midi-legging-with-pockets-jet-black": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-sports-bra-fig": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-midi-legging-fig": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-scoop-bra-fig": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-legging-fig": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-almond": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-almond": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-crop-racer-tank-fig": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-foldover-pant-fig": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-balsam": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-foldover-pant-jet-black": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-sports-bra-midnight": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-midi-legging-midnight": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "merino-boatneck-cardigan-jet-black": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-foldover-pant-jet-black": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-scoop-bra-midnight": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-legging-midnight": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-midnight": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-heather-oat": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-crop-racer-tank-midnight": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-foldover-pant-midnight": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-long-sleeve-top-midnight": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-crossover-legging-midnight": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-heather-oat": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-heather-oat": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-high-neck-tank-midnight": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-legging-jet-black": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "merino-boatneck-cardigan-marled-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-foldover-pant-marled-grey": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-wrap-top-marled-grey": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-headband-set-of-2-jet-black-marled-grey": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-pocket-hoodie-wisteria": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-straight-leg-sweatpant-wisteria": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-sports-bra-forest": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-crossover-legging-forest": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-zip-hoodie-bone": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-sweatpant-bone": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-wrap-top-peppercorn": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-wrap-top-jet-black": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-oversized-polo-bone": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-oversized-sweatpant-bone": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-oversized-sweatshirt-almond": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-pocket-hoodie-almond": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-boatneck-cardigan-peppercorn": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "merino-foldover-pant-peppercorn": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-sports-bra-nori": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-midi-legging-nori": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-zip-hoodie-jet-black": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-sweatpant-jet-black": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-heather-oat": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-forest": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-oversized-sweatpant-jet-black": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-sports-bra-mulberry": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-legging-mulberry": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-scoop-bra-mulberry": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-midi-legging-mulberry": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-zip-hoodie-heather-grey": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-sweatpant-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pima-shrunken-tee-heather-grey": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-layering-tank-heather-grey": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-fleece-oversized-polo-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-oversized-sweatpant-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-mocha": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-mocha": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-collared-half-zip-sweatshirt-heather-pine": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-waffle-sweatpant-heather-pine": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-pointelle-pant-sprig": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-cardigan-sprig": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-mocha": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-mocha": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-collared-half-zip-sweatshirt-lotus": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-sweatpant-lotus": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pima-layering-tank-bone": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-layering-tank-jet-black": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-waffle-crew-cardigan-lotus": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-straight-leg-sweatpant-lotus": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-oversized-polo-mocha": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-balsam": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pima-long-sleeve-tee-heather-grey": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-oversized-tee-heather-grey": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-fleece-oversized-sweatshirt-balsam": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-waffle-crew-cardigan-heather-pine": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-straight-leg-sweatpant-heather-pine": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-rosewater": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-rosewater": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-cardigan-midnight": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-tank-midnight": {
+      "priceUSD": 62,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pointelle-pant-midnight": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-baby-tee-sprig": {
+      "priceUSD": 72,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pointelle-tank-sprig": {
+      "priceUSD": 62,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-waffle-collared-half-zip-sweatshirt-marled-cloud": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-crew-cardigan-marled-cloud": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-waffle-sweatpant-marled-cloud": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-straight-leg-sweatpant-marled-cloud": {
+      "priceUSD": 148,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-tank-heather-oat": {
+      "priceUSD": 62,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pointelle-cardigan-heather-oat": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-pointelle-pant-heather-oat": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-pointelle-baby-tee-midnight": {
+      "priceUSD": 72,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pointelle-baby-tee-heather-oat": {
+      "priceUSD": 72,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-classic-tee-heather-grey": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-classic-tee-cobalt": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-stretch-scoop-bra-bone": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-scoop-bra-jet-black": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-sports-bra-heather-grey": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pima-shrunken-tee-cobalt": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-shrunken-tee-true-white": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-stretch-midi-legging-heather-grey": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-foldover-pant-heather-grey": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-foldover-pant-pebble": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pima-long-sleeve-tee-jet-black": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-long-sleeve-tee-true-white": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-oversized-tee-mocha": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-oversized-tee-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-stretch-cami-unitard-heather-grey": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-poplin-essential-pant-wisteria": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-heritage-jersey-track-pant-mulberry-tide": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-heritage-jersey-track-pant-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-heritage-jersey-track-pant-bone-balsam": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-heritage-jersey-track-pant-heather-grey-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-heritage-jersey-track-pant-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-scoop-bra-iris": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-scoop-bra-heather-grey": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-pant-halo": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-cardigan-golden": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-pant-golden": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-midi-legging-cove": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-crop-tank-heather-grey": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-scoop-bralette-heather-grey": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-high-waist-brief-heather-grey": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-triangle-bralette-heather-grey": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-mid-rise-bikini-heather-grey": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-cardigan-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-pant-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-pointelle-baby-tee-golden": {
+      "priceUSD": 72,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pointelle-baby-tee-heather-grey": {
+      "priceUSD": 72,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pointelle-baby-tee-halo": {
+      "priceUSD": 72,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-layering-tank-thyme": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-layering-tank-mocha": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-layering-tank-true-white": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-oversized-tee-true-white": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-shrunken-tee-mocha": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-shrunken-tee-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-shrunken-tee-bone": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-shrunken-tee-thyme": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-classic-tee-thyme": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-classic-tee-mocha": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-classic-tee-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-pima-classic-tee-bone": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-stretch-scoop-bra-pebble": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-bootcut-pant-pebble": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-midi-legging-zest": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-lightweight-terry-polo-ginger": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-lightweight-terry-polo-meringue": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-lightweight-terry-oversized-sweatshirt-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-lightweight-terry-oversized-sweatshirt-ginger": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "regenerative-hemp-boyfriend-tee-moonstone": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-cotton-sock-3-pack-natural": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Buy 2, Get 1 Free"
+      ]
+    },
+    "organic-cotton-sock-3-pack-natural-sage-sedona": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ]
+    },
+    "organic-stretch-midi-legging-with-pockets-pebble": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-half-zip-sweatshirt-bone": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-racer-tank-jet-black-1": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-half-zip-sweatshirt-heather-grey": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-pocket-short-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-unitard-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-v-neck-bra-bone": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-v-neck-bra-pebble": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-relaxed-pocket-sweatpant-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-biker-short-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-pocket-legging-jet-black": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-pocket-legging-pebble": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-relaxed-pocket-sweatpant-heather-grey": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-midi-legging-pebble": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-sports-bra-pebble": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-sports-bra-bone": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-racer-tank-pebble": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-biker-short-bone": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-racer-tank-bone-1": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-biker-short-pebble": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "fleece-wide-leg-pant-jet-black": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-pocket-short-pebble": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-relaxed-pocket-sweatpant-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-triangle-bralette-jet-black": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-triangle-bralette-sand": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-scoop-bralette-sand": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-unitard-jet-black": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-relaxed-pocket-sweatpant-mushroom": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-relaxed-pocket-sweatpant-midnight": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-crop-tank-jet-black": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-scoop-bralette-bone": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-triangle-bralette-bone": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-scoop-bralette-jet-black": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-wide-leg-pant-bone": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-crop-tank-bone": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-triangle-bralette-espresso": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-scoop-bralette-espresso": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-fleece-sweatpant-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-half-zip-sweatshirt-jet-black": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-cami-jet-black": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-wide-leg-pant-midnight": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-crop-tank-espresso": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-mid-rise-bikini-jet-black": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-cami-bone": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-unitard-pebble": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-half-zip-sweatshirt-midnight": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "fleece-wide-leg-pant-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-mid-rise-bikini-bone": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-mid-rise-bikini-espresso": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-mid-rise-bikini-sand": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "regenerative-hemp-classic-crew-fir": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "regenerative-hemp-relaxed-crop-tee-flax": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-cotton-trouser-sock-bone": {
+      "priceUSD": 31,
+      "compareAtUSD": 48,
+      "badges": [
+        "35% OFF"
+      ]
+    },
+    "organic-comfort-high-waist-brief-sand": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "regenerative-hemp-classic-crew-mineral": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "regenerative-hemp-classic-crew-true-white": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-comfort-cami-espresso": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-cotton-trouser-sock-bone-conch-raffia": {
+      "priceUSD": 31,
+      "compareAtUSD": 48,
+      "badges": [
+        "35% OFF"
+      ]
+    },
+    "organic-comfort-high-waist-brief-espresso": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "regenerative-hemp-muscle-tank-true-white": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "regenerative-hemp-relaxed-crop-tee-mineral": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-comfort-cami-sand": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-high-waist-brief-bone": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "regenerative-hemp-muscle-tank-mineral": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "regenerative-hemp-relaxed-crop-tee-fir": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-comfort-crop-tank-sand": {
+      "priceUSD": 44,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-midi-legging-mocha": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "regenerative-hemp-muscle-tank-fir": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "organic-fleece-v-neck-sweatshirt-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-straight-leg-sweatpant-heather-grey": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-v-neck-bra-mocha": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-midi-legging-forest": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-legging-pebble": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-relaxed-pocket-sweatpant-forest": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-straight-leg-sweatpant-pebble": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-pocket-legging-forest": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-bootcut-pant-jet-black": {
+      "priceUSD": 108,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-v-neck-bra-jet-black": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-biker-short": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-cotton-sock-5-pack-bone-forest-maple-jet-black-birch": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ]
+    },
+    "organic-fleece-pocket-hoodie-bone": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-pocket-hoodie-jet-black": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-pocket-hoodie-heather-grey": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-boyfriend-sweatshirt-mushroom": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-relaxed-crewneck-sweatshirt-pebble": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-boyfriend-sweatshirt-bone": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-boyfriend-sweatshirt-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-boyfriend-sweatshirt-jet-black": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-boyfriend-sweatshirt-midnight": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-jet-black": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-pebble": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-heather-grey": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-fleece-cropped-half-zip-sweatshirt-bone": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-racer-tank-forest": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-full-length-legging-forest": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-racer-tank-mocha": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-sports-bra-mocha": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-cotton-sock-5-pack-natural": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Buy 2, Get 1 Free"
+      ]
+    },
+    "organic-comfort-high-waist-brief-3-pack-bone-sand-espresso": {
+      "priceUSD": 67,
+      "compareAtUSD": 84,
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ]
+    },
+    "take-back-bag-1": {
+      "priceUSD": 20,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller",
+        "Buy 3+ and Get Free Shipping"
+      ]
+    },
+    "tencel-sleep-boyfriend-tee-forest": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-high-waist-brief-jet-black": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-biker-short-4-bone": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "tencel-sleep-boyfriend-tee-mocha": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-half-zip-sweatshirt-forest": {
+      "priceUSD": 158,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-biker-short-4-jet-black": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-stretch-biker-short-4-pebble": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "organic-fleece-boyfriend-sweatshirt-forest": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "tencel-sleep-boxer-short-heather-oat": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "tencel-sleep-wide-leg-pant-heather-oat": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "tencel-sleep-boxer-short-forest": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "tencel-sleep-wide-leg-pant-forest": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "tencel-sleep-wide-leg-pant-mocha": {
+      "priceUSD": 98,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "tencel-sleep-boxer-short-mocha": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "tencel-sleep-boyfriend-tee-heather-oat": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": [
+        "Best Seller"
+      ]
+    },
+    "mens-fleece-hoodie-heather-grey": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-organic-heavyweight-cotton-relaxed-tee-jet-black": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "mens-organic-heavyweight-cotton-relaxed-tee-bone": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "mens-organic-fleece-relaxed-fit-sweatpant-midnignt": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-fleece-crew-neck-sweatshirt-jet-black": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-fleece-sweatpant-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-fleece-crew-neck-sweatshirt-heather-grey": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-organic-heavyweight-cotton-relaxed-tee-heather-grey": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "mens-fleece-sweatpant-heather-grey": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-fleece-hoodie-bone": {
+      "priceUSD": 138,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-fleece-crew-neck-sweatshirt-bone": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mens-organic-heavyweight-cotton-relaxed-tee-true-white": {
+      "priceUSD": 78,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "mini-organic-cotton-classic-tee-bone": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "mini-organic-cotton-classic-tee-forest": {
+      "priceUSD": 28,
+      "compareAtUSD": null,
+      "badges": [
+        "Bundle + Save"
+      ]
+    },
+    "mini-organic-fleece-hoodie-bone": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-hoodie-forest": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-sweatpant-coffee": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-lightweight-terry-raglan-sweatshirt-rose": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-sweatpant-bone": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-hoodie-coffee": {
+      "priceUSD": 58,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-lightweight-terry-raglan-sweatshirt-lichen": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-crew-neck-sweatshirt-bone": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-crew-neck-sweatshirt-coffee": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-crew-neck-sweatshirt-forest": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "mini-organic-fleece-sweatpant-forest": {
+      "priceUSD": 48,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-crop-racer-tank-heather-grey": {
+      "priceUSD": 68,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-stretch-midi-legging-chili-oil": {
+      "priceUSD": 88,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-waffle-crew-top-heather-grey": {
+      "priceUSD": 96,
+      "compareAtUSD": 138,
+      "badges": [
+        "30% OFF"
+      ]
+    },
+    "organic-lightweight-terry-sweatpants-ginger": {
+      "priceUSD": 128,
+      "compareAtUSD": null,
+      "badges": []
+    },
+    "organic-comfort-mid-rise-bikini-3-pack-bone-sand-espresso": {
+      "priceUSD": 67,
+      "compareAtUSD": 84,
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ]
+    },
+    "organic-comfort-high-waist-brief-3-pack-jet-black": {
+      "priceUSD": 67,
+      "compareAtUSD": 84,
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ]
+    },
+    "organic-comfort-mid-rise-bikini-3-pack-jet-black": {
+      "priceUSD": 67,
+      "compareAtUSD": 84,
+      "badges": [
+        "Best Seller",
+        "20% OFF"
+      ]
+    }
+  }
+}

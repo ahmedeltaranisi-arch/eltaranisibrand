@@ -59,7 +59,7 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
   }
 
   return (
-    <article className="na-product-card product-reveal-card" data-product-slug={active.slug} data-default-slug={product.slug} data-price={active.priceLE}>
+    <article className="na-product-card product-reveal-card" data-product-slug={active.slug} data-default-slug={product.slug} data-price={active.priceLE} data-compare-at={active.compareAtLE ?? ""}>
       <div className="na-product-media-frame">
         <Link
           href={`/products/${active.slug}`}
@@ -91,8 +91,8 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
           {/* Local WebP photographs preserve the correct garment, dye and model pose. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={hero} alt={`${title} — ${color}`} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} width={900} height={1200} draggable={false} />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           {alternate && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img src={alternate} alt="" aria-hidden="true" className={`na-product-hover-image ${previewAlternate ? "is-visible" : ""}`} loading="lazy" width={900} height={1200} draggable={false} />
           )}
         </Link>
@@ -107,7 +107,14 @@ export default function MateProductCard({ product, priority = false, onQuickAdd,
         )}
       </div>
       <h3 className="na-product-title"><Link href={`/products/${active.slug}`}>{title}</Link></h3>
-      <p className="na-product-price">{formatLE(active.priceLE)}</p>
+      <p className="na-product-price">
+        {active.compareAtLE
+          // A colourway the reference discounts prints the price it usually costs, struck through,
+          // in front of the sale price — the same two numbers, in the same order, on the same line.
+          ? <s className="na-product-compare-price">{formatLE(active.compareAtLE)}</s>
+          : null}
+        <span className="na-product-current-price">{formatLE(active.priceLE)}</span>
+      </p>
       {/* The reference prints the swatch rail under the price and the quick-add last. */}
       <div className={`na-swatches ${expanded ? "is-expanded" : ""}`} role="group" aria-label={t("colorLabel")}>
         {colorways.map((colorway) => (

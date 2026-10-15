@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/navigation";
-import { NAV } from "./ArrivalHeader";
 import { SHOP_ALL_DYES, SHOP_ALL_FABRICS, SHOP_ALL_MEGA_TILES } from "@/lib/shopAll";
 
 /**
@@ -84,15 +83,10 @@ export default function ArrivalMegaMenu({ label, href, variant = "activewear" }:
   const timer = useRef<number | null>(null);
   const wrap = useRef<HTMLDivElement>(null);
 
-  const links =
-    variant === "clothing"
-      ? [...CLOTHING_CATEGORY_LINKS.map((link) => link.href), ...CLOTHING_COLLECTION_LINKS.map((link) => link.href)]
-      : [...MEGA_CATEGORY_LINKS.map((link) => link.href), ...MEGA_COLORS.map((link) => link.href), ...MEGA_COLLECTION_LINKS.map((link) => link.href)];
-  // The dot marks one destination. A page inside this panel marks the label, but a page that is
-  // also a top-level destination of its own (Activewear, Intimates) keeps its own dot and never
-  // lights this label twice.
-  const ownedElsewhere = NAV.some(([, navHref]) => pathname === navHref || pathname.startsWith(`${navHref}/`));
-  const current = pathname === href || (links.includes(pathname) && !ownedElsewhere);
+  // The dot marks the label of the page you are standing on, and nothing else. A page this panel
+  // happens to list (a Tees shelf, a Sale shelf, Best Sellers) lights its own label or none at all,
+  // so two labels never carry a dot and a label never looks current from elsewhere.
+  const current = pathname === href || pathname.startsWith(`${href}/`);
 
   useEffect(() => {
     if (!open) return;

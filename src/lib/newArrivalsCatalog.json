@@ -5,7 +5,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "fig",
@@ -15,11 +15,9 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/3adca8faaab4.webp",
-      "/img/new-arrivals/4539b2ce3373.webp",
-      "/img/new-arrivals/e804f24f607d.webp",
-      "/img/new-arrivals/1965f7c2173c.webp",
-      "/img/new-arrivals/0da5c71f3222.webp"
+      "/img/mate/dc9b8a1819cbc961.webp",
+      "/img/mate/f532f9a3da982b5b.webp",
+      "/img/mate/b349569ff7f39360.webp"
     ],
     "sizes": [
       "XS",
@@ -64,7 +62,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "fig",
@@ -74,11 +72,10 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/edea28664f0a.webp",
-      "/img/new-arrivals/20651fbbbe39.webp",
-      "/img/new-arrivals/986ef66c2fe2.webp",
-      "/img/new-arrivals/82eedcd5d80e.webp",
-      "/img/new-arrivals/bfa27e8f565f.webp"
+      "/img/mate/0f8c42f564bfe2ed.webp",
+      "/img/mate/aab4f4d35b631a3c.webp",
+      "/img/mate/5d3db293920a930d.webp",
+      "/img/mate/54bfc1a612c84a70.webp"
     ],
     "sizes": [
       "XS",
@@ -125,7 +122,7 @@
     "title": "Organic Stretch Crossover Legging",
     "style": "organic-stretch-crossover-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "jet-black",
@@ -135,11 +132,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/c047dec03e6b.webp",
-      "/img/new-arrivals/9704b5c9c90f.webp",
-      "/img/new-arrivals/066128d92331.webp",
-      "/img/new-arrivals/b4f1381e0ca7.webp",
-      "/img/new-arrivals/37168e7f88ae.webp"
+      "/img/mate/dfd63fc8510d2c99.webp",
+      "/img/mate/56c6b1073a9cb68a.webp",
+      "/img/mate/f500411c35746551.webp",
+      "/img/mate/37aa1e843a08cbc5.webp"
     ],
     "sizes": [
       "XS",
@@ -176,7 +172,7 @@
     "title": "Organic Stretch High Neck Tank",
     "style": "organic-stretch-high-neck-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "jet-black",
@@ -186,11 +182,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/524f60f44e22.webp",
-      "/img/new-arrivals/47899a1438cf.webp",
-      "/img/new-arrivals/ff5a83fe8399.webp",
-      "/img/new-arrivals/28c00b362836.webp",
-      "/img/new-arrivals/01d18ecd61f8.webp"
+      "/img/mate/e892cf0b434ac358.webp",
+      "/img/mate/89c788fefa3a2a7d.webp",
+      "/img/mate/f2b99dbb772f9e29.webp",
+      "/img/aw/804aa2b242ed.webp"
     ],
     "sizes": [
       "XS",
@@ -226,7 +221,7 @@
     "title": "Organic Stretch Long Sleeve Top",
     "style": "organic-stretch-long-sleeve-top",
     "category": "activewear-tops",
-    "priceUSD": 78.0,
+    "priceUSD": 78,
     "priceLE": 5976,
     "color": {
       "name": "jet-black",
@@ -236,11 +231,9 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/f2845ad24823.webp",
-      "/img/new-arrivals/e37558833dac.webp",
-      "/img/new-arrivals/7d278255e2b4.webp",
-      "/img/new-arrivals/e1114f67159c.webp",
-      "/img/new-arrivals/f45498405b75.webp"
+      "/img/mate/74f23da37177f3ef.webp",
+      "/img/mate/0a41985b9d036875.webp",
+      "/img/mate/20d1a0facdc78874.webp"
     ],
     "sizes": [
       "XS",
@@ -276,7 +269,7 @@
     "title": "Organic Fleece Zip Hoodie",
     "style": "organic-fleece-zip-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "mocha",
@@ -286,11 +279,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/4b90f31171e7.webp",
-      "/img/new-arrivals/3fa6ec5e00ab.webp",
-      "/img/new-arrivals/b37a1e527238.webp",
-      "/img/new-arrivals/fcb6f5b4cb78.webp",
-      "/img/new-arrivals/4d340b19a18a.webp"
+      "/img/mate/c9eea451ae3da24d.webp",
+      "/img/mate/cec0c1c5d10eadae.webp",
+      "/img/mate/50f4612a90dfae75.webp",
+      "/img/new-arrivals/b37a1e527238.webp"
     ],
     "sizes": [
       "XS",
@@ -327,7 +319,7 @@
     "title": "Organic Fleece Oversized Sweatpant",
     "style": "organic-fleece-oversized-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "mocha",
@@ -337,11 +329,11 @@
       "group": "Brown"
     },
     "images": [
+      "/img/mate/df5ac8ed3d8945e4.webp",
+      "/img/mate/8c7596978aaa7b77.webp",
       "/img/new-arrivals/79d74f60a6db.webp",
-      "/img/new-arrivals/c545a6817122.webp",
-      "/img/new-arrivals/1f3027d64088.webp",
-      "/img/new-arrivals/96bd5ba42d37.webp",
-      "/img/new-arrivals/86f9c2b24ca0.webp"
+      "/img/mate/b3baddae83048334.webp",
+      "/img/new-arrivals/1f3027d64088.webp"
     ],
     "sizes": [
       "XS",
@@ -379,7 +371,7 @@
     "title": "Organic Stretch Long Sleeve Top",
     "style": "organic-stretch-long-sleeve-top",
     "category": "activewear-tops",
-    "priceUSD": 78.0,
+    "priceUSD": 78,
     "priceLE": 5976,
     "color": {
       "name": "midnight",
@@ -389,11 +381,12 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/50316aa43e1b.webp",
-      "/img/new-arrivals/34b12efde0f7.webp",
-      "/img/new-arrivals/48259e2b3707.webp",
-      "/img/new-arrivals/9fe5b0b6c737.webp",
-      "/img/new-arrivals/605cdbdac509.webp"
+      "/img/mate/a3404c98aa0e5847.webp",
+      "/img/mate/04164f3cefb100e5.webp",
+      "/img/mate/90bcb5e5c3e5fe2d.webp",
+      "/img/mate/130bbd12d9f5200d.webp",
+      "/img/mate/2a24df6c864f837b.webp",
+      "/img/mate/bad14dc881e4f62c.webp"
     ],
     "sizes": [
       "XS",
@@ -431,7 +424,7 @@
     "title": "Organic Stretch Crossover Legging",
     "style": "organic-stretch-crossover-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "midnight",
@@ -441,11 +434,10 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/a4dc165c180b.webp",
-      "/img/new-arrivals/b56ceec02d77.webp",
-      "/img/new-arrivals/78d846f72fb5.webp",
-      "/img/new-arrivals/1b31872aa498.webp",
-      "/img/new-arrivals/c17d9c27190f.webp"
+      "/img/mate/cd28d90cde9d1285.webp",
+      "/img/mate/ba13e794aee99500.webp",
+      "/img/mate/2b50a8c2b67c5056.webp",
+      "/img/mate/7adf30a4ae54dc70.webp"
     ],
     "sizes": [
       "XS",
@@ -482,7 +474,7 @@
     "title": "Organic Fleece Oversized Polo",
     "style": "organic-fleece-oversized-polo",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "mocha",
@@ -492,11 +484,12 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/89df79bbb3ff.webp",
-      "/img/new-arrivals/a2c02aa082ee.webp",
+      "/img/mate/b41f7a74c42d9d8a.webp",
       "/img/new-arrivals/c0f9ff8d2efa.webp",
-      "/img/new-arrivals/a9d08e700108.webp",
-      "/img/new-arrivals/ad01a12420f2.webp"
+      "/img/mate/95c69f02bbcee17a.webp",
+      "/img/mate/37e74fff476d956e.webp",
+      "/img/mate/c92d05db271b7fe8.webp",
+      "/img/new-arrivals/89df79bbb3ff.webp"
     ],
     "sizes": [
       "XS",
@@ -532,7 +525,7 @@
     "title": "Organic Fleece Cropped Sweatpant",
     "style": "organic-fleece-cropped-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "mocha",
@@ -542,11 +535,12 @@
       "group": "Brown"
     },
     "images": [
+      "/img/mate/829ddcb75eb35099.webp",
+      "/img/mate/bc8962223fbd0ffa.webp",
       "/img/new-arrivals/cdf2467c154c.webp",
+      "/img/mate/a120e146ad015660.webp",
       "/img/new-arrivals/d0496ada8243.webp",
-      "/img/new-arrivals/4183734c4674.webp",
-      "/img/new-arrivals/0f908fd868b0.webp",
-      "/img/new-arrivals/0286f1869d89.webp"
+      "/img/new-arrivals/0f908fd868b0.webp"
     ],
     "sizes": [
       "XS",
@@ -584,7 +578,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "midnight",
@@ -594,11 +588,10 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/480136feeb53.webp",
-      "/img/new-arrivals/9a2e48fe2b17.webp",
-      "/img/new-arrivals/7198038bec16.webp",
-      "/img/new-arrivals/5b0c51ce0b3f.webp",
-      "/img/new-arrivals/30346f86e2ec.webp"
+      "/img/mate/64ec6c80dd434692.webp",
+      "/img/mate/c47eb7113cd649f3.webp",
+      "/img/mate/2f11ebb2d2033090.webp",
+      "/img/mate/03e07cf3be365a7d.webp"
     ],
     "sizes": [
       "XS",
@@ -643,7 +636,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "midnight",
@@ -653,11 +646,10 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/187bc2c57e51.webp",
-      "/img/new-arrivals/3d7ce29b7e11.webp",
-      "/img/new-arrivals/0f5bdc7e37d0.webp",
-      "/img/new-arrivals/9a58e0f9ea58.webp",
-      "/img/new-arrivals/e53adb739f09.webp"
+      "/img/mate/84fc0add08e09250.webp",
+      "/img/mate/5ebc118140c81257.webp",
+      "/img/mate/51b5378572214821.webp",
+      "/img/mate/f8b198aaab3a22cb.webp"
     ],
     "sizes": [
       "XS",
@@ -704,7 +696,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "fig",
@@ -714,11 +706,9 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/460eb0366c03.webp",
-      "/img/new-arrivals/f63e73ef8863.webp",
-      "/img/new-arrivals/78812f59d5ee.webp",
-      "/img/new-arrivals/a39146b44408.webp",
-      "/img/new-arrivals/d325c9acb6df.webp"
+      "/img/mate/a2c856ac8186cecb.webp",
+      "/img/mate/0451a56a8ddf2d34.webp",
+      "/img/mate/bb12f83e079bdc0d.webp"
     ],
     "sizes": [
       "XS",
@@ -760,7 +750,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "fig",
@@ -770,11 +760,11 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/899cb6a17c59.webp",
-      "/img/new-arrivals/3fefd12c240d.webp",
+      "/img/mate/4d0ac54385f08880.webp",
+      "/img/mate/ab49c87fa37ef51f.webp",
+      "/img/mate/9ccdc80970c1b959.webp",
       "/img/new-arrivals/830f26668121.webp",
-      "/img/new-arrivals/3fb6f891bb89.webp",
-      "/img/new-arrivals/158dfb53f049.webp"
+      "/img/mate/af3c0eed68dd5e9c.webp"
     ],
     "sizes": [
       "XS",
@@ -817,7 +807,7 @@
     "title": "Organic Fleece Oversized Polo",
     "style": "organic-fleece-oversized-polo",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "bone",
@@ -827,11 +817,11 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/c5b151f17d1d.webp",
-      "/img/new-arrivals/96439206a706.webp",
-      "/img/new-arrivals/111ee1efcc84.webp",
-      "/img/new-arrivals/c814d679a421.webp",
-      "/img/new-arrivals/aa9b082e4e1d.webp"
+      "/img/mate/decbdc1fc1c8297d.webp",
+      "/img/mate/844500594c4671de.webp",
+      "/img/mate/0c280c5f2acadeb2.webp",
+      "/img/mate/79ad59425a6cfd73.webp",
+      "/img/mate/320a69dd3837eded.webp"
     ],
     "sizes": [
       "XS",
@@ -867,7 +857,7 @@
     "title": "Organic Fleece Cropped Sweatpant",
     "style": "organic-fleece-cropped-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "bone",
@@ -877,11 +867,9 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/b276eafe8157.webp",
+      "/img/mate/37a8ba7eb2b4ef89.webp",
       "/img/new-arrivals/7991a05b8a64.webp",
-      "/img/new-arrivals/9ebaf8b3345d.webp",
-      "/img/new-arrivals/7067c6ab99f1.webp",
-      "/img/new-arrivals/1928031bfdc4.webp"
+      "/img/mate/b10dde2ac6ae1cf7.webp"
     ],
     "sizes": [
       "XS",
@@ -919,7 +907,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "mocha",
@@ -929,11 +917,13 @@
       "group": "Brown"
     },
     "images": [
+      "/img/mate/0aba316468c469a9.webp",
+      "/img/mate/8470ae7471063c65.webp",
+      "/img/mate/215e128c1630eba4.webp",
+      "/img/mate/9fadb43651ffffd1.webp",
       "/img/new-arrivals/5c1a20ce4e8f.webp",
       "/img/new-arrivals/c5942601badd.webp",
-      "/img/new-arrivals/510d9ffa0eb2.webp",
-      "/img/new-arrivals/a2b8fb9327c0.webp",
-      "/img/new-arrivals/469454a4e64b.webp"
+      "/img/new-arrivals/a2b8fb9327c0.webp"
     ],
     "sizes": [
       "XS",
@@ -974,7 +964,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "mocha",
@@ -984,10 +974,8 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/817d419e3061.webp",
-      "/img/new-arrivals/92cb764bcf11.webp",
-      "/img/new-arrivals/a599db47829a.webp",
-      "/img/new-arrivals/1bc1430ad0af.webp"
+      "/img/mate/363db23e6d888e16.webp",
+      "/img/mate/caadb1bedb1ac90a.webp"
     ],
     "sizes": [
       "XS",
@@ -1031,7 +1019,7 @@
     "title": "Organic Stretch High Neck Tank",
     "style": "organic-stretch-high-neck-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "midnight",
@@ -1041,11 +1029,13 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/980ada503bb7.webp",
-      "/img/new-arrivals/cffd15f6407c.webp",
-      "/img/new-arrivals/c324b7869ee8.webp",
-      "/img/new-arrivals/867b6e90ef0d.webp",
-      "/img/new-arrivals/9b59ff049d33.webp"
+      "/img/mate/e2075a89520dee34.webp",
+      "/img/mate/6a5f96b47e7f84ea.webp",
+      "/img/new-arrivals/9b59ff049d33.webp",
+      "/img/mate/d680eb3d1eb5e2ca.webp",
+      "/img/mate/8afe04a3c2ed8322.webp",
+      "/img/mate/807230221274e626.webp",
+      "/img/aw/3c1d89c5112c.webp"
     ],
     "sizes": [
       "XS",
@@ -1081,7 +1071,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "midnight",
@@ -1091,11 +1081,11 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/8eeabcf5940e.webp",
-      "/img/new-arrivals/1a4839a0a3d2.webp",
-      "/img/new-arrivals/c45d179ddf58.webp",
-      "/img/new-arrivals/7868bab25935.webp",
-      "/img/new-arrivals/4420f763b03a.webp"
+      "/img/mate/d604aeafb7b75939.webp",
+      "/img/mate/0854c2a4a239ec6f.webp",
+      "/img/mate/fb8b91c19a4cce96.webp",
+      "/img/mate/708b9c8a47dc8178.webp",
+      "/img/mate/9139f60eaa6541ed.webp"
     ],
     "sizes": [
       "XS",
@@ -1136,7 +1126,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "balsam",
@@ -1146,11 +1136,11 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/6e6aa4b01409.webp",
-      "/img/new-arrivals/14ebef40265b.webp",
-      "/img/new-arrivals/2f498b943a77.webp",
-      "/img/new-arrivals/4b592d748d91.webp",
-      "/img/new-arrivals/19d60605aa3a.webp"
+      "/img/mate/06114ba0ebe95830.webp",
+      "/img/mate/5cea4808501a8914.webp",
+      "/img/mate/79f2ba899a963942.webp",
+      "/img/mate/e4fcf0fd5f6ce963.webp",
+      "/img/mate/a3090e76f3e1cc82.webp"
     ],
     "sizes": [
       "XS",
@@ -1193,7 +1183,7 @@
     "title": "Organic Fleece Oversized Sweatpant",
     "style": "organic-fleece-oversized-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "balsam",
@@ -1203,11 +1193,12 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/30a4e2c0ef76.webp",
+      "/img/mate/68cf05cf999fba5c.webp",
+      "/img/mate/56fa34b9caff54f9.webp",
+      "/img/mate/3a7b50f9ae297d7f.webp",
+      "/img/mate/8c6d1748b908a683.webp",
       "/img/new-arrivals/42dcad71c8d0.webp",
-      "/img/new-arrivals/d4385d2f1663.webp",
-      "/img/new-arrivals/e472e9d4b981.webp",
-      "/img/new-arrivals/feb1674a2dd8.webp"
+      "/img/new-arrivals/d4385d2f1663.webp"
     ],
     "sizes": [
       "XS",
@@ -1245,7 +1236,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "balsam",
@@ -1255,10 +1246,13 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/e537d536944c.webp",
+      "/img/mate/e77499d0f11575f7.webp",
+      "/img/mate/9cb60d9f57ece7cc.webp",
+      "/img/mate/3e9af3e227f32b69.webp",
       "/img/new-arrivals/59b3fc630b20.webp",
       "/img/new-arrivals/d4aa067faa46.webp",
-      "/img/new-arrivals/70805b657414.webp",
+      "/img/mate/56331855e4722239.webp",
+      "/img/mate/133996ce1ef476be.webp",
       "/img/new-arrivals/090cba19a3e2.webp"
     ],
     "sizes": [
@@ -1300,7 +1294,7 @@
     "title": "Organic Fleece Cropped Sweatpant",
     "style": "organic-fleece-cropped-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "balsam",
@@ -1310,11 +1304,10 @@
       "group": "Green"
     },
     "images": [
+      "/img/mate/3ce610ebaf7fd98a.webp",
+      "/img/mate/44a405517b1102c9.webp",
       "/img/new-arrivals/741c0ef8d921.webp",
-      "/img/new-arrivals/187e5bc716a5.webp",
-      "/img/new-arrivals/472ee65132e1.webp",
-      "/img/new-arrivals/e924a6fd02fc.webp",
-      "/img/new-arrivals/39170b40e223.webp"
+      "/img/new-arrivals/472ee65132e1.webp"
     ],
     "sizes": [
       "XS",
@@ -1352,7 +1345,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "midnight",
@@ -1362,11 +1355,9 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/fa252fc75f1d.webp",
-      "/img/new-arrivals/9e0e77094978.webp",
-      "/img/new-arrivals/58b5dbbafaf3.webp",
-      "/img/new-arrivals/2398ade947d2.webp",
-      "/img/new-arrivals/4a7d2991fcec.webp"
+      "/img/mate/f383a5bb9a2f0e37.webp",
+      "/img/mate/15a254048a183b32.webp",
+      "/img/mate/1c46b667798a88bd.webp"
     ],
     "sizes": [
       "XS",
@@ -1408,7 +1399,7 @@
     "title": "Organic Stretch Foldover Pant",
     "style": "organic-stretch-foldover-pant",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "midnight",
@@ -1418,11 +1409,9 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/fcbb487cf6ca.webp",
-      "/img/new-arrivals/25cd391b2360.webp",
-      "/img/new-arrivals/66e1a0fe8df2.webp",
-      "/img/new-arrivals/f3eddc460276.webp",
-      "/img/new-arrivals/60197d8781a7.webp"
+      "/img/mate/a00b6235bbbfbe2d.webp",
+      "/img/mate/ddebf15702f25b2b.webp",
+      "/img/mate/1c09929233670204.webp"
     ],
     "sizes": [
       "XS",
@@ -1460,7 +1449,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "mocha",
@@ -1470,11 +1459,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/ab7e7ddb1497.webp",
-      "/img/new-arrivals/1914ea011309.webp",
-      "/img/new-arrivals/b0036aa83fca.webp",
-      "/img/new-arrivals/feb078be43e0.webp",
-      "/img/new-arrivals/f9d8627501e8.webp"
+      "/img/mate/ecc3830b8d59b4c9.webp",
+      "/img/mate/966d74657496bf0f.webp",
+      "/img/mate/05489035c6a517d5.webp",
+      "/img/mate/c87892baa6af5804.webp"
     ],
     "sizes": [
       "XS",
@@ -1514,7 +1502,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "mocha",
@@ -1524,11 +1512,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/9e5a205b9339.webp",
-      "/img/new-arrivals/127261cca6b3.webp",
-      "/img/new-arrivals/38daf67f10d8.webp",
-      "/img/new-arrivals/8992290bd5e1.webp",
-      "/img/new-arrivals/3ffc9cfc16fd.webp"
+      "/img/mate/70f1ec33f56620c6.webp",
+      "/img/mate/79ffd243e5e4da1c.webp",
+      "/img/mate/c2e834a508babd33.webp",
+      "/img/new-arrivals/127261cca6b3.webp"
     ],
     "sizes": [
       "XS",
@@ -1572,7 +1559,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "fig",
@@ -1582,11 +1569,11 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/77ede56d38e9.webp",
-      "/img/new-arrivals/3ec3d6c66dbf.webp",
-      "/img/new-arrivals/297c98c303f0.webp",
-      "/img/new-arrivals/660c2100da98.webp",
-      "/img/new-arrivals/0c59426ff740.webp"
+      "/img/mate/79da6fe4c2feffc9.webp",
+      "/img/mate/378ce4aaca29501c.webp",
+      "/img/mate/930c5f2f35ac93a0.webp",
+      "/img/mate/3cf7b1aaae67ea73.webp",
+      "/img/mate/81dabac09cf82260.webp"
     ],
     "sizes": [
       "XS",
@@ -1630,7 +1617,7 @@
     "title": "Organic Stretch Foldover Pant",
     "style": "organic-stretch-foldover-pant",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "fig",
@@ -1640,11 +1627,10 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/a6d900ea53d5.webp",
-      "/img/new-arrivals/68ca67b62054.webp",
-      "/img/new-arrivals/6ec0609962a2.webp",
-      "/img/new-arrivals/d80b9adfe902.webp",
-      "/img/new-arrivals/bcf8efd98288.webp"
+      "/img/mate/1197cc96e509401d.webp",
+      "/img/mate/aca2c106699bf64e.webp",
+      "/img/mate/0452b4fc7cc65e7a.webp",
+      "/img/mate/59fd0fcca9272637.webp"
     ],
     "sizes": [
       "XS",
@@ -1682,7 +1668,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "rosewater",
@@ -1692,11 +1678,10 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/c5102671fb3d.webp",
-      "/img/new-arrivals/5136c69ecc62.webp",
-      "/img/new-arrivals/84a7b8db0150.webp",
-      "/img/new-arrivals/14197cc089b1.webp",
-      "/img/new-arrivals/501ae4550abd.webp"
+      "/img/mate/9f5ccf258ed1f541.webp",
+      "/img/mate/380d19b87bf32a37.webp",
+      "/img/mate/6ee051d2664f00c7.webp",
+      "/img/mate/fe2cfb3409438998.webp"
     ],
     "sizes": [
       "XS",
@@ -1736,7 +1721,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "rosewater",
@@ -1746,11 +1731,10 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/aa69015cd65f.webp",
-      "/img/new-arrivals/8e209e1f1ffe.webp",
-      "/img/new-arrivals/75096af2a8b2.webp",
-      "/img/new-arrivals/516324c58b0f.webp",
-      "/img/new-arrivals/7e760d9681c8.webp"
+      "/img/mate/8309bb60655ebf86.webp",
+      "/img/mate/27a165f8a6555684.webp",
+      "/img/mate/bb6b7c7a223bbe9c.webp",
+      "/img/mate/6d40546af96b38fe.webp"
     ],
     "sizes": [
       "XS",
@@ -1794,7 +1778,7 @@
     "title": "Organic Stretch Long Sleeve Top",
     "style": "organic-stretch-long-sleeve-top",
     "category": "activewear-tops",
-    "priceUSD": 78.0,
+    "priceUSD": 78,
     "priceLE": 5976,
     "color": {
       "name": "mocha",
@@ -1804,11 +1788,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/03e54345b0fa.webp",
-      "/img/new-arrivals/694d79ae0f45.webp",
-      "/img/new-arrivals/586260174306.webp",
-      "/img/new-arrivals/8afaca072318.webp",
-      "/img/new-arrivals/d155b554d863.webp"
+      "/img/mate/61935ae538baaed3.webp",
+      "/img/mate/f3eb1a3dda7776c2.webp",
+      "/img/mate/c95df68b22b22acc.webp",
+      "/img/mate/c201174414232ba9.webp"
     ],
     "sizes": [
       "XS",
@@ -1846,7 +1829,7 @@
     "title": "Organic Stretch Crossover Legging",
     "style": "organic-stretch-crossover-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "mocha",
@@ -1856,11 +1839,14 @@
       "group": "Brown"
     },
     "images": [
+      "/img/mate/f44bb355435c836e.webp",
+      "/img/mate/7d98fc30247750f8.webp",
+      "/img/mate/faf56f13e28365b2.webp",
+      "/img/mate/eea97da5ed3ef921.webp",
       "/img/new-arrivals/2cfec9728039.webp",
-      "/img/new-arrivals/8f8d4efe5d93.webp",
       "/img/new-arrivals/edf89e846e42.webp",
-      "/img/new-arrivals/b2aa99ac5380.webp",
-      "/img/new-arrivals/c82a5ab439f9.webp"
+      "/img/aw/f28558e7c0b7.webp",
+      "/img/mate/6ceac502eb5dc81e.webp"
     ],
     "sizes": [
       "XS",
@@ -1897,7 +1883,7 @@
     "title": "Organic Fleece Oversized Polo",
     "style": "organic-fleece-oversized-polo",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-grey",
@@ -1907,11 +1893,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/42b9296c7d2b.webp",
-      "/img/new-arrivals/8f92a7701857.webp",
-      "/img/new-arrivals/7eb71227a9d9.webp",
-      "/img/new-arrivals/d41bc9980571.webp",
-      "/img/new-arrivals/1862aaab1d25.webp"
+      "/img/mate/4078a3e88afa6eab.webp",
+      "/img/mate/e5cf8e13e759deb8.webp",
+      "/img/mate/0b87b050673a1ec2.webp",
+      "/img/mate/59a64ed457429ffa.webp",
+      "/img/mate/2a975a049b4d226b.webp"
     ],
     "sizes": [
       "XS",
@@ -1947,7 +1933,7 @@
     "title": "Organic Fleece Oversized Sweatpant",
     "style": "organic-fleece-oversized-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-grey",
@@ -1957,11 +1943,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/7b561ea58ab6.webp",
-      "/img/new-arrivals/55b1b495181f.webp",
+      "/img/mate/ee1257582b77a548.webp",
+      "/img/mate/52ac326cb499db4a.webp",
+      "/img/mate/ad597538499d2ff9.webp",
       "/img/new-arrivals/e328d20756b0.webp",
-      "/img/new-arrivals/9a8fdf564620.webp",
-      "/img/new-arrivals/29ca971bb762.webp"
+      "/img/mate/9751c24891d93d4a.webp"
     ],
     "sizes": [
       "XS",
@@ -1999,7 +1985,7 @@
     "title": "Organic Stretch Crossover Legging",
     "style": "organic-stretch-crossover-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "forest",
@@ -2009,11 +1995,11 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/2c6f88524233.webp",
-      "/img/new-arrivals/acac3cebd598.webp",
-      "/img/new-arrivals/3ca4bf20f4a7.webp",
-      "/img/new-arrivals/a329813765da.webp",
-      "/img/new-arrivals/2a868e683709.webp"
+      "/img/mate/454d21fa0e6d72a8.webp",
+      "/img/mate/3a295cf901455728.webp",
+      "/img/mate/d79f8e4298102fd7.webp",
+      "/img/mate/6a43865862155442.webp",
+      "/img/mate/1f83b4a81a4f0fd1.webp"
     ],
     "sizes": [
       "XS",
@@ -2050,7 +2036,7 @@
     "title": "Organic Fleece Zip Hoodie",
     "style": "organic-fleece-zip-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "jet-black",
@@ -2060,11 +2046,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/a6757f188caf.webp",
-      "/img/new-arrivals/99ab76fadbac.webp",
-      "/img/new-arrivals/ff9865c4952e.webp",
-      "/img/new-arrivals/77c82a542050.webp",
-      "/img/new-arrivals/63001ff06f23.webp"
+      "/img/mate/c733250da4717dc4.webp",
+      "/img/mate/75bbc9445ae33771.webp",
+      "/img/mate/ad57930d03343578.webp",
+      "/img/mate/4e4a689821ec77f8.webp",
+      "/img/mate/6f25ef4197a87ae0.webp"
     ],
     "sizes": [
       "XS",
@@ -2101,7 +2087,7 @@
     "title": "Organic Fleece Oversized Sweatpant",
     "style": "organic-fleece-oversized-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "jet-black",
@@ -2111,11 +2097,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/05062910f884.webp",
-      "/img/new-arrivals/a30b99207e06.webp",
-      "/img/new-arrivals/226e38dc1fb6.webp",
-      "/img/new-arrivals/e55bad3bb240.webp",
-      "/img/new-arrivals/f163c599a634.webp"
+      "/img/mate/06a8bcc5c28adc90.webp",
+      "/img/mate/d4c447a4de1574ad.webp",
+      "/img/mate/cdb3accb5f6b9422.webp",
+      "/img/mate/ef3c6da8e442401d.webp"
     ],
     "sizes": [
       "XS",
@@ -2153,7 +2138,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "midnight",
@@ -2163,11 +2148,12 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/66082e1266c4.webp",
-      "/img/new-arrivals/50816bf38e7e.webp",
-      "/img/new-arrivals/6b8e27957d64.webp",
-      "/img/new-arrivals/7e9c87dd8741.webp",
-      "/img/new-arrivals/40050ed51009.webp"
+      "/img/mate/a79bf12f71203284.webp",
+      "/img/mate/5234da35799871ec.webp",
+      "/img/mate/2ba59d02facd6402.webp",
+      "/img/mate/166e3c025fe169d9.webp",
+      "/img/mate/225bffac87feef41.webp",
+      "/img/aw/e854d7331cd7.webp"
     ],
     "sizes": [
       "XS",
@@ -2209,7 +2195,7 @@
     "title": "Organic Stretch High Neck Tank",
     "style": "organic-stretch-high-neck-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "mocha",
@@ -2219,11 +2205,12 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/e585a884dd9a.webp",
-      "/img/new-arrivals/9ab7f3fde30c.webp",
+      "/img/mate/1634dbfba7256d9e.webp",
+      "/img/mate/555e0105c6ccddb5.webp",
       "/img/new-arrivals/3573f67d56a7.webp",
       "/img/new-arrivals/5fe3ccbe2df8.webp",
-      "/img/new-arrivals/b0f533a64440.webp"
+      "/img/mate/cd5be98c7f43de39.webp",
+      "/img/mate/910e583ca6bf0384.webp"
     ],
     "sizes": [
       "XS",
@@ -2259,7 +2246,7 @@
     "title": "Organic Fleece Zip Hoodie",
     "style": "organic-fleece-zip-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "bone",
@@ -2269,11 +2256,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/5aa461d8bb09.webp",
-      "/img/new-arrivals/8fe936cdbd6a.webp",
-      "/img/new-arrivals/d177109f20bd.webp",
-      "/img/new-arrivals/a10ec740127d.webp",
-      "/img/new-arrivals/3fb36f7e45ff.webp"
+      "/img/mate/e4073b122671edb4.webp",
+      "/img/mate/1efe84836c124fd1.webp",
+      "/img/mate/f0aec34294f95bee.webp",
+      "/img/mate/762cc8b52a3bf571.webp"
     ],
     "sizes": [
       "XS",
@@ -2310,7 +2296,7 @@
     "title": "Organic Fleece Oversized Sweatpant",
     "style": "organic-fleece-oversized-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "bone",
@@ -2320,11 +2306,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/dcadcef27f25.webp",
-      "/img/new-arrivals/4415fd3183a0.webp",
-      "/img/new-arrivals/5744d4162f75.webp",
-      "/img/new-arrivals/6ddae3d49301.webp",
-      "/img/new-arrivals/4d017a18f0fa.webp"
+      "/img/mate/bcbd47373a458785.webp",
+      "/img/mate/88823766473c0eab.webp",
+      "/img/mate/52541c11bb3feef3.webp",
+      "/img/mate/cd3e0e55b6cdc734.webp"
     ],
     "sizes": [
       "XS",
@@ -2362,7 +2347,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "nori",
@@ -2372,11 +2357,8 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/9572824ab6a2.webp",
-      "/img/new-arrivals/c7d2fe36506e.webp",
-      "/img/new-arrivals/85c4008a9d20.webp",
-      "/img/new-arrivals/8554a082d739.webp",
-      "/img/new-arrivals/2406f2b3686d.webp"
+      "/img/mate/af352efdfce7c691.webp",
+      "/img/mate/85605ff6558ffb10.webp"
     ],
     "sizes": [
       "XS",
@@ -2421,7 +2403,7 @@
     "title": "Organic Fleece Zip Hoodie",
     "style": "organic-fleece-zip-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "heather-grey",
@@ -2431,11 +2413,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/17b8d4fffa6c.webp",
-      "/img/new-arrivals/645c0defa52a.webp",
-      "/img/new-arrivals/2e574c7c98de.webp",
-      "/img/new-arrivals/28f5c96761f5.webp",
-      "/img/new-arrivals/5748424e480f.webp"
+      "/img/mate/43ac88a3d352334f.webp",
+      "/img/mate/d5b6c048eeb88ba2.webp",
+      "/img/mate/11a5291ee3dd1950.webp",
+      "/img/mate/18c475074a06ced1.webp"
     ],
     "sizes": [
       "XS",
@@ -2472,7 +2453,7 @@
     "title": "Organic Fleece Cropped Sweatpant",
     "style": "organic-fleece-cropped-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-grey",
@@ -2482,11 +2463,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/317118bb6a50.webp",
-      "/img/new-arrivals/3015943d5d93.webp",
-      "/img/new-arrivals/875f23bbea5e.webp",
-      "/img/new-arrivals/469342fcec79.webp",
-      "/img/new-arrivals/eb9af74525e4.webp"
+      "/img/mate/35edb399ff59094e.webp",
+      "/img/mate/63b146b45d3818ec.webp",
+      "/img/mate/05404f8fab812426.webp",
+      "/img/mate/3c08fec982ed34c2.webp",
+      "/img/mate/ba3e415aaee1019c.webp"
     ],
     "sizes": [
       "XS",
@@ -2524,7 +2505,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "nori",
@@ -2534,11 +2515,8 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/0b1dd682f206.webp",
-      "/img/new-arrivals/5b255bb481de.webp",
-      "/img/new-arrivals/5e577b9e2cc9.webp",
-      "/img/new-arrivals/9143fd655f38.webp",
-      "/img/new-arrivals/3c4d2bc3d194.webp"
+      "/img/mate/c5d979b0de51e76f.webp",
+      "/img/mate/9359b80c05649fd3.webp"
     ],
     "sizes": [
       "XS",
@@ -2582,7 +2560,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "nori",
@@ -2592,11 +2570,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/b90800a313f7.webp",
-      "/img/new-arrivals/5b483af61658.webp",
-      "/img/new-arrivals/9bc8bb334e07.webp",
-      "/img/new-arrivals/d4fb98c90c60.webp",
-      "/img/new-arrivals/41dbaff2f910.webp"
+      "/img/mate/9baa5415e1bfaba1.webp",
+      "/img/mate/7630ced982a73e06.webp",
+      "/img/mate/631c1e36f6cf45db.webp",
+      "/img/mate/b0781f91d0c0e49f.webp"
     ],
     "sizes": [
       "XS",
@@ -2639,7 +2616,7 @@
     "title": "Organic Fleece Pocket Hoodie",
     "style": "organic-fleece-pocket-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "wisteria",
@@ -2649,11 +2626,10 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/3f2b1cf05ef5.webp",
-      "/img/new-arrivals/b03a45b71510.webp",
-      "/img/new-arrivals/6757c6d88231.webp",
-      "/img/new-arrivals/2cbe10a955ea.webp",
-      "/img/new-arrivals/5d5ae6797b36.webp"
+      "/img/mate/86ea9c32822591ca.webp",
+      "/img/mate/c648675f4d758329.webp",
+      "/img/mate/c204983cb74c5765.webp",
+      "/img/mate/1e8e10e632951c02.webp"
     ],
     "sizes": [
       "XS",
@@ -2692,7 +2668,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "wisteria",
@@ -2702,11 +2678,9 @@
       "group": "Purple"
     },
     "images": [
-      "/img/new-arrivals/07c344c4dd56.webp",
-      "/img/new-arrivals/dca86166cbec.webp",
-      "/img/new-arrivals/a2a724b4a9a0.webp",
-      "/img/new-arrivals/a1896baade7c.webp",
-      "/img/new-arrivals/33171d366397.webp"
+      "/img/mate/942dbca9b363c718.webp",
+      "/img/mate/fa115eda976c04b3.webp",
+      "/img/mate/31fe371c6259f656.webp"
     ],
     "sizes": [
       "XS",
@@ -2749,7 +2723,7 @@
     "title": "Merino Wrap Top",
     "style": "merino-wrap-top",
     "category": "sweaters",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "marled-grey",
@@ -2759,11 +2733,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/19f1da72f5ea.webp",
-      "/img/new-arrivals/5230adf5353f.webp",
-      "/img/new-arrivals/b864147e3f4f.webp",
-      "/img/new-arrivals/b96057a607f4.webp",
-      "/img/new-arrivals/c35d8f906fc3.webp"
+      "/img/mate/24545585c9ed061f.webp",
+      "/img/mate/e425d4b19a7cb9e9.webp",
+      "/img/mate/967215962d411092.webp",
+      "/img/mate/88d5ac343fd0ac41.webp",
+      "/img/mate/a23c59ec611385f9.webp"
     ],
     "sizes": [
       "XS",
@@ -2799,7 +2773,7 @@
     "title": "Merino Foldover Pant",
     "style": "merino-foldover-pant",
     "category": "pants",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "marled-grey",
@@ -2809,11 +2783,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/3686225a6b1e.webp",
-      "/img/new-arrivals/762eca683a2e.webp",
-      "/img/new-arrivals/065124a0d9b1.webp",
-      "/img/new-arrivals/2746204a595d.webp",
-      "/img/new-arrivals/16fdf2ddb11b.webp"
+      "/img/mate/851877ade9f0f937.webp",
+      "/img/mate/532b1bac369fa637.webp",
+      "/img/mate/2a606a8b2552d793.webp",
+      "/img/mate/9417174f4105190d.webp"
     ],
     "sizes": [
       "XS",
@@ -2849,7 +2822,7 @@
     "title": "Merino Wrap Top",
     "style": "merino-wrap-top",
     "category": "sweaters",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "jet-black",
@@ -2859,11 +2832,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/c28c72c3e3f4.webp",
-      "/img/new-arrivals/8c71d65b878e.webp",
-      "/img/new-arrivals/5c7960b4d75e.webp",
-      "/img/new-arrivals/34aae949f07f.webp",
-      "/img/new-arrivals/924baad7d5d3.webp"
+      "/img/mate/ea89ccad612b0f6f.webp",
+      "/img/mate/aec05cfaeae03313.webp",
+      "/img/mate/5071b22afa005c31.webp",
+      "/img/mate/d2d25ad146edd1b3.webp"
     ],
     "sizes": [
       "XS",
@@ -2901,7 +2873,7 @@
     "title": "Merino Foldover Pant",
     "style": "merino-foldover-pant",
     "category": "pants",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "jet-black",
@@ -2911,11 +2883,9 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/278e583d0c5e.webp",
-      "/img/new-arrivals/4dae1e2d44e6.webp",
-      "/img/new-arrivals/8b2f65184e6f.webp",
-      "/img/new-arrivals/9854d2c951b5.webp",
-      "/img/new-arrivals/7b211f89cf3e.webp"
+      "/img/mate/c152bd0375b7517e.webp",
+      "/img/mate/342538539bf80c22.webp",
+      "/img/mate/4b9aea043db6ca31.webp"
     ],
     "sizes": [
       "XS",
@@ -2953,7 +2923,7 @@
     "title": "Merino Boatneck Cardigan",
     "style": "merino-boatneck-cardigan",
     "category": "sweaters",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "peppercorn",
@@ -2963,11 +2933,11 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/00923c96c236.webp",
-      "/img/new-arrivals/1b8fc83f5409.webp",
-      "/img/new-arrivals/1f14b89923e4.webp",
-      "/img/new-arrivals/1f388d41bb3a.webp",
-      "/img/new-arrivals/548fd16469f1.webp"
+      "/img/mate/effba913ab68fe50.webp",
+      "/img/mate/918e7e41903b490b.webp",
+      "/img/mate/94746d57382348bf.webp",
+      "/img/mate/864642e373a78a80.webp",
+      "/img/mate/9c65e58259ef144c.webp"
     ],
     "sizes": [
       "XS",
@@ -3003,7 +2973,7 @@
     "title": "Merino Foldover Pant",
     "style": "merino-foldover-pant",
     "category": "pants",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "peppercorn",
@@ -3013,11 +2983,10 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/9c4f0654579e.webp",
-      "/img/new-arrivals/12082eb9269a.webp",
-      "/img/new-arrivals/f0eae0ed3a85.webp",
-      "/img/new-arrivals/7be2264fa8df.webp",
-      "/img/new-arrivals/a598d9fc3e5f.webp"
+      "/img/mate/66c3c65baf81113f.webp",
+      "/img/mate/0c6f87bf1465d2af.webp",
+      "/img/mate/9996e44328961fd3.webp",
+      "/img/mate/27f7c6e66082f43e.webp"
     ],
     "sizes": [
       "XS",
@@ -3053,7 +3022,7 @@
     "title": "Organic Fleece Cropped Sweatpant",
     "style": "organic-fleece-cropped-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "jet-black",
@@ -3063,11 +3032,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/cc0ae22fd3f4.webp",
-      "/img/new-arrivals/ad0d2fd98333.webp",
-      "/img/new-arrivals/90b5443b855e.webp",
-      "/img/new-arrivals/d3aef256245f.webp",
-      "/img/new-arrivals/be931d95921c.webp"
+      "/img/mate/8fd32d7eb2e97193.webp",
+      "/img/mate/228dba4b77806b05.webp",
+      "/img/mate/85d4224d19e24949.webp",
+      "/img/mate/0d2c14f7b69b98fa.webp",
+      "/img/mate/2796e1321fa89b7c.webp"
     ],
     "sizes": [
       "XS",
@@ -3105,7 +3074,7 @@
     "title": "Organic Waffle Sweatpant",
     "style": "organic-waffle-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "heather-pine",
@@ -3115,10 +3084,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/c758a3dd487b.webp",
-      "/img/new-arrivals/b2bf2ac7b586.webp",
-      "/img/new-arrivals/982e974085e0.webp",
-      "/img/new-arrivals/9b4bc60f93f4.webp",
+      "/img/mate/9afb9357c0fc30d0.webp",
+      "/img/mate/ca618b4651c98f3e.webp",
+      "/img/mate/e2349e7322ef4829.webp",
+      "/img/mate/a0b966e11dfd5f16.webp",
       "/img/new-arrivals/105463d30001.webp"
     ],
     "sizes": [
@@ -3156,7 +3125,7 @@
     "title": "Organic Fleece Pocket Hoodie",
     "style": "organic-fleece-pocket-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "almond",
@@ -3166,11 +3135,11 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/41d17fa170b3.webp",
-      "/img/new-arrivals/e2b061a86754.webp",
-      "/img/new-arrivals/168690eba33b.webp",
-      "/img/new-arrivals/0ea92e2ba560.webp",
-      "/img/new-arrivals/d02a675606ef.webp"
+      "/img/mate/e45cb865cb681be7.webp",
+      "/img/mate/2d607fd19e4f0f9f.webp",
+      "/img/mate/1e7bd6fec00b9d58.webp",
+      "/img/mate/8cdec99b8398b4e7.webp",
+      "/img/mate/07e2cd183c857fd6.webp"
     ],
     "sizes": [
       "XS",
@@ -3209,7 +3178,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "almond",
@@ -3219,11 +3188,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/b4fe0ef920e4.webp",
-      "/img/new-arrivals/b24579451f85.webp",
-      "/img/new-arrivals/148b59801021.webp",
-      "/img/new-arrivals/3db55300d00f.webp",
-      "/img/new-arrivals/51e41dbe5209.webp"
+      "/img/mate/e8bb61fffc83e015.webp",
+      "/img/mate/3d2515d7fc3e28c4.webp",
+      "/img/mate/b30ede6c9cddc4a3.webp",
+      "/img/mate/0c6e7e86e291b711.webp"
     ],
     "sizes": [
       "XS",
@@ -3267,7 +3235,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "balsam",
@@ -3277,10 +3245,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/522e9737ec18.webp",
-      "/img/new-arrivals/0b6db1336af2.webp",
-      "/img/new-arrivals/cb2da370ae58.webp",
-      "/img/new-arrivals/c8571e283874.webp"
+      "/img/mate/ac8c5ba7ef5e35ae.webp",
+      "/img/mate/2fa770bd79b95bf7.webp",
+      "/img/mate/2f7bd34f073f243c.webp",
+      "/img/mate/5fe22f119f5dcb0b.webp"
     ],
     "sizes": [
       "XS",
@@ -3322,7 +3290,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "balsam",
@@ -3332,11 +3300,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/fe0a76f638d7.webp",
-      "/img/new-arrivals/950cf39c6341.webp",
-      "/img/new-arrivals/33c9ffd35409.webp",
-      "/img/new-arrivals/df869695987f.webp",
-      "/img/new-arrivals/04085b2f1525.webp"
+      "/img/mate/ef674853be70be0e.webp",
+      "/img/mate/9d4b984ddaf4e97f.webp",
+      "/img/mate/abd12999bcb38a6e.webp",
+      "/img/mate/81293cb3e193c41b.webp"
     ],
     "sizes": [
       "XS",
@@ -3382,7 +3349,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "heather-oat",
@@ -3392,11 +3359,9 @@
       "group": "Beige"
     },
     "images": [
-      "/img/new-arrivals/866a84f13014.webp",
-      "/img/new-arrivals/dfd19e227642.webp",
-      "/img/new-arrivals/8873359d85b5.webp",
-      "/img/new-arrivals/be4538a992b6.webp",
-      "/img/new-arrivals/331f60c264df.webp"
+      "/img/mate/7739b55d857a960a.webp",
+      "/img/mate/9cbf0f70342811d4.webp",
+      "/img/mate/00a5d01c5a7d28fb.webp"
     ],
     "sizes": [
       "XS",
@@ -3437,7 +3402,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "heather-oat",
@@ -3447,11 +3412,10 @@
       "group": "Beige"
     },
     "images": [
-      "/img/new-arrivals/703d449e2bc1.webp",
-      "/img/new-arrivals/52dcbeb7759c.webp",
+      "/img/mate/0aec70510f3ccb22.webp",
+      "/img/mate/74b71ba7abd51f91.webp",
       "/img/new-arrivals/7b7214b5c8f4.webp",
-      "/img/new-arrivals/2e3be19e0d86.webp",
-      "/img/new-arrivals/bec2e9703411.webp"
+      "/img/mate/e4a74555b4d105cf.webp"
     ],
     "sizes": [
       "XS",
@@ -3495,7 +3459,7 @@
     "title": "Merino Boatneck Cardigan",
     "style": "merino-boatneck-cardigan",
     "category": "sweaters",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "jet-black",
@@ -3505,11 +3469,9 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/c86612967ecd.webp",
-      "/img/new-arrivals/c9654093bd22.webp",
-      "/img/new-arrivals/19741f21c0f9.webp",
-      "/img/new-arrivals/2f01734601e8.webp",
-      "/img/new-arrivals/ea76271eb744.webp"
+      "/img/mate/8e54f994fcd1e64a.webp",
+      "/img/mate/6595a04e80e8555e.webp",
+      "/img/mate/4b5d6ce9c166229f.webp"
     ],
     "sizes": [
       "XS",
@@ -3545,7 +3507,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "nori",
@@ -3555,11 +3517,11 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/4fef0ca00a84.webp",
-      "/img/new-arrivals/d467f26f8dc4.webp",
-      "/img/new-arrivals/0d3eb9127b76.webp",
-      "/img/new-arrivals/f2440593a625.webp",
-      "/img/new-arrivals/5c9be7ee3993.webp"
+      "/img/mate/e4998712459ddd4b.webp",
+      "/img/mate/bcc527153bcb14c1.webp",
+      "/img/mate/edc5c620a14827fa.webp",
+      "/img/mate/7e726130f13755dd.webp",
+      "/img/mate/cdf5297f6090fa31.webp"
     ],
     "sizes": [
       "XS",
@@ -3604,7 +3566,7 @@
     "title": "Merino Wrap Top",
     "style": "merino-wrap-top",
     "category": "sweaters",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "peppercorn",
@@ -3614,11 +3576,9 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/aec2fcc3517a.webp",
-      "/img/new-arrivals/bc89b2caf0d4.webp",
-      "/img/new-arrivals/7d10fbe743c0.webp",
-      "/img/new-arrivals/7ec54a37622a.webp",
-      "/img/new-arrivals/c49117636a3a.webp"
+      "/img/mate/a3417be4e8ac157f.webp",
+      "/img/mate/847b76f0af87bc5a.webp",
+      "/img/mate/3b2aef8524924f04.webp"
     ],
     "sizes": [
       "XS",
@@ -3654,7 +3614,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "balsam",
@@ -3664,11 +3624,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/ee07d555ed5a.webp",
-      "/img/new-arrivals/d865223280a4.webp",
-      "/img/new-arrivals/ba44494c7a8e.webp",
-      "/img/new-arrivals/143f2ae3e060.webp",
-      "/img/new-arrivals/def34a7b04cf.webp"
+      "/img/mate/78331fbf00f812f6.webp",
+      "/img/mate/5ecc640474de0f85.webp",
+      "/img/mate/4a706077f30b4ad5.webp",
+      "/img/mate/563d9e3f8cd96f4c.webp"
     ],
     "sizes": [
       "XS",
@@ -3714,7 +3673,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "almond",
@@ -3724,11 +3683,10 @@
       "group": "Beige"
     },
     "images": [
-      "/img/new-arrivals/e7c5ac129d82.webp",
-      "/img/new-arrivals/7d8cb55f6d9a.webp",
-      "/img/new-arrivals/5ac01cf008d4.webp",
-      "/img/new-arrivals/3c682bc37727.webp",
-      "/img/new-arrivals/2fa0f15a0ebe.webp"
+      "/img/mate/a6095b14ae700b75.webp",
+      "/img/mate/d63f8a293298a657.webp",
+      "/img/mate/92196bcd123d6d20.webp",
+      "/img/mate/64f65a538e9fb5e2.webp"
     ],
     "sizes": [
       "XS",
@@ -3769,7 +3727,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "almond",
@@ -3779,11 +3737,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/9f19f058787e.webp",
-      "/img/new-arrivals/9e724648467d.webp",
-      "/img/new-arrivals/db1554739b2c.webp",
-      "/img/new-arrivals/24ea33cd0f63.webp",
-      "/img/new-arrivals/84491ce49340.webp"
+      "/img/mate/04a187822e412a7f.webp",
+      "/img/mate/7bc38ea1d29b07f4.webp",
+      "/img/mate/6edfa0b36822bae8.webp",
+      "/img/mate/6b0e4d48474896ad.webp"
     ],
     "sizes": [
       "XS",
@@ -3827,7 +3784,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "heather-oat",
@@ -3837,11 +3794,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/66170597b5c9.webp",
-      "/img/new-arrivals/4c0a13afba86.webp",
-      "/img/new-arrivals/0f1d50c503c8.webp",
-      "/img/new-arrivals/3f6ecdab5a8d.webp",
-      "/img/new-arrivals/a5f6674dda18.webp"
+      "/img/mate/e90939ea5ba42476.webp",
+      "/img/mate/92c34f99819adfea.webp",
+      "/img/mate/76bdf4853b9d199f.webp",
+      "/img/mate/2b7bd9fc9175e287.webp"
     ],
     "sizes": [
       "XS",
@@ -3881,7 +3837,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "heather-oat",
@@ -3891,11 +3847,9 @@
       "group": "Beige"
     },
     "images": [
-      "/img/new-arrivals/9dfe37a618f8.webp",
-      "/img/new-arrivals/db29c10145ff.webp",
-      "/img/new-arrivals/0da1f76228bb.webp",
-      "/img/new-arrivals/db938a945a61.webp",
-      "/img/new-arrivals/5a7c10bc4367.webp"
+      "/img/mate/df9b7a195362edca.webp",
+      "/img/mate/f4058c515c6a530f.webp",
+      "/img/mate/d6b867959f1bccf5.webp"
     ],
     "sizes": [
       "XS",
@@ -3939,7 +3893,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "midnight",
@@ -3949,11 +3903,11 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/b7e21ac39e82.webp",
-      "/img/new-arrivals/1e59330b171d.webp",
-      "/img/new-arrivals/5c36ed9107b7.webp",
-      "/img/new-arrivals/94efa66b77c0.webp",
-      "/img/new-arrivals/315e77063533.webp"
+      "/img/mate/fa43dddff2a5b1df.webp",
+      "/img/mate/a64552242d1a7839.webp",
+      "/img/mate/8ef1674ef64a0710.webp",
+      "/img/mate/09c587c7317dd81a.webp",
+      "/img/mate/69ec1a5c9f27f3c0.webp"
     ],
     "sizes": [
       "XS",
@@ -3997,7 +3951,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "forest",
@@ -4007,11 +3961,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/d0077a315dd1.webp",
-      "/img/new-arrivals/5dcffe2afe9a.webp",
-      "/img/new-arrivals/c014c1dc0efa.webp",
-      "/img/new-arrivals/b868fd43d41e.webp",
-      "/img/new-arrivals/81f4f534dc12.webp"
+      "/img/mate/e60624a856c58048.webp",
+      "/img/mate/1187bfdf07ac3949.webp",
+      "/img/mate/131053783e744a1b.webp",
+      "/img/mate/835ad733150d151f.webp"
     ],
     "sizes": [
       "XS",
@@ -4055,7 +4008,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "forest",
@@ -4065,11 +4018,11 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/46b26471549a.webp",
-      "/img/new-arrivals/8cce97078cd6.webp",
-      "/img/new-arrivals/17ba2f471682.webp",
-      "/img/new-arrivals/a8b34402ee45.webp",
-      "/img/new-arrivals/3ca071e5d511.webp"
+      "/img/mate/3624b08d26108a5d.webp",
+      "/img/mate/20b8d56bd23753cf.webp",
+      "/img/mate/67c10e221c836b6b.webp",
+      "/img/mate/72602a51a7ac85d0.webp",
+      "/img/mate/92a57f23b906198c.webp"
     ],
     "sizes": [
       "XS",
@@ -4113,7 +4066,7 @@
     "title": "Merino Boatneck Cardigan",
     "style": "merino-boatneck-cardigan",
     "category": "sweaters",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "marled-grey",
@@ -4123,11 +4076,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/26437d61e162.webp",
-      "/img/new-arrivals/4b3998b56b24.webp",
-      "/img/new-arrivals/cb565c85a477.webp",
-      "/img/new-arrivals/ee4b54b146e8.webp",
-      "/img/new-arrivals/10c44f5d9ba7.webp"
+      "/img/mate/332ea24cfdf85fb0.webp",
+      "/img/mate/08ad0b87ee5aec2c.webp",
+      "/img/mate/87ec72f079589083.webp",
+      "/img/mate/afa77dc5028457c0.webp",
+      "/img/mate/20c92055605fcce7.webp"
     ],
     "sizes": [
       "XS",
@@ -4163,7 +4116,7 @@
     "title": "Merino Headband Set of 2",
     "style": "merino-headband-set-of-2",
     "category": "headbands",
-    "priceUSD": 48.0,
+    "priceUSD": 48,
     "priceLE": 3678,
     "color": {
       "name": "jet-black-marled-grey",
@@ -4173,11 +4126,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/cdedf663e587.webp",
-      "/img/new-arrivals/b6798fe2d979.webp",
-      "/img/new-arrivals/657f23c4ef79.webp",
-      "/img/new-arrivals/c6af7526f3fe.webp",
-      "/img/new-arrivals/bece59d42725.webp"
+      "/img/mate/ba9964fb42f1f8df.webp",
+      "/img/mate/e015a9b56a9e168e.webp",
+      "/img/mate/71b8a054e2663332.webp",
+      "/img/mate/95d3996a73f8029b.webp",
+      "/img/mate/c0e308ee894f951d.webp"
     ],
     "sizes": [
       "One Size"
@@ -4203,7 +4156,7 @@
     "title": "Organic Stretch Pocket Legging",
     "style": "organic-stretch-pocket-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "forest",
@@ -4213,11 +4166,11 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/0f264f4e5c31.webp",
-      "/img/new-arrivals/e601a143513a.webp",
-      "/img/new-arrivals/b2c9c96a50be.webp",
-      "/img/new-arrivals/678e1c040b12.webp",
-      "/img/new-arrivals/82ab495cd347.webp"
+      "/img/mate/ab47899c42fa9db0.webp",
+      "/img/mate/05c8e346a29869e0.webp",
+      "/img/mate/dcff03993826a6ad.webp",
+      "/img/aw/3de20fdc45fd.webp",
+      "/img/mate/a041f90b0cf8fec9.webp"
     ],
     "sizes": [
       "XS",
@@ -4253,7 +4206,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "mulberry",
@@ -4263,11 +4216,9 @@
       "group": "Red"
     },
     "images": [
-      "/img/new-arrivals/da65c6be4c06.webp",
-      "/img/new-arrivals/a2c399f0d506.webp",
-      "/img/new-arrivals/67f368d27d71.webp",
-      "/img/new-arrivals/59a67938f6c6.webp",
-      "/img/new-arrivals/1699493ebfe8.webp"
+      "/img/mate/02b9a072ef2b700a.webp",
+      "/img/mate/4d3f112017c04a4b.webp",
+      "/img/mate/7aa2c0a54052da59.webp"
     ],
     "sizes": [
       "XS",
@@ -4309,7 +4260,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "mulberry",
@@ -4319,11 +4270,11 @@
       "group": "Red"
     },
     "images": [
-      "/img/new-arrivals/f6e1f0a87735.webp",
-      "/img/new-arrivals/98a734bba74f.webp",
-      "/img/new-arrivals/eb50a5b8ffd2.webp",
-      "/img/new-arrivals/f4ea37326536.webp",
-      "/img/new-arrivals/0acc192d976f.webp"
+      "/img/mate/20f51cf271ce3a49.webp",
+      "/img/mate/7532d2d8b563ade5.webp",
+      "/img/mate/fc5fcf20bdb4432d.webp",
+      "/img/mate/64fee385f882f664.webp",
+      "/img/mate/de263b578a01fade.webp"
     ],
     "sizes": [
       "XS",
@@ -4368,7 +4319,7 @@
     "title": "Organic Waffle Collared Half-Zip Sweatshirt",
     "style": "organic-waffle-collared-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "lotus",
@@ -4378,11 +4329,10 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/e343b8302d76.webp",
-      "/img/new-arrivals/872143caf69c.webp",
-      "/img/new-arrivals/ce93880f6b8f.webp",
-      "/img/new-arrivals/716174a49261.webp",
-      "/img/new-arrivals/73631c0b8497.webp"
+      "/img/mate/4e96789fc64c80ec.webp",
+      "/img/mate/5443574c9648125b.webp",
+      "/img/mate/ae32ea81729c7f9e.webp",
+      "/img/mate/ed901eb9663aa10b.webp"
     ],
     "sizes": [
       "XS",
@@ -4417,7 +4367,7 @@
     "title": "Organic Waffle Sweatpant",
     "style": "organic-waffle-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "lotus",
@@ -4427,11 +4377,10 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/e17d56758571.webp",
-      "/img/new-arrivals/f0e196c70c68.webp",
-      "/img/new-arrivals/24b05b737aa3.webp",
-      "/img/new-arrivals/3364cebe0a05.webp",
-      "/img/new-arrivals/ec7c23dd3ec5.webp"
+      "/img/mate/4f27cf9b05976782.webp",
+      "/img/mate/6065951f97a71314.webp",
+      "/img/mate/c497117497ce4eac.webp",
+      "/img/mate/99f12170727647f5.webp"
     ],
     "sizes": [
       "XS",
@@ -4467,7 +4416,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "mulberry",
@@ -4477,10 +4426,9 @@
       "group": "Red"
     },
     "images": [
+      "/img/new-arrivals/7d01c56123af.webp",
       "/img/new-arrivals/2dfedccbabf8.webp",
       "/img/new-arrivals/f5ab15289e1f.webp",
-      "/img/new-arrivals/7d01c56123af.webp",
-      "/img/new-arrivals/192592e00f20.webp",
       "/img/new-arrivals/5d0ae262172c.webp"
     ],
     "sizes": [
@@ -4520,7 +4468,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "mulberry",
@@ -4530,11 +4478,11 @@
       "group": "Red"
     },
     "images": [
-      "/img/new-arrivals/f3bc5d0b9f9c.webp",
-      "/img/new-arrivals/481461b4e703.webp",
-      "/img/new-arrivals/4e0332939182.webp",
-      "/img/new-arrivals/67623f32c6d8.webp",
-      "/img/new-arrivals/42f91bd2637d.webp"
+      "/img/mate/9edff8c52fca6c11.webp",
+      "/img/mate/b04d6a920e982747.webp",
+      "/img/mate/72690ef289df8df9.webp",
+      "/img/mate/5fe087a9048e9ed3.webp",
+      "/img/mate/c2626b30b46c5178.webp"
     ],
     "sizes": [
       "XS",
@@ -4575,7 +4523,7 @@
     "title": "Organic Pointelle Cardigan",
     "style": "organic-pointelle-cardigan",
     "category": "t-shirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-oat",
@@ -4585,11 +4533,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/5e8b8f4e1918.webp",
-      "/img/new-arrivals/20bdd256c5b2.webp",
-      "/img/new-arrivals/104fd9cc3754.webp",
-      "/img/new-arrivals/c53a0f1d459b.webp",
-      "/img/new-arrivals/ea8e2d0f4d8e.webp"
+      "/img/mate/68578016d4df80ca.webp",
+      "/img/mate/feda9298d4919679.webp",
+      "/img/mate/88613712a70266e5.webp",
+      "/img/mate/313419b9448be032.webp",
+      "/img/mate/75021f48a237324d.webp"
     ],
     "sizes": [
       "XS",
@@ -4629,7 +4577,7 @@
     "title": "Organic Pointelle Tank",
     "style": "organic-pointelle-tank",
     "category": "tank-tops",
-    "priceUSD": 62.0,
+    "priceUSD": 62,
     "priceLE": 4750,
     "color": {
       "name": "heather-oat",
@@ -4639,11 +4587,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/03d81fee7e36.webp",
-      "/img/new-arrivals/9c27b9cc6424.webp",
-      "/img/new-arrivals/0b6e567575f6.webp",
-      "/img/new-arrivals/3a823f072189.webp",
-      "/img/new-arrivals/5b51a3e17f25.webp"
+      "/img/mate/e182e7d47d05f2cb.webp",
+      "/img/mate/350573824aba4ced.webp",
+      "/img/mate/878b201ea5a7f521.webp",
+      "/img/mate/96ca02722307ce71.webp",
+      "/img/new-arrivals/3a823f072189.webp"
     ],
     "sizes": [
       "XS",
@@ -4679,7 +4627,7 @@
     "title": "Organic Pointelle Cardigan",
     "style": "organic-pointelle-cardigan",
     "category": "t-shirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "sprig",
@@ -4689,11 +4637,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/efa43772bc74.webp",
-      "/img/new-arrivals/3febf9b22784.webp",
-      "/img/new-arrivals/145754498187.webp",
-      "/img/new-arrivals/c594f02613e8.webp",
-      "/img/new-arrivals/a04472b21d7b.webp"
+      "/img/mate/16713141abf9fdfe.webp",
+      "/img/mate/194b4cc169f44d0e.webp",
+      "/img/mate/69bb56325da5f2e2.webp",
+      "/img/mate/44f90f1137b9458f.webp"
     ],
     "sizes": [
       "XS",
@@ -4731,7 +4678,7 @@
     "title": "Organic Pointelle Tank",
     "style": "organic-pointelle-tank",
     "category": "tank-tops",
-    "priceUSD": 62.0,
+    "priceUSD": 62,
     "priceLE": 4750,
     "color": {
       "name": "sprig",
@@ -4741,11 +4688,8 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/d6d2c259bfaa.webp",
-      "/img/new-arrivals/2ba05ba63053.webp",
-      "/img/new-arrivals/1baa5e8ba7ea.webp",
-      "/img/new-arrivals/6ab00236e1bd.webp",
-      "/img/new-arrivals/f9ab3aa094b6.webp"
+      "/img/mate/1dc061462f6f3935.webp",
+      "/img/mate/a74fb9da3d2c216f.webp"
     ],
     "sizes": [
       "XS",
@@ -4783,7 +4727,7 @@
     "title": "Organic Waffle Collared Half-Zip Sweatshirt",
     "style": "organic-waffle-collared-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "heather-pine",
@@ -4793,11 +4737,11 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/f4b20c418cd4.webp",
-      "/img/new-arrivals/c08c6bad9d22.webp",
-      "/img/new-arrivals/f4395ef06d1f.webp",
-      "/img/new-arrivals/3093c3dbed96.webp",
-      "/img/new-arrivals/eae335d60a45.webp"
+      "/img/mate/247bbbf350d6977a.webp",
+      "/img/mate/4acdc2aab0faff29.webp",
+      "/img/mate/cb6bb3da22a48680.webp",
+      "/img/mate/19034a44d2547b3b.webp",
+      "/img/mate/b3c3f11f4bd265f7.webp"
     ],
     "sizes": [
       "XS",
@@ -4833,7 +4777,7 @@
     "title": "Organic Waffle Straight Leg Sweatpant",
     "style": "organic-waffle-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "heather-pine",
@@ -4843,11 +4787,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/371d0aa074c6.webp",
-      "/img/new-arrivals/bca98f4ed382.webp",
-      "/img/new-arrivals/77976be14b28.webp",
-      "/img/new-arrivals/7da1dcb65b10.webp",
-      "/img/new-arrivals/e5e64519af06.webp"
+      "/img/mate/e281353d42c58d25.webp",
+      "/img/mate/9b6cfaf85d7615b5.webp",
+      "/img/mate/5776ab455d84da0a.webp",
+      "/img/mate/0ef7a52000a43f52.webp"
     ],
     "sizes": [
       "XS",
@@ -4883,7 +4826,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "mulberry",
@@ -4893,11 +4836,11 @@
       "group": "Red"
     },
     "images": [
-      "/img/new-arrivals/ae648a84a388.webp",
-      "/img/new-arrivals/35aaa6a94253.webp",
-      "/img/new-arrivals/71ccc3e3eb28.webp",
-      "/img/new-arrivals/87dad9a9799c.webp",
-      "/img/new-arrivals/d6373a5b14df.webp"
+      "/img/mate/0752683c9dd0cdcc.webp",
+      "/img/mate/404c60dcd18fb8ac.webp",
+      "/img/new-arrivals/d6373a5b14df.webp",
+      "/img/mate/34107c3e4d9f767f.webp",
+      "/img/mate/8faebd2f120eb9b5.webp"
     ],
     "sizes": [
       "XS",
@@ -4939,7 +4882,7 @@
     "title": "Organic Pointelle Cardigan",
     "style": "organic-pointelle-cardigan",
     "category": "t-shirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "midnight",
@@ -4949,11 +4892,9 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/f7292a77c9af.webp",
-      "/img/new-arrivals/380516ca8be2.webp",
-      "/img/new-arrivals/0db7ee669e99.webp",
-      "/img/new-arrivals/93ad6504525a.webp",
-      "/img/new-arrivals/22c9bf26af94.webp"
+      "/img/mate/6b10e3b08e618ef3.webp",
+      "/img/mate/105741dd76883d14.webp",
+      "/img/mate/98a0cbb56d3af5a6.webp"
     ],
     "sizes": [
       "XS",
@@ -4991,7 +4932,7 @@
     "title": "Organic Pointelle Pant",
     "style": "organic-pointelle-pant",
     "category": "pants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "midnight",
@@ -5001,11 +4942,12 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/b487156a1839.webp",
-      "/img/new-arrivals/840c4e8eb218.webp",
-      "/img/new-arrivals/4720008ab1d9.webp",
+      "/img/mate/fa56506b0571325f.webp",
+      "/img/mate/9f565776bff69b7f.webp",
+      "/img/mate/ae15b558f5f44fc4.webp",
+      "/img/mate/e2b288afb90fa910.webp",
       "/img/new-arrivals/16825c8705d1.webp",
-      "/img/new-arrivals/7a0daa0853da.webp"
+      "/img/mate/089b918165c7f8b8.webp"
     ],
     "sizes": [
       "XS",
@@ -5044,7 +4986,7 @@
     "title": "Organic Waffle Crew Cardigan",
     "style": "organic-waffle-crew-cardigan",
     "category": "sweaters",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "lotus",
@@ -5054,11 +4996,9 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/8695b4fb8bd9.webp",
-      "/img/new-arrivals/e91b3bd59d90.webp",
-      "/img/new-arrivals/a909ea4d84da.webp",
-      "/img/new-arrivals/0fd1db821fc8.webp",
-      "/img/new-arrivals/5700e9f41e51.webp"
+      "/img/mate/ebfcc688a6b13683.webp",
+      "/img/mate/6aea16d4a09e1afd.webp",
+      "/img/mate/548185c86f09b2ea.webp"
     ],
     "sizes": [
       "XS",
@@ -5094,7 +5034,7 @@
     "title": "Organic Waffle Straight Leg Sweatpant",
     "style": "organic-waffle-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "lotus",
@@ -5104,11 +5044,9 @@
       "group": "Pink"
     },
     "images": [
-      "/img/new-arrivals/5ef329a9b023.webp",
-      "/img/new-arrivals/536bfaae2905.webp",
-      "/img/new-arrivals/2f2951059541.webp",
-      "/img/new-arrivals/b4523e7df0c0.webp",
-      "/img/new-arrivals/154020bde5a4.webp"
+      "/img/mate/a146440f62dd4393.webp",
+      "/img/mate/4b48fb3f59d7e3b3.webp",
+      "/img/mate/2d959c383507de20.webp"
     ],
     "sizes": [
       "XS",
@@ -5144,7 +5082,7 @@
     "title": "Organic Waffle Straight Leg Sweatpant",
     "style": "organic-waffle-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "marled-cloud",
@@ -5154,11 +5092,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/190f958f289d.webp",
-      "/img/new-arrivals/3039bbfca47c.webp",
-      "/img/new-arrivals/201cda2fe9ad.webp",
-      "/img/new-arrivals/f41abc5fa76d.webp",
-      "/img/new-arrivals/667306297ea2.webp"
+      "/img/mate/e2b0c59df74788b0.webp",
+      "/img/mate/edf7164a54131f40.webp",
+      "/img/mate/a8a74dad1067de65.webp",
+      "/img/mate/321ee33edc0d71a8.webp",
+      "/img/mate/c6e7a65666a16c5c.webp"
     ],
     "sizes": [
       "XS",
@@ -5194,7 +5132,7 @@
     "title": "Organic Waffle Sweatpant",
     "style": "organic-waffle-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "marled-cloud",
@@ -5204,11 +5142,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/f6d4ea286e32.webp",
-      "/img/new-arrivals/1f6372fe8120.webp",
-      "/img/new-arrivals/dec1c324bf81.webp",
-      "/img/new-arrivals/816c0e97c4c6.webp",
-      "/img/new-arrivals/ac099449ab8b.webp"
+      "/img/mate/59e0853d631dadd0.webp",
+      "/img/mate/36eafb6d59e8ca2f.webp",
+      "/img/mate/e73ad2f32701feb5.webp",
+      "/img/mate/1a04db18b29d14cf.webp"
     ],
     "sizes": [
       "XS",
@@ -5244,7 +5181,7 @@
     "title": "Organic Waffle Collared Half-Zip Sweatshirt",
     "style": "organic-waffle-collared-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "marled-cloud",
@@ -5254,11 +5191,9 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/1e129ff41b8d.webp",
-      "/img/new-arrivals/b77c0d138f21.webp",
-      "/img/new-arrivals/c84b46e6cb45.webp",
-      "/img/new-arrivals/754c26b09506.webp",
-      "/img/new-arrivals/524fcb7205c1.webp"
+      "/img/mate/6ac3d3b11c3191ba.webp",
+      "/img/mate/4b465b1dbbe0898f.webp",
+      "/img/mate/2b47903a4c1dcf63.webp"
     ],
     "sizes": [
       "XS",
@@ -5294,7 +5229,7 @@
     "title": "Organic Waffle Crew Cardigan",
     "style": "organic-waffle-crew-cardigan",
     "category": "sweaters",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "marled-cloud",
@@ -5304,11 +5239,12 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/b5ea62a366cd.webp",
-      "/img/new-arrivals/eb3a71b9753d.webp",
-      "/img/new-arrivals/7c2ce2fd8eb1.webp",
-      "/img/new-arrivals/ad7822f56faa.webp",
-      "/img/new-arrivals/efecc6eae2b7.webp"
+      "/img/mate/87623abb0b94fa5f.webp",
+      "/img/mate/470ddeae62564081.webp",
+      "/img/mate/1490a5c52da10677.webp",
+      "/img/mate/e9fe6282801eb2e0.webp",
+      "/img/mate/7b7aaee1494969e1.webp",
+      "/img/mate/9c7a0fda61af7b3e.webp"
     ],
     "sizes": [
       "XS",
@@ -5346,7 +5282,7 @@
     "title": "Organic Waffle Crew Cardigan",
     "style": "organic-waffle-crew-cardigan",
     "category": "sweaters",
-    "priceUSD": 148.0,
+    "priceUSD": 148,
     "priceLE": 11338,
     "color": {
       "name": "heather-pine",
@@ -5356,11 +5292,9 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/13582ccc3949.webp",
-      "/img/new-arrivals/5364971ed940.webp",
-      "/img/new-arrivals/c3b180ddc84e.webp",
-      "/img/new-arrivals/2d6ab6cbc029.webp",
-      "/img/new-arrivals/f0474a1bc2be.webp"
+      "/img/mate/fdf069692f8e1842.webp",
+      "/img/mate/375333d6905907a3.webp",
+      "/img/mate/279484ec67e46a40.webp"
     ],
     "sizes": [
       "XS",
@@ -5396,7 +5330,7 @@
     "title": "Organic Pointelle Pant",
     "style": "organic-pointelle-pant",
     "category": "pants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "sprig",
@@ -5406,11 +5340,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/6fb2e9a7ec1a.webp",
-      "/img/new-arrivals/8ed1227ed4c3.webp",
-      "/img/new-arrivals/2c92142be7ac.webp",
-      "/img/new-arrivals/daa92eb029c7.webp",
-      "/img/new-arrivals/96344db592e2.webp"
+      "/img/mate/65066f38a7ace2d4.webp",
+      "/img/mate/2bde6a20162db86c.webp",
+      "/img/mate/fd6b0751f85deade.webp",
+      "/img/mate/4fa002e42e7e336f.webp"
     ],
     "sizes": [
       "XS",
@@ -5449,7 +5382,7 @@
     "title": "Organic Pointelle Pant",
     "style": "organic-pointelle-pant",
     "category": "pants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-oat",
@@ -5459,10 +5392,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/5ad6582043f1.webp",
-      "/img/new-arrivals/659755dee313.webp",
-      "/img/new-arrivals/d02dfd5a8ad9.webp",
-      "/img/new-arrivals/d8390a697db4.webp",
+      "/img/mate/0a75a761f9c5b8ee.webp",
+      "/img/mate/8add362f47b07b0a.webp",
+      "/img/mate/dfd1d6cbab734cf0.webp",
+      "/img/mate/0a835c33d3ad64fb.webp",
+      "/img/mate/170f390240acc698.webp",
       "/img/new-arrivals/eaa26c774f77.webp"
     ],
     "sizes": [
@@ -5504,7 +5438,7 @@
     "title": "Organic Pointelle Tank",
     "style": "organic-pointelle-tank",
     "category": "tank-tops",
-    "priceUSD": 62.0,
+    "priceUSD": 62,
     "priceLE": 4750,
     "color": {
       "name": "midnight",
@@ -5514,11 +5448,12 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/682ecb24fa33.webp",
-      "/img/new-arrivals/ebc48e94e8e9.webp",
-      "/img/new-arrivals/3e6056fed99f.webp",
+      "/img/mate/e527592f0b0f924c.webp",
       "/img/new-arrivals/c831f13366a6.webp",
-      "/img/new-arrivals/793574d10633.webp"
+      "/img/mate/d4b33757f0050fe7.webp",
+      "/img/mate/254c690a7cac283b.webp",
+      "/img/mate/31f93e564853f770.webp",
+      "/img/mate/e9f8b3320ce3743d.webp"
     ],
     "sizes": [
       "XS",
@@ -5555,7 +5490,7 @@
     "title": "Organic Pointelle Baby Tee",
     "style": "organic-pointelle-baby-tee",
     "category": "t-shirts",
-    "priceUSD": 72.0,
+    "priceUSD": 72,
     "priceLE": 5516,
     "color": {
       "name": "sprig",
@@ -5565,11 +5500,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/edd192b55729.webp",
-      "/img/new-arrivals/872264538c41.webp",
-      "/img/new-arrivals/95046cf5eab4.webp",
-      "/img/new-arrivals/a5ef9bc5a8b6.webp",
-      "/img/new-arrivals/367259331a0d.webp"
+      "/img/mate/ae72294310699d62.webp",
+      "/img/mate/5b3341d9bb65a581.webp",
+      "/img/mate/3585c3c7f3379c39.webp",
+      "/img/mate/fac5db2a5c95c65e.webp"
     ],
     "sizes": [
       "XS",
@@ -5610,7 +5544,7 @@
     "title": "Organic Pointelle Baby Tee",
     "style": "organic-pointelle-baby-tee",
     "category": "t-shirts",
-    "priceUSD": 72.0,
+    "priceUSD": 72,
     "priceLE": 5516,
     "color": {
       "name": "midnight",
@@ -5620,11 +5554,10 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/d4cdb9dacba2.webp",
-      "/img/new-arrivals/c62161c38f1e.webp",
-      "/img/new-arrivals/dd5ee99b3f95.webp",
-      "/img/new-arrivals/a75b955cb7d0.webp",
-      "/img/new-arrivals/f8ee75c6af9a.webp"
+      "/img/mate/80d1c30dd949e4da.webp",
+      "/img/mate/d3ea0558e6814f0c.webp",
+      "/img/mate/67d3f13b1c44c00a.webp",
+      "/img/mate/51343a54169a09df.webp"
     ],
     "sizes": [
       "XS",
@@ -5665,7 +5598,7 @@
     "title": "Organic Pointelle Baby Tee",
     "style": "organic-pointelle-baby-tee",
     "category": "t-shirts",
-    "priceUSD": 72.0,
+    "priceUSD": 72,
     "priceLE": 5516,
     "color": {
       "name": "heather-oat",
@@ -5675,11 +5608,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/3b517c2e56e4.webp",
-      "/img/new-arrivals/d8c38a60424f.webp",
-      "/img/new-arrivals/3667db9630c6.webp",
-      "/img/new-arrivals/ac8c9e2f99f8.webp",
-      "/img/new-arrivals/cebca4added5.webp"
+      "/img/mate/aef7a62d9802d11a.webp",
+      "/img/mate/4f1322a060858c3a.webp",
+      "/img/mate/8d0e27add52e5a01.webp",
+      "/img/mate/9037bd3f01af028d.webp",
+      "/img/mate/d29a88eb6de28a2f.webp"
     ],
     "sizes": [
       "XS",
@@ -5720,7 +5653,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "bone",
@@ -5730,11 +5663,9 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/0e60636155f0.webp",
-      "/img/new-arrivals/5ed271837508.webp",
-      "/img/new-arrivals/df075a6cb06b.webp",
-      "/img/new-arrivals/1c53ebd2733b.webp",
-      "/img/new-arrivals/ebd4195b0084.webp"
+      "/img/mate/8498ff37ecd49f32.webp",
+      "/img/mate/20ac657c92e5a83c.webp",
+      "/img/mate/e3c5f9d98ce38a38.webp"
     ],
     "sizes": [
       "XS",
@@ -5784,7 +5715,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "heather-grey",
@@ -5794,11 +5725,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/2788d973f39b.webp",
-      "/img/new-arrivals/97e304fbdf6b.webp",
-      "/img/new-arrivals/e474c8b379bd.webp",
-      "/img/new-arrivals/b6a02b8b0b44.webp",
-      "/img/new-arrivals/d58cfe50c39b.webp"
+      "/img/mate/42db817454f3c562.webp",
+      "/img/mate/689031692f65b5dc.webp",
+      "/img/mate/40baa2c3593d71c0.webp",
+      "/img/mate/603da62098387411.webp"
     ],
     "sizes": [
       "XS",
@@ -5848,7 +5778,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "jet-black",
@@ -5858,11 +5788,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/fd840c66dda7.webp",
-      "/img/new-arrivals/bd8a2af69b86.webp",
-      "/img/new-arrivals/e5f23a7ad949.webp",
-      "/img/new-arrivals/6f077f324090.webp",
-      "/img/new-arrivals/36544fd05fc6.webp"
+      "/img/mate/f66c6ff95481d3e1.webp",
+      "/img/mate/87bb2eec5e838b2f.webp",
+      "/img/mate/3ade028be26fd27e.webp",
+      "/img/mate/ce06a6a5a6b1d3f0.webp",
+      "/img/mate/05ce0e75ee97c9f9.webp"
     ],
     "sizes": [
       "XS",
@@ -5911,7 +5841,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "midnight",
@@ -5921,11 +5851,9 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/f77905903041.webp",
-      "/img/new-arrivals/2c44cf9d8795.webp",
-      "/img/new-arrivals/73851bc06112.webp",
-      "/img/new-arrivals/6338ea54631b.webp",
-      "/img/new-arrivals/33fdd30357cf.webp"
+      "/img/mate/e620642c65c431c9.webp",
+      "/img/mate/78509c516bbd5212.webp",
+      "/img/mate/e5c812ea538cdf40.webp"
     ],
     "sizes": [
       "XS",
@@ -5975,7 +5903,7 @@
     "title": "Organic Fleece Relaxed Pocket Sweatpant",
     "style": "organic-fleece-relaxed-pocket-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "mushroom",
@@ -5985,11 +5913,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/0048e506ae41.webp",
-      "/img/new-arrivals/ab28d920bd3d.webp",
-      "/img/new-arrivals/4a286e2843bb.webp",
-      "/img/new-arrivals/ef973a578ab5.webp",
-      "/img/new-arrivals/04a1947562fd.webp"
+      "/img/mate/183ceeeae116ab06.webp",
+      "/img/mate/9c7af31209e5f930.webp",
+      "/img/mate/75d11853bd4cef33.webp",
+      "/img/mate/623b6d9b0508584f.webp",
+      "/img/mate/2f2b5a0b7b8f8e0f.webp"
     ],
     "sizes": [
       "XS",
@@ -6036,7 +5964,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "bone",
@@ -6046,11 +5974,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/5dc5c2e505db.webp",
-      "/img/new-arrivals/0eced78967d8.webp",
-      "/img/new-arrivals/c27148f69219.webp",
-      "/img/new-arrivals/b282444fbd47.webp",
-      "/img/new-arrivals/ae82d7df3823.webp"
+      "/img/mate/123e9fc6378213e4.webp",
+      "/img/mate/c98c3d75c14dc058.webp",
+      "/img/mate/584bd77551aaaf8a.webp",
+      "/img/mate/35d6c9df4d5744b8.webp"
     ],
     "sizes": [
       "XS",
@@ -6093,7 +6020,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "forest",
@@ -6103,11 +6030,10 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/697783251442.webp",
-      "/img/new-arrivals/09d470abd133.webp",
-      "/img/new-arrivals/460b43138455.webp",
-      "/img/new-arrivals/9ad5f27f5e72.webp",
-      "/img/new-arrivals/7f9afbc9bd10.webp"
+      "/img/mate/b02eab1182058acd.webp",
+      "/img/mate/137b823aa0b6551c.webp",
+      "/img/mate/5352822ea2cdf4c0.webp",
+      "/img/mate/28c5de29797696d7.webp"
     ],
     "sizes": [
       "XS",
@@ -6148,7 +6074,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-grey",
@@ -6158,11 +6084,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/61f707c6643f.webp",
-      "/img/new-arrivals/4eaba0166417.webp",
-      "/img/new-arrivals/e0b9831391e8.webp",
-      "/img/new-arrivals/1d725346919d.webp",
-      "/img/new-arrivals/61a51bbcecf3.webp"
+      "/img/mate/e1d322a8028a7fbb.webp",
+      "/img/mate/be0097741b5d4246.webp",
+      "/img/mate/02525b7702e0e186.webp",
+      "/img/mate/cc1dbb00921de43d.webp",
+      "/img/mate/0aecb7c6f2f78cd1.webp"
     ],
     "sizes": [
       "XS",
@@ -6203,7 +6129,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "jet-black",
@@ -6213,11 +6139,12 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/841b29678375.webp",
-      "/img/new-arrivals/8f5a5141ac5d.webp",
-      "/img/new-arrivals/ec35249be30f.webp",
+      "/img/mate/0ffa4f7767d71221.webp",
+      "/img/mate/2a153caf8688822e.webp",
       "/img/new-arrivals/7ba294cf2ddb.webp",
-      "/img/new-arrivals/8810e8a7fb13.webp"
+      "/img/mate/9e7b525ce17177a3.webp",
+      "/img/mate/a1b58119b7956ec8.webp",
+      "/img/new-arrivals/841b29678375.webp"
     ],
     "sizes": [
       "XS",
@@ -6257,7 +6184,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "midnight",
@@ -6267,11 +6194,9 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/420131bba6eb.webp",
-      "/img/new-arrivals/0ade631ad9f4.webp",
-      "/img/new-arrivals/a6b6efa522c8.webp",
-      "/img/new-arrivals/ac26a8d63b49.webp",
-      "/img/new-arrivals/ad6d976a1137.webp"
+      "/img/mate/c0bcb31d5772657d.webp",
+      "/img/mate/7d846e8d259d8f1a.webp",
+      "/img/mate/2efedee0274f702b.webp"
     ],
     "sizes": [
       "XS",
@@ -6312,7 +6237,7 @@
     "title": "Organic Fleece Oversized Sweatshirt",
     "style": "organic-fleece-oversized-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "mushroom",
@@ -6322,11 +6247,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/a08ef6f9f1b1.webp",
-      "/img/new-arrivals/15b133de5df8.webp",
-      "/img/new-arrivals/6ae81005a2d0.webp",
-      "/img/new-arrivals/2b625e7d5336.webp",
-      "/img/new-arrivals/07072fa6ac14.webp"
+      "/img/mate/b915dd5ce487b6eb.webp",
+      "/img/mate/3266dbdf683e3978.webp",
+      "/img/mate/c6a430713e93def6.webp",
+      "/img/mate/3ac5dc95723eaaef.webp",
+      "/img/mate/3946770ccbc0a5a7.webp"
     ],
     "sizes": [
       "XS",
@@ -6365,7 +6290,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "bone",
@@ -6375,11 +6300,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/5eb62b75ae7e.webp",
-      "/img/new-arrivals/444d1f1f0840.webp",
-      "/img/new-arrivals/6c18100718d3.webp",
-      "/img/new-arrivals/d9d0f251114b.webp",
-      "/img/new-arrivals/e8f9eeea8865.webp"
+      "/img/mate/d377481a959d0d6e.webp",
+      "/img/mate/c56329b4bebc3355.webp",
+      "/img/mate/8fe61d9a9b81fc77.webp",
+      "/img/mate/5f8bca58005f42f4.webp"
     ],
     "sizes": [
       "XS",
@@ -6419,7 +6343,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "heather-grey",
@@ -6429,10 +6353,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/c5a93de32d25.webp",
-      "/img/new-arrivals/4cca2b81a029.webp",
-      "/img/new-arrivals/1cbd0a78ca81.webp",
-      "/img/new-arrivals/d57c4ed42dd9.webp",
+      "/img/mate/4b8d5490712e83db.webp",
+      "/img/mate/a5933a54137c31a9.webp",
+      "/img/mate/11a63552cbba48cb.webp",
+      "/img/mate/0c607692bb2b24e2.webp",
       "/img/new-arrivals/fec9f5c77395.webp"
     ],
     "sizes": [
@@ -6473,7 +6397,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "jet-black",
@@ -6483,11 +6407,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/5c92f004789f.webp",
-      "/img/new-arrivals/7a0aa4db64c6.webp",
-      "/img/new-arrivals/5823a807a429.webp",
-      "/img/new-arrivals/327c3ef4c845.webp",
-      "/img/new-arrivals/8bfbb042633f.webp"
+      "/img/mate/ef0114adb80fa962.webp",
+      "/img/mate/aa94e990b4805eca.webp",
+      "/img/mate/07d2e81fc7535f31.webp",
+      "/img/mate/c884d5c55a437386.webp"
     ],
     "sizes": [
       "XS",
@@ -6527,7 +6450,7 @@
     "title": "Organic Fleece Cropped Half-Zip Sweatshirt",
     "style": "organic-fleece-cropped-half-zip-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "pebble",
@@ -6537,11 +6460,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/d1d26285cd2c.webp",
-      "/img/new-arrivals/7d125fcedc19.webp",
-      "/img/new-arrivals/d7cd4d9dfc08.webp",
-      "/img/new-arrivals/cadc92c3d7a1.webp",
-      "/img/new-arrivals/8fe0e964d5c3.webp"
+      "/img/mate/6c8a5582b3f4923c.webp",
+      "/img/mate/8eb146be51edf28c.webp",
+      "/img/mate/c38493b4b57b5bb8.webp",
+      "/img/mate/33ead8fa943ae248.webp"
     ],
     "sizes": [
       "XS",
@@ -6581,7 +6503,7 @@
     "title": "Organic Fleece Embroidered Oversized Sweatshirt",
     "style": "organic-fleece-embroidered-oversized-sweatshirt",
     "category": "t-shirts",
-    "priceUSD": 96.0,
+    "priceUSD": 96,
     "priceLE": 7355,
     "color": {
       "name": "bone",
@@ -6591,11 +6513,9 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/1a7553bf6cd9.webp",
-      "/img/new-arrivals/ff3567f25822.webp",
-      "/img/new-arrivals/dbc328f0b0d0.webp",
-      "/img/new-arrivals/d37ea5b4da43.webp",
-      "/img/new-arrivals/f26cb118d663.webp"
+      "/img/mate/1490a42ec87348f8.webp",
+      "/img/mate/eebc2f05a83836d0.webp",
+      "/img/mate/1f05ad4340747323.webp"
     ],
     "sizes": [
       "CROISSANT"
@@ -6621,7 +6541,7 @@
     "title": "Organic Fleece Pocket Hoodie",
     "style": "organic-fleece-pocket-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "bone",
@@ -6631,11 +6551,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/1991b860c434.webp",
-      "/img/new-arrivals/75496a099e17.webp",
-      "/img/new-arrivals/3da2d575af34.webp",
-      "/img/new-arrivals/93cae9d13c24.webp",
-      "/img/new-arrivals/daf8aae2a0af.webp"
+      "/img/mate/897ba905a09d1372.webp",
+      "/img/mate/b6c6124a807f4299.webp",
+      "/img/mate/2c7f7c65e4648e5d.webp",
+      "/img/mate/306834e0b7eb53b4.webp"
     ],
     "sizes": [
       "XS",
@@ -6671,7 +6590,7 @@
     "title": "Organic Fleece Pocket Hoodie",
     "style": "organic-fleece-pocket-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "heather-grey",
@@ -6681,11 +6600,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/559a06e028f2.webp",
-      "/img/new-arrivals/c0de6cd37d0d.webp",
-      "/img/new-arrivals/7af8d31393bc.webp",
-      "/img/new-arrivals/ad5a151f3536.webp",
-      "/img/new-arrivals/1c5d1e7e8c20.webp"
+      "/img/mate/88dbb96399eaaac0.webp",
+      "/img/mate/2da21606fb2d7fbf.webp",
+      "/img/mate/d240dcbee1c79a59.webp",
+      "/img/mate/aceb2f40fab415b1.webp"
     ],
     "sizes": [
       "XS",
@@ -6724,7 +6642,7 @@
     "title": "Organic Fleece Pocket Hoodie",
     "style": "organic-fleece-pocket-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 158.0,
+    "priceUSD": 158,
     "priceLE": 12105,
     "color": {
       "name": "jet-black",
@@ -6734,11 +6652,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/aecc9c186c53.webp",
-      "/img/new-arrivals/9d03f45a48b4.webp",
-      "/img/new-arrivals/b036b572370b.webp",
-      "/img/new-arrivals/10a91ab9a4be.webp",
-      "/img/new-arrivals/f60e8405df80.webp"
+      "/img/mate/33643eafc678f35a.webp",
+      "/img/mate/673f09621384a06c.webp",
+      "/img/mate/d7c6a9ca80e76f2a.webp",
+      "/img/mate/a0ea8f404e789b4e.webp"
     ],
     "sizes": [
       "XS",
@@ -6777,7 +6694,7 @@
     "title": "Organic Fleece Pocket Hoodie",
     "style": "organic-fleece-pocket-hoodie",
     "category": "sweatshirts",
-    "priceUSD": 110.0,
+    "priceUSD": 110,
     "priceLE": 8427,
     "color": {
       "name": "leek",
@@ -6787,11 +6704,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/df49721e0264.webp",
-      "/img/new-arrivals/4c463eb7bb53.webp",
-      "/img/new-arrivals/5f6c65fb4e4d.webp",
-      "/img/new-arrivals/10cc59d3131d.webp",
-      "/img/new-arrivals/4e0857be2613.webp"
+      "/img/mate/3731db7a3aadd20c.webp",
+      "/img/mate/ff0e41ab78d09a5a.webp",
+      "/img/mate/f9d9879d915760c5.webp",
+      "/img/mate/4261be9609fd5489.webp",
+      "/img/mate/385302e7adb61516.webp"
     ],
     "sizes": [
       "XS",
@@ -6827,7 +6744,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "bone",
@@ -6837,11 +6754,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/dd67b0c0f976.webp",
-      "/img/new-arrivals/f6a4239b39e8.webp",
-      "/img/new-arrivals/3d860f34665a.webp",
-      "/img/new-arrivals/0cd3455ca0f5.webp",
-      "/img/new-arrivals/f6330938ba43.webp"
+      "/img/mate/e7a72752bb5d13f7.webp",
+      "/img/mate/aa315a73907e9957.webp",
+      "/img/mate/38e674a37a70679a.webp",
+      "/img/mate/53d763ebae03db24.webp"
     ],
     "sizes": [
       "XS",
@@ -6882,7 +6798,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "jet-black",
@@ -6892,11 +6808,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/997b1cd4f3c6.webp",
-      "/img/new-arrivals/3e02aca77fa5.webp",
-      "/img/new-arrivals/2f36e48d23d5.webp",
-      "/img/new-arrivals/cacdfd7567a4.webp",
-      "/img/new-arrivals/38403c935d25.webp"
+      "/img/mate/29a68de3c2dd640f.webp",
+      "/img/mate/0abd09663665b485.webp",
+      "/img/mate/4a3abaf9f1d9dd1b.webp",
+      "/img/mate/c584ad8c5c9059e3.webp",
+      "/img/new-arrivals/997b1cd4f3c6.webp"
     ],
     "sizes": [
       "XS",
@@ -6937,7 +6853,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "leek",
@@ -6947,10 +6863,8 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/538573629c3b.webp",
-      "/img/new-arrivals/bf6a047f9f22.webp",
-      "/img/new-arrivals/8c857bbb9b91.webp",
-      "/img/new-arrivals/f4888c6649da.webp",
+      "/img/mate/ef49fa3ec443df38.webp",
+      "/img/mate/d87cf9ea58132302.webp",
       "/img/new-arrivals/e23dcf8d81b1.webp"
     ],
     "sizes": [
@@ -6992,7 +6906,7 @@
     "title": "Organic Fleece Relaxed Crewneck Sweatshirt",
     "style": "organic-fleece-relaxed-crewneck-sweatshirt",
     "category": "sweatshirts",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "pebble",
@@ -7002,11 +6916,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/b97305ee430b.webp",
-      "/img/new-arrivals/36e07001b3d9.webp",
-      "/img/new-arrivals/25b51bc94cc2.webp",
-      "/img/new-arrivals/13fa7ca340e5.webp",
-      "/img/new-arrivals/e354ded3d88b.webp"
+      "/img/mate/f6c26df3594fd71f.webp",
+      "/img/mate/212ae945f6842454.webp",
+      "/img/mate/e2f93d9d9fbc3714.webp",
+      "/img/mate/1e96c5e7369fc9f7.webp"
     ],
     "sizes": [
       "XS",
@@ -7047,7 +6960,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "bone",
@@ -7057,11 +6970,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/cc5caeaf3e99.webp",
-      "/img/new-arrivals/ab5fd93b3a42.webp",
-      "/img/new-arrivals/ef9a5c194813.webp",
-      "/img/new-arrivals/68bd170173cb.webp",
-      "/img/new-arrivals/08157e8d122b.webp"
+      "/img/mate/2f5b9bfabe99fd5a.webp",
+      "/img/mate/b335f3fa6b8dc836.webp",
+      "/img/mate/54747d4b8825b22c.webp",
+      "/img/mate/9f1d284880ae3877.webp"
     ],
     "sizes": [
       "XS",
@@ -7107,7 +7019,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "heather-grey",
@@ -7117,11 +7029,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/f54c43118d0e.webp",
-      "/img/new-arrivals/113aadf62c8a.webp",
-      "/img/new-arrivals/afff1c2d3520.webp",
-      "/img/new-arrivals/ebb603055172.webp",
-      "/img/new-arrivals/381621fb1111.webp"
+      "/img/mate/18affd1911fc72e3.webp",
+      "/img/mate/6b5d48f29843bff4.webp",
+      "/img/mate/99cf2c79a291e87d.webp",
+      "/img/mate/1df8f6288e672b88.webp"
     ],
     "sizes": [
       "XS",
@@ -7167,7 +7078,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "jet-black",
@@ -7177,11 +7088,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/fea790a059dc.webp",
-      "/img/new-arrivals/3a42f70a9c63.webp",
-      "/img/new-arrivals/811a6963f224.webp",
-      "/img/new-arrivals/4c1aa68dc113.webp",
-      "/img/new-arrivals/cd69ae43416f.webp"
+      "/img/mate/2596fd2802bcda17.webp",
+      "/img/mate/5b34c549f5822775.webp",
+      "/img/mate/b494b0dbc523970e.webp",
+      "/img/mate/4bbd1892a2f29616.webp"
     ],
     "sizes": [
       "XS",
@@ -7227,7 +7137,7 @@
     "title": "Organic Fleece Straight Leg Sweatpant",
     "style": "organic-fleece-straight-leg-sweatpant",
     "category": "sweatpants",
-    "priceUSD": 128.0,
+    "priceUSD": 128,
     "priceLE": 9806,
     "color": {
       "name": "pebble",
@@ -7237,11 +7147,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/22c6a3bf84c7.webp",
-      "/img/new-arrivals/2e6147f08e8c.webp",
-      "/img/new-arrivals/3cf42133de86.webp",
-      "/img/new-arrivals/9226c150014e.webp",
-      "/img/new-arrivals/396f3247bc02.webp"
+      "/img/mate/b4da90178164240c.webp",
+      "/img/mate/372938629f970c94.webp",
+      "/img/mate/7d48b4c15786eb92.webp",
+      "/img/mate/4a46fcf1be4616a7.webp",
+      "/img/new-arrivals/22c6a3bf84c7.webp"
     ],
     "sizes": [
       "XS",
@@ -7285,7 +7195,7 @@
     "title": "Organic Pointelle Baby Tee",
     "style": "organic-pointelle-baby-tee",
     "category": "t-shirts",
-    "priceUSD": 72.0,
+    "priceUSD": 72,
     "priceLE": 5516,
     "color": {
       "name": "golden",
@@ -7295,11 +7205,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/223835c5cd44.webp",
-      "/img/new-arrivals/005a453a698d.webp",
-      "/img/new-arrivals/c3cc92c1d526.webp",
-      "/img/new-arrivals/10eaa2a7bfd2.webp",
-      "/img/new-arrivals/0eecae9b8d6a.webp"
+      "/img/mate/c9b398ff013635a6.webp",
+      "/img/mate/d672d6c06b2a14a6.webp",
+      "/img/mate/f8f2d7138aaaf475.webp",
+      "/img/mate/ac9e5a99eb23895f.webp",
+      "/img/mate/2d8ffed6adbc82d1.webp"
     ],
     "sizes": [
       "XS",
@@ -7336,7 +7246,7 @@
     "title": "Organic Pointelle Baby Tee",
     "style": "organic-pointelle-baby-tee",
     "category": "t-shirts",
-    "priceUSD": 72.0,
+    "priceUSD": 72,
     "priceLE": 5516,
     "color": {
       "name": "halo",
@@ -7346,11 +7256,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/515189508fa7.webp",
-      "/img/new-arrivals/07b31f42fd6a.webp",
-      "/img/new-arrivals/1b2e17c22d1a.webp",
-      "/img/new-arrivals/4bcfa2da5fc5.webp",
-      "/img/new-arrivals/3f2e0893882c.webp"
+      "/img/mate/f0eaa0e91333c5ee.webp",
+      "/img/mate/e88419aaa0f9eccc.webp",
+      "/img/mate/d350da11d08433b6.webp",
+      "/img/mate/121e976f2ce94d65.webp",
+      "/img/mate/b58b231d1dc2dbc7.webp"
     ],
     "sizes": [
       "XS",
@@ -7387,7 +7297,7 @@
     "title": "Organic Pointelle Baby Tee",
     "style": "organic-pointelle-baby-tee",
     "category": "t-shirts",
-    "priceUSD": 72.0,
+    "priceUSD": 72,
     "priceLE": 5516,
     "color": {
       "name": "heather-grey",
@@ -7397,11 +7307,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/7aca38a58f25.webp",
-      "/img/new-arrivals/24480c582338.webp",
-      "/img/new-arrivals/cfc7cead0182.webp",
-      "/img/new-arrivals/b4eacb118b2e.webp",
-      "/img/new-arrivals/d28e9de9041b.webp"
+      "/img/mate/7e779d4256b19c91.webp",
+      "/img/mate/71fdaad44ef52743.webp",
+      "/img/mate/426ee7f179d7f72c.webp",
+      "/img/mate/eb0aca75f2b48a35.webp",
+      "/img/mate/554480a136863ee4.webp"
     ],
     "sizes": [
       "XS",
@@ -7438,7 +7348,7 @@
     "title": "Organic Pointelle Cardigan",
     "style": "organic-pointelle-cardigan",
     "category": "t-shirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "golden",
@@ -7448,11 +7358,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/ae2d746e48f6.webp",
-      "/img/new-arrivals/4d30f7bef074.webp",
-      "/img/new-arrivals/4c00acb92af8.webp",
-      "/img/new-arrivals/3543da3cb507.webp",
-      "/img/new-arrivals/4d65dcea68bc.webp"
+      "/img/mate/8005f9e294e8d316.webp",
+      "/img/mate/ae4f8f97eec3946c.webp",
+      "/img/mate/19bb98c04a222875.webp",
+      "/img/mate/5e91361517987f74.webp",
+      "/img/mate/8b98126087ed0864.webp"
     ],
     "sizes": [
       "XS",
@@ -7486,7 +7396,7 @@
     "title": "Organic Pointelle Cardigan",
     "style": "organic-pointelle-cardigan",
     "category": "t-shirts",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-grey",
@@ -7496,11 +7406,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/ad8d9bc59122.webp",
-      "/img/new-arrivals/4b44cebd60be.webp",
-      "/img/new-arrivals/7441cccc674c.webp",
-      "/img/new-arrivals/6d207681dadf.webp",
-      "/img/new-arrivals/9d03aed312a6.webp"
+      "/img/mate/3280df4797de7d97.webp",
+      "/img/mate/38d70e693e0a4fea.webp",
+      "/img/mate/6c1e92ef7cb4fc02.webp",
+      "/img/mate/7a7dc761e5385fd7.webp"
     ],
     "sizes": [
       "XS",
@@ -7538,7 +7447,7 @@
     "title": "Organic Pointelle Pant",
     "style": "organic-pointelle-pant",
     "category": "pants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "golden",
@@ -7548,11 +7457,8 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/74713628739e.webp",
-      "/img/new-arrivals/c3def888bde7.webp",
-      "/img/new-arrivals/86de6fc04170.webp",
-      "/img/new-arrivals/1eba018c537a.webp",
-      "/img/new-arrivals/759bf78b0e9f.webp"
+      "/img/mate/b2229b03e9873da7.webp",
+      "/img/mate/5766ee1a90cb6e69.webp"
     ],
     "sizes": [
       "XS",
@@ -7590,7 +7496,7 @@
     "title": "Organic Pointelle Pant",
     "style": "organic-pointelle-pant",
     "category": "pants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "halo",
@@ -7600,11 +7506,9 @@
       "group": "Neutral"
     },
     "images": [
+      "/img/mate/fe7209070dd26325.webp",
       "/img/new-arrivals/8571e7056739.webp",
-      "/img/new-arrivals/9858d38480fa.webp",
-      "/img/new-arrivals/f8bc27d34bfb.webp",
-      "/img/new-arrivals/557b22839b92.webp",
-      "/img/new-arrivals/420a4b13fd17.webp"
+      "/img/mate/eb2cbfaf39e01b4c.webp"
     ],
     "sizes": [
       "XS",
@@ -7640,7 +7544,7 @@
     "title": "Organic Pointelle Pant",
     "style": "organic-pointelle-pant",
     "category": "pants",
-    "priceUSD": 138.0,
+    "priceUSD": 138,
     "priceLE": 10572,
     "color": {
       "name": "heather-grey",
@@ -7650,11 +7554,9 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/069354e150e5.webp",
-      "/img/new-arrivals/dd9ac59c800d.webp",
-      "/img/new-arrivals/67fa8d983ab5.webp",
-      "/img/new-arrivals/2a78e926e5ca.webp",
-      "/img/new-arrivals/83c678ea1d41.webp"
+      "/img/mate/c24ab2cec9c5fa74.webp",
+      "/img/mate/803855b93d3750f6.webp",
+      "/img/mate/bb3360800ed22f46.webp"
     ],
     "sizes": [
       "XS",
@@ -7693,7 +7595,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "heather-grey",
@@ -7703,11 +7605,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/1e824d03460c.webp",
-      "/img/new-arrivals/07de82aa0bf5.webp",
-      "/img/new-arrivals/7f582a5774be.webp",
-      "/img/new-arrivals/ee52941bcea7.webp",
-      "/img/new-arrivals/a952261b31a4.webp"
+      "/img/mate/fc15a05fd90a2bc1.webp",
+      "/img/mate/9454ce73d9d39415.webp",
+      "/img/mate/a4f7fdc07096bc4b.webp",
+      "/img/mate/1cc427cb98aa62d9.webp"
     ],
     "sizes": [
       "XS",
@@ -7749,7 +7650,7 @@
     "title": "Organic Stretch Foldover Pant",
     "style": "organic-stretch-foldover-pant",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "heather-grey",
@@ -7759,11 +7660,9 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/0e85e6c9f674.webp",
-      "/img/new-arrivals/20ae6beb086a.webp",
-      "/img/new-arrivals/81c83e76644e.webp",
-      "/img/new-arrivals/c360b10c6f4e.webp",
-      "/img/new-arrivals/bb8c9ad14643.webp"
+      "/img/mate/f221b0f93adb7c4f.webp",
+      "/img/mate/a386ac8e67d8f3d0.webp",
+      "/img/new-arrivals/0e85e6c9f674.webp"
     ],
     "sizes": [
       "XS",
@@ -7801,7 +7700,7 @@
     "title": "Organic Stretch Foldover Pant",
     "style": "organic-stretch-foldover-pant",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "jet-black",
@@ -7811,11 +7710,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/ebda2c59b0b0.webp",
-      "/img/new-arrivals/21dee41e786a.webp",
-      "/img/new-arrivals/2c70fbf1f893.webp",
-      "/img/new-arrivals/bf13ce4648ed.webp",
-      "/img/new-arrivals/230a425b917a.webp"
+      "/img/mate/9f4b549174ec4002.webp",
+      "/img/mate/9c8512354dbcb13c.webp",
+      "/img/mate/c9ca263fda67ca5c.webp",
+      "/img/mate/5d9822efcfa30afc.webp"
     ],
     "sizes": [
       "XS",
@@ -7855,7 +7753,7 @@
     "title": "Organic Stretch Foldover Pant",
     "style": "organic-stretch-foldover-pant",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "pebble",
@@ -7865,11 +7763,11 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/155a8495079a.webp",
-      "/img/new-arrivals/8b953640bbd9.webp",
-      "/img/new-arrivals/d012b487541c.webp",
-      "/img/new-arrivals/226483815c3b.webp",
-      "/img/new-arrivals/ea15350a5839.webp"
+      "/img/mate/9b48e11f5c5a1038.webp",
+      "/img/mate/33a4fe11a46b5ef7.webp",
+      "/img/mate/c8da8ded0cfe6678.webp",
+      "/img/new-arrivals/ea15350a5839.webp",
+      "/img/mate/7fbd64d5c3ec0f4b.webp"
     ],
     "sizes": [
       "XS",
@@ -7907,7 +7805,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "forest",
@@ -7917,11 +7815,9 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/e65a12dc1bd9.webp",
-      "/img/new-arrivals/42c579bace00.webp",
-      "/img/new-arrivals/27a84d6b2925.webp",
-      "/img/new-arrivals/cd955d03fdf3.webp",
-      "/img/new-arrivals/61f915ac5653.webp"
+      "/img/mate/31703958900e7343.webp",
+      "/img/mate/8826afa7e99fd138.webp",
+      "/img/mate/5153d14da52ad102.webp"
     ],
     "sizes": [
       "XS",
@@ -7964,7 +7860,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "jet-black",
@@ -7974,11 +7870,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/f34c02c9aabc.webp",
-      "/img/new-arrivals/e8cfbca2ce84.webp",
-      "/img/new-arrivals/4e7a6a313210.webp",
-      "/img/new-arrivals/ab4b9a84b697.webp",
-      "/img/new-arrivals/ca177e25a733.webp"
+      "/img/mate/13f19dcbf7620670.webp",
+      "/img/mate/da7770f121d51eb7.webp",
+      "/img/mate/1258cf0e49dcbabc.webp",
+      "/img/mate/8a7948795c428a15.webp"
     ],
     "sizes": [
       "XS",
@@ -8024,7 +7919,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "mocha",
@@ -8034,11 +7929,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/1085bca72a23.webp",
-      "/img/new-arrivals/2ee7490bffe2.webp",
-      "/img/new-arrivals/c9e064489649.webp",
-      "/img/new-arrivals/5b3cbb225a52.webp",
-      "/img/new-arrivals/40ec533d7bde.webp"
+      "/img/mate/af91c414ce212831.webp",
+      "/img/mate/8eff2783763d8465.webp",
+      "/img/mate/426ddf9fad655e5e.webp",
+      "/img/mate/f2b8bebd3292b930.webp"
     ],
     "sizes": [
       "XS",
@@ -8081,7 +7975,7 @@
     "title": "Organic Stretch Full Length Legging",
     "style": "organic-stretch-full-length-legging",
     "category": "leggings",
-    "priceUSD": 98.0,
+    "priceUSD": 98,
     "priceLE": 7508,
     "color": {
       "name": "pebble",
@@ -8091,11 +7985,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/617c256bfac1.webp",
-      "/img/new-arrivals/1693325d8ba6.webp",
-      "/img/new-arrivals/b2c5b758769a.webp",
-      "/img/new-arrivals/432d71c781cf.webp",
-      "/img/new-arrivals/a0a27d539e9d.webp"
+      "/img/mate/d6f8e372040730e5.webp",
+      "/img/mate/2a23203846cca5d9.webp",
+      "/img/mate/9b7c5a203e999d06.webp",
+      "/img/mate/6566002af3858d12.webp"
     ],
     "sizes": [
       "XS",
@@ -8141,7 +8034,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "cove",
@@ -8151,11 +8044,9 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/6a501cef9d97.webp",
-      "/img/new-arrivals/16c517a5e88d.webp",
-      "/img/new-arrivals/48bc265c5afa.webp",
-      "/img/new-arrivals/6ab626a11093.webp",
-      "/img/new-arrivals/8d89d43f1e4a.webp"
+      "/img/mate/85939625bb867690.webp",
+      "/img/mate/20c72fd62ab2b53b.webp",
+      "/img/mate/e73bd3c05c943b63.webp"
     ],
     "sizes": [
       "XS",
@@ -8200,7 +8091,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "forest",
@@ -8210,11 +8101,9 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/c1f7a937c200.webp",
-      "/img/new-arrivals/fecb2b2c4581.webp",
-      "/img/new-arrivals/fe601c2a8cad.webp",
-      "/img/new-arrivals/3d8091e75017.webp",
-      "/img/new-arrivals/fad698225990.webp"
+      "/img/mate/8bc9d5b6aa4bc68e.webp",
+      "/img/mate/92d6eb485ceec747.webp",
+      "/img/mate/3c1729369e6d5e16.webp"
     ],
     "sizes": [
       "XS",
@@ -8262,7 +8151,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "heather-grey",
@@ -8272,11 +8161,10 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/0f77297d8c19.webp",
-      "/img/new-arrivals/eadd4e8cab70.webp",
-      "/img/new-arrivals/23c72662e68e.webp",
-      "/img/new-arrivals/afef1032e5cf.webp",
-      "/img/new-arrivals/9fa022bb5a36.webp"
+      "/img/mate/08282b84261f3355.webp",
+      "/img/mate/85a79f7437423dc7.webp",
+      "/img/mate/f1a839cca3f25be3.webp",
+      "/img/mate/f88fad53fa97c480.webp"
     ],
     "sizes": [
       "XS",
@@ -8321,7 +8209,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "jet-black",
@@ -8331,11 +8219,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/5e661f24361b.webp",
-      "/img/new-arrivals/d98fc77061c3.webp",
-      "/img/new-arrivals/324b09c91458.webp",
-      "/img/new-arrivals/16fc3692d5eb.webp",
-      "/img/new-arrivals/d01637077caa.webp"
+      "/img/mate/29ca2c85bf4742d8.webp",
+      "/img/mate/fbdf0cac8a318c83.webp",
+      "/img/mate/32ab279017e036b0.webp",
+      "/img/mate/d0649e07aeb2520f.webp",
+      "/img/mate/92dbb26889e9a67a.webp"
     ],
     "sizes": [
       "XS",
@@ -8385,7 +8273,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "mocha",
@@ -8395,11 +8283,11 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/932a173324dc.webp",
-      "/img/new-arrivals/1e1111221f47.webp",
-      "/img/new-arrivals/441ee4535a49.webp",
-      "/img/new-arrivals/c2ec732286b8.webp",
-      "/img/new-arrivals/b5999e151b45.webp"
+      "/img/mate/f7141f1c8344c7ee.webp",
+      "/img/mate/bace9832d10b6cfe.webp",
+      "/img/mate/562d4cc0ced0adc2.webp",
+      "/img/mate/fe09174648eab308.webp",
+      "/img/mate/3fa471b1296d0720.webp"
     ],
     "sizes": [
       "XS",
@@ -8445,7 +8333,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "pebble",
@@ -8455,11 +8343,11 @@
       "group": "Neutral"
     },
     "images": [
+      "/img/mate/09557b80d11c19e2.webp",
+      "/img/mate/5cde8df51aebda0f.webp",
       "/img/new-arrivals/36f039ebda11.webp",
-      "/img/new-arrivals/b2c95ed869a6.webp",
-      "/img/new-arrivals/3c7d920f8189.webp",
-      "/img/new-arrivals/1a2f73f48087.webp",
-      "/img/new-arrivals/ee9720ebe796.webp"
+      "/img/mate/bfce96022194843a.webp",
+      "/img/mate/90f3026db27cdd93.webp"
     ],
     "sizes": [
       "XS",
@@ -8510,7 +8398,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 57.0,
+    "priceUSD": 57,
     "priceLE": 4367,
     "color": {
       "name": "sienna",
@@ -8520,10 +8408,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/bc2c3966f5ab.webp",
-      "/img/new-arrivals/9260d9d931a0.webp",
-      "/img/new-arrivals/e6e17bc07f0e.webp",
-      "/img/new-arrivals/5803dde957b1.webp",
+      "/img/mate/d08db4a5df82fb28.webp",
+      "/img/mate/d45b8c97533b57c1.webp",
+      "/img/mate/80dc9b1f81c15c9a.webp",
+      "/img/mate/97f17414266a6441.webp",
       "/img/new-arrivals/e6fec452fb87.webp"
     ],
     "sizes": [
@@ -8567,7 +8455,7 @@
     "title": "Organic Stretch Midi Legging",
     "style": "organic-stretch-midi-legging",
     "category": "leggings",
-    "priceUSD": 88.0,
+    "priceUSD": 88,
     "priceLE": 6742,
     "color": {
       "name": "zest",
@@ -8577,11 +8465,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/acf799be3d04.webp",
+      "/img/mate/163b1e1d5ee63414.webp",
+      "/img/mate/bb6ed085a1c52c6c.webp",
       "/img/new-arrivals/3ff8989db3ab.webp",
-      "/img/new-arrivals/6f0338f8f8b0.webp",
-      "/img/new-arrivals/06d5ce5631c8.webp",
-      "/img/new-arrivals/08f1b05efc75.webp"
+      "/img/mate/76e027116f7cf100.webp"
     ],
     "sizes": [
       "XS",
@@ -8626,7 +8513,7 @@
     "title": "Organic Stretch Pocket Legging",
     "style": "organic-stretch-pocket-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "jet-black",
@@ -8636,11 +8523,9 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/2687184246dc.webp",
-      "/img/new-arrivals/71c5d83ac062.webp",
-      "/img/new-arrivals/c1c3998529ca.webp",
-      "/img/new-arrivals/553e7c033bb0.webp",
-      "/img/new-arrivals/b130bf4292dd.webp"
+      "/img/mate/fe60198a4afcd13e.webp",
+      "/img/mate/f3790b1bb69178ed.webp",
+      "/img/mate/f8d6b306e62b04d8.webp"
     ],
     "sizes": [
       "XS",
@@ -8678,7 +8563,7 @@
     "title": "Organic Stretch Pocket Legging",
     "style": "organic-stretch-pocket-legging",
     "category": "leggings",
-    "priceUSD": 108.0,
+    "priceUSD": 108,
     "priceLE": 8274,
     "color": {
       "name": "pebble",
@@ -8688,11 +8573,12 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/8a3a62e17572.webp",
-      "/img/new-arrivals/b6426279a494.webp",
-      "/img/new-arrivals/a2c6bc395218.webp",
+      "/img/mate/4023517fa9f8c617.webp",
+      "/img/mate/36d53d8a622943e5.webp",
+      "/img/mate/55527d94e6e3b661.webp",
       "/img/new-arrivals/aac0d270e4bc.webp",
-      "/img/new-arrivals/de2c5752ce4c.webp"
+      "/img/mate/9581dee8884caec7.webp",
+      "/img/mate/27918c28583da291.webp"
     ],
     "sizes": [
       "XS",
@@ -8728,7 +8614,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "bone",
@@ -8738,11 +8624,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/54164b634204.webp",
-      "/img/new-arrivals/724dd18f9769.webp",
-      "/img/new-arrivals/1870c5828e61.webp",
-      "/img/new-arrivals/3b2aeb85139a.webp",
-      "/img/new-arrivals/4249d136fafe.webp"
+      "/img/mate/420127c76c4e1822.webp",
+      "/img/mate/be1f8c107f8c598f.webp",
+      "/img/mate/1b911892ce351ea2.webp",
+      "/img/mate/44b15cbbf76607d9.webp"
     ],
     "sizes": [
       "XS",
@@ -8787,7 +8672,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "forest",
@@ -8797,11 +8682,9 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/612f268a0b71.webp",
-      "/img/new-arrivals/78c197b65bd4.webp",
-      "/img/new-arrivals/2a4b7f2a9d7c.webp",
-      "/img/new-arrivals/4368dd70f85c.webp",
-      "/img/new-arrivals/8211afb7f0e1.webp"
+      "/img/mate/0a5ad880b45d6aa0.webp",
+      "/img/mate/4a11630f987c547c.webp",
+      "/img/mate/166f43f7364f0516.webp"
     ],
     "sizes": [
       "XS",
@@ -8843,7 +8726,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "jet-black",
@@ -8853,11 +8736,10 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/9f03e154167a.webp",
-      "/img/new-arrivals/6b7e966d1388.webp",
-      "/img/new-arrivals/eee224dd25bc.webp",
-      "/img/new-arrivals/ef2f15c1a6a2.webp",
-      "/img/new-arrivals/53a0e16289e7.webp"
+      "/img/mate/e98e739ff1b9ef6d.webp",
+      "/img/mate/f88d35bee5dfe7f9.webp",
+      "/img/mate/12cd6abe69445805.webp",
+      "/img/mate/04dfec46bd22c942.webp"
     ],
     "sizes": [
       "XS",
@@ -8902,7 +8784,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "mocha",
@@ -8912,11 +8794,10 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/3e55a8f55686.webp",
-      "/img/new-arrivals/c70525183338.webp",
-      "/img/new-arrivals/038e2973c07c.webp",
-      "/img/new-arrivals/b969b6ea3bd9.webp",
-      "/img/new-arrivals/0d5b871f75f7.webp"
+      "/img/mate/81d5db1b1a6448bf.webp",
+      "/img/mate/fde4faaf51e221ba.webp",
+      "/img/mate/468866f81136240f.webp",
+      "/img/mate/ad0d39628735d69a.webp"
     ],
     "sizes": [
       "XS",
@@ -8959,7 +8840,7 @@
     "title": "Organic Stretch Crop Racer Tank",
     "style": "organic-stretch-crop-racer-tank",
     "category": "activewear-tops",
-    "priceUSD": 68.0,
+    "priceUSD": 68,
     "priceLE": 5210,
     "color": {
       "name": "pebble",
@@ -8969,11 +8850,9 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/5b681d737fec.webp",
-      "/img/new-arrivals/9afd61ea38d7.webp",
-      "/img/new-arrivals/a5f6086c25a3.webp",
-      "/img/new-arrivals/6f31945c04bb.webp",
-      "/img/new-arrivals/3412dc553ca5.webp"
+      "/img/mate/6424c85b09947422.webp",
+      "/img/mate/fc458334d9425a45.webp",
+      "/img/mate/41028a9d0edb58b8.webp"
     ],
     "sizes": [
       "XS",
@@ -9017,7 +8896,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "bone",
@@ -9027,11 +8906,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/5d375dce2b0f.webp",
-      "/img/new-arrivals/d7acf6e83e3f.webp",
-      "/img/new-arrivals/4481b16a34e8.webp",
-      "/img/new-arrivals/a330ea633c57.webp",
-      "/img/new-arrivals/ffd8623bccb6.webp"
+      "/img/mate/64e7f8b3ef110f1b.webp",
+      "/img/mate/740e29882ca80ea2.webp",
+      "/img/mate/231d0da4cd621ca8.webp",
+      "/img/mate/f2dabcfb34de47e4.webp"
     ],
     "sizes": [
       "XS",
@@ -9075,7 +8953,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "heather-grey",
@@ -9085,11 +8963,11 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/4335ceb2aa8b.webp",
-      "/img/new-arrivals/137683febd00.webp",
-      "/img/new-arrivals/0b5a8753bca4.webp",
-      "/img/new-arrivals/78b04470b1a6.webp",
-      "/img/new-arrivals/0e709d2a5533.webp"
+      "/img/mate/85c7d09786e2dd35.webp",
+      "/img/mate/cc927e06eaf543e6.webp",
+      "/img/mate/9385204ed9b072e2.webp",
+      "/img/mate/c13a4b4b4d624463.webp",
+      "/img/mate/f484b0cf86a4a9ec.webp"
     ],
     "sizes": [
       "XS",
@@ -9131,7 +9009,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "iris",
@@ -9141,11 +9019,10 @@
       "group": "Blue"
     },
     "images": [
-      "/img/new-arrivals/43560dd2079a.webp",
-      "/img/new-arrivals/f9721cced821.webp",
-      "/img/new-arrivals/067c0b5dd797.webp",
-      "/img/new-arrivals/91d9690d3fe8.webp",
-      "/img/new-arrivals/b1c0ad0fd658.webp"
+      "/img/mate/f4b755b34e6e1e21.webp",
+      "/img/mate/b6447dbe1a4c54fe.webp",
+      "/img/mate/efe71230b6c2b895.webp",
+      "/img/mate/5e00a99de971be5f.webp"
     ],
     "sizes": [
       "XS",
@@ -9184,7 +9061,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "jet-black",
@@ -9194,11 +9071,9 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/762f652e7592.webp",
-      "/img/new-arrivals/98cc91a385b4.webp",
-      "/img/new-arrivals/d02661b8716c.webp",
-      "/img/new-arrivals/c4285c4a1a82.webp",
-      "/img/new-arrivals/c5d9863533a8.webp"
+      "/img/mate/049090a4b6494f51.webp",
+      "/img/mate/01ee5889fb58292e.webp",
+      "/img/mate/bec11349bac2a1fd.webp"
     ],
     "sizes": [
       "XS",
@@ -9242,7 +9117,7 @@
     "title": "Organic Stretch Scoop Bra",
     "style": "organic-stretch-scoop-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "pebble",
@@ -9252,11 +9127,9 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/c451555410ae.webp",
-      "/img/new-arrivals/985cadb56871.webp",
-      "/img/new-arrivals/6f5d56a7d4c6.webp",
-      "/img/new-arrivals/dc7efa822efb.webp",
-      "/img/new-arrivals/ae4a730dfcf4.webp"
+      "/img/mate/66fd84519f695f30.webp",
+      "/img/mate/e34b46004d24576f.webp",
+      "/img/mate/2f2b9fc8516c09e1.webp"
     ],
     "sizes": [
       "XS",
@@ -9298,7 +9171,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "bone",
@@ -9308,11 +9181,10 @@
       "group": "White"
     },
     "images": [
-      "/img/new-arrivals/9609f44a73eb.webp",
-      "/img/new-arrivals/2c9e15ea4c23.webp",
-      "/img/new-arrivals/b98aeb2a19e9.webp",
-      "/img/new-arrivals/626a42bbef6b.webp",
-      "/img/new-arrivals/fb7cea35f3dc.webp"
+      "/img/mate/86d065044ecf213c.webp",
+      "/img/mate/a493bfdb05ac9beb.webp",
+      "/img/mate/a216bf3cbc51b135.webp",
+      "/img/mate/d273b55c22d784b2.webp"
     ],
     "sizes": [
       "XS",
@@ -9361,7 +9233,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "forest",
@@ -9371,11 +9243,7 @@
       "group": "Green"
     },
     "images": [
-      "/img/new-arrivals/02d7e42ed0f5.webp",
-      "/img/new-arrivals/823b0ae3d325.webp",
-      "/img/new-arrivals/5c62c3588743.webp",
-      "/img/new-arrivals/d726d43e2ce0.webp",
-      "/img/new-arrivals/393e3009bfd4.webp"
+      "/img/mate/a34e332bb4c8f972.webp"
     ],
     "sizes": [
       "XS",
@@ -9423,7 +9291,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "heather-grey",
@@ -9433,11 +9301,12 @@
       "group": "Grey"
     },
     "images": [
-      "/img/new-arrivals/8568ebac1c87.webp",
-      "/img/new-arrivals/f90582322e7f.webp",
-      "/img/new-arrivals/e7738922bdf1.webp",
-      "/img/new-arrivals/f97c6e813e74.webp",
-      "/img/new-arrivals/c5f584f1cdc9.webp"
+      "/img/mate/c6cf3625de6bc663.webp",
+      "/img/mate/d1e34ebad739059e.webp",
+      "/img/mate/d23242d0aa45dcd9.webp",
+      "/img/mate/6634269b51d3e13d.webp",
+      "/img/mate/1a46e0725c5e65fd.webp",
+      "/img/new-arrivals/8568ebac1c87.webp"
     ],
     "sizes": [
       "XS",
@@ -9480,7 +9349,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "jet-black",
@@ -9490,11 +9359,11 @@
       "group": "Black"
     },
     "images": [
-      "/img/new-arrivals/d5ed62234e15.webp",
-      "/img/new-arrivals/afc93a38899e.webp",
-      "/img/new-arrivals/d1f1ddeb0290.webp",
-      "/img/new-arrivals/0d15cf582563.webp",
-      "/img/new-arrivals/e47a9f427f56.webp"
+      "/img/mate/1dcfd96b0bc58dbd.webp",
+      "/img/mate/810ad389d9ee68db.webp",
+      "/img/mate/4b62334960d572e4.webp",
+      "/img/mate/bd8e748e1b15f69c.webp",
+      "/img/mate/b8ffee275cacbd2c.webp"
     ],
     "sizes": [
       "XS",
@@ -9543,7 +9412,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "mocha",
@@ -9553,11 +9422,9 @@
       "group": "Brown"
     },
     "images": [
-      "/img/new-arrivals/0cb89888e703.webp",
-      "/img/new-arrivals/de9df5f0996b.webp",
-      "/img/new-arrivals/a2656321d173.webp",
-      "/img/new-arrivals/fb9705d1a424.webp",
-      "/img/new-arrivals/fbbd5c6b3607.webp"
+      "/img/mate/391f14d01766c9d0.webp",
+      "/img/mate/12cebca58f44f9c5.webp",
+      "/img/mate/468a1647b0cde075.webp"
     ],
     "sizes": [
       "XS",
@@ -9602,7 +9469,7 @@
     "title": "Organic Stretch Sports Bra",
     "style": "organic-stretch-sports-bra",
     "category": "sports-bras",
-    "priceUSD": 58.0,
+    "priceUSD": 58,
     "priceLE": 4444,
     "color": {
       "name": "pebble",
@@ -9612,11 +9479,10 @@
       "group": "Neutral"
     },
     "images": [
-      "/img/new-arrivals/262eacd57875.webp",
-      "/img/new-arrivals/cf505aa43f02.webp",
-      "/img/new-arrivals/2652ffee872d.webp",
-      "/img/new-arrivals/a118ea9e0b7b.webp",
-      "/img/new-arrivals/d64dd17cdd74.webp"
+      "/img/mate/b8536b08d8d353ce.webp",
+      "/img/mate/df1eb1d4620d6f01.webp",
+      "/img/mate/fc303fe809ad0440.webp",
+      "/img/mate/5ef27bb27320865d.webp"
     ],
     "sizes": [
       "XS",

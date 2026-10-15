@@ -79,3 +79,34 @@ test("mobile shared navigation retains the brand, all destinations and no horizo
     await expect(menu).not.toBeVisible();
   }
 });
+
+test("the dot marks only the label of the page you are standing on", async ({ page }) => {
+  // A mega panel lists a dozen shelves; that does not make its parent label current. Best Sellers
+  // carries the dot there and Clothing carries none — not at rest, and not while the pointer is on
+  // the label, because for a panel that opens on hover the panel is the affordance, not a dot.
+  const dot = (label: string) => page.locator(".na-header-nav a", { hasText: label }).first()
+    .evaluate((node) => getComputedStyle(node, "::after").opacity);
+
+  await page.goto("/en/collections/best-sellers");
+  await expect(page.locator('.na-header-nav a[aria-current="page"]')).toHaveCount(1);
+  expect(await dot("Best Sellers")).toBe("1");
+  expect(await dot("Clothing")).toBe("0");
+  expect(await dot("Activewear")).toBe("0");
+  const clothing = page.locator(".na-header-nav a", { hasText: "Clothing" }).first();
+  const box = (await clothing.boundingBox())!;
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await expect(page.locator(".na-header-mega.is-open")).toHaveCount(1);
+  expect(await dot("Clothing")).toBe("0");
+  expect(await dot("Best Sellers")).toBe("1");
+
+  // And the dot does appear where it belongs: Clothing is the current label on /collections/all,
+  // while a mega parent stays dark on a page that merely lives inside its panel.
+  await page.goto("/en/collections/all");
+  expect(await dot("Clothing")).toBe("1");
+  await page.goto("/en/collections/tees");
+  expect(await dot("Clothing")).toBe("0");
+  expect(await page.locator('.na-header-nav a[aria-current="page"]').count()).toBe(0);
+  await page.goto("/en/collections/activewear");
+  expect(await dot("Activewear")).toBe("1");
+  expect(await dot("Clothing")).toBe("0");
+});

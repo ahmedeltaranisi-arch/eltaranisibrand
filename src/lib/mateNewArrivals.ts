@@ -10,6 +10,13 @@ export type MateProduct = {
   category: string;
   priceUSD: number;
   priceLE: number;
+  /**
+   * The price the reference itself strikes through in front of the sale price — `LE 10,572 $138` for
+   * the waffle crew top. Only the colourways the reference discounts carry it; a row with no
+   * compare-at prints one price, exactly as the reference does.
+   */
+  compareAtUSD?: number | null;
+  compareAtLE?: number | null;
   color: {
     name: string;
     label: string;
