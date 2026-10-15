@@ -115,7 +115,12 @@ export function railProducts(handle: string): ShopAllProduct[] {
   const rail = RAIL_BY_HANDLE.get(handle);
   if (!rail) return shopAllProducts;
   const allowed = new Set(rail.slugs);
-  return shopAllProducts.filter((product) => allowed.has(product.slug));
+  // The shelf's own order is the reference's: `apply-reference-collections` stored each rail's
+  // slugs in the captured order of that collection page (or of the All page for `all`).
+  const order = new Map(rail.slugs.map((slug, index) => [slug, index]));
+  return shopAllProducts
+    .filter((product) => allowed.has(product.slug))
+    .sort((left, right) => (order.get(left.slug) ?? Number.MAX_SAFE_INTEGER) - (order.get(right.slug) ?? Number.MAX_SAFE_INTEGER));
 }
 
 /* ------------------------------------------------------------------------------- filtering */
@@ -140,7 +145,14 @@ export function filterShopAll(
   );
 }
 
-export function sortShopAll(products: readonly MateProduct[], sort: CollectionSort): MateProduct[] {
+/**
+ * Featured is the shelf's own order on the reference store: its All collection on `/collections/all`,
+ * the collection's own order on a rail page, a dye's or a fabric's own order on theirs. `railProducts`
+ * already returns that order, so a shelf-scoped grid passes `shelfOrdered` and Featured keeps it;
+ * every other sort re-ranks the shelf from the captured ranks.
+ */
+export function sortShopAll(products: readonly MateProduct[], sort: CollectionSort, shelfOrdered = false): MateProduct[] {
+  if (sort === "manual" && shelfOrdered) return [...products];
   return sortProducts(products, sort);
 }
 

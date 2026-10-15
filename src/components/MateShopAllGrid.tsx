@@ -59,7 +59,8 @@ export default function MateShopAllGrid({ handle = "all" }: { handle?: string })
 
   const rail = useMemo(() => railProducts(handle), [handle]);
   const filtered = useMemo(() => filterShopAll(rail, state), [rail, state]);
-  const sorted = useMemo(() => sortShopAll(filtered, state.sort), [filtered, state.sort]);
+  // Featured keeps this shelf's own captured order (the reference's rule); the other sorts re-rank.
+  const sorted = useMemo(() => sortShopAll(filtered, state.sort, true), [filtered, state.sort]);
   const counts = useMemo(() => shopAllFacetCounts(rail, state), [rail, state]);
   // A facet a rail cannot offer is removed from the UI rather than shown empty.
   const colorRows = useMemo(() => offeredColorGroups(rail), [rail]);

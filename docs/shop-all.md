@@ -23,15 +23,15 @@ collection, captured and ingested:
 
 `src/lib/shopAll.ts` then derives every number at request time from that catalogue:
 
-| Facet | Values (collection-wide counts) |
+| Facet | Values (collection-wide counts, as the drawer prints them today) |
 | --- | --- |
-| Collection | the reference's All collection: 328 colourways, plus the sale shelf's own 45 and the gift card |
-| Tiles | Shop All 205 · Activewear 87 · Tees 17 · Sweats 79 · Intimates 22 · Sleep 18 |
-| Category | Activewear Tops 15 · Headbands 1 · Leggings 35 · Pants 9 · Shorts 9 · Socks 4 · Sports Bras 22 · Sweaters 9 · Sweatpants 43 · Sweatshirts 39 · T-Shirts 11 · Tank Tops 3 · Unitards 4 |
-| Color Group | Beige 4 · Black 33 · Blue 17 · Brown 20 · Green 29 · Grey 32 · Neutral 27 · Pink 9 · Purple 8 · Red 6 · White 19 |
-| Size | the reference's twelve rows (XS … OS), counted from the captured available variants |
-| Fabrics | Organic Stretch 86 · Organic Fleece 68 · Organic Waffle 12 · Merino 10 |
-| Dyes | Nori 8 · Wisteria 2 · Balsam 7 · Heather Oat 8 · Peppercorn 3 |
+| Collection | the reference's All collection: 328 colourways, plus the sale shelf's own 50 and the gift card |
+| Tiles | Shop All 328 · Activewear 95 · Tees 46 · Sweats 136 · Intimates 39 · Sleep 9 |
+| Category | Activewear Tops 12 · Baby & Children's Bottoms 3 · Baby & Children's Tops 10 · Bikinis 7 · Bras 10 · Briefs 7 · Dresses 2 · Headbands 1 · Leggings 35 · Pajamas 9 · Pants 24 · Shopping Bags 1 · Shorts 12 · Skirts 3 · Socks 6 · Sports Bras 23 · Sweaters 10 · Sweatpants 48 · Sweatshirts 58 · T-Shirts 51 · Tank Tops 23 · Tops 7 · Unitards 4 |
+| Color Group | Beige 4 · Black 50 · Blue 25 · Brown 41 · Green 45 · Grey 62 · Neutral 16 · Orange 2 · Pink 11 · Purple 9 · Red 5 · White 49 · Yellow 6 |
+| Size | the reference's eighteen rows (XS … OS), counted from the captured available variants |
+| Fabrics | Organic Stretch 95 · Organic Pima Cotton 27 · Organic Fleece 79 · Organic Waffle 13 · Merino 10 |
+| Dyes | Nori 4 · Wisteria 5 · Balsam 8 · Heather Oat 13 · Peppercorn 3 |
 
 Every count above is recomputed from the catalogue on the request that renders it, so the drawer
 prints the reference's own numbers — the facet listings at
@@ -82,6 +82,27 @@ Colors, Featured Fabrics, Featured Collections (through Gift Card) and two featu
 opens the reference's own up-to-50-off shelf, which is a rail of its own, and Gift Card opens the
 gift card product, so no menu entry lands on an empty page.
 
+## Order: a shelf prints its own first card
+
+The reference does not sort a collection by the store's Featured ranking. Each collection page is
+that collection's own order — `/collections/sweats` opens with the relaxed pocket sweatpant in
+mocha, `/collections/tees` with the classic tee in true white, `/collections/the-october-capsule`
+with the crossover legging in jet black — while `/collections/all` opens with its own first card.
+So:
+
+- `railProducts(handle)` returns the rail in the captured order of the page it came from
+  (`data.rails[].slugs`, written by `scripts/apply-reference-collections.mjs`), not in catalogue
+  order and not re-ranked.
+- Featured — `color: "manual"` in the toolbar, which is what the page renders before any sort —
+  keeps that shelf order. `sortShopAll(products, "manual", shelfOrdered)` and
+  `sortActivewear(products, "manual", shelfOrdered)` hand the shelf straight back when the grid
+  passes `shelfOrdered`; every other sort option (price, newest) still re-ranks the shelf.
+- The Activewear rails follow the same rule: `all` is the reference's `/collections/activewear`,
+  `leggings` its own child collection, `sports-bras` its own, each in capture order.
+
+`tests/rail-order.test.ts` pins every routed shelf, fabric and dye to its capture, and
+`tests/e2e/rail-order.spec.ts` checks the rendered pages lead with their own card.
+
 ## Verify
 
 ```sh
@@ -93,5 +114,11 @@ node scripts/apply-reference-order.mjs               # the reference's Featured 
 node scripts/sync-catalogue-labels.mjs               # style, dye and colour-group names
 npx tsx .probe/parity.ts                             # catalogue against the capture
 npx tsx --test tests/shop-all.test.ts
+npx tsx --test tests/rail-order.test.ts              # every shelf against its own capture
+node verification/tools/rail-order.mjs               # a running storefront, every page, every shelf
+node verification/tools/rail-order.mjs https://eltaranisibrand.vercel.app
 npm run verify
 ```
+
+`verification/tools/rail-order.mjs` also accepts a base URL, so the deployed store can be checked
+against the same captures: `node verification/tools/rail-order.mjs https://eltaranisibrand.vercel.app`.

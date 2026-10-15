@@ -55,7 +55,8 @@ export default function MateActivewearGrid({ handle = "activewear", dye, editori
     return dye ? products.filter((product) => product.color.name === dye) : products;
   }, [railId, dye]);
   const filtered = useMemo(() => filterActivewear(rail, state), [rail, state]);
-  const sorted = useMemo(() => sortActivewear(filtered, state.sort), [filtered, state.sort]);
+  // Featured keeps this shelf's own captured order (the reference's rule); the other sorts re-rank.
+  const sorted = useMemo(() => sortActivewear(filtered, state.sort, true), [filtered, state.sort]);
   const counts = useMemo(() => activewearFacetCounts(rail, state), [rail, state]);
   // A colour group or category this rail cannot offer is removed rather than offered empty.
   const colorRows = useMemo(

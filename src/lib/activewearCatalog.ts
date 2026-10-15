@@ -111,7 +111,11 @@ export function railProducts(railId: string): ActivewearProduct[] {
   const rail = ACTIVEWEAR_RAILS.find((candidate) => candidate.id === railId);
   if (!rail || rail.id === "all") return activewearProducts;
   const allowed = new Set(rail.handles);
-  return activewearProducts.filter((product) => allowed.has(product.slug));
+  // The rail's handles are the captured order of that collection page, so the shelf prints it.
+  const order = new Map(rail.handles.map((slug, index) => [slug, index]));
+  return activewearProducts
+    .filter((product) => allowed.has(product.slug))
+    .sort((left, right) => (order.get(left.slug) ?? Number.MAX_SAFE_INTEGER) - (order.get(right.slug) ?? Number.MAX_SAFE_INTEGER));
 }
 
 /** A rail measured by the reference but empty here is never offered. */
@@ -143,8 +147,11 @@ export function filterActivewear(
 export function sortActivewear(
   products: readonly ActivewearProduct[],
   sort: CollectionSort,
+  shelfOrdered = false,
 ): ActivewearProduct[] {
   const list = [...products];
+  // Featured is the shelf's own captured order, exactly as on the reference (see sortShopAll).
+  if (sort === "manual" && shelfOrdered) return list;
   switch (sort) {
     case "created-descending":
       return list.sort((a, b) => a.newestRank - b.newestRank);
